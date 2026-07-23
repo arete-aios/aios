@@ -132,7 +132,7 @@ HARD TRUTH
 <one to three sentences>
 
 THE ONE MOVE, AND AN OFFER
-The single highest-leverage fix from the path above, named as the skill that does it,
+The single biggest fix from the path above, named as the skill that does it,
 and an offer to run it together now. Not "you should", but "we can, want me to start".
 ```
 
