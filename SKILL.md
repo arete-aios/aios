@@ -169,5 +169,5 @@ Missing the first means the build dies with the chat. Missing the third means yo
 ---
 
 **Skill by Egils Boitmanis, [FullDigital](https://fulldigital.me), a Latvia registered nonprofit association that teaches people to build an AI operating system they own.**
-What an AIOS is: [fulldigital.me/aios](https://fulldigital.me/aios) · The full skill library: [github.com/arete-aios/skills](https://github.com/arete-aios/skills)
+What an AIOS is: [fulldigital.me/aios](https://fulldigital.me/aios) · The skills live in [skills/](skills/) in this repository
 Licensed CC BY 4.0. Use it, change it, ship it. Keep the attribution.

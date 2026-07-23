@@ -1,0 +1,88 @@
+{
+  "name": "arete-aios",
+  "owner": {
+    "name": "FullDigital",
+    "url": "https://fulldigital.me"
+  },
+  "metadata": {
+    "description": "An AI operating system you own: five layers, and the skills that maintain them.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "start",
+      "description": "The system exists where there was nothing",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/constitution7",
+        "./skills/braindump7",
+        "./skills/deepdive7",
+        "./skills/memory7",
+        "./skills/channel7"
+      ]
+    },
+    {
+      "name": "aios",
+      "description": "Keeping the system itself honest",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/context7",
+        "./skills/focus7",
+        "./skills/exit7",
+        "./skills/week7",
+        "./skills/audit7",
+        "./skills/dashboard7"
+      ]
+    },
+    {
+      "name": "capture",
+      "description": "Turning what happened into something the system holds",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/in7",
+        "./skills/inbox7",
+        "./skills/voice7",
+        "./skills/watch7",
+        "./skills/meeting7",
+        "./skills/news7"
+      ]
+    },
+    {
+      "name": "decide",
+      "description": "Turning an opinion into a written judgment",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/eval7",
+        "./skills/evalx",
+        "./skills/verify7",
+        "./skills/kw7"
+      ]
+    },
+    {
+      "name": "people",
+      "description": "Knowing one named human better",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/warm7"
+      ]
+    },
+    {
+      "name": "reach",
+      "description": "Changing something outside your own files",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/mail7",
+        "./skills/slides7",
+        "./skills/site-cloudflare7",
+        "./skills/site-lovable7",
+        "./skills/ads7"
+      ]
+    }
+  ]
+}

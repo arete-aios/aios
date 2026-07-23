@@ -51,10 +51,28 @@ Your AI creates a small progress file in stage 1 and reads it at the start of ev
 **Install the skill library** when you get to stage 5:
 
 ```
-/plugin marketplace add arete-aios/skills
+/plugin marketplace add arete-aios/aios
 ```
 
-Or take any single skill as a file and paste it in, with nothing installed at all. Everything is at [github.com/arete-aios/skills](https://github.com/arete-aios/skills).
+Or take any single skill as a file and paste it in, with nothing installed at all. The skills are in [skills/](skills/) in this repository, one folder each.
+
+---
+
+## The skills, grouped by what changes when they finish
+
+Each raises a specific layer. When an evaluation finds a gap, the skill that closes it is here, in `skills/`.
+
+| Group | After a run | Skills |
+|---|---|---|
+| **start** | the system exists where there was nothing | `constitution7` `braindump7` `deepdive7` `memory7` |
+| **aios** | the system's own files stay honest | `context7` `focus7` `exit7` `week7` `audit7` `dashboard7` |
+| **capture** | memory holds a record that did not exist | `in7` `inbox7` `voice7` `watch7` `meeting7` `news7` |
+| **decide** | a written judgment exists where there was an opinion | `eval7` `evalx` `verify7` `kw7` |
+| **people** | you know one named human better | `warm7` |
+| **reach** | something outside your own files changed | `mail7` `slides7` `site-cloudflare7` `site-lovable7` `ads7` |
+| **channel** | you can reach your system from your pocket | `channel7` (in start) |
+
+**Do not install them all.** The build is staged for a reason: three standing skills until the loop closes once. The evaluation in [references/evaluate.md](references/evaluate.md) tells you which few you need, in order.
 
 ---
 
@@ -83,5 +101,5 @@ Anyone selling you a complete second brain in an afternoon is selling you a fold
 ---
 
 **Built by Egils Boitmanis with [FullDigital](https://fulldigital.me), a Latvia registered nonprofit association that teaches people to build an AI operating system they own.**
-What an AIOS is: [fulldigital.me/aios](https://fulldigital.me/aios) · The full skill library: [github.com/arete-aios/skills](https://github.com/arete-aios/skills)
+What an AIOS is: [fulldigital.me/aios](https://fulldigital.me/aios) · The skills live in [skills/](skills/) in this repository
 Licensed CC BY 4.0. Use it, change it, ship it. Keep the attribution.

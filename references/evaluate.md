@@ -37,13 +37,30 @@ Detail per layer: [1-constitution](1-constitution.md), [2-memory](2-memory.md), 
 
 ---
 
+## Each gap has a skill that closes it
+
+**This is the point of scoring.** A number with no next move is a report card. When a dimension is low, name the skill in [the library](../skills/) that raises it, so the owner leaves with a move, not a grade. The skills are in `skills/` in this same repository, so you can read any of them right now to see exactly what the fix involves.
+
+| Low dimension | The skill that raises it | What it does |
+|---|---|---|
+| **Constitution** | `constitution7` | Writes the one core file that loads every session |
+| **Memory** | `braindump7` then `deepdive7` then `memory7` to build, `context7` to keep it in order | Turns scattered notes into folders with one honest index |
+| **Skills** | the library, and `audit7` to prune | Adds the few that fire, removes the many that never did |
+| **Tools** | `channel7`, plus each skill's own requirements | Connects the AI to what it needs, gated |
+| **Focus** | `focus7` | One small current file the AI pushes back with |
+| **The loop** | `in7` and `exit7` and `week7` together | Capture, close the session, and the weekly turn that changes the next decision |
+
+The loop row is the one that matters most. If dimension 6 is low, those three skills are the whole prescription, and no other skill should be added before they run.
+
+---
+
 ## Low-system threshold, check this first
 
 **If three or more of the six dimensions score below 25, do not render a table or a total.** A precise score of a system that does not exist is theatre. Say plainly:
 
-> You are at the start. There is no system to score yet, only a beginning. Here is stage 1: write a one-page constitution that loads at the start of every session. Build the layers in order from [1-constitution](1-constitution.md); come back for a score once three of the six are above 25.
+> You are at the start. There is no system to score yet, only a beginning, and that is the normal place to begin. The first move is one thing: a one-page constitution that your AI reads at the start of every session. The `constitution7` skill in this repository does exactly that, by interviewing you and writing it for you. **I can run it with you right now if you want, it takes about twenty minutes and you answer, I write.** After that we build the other layers in order from [1-constitution](1-constitution.md), and you come back for a real score once three of the six are above 25.
 
-Then stop. No band, no path to 100.
+Then stop. No band, no path to 100. **End on the offer to start, not on a list of homework.**
 
 ---
 
@@ -113,9 +130,15 @@ PATH TO 100
 
 HARD TRUTH
 <one to three sentences>
+
+THE ONE MOVE, AND AN OFFER
+The single highest-leverage fix from the path above, named as the skill that does it,
+and an offer to run it together now. Not "you should", but "we can, want me to start".
 ```
 
-Unknown dimensions carry the word **unknown**, not a number. The full scoring method, including how to keep a series comparable over time, is the `eval7` skill in [github.com/arete-aios/skills](https://github.com/arete-aios/skills).
+**Close on the offer, never on the homework.** The last thing the owner reads is not a list of what they lack, it is you offering to help with the one thing that matters most, naming the skill that does it and asking to begin. A grade with no hand extended is the thing that made them abandon the last two attempts. You have read the skill that closes their biggest gap, it is in `skills/` in this repository, so you can start it in the same conversation. Offer that.
+
+Unknown dimensions carry the word **unknown**, not a number. The full scoring method, including how to keep a series comparable over time, is the `eval7` skill in [the library](../skills/eval7/SKILL.md).
 
 ---
 
