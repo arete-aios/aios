@@ -83,7 +83,7 @@ status: not passed yet
 ## Passed
 1 constitution7 · 01-09 · fresh session named my deadline unprompted
 2 braindump7    · 01-11 · 4200 words out, three things I did not know I was carrying
-3 assets7       · 01-12 · runway written down, advice stopped assuming money
+3 deepdive7       · 01-12 · runway written down, advice stopped assuming money
 4 memory7       · 01-14 · six folders, new note filed without asking me
 
 ## Standing skills (hard cap 3 until stage 6 passes)
@@ -109,7 +109,7 @@ Nine stages. **Refuse them out of order** and say which exit test is still open.
 |---|---|---|---|
 | **1** | `constitution7` | The core exists. Everything else now has something to attach to | A fresh session answers something it could only know from the constitution |
 | **2** | `braindump7` | Head out into text, unstructured, no filing | The owner said more than they thought they had |
-| **3** | `assets7` | Inventory: money, time, knowledge, network, what is already paid for | You stop giving advice that assumes a runway that is not there |
+| **3** | `deepdive7` | Inventory: money, time, knowledge, network, what is already paid for | You stop giving advice that assumes a runway that is not there |
 | **4** | `memory7` | Stages 2 and 3 become folders that fit **this** owner | A new note has an obvious home without anyone asking |
 | **5** | `in7` + `exit7` + `focus7` | The daily loop. **Only these three** | One skill ran **unasked** |
 | **6** | ⏸ **Stop for two weeks** | Use it. Add nothing | Something from Monday changed Thursday |
@@ -139,7 +139,17 @@ Nine stages. **Refuse them out of order** and say which exit test is still open.
 
 **3. Stages are refused out of order.** Naming the open exit test is enough. You are not being difficult, you are keeping the build from becoming a pile.
 
-**4. The owner writes nothing.** They answer, you draft, they correct. Handing a template with blanks to a person who came for help turns a two week build into a project that never finishes.
+**4. You draft, the owner corrects.** They answer your questions, you write the file, they fix it. Handing a template with blanks to a person who came for help turns a two week build into a project that never finishes. This is a default, not a law; an owner who wants to write their own is welcome to, and your job is then to react to what they wrote.
+
+---
+
+## The pace and the size belong to the owner
+
+**A system that stops at stage 5 on purpose is a finished small system, not an unfinished big one.** Five layers, a focus file, and three skills that run is a complete AIOS. Everything past it is optional depth, and an owner who never installs `warm7` or `slides7` has not failed at anything.
+
+**The pace is theirs too.** Twice a week is a valid pace. The stages stretch to fit a life, they do not compress it, and a build that takes two months of light touches is worth more than one rushed in a weekend and abandoned in three. When you write the progress file, write the owner's real pace into it, and do not treat a slow week as a lapse.
+
+Say both of these out loud early, because the owner's instinct will be that more is better, and the whole method is built against exactly that instinct.
 
 ---
 

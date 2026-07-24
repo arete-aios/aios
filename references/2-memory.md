@@ -51,7 +51,7 @@ Three further signs:
 
 **`memory7`** shapes the folders in the first place, built from the owner's own raw material rather than from a template.
 
-**`braindump7`** produces that raw material, and `assets7` produces the inventory half of it.
+**`braindump7`** produces that raw material, and `deepdive7` produces the inventory half of it.
 
 **`context7`** keeps it navigable: one master index per node, listing everything inside it, so the AI reads one index instead of a thousand files.
 

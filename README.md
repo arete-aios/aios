@@ -48,13 +48,16 @@ There are nine stages and each has an exit test. **Stage 1 passes when a brand n
 
 Your AI creates a small progress file in stage 1 and reads it at the start of every session after that. This is deliberate: a build that runs over weeks cannot survive in a chat window.
 
-**Install the skill library** when you get to stage 5:
+**Install the skills** when you get to stage 5. First add the marketplace, then install only the group you need:
 
 ```
 /plugin marketplace add arete-aios/aios
+/plugin install start@arete-aios
 ```
 
-Or take any single skill as a file and paste it in, with nothing installed at all. The skills are in [skills/](skills/) in this repository, one folder each.
+The group names are `start`, `aios`, `capture`, `decide`, `people`, `reach`. Install `start` at stage 1, add others only when a stage calls for them. The marketplace alone installs nothing; you pick the group.
+
+Or take any single skill as a file and paste it in, with nothing installed at all. The skills are in [skills/](skills/) in this repository, one folder each. When you paste a folder skill, its `references/` files are not pasted with it, so if a skill mentions one, either add it too or tell your AI it is not present.
 
 ---
 
