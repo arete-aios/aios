@@ -43,7 +43,7 @@ Twenty-four, grouped by one rule: **what is different in the world when the skil
 Install the library:
 
 ```
-/plugin marketplace add arete-aios/skills
+/plugin marketplace add arete-aios/aios
 ```
 
 Or take one file and paste it into any assistant, with nothing installed at all. The file tells the AI what to do with itself.
@@ -72,5 +72,5 @@ The library itself is the layer. **`audit7`** keeps it honest: what is installed
 ---
 
 **Built by Egils Boitmanis with [FullDigital](https://fulldigital.me), a Latvia registered nonprofit association that teaches people to build an AI operating system they own.**
-What an AIOS is: [fulldigital.me/aios](https://fulldigital.me/aios) · The full skill library: [github.com/arete-aios/skills](https://github.com/arete-aios/skills)
+What an AIOS is: [fulldigital.me/aios](https://fulldigital.me/aios) · The full library: [github.com/arete-aios/aios](https://github.com/arete-aios/aios)
 Licensed CC BY 4.0. Use it, change it, ship it. Keep the attribution.
