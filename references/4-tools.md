@@ -39,6 +39,22 @@ Three further signs:
 
 ---
 
+## One runtime, several roles
+
+**The question arrives as "do I need a separate assistant for each part of my life", and the default answer is no.** One runtime, one constitution, one memory. A role is an instruction, not an installation: the coach voice, the finance voice, the one that only reads the client folder. They differ in tone and scope, and they share everything that makes them useful, which is the memory underneath.
+
+A second runtime is justified by exactly three things, and the owner should be able to name which one applies:
+
+1. **The role needs different tool permissions.** One can spend or send, the other must never be able to.
+2. **The role has to run while another is running.** A watcher on a schedule, a bot answering a channel while the owner works elsewhere.
+3. **The role serves a different owner** and must not see the first one's memory. A shared team assistant is the common case, and it is a real one.
+
+If none of the three applies, a second installation buys nothing and doubles the maintenance, and the two memories start diverging the week after they are built. Splitting is easy later. Merging two histories that drifted apart is not.
+
+**A fourth sign this layer is working:** the owner can say which roles exist and whether they share one memory.
+
+---
+
 ## The trap this layer sets
 
 **It is the most visible layer and the least important one.** Integrations are demonstrable, they feel like progress, and they produce the impression of a system where none exists. The constitution needs no tools at all. Memory needs a folder. The daily loop needs nothing but a file that can be written.

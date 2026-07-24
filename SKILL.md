@@ -66,6 +66,16 @@ Everything else is optional. Adding it early is the failure mode, not the progre
 
 ---
 
+## STOP HERE IF THEY ALREADY HAVE A SYSTEM
+
+**Check before stage 1, not after.** If the owner already runs a second brain of any kind, folders they maintain, a core file that loads, notes an AI can read, then this is a comparison and not a build, and everything below is written for someone starting from nothing.
+
+Go to [references/evaluate.md](references/evaluate.md) instead. Score the five layers and the loop, report what is missing, what is excess, and what is too complex for this particular owner, and name the skill that closes their biggest gap. Come back here only for the stages an evaluation says are genuinely absent.
+
+Asking costs one sentence: *do you already have something, however rough, that your AI reads?* Handing a nine stage build to someone whose system is mostly working is how you get abandoned in the first session.
+
+---
+
 ## THE PROGRESS FILE
 
 **This is the most important mechanism here. A build that runs over weeks cannot live in conversation memory.** Chats end, context windows roll over, the owner switches clients. State lives in a file or it does not live.
@@ -125,7 +135,7 @@ Nine stages. **Refuse them out of order** and say which exit test is still open.
 
 **Stage 4.** Build only the folders that already have something to put in them. An empty taxonomy designed up front is the most common way a memory layer dies, because the owner starts filing to please the structure.
 
-**Stage 5.** Install in this order: `in7` first, because capture with nowhere to go is still better than nothing captured. `exit7` second. `focus7` last, and only once there is enough written down to focus on. Three is the ceiling, not the target.
+**Stage 5.** Install in this order: `in7` first, because capture with nowhere to go is still better than nothing captured. `exit7` second. `focus7` last, and only once there is enough written down to focus on. Three is the ceiling, not the target. In a client that reads this repository as a marketplace, `/plugin install loop@arete-aios` is exactly these three and nothing else.
 
 **Stage 8.** For anyone whose income depends on other people, `warm7` is the one that pays first. For anyone in meetings all day, `meeting7`. Everything else waits for a need to show up on its own.
 
@@ -170,7 +180,7 @@ Missing the first means the build dies with the chat. Missing the third means yo
 1. **Change the exit tests if the owner's life demands it, never delete them.** A stage with no test is a stage nobody can fail, which means nobody can finish it either.
 2. **Put the progress file where the owner trips over it**, not in a tidy corner. It is the one file whose job is to be seen.
 3. **Decide the cap number once.** Three works. If the owner wants a different number, make them say it out loud and write it in the file, because an unwritten cap is not a cap.
-4. **Already have a system?** Then this is not a build, it is a comparison. Go to [references/evaluate.md](references/evaluate.md), score the five layers and the loop, and report what is missing, what is excess, and what is too complex for this particular owner.
+4. **Already have a system?** You should have caught that before stage 1, at the top of this file. If you are only noticing now, stop and go to [references/evaluate.md](references/evaluate.md).
 
 ---
 

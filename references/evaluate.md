@@ -10,9 +10,15 @@
 
 **1. Read their system yourself if you can.** The always loaded core, the folder structure, the skills index, the file that says what matters now, the last two weeks of records. What is written matters less than what has been touched recently.
 
-**2. If you cannot read files, ask and score the answers,** and say in the output you scored a description. What loads at session start and how big? Where does a new note go? Which three methods did you last trigger? What can the AI reach outside its files, and do without asking? Which file says what matters now? **Name one thing the system told you unasked, and what you did differently.** What did you add last month and actually use?
+**2. Ask the loop question first, always, even when you can read every file.** No file records it, and it is the one answer that decides whether the rest is a system or a well kept archive:
 
-**3. Take their goal from them.** Ask what they want it to do, or state your assumption visibly.
+> **Name one thing your system told you that you had not asked it, and say what you did differently because of it.**
+
+If there is no answer, you already have the finding, and no score in the other six dimensions changes it. A satisfied owner shipping real work can still fail this one, and that is exactly the case worth catching, because nothing in their week will reveal it to them on its own.
+
+**3. If you cannot read files, ask and score the answers,** and say in the output you scored a description. What loads at session start and how big? Where does a new note go? Which three methods did you last trigger? What can the AI reach outside its files, and do without asking? Which file says what matters now? What did you add last month and actually use?
+
+**4. Take their goal from them.** Ask what they want it to do, or state your assumption visibly.
 
 **Evidence or no number.** A dimension with no evidence is scored **unknown**, not guessed.
 
@@ -48,9 +54,9 @@ Detail per layer: [1-constitution](1-constitution.md), [2-memory](2-memory.md), 
 | **Skills** | the library, and `audit7` to prune | Adds the few that fire, removes the many that never did |
 | **Tools** | `channel7`, plus each skill's own requirements | Connects the AI to what it needs, gated |
 | **Focus** | `focus7` | One small current file the AI pushes back with |
-| **The loop** | `in7` and `exit7` and `week7` together | Capture, close the session, and the weekly turn that changes the next decision |
+| **The loop** | `in7` and `exit7` and `focus7` now, `week7` at the weekly turn | Capture, close the session, and the file that changes the next decision |
 
-The loop row is the one that matters most. If dimension 6 is low, those three skills are the whole prescription, and no other skill should be added before they run.
+The loop row is the one that matters most. If dimension 6 is low, those three skills are the whole prescription, and no other skill should be added before they run. In a client that reads this repository as a marketplace they install together as `loop@arete-aios`, which exists so that "only three" is one command rather than a rule the owner has to enforce on themselves.
 
 ---
 
@@ -135,6 +141,8 @@ THE ONE MOVE, AND AN OFFER
 The single biggest fix from the path above, named as the skill that does it,
 and an offer to run it together now. Not "you should", but "we can, want me to start".
 ```
+
+**Length is a rule, not a preference: one screen per section, the whole evaluation under two pages.** Evidence cells are one clause. Each list item is one line naming the thing and the move, not a paragraph explaining it. The owner is about to be told something uncomfortable about work they are proud of, and a long report is the easiest thing in the world to skim into agreement and then never act on. If a section will not fit, you have not finished deciding what mattered in it.
 
 **Close on the offer, never on the homework.** The last thing the owner reads is not a list of what they lack, it is you offering to help with the one thing that matters most, naming the skill that does it and asking to begin. A grade with no hand extended is the thing that made them abandon the last two attempts. You have read the skill that closes their biggest gap, it is in `skills/` in this repository, so you can start it in the same conversation. Offer that.
 

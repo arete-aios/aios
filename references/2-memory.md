@@ -22,6 +22,12 @@ The defining property is not size, it is that memory **does not load on every me
 
 **Plain files, in one folder that contains nothing but the owner's own material.** Machinery, scripts, keys and configuration live beside it, never inside. The content folder should survive being copied to a different machine, a different tool, a different AI, because tools get replaced every year or two and the notes are supposed to outlive them.
 
+**What "plain files" actually means**, because it is assumed everywhere and explained nowhere:
+
+- **Text the AI reads directly**, markdown or plain text. One subject per file, named so a human finds it by reading the name.
+- **A PDF is a container, not a memory file.** It cannot be edited a line at a time, indexed, or compared against last month's version. Pull what is needed out of it into text once, then keep the PDF beside the note as the source. The same goes for a slide deck, a spreadsheet exported as a picture, or a screenshot of something that was text to begin with.
+- **The folder is the system. Obsidian is a viewer on top of it**, and a good one, and completely optional. So is any other note app that reads a folder of markdown. If the app disappears the memory does not, which is the entire reason for the format. An app that keeps notes in its own database is a different arrangement, and the question to ask it is whether the owner can walk out with plain files.
+
 ---
 
 ## What does not belong in it

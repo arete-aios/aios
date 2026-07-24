@@ -34,6 +34,16 @@ And the thing that makes them a system rather than five folders: **[the loop](re
 
 ---
 
+## Already have a second brain? Start here instead
+
+Then this is a comparison, not a build, and the rest of this page is written for someone starting from nothing.
+
+**Do not paste SKILL.md. Give your AI [references/evaluate.md](references/evaluate.md) instead**, and ask it to score what you already have. That file holds the scoring dimensions: one per layer, plus the loop, plus whether the whole thing actually fits the person carrying it. It returns a score per dimension, an overall with a band, and three lists: what is missing, what is excess, and what is too complex for you specifically. Every low score names the skill in [skills/](skills/) that raises it, so you end with a move rather than a grade.
+
+Expect the honest answer to be shorter than you hoped. For most systems that are already running, the useful advice is to remove something, not to add one more thing.
+
+---
+
 ## How to start
 
 **One link, one paste.**
@@ -52,10 +62,10 @@ Your AI creates a small progress file in stage 1 and reads it at the start of ev
 
 ```
 /plugin marketplace add arete-aios/aios
-/plugin install start@arete-aios
+/plugin install loop@arete-aios
 ```
 
-The group names are `start`, `aios`, `capture`, `decide`, `people`, `reach`. Install `start` at stage 1, add others only when a stage calls for them. The marketplace alone installs nothing; you pick the group.
+**There is a group with exactly three skills in it, and it is the one most people should stop at.** `loop` is that group: `in7`, `exit7`, `focus7`, the three that close the loop and the ceiling until one of them has run without you asking. The other groups are `start`, `aios`, `capture`, `decide`, `people`, `reach`. Install `start` at stage 1 for the build itself, `loop` at stage 5, and the rest only when a stage calls for them. The marketplace alone installs nothing; you pick the group.
 
 Or take any single skill as a file and paste it in, with nothing installed at all. The skills are in [skills/](skills/) in this repository, one folder each. When you paste a folder skill, its `references/` files are not pasted with it, so if a skill mentions one, either add it too or tell your AI it is not present.
 
@@ -67,25 +77,17 @@ Each raises a specific layer. When an evaluation finds a gap, the skill that clo
 
 | Group | After a run | Skills |
 |---|---|---|
-| **start** | the system exists where there was nothing | `constitution7` `braindump7` `deepdive7` `memory7` |
+| **loop** | the three that close the loop, and the ceiling until one runs unasked | `in7` `exit7` `focus7` |
+| **start** | the system exists where there was nothing | `constitution7` `braindump7` `deepdive7` `memory7` `channel7` |
 | **aios** | the system's own files stay honest | `context7` `focus7` `exit7` `week7` `audit7` `dashboard7` |
 | **capture** | memory holds a record that did not exist | `in7` `inbox7` `voice7` `watch7` `meeting7` `news7` |
 | **decide** | a written judgment exists where there was an opinion | `eval7` `evalx` `verify7` `kw7` |
 | **people** | you know one named human better | `warm7` |
 | **reach** | something outside your own files changed | `mail7` `slides7` `site-cloudflare7` `site-lovable7` `ads7` |
-| **channel** | you can reach your system from your pocket | `channel7` (in start) |
+
+`loop` is a cross-section, not a seventh category. Those three also sit in the group that describes what they do; they are gathered here because "install only three" is advice nobody can follow if the command hands you twelve.
 
 **Do not install them all.** The build is staged for a reason: three standing skills until the loop closes once. The evaluation in [references/evaluate.md](references/evaluate.md) tells you which few you need, in order.
-
----
-
-## Already have a second brain?
-
-Then this is a comparison, not a build. Give your AI this repository and ask it to evaluate what you have, layer by layer.
-
-**[references/evaluate.md](references/evaluate.md)** has the scoring dimensions: one per layer, plus the loop, plus whether the whole thing actually fits the person carrying it. It returns a score per dimension, an overall with a band, and three lists: what is missing, what is excess, and what is too complex for you specifically.
-
-Expect the honest answer to be shorter than you hoped. For most systems that are already running, the useful advice is to remove something, not to add one more thing.
 
 ---
 

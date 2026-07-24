@@ -10,6 +10,17 @@
   },
   "plugins": [
     {
+      "name": "loop",
+      "description": "The three that close the loop. Install nothing else until one has run unasked",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/in7",
+        "./skills/exit7",
+        "./skills/focus7"
+      ]
+    },
+    {
       "name": "start",
       "description": "The system exists where there was nothing",
       "source": "./",

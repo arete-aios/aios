@@ -33,6 +33,7 @@ Twenty-seven, grouped by one rule: **what is different in the world when the ski
 
 | Group | After a run | Skills |
 |---|---|---|
+| **loop** | The loop closes. The ceiling until one has run unasked | `in7` `exit7` `focus7` |
 | **start** | The system exists where there was nothing | `constitution7` `braindump7` `deepdive7` `memory7` `channel7` |
 | **aios** | The system's own always loaded files have changed | `context7` `focus7` `exit7` `week7` `audit7` `dashboard7` |
 | **capture** | Memory holds a record that did not exist | `in7` `inbox7` `voice7` `watch7` `meeting7` `news7` |
@@ -40,10 +41,13 @@ Twenty-seven, grouped by one rule: **what is different in the world when the ski
 | **people** | You know one named human better | `warm7` |
 | **reach** | Something outside your own files has changed | `mail7` `slides7` `site-cloudflare7` `site-lovable7` `ads7` |
 
-Install the library:
+`loop` is a cross-section rather than a seventh category: those three also sit in the group that names what they do. It exists because "install only three" is not advice anyone can follow if the command hands them twelve.
+
+Install:
 
 ```
 /plugin marketplace add arete-aios/aios
+/plugin install loop@arete-aios
 ```
 
 Or take one file and paste it into any assistant, with nothing installed at all. The file tells the AI what to do with itself.

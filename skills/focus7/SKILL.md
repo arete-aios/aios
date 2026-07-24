@@ -20,14 +20,16 @@ metadata:
 
 ## REQUIRES
 
-**This skill has two modes, and nothing below is a hard blocker.**
+**Nothing below is a hard blocker, and the file itself does not have to exist yet.**
 
-**With data feeds:** you scan calendar, health, money and notes yourself, and the numbers in the file come from measurements rather than impressions. Faster and far harder to argue with.
-**Without them:** you run the same thing as a structured interview, one area at a time, one line per answer. Slower, and it still produces a true file, because the diff and the approval are the valuable parts and the feeds only make them quicker.
+**Cold start, no focus file at all.** This is the common case and this skill is how it ends. You read whatever the system already holds, write the first version from that evidence, and then connect it so the client loads it at the start of every session. That last part is the run, not a follow-up: a focus file nobody loads is a document, and writing one without wiring it is the most common way this layer gets built and stays useless.
+**Maintenance, the file exists.** Everything below, as a diff the owner approves area by area.
+
+**And a second axis, independent of the first.** **With data feeds:** you scan calendar, health, money and notes yourself, and the numbers come from measurements rather than impressions. Faster and far harder to argue with. **Without them:** the same thing as a structured interview, one area at a time, one line per answer. Slower, and it still produces a true file, because the diff and the approval are the valuable parts and the feeds only make them quicker.
 
 | What | Needed | How to connect |
 |---|---|---|
-| **A focus file that loads every session** | required | Whatever your client reads at session start. If it does not load automatically, this skill maintains a document nobody opens |
+| **Somewhere the client reads at session start** | required | Project instructions, a memory feature, a pinned file, whatever this client offers. If nothing loads automatically, say so plainly and agree with the owner what they will paste, because that decision is part of the run |
 | **Notes the assistant can read** | required | The per area notes, the weekly file, project files. Usually the same folder access the rest of the system already has |
 | **Calendar** | strongly recommended | [developers.google.com/calendar/api](https://developers.google.com/calendar/api/guides/overview), or a connector the client already offers |
 | **A sheet for money or metrics** | recommended | [developers.google.com/sheets/api](https://developers.google.com/sheets/api/guides/concepts) |
@@ -73,6 +75,7 @@ The owner decides what an area is and where the limits sit. Take both from their
 - The owner writes `FOCUS7`, optionally with one area name to do just that area, or a mode word for a fast pass or a deep pass.
 - **The weekly review.** This is the recurring trigger and it is the one that keeps the file small.
 - **After a decision or event big enough to change what the owner should be doing.** A result arrived, a plan died, a date moved.
+- **An evaluation just scored this owner low on focus or on the loop.** Do not wait for them to type the trigger. Say what you are about to do, run it in the same conversation, and hand them a draft. A low score followed by a suggestion is a report card; a low score followed by a first draft is the fix.
 
 **Not a trigger:** noticing that one line is wrong in the middle of another task. You never rewrite the focus file silently while doing something else, even when you are certain. Flag it in one sentence, carry on with the actual work, propose the diff when the skill runs.
 
@@ -127,7 +130,13 @@ The layer is called Tools because a tool is what the model finally calls. Today 
 
 Steps for you, the assistant. Goal level, not code level.
 
-**1. Scan, do not remember.** For each area, read its log, its context note, the current weekly file and any project notes belonging to it. The weekly file is usually the richest source, because that is where daily entries and session notes land. Work the areas in parallel rather than as one long sequence. If a source has not changed since the last run, mark the area unchanged and do not inflate it to look busy.
+**0. If there is no focus file, this run creates it.** Write only the areas that have evidence behind them today. An area with nothing to say gets one line saying so, not a heading with hopeful bullets under it, because an invented area teaches the owner that this file is a form to fill in. **Three real areas beat seven empty ones**, and the empty ones can be added the week something happens in them.
+
+**1. Scan, do not remember.** For each area, read its log, its context note, the current weekly file and any project notes belonging to it. The weekly file is usually the richest source, because that is where daily entries and session notes land. Work the areas in parallel rather than as one long sequence.
+
+**Ask where the work actually happened this month, and read there.** Work migrates: into a chat channel, into project files outside the notes folder, into a different tool entirely. A skill that only reads the folder it was pointed at last quarter will report a calm month for someone who had a loud one.
+
+**An unchanged source is either a calm area or a dead instrument, and you say which.** Mark the area unchanged, and name the reason you believe it. If the focus file itself has not moved in three weeks, that is not a detail to note at the end, it is the finding, and it goes first.
 
 **2. Build a diff per area, never a rewrite.** Three blocks: what the file says now, your proposed draft, and what changed with the source of each change. Naming the source is what lets the owner approve in seconds instead of rereading everything. List additions, edits and removals, including what you propose to drop and where it would go.
 
@@ -141,6 +150,8 @@ Steps for you, the assistant. Goal level, not code level.
 
 **7. Stay out of the structure.** You update live content. You do not touch the file's own instructions block, and you do not change the owner's top level priorities from here, those live in their north star and project notes. A focus skill that starts editing priorities has quietly promoted itself.
 
+**8. Prove it loads, before you call the run finished.** Open a fresh session and ask something that can only be answered from the focus file. If the answer comes back, the file is connected. If it does not, connect it now, in this run: add the path to whatever the client reads at session start, or agree with the owner what they will paste and where that line lives. **This is the step that separates a focus file from a focus system**, and it is the one people skip, because writing the file feels like the work and wiring it feels like admin. The wiring is the work. Everything before it was a draft.
+
 ---
 
 ## DEFINITION OF DONE
@@ -150,8 +161,9 @@ Steps for you, the assistant. Goal level, not code level.
 3. **The file is inside its size limits**, and you told the owner the number rather than an impression.
 4. **Everything cut landed in a log with a date**, and the moves were reported line by line.
 5. **Every gap you could not fill is visible in the file** as a marker addressed to the owner, not smoothed over.
+6. **A fresh session answered something it could only know from this file**, or the owner knows exactly what they paste and when. Tested this run, not assumed from last time.
 
-Missing the fourth means you deleted. Missing the fifth means the file now contains your guesses, and nobody will be able to tell which lines those were.
+Missing the fourth means you deleted. Missing the fifth means the file now contains your guesses, and nobody will be able to tell which lines those were. Missing the sixth means you wrote a document, and the owner will keep it current for about two weeks before noticing nothing reads it.
 
 ---
 

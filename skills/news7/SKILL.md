@@ -119,6 +119,8 @@ Prefer the cheap, permitted mechanisms. RSS and public search cover most of what
 
 Steps for you, the assistant. Goal level, not code level.
 
+**0. If something is already delivering, read what it delivers before you read anything else.** An existing brief, portal, digest or feed is evidence, and it is usually older than the constitution that should be steering it. Take the topics it is actually serving today and set them beside the topics the constitution names. **Anything in the first list that is missing from the second is a leftover from before the system decided what it was for**, and it has been quietly costing the owner attention every day since. Name those, and either promote them into the written list on purpose or remove them in this run. This is not a review step at the end. Done later, you will have spent the session tuning a filter that was pointed at the wrong subjects.
+
 **1. Name the topics first, because this is the real work.** Before touching a feed, get the owner to a short list, three to five, of what their system is for. Draft it from the constitution and the deep dive and bring it to them, do not start from a blank question. If they cannot recognise or repair the list, say so directly: the system has not decided what it serves. A watcher pointed at undecided topics just produces a tidier firehose.
 
 **2. Take the people from the network, do not make a new list.** The people worth watching are the top of the list the outbound skill already keeps. Read it, take the tiers that matter, and pick the ones whose public activity would signal a reason to show up. Watching everyone is the same mistake as contacting everyone.
@@ -146,8 +148,9 @@ Both modes finish on the same first four items. Only the fifth needs the machine
 3. **Every source that can be free is free**, and any automated watch of a named person passed the scrape gate with a cost estimate and an explicit OK. In list mode the gate simply never fired, which counts.
 4. **A route and a rhythm are decided and written down**, naming the destination the owner already looks at and how often it delivers.
 5. **Where automation exists, delivery runs on that route**, bringing the filtered few to the owner without them going to check; and where it does not exist yet, the lists and the route are ready to wire the day a tool arrives.
+6. **Every topic currently being delivered is either on the written list or was removed in this run.** Nothing is still arriving daily that nobody has decided to receive.
 
-Missing the first means you built a reader without deciding what to read. Missing the second means you split one set of people into two lists and broke both.
+Missing the first means you built a reader without deciding what to read. Missing the second means you split one set of people into two lists and broke both. Missing the sixth means all five others can pass while a live feed keeps serving subjects from whoever set it up, months ago, before any of this was decided.
 
 ---
 
