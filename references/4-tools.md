@@ -31,11 +31,12 @@ The layer is called Tools because a tool is what the model finally calls. How th
 
 **The honest test is subtraction: turn one off and see whether the method still runs.** If it stops entirely, the method was never written down, only automated, and it will disappear the day the tool does.
 
-Three further signs:
+Four further signs:
 
 1. **The owner can name every tool that can act in their name**, and every gate on it. If the list is longer than they expected, the layer has outgrown its owner.
 2. **Each connected tool has been used in the last month.** Anything older is a dependency without a benefit.
 3. **The AI names the mechanism before using it.** *I am about to send this through your mailbox connector.* Not *I will handle it.*
+4. **The owner can name which roles exist and whether they share one memory.**
 
 ---
 
@@ -50,8 +51,6 @@ A second runtime is justified by exactly three things, and the owner should be a
 3. **The role serves a different owner** and must not see the first one's memory. A shared team assistant is the common case, and it is a real one.
 
 If none of the three applies, a second installation buys nothing and doubles the maintenance, and the two memories start diverging the week after they are built. Splitting is easy later. Merging two histories that drifted apart is not.
-
-**A fourth sign this layer is working:** the owner can say which roles exist and whether they share one memory.
 
 ---
 

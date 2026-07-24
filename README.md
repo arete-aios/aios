@@ -24,7 +24,7 @@ Plain files, in a folder you keep. No platform, no subscription, nothing that st
 
 | # | Layer | What it is | Kept by |
 |---|---|---|---|
-| 1 | **[Constitution](references/1-constitution.md)** | Who you are and the rules that hold in every session. The only file that costs you on every message | `constitution7` |
+| 1 | **[Constitution](references/1-constitution.md)** | Who you are and the rules that hold in every session. One of the two files that cost you on every message | `constitution7` |
 | 2 | **[Memory](references/2-memory.md)** | Everything the system knows. Long, cheap, opened when relevant | `memory7`, `context7` |
 | 3 | **[Skills](references/3-skills.md)** | Methods written down once, so they run the same way every time | the library, `audit7` |
 | 4 | **[Tools](references/4-tools.md)** | How the AI reaches anything outside its own files | each skill's requirements |
@@ -38,7 +38,9 @@ And the thing that makes them a system rather than five folders: **[the loop](re
 
 Then this is a comparison, not a build, and the rest of this page is written for someone starting from nothing.
 
-**Do not paste SKILL.md. Give your AI [references/evaluate.md](references/evaluate.md) instead**, and ask it to score what you already have. That file holds the scoring dimensions: one per layer, plus the loop, plus whether the whole thing actually fits the person carrying it. It returns a score per dimension, an overall with a band, and three lists: what is missing, what is excess, and what is too complex for you specifically. Every low score names the skill in [skills/](skills/) that raises it, so you end with a move rather than a grade.
+**Do not paste SKILL.md, that one builds from nothing. Hand your AI [references/evaluate.md](references/evaluate.md) instead**, and if it can browse, give it the repository link too so it can open the skill it recommends. If you can only paste, tell it plainly that it cannot open the skill files, so it names them rather than describing them from memory.
+
+That file holds the scoring dimensions: one per layer, plus the loop, plus whether the whole thing actually fits the person carrying it. It returns either a score per dimension with an overall and a band, or, when the system has not really started, no score at all and the first move instead. When three or more of the six dimensions fall below 25, the file tells your AI to skip the table, the total and the lists, and give you the first move instead, because a precise score of something that has not started is theatre. Either way every low score names the skill in [skills/](skills/) that raises it, so you end with a move rather than a grade.
 
 Expect the honest answer to be shorter than you hoped. For most systems that are already running, the useful advice is to remove something, not to add one more thing.
 
@@ -58,14 +60,14 @@ There are nine stages and each has an exit test. **Stage 1 passes when a brand n
 
 Your AI creates a small progress file in stage 1 and reads it at the start of every session after that. This is deliberate: a build that runs over weeks cannot survive in a chat window.
 
-**Install the skills** when you get to stage 5. First add the marketplace, then install only the group you need:
+**Install the skills** when a stage calls for them. First add the marketplace, then install only the group you need:
 
 ```
 /plugin marketplace add arete-aios/aios
 /plugin install loop@arete-aios
 ```
 
-**There is a group with exactly three skills in it, and it is the one most people should stop at.** `loop` is that group: `in7`, `exit7`, `focus7`, the three that close the loop and the ceiling until one of them has run without you asking. The other groups are `start`, `aios`, `capture`, `decide`, `people`, `reach`. Install `start` at stage 1 for the build itself, `loop` at stage 5, and the rest only when a stage calls for them. The marketplace alone installs nothing; you pick the group.
+**There is a group with exactly three skills in it, and it is the one most people should stop at.** `loop` is that group: `in7`, `exit7`, `focus7`, the three that close the loop and the ceiling until one of them has run without you asking. The other groups are `start`, `aios`, `capture`, `decide`, `people`, `reach`. Install `start` at stage 1 if you want the build stages themselves as skills, `loop` at stage 5, and the rest only when a stage calls for them. The cap of three counts standing skills, the ones still running after the build. The marketplace alone installs nothing; you pick the group.
 
 Or take any single skill as a file and paste it in, with nothing installed at all. The skills are in [skills/](skills/) in this repository, one folder each. When you paste a folder skill, its `references/` files are not pasted with it, so if a skill mentions one, either add it too or tell your AI it is not present.
 
@@ -77,7 +79,7 @@ Each raises a specific layer. When an evaluation finds a gap, the skill that clo
 
 | Group | After a run | Skills |
 |---|---|---|
-| **loop** | the three that close the loop, and the ceiling until one runs unasked | `in7` `exit7` `focus7` |
+| **loop** | something you wrote came back unasked and changed what you did next | `in7` `exit7` `focus7` |
 | **start** | the system exists where there was nothing | `constitution7` `braindump7` `deepdive7` `memory7` `channel7` |
 | **aios** | the system's own files stay honest | `context7` `focus7` `exit7` `week7` `audit7` `dashboard7` |
 | **capture** | memory holds a record that did not exist | `in7` `inbox7` `voice7` `watch7` `meeting7` `news7` |
@@ -97,11 +99,9 @@ Each raises a specific layer. When an evaluation finds a gap, the skill that clo
 
 The first stage is one sitting. Stages 1 to 5 spread across one to two weeks, twenty to forty minutes at a time, and the limiting factor is your thinking, not the AI's speed.
 
-**Stage 6 is a deliberate stop: two full weeks of using it and adding nothing.** That is the step everybody wants to skip, and skipping it is the reason most second brains are abandoned in the third week. There is a hard rule in the build to stop you: no more than three methods installed before the loop has closed once.
+**Stage 6 is a deliberate stop: two full weeks of using it and adding nothing.** That is the step everybody wants to skip, and skipping it is the reason most second brains are abandoned in the third week. There is a hard rule in the build to stop you: no more than three standing skills, the ones that keep running, before the loop has closed once. The one-time build skills in `start` do not count against it.
 
 Anyone selling you a complete second brain in an afternoon is selling you a folder.
-
----
 
 ---
 

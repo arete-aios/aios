@@ -88,7 +88,7 @@ One boundary settles half the arguments you are about to have: **memory holds wh
 After setup this skill fires rarely, so do not spend always loaded context on it. Put the line in the skills index the core already links to. **What does belong in the core is the map:** the area names and one line each on what lives there, because that is how the AI finds anything without opening everything.
 
 ```
-MEMORY7. My memory layer: a small set of areas named in my words, one folder holding only my own material, machinery outside it, plain files only. One fact, one home. A new area appears when an existing one is too big to scan, never in advance. Spec: skills/memory7.md
+MEMORY7. My memory layer: a small set of areas named in my words, one folder holding only my own material, machinery outside it, plain files only. One fact, one home. A new area appears when an existing one is too big to scan, never in advance. Spec: skills/memory7/SKILL.md
 ```
 
 ### MEMORY

@@ -84,7 +84,7 @@ An audit has no external standard, so it measures the system against **what it p
 This fires on a rhythm rather than in conversation, so do not spend always loaded context on the method. Put the line in the skills index the core already links to. **What does belong in the core is the budget number this audit measures against**, because a ceiling nobody can see is not a ceiling.
 
 ```
-AUDIT7. Every two weeks, alternating: machinery pass, then library pass. Read only, test every tool live, propose everything, change nothing during the run. One line per item, OK or the finding, ending in one MERGE / ARCHIVE / REWRITE list. Spec: skills/audit7.md
+AUDIT7. Every two weeks, alternating: machinery pass, then library pass. Read only, test every tool live, propose everything, change nothing during the run. One line per item, OK or the finding, ending in one MERGE / ARCHIVE / REWRITE list. Spec: skills/audit7/SKILL.md
 ```
 
 ### MEMORY

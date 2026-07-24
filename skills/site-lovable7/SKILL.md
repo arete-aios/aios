@@ -96,7 +96,7 @@ One line makes this skill exist. Where it goes depends on how central it is to t
 Either way the line is the same:
 
 ```
-SITE-LOVABLE7. Code and design go through the builder agent, content and reads go direct. Money pages and deploys need my OK, never delete a page, credit cap per task. Spec: skills/site-lovable7.md
+SITE-LOVABLE7. Code and design go through the builder agent, content and reads go direct. Money pages and deploys need my OK, never delete a page, credit cap per task. Spec: skills/site-lovable7/SKILL.md
 ```
 
 A skill the AI cannot see when the trigger fires does not exist. A core stuffed with lines nobody triggers is broken the other way.

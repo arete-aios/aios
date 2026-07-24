@@ -109,7 +109,7 @@ One line makes this skill exist. Where it goes depends on how central advertisin
 Either way the line is the same:
 
 ```
-ADS7. Before any live ad change: measure at ad group level, protect anything carrying 10 percent or more, build the new beside the old, never pause what works, apply only with my OK, check at 48 hours. Spec: skills/ads7.md
+ADS7. Before any live ad change: measure at ad group level, protect anything carrying 10 percent or more, build the new beside the old, never pause what works, apply only with my OK, check at 48 hours. Spec: skills/ads7/SKILL.md
 ```
 
 A skill the AI cannot see when the trigger fires does not exist. A core stuffed with lines nobody triggers is broken the other way.

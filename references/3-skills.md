@@ -33,7 +33,7 @@ Twenty-seven, grouped by one rule: **what is different in the world when the ski
 
 | Group | After a run | Skills |
 |---|---|---|
-| **loop** | The loop closes. The ceiling until one has run unasked | `in7` `exit7` `focus7` |
+| **loop** | The loop closes: something written returns unasked and changes a decision | `in7` `exit7` `focus7` |
 | **start** | The system exists where there was nothing | `constitution7` `braindump7` `deepdive7` `memory7` `channel7` |
 | **aios** | The system's own always loaded files have changed | `context7` `focus7` `exit7` `week7` `audit7` `dashboard7` |
 | **capture** | Memory holds a record that did not exist | `in7` `inbox7` `voice7` `watch7` `meeting7` `news7` |

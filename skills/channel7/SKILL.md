@@ -94,7 +94,7 @@ There is a second reason the two layers come first. The agent behind the channel
 The channel is set up once, but which channel exists and how far it reaches is a standing fact worth knowing in every session. So the setup method lives in the skills index, and a short line lives in the always loaded core:
 
 ```
-CHANNEL7. My second brain is reachable at {channel} from my phone; the agent there loads my constitution and memory at start. Reach: {always-on | at-desk only}. The channel answers only me; any bot token lives in the secrets layer, never in the vault or in chat. Voice in: {on|off}. Voice out: off for now. Spec: skills/channel7.md
+CHANNEL7. My second brain is reachable at {channel} from my phone; the agent there loads my constitution and memory at start. Reach: {always-on | at-desk only}. The channel answers only me; any bot token lives in the secrets layer, never in the vault or in chat. Voice in: {on|off}. Voice out: off for now. Spec: skills/channel7/SKILL.md
 ```
 
 A skill the AI cannot see when the trigger fires does not exist. A core stuffed with lines nobody triggers is broken the other way.

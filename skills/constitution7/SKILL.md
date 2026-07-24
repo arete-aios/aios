@@ -45,7 +45,7 @@ What you actually need:
 
 ## WHAT
 
-**A constitution is the file your AI reads before it knows anything else, and it is the only file that costs you on every single message.**
+**A constitution is the file your AI reads before it knows anything else, and one of only two files that cost you on every single message, the other being focus.**
 
 That second half is why most of them fail. People write a constitution that describes them: history, values, personality, a paragraph about their childhood. It reads beautifully and changes nothing, and it is loaded again on every message for the rest of the year.
 
@@ -92,7 +92,7 @@ The constitution is layer one, and its real job is **to make the other four find
 This skill writes the constitution, so the line goes inside the file it creates:
 
 ```
-CONSTITUTION7. This file is the core. It stays short enough to load every message, every line changes what my AI does, and it points at the other layers rather than containing them. Revise when reality moves, not on a schedule. Spec: skills/constitution7.md
+CONSTITUTION7. This file is the core. It stays short enough to load every message, every line changes what my AI does, and it points at the other layers rather than containing them. Revise when reality moves, not on a schedule. Spec: skills/constitution7/SKILL.md
 ```
 
 ### MEMORY

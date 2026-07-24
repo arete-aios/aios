@@ -94,7 +94,7 @@ This skill leans on the constitution harder than most, because it cannot select 
 One line makes this skill exist. Put it in the always loaded core if the owner watches their people and their field as a working habit, which most people who sell or build do. Otherwise put it in the skills index the core already links to, and let it load on the trigger.
 
 ```
-NEWS7. I watch a fixed set of my key people and my few named topics, and route what matters to me on a rhythm rather than a feed I check. The people list is the same one my outreach skill uses, held once in memory. Never point an automated reader at a named person without a cost estimate and my OK. Spec: skills/news7.md
+NEWS7. I watch a fixed set of my key people and my few named topics, and route what matters to me on a rhythm rather than a feed I check. The people list is the same one my outreach skill uses, held once in memory. Never point an automated reader at a named person without a cost estimate and my OK. Spec: skills/news7/SKILL.md
 ```
 
 ### MEMORY
@@ -141,7 +141,7 @@ Steps for you, the assistant. Goal level, not code level.
 
 ## DEFINITION OF DONE
 
-Both modes finish on the same first four items. Only the fifth needs the machinery.
+Both modes finish on the same first four items. The fifth needs the machinery, and the sixth applies wherever something is already being delivered, including a feed that predates this run.
 
 1. **The topic list exists**, three to five, written in memory, and each topic names something the system is genuinely for, not a passing interest.
 2. **The people list is the network list, reused**, with the ones under watch marked, and no second contact list was created anywhere.

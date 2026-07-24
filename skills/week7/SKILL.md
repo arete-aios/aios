@@ -98,7 +98,7 @@ One line makes this skill exist. Where it goes depends on whether the owner real
 Either way the line is the same:
 
 ```
-WEEK7, once a week on the same day. Read the week's own records, not my memory of it. Money in, out, left. Patterns across weeks, not events inside one. Max three decisions, then update focus. You draft, I correct. Spec: skills/week7.md
+WEEK7, once a week on the same day. Read the week's own records, not my memory of it. Money in, out, left. Patterns across weeks, not events inside one. Max three decisions, then update focus. You draft, I correct. Spec: skills/week7/SKILL.md
 ```
 
 ### MEMORY

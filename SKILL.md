@@ -135,7 +135,7 @@ Nine stages. **Refuse them out of order** and say which exit test is still open.
 
 **Stage 4.** Build only the folders that already have something to put in them. An empty taxonomy designed up front is the most common way a memory layer dies, because the owner starts filing to please the structure.
 
-**Stage 5.** Install in this order: `in7` first, because capture with nowhere to go is still better than nothing captured. `exit7` second. `focus7` last, and only once there is enough written down to focus on. Three is the ceiling, not the target. In a client that reads this repository as a marketplace, `/plugin install loop@arete-aios` is exactly these three and nothing else.
+**Stage 5.** Install in this order: `in7` first, because capture with nowhere to go is still better than nothing captured. `exit7` second. `focus7` last, and only once there is enough written down to focus on. Three is the ceiling, not the target. In a client that supports plugin marketplaces, add it once with `/plugin marketplace add arete-aios/aios`, then `/plugin install loop@arete-aios` installs exactly these three and nothing else.
 
 **Stage 8.** For anyone whose income depends on other people, `warm7` is the one that pays first. For anyone in meetings all day, `meeting7`. Everything else waits for a need to show up on its own.
 

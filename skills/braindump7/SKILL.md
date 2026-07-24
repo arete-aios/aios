@@ -90,7 +90,7 @@ One line makes this skill exist. Where it goes depends on how central it is to t
 Either way the line is the same:
 
 ```
-BRAINDUMP7. My brain dump zone. Show, dispatch by topic, or archive, always on my OK, and a line there is never a task until I say it is. Spec: skills/braindump7.md
+BRAINDUMP7. My brain dump zone. Show, dispatch by topic, or archive, always on my OK, and a line there is never a task until I say it is. Spec: skills/braindump7/SKILL.md
 ```
 
 A skill the AI cannot see when the trigger fires does not exist. A core stuffed with lines nobody triggers is broken the other way.

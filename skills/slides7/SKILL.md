@@ -90,7 +90,7 @@ One line makes this skill exist. Where it goes depends on how often the owner sp
 Either way the line is the same:
 
 ```
-SLIDES7. Presentations are HTML I own: 16:9, one address with a path per deck, one URL per slide, switcher bottom right, a title page that describes the talk, speaker notes in a second window, framework shipped locally never from a CDN, offline copy tested before every event. Spec: skills/slides7.md
+SLIDES7. Presentations are HTML I own: 16:9, one address with a path per deck, one URL per slide, switcher bottom right, a title page that describes the talk, speaker notes in a second window, framework shipped locally never from a CDN, offline copy tested before every event. Spec: skills/slides7/SKILL.md
 ```
 
 A skill the AI cannot see when the trigger fires does not exist. A core stuffed with lines nobody triggers is broken the other way.

@@ -88,7 +88,7 @@ One line makes this skill exist. Where it goes depends on how central it is to t
 Either way the line is the same:
 
 ```
-EVALX. Compare 2 to 6 real options for one decision. Weights declared before scoring, kill criteria before ranking, "do nothing" always on the table, three bands each with its own failure boundary. Owner-invoked only. Spec: skills/evalx.md
+EVALX. Compare 2 to 6 real options for one decision. Weights declared before scoring, kill criteria before ranking, "do nothing" always on the table, three bands each with its own failure boundary. Owner-invoked only. Spec: skills/evalx/SKILL.md
 ```
 
 A skill the AI cannot see when the trigger fires does not exist. A core stuffed with lines nobody triggers is broken the other way.

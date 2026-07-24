@@ -1,6 +1,6 @@
 # Layer 1 · Constitution
 
-**The file your AI reads before it knows anything else, and the only file that costs you on every single message.**
+**The file your AI reads before it knows anything else, and one of the two files that cost you on every single message, the other being focus.**
 
 That second half decides everything about how it is written. A constitution is not the place for the best writing about the owner. It is the place for the lines that change what the AI does, paid for again on every message for the rest of the year.
 

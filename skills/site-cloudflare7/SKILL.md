@@ -96,7 +96,7 @@ One line makes this skill exist. Where it goes depends on how central it is to t
 Either way the line is the same:
 
 ```
-SITE-CLOUDFLARE7. Static pages I own, published to my own addresses. The AI writes the files, I preview, I approve the deploy, one page one address, never overwrite a live project unchecked, never delete. Spec: skills/site-cloudflare7.md
+SITE-CLOUDFLARE7. Static pages I own, published to my own addresses. The AI writes the files, I preview, I approve the deploy, one page one address, never overwrite a live project unchecked, never delete. Spec: skills/site-cloudflare7/SKILL.md
 ```
 
 A skill the AI cannot see when the trigger fires does not exist. A core stuffed with lines nobody triggers is broken the other way.

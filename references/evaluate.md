@@ -14,7 +14,7 @@
 
 > **Name one thing your system told you that you had not asked it, and say what you did differently because of it.**
 
-If there is no answer, you already have the finding, and no score in the other six dimensions changes it. A satisfied owner shipping real work can still fail this one, and that is exactly the case worth catching, because nothing in their week will reveal it to them on its own.
+If there is no answer, you already have the finding, and no other score changes it. A satisfied owner shipping real work can still fail this one, and that is exactly the case worth catching, because nothing in their week will reveal it to them on its own.
 
 **3. If you cannot read files, ask and score the answers,** and say in the output you scored a description. What loads at session start and how big? Where does a new note go? Which three methods did you last trigger? What can the AI reach outside its files, and do without asking? Which file says what matters now? What did you add last month and actually use?
 
@@ -45,7 +45,7 @@ Detail per layer: [1-constitution](1-constitution.md), [2-memory](2-memory.md), 
 
 ## Each gap has a skill that closes it
 
-**This is the point of scoring.** A number with no next move is a report card. When a dimension is low, name the skill in [the library](../skills/) that raises it, so the owner leaves with a move, not a grade. The skills are in `skills/` in this same repository, so you can read any of them right now to see exactly what the fix involves.
+**This is the point of scoring.** A number with no next move is a report card. When a dimension is low, name the skill in [the library](../skills/) that raises it, so the owner leaves with a move, not a grade. If you have this repository open, read the skill you are about to name before you name it. If this file was pasted to you on its own, you have not read it, and you say so: name the skill, quote its trigger word, and point the owner at github.com/arete-aios/aios to fetch the file. Never describe or run a skill you have not read.
 
 | Low dimension | The skill that raises it | What it does |
 |---|---|---|
@@ -56,7 +56,7 @@ Detail per layer: [1-constitution](1-constitution.md), [2-memory](2-memory.md), 
 | **Focus** | `focus7` | One small current file the AI pushes back with |
 | **The loop** | `in7` and `exit7` and `focus7` now, `week7` at the weekly turn | Capture, close the session, and the file that changes the next decision |
 
-The loop row is the one that matters most. If dimension 6 is low, those three skills are the whole prescription, and no other skill should be added before they run. In a client that reads this repository as a marketplace they install together as `loop@arete-aios`, which exists so that "only three" is one command rather than a rule the owner has to enforce on themselves.
+The loop row is the one that matters most. If dimension 6 is low, those first three are the whole prescription, and no other skill should be added before they run. In a client that supports plugin marketplaces, add it once with `/plugin marketplace add arete-aios/aios`, then `/plugin install loop@arete-aios` installs exactly those three and nothing else, which exists so that "only three" is one command rather than a rule the owner has to enforce on themselves.
 
 ---
 
@@ -64,7 +64,7 @@ The loop row is the one that matters most. If dimension 6 is low, those three sk
 
 **If three or more of the six dimensions score below 25, do not render a table or a total.** A precise score of a system that does not exist is theatre. Say plainly:
 
-> You are at the start. There is no system to score yet, only a beginning, and that is the normal place to begin. The first move is one thing: a one-page constitution that your AI reads at the start of every session. The `constitution7` skill in this repository does exactly that, by interviewing you and writing it for you. **I can run it with you right now if you want, it takes about twenty minutes and you answer, I write.** After that we build the other layers in order from [1-constitution](1-constitution.md), and you come back for a real score once three of the six are above 25.
+> You are at the start. There is no system to score yet, only a beginning, and that is the normal place to begin. The first move is one thing: a one-page constitution that your AI reads at the start of every session. The `constitution7` skill does exactly that, by interviewing you and writing it for you. **If I can open it, I can run it with you right now, it takes about twenty minutes and you answer, I write. If I cannot, paste it to me from github.com/arete-aios/aios and we start the moment it arrives.** After that we build the other layers in order from [1-constitution](1-constitution.md), and you come back for a real score once four of the six are above 25.
 
 Then stop. No band, no path to 100. **End on the offer to start, not on a list of homework.**
 
@@ -81,7 +81,7 @@ Then stop. No band, no path to 100. **End on the offer to start, not on a list o
 - **Focus 5.** No file says what matters now.
 - **The loop 0.** Capture into Notion runs, nothing ever comes back unasked. 0-anchor.
 
-**Verdict the threshold produces:** six of six below 25, far past the trigger. No table, no total. Output is the stage 1 message above: one constitution page that loads each session, then build the layers in order. A 12/100 here would look rigorous and mean nothing.
+**Verdict the threshold produces:** six of six below 25, far past the trigger. No table, no total. Output is the stage 1 message above: one constitution page that loads each session, then build the layers in order. A 6/100 here would look rigorous and mean nothing.
 
 ---
 
@@ -95,9 +95,9 @@ Score all seven, whole numbers, evidence per row.
 - **Never round up.** Torn between 68 and 72, write 68.
 - **Bands.** 90+, leave it alone. 75 to 89, one or two fixes. 50 to 74, carries debt. Below 50, stop adding and repair.
 
-**Then three lists. Missing:** only what changes something this month; if the loop is open, the top item is closing it, never adding a skill. **Excess:** anything installed and never triggered, unused a month, empty, or kept because it exists. Name it, say remove it. **Too complex:** anything that only works on a good day; give the simpler version.
+**Then three lists. Missing:** only what changes something this month; if the loop is open, the top item is closing it, never adding a skill from outside the loop. **Excess:** anything installed and never triggered, unused a month, empty, or kept because it exists. Name it, say remove it. **Too complex:** anything that only works on a good day; give the simpler version.
 
-Then a ranked **path to 100**: three to seven actions, biggest gain first, each naming the action, the percentage it is worth, the dimension it lifts, every one doable this week. One addition at a time. Finish with **one hard truth**. If nothing stings, you softened it.
+Then a ranked **path to 100**: three to seven actions, biggest gain first, each naming the action, the points it adds to the overall, and the dimension it lifts, every one doable this week, and together they roughly close the gap to 100; if they do not, say what the remaining points require and that it is not this month's work. One addition at a time. Finish with **one hard truth**. If nothing stings, you softened it.
 
 ---
 
@@ -131,7 +131,7 @@ TOO COMPLEX (simplify)
 1. ...
 
 PATH TO 100
-1. <action> · +x% · lifts <dimension>
+1. <action> · +x pts · lifts <dimension>
 ...
 
 HARD TRUTH
@@ -144,7 +144,7 @@ and an offer to run it together now. Not "you should", but "we can, want me to s
 
 **Length is a rule, not a preference: one screen per section, the whole evaluation under two pages.** Evidence cells are one clause. Each list item is one line naming the thing and the move, not a paragraph explaining it. The owner is about to be told something uncomfortable about work they are proud of, and a long report is the easiest thing in the world to skim into agreement and then never act on. If a section will not fit, you have not finished deciding what mattered in it.
 
-**Close on the offer, never on the homework.** The last thing the owner reads is not a list of what they lack, it is you offering to help with the one thing that matters most, naming the skill that does it and asking to begin. A grade with no hand extended is the thing that made them abandon the last two attempts. You have read the skill that closes their biggest gap, it is in `skills/` in this repository, so you can start it in the same conversation. Offer that.
+**Close on the offer, never on the homework.** The last thing the owner reads is not a list of what they lack, it is you offering to help with the one thing that matters most, naming the skill that does it and asking to begin. A grade with no hand extended is the thing that made them abandon the last two attempts. If you can read the skill that closes their biggest gap, start it in the same conversation. If you cannot, offer the same thing in one extra step: name it, ask them to paste it, and begin the moment it arrives.
 
 Unknown dimensions carry the word **unknown**, not a number. The full scoring method, including how to keep a series comparable over time, is the `eval7` skill in [the library](../skills/eval7/SKILL.md).
 

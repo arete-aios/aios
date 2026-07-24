@@ -85,7 +85,7 @@ One line makes this skill exist. Where it goes depends on how central it is to t
 Either way the line is the same:
 
 ```
-EVAL7 {artifact}. Score ONE existing thing against its stated goal, 7 dimensions with evidence, overall score, ranked path to 100, one hard truth at the end. Never self-invoked. Spec: skills/eval7.md
+EVAL7 {artifact}. Score ONE existing thing against its stated goal, 7 dimensions with evidence, overall score, ranked path to 100, one hard truth at the end. Never self-invoked. Spec: skills/eval7/SKILL.md
 ```
 
 A skill the AI cannot see when the trigger fires does not exist. A core stuffed with lines nobody triggers is broken the other way.

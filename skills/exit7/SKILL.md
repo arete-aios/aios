@@ -88,7 +88,7 @@ One line makes this skill exist. Where it goes depends on how central it is to t
 Either way the line is the same:
 
 ```
-EXIT7 at session close. Find everything that lives only in the chat, come back with ready diffs not questions, verify the index actively, then ask whether the focus layer changes. No new work. Spec: skills/exit7.md
+EXIT7 at session close. Find everything that lives only in the chat, come back with ready diffs not questions, verify the index actively, then ask whether the focus layer changes. No new work. Spec: skills/exit7/SKILL.md
 ```
 
 A skill the AI cannot see when the trigger fires does not exist. A core stuffed with lines nobody triggers is broken the other way.

@@ -93,7 +93,7 @@ One line makes this skill exist. Where it goes depends on how central it is to t
 Either way the line is the same:
 
 ```
-VERIFY7 / V7 {question}, also self-invoked. Ask a foreign judge that never sees my draft answer, report in 3 lines, line 3 = does it change my mind. Spec: skills/verify7.md
+VERIFY7 / V7 {question}, also self-invoked. Ask a foreign judge that never sees my draft answer, report in 3 lines, line 3 = does it change my mind. Spec: skills/verify7/SKILL.md
 ```
 
 A skill the AI cannot see when the trigger fires does not exist. A core stuffed with lines nobody triggers is broken the other way.

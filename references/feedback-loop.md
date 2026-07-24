@@ -48,7 +48,7 @@ Ask the owner for one specific instance from the last two weeks:
 
 > **Name one thing your system told you that you had not asked it, and say what you did differently because of it.**
 
-If they can, the loop is closed and the system is working, whatever else is missing. If they cannot, nothing else in the system matters yet, and the correct next action is never to add a skill. It is to name the mechanism for step three and put it on a day of the week.
+If they can, the loop is closed and the system is working, whatever else is missing. If they cannot, nothing else in the system matters yet, and the correct next action is never to add a skill from outside the loop. It is to name the mechanism for step three and put it on a day of the week.
 
 **One closed loop with three skills beats twenty skills and an open one.** That is not a preference. It is the whole finding.
 

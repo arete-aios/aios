@@ -86,7 +86,7 @@ Read the constitution before the first question, for two reasons. It already ans
 This runs rarely: once properly, then in pieces when reality moves. **Do not spend core context on the method.** Put the spec in the skills index the core already links to. What does belong in the always loaded core is one line, because it changes what you are allowed to do in every other session:
 
 ```
-DEEPDIVE7. My inventory lives in memory: who I am, what I have, what is in the way, each item scored 0 to 10 for the next twelve months. My money disclosure level is [everything in / summary only / nothing]. Never plan against a resource that is not in it. Spec: skills/deepdive7.md
+DEEPDIVE7. My inventory lives in memory: who I am, what I have, what is in the way, each item scored 0 to 10 for the next twelve months. My money disclosure level is [everything in / summary only / nothing]. Never plan against a resource that is not in it. Spec: skills/deepdive7/SKILL.md
 ```
 
 ### MEMORY

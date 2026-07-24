@@ -90,7 +90,7 @@ Read the constitution and memory before the transcript, because the transcript c
 One line makes this skill exist. In meetings most days, put it in the always loaded core. Occasional, put it in the skills index the core already links to. A skill the AI cannot see when the trigger fires does not exist. A core stuffed with lines nobody triggers is broken the other way.
 
 ```
-MEETING7. After every meeting: one note, fixed sections, their words quoted not summarised, every commitment dated where I will see it. After several meetings with one person: one profile, two lenses, confidence stated. Never process the same meeting twice. Spec: skills/meeting7.md
+MEETING7. After every meeting: one note, fixed sections, their words quoted not summarised, every commitment dated where I will see it. After several meetings with one person: one profile, two lenses, confidence stated. Never process the same meeting twice. Spec: skills/meeting7/SKILL.md
 ```
 
 ### MEMORY

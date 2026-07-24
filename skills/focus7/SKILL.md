@@ -20,12 +20,12 @@ metadata:
 
 ## REQUIRES
 
-**Nothing below is a hard blocker, and the file itself does not have to exist yet.**
+**This skill has two modes, and nothing below is a hard blocker.**
 
-**Cold start, no focus file at all.** This is the common case and this skill is how it ends. You read whatever the system already holds, write the first version from that evidence, and then connect it so the client loads it at the start of every session. That last part is the run, not a follow-up: a focus file nobody loads is a document, and writing one without wiring it is the most common way this layer gets built and stays useless.
+**Cold start, no focus file yet.** The common case, and this skill is how it ends. You read whatever the system already holds, write the first version from that evidence, and wire it so the client loads it at the start of every session. The wiring is part of the run, not a follow-up: a focus file nobody loads is a document.
 **Maintenance, the file exists.** Everything below, as a diff the owner approves area by area.
 
-**And a second axis, independent of the first.** **With data feeds:** you scan calendar, health, money and notes yourself, and the numbers come from measurements rather than impressions. Faster and far harder to argue with. **Without them:** the same thing as a structured interview, one area at a time, one line per answer. Slower, and it still produces a true file, because the diff and the approval are the valuable parts and the feeds only make them quicker.
+Both modes run with or without data feeds. **With them:** you scan calendar, health, money and notes yourself, and the numbers come from measurements rather than impressions. Faster and far harder to argue with. **Without them:** the same thing as a structured interview, one area at a time, one line per answer. Slower, and still a true file, because the diff and the approval are the valuable parts.
 
 | What | Needed | How to connect |
 |---|---|---|
@@ -99,7 +99,7 @@ One line makes this skill exist. Where it goes depends on how central it is to t
 Either way the line is the same:
 
 ```
-FOCUS7 [area]. Rescan my life areas from real data, show a diff per area, write only what I approve, move overflow to the logs, never delete. Spec: skills/focus7.md
+FOCUS7 [area]. Rescan my life areas from real data, show a diff per area, write only what I approve, move overflow to the logs, never delete. Spec: skills/focus7/SKILL.md
 ```
 
 A skill the AI cannot see when the trigger fires does not exist. A core stuffed with lines nobody triggers is broken the other way.

@@ -83,7 +83,7 @@ One line makes this skill exist. Where it goes depends on how central it is to t
 Either way the line is the same:
 
 ```
-CONTEXT7 / COX7 {folder}. One master file per folder, it lists everything inside, unlisted means invisible. Check, report gaps, propose the missing lines, wait for my OK. Spec: skills/context7.md
+CONTEXT7 / COX7 {folder}. One master file per folder, it lists everything inside, unlisted means invisible. Check, report gaps, propose the missing lines, wait for my OK. Spec: skills/context7/SKILL.md
 ```
 
 A skill the AI cannot see when the trigger fires does not exist. A core stuffed with lines nobody triggers is broken the other way.

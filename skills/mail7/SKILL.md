@@ -89,7 +89,7 @@ One line makes this skill exist. Where it goes depends on how central it is to t
 Either way the line is the same:
 
 ```
-MAIL7. My AI's own mailbox. Deep and important goes by email, max ~5 letters a week, one letter one topic, HTML, third parties never without my OK. Spec: skills/mail7.md
+MAIL7. My AI's own mailbox. Deep and important goes by email, max ~5 letters a week, one letter one topic, HTML, third parties never without my OK. Spec: skills/mail7/SKILL.md
 ```
 
 A skill the AI cannot see when the trigger fires does not exist. A core stuffed with lines nobody triggers is broken the other way.

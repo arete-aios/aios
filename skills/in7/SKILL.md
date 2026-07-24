@@ -95,7 +95,7 @@ One line makes this skill exist. Where it goes depends on how central it is to t
 Either way the line is the same:
 
 ```
-IN7 {free text}. Parse one daily message into my weekly file, two layers, then show only the gaps plus max 3 optional questions. Never ask for numbers a device already knows. Spec: skills/in7.md
+IN7 {free text}. Parse one daily message into my weekly file, two layers, then show only the gaps plus max 3 optional questions. Never ask for numbers a device already knows. Spec: skills/in7/SKILL.md
 ```
 
 A skill the AI cannot see when the trigger fires does not exist. A core stuffed with lines nobody triggers is broken the other way.
