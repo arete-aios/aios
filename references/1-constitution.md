@@ -29,7 +29,7 @@ This is the useful part, because every failed constitution failed the same way.
 - **Description instead of instruction.** A paragraph about the owner's childhood, values, personality, the story of how they got here. It reads beautifully and changes nothing, and it is loaded on every message forever. Move it to memory.
 - **Anything dated.** This week, this quarter, the current client, the number as of last month. Dated content in an always loaded file is wrong within weeks and expensive the whole time.
 - **Project detail.** One project's context belongs with that project, not in the file every message pays for.
-- **The skill library itself.** A trigger line for a skill fired most days, yes. Twenty-four lines for skills nobody triggers, no. Those belong in an index the core links to.
+- **The skill library itself.** A trigger line for a skill fired most days, yes. Twenty-seven lines for skills nobody triggers, no. Those belong in an index the core links to.
 - **Anything updated more than a few times a year.** Pointer in the core, moving thing behind it.
 
 **The most common way these fail is absorption.** The constitution starts as a core and slowly eats the whole system, one reasonable addition at a time, until the owner is loading their entire life on every message and wondering why the answers got vaguer.

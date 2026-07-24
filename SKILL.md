@@ -82,7 +82,7 @@ status: not passed yet
 
 ## Passed
 1 constitution7 · 01-09 · fresh session named my deadline unprompted
-2 braindump7    · 01-11 · 4200 words out, three things I did not know I was carrying
+2 braindump7    · 01-11 · 4200 words captured, three things I did not know I was carrying
 3 deepdive7       · 01-12 · runway written down, advice stopped assuming money
 4 memory7       · 01-14 · six folders, new note filed without asking me
 
@@ -108,7 +108,7 @@ Nine stages. **Refuse them out of order** and say which exit test is still open.
 | # | Stage | What happens | Exit test |
 |---|---|---|---|
 | **1** | `constitution7` | The core exists. Everything else now has something to attach to | A fresh session answers something it could only know from the constitution |
-| **2** | `braindump7` | Head out into text, unstructured, no filing | The owner said more than they thought they had |
+| **2** | `braindump7` | The owner empties their head into one unstructured file. `braindump7` is the skill that captures and later files it; here the job is just to get it all out | The owner said more than they thought they had |
 | **3** | `deepdive7` | Inventory: money, time, knowledge, network, what is already paid for | You stop giving advice that assumes a runway that is not there |
 | **4** | `memory7` | Stages 2 and 3 become folders that fit **this** owner | A new note has an obvious home without anyone asking |
 | **5** | `in7` + `exit7` + `focus7` | The daily loop. **Only these three** | One skill ran **unasked** |

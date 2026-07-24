@@ -29,7 +29,7 @@ A skill file that works contains: what it is for, what it requires and what happ
 
 ## What is offered here
 
-Twenty-four, grouped by one rule: **what is different in the world when the skill finishes.**
+Twenty-seven, grouped by one rule: **what is different in the world when the skill finishes.**
 
 | Group | After a run | Skills |
 |---|---|---|
