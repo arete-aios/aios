@@ -78,7 +78,7 @@ Never assume silently. If you had to guess whether a figure was private, treat i
 
 - The owner says `DASHBOARD7`, or asks to see the state of their system, a status page, or how far along their AIOS is.
 - **When onboarding is finished and the loop is closed.** This is the moment the skill was built for: the invisible system finally has enough in it to be worth drawing.
-- **At a group or cohort checkpoint** where everyone shows where their system stands. A shared page shape makes systems comparable at a glance.
+- **At a group checkpoint** where everyone shows where their system stands. A shared page shape makes systems comparable at a glance.
 - **When something structural changed** and the picture is now out of date: a layer came online, the constitution crossed its budget, the focus moved.
 
 **Not a trigger:** building it early because it feels productive. A calendar reminder to regenerate it on a schedule, which produces a page nobody looked at made from data nobody changed. And using it as a place to store operational data it was never meant to hold. It is a mirror, not a workspace.

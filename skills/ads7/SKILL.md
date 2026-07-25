@@ -4,7 +4,7 @@ description: "ADS7: a change protocol for live ad accounts: measure first, prote
 license: CC-BY-4.0
 metadata:
   author: fulldigital.me
-  version: "2.0.0"
+  version: "1.0.0"
   source: ads7
   synced: "2026-07-23"
 ---
@@ -142,7 +142,7 @@ Steps for you, the assistant. Goal level, not code level.
 
 **3. The hard rule.**
 
-> **Never replace what is producing results with something untested. A new hypothesis is a new ad group or campaign, built beside the existing one, never in its place.**
+> 🔒 **Never replace what is producing results with something untested. A new hypothesis is a new ad group or campaign, built beside the existing one, never in its place.**
 
 Switching the old thing off is the last step, not the first, and it needs evidence: not "this looks off target", but data showing it fails while the new thing already performs better live. Until the replacement proves itself, the old one stays on. Overlapping traffic costs less than zero traffic.
 
@@ -154,7 +154,7 @@ If the rule feels like it is in the way, you are about to switch off something t
 
 **5. Dry run, then show the diff:** what you will enable, disable, modify, and **what you are deliberately leaving alone**. That last part matters most, and it is the part every tool omits.
 
-**6. Apply only with the owner's explicit approval**, read the state back immediately, then check impressions at 48 hours. Down more than 30 percent: revert first, analyze afterwards. Never click the ads yourself to test them, invalid clicks can get the account suspended.
+**6. 🔒 Apply only with the owner's explicit approval**, read the state back immediately, then check impressions at 48 hours. Down more than 30 percent: revert first, analyze afterwards. Never click the ads yourself to test them, invalid clicks can get the account suspended.
 
 **7. Zero data is not proof of a defect.** A second real failure: the AI declared tracking broken three times because analytics showed zero events. The tracking code was present, the tag manager installed, there was simply no event tag, and no click had ever converted. Before calling anything broken, run three cheap checks: is the thing you want to add already in the code, has the event ever happened at all, and does the instrument even measure it. **Zero means "I do not know", not "it is broken".**
 
@@ -187,5 +187,5 @@ Missing any of the four means the change is not finished.
 ---
 
 **Skill by Egils Boitmanis, [FullDigital](https://fulldigital.me), a Latvia registered nonprofit association that teaches people to build an AI operating system they own.**
-What an AIOS is: [fulldigital.me/aios](https://fulldigital.me/aios) · The full skill library: [fulldigital.me/aios/skills](https://fulldigital.me/aios/skills)
+What an AIOS is: [fulldigital.me/aios](https://fulldigital.me/aios) · The full library: [github.com/arete-aios/aios](https://github.com/arete-aios/aios)
 Licensed CC BY 4.0. Use it, change it, ship it. Keep the attribution.
