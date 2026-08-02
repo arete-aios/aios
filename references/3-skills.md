@@ -29,7 +29,7 @@ A skill file that works contains: what it is for, what it requires and what happ
 
 ## What is offered here
 
-Twenty-seven, grouped by one rule: **what is different in the world when the skill finishes.**
+Twenty-eight, grouped by one rule: **what is different in the world when the skill finishes.**
 
 | Group | After a run | Skills |
 |---|---|---|
@@ -37,7 +37,7 @@ Twenty-seven, grouped by one rule: **what is different in the world when the ski
 | **start** | The system exists where there was nothing | `constitution7` `braindump7` `deepdive7` `memory7` `channel7` |
 | **aios** | The system's own always loaded files have changed | `context7` `focus7` `exit7` `week7` `audit7` `dashboard7` |
 | **capture** | Memory holds a record that did not exist | `in7` `inbox7` `voice7` `watch7` `meeting7` `news7` |
-| **decide** | A written judgment exists where there was an opinion | `eval7` `evalx` `verify7` `kw7` |
+| **decide** | A written judgment exists where there was an opinion | `eval7` `evalx` `verify7` `kw7` `companies7` |
 | **people** | You know one named human better | `warm7` |
 | **reach** | Something outside your own files has changed | `mail7` `slides7` `site-cloudflare7` `site-lovable7` `ads7` |
 
@@ -52,7 +52,7 @@ Install:
 
 Or take one file and paste it into any assistant, with nothing installed at all. The file tells the AI what to do with itself.
 
-**Nobody needs all twenty-seven.** Three is a working system. The rest are answers to needs that have not happened yet, and installing an answer before the need is the most expensive habit in this whole layer.
+**Nobody needs all twenty-eight.** Three is a working system. The rest are answers to needs that have not happened yet, and installing an answer before the need is the most expensive habit in this whole layer.
 
 ---
 
