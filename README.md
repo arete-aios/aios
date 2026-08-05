@@ -83,7 +83,7 @@ Each raises a specific layer. When an evaluation finds a gap, the skill that clo
 | **start** | the system exists where there was nothing | `constitution7` `braindump7` `deepdive7` `memory7` `channel7` |
 | **aios** | the system's own files stay honest | `context7` `focus7` `exit7` `week7` `audit7` `dashboard7` |
 | **capture** | memory holds a record that did not exist | `in7` `inbox7` `voice7` `watch7` `meeting7` `news7` |
-| **decide** | a written judgment exists where there was an opinion | `eval7` `evalx` `verify7` `kw7` `companies7` |
+| **decide** | a written judgment exists where there was an opinion | `eval7` `evalx` `verify7` `kw7` `companies7` `web7` |
 | **people** | you know one named human better | `warm7` |
 | **reach** | something outside your own files changed | `mail7` `slides7` `site-cloudflare7` `site-lovable7` `ads7` |
 
