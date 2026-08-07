@@ -4,9 +4,9 @@ description: "WEB7: audit a company's whole web presence against marketing and s
 license: CC-BY-4.0
 metadata:
   author: fulldigital.me
-  version: "0.5.0"
+  version: "0.5.1"
   source: web7
-  synced: "2026-08-05"
+  synced: "2026-08-07"
 ---
 
 # SKILL: Audit a web presence the way a buyer walks it
@@ -42,6 +42,13 @@ The audit runs at three depths. Pick the one today allows, say which one you ran
 **Check your connectors before you write code.** Several of these now arrive as MCP servers or ready connectors inside AI clients, which is a connect and approve step rather than a build step. What MCP is: [modelcontextprotocol.io](https://modelcontextprotocol.io).
 
 **A human step is a legitimate kind of step, not a gap.** Some of the strongest checks here are a person opening a browser: looking up an ad library, walking a checkout, reading a third party traffic estimate. When a step is human, say so, say exactly what the person does, and label what comes back as an estimate if that is what it is.
+
+**A check belongs to a depth by its method, not by its importance**, and the honest consequence is that the fast run cannot score everything. Two sections in particular:
+
+- **The base is unscoreable in fast mode.** Every check in it needs either a language model reading the page or an answer from the owner. There is no purely mechanical version of "is this worth buying". In a fast report the base prints grey and gives no number.
+- **The last door is nearly unscoreable in fast mode.** Only the mail domain records can be read without a submission, a readable mailbox, or a thirty day tail.
+
+Say this in the report rather than letting the reader infer that a grey section passed. A fast run answers *are they findable and does the site work*. It does not answer *is there anything here worth buying* or *does the contact survive*.
 
 ---
 
