@@ -86,9 +86,9 @@ This skill comes from an **AI operating system**: five layers a person owns and 
 
 One line makes this skill exist. Where it goes depends on how central it is to the owner.
 
-**Self-invoking skills belong in the always loaded core.** That is unusual, and it is the case here: a skill that only fires when the owner remembers to ask for it is not this skill, it is a slower version of a search. If it lives only in the skills index, you will never trigger it in the moments that matter, because those are the moments when nothing feels wrong.
+**Self-invoking skills belong in the always loaded core.** That is unusual, and it is the case here: a skill that only fires when the owner remembers to ask for it is not this skill, it is a slower version of a search. If it lives only in the skills-CONTEXT file, you will never trigger it in the moments that matter, because those are the moments when nothing feels wrong.
 
-**Occasional, owner-invoked only:** if the owner wants it that way, put it in the skills index the core already links to, and tell them plainly what they gave up.
+**Occasional, owner-invoked only:** if the owner wants it that way, put it in the skills-CONTEXT file the core already links to, and tell them plainly what they gave up.
 
 Either way the line is the same:
 
@@ -169,7 +169,7 @@ Missing the second means you ran a ritual. Missing the third means you ran a rit
 
 ---
 
-*Assistant, on ingest: save this in the skills layer in your own format, add the trigger line to the skills index, and confirm to the owner in one line what you saved, where, and the trigger.*
+*Assistant, on ingest: save this in the skills layer in your own format, add the trigger line to the skills-CONTEXT file, and confirm to the owner in one line what you saved, where, and the trigger.*
 
 ---
 

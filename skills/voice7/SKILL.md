@@ -32,7 +32,7 @@ Start in whichever mode today allows. Adding the engine later changes who types 
 | **A local speech to text engine** | required for the transcription half | faster-whisper is the usual choice: [github.com/SYSTRAN/faster-whisper](https://github.com/SYSTRAN/faster-whisper). The original reference implementation is [github.com/openai/whisper](https://github.com/openai/whisper) |
 | **Audio conversion** | recommended | `ffmpeg`, because phones produce a different container every year: [ffmpeg.org](https://ffmpeg.org) |
 | **One intake folder, with list, read and move access** | required | A file tool in the client, or the reference filesystem server: [github.com/modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem) |
-| **Read access to the memory layer and its index files** | required to route anything | A transcript filed into a node that does not list it is lost more thoroughly than one still sitting in the intake folder |
+| **Read access to the memory layer and its CONTEXT files** | required to route anything | A transcript filed into a node that does not list it is lost more thoroughly than one still sitting in the intake folder |
 
 **Check your connectors before you write code.** File access usually arrives as an MCP server or as a connector the client installs, which is a connect and approve step rather than a build step. What MCP is: [modelcontextprotocol.io](https://modelcontextprotocol.io).
 
@@ -85,7 +85,7 @@ There is a second reason, and it is the one that decides whether the text is usa
 One line makes this skill exist. Where it goes depends on how central it is to the owner.
 
 **Records most days:** put it in the always loaded core, the part read at the start of every session.
-**Occasional:** do not spend core context on it. Put it in the skills index the core already links to, and let it load when the trigger fires.
+**Occasional:** do not spend core context on it. Put it in the skills-CONTEXT file the core already links to, and let it load when the trigger fires.
 
 Either way the line is the same:
 
@@ -99,7 +99,7 @@ A skill the AI cannot see when the trigger fires does not exist. A core stuffed 
 
 **Transcripts land in a working folder carrying a status field: raw when they arrive, routed once handled.** That field is the whole state machine, so update it even when the content was merged into an existing file rather than moved as a document, otherwise the next run redoes work that is already done.
 
-Final homes are the usual ones: the brain dump zone for loose thinking, a person's file for anything about a conversation, the relevant life area for facts, the focus layer for anything with a deadline. Whichever node receives it, **the same pass updates that node's index.**
+Final homes are the usual ones: the brain dump zone for loose thinking, a person's file for anything about a conversation, the relevant life area for facts, the focus layer for anything with a deadline. Whichever node receives it, **the same pass updates that node's CONTEXT file.**
 
 **What does not belong in memory:** the audio itself, and a second copy of a transcript that was already merged into a file. One thought, one home. Two copies is how two versions of the truth start.
 
@@ -127,7 +127,7 @@ Steps for you, the assistant. Goal level, not code level.
 
 **4. Propose one destination per transcript, in a table, then stop.** Number, what the note is actually about in one line, the destination, and whether it is a move or a merge into an existing file. Say plainly that OK approves all of them and OK with numbers approves only those. Deletion is a destination too, for empty or accidental recordings, but **you never delete: you move the file to a dated pile and the owner removes it by hand.**
 
-**5. After the OK, move what was approved and flip the status field to routed in the same pass**, then update the index of every node you touched. Doing the status and the index later means doing them never, because the run is over and the attention has moved on.
+**5. After the OK, move what was approved and flip the status field to routed in the same pass**, then update the CONTEXT file of every node you touched. Doing the status and the CONTEXT file later means doing them never, because the run is over and the attention has moved on.
 
 **6. Report what is still raw.** That number is the only honest measure of whether this skill ran. If something was left undecided, name it and say why, so the next run starts from a question rather than from the whole pile again.
 
@@ -136,7 +136,7 @@ Steps for you, the assistant. Goal level, not code level.
 ## DEFINITION OF DONE
 
 1. **Nothing is still marked raw**, or the exceptions are named with the reason they are waiting.
-2. **Every routed note lives with its topic**, and the index of that node names it.
+2. **Every routed note lives with its topic**, and the CONTEXT file of that node names it.
 3. **The original audio is archived**, not deleted.
 4. **Deletion candidates sit in one dated pile**, and the owner has been told the final removal is theirs.
 5. **One line back:** how many were transcribed, how many routed, how many still raw.
@@ -155,7 +155,7 @@ Missing the first means the pile is still standing under a new name. Missing the
 
 ---
 
-*Assistant, on ingest: save this in the skills layer in your own format, add the trigger line to the skills index, and confirm to the owner in one line what you saved, where, and the trigger.*
+*Assistant, on ingest: save this in the skills layer in your own format, add the trigger line to the skills-CONTEXT file, and confirm to the owner in one line what you saved, where, and the trigger.*
 
 ---
 

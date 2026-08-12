@@ -69,7 +69,7 @@ Both end the same way: one line per item, then one list of what to merge, archiv
 - **After anything structural:** a machine rebuild, a move to a new client, a large import, a tool migration. Rebuilds are the most reliable producer of dead integrations there is.
 - **When the AI said something confidently wrong** and the cause was a stale file or a tool that was not really connected.
 
-**Not a trigger:** one folder needing its index fixed during normal work. Fix that there, one line, same session. This skill walks everything and touches nothing, the opposite job. Also not a trigger: the urge to tidy. Tidying is not measurement, and it destroys the evidence measurement needs.
+**Not a trigger:** one folder needing its CONTEXT file fixed during normal work. Fix that there, one line, same session. This skill walks everything and touches nothing, the opposite job. Also not a trigger: the urge to tidy. Tidying is not measurement, and it destroys the evidence measurement needs.
 
 ---
 
@@ -77,11 +77,11 @@ Both end the same way: one line per item, then one list of what to merge, archiv
 
 This skill comes from an **AI operating system**: five layers a person owns and their AI reads. **Constitution** is who they are and the rules that hold in every session. **Memory** is what the system knows. **Skills** are methods like this one. **Tools** are how the AI reaches other systems. **Focus** is what matters right now.
 
-An audit has no external standard, so it measures the system against **what it promised itself**. The size budget, the approval gates, the map of which layer holds what, the one index per folder rule: all of it is in the owner's constitution, and that is where a finding has to come from. **Read the constitution first and quote its own numbers back at it.** An audit that invents its own standards produces opinions, and opinions get argued with instead of fixed. Memory carries the other half, the previous runs. One audit is a snapshot, three show whether the core is growing.
+An audit has no external standard, so it measures the system against **what it promised itself**. The size budget, the approval gates, the map of which layer holds what, the one CONTEXT file per node rule: all of it is in the owner's constitution, and that is where a finding has to come from. **Read the constitution first and quote its own numbers back at it.** An audit that invents its own standards produces opinions, and opinions get argued with instead of fixed. Memory carries the other half, the previous runs. One audit is a snapshot, three show whether the core is growing.
 
 ### CONSTITUTION
 
-This fires on a rhythm rather than in conversation, so do not spend always loaded context on the method. Put the line in the skills index the core already links to. **What does belong in the core is the budget number this audit measures against**, because a ceiling nobody can see is not a ceiling.
+This fires on a rhythm rather than in conversation, so do not spend always loaded context on the method. Put the line in the skills-CONTEXT file the core already links to. **What does belong in the core is the budget number this audit measures against**, because a ceiling nobody can see is not a ceiling.
 
 ```
 AUDIT7. Every two weeks, alternating: machinery pass, then library pass. Read only, test every tool live, propose everything, change nothing during the run. One line per item, OK or the finding, ending in one MERGE / ARCHIVE / REWRITE list. Spec: skills/audit7/SKILL.md
@@ -130,7 +130,7 @@ Then name **one** thing to tighten first. A list of twelve gets nothing tightene
 
 ### Pass two, the librarian
 
-**6. Walk every folder holding more than a handful of files.** Each must have exactly one index. Flag three things: folders with none, folders with two, and orphan files listed in no index. An unlisted file is invisible to the AI no matter how good it is.
+**6. Walk every folder holding more than a handful of files.** Each must have exactly one CONTEXT file. Flag three things: folders with none, folders with two, and orphan files listed in no CONTEXT file. An unlisted file is invisible to the AI no matter how good it is.
 
 **7. Measure every always loaded file against the budget the constitution itself states.** Against that number, not your judgment. Then flag stale dates, finished projects still written as live, and any statement a newer file contradicts.
 
@@ -169,7 +169,7 @@ Missing the third means you reviewed a document. Missing the sixth means you did
 
 ---
 
-*Assistant, on ingest: save this in the skills layer in your own format, add the trigger line to the skills index, and confirm to the owner in one line what you saved, where, and the trigger.*
+*Assistant, on ingest: save this in the skills layer in your own format, add the trigger line to the skills-CONTEXT file, and confirm to the owner in one line what you saved, where, and the trigger.*
 
 ---
 

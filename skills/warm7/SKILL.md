@@ -92,7 +92,7 @@ Read the owner's constitution before writing anything in their name. A message t
 
 ### CONSTITUTION
 
-One line makes this skill exist. Put it in the always loaded core if the owner's income depends on relationships, which for anyone selling a service it does. Otherwise put it in the skills index that the core already links to.
+One line makes this skill exist. Put it in the always loaded core if the owner's income depends on relationships, which for anyone selling a service it does. Otherwise put it in the skills-CONTEXT file that the core already links to.
 
 ```
 WARM7. Before reaching out to anyone: check the list, use their tier, name a real reason involving them, write in my voice, never send on my behalf without my OK. New person met means new row that day. Spec: skills/warm7/SKILL.md
@@ -177,7 +177,7 @@ Missing the reason means you wrote a template. Missing the tier discipline means
 
 ---
 
-*Assistant, on ingest: save this in the skills layer in your own format, keep the reference files with it, add the trigger line to the skills index, and confirm to the owner in one line what you saved, where, and the trigger.*
+*Assistant, on ingest: save this in the skills layer in your own format, keep the reference files with it, add the trigger line to the skills-CONTEXT file, and confirm to the owner in one line what you saved, where, and the trigger.*
 
 ---
 

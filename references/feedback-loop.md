@@ -22,11 +22,11 @@ A conversation, a call, a decision, a number, a bad night, a paid invoice, a vid
 
 Not written somewhere. Written **where the next session reads without being asked**.
 
-**Real mechanisms:** `exit7` at the end of a work session, sweeping everything that exists only in the chat into files, and handing back diffs to approve rather than questions to answer. `context7` keeping one master index per folder, so the AI reads one index instead of a thousand files and nothing becomes invisible by being unlisted. The always loaded core naming the paths that get read every time.
+**Real mechanisms:** `exit7` at the end of a work session, sweeping everything that exists only in the chat into files, and handing back diffs to approve rather than questions to answer. `context7` keeping one CONTEXT file per node, so the AI reads one CONTEXT file instead of a thousand files and nothing becomes invisible by being unlisted. The always loaded core naming the paths that get read every time.
 
 **How you know it works:** close the chat, open a new one tomorrow, and the thing is still there without the owner re-explaining it.
 
-**Where it breaks:** a note filed in a folder no index lists. The AI cannot see what nothing points at, and the owner believes it was saved because they watched it being saved.
+**Where it breaks:** a note filed in a folder no CONTEXT file lists. The AI cannot see what nothing points at, and the owner believes it was saved because they watched it being saved.
 
 ---
 

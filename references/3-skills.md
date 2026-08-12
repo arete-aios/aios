@@ -10,9 +10,9 @@ A skill is not a prompt and not a document. It is a named procedure with a trigg
 
 **Something the owner has now done three times the same way, badly the first time.** That is the whole entry test. A method earns a file when repeating it from memory has started to produce different results.
 
-A skill file that works contains: what it is for, what it requires and what happens when those requirements are missing, the trigger, what must be true when it is finished, and one line the AI adds to the always loaded core or the skills index so it can be found when the trigger fires.
+A skill file that works contains: what it is for, what it requires and what happens when those requirements are missing, the trigger, what must be true when it is finished, and one line the AI adds to the always loaded core or the skills-CONTEXT file so it can be found when the trigger fires.
 
-**The registration line matters more than the method.** A skill the AI cannot see when the trigger fires does not exist. A core stuffed with lines nobody triggers is broken the other way and costs context on every message. Rule: **most days into the core, occasional into the index.**
+**The registration line matters more than the method.** A skill the AI cannot see when the trigger fires does not exist. A core stuffed with lines nobody triggers is broken the other way and costs context on every message. Rule: **most days into the core, occasional into skills-CONTEXT.**
 
 ---
 
@@ -71,7 +71,7 @@ Two further signs:
 
 The library itself is the layer. **`audit7`** keeps it honest: what is installed, what has never fired, what overlaps with something else, what quietly stopped working after a tool changed.
 
-`context7` keeps the skills index complete, because an unlisted skill is an invisible one.
+`context7` keeps skills-CONTEXT complete, because an unlisted skill is an invisible one.
 
 ---
 

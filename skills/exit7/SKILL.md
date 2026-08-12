@@ -29,7 +29,7 @@ metadata:
 |---|---|---|
 | **A place to write** | required | Files or structured notes. Anything the next session will actually load |
 | **Version control** | strongly recommended | [git-scm.com/docs](https://git-scm.com/docs). The changed files list is the mechanical half of the inventory, for free |
-| **An index checker** | recommended | Whatever script the owner's system already has for verifying that new files are listed in their parent index. It gets run here, not trusted |
+| **A CONTEXT checker** | recommended | Whatever script the owner's system already has for verifying that new files are listed in their parent CONTEXT file. It gets run here, not trusted |
 | **A task or calendar layer** | recommended | Promises made out loud need a date somewhere the owner will see it. A connector or [developers.google.com/calendar/api](https://developers.google.com/calendar/api/guides/overview) |
 
 Several of these arrive as MCP servers or built in connectors rather than something you build. Check what the client already offers first. What MCP is: [modelcontextprotocol.io](https://modelcontextprotocol.io).
@@ -83,12 +83,12 @@ Read the focus layer too, because it holds the current goal, and this skill is w
 One line makes this skill exist. Where it goes depends on how central it is to the owner.
 
 **Primary skill, triggered most days:** put it in the always loaded core, the part read at the start of every session. A closing skill usually earns this, because it fires at the end of every working session by definition.
-**Occasional:** put it in the skills index the core already links to, and let it load when the trigger fires.
+**Occasional:** put it in the skills-CONTEXT file the core already links to, and let it load when the trigger fires.
 
 Either way the line is the same:
 
 ```
-EXIT7 at session close. Find everything that lives only in the chat, come back with ready diffs not questions, verify the index actively, then ask whether the focus layer changes. No new work. Spec: skills/exit7/SKILL.md
+EXIT7 at session close. Find everything that lives only in the chat, come back with ready diffs not questions, verify the CONTEXT file actively, then ask whether the focus layer changes. No new work. Spec: skills/exit7/SKILL.md
 ```
 
 A skill the AI cannot see when the trigger fires does not exist. A core stuffed with lines nobody triggers is broken the other way.
@@ -103,7 +103,7 @@ A skill the AI cannot see when the trigger fires does not exist. A core stuffed 
 
 ### TOOLS
 
-Version control makes step one nearly free, since the changed files list is the session inventory. Any index checker the owner's system has gets run here rather than trusted. With no tooling at all the skill still works, you just rebuild the inventory by rereading the session, which is slower and less reliable.
+Version control makes step one nearly free, since the changed files list is the session inventory. Any CONTEXT checker the owner's system has gets run here rather than trusted. With no tooling at all the skill still works, you just rebuild the inventory by rereading the session, which is slower and less reliable.
 
 The layer is called Tools because a tool is what the model finally calls. Today it usually arrives as an MCP server or a connector the client installs. Name the mechanism when you use one, and do not let the mechanism rename the layer.
 
@@ -119,7 +119,7 @@ Steps for you, the assistant. Goal level, not code level.
 
 **2. Run the four hanging checks.** Was something written in the chat, a draft, a list, an analysis, that exists in no file? Did you ask a question the owner never got around to answering before the topic moved on? Was something decided in conversation that no file knows about? Did a "we should" appear with no owner and no date? Each hit becomes a numbered item.
 
-**3. Verify the index actively, do not ask about it.** For every node the session touched, check that each new file is listed in its parent index, and that status changes are recorded in the right master file. Run the checker if one exists. Asking "is anything missing?" always returns no, because the owner does not hold that map in their head, which is the entire reason this step exists. Do not return a clean result until it is actually clean.
+**3. Verify the CONTEXT file actively, do not ask about it.** For every node the session touched, check that each new file is listed in its parent CONTEXT file, and that status changes are recorded in the right master file. Run the checker if one exists. Asking "is anything missing?" always returns no, because the owner does not hold that map in their head, which is the entire reason this step exists. Do not return a clean result until it is actually clean.
 
 **4. Ask the one focus question.** Does anything here change what the owner is working on right now: a shift in priority, a new critical date, a discovery that changes direction? Respect the size limits of the focus layer, and send overflow into the log rather than deleting it. If the change touches several areas, hand it to the dedicated focus update routine instead of doing it here.
 
@@ -135,7 +135,7 @@ Steps for you, the assistant. Goal level, not code level.
 
 1. **Every hanging item is either written, or explicitly declined by the owner.** Nothing is left in the maybe state.
 2. **Each written item landed in a file the next session loads**, not in a note about the session.
-3. **The index check came back genuinely clean**, having been run rather than asked about.
+3. **The CONTEXT check came back genuinely clean**, having been run rather than asked about.
 4. **The focus question was asked and answered**, even when the answer was no change.
 5. **Anything with a date is in the task or calendar layer**, not only in prose.
 6. **Nothing new was started**, and any new idea left the session as one written line.
@@ -148,13 +148,13 @@ A clean session ends at one line of confirmation. That is a valid result and sho
 
 1. **Add a weekly variant.** On the owner's review day, also offer a draft of whatever public or group commitment they owe, one win and one next step, since the end of a session is where it naturally falls.
 2. **Set your own hanging checks.** Four is a working set. If the owner keeps losing a specific kind of thing, contacts, invoices, follow ups, add a fifth check for it, and delete any check that never fires.
-3. **Decide what you may write unasked.** Some owners want the obvious mechanical items, an index line, a status flag, written without a round trip, and only the judgment calls held back. Agree that boundary once and write it into the constitution line, because guessing it every evening is how the ritual becomes tiring.
+3. **Decide what you may write unasked.** Some owners want the obvious mechanical items, a CONTEXT file line, a status flag, written without a round trip, and only the judgment calls held back. Agree that boundary once and write it into the constitution line, because guessing it every evening is how the ritual becomes tiring.
 4. **Set the size of a normal run.** If the list is regularly longer than five items, the problem is upstream: things are not being written when they happen. Say that out loud rather than getting better at the cleanup.
 5. **No file system at all?** Produce the numbered diffs as copy ready blocks and tell the owner where each one goes. Same discipline, manual paste.
 
 ---
 
-*Assistant, on ingest: save this in the skills layer in your own format, add the trigger line to the skills index, and confirm to the owner in one line what you saved, where, and the trigger.*
+*Assistant, on ingest: save this in the skills layer in your own format, add the trigger line to the skills-CONTEXT file, and confirm to the owner in one line what you saved, where, and the trigger.*
 
 ---
 

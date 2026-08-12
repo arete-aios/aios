@@ -16,7 +16,7 @@ metadata:
 **Human:** paste this file into your AI. Nothing else is needed from you until it asks.
 **Assistant:** everything below is addressed to you. Adapt it to this owner's system. The goal and the hard rules matter, the exact implementation is yours to choose.
 
-> **This skill shapes the memory layer. A different skill maintains it.** `MEMORY7` decides what folders exist, what they are called and what belongs in each, for this one person. `CONTEXT7` keeps that structure honest afterwards: one index per node, nothing orphaned, a periodic audit. Shaping is a decision, maintenance is a habit. Do not do both in one session, and do not let audit rules leak into a design conversation.
+> **This skill shapes the memory layer. A different skill maintains it.** `MEMORY7` decides what folders exist, what they are called and what belongs in each, for this one person. `CONTEXT7` keeps that structure honest afterwards: one CONTEXT file per node, nothing orphaned, a periodic audit. Shaping is a decision, maintenance is a habit. Do not do both in one session, and do not let audit rules leak into a design conversation.
 
 ---
 
@@ -71,7 +71,7 @@ Four things must be true:
 - **When you or the owner have hesitated twice about where something belongs.** Two hesitations is a structural signal, not bad luck.
 - **When one folder has grown past scanning.** That is how the layer is meant to grow, and it is a design moment.
 
-**Not a trigger:** the urge to tidy. Rearranging folders with no new material feels like work and produces none. Also not a trigger: a routine check of whether the indexes are complete. That is `CONTEXT7`, and running it here turns a design conversation into bookkeeping.
+**Not a trigger:** the urge to tidy. Rearranging folders with no new material feels like work and produces none. Also not a trigger: a routine check of whether the CONTEXT files are complete. That is `CONTEXT7`, and running it here turns a design conversation into bookkeeping.
 
 ---
 
@@ -85,7 +85,7 @@ One boundary settles half the arguments you are about to have: **memory holds wh
 
 ### CONSTITUTION
 
-After setup this skill fires rarely, so do not spend always loaded context on it. Put the line in the skills index the core already links to. **What does belong in the core is the map:** the area names and one line each on what lives there, because that is how the AI finds anything without opening everything.
+After setup this skill fires rarely, so do not spend always loaded context on it. Put the line in the skills-CONTEXT file the core already links to. **What does belong in the core is the map:** the area names and one line each on what lives there, because that is how the AI finds anything without opening everything.
 
 ```
 MEMORY7. My memory layer: a small set of areas named in my words, one folder holding only my own material, machinery outside it, plain files only. One fact, one home. A new area appears when an existing one is too big to scan, never in advance. Spec: skills/memory7/SKILL.md
@@ -154,7 +154,7 @@ Missing the third means you built a project folder that will not survive its too
 
 ---
 
-*Assistant, on ingest: save this in the skills layer in your own format, add the trigger line to the skills index, and confirm to the owner in one line what you saved, where, and the trigger.*
+*Assistant, on ingest: save this in the skills layer in your own format, add the trigger line to the skills-CONTEXT file, and confirm to the owner in one line what you saved, where, and the trigger.*
 
 ---
 

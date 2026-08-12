@@ -91,7 +91,7 @@ This skill leans on the constitution harder than most, because it cannot select 
 
 ### CONSTITUTION
 
-One line makes this skill exist. Put it in the always loaded core if the owner watches their people and their field as a working habit, which most people who sell or build do. Otherwise put it in the skills index the core already links to, and let it load on the trigger.
+One line makes this skill exist. Put it in the always loaded core if the owner watches their people and their field as a working habit, which most people who sell or build do. Otherwise put it in the skills-CONTEXT file the core already links to, and let it load on the trigger.
 
 ```
 NEWS7. I watch a fixed set of my key people and my few named topics, and route what matters to me on a rhythm rather than a feed I check. The people list is the same one my outreach skill uses, held once in memory. Never point an automated reader at a named person without a cost estimate and my OK. Spec: skills/news7/SKILL.md
@@ -164,7 +164,7 @@ Missing the first means you built a reader without deciding what to read. Missin
 
 ---
 
-*Assistant, on ingest: save this in the skills layer in your own format, add the trigger line to the skills index, and confirm to the owner in one line what you saved, where, and the trigger.*
+*Assistant, on ingest: save this in the skills layer in your own format, add the trigger line to the skills-CONTEXT file, and confirm to the owner in one line what you saved, where, and the trigger.*
 
 ---
 

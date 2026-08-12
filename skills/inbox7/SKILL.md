@@ -32,7 +32,7 @@ Start in whichever mode today allows. Moving from guided to operating later chan
 | **One dump folder** | required | Wherever downloads, screenshots and exports already land. If there are three such folders, pick one and point the rest at it before the first run |
 | **List, read, rename, move** | required for operating mode | A file tool in the client, or the reference filesystem server: [github.com/modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem) |
 | **PDF text extraction** | strongly recommended | `pdftotext`, part of Poppler: [poppler.freedesktop.org](https://poppler.freedesktop.org/). Identifying a document from its first lines costs a fraction of opening it whole |
-| **Read access to the memory layer and its index files** | required to file anything | A file that no index lists does not exist to a future AI, so filing without index access only moves the problem |
+| **Read access to the memory layer and its CONTEXT files** | required to file anything | A file that no CONTEXT file lists does not exist to a future AI, so filing without CONTEXT file access only moves the problem |
 
 **Check your connectors before you write code.** File access usually arrives as an MCP server or as a connector the client installs, which is a connect and approve step rather than a build step. What MCP is: [modelcontextprotocol.io](https://modelcontextprotocol.io).
 
@@ -48,7 +48,7 @@ The dump folder is the price of a fast capture habit, and it works only if somet
 
 **Two things go wrong when an AI meets that folder without instructions.** The eager version tidies: it renames and moves on its own judgment, and the owner, who could at least find things by scrolling before, now cannot find them at all. The careful version opens every file to be sure, including forty screenshots, spends a fortune in context, and returns a summary instead of an empty folder. Both end with the folder still full.
 
-**The third failure is quieter and it is permanent.** A file moved somewhere correct but never listed in the index of its new home is gone. A future session will not find it, will not know it exists, and will tell the owner with full confidence that there is nothing on that topic. Filing without indexing loses a document more thoroughly than deleting it does, because it also costs a folder move and looks like work.
+**The third failure is quieter and it is permanent.** A file moved somewhere correct but never listed in the CONTEXT file of its new home is gone. A future session will not find it, will not know it exists, and will tell the owner with full confidence that there is nothing on that topic. Filing without listing it in the CONTEXT file loses a document more thoroughly than deleting it does, because it also costs a folder move and looks like work.
 
 ---
 
@@ -83,7 +83,7 @@ There is a second reason, and it is the expensive one to learn by accident. **So
 One line makes this skill exist. Where it goes depends on how central it is to the owner.
 
 **Runs it most weeks:** put it in the always loaded core, the part read at the start of every session.
-**Occasional:** do not spend core context on it. Put it in the skills index the core already links to, and let it load when the trigger fires.
+**Occasional:** do not spend core context on it. Put it in the skills-CONTEXT file the core already links to, and let it load when the trigger fires.
 
 Either way the line is the same:
 
@@ -95,7 +95,7 @@ A skill the AI cannot see when the trigger fires does not exist. A core stuffed 
 
 ### MEMORY
 
-Files that survive triage go into the memory layer where their topic already lives, and **the same pass updates the index of that node**, because a file no index lists does not exist to a future AI. Finished material and old versions go to a single central archive, dated, and the archive gets a mention at index level too.
+Files that survive triage go into the memory layer where their topic already lives, and **the same pass updates the CONTEXT file of that node**, because a file no CONTEXT file lists does not exist to a future AI. Finished material and old versions go to a single central archive, dated, and the archive gets a mention in the CONTEXT file too.
 
 The delete pile stays inside the dump folder in a dated subfolder, so that recovery is one move back.
 
@@ -129,7 +129,7 @@ Steps for you, the assistant. Goal level, not code level.
 
 **6. Never delete a file yourself.** Approved deletions go into the dated subfolder, and the owner removes them by hand. Say that out loud in the confirmation, so nobody assumes the folder is already clean.
 
-**7. After moving anything, update the index of its new home in the same pass.** This is not bookkeeping, it is the difference between a filed document and a lost one, and it is the step that gets skipped when a run is nearly over.
+**7. After moving anything, update the CONTEXT file of its new home in the same pass.** This is not bookkeeping, it is the difference between a filed document and a lost one, and it is the step that gets skipped when a run is nearly over.
 
 ---
 
@@ -137,7 +137,7 @@ Steps for you, the assistant. Goal level, not code level.
 
 1. **The folder is empty**, or holds only a dated delete folder waiting for a human.
 2. **Every filed document sits with its topic**, under a name that follows the owner's convention.
-3. **The index of every node you touched names the new file**, in the same session.
+3. **The CONTEXT file of every node you touched names the new file**, in the same session.
 4. **Approved deletions are in one dated subfolder**, and the owner has been told the final removal is theirs.
 5. **One line back:** how many files, how many in each lane, and what was left undecided and why.
 
@@ -155,7 +155,7 @@ Missing the third means the files are filed and lost. Missing the fourth means y
 
 ---
 
-*Assistant, on ingest: save this in the skills layer in your own format, add the trigger line to the skills index, and confirm to the owner in one line what you saved, where, and the trigger.*
+*Assistant, on ingest: save this in the skills layer in your own format, add the trigger line to the skills-CONTEXT file, and confirm to the owner in one line what you saved, where, and the trigger.*
 
 ---
 

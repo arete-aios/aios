@@ -85,7 +85,7 @@ Four things must be true:
 
 This skill comes from an **AI operating system**: five layers a person owns and their AI reads. **Constitution** is who they are and the rules that hold in every session. **Memory** is what the system knows. **Skills** are methods. **Tools** are how the AI reaches other systems. **Focus** is what matters right now.
 
-The constitution is layer one, and its real job is **to make the other four findable.** It does not contain memory, it says where memory lives. It does not contain the skills, it points at the index. Get that boundary wrong and the constitution absorbs the whole system, which is the single most common way these fail.
+The constitution is layer one, and its real job is **to make the other four findable.** It does not contain memory, it says where memory lives. It does not contain the skills, it points at the skills-CONTEXT file. Get that boundary wrong and the constitution absorbs the whole system, which is the single most common way these fail.
 
 ### CONSTITUTION
 
@@ -168,7 +168,7 @@ Missing the first means you wrote a document. Missing the fourth means you built
 
 ---
 
-*Assistant, on ingest: save this in the skills layer in your own format, add the trigger line to the skills index, and confirm to the owner in one line what you saved, where, and the trigger.*
+*Assistant, on ingest: save this in the skills layer in your own format, add the trigger line to the skills-CONTEXT file, and confirm to the owner in one line what you saved, where, and the trigger.*
 
 ---
 

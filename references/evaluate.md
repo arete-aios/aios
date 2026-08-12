@@ -8,7 +8,7 @@
 
 ## Before any number
 
-**1. Read their system yourself if you can.** The always loaded core, the folder structure, the skills index, the file that says what matters now, the last two weeks of records. What is written matters less than what has been touched recently.
+**1. Read their system yourself if you can.** The always loaded core, the folder structure, the skills-CONTEXT file, the file that says what matters now, the last two weeks of records. What is written matters less than what has been touched recently.
 
 **2. Ask the loop question first, always, even when you can read every file.** No file records it, and it is the one answer that decides whether the rest is a system or a well kept archive:
 
@@ -31,7 +31,7 @@ Two evaluators should land within a few points. Use these anchors; interpolate b
 | Dimension | 0 looks like | ~50 looks like | ~90 looks like |
 |---|---|---|---|
 | **Constitution** | Nothing loads; the AI meets you cold every session | A core loads but describes you instead of instructing, or is bloated and half-ignored | Short, loaded every session, every line changes behaviour, hard rules present, size known |
-| **Memory** | Notes land anywhere, no index, you search by memory | Most notes have a home but indexes are stale or partial, some content nothing points at | New note has an obvious home, indexes list everything, the inventory exists |
+| **Memory** | Notes land anywhere, no CONTEXT file, you search by memory | Most notes have a home but CONTEXT files are stale or partial, some content nothing points at | New note has an obvious home, CONTEXT files list everything, the inventory exists |
 | **Skills** | Nothing written; you re-explain each method every time | Some methods written but not findable when the trigger fires, none has run unasked | Methods written, findable at trigger time, at least one has fired on its own and helped |
 | **Tools** | AI reaches nothing outside chat, or reaches things with no gates | A few integrations, some unused for a month, gates missing on things that send or spend | Only what a method needs, gates on send-or-spend, each used this month, status checked |
 | **Focus** | No file says what matters now, everything is equally urgent | A focus file exists but is stale or lists too much, the AI never uses it to push back | One small current file, the AI pushes back on new work using it |
@@ -50,7 +50,7 @@ Detail per layer: [1-constitution](1-constitution.md), [2-memory](2-memory.md), 
 | Low dimension | The skill that raises it | What it does |
 |---|---|---|
 | **Constitution** | `constitution7` | Writes the one core file that loads every session |
-| **Memory** | `braindump7` then `deepdive7` then `memory7` to build, `context7` to keep it in order | Turns scattered notes into folders with one honest index |
+| **Memory** | `braindump7` then `deepdive7` then `memory7` to build, `context7` to keep it in order | Turns scattered notes into folders with one honest CONTEXT file |
 | **Skills** | the library, and `audit7` to prune | Adds the few that fire, removes the many that never did |
 | **Tools** | `channel7`, plus each skill's own requirements | Connects the AI to what it needs, gated |
 | **Focus** | `focus7` | One small current file the AI pushes back with |
@@ -75,7 +75,7 @@ Then stop. No band, no path to 100. **End on the offer to start, not on a list o
 **Setup, in their words:** ChatGPT daily, notes in Notion, nothing loaded at session start, no skills, no review.
 
 - **Constitution 5.** ChatGPT opens cold every session; no core. 0-anchor.
-- **Memory 20.** Notion holds notes, but no index and the AI cannot read them; a store, not a memory.
+- **Memory 20.** Notion holds notes, but no CONTEXT file and the AI cannot read them; a store, not a memory.
 - **Skills 0.** Nothing written down; every method re-explained. 0-anchor.
 - **Tools 5.** No connector between ChatGPT and Notion; the AI reaches nothing outside chat.
 - **Focus 5.** No file says what matters now.

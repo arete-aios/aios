@@ -95,7 +95,7 @@ This skill is unusual: it does not build a layer, it **reports on all five**. Th
 
 This is an occasional, advanced skill. It does not belong in the always loaded core, where it would cost context on every message to support a page generated now and then.
 
-Put the line in the skills index the core already links to, and let it load when the trigger fires:
+Put the line in the skills-CONTEXT file the core already links to, and let it load when the trigger fires:
 
 ```
 DASHBOARD7. Generate one self-contained HTML page showing AIOS state, pulled from my own files, private figures aggregated or omitted by default. Snapshot first, publishing via a site skill. Build only after the loop is closed. Spec: skills/dashboard7/SKILL.md
@@ -159,7 +159,7 @@ Every item here is deliverable with nothing connected. Publishing is never on th
 
 ---
 
-*Assistant, on ingest: save this in the skills layer in your own format, add the trigger line to the skills index, and confirm to the owner in one line what you saved, where, and the trigger.*
+*Assistant, on ingest: save this in the skills layer in your own format, add the trigger line to the skills-CONTEXT file, and confirm to the owner in one line what you saved, where, and the trigger.*
 
 ---
 

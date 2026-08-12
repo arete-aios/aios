@@ -1,6 +1,6 @@
 ---
 name: context7
-description: "CONTEXT7: give every folder one master index that lists everything inside, so your AI reads one index instead of a thousand files. Use when the vault grows faster than you can read it."
+description: "CONTEXT7: give every node one CONTEXT file that lists everything inside it and states how it works, so your AI reads one CONTEXT file instead of a thousand files. Use when the vault grows faster than you can read it."
 license: CC-BY-4.0
 metadata:
   author: fulldigital.me
@@ -9,7 +9,7 @@ metadata:
   synced: "2026-07-23"
 ---
 
-# SKILL: Give every folder one index your AI reads first
+# SKILL: Give every node one CONTEXT file your AI reads first
 
 **Trigger word: `CONTEXT7`.**
 
@@ -22,36 +22,36 @@ metadata:
 
 **This skill has two modes, and nothing below is a hard blocker.**
 
-**With folder access:** you list the folder yourself, compare it against the index, and report the gaps. This is the normal mode and it is close to free.
-**Without folder access:** the owner pastes a file listing and the current index, you do the same comparison on that, and they paste the approved lines back. Slower, identical method.
+**With folder access:** you list the folder yourself, compare it against the CONTEXT file, and report the gaps. This is the normal mode and it is close to free.
+**Without folder access:** the owner pastes a file listing and the current CONTEXT file, you do the same comparison on that, and they paste the approved lines back. Slower, identical method.
 
 | What | Why |
 |---|---|
-| **A folder the assistant can list** | The whole check is what is on disk against what the index claims. With no listing there is nothing to compare, only trust |
+| **A folder the assistant can list** | The whole check is what is on disk against what the CONTEXT file claims. With no listing there is nothing to compare, only trust |
 | **A way for the client to reach files** | Coding assistants and desktop clients already do this. In a plain chat window it usually arrives as a filesystem server: [modelcontextprotocol.io](https://modelcontextprotocol.io), reference implementations at [github.com/modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) |
-| **Write access, eventually** | Only to add index lines, and only after approval. Read access covers the entire check, so ask for that first |
+| **Write access, eventually** | Only to add CONTEXT file lines, and only after approval. Read access covers the entire check, so ask for that first |
 
-**Setup time, honestly.** Minutes if the client already reads the folder. The real cost is the first pass over a vault that has never had indexes: roughly an hour per few hundred files, most of it the owner answering what each folder is actually for, because an index has to say that in one line and nobody has ever written it down. After that the price is one line per new file, paid in the session that creates the file.
+**Setup time, honestly.** Minutes if the client already reads the folder. The real cost is the first pass over a vault that has never had CONTEXT files: roughly an hour per few hundred files, most of it the owner answering what each folder is actually for, because a CONTEXT file has to say that in one line and nobody has ever written it down. After that the price is one line per new file, paid in the session that creates the file.
 
 ---
 
 ## WHAT
 
-**A vault grows from 30 files to 3,000 in months. No AI can load that, and it should not.** This skill gives every folder one master file, the index, that you read first, before touching anything else in that folder.
+**A vault grows from 30 files to 3,000 in months. No AI can load that, and it should not.** This skill gives every folder one master file, the CONTEXT file, that you read first, before touching anything else in that folder.
 
 **Without it you fail in three ways and only one of them is visible.** You search on wording and load whatever matched, which burns context and still misses the file that used different words. You answer from the three files you happened to open, with the confidence of someone who read all of them. And you write a new file into a folder where nothing points at it, so it is never read again, by you or by any assistant that comes after you.
 
-The third failure is the expensive one, because it looks like work getting done. A file no index mentions is not a file in a slow system, it is a file in no system at all.
+The third failure is the expensive one, because it looks like work getting done. A file no CONTEXT file mentions is not a file in a slow system, it is a file in no system at all.
 
-There is a fourth failure that only assistants commit: creating a second index beside one that already exists, because you did not look for the first. Now the folder has two masters, both half true, and every later reader picks one at random.
+There is a fourth failure that only assistants commit: creating a second CONTEXT file beside one that already exists, because you did not look for the first. Now the folder has two masters, both half true, and every later reader picks one at random.
 
 ---
 
 ## GOAL
 
-**Any question about any folder costs two reads: the index, then exactly the file the index points to.** The other thousand files stay closed.
+**Any question about any folder costs two reads: the CONTEXT file, then exactly the file the CONTEXT file points to.** The other thousand files stay closed.
 
-And nothing goes invisible. A file the index does not mention is a file you will never use, so completeness here is not tidiness, it decides whether the content exists at all.
+And nothing goes invisible. A file the CONTEXT file does not mention is a file you will never use, so completeness here is not tidiness, it decides whether the content exists at all.
 
 What complete means is the owner's structure, not a generic one. Take the naming convention, the folder rule and the archive rule from their constitution if they have written one. If they have not, ask once, then write the answer down so it is never asked again.
 
@@ -60,10 +60,10 @@ What complete means is the owner's structure, not a generic one. Take the naming
 ## TRIGGER
 
 - The owner says `CONTEXT7 {folder}`, or the short form `COX7`, or asks why the AI keeps missing something that is plainly in the vault.
-- **Whenever you add a file or archive one.** Update the parent index in the same session, one line. This is the trigger that keeps every other run cheap.
-- **Before you claim a folder does not contain something.** If the index is stale, your claim is about the index and not about reality.
+- **Whenever you add a file or archive one.** Update the parent CONTEXT file in the same session, one line. This is the trigger that keeps every other run cheap.
+- **Before you claim a folder does not contain something.** If the CONTEXT file is stale, your claim is about the CONTEXT file and not about reality.
 
-**Not a trigger:** the urge to reorganise. This skill indexes what exists. It does not move, rename or merge files to make a folder read better, and a restructure disguised as an index check is how a vault loses things.
+**Not a trigger:** the urge to reorganise. This skill indexes what exists. It does not move, rename or merge files to make a folder read better, and a restructure disguised as a CONTEXT check is how a vault loses things.
 
 ---
 
@@ -71,14 +71,14 @@ What complete means is the owner's structure, not a generic one. Take the naming
 
 This skill comes from an **AI operating system**: five layers a person owns and their AI reads. **Constitution** is who they are and the rules that hold in every session. **Memory** is what the system knows. **Skills** are methods like this one. **Tools** are how the AI reaches other systems. **Focus** is what matters right now.
 
-This skill is maintenance **of the memory layer itself**, which is exactly why it has to start in the constitution. The rules it enforces are not universal: what counts as a node, how files are named, where archived material goes, which folders hold the owner's own content and which hold machinery that may be replaced. Read those before checking a single folder, because an index built on your conventions instead of theirs becomes a second structure competing with the first, and the owner now has to remember which one they are looking at. If the constitution is silent on a rule you need, ask once and propose adding the answer there, rather than deciding quietly on their behalf.
+This skill is maintenance **of the memory layer itself**, which is exactly why it has to start in the constitution. The rules it enforces are not universal: what counts as a node, how files are named, where archived material goes, which folders hold the owner's own content and which hold machinery that may be replaced. Read those before checking a single folder, because a CONTEXT file built on your conventions instead of theirs becomes a second structure competing with the first, and the owner now has to remember which one they are looking at. If the constitution is silent on a rule you need, ask once and propose adding the answer there, rather than deciding quietly on their behalf.
 
 ### CONSTITUTION
 
 One line makes this skill exist. Where it goes depends on how central it is to the owner.
 
 **Primary skill, triggered most days:** put it in the always loaded core, the part read at the start of every session.
-**Occasional:** do not spend core context on it. Put it in the skills index the core already links to, and let it load when the trigger fires.
+**Occasional:** do not spend core context on it. Put it in the skills-CONTEXT file the core already links to, and let it load when the trigger fires.
 
 Either way the line is the same:
 
@@ -92,7 +92,7 @@ A skill the AI cannot see when the trigger fires does not exist. A core stuffed 
 
 **The masters are the memory layer's front doors.** Name them so they sort first and are findable in one search: `_{folder-name}-CONTEXT.md`, and a projects folder can use `_proj-{name}.md`. One per folder. If you ever find two, one is stale: propose a merge, never keep both.
 
-**What does not go in an index:** the content of the files it lists. An index that starts summarising turns into a document that has to be maintained twice and is wrong in one of the two places within a month. One line per file, enough to choose it.
+**What does not go in a CONTEXT file:** the content of the files it lists. A CONTEXT file that starts summarising turns into a document that has to be maintained twice and is wrong in one of the two places within a month. One line per file, enough to choose it.
 
 **What rots:** the purpose line written when the folder held three files, and links to files that were later renamed or archived. Both point somewhere real that no longer exists, which is worse than a gap, because a gap is visible and a stale line is not.
 
@@ -102,7 +102,7 @@ None required beyond a way to list and read a folder, and that is worth saying o
 
 The layer is called Tools because a tool is what the model finally calls. How it arrives keeps changing: today usually an MCP server or a connector the client installs, before that a hand written wrapper. Name the mechanism when you use one, and do not let the mechanism rename the layer.
 
-> 🔒 **The index changes, the files do not.** This skill adds and corrects lines in an index. It never moves, renames, merges, archives or deletes a file to make the index tidier. When the fix requires touching a file, that is a separate proposal, described in words, approved separately.
+> 🔒 **The CONTEXT file changes, the files do not.** This skill adds and corrects lines in a CONTEXT file. It never moves, renames, merges, archives or deletes a file to make the CONTEXT file tidier. When the fix requires touching a file, that is a separate proposal, described in words, approved separately.
 
 ---
 
@@ -114,13 +114,13 @@ Steps for you, the assistant. Goal level, not code level.
 
 **2. Size the master to the folder.** A small folder of two to five files gets a title, a one line purpose, a file list, done. An active project adds a status line, what is next, and what is in and out of scope. A big node with subfolders adds a subfolder table and a decisions log. Never force the heavy format onto a five file folder, because a master nobody can be bothered to update stops being true and then stops being read.
 
-**3. Subfolders do not get their own master.** The parent's master indexes them. A subfolder graduates to its own master only when it grows past roughly five files and makes sense on its own without the parent. Before that, a mention in the parent index is enough.
+**3. Subfolders do not get their own master.** The parent's master indexes them. A subfolder graduates to its own master only when it grows past roughly five files and makes sense on its own without the parent. Before that, a mention in the parent CONTEXT file is enough.
 
-**4. Say the blindness rule to the owner plainly.** You, the AI, will not use what no index mentions. So every new file costs one extra line in its folder's index, written in the same session that created the file. Cheap insurance, paid forever, and the only version of this that survives contact with a busy week.
+**4. Say the blindness rule to the owner plainly.** You, the AI, will not use what no CONTEXT file mentions. So every new file costs one extra line in its folder's CONTEXT file, written in the same session that created the file. Cheap insurance, paid forever, and the only version of this that survives contact with a busy week.
 
 **5. Report a check in one shape.** Folder. Master found or missing. Files present on disk but not listed, each one named as invisible. A second master if one exists, flagged as a conflict rather than a detail. Dead links, meaning lines that point at something no longer there. Then the proposed lines to fix all of it.
 
-**6. Propose, then wait for the OK before writing.** An index is the one file where a confident wrong edit propagates into every future session, because every future session reads it first.
+**6. Propose, then wait for the OK before writing.** A CONTEXT file is the one file where a confident wrong edit propagates into every future session, because every future session reads it first.
 
 ---
 
@@ -138,15 +138,15 @@ Missing the second means the folder still has invisible files. Missing the fourt
 
 ## MAKE IT YOURS
 
-1. **Rename the convention.** `_INDEX.md`, `_MAP.md`, whatever fits the system. What matters is one per folder, always read first, lists everything.
+1. **Name the node in the file.** `_memory-CONTEXT.md`, `_health-CONTEXT.md`, `_tools-CONTEXT.md`, whatever the node is called. What matters is one per node, always read first, lists everything.
 2. **Set the graduation threshold.** Five files is a starting number, not a law. A vault of long documents graduates later, a vault of short notes graduates sooner.
 3. **Add a periodic sweep.** Walk every folder, flag missing masters, orphan files and dead links in one report. Run it when the vault has grown, not on a fixed day, because a calendar sweep on a quiet month trains everyone to ignore the report.
 4. **Keep archived items listed**, one line, marked archived. Finished is not the same as forgotten, and the search that fails is usually the one for something the owner completed a year ago.
-5. **Decide who pays the line.** The strongest version of this rule is that whoever creates a file updates the index in the same session, assistant included. Anything weaker turns into a monthly cleanup that gets skipped in the months that produced the most files.
+5. **Decide who pays the line.** The strongest version of this rule is that whoever creates a file updates the CONTEXT file in the same session, assistant included. Anything weaker turns into a monthly cleanup that gets skipped in the months that produced the most files.
 
 ---
 
-*Assistant, on ingest: save this in the skills layer in your own format, add the trigger line to the skills index, and confirm to the owner in one line what you saved, where, and the trigger.*
+*Assistant, on ingest: save this in the skills layer in your own format, add the trigger line to the skills-CONTEXT file, and confirm to the owner in one line what you saved, where, and the trigger.*
 
 ---
 

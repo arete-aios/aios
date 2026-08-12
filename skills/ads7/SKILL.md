@@ -104,7 +104,7 @@ The layers are not decoration here. **An ad account is one of the few places whe
 One line makes this skill exist. Where it goes depends on how central advertising is to the owner.
 
 **Runs ads most weeks:** put it in the always loaded core, the part read at the start of every session.
-**Occasional:** do not spend core context on it. Put it in the skills index the core already links to, and let it load when the trigger fires.
+**Occasional:** do not spend core context on it. Put it in the skills-CONTEXT file the core already links to, and let it load when the trigger fires.
 
 Either way the line is the same:
 
@@ -182,7 +182,7 @@ Missing any of the four means the change is not finished.
 
 ---
 
-*Assistant, on ingest: save this in the skills layer in your own format, add the trigger line to the skills index, and confirm to the owner in one line what you saved, where, and the trigger.*
+*Assistant, on ingest: save this in the skills layer in your own format, add the trigger line to the skills-CONTEXT file, and confirm to the owner in one line what you saved, where, and the trigger.*
 
 ---
 

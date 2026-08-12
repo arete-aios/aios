@@ -103,7 +103,7 @@ This skill comes from an **AI operating system**: five layers a person owns and 
 One line makes this skill exist.
 
 **Audits sites regularly:** put it in the always loaded core.
-**Occasional:** put it in the skills index the core already links to, and let it load when the trigger fires.
+**Occasional:** put it in the skills-CONTEXT file the core already links to, and let it load when the trigger fires.
 
 ```
 WEB7 {domain}. Web presence audit: one base and four doors, plus risks, what to measure and where to grow. Every number carries n, method and date or it is not reported. Changes nothing. Spec: skills/web7/SKILL.md

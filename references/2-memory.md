@@ -18,7 +18,7 @@ The defining property is not size, it is that memory **does not load on every me
 - **Records that repeat:** daily check-ins, weekly reviews, call notes, numbers over time.
 - **The inventory:** money and how long it lasts, hours actually free, what the owner already knows how to do, who they already know, what they have already paid for.
 - **Projects**, each with its own entry point.
-- **An archive** for what is finished, listed in the index rather than hidden.
+- **An archive** for what is finished, listed in the CONTEXT file rather than hidden.
 
 **Plain files, in one folder that contains nothing but the owner's own material.** Machinery, scripts, keys and configuration live beside it, never inside. The content folder should survive being copied to a different machine, a different tool, a different AI, because tools get replaced every year or two and the notes are supposed to outlive them.
 
@@ -35,7 +35,7 @@ The defining property is not size, it is that memory **does not load on every me
 - **Identity and standing rules.** Those are the constitution. Memory holds what happened, the constitution holds what is always true. That single sentence resolves almost every filing argument.
 - **What matters right now.** That is focus, and it is one file, not a folder. Priorities scattered through memory are priorities nobody can see.
 - **A folder structure built before there is anything to put in it.** An empty taxonomy designed up front is the most reliable way to kill this layer, because the owner starts filing to satisfy the structure instead of writing what actually happened.
-- **Two masters for one thing.** One index per node. A second index beside an existing one splits the truth and neither half is ever complete again.
+- **Two masters for one thing.** One CONTEXT file per node. A second CONTEXT file beside an existing one splits the truth and neither half is ever complete again.
 - **Judgments about other people that will later read as facts.** A score you gave to someone's proposal on one afternoon, stored in their record, becomes a permanent verdict on a person.
 - **The AI vendor's own memory feature, as the primary home.** Useful as a thin personalisation layer. It is not the owner's files, it does not move, and when it disagrees with the owner's files, the files win.
 
@@ -48,7 +48,7 @@ The defining property is not size, it is that memory **does not load on every me
 Three further signs:
 
 1. **The AI stops asking what it already knows.** No re-explaining who the client is, what the goal was, or what was decided last month.
-2. **Every index lists everything under it.** What is not listed is invisible, and invisible content is the same as deleted content from the AI's side. The owner will not notice, because they remember it exists.
+2. **Every CONTEXT file lists everything under it.** What is not listed is invisible, and invisible content is the same as deleted content from the AI's side. The owner will not notice, because they remember it exists.
 3. **Advice matches reality.** The clearest failure of this layer is an AI that gives confident advice assuming a runway, a team or a network that is not there. That comes from a missing inventory, not from a bad model.
 
 ---
@@ -59,11 +59,11 @@ Three further signs:
 
 The owner produces that raw material as a brain dump; **`braindump7`** is the skill that files it, and `deepdive7` produces the inventory half.
 
-**`context7`** keeps it navigable: one master index per node, listing everything inside it, so the AI reads one index instead of a thousand files.
+**`context7`** keeps it navigable: one CONTEXT file per node, listing everything inside it and stating how it works, so the AI reads one CONTEXT file instead of a thousand files.
 
 **`inbox7`, `in7`, `meeting7`, `voice7`, `watch7`** are what feed it. They are step one of the loop. Memory is step two.
 
-`audit7` checks it monthly for the two failures that are invisible from inside: content nothing points at, and indexes that have quietly stopped being complete.
+`audit7` checks it monthly for the two failures that are invisible from inside: content nothing points at, and CONTEXT files that have quietly stopped being complete.
 
 ---
 

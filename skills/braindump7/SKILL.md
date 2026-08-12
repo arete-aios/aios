@@ -85,7 +85,7 @@ The layers carry more weight here than in most skills, because **this is the one
 One line makes this skill exist. Where it goes depends on how central it is to the owner.
 
 **Dumps most days:** put it in the always loaded core, the part read at the start of every session.
-**Occasional:** do not spend core context on it. Put it in the skills index the core already links to, and let it load when the trigger fires.
+**Occasional:** do not spend core context on it. Put it in the skills-CONTEXT file the core already links to, and let it load when the trigger fires.
 
 Either way the line is the same:
 
@@ -156,12 +156,12 @@ Missing the first means you held a meeting about a file. Missing the third means
 1. **Decide your own destination list.** The six above map to a five layer system. If the memory is a single notebook, collapse them to three and keep the approval gate, which is the part that matters.
 2. **Add a review rhythm.** A weekly show run keeps the pile from ageing past usefulness, and it costs almost nothing, because show mode changes nothing.
 3. **Set the age at which a block is stale,** and say the number out loud. Six weeks suits most people. Without a number, every old line gets kept out of politeness and the queue never drains.
-4. **Pick the trigger word the owner will actually type** at midnight, tired, on a phone. Short wins. Whatever you choose, use the same word in the constitution line and the skills index, or the skill quietly stops firing.
+4. **Pick the trigger word the owner will actually type** at midnight, tired, on a phone. Short wins. Whatever you choose, use the same word in the constitution line and the skills-CONTEXT file, or the skill quietly stops firing.
 5. **No file access at all? Degrade gracefully.** The owner pastes the dump, you return the same numbered table with one destination per block, and they file it. The value was always in the sorting and in the rule that nothing becomes a commitment without a word from them.
 
 ---
 
-*Assistant, on ingest: save this in the skills layer in your own format, add the trigger line to the skills index, and confirm to the owner in one line what you saved, where, and the trigger.*
+*Assistant, on ingest: save this in the skills layer in your own format, add the trigger line to the skills-CONTEXT file, and confirm to the owner in one line what you saved, where, and the trigger.*
 
 ---
 

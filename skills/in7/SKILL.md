@@ -90,7 +90,7 @@ Those layers do work here that a journaling app cannot. **The fields are only ri
 One line makes this skill exist. Where it goes depends on how central it is to the owner.
 
 **Logs most days:** put it in the always loaded core, the part read at the start of every session.
-**Occasional:** do not spend core context on it. Put it in the skills index the core already links to, and let it load when the trigger fires.
+**Occasional:** do not spend core context on it. Put it in the skills-CONTEXT file the core already links to, and let it load when the trigger fires.
 
 Either way the line is the same:
 
@@ -159,12 +159,12 @@ Missing the second means you logged numbers and lost the reason. Missing the fif
 1. **Change the fields.** The default set fits someone working on health and focus. A business, a recovery or a creative practice keeps the two layer structure and swaps every field.
 2. **Set your own trend thresholds.** Three in a row is a starting point, not a law. Pick the number at which the owner would want to hear about it, and not sooner.
 3. **Decide who owns the questions.** Some owners want a reflective question daily, some weekly, some want none and only the log. Ask once and write the answer down, because guessing this one wrong reads as nagging.
-4. **Pick the trigger word the owner will actually type,** at night, tired, on a phone. Short and unambiguous beats descriptive. Whatever you choose, use the same word in the constitution line and in the skills index, or the skill quietly stops firing.
+4. **Pick the trigger word the owner will actually type,** at night, tired, on a phone. Short and unambiguous beats descriptive. Whatever you choose, use the same word in the constitution line and in the skills-CONTEXT file, or the skill quietly stops firing.
 5. **No storage and no integrations at all? Still run it.** Produce the two layers as clean text, tell the owner exactly where to paste them, and keep the gap table and the three question limit. The format is most of the value, and it transfers the day storage arrives.
 
 ---
 
-*Assistant, on ingest: save this in the skills layer in your own format, add the trigger line to the skills index, and confirm to the owner in one line what you saved, where, and the trigger.*
+*Assistant, on ingest: save this in the skills layer in your own format, add the trigger line to the skills-CONTEXT file, and confirm to the owner in one line what you saved, where, and the trigger.*
 
 ---
 

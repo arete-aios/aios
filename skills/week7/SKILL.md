@@ -93,7 +93,7 @@ This one touches four layers in a single run, which is why it is the slow turn o
 One line makes this skill exist. Where it goes depends on whether the owner really reviews weekly.
 
 **They do:** put it in the always loaded core. It fires every week, and the core is where rhythms live.
-**They intend to:** put it in the skills index the core already links to, and let it load on the trigger. An aspirational habit does not deserve permanent context.
+**They intend to:** put it in the skills-CONTEXT file the core already links to, and let it load on the trigger. An aspirational habit does not deserve permanent context.
 
 Either way the line is the same:
 
@@ -164,7 +164,7 @@ Missing the sixth means you wrote a newsletter. Missing the fourth means every w
 
 ---
 
-*Assistant, on ingest: save this in the skills layer in your own format, add the trigger line to the skills index, and confirm to the owner in one line what you saved, where, and the trigger.*
+*Assistant, on ingest: save this in the skills layer in your own format, add the trigger line to the skills-CONTEXT file, and confirm to the owner in one line what you saved, where, and the trigger.*
 
 ---
 

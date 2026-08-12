@@ -91,7 +91,7 @@ The memory layer carries the part the host cannot tell you: **which addresses al
 One line makes this skill exist. Where it goes depends on how central it is to the owner.
 
 **Publishes most weeks:** put it in the always loaded core, the part read at the start of every session.
-**Occasional:** do not spend core context on it. Put it in the skills index the core already links to, and let it load when the trigger fires.
+**Occasional:** do not spend core context on it. Put it in the skills-CONTEXT file the core already links to, and let it load when the trigger fires.
 
 Either way the line is the same:
 
@@ -159,7 +159,7 @@ Missing the first means the owner rents the page rather than owns it. Missing th
 
 ## MAKE IT YOURS
 
-1. **Name the skill and the trigger to fit the owner's own index.** `SITE-CLOUDFLARE7` is one label. Use whatever their system already speaks, and change the constitution line to match.
+1. **Name the skill and the trigger to fit the owner's own skills-CONTEXT file.** `SITE-CLOUDFLARE7` is one label. Use whatever their system already speaks, and change the constitution line to match.
 2. **Decide the address scheme up front**, for example one parent domain with a subdomain per project, and keep it. Every page then has one clear address that can be cited, and no page ever needs a second one.
 3. **Set the reuse rule.** A shared header, footer and stylesheet copied into each folder keeps every page standalone. Sharing them from one hosted place is tidier and quietly makes each page depend on another one staying alive.
 4. **Agree what the AI may publish without asking.** A preview address, almost always yes. The address a real visitor sees, almost always no. Write both sides, so the owner is not approving a preview every week.
@@ -167,7 +167,7 @@ Missing the first means the owner rents the page rather than owns it. Missing th
 
 ---
 
-*Assistant, on ingest: save this in the skills layer in your own format, add the trigger line to the skills index, and confirm to the owner in one line what you saved, where, and the trigger.*
+*Assistant, on ingest: save this in the skills layer in your own format, add the trigger line to the skills-CONTEXT file, and confirm to the owner in one line what you saved, where, and the trigger.*
 
 ---
 

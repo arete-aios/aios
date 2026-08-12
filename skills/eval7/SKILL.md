@@ -80,7 +80,7 @@ This skill comes from an **AI operating system**: five layers a person owns and 
 One line makes this skill exist. Where it goes depends on how central it is to the owner.
 
 **Scores something most days**, a person publishing or pitching regularly: put it in the always loaded core, the part read at the start of every session.
-**Occasional:** do not spend core context on it. Put it in the skills index the core already links to, and let it load when the trigger fires.
+**Occasional:** do not spend core context on it. Put it in the skills-CONTEXT file the core already links to, and let it load when the trigger fires.
 
 Either way the line is the same:
 
@@ -152,7 +152,7 @@ Missing the evidence turns the table into decoration. Missing the sixth means yo
 
 ---
 
-*Assistant, on ingest: save this in the skills layer in your own format, add the trigger line to the skills index, and confirm to the owner in one line what you saved, where, and the trigger.*
+*Assistant, on ingest: save this in the skills layer in your own format, add the trigger line to the skills-CONTEXT file, and confirm to the owner in one line what you saved, where, and the trigger.*
 
 ---
 

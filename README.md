@@ -48,6 +48,16 @@ Expect the honest answer to be shorter than you hoped. For most systems that are
 
 ## How to start
 
+There are two doors. Both end in the same system, so pick the one that matches how you want to spend the next hour.
+
+**Door one, guided.** You paste one prompt and your AI does the rest, stopping to ask permission before it creates anything. It interviews you, reads what you have already published about yourself if you let it, and writes the first files with you. About an hour, most of it answering questions. Start here if you want something working today: **[onboarding/_proj-onboarding.md](onboarding/_proj-onboarding.md)**.
+
+**Door two, the nine stages.** You build it yourself over weeks, one stage at a time, each with an exit test. Slower and deeper, and it is the same five layers. Everything below describes this door.
+
+If your AI is reading this file as part of the guided path, follow the onboarding file and ignore the rest of this section.
+
+---
+
 **One link, one paste.**
 
 1. Open **[SKILL.md](SKILL.md)** in this repository.

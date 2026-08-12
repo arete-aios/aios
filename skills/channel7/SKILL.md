@@ -91,7 +91,7 @@ There is a second reason the two layers come first. The agent behind the channel
 
 ### CONSTITUTION
 
-The channel is set up once, but which channel exists and how far it reaches is a standing fact worth knowing in every session. So the setup method lives in the skills index, and a short line lives in the always loaded core:
+The channel is set up once, but which channel exists and how far it reaches is a standing fact worth knowing in every session. So the setup method lives in the skills-CONTEXT file, and a short line lives in the always loaded core:
 
 ```
 CHANNEL7. My second brain is reachable at {channel} from my phone; the agent there loads my constitution and memory at start. Reach: {always-on | at-desk only}. The channel answers only me; any bot token lives in the secrets layer, never in the vault or in chat. Voice in: {on|off}. Voice out: off for now. Spec: skills/channel7/SKILL.md
@@ -153,7 +153,7 @@ Missing the second means you built plumbing nobody has walked through. Missing t
 
 ---
 
-*Assistant, on ingest: save this in the skills layer in your own format, add the trigger line to the skills index, and confirm to the owner in one line what you saved, where, and the trigger.*
+*Assistant, on ingest: save this in the skills layer in your own format, add the trigger line to the skills-CONTEXT file, and confirm to the owner in one line what you saved, where, and the trigger.*
 
 ---
 
