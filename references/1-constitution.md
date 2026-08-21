@@ -27,7 +27,9 @@ That last one is the constitution's real job: **to make the other four layers fi
 This is the useful part, because every failed constitution failed the same way.
 
 - **Description instead of instruction.** A paragraph about the owner's childhood, values, personality, the story of how they got here. It reads beautifully and changes nothing, and it is loaded on every message forever. Move it to memory.
-- **Anything dated.** This week, this quarter, the current client, the number as of last month. Dated content in an always loaded file is wrong within weeks and expensive the whole time.
+- **Anything dated, with one written exception.** This week, the current client, the number as of last month. Dated content in an always loaded file is wrong within weeks and expensive the whole time.
+
+  **The exception is four lines about the quarter**, and it exists because a destination nobody sees is a destination nobody keeps: what has to be true by the end of this quarter, the one number that says it happened, where that number is read from, and the date the quarter ends. Four edits a year is inside the rule below about anything updated more than a few times a year. **The boundary: the constitution holds the destination and the current leg, the focus layer holds the route.** The three priorities, the drop order, the projects and this week's promise are built to move in a bad week, so they stay in focus. The quarter's one number is what the bad week gets measured against, so it does not move. If you find yourself editing these four lines monthly, you have put the route in the file that holds the destination.
 - **Project detail.** One project's context belongs with that project, not in the file every message pays for.
 - **The skill library itself.** A trigger line for a skill fired most days, yes. Twenty-seven lines for skills nobody triggers, no. Those belong in a CONTEXT file the core links to.
 - **Anything updated more than a few times a year.** Pointer in the core, moving thing behind it.

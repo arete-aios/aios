@@ -50,7 +50,7 @@ Expect the honest answer to be shorter than you hoped. For most systems that are
 
 There are two doors. Both end in the same system, so pick the one that matches how you want to spend the next hour.
 
-**Door one, guided.** You paste one prompt and your AI does the rest, stopping to ask permission before it creates anything. It interviews you, reads what you have already published about yourself if you let it, and writes the first files with you. About an hour, most of it answering questions. Start here if you want something working today: **[onboarding/_proj-onboarding.md](onboarding/_proj-onboarding.md)**.
+**Door one, guided.** You paste two blocks and your AI does the rest, stopping to ask permission before it creates anything. It interviews you, reads what you have already published about yourself if you let it, and writes the first files with you. About an hour, most of it answering questions, and it offers to stop before the last step so you can finish that part another day. Your folder arrives with eleven methods in it, three of them switched on, and it ends with one goal, one number and one day of the week when that goal gets checked. Start here if you want something working today: **[onboarding/_proj-onboarding.md](onboarding/_proj-onboarding.md)**.
 
 **Door two, the nine stages.** You build it yourself over weeks, one stage at a time, each with an exit test. Slower and deeper, and it is the same five layers. Everything below describes this door.
 
@@ -90,7 +90,7 @@ Each raises a specific layer. When an evaluation finds a gap, the skill that clo
 | Group | After a run | Skills |
 |---|---|---|
 | **loop** | something you wrote came back unasked and changed what you did next | `in7` `exit7` `focus7` |
-| **start** | the system exists where there was nothing | `constitution7` `braindump7` `deepdive7` `memory7` `channel7` |
+| **start** | the system exists where there was nothing | `constitution7` `braindump7` `deepdive7` `memory7` `north7` `channel7` |
 | **aios** | the system's own files stay honest | `context7` `focus7` `exit7` `week7` `audit7` `dashboard7` |
 | **capture** | memory holds a record that did not exist | `in7` `inbox7` `voice7` `watch7` `meeting7` `news7` |
 | **decide** | a written judgment exists where there was an opinion | `eval7` `evalx` `verify7` `kw7` `companies7` `web7` |
@@ -100,6 +100,8 @@ Each raises a specific layer. When an evaluation finds a gap, the skill that clo
 `loop` is a cross-section, not a seventh category. Those three also sit in the group that describes what they do; they are gathered here because "install only three" is advice nobody can follow if the command hands you twelve.
 
 **Do not install them all.** The build is staged for a reason: three standing skills until the loop closes once. The evaluation in [references/evaluate.md](references/evaluate.md) tells you which few you need, in order.
+
+**Standing means something specific, and the guided door now seeds eleven methods, so it is worth saying out loud.** A skill is *present* when its file is in your skills folder and listed: it costs nothing and does nothing until you type its name. A skill is *standing* when its trigger line is in your constitution: it is read on every message and it can run without you asking. **The cap of three has always counted standing skills, not files.** Eleven present with three standing is the same rule, not a relaxation of it, and the fourth one still waits for the loop to close once.
 
 ---
 

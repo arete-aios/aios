@@ -34,7 +34,7 @@ Not written somewhere. Written **where the next session reads without being aske
 
 This is the step people leave out, and this is the step that makes the difference.
 
-**Real mechanisms:** `focus7` rebuilding the one file that says what matters right now, area by area, from real data, with a diff the owner approves. `week7` reading the week's own records once a week, counting the money, naming the patterns, and deciding what changes next week. The daily brief that opens from the focus file rather than from an empty screen. A skill that fires unasked because the constitution told it when to.
+**Real mechanisms:** `focus7` rebuilding the one file that says what matters right now, area by area, from real data, with a diff the owner approves. `week7` reading the week's own records once a week, counting the money, naming the patterns, and deciding what changes next week. The daily brief that opens from the focus file rather than from an empty screen. `north7` writing `05-focus/OPEN.md` and the constitution line that makes the AI read it before it answers anything, so a commitment made on Monday with a check date on it arrives on Thursday without anyone going to look for it.
 
 **How you know it works:** something written on Monday visibly changed a Thursday. The owner did not go looking for it. It arrived.
 

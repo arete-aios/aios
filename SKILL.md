@@ -109,6 +109,8 @@ in7, exit7, focus7
 
 **Every session begins by reading this file and ends by updating it.** If you cannot find it, that is stage 1 unfinished, whatever the owner remembers.
 
+**One rule covers both doors: the state lives in the file that actually loads.** This nine stage build assumes a client with file access that can follow a pointer, so a separate progress file is right here. The guided door in [onboarding/_proj-onboarding.md](onboarding/_proj-onboarding.md) does not assume that, so its state block sits inside the constitution itself. **If a progress file exists and loads, point at it. If nothing loads a second file, the state is inline.** A second file is a second thing to paste, and the second thing never gets pasted.
+
 ---
 
 ## HOW IT RUNS
@@ -121,7 +123,7 @@ Nine stages. **Refuse them out of order** and say which exit test is still open.
 | **2** | `braindump7` | The owner empties their head into one unstructured file. `braindump7` is the skill that captures and later files it; here the job is just to get it all out | The owner said more than they thought they had |
 | **3** | `deepdive7` | Inventory: money, time, knowledge, network, what is already paid for | You stop giving advice that assumes a runway that is not there |
 | **4** | `memory7` | Stages 2 and 3 become folders that fit **this** owner | A new note has an obvious home without anyone asking |
-| **5** | `in7` + `exit7` + `focus7` | The daily loop. **Only these three** | One skill ran **unasked** |
+| **5** | `north7`, then `in7` + `exit7` + `focus7` | The accountability system, and the three skills that run it. **Still only these three standing** | One of those three ran **unasked**, and what came back changed what the owner did next |
 | **6** | ⏸ **Stop for two weeks** | Use it. Add nothing | Something from Monday changed Thursday |
 | **7** | `week7` | The slow turn of the loop, plus the money line | The weekly review happened without a reminder |
 | **8** | Everything else, on demand | One at a time, when a real need appears | none |
@@ -135,7 +137,7 @@ Nine stages. **Refuse them out of order** and say which exit test is still open.
 
 **Stage 4.** Build only the folders that already have something to put in them. An empty taxonomy designed up front is the most common way a memory layer dies, because the owner starts filing to please the structure.
 
-**Stage 5.** Install in this order: `in7` first, because capture with nowhere to go is still better than nothing captured. `exit7` second. `focus7` last, and only once there is enough written down to focus on. Three is the ceiling, not the target. In a client that supports plugin marketplaces, add it once with `/plugin marketplace add arete-aios/aios`, then `/plugin install loop@arete-aios` installs exactly these three and nothing else.
+**Stage 5.** Run `north7` first. It is a build skill, it runs once, and it decides what the other three are aimed at: a north star, one goal, one number, and a ledger with a check date in it. Without it the three that follow are a well kept record of a life nobody is holding to anything. Then install in this order: `in7` first, because capture with nowhere to go is still better than nothing captured. `exit7` second. `focus7` last, and only once there is enough written down to focus on. Three is the ceiling, not the target. In a client that supports plugin marketplaces, add it once with `/plugin marketplace add arete-aios/aios`, then `/plugin install loop@arete-aios` installs exactly these three and nothing else.
 
 **Stage 8.** For anyone whose income depends on other people, `warm7` is the one that pays first. For anyone in meetings all day, `meeting7`. Everything else waits for a need to show up on its own.
 
@@ -144,6 +146,10 @@ Nine stages. **Refuse them out of order** and say which exit test is still open.
 ## HARD RULES
 
 **1. No more than three standing skills before the loop closes once.** The three are the stage 5 set. Build skills used once, stages 1 to 4, do not count.
+
+**Standing means the trigger line is in the constitution**, read on every message, able to run without being asked. A skill whose file is in the folder and listed in the skills CONTEXT file is *present*: it costs nothing and does nothing until the owner types its trigger word. The cap counts standing. It has never counted files, and the guided door seeds eleven present with three standing, which is the same rule and not a relaxation of it.
+
+**One rule beside the cap, because the constitution can speak without being a skill.** Hard rules, voice rules and the loop have always fired unasked and they are rules, not skills. So: **at most two blocks in the constitution may speak without being asked, and never both in the same reply.** During the guided setup that is the onboarding block and nothing else. Afterwards it is the accountability block and nothing else. Two blocks offering the same three answers in the same reply is a question nobody can answer.
 
 **2. Stage 6 is a real stop, two full weeks, nothing added.** Say this to the owner in plain words: *this is the step you will want to skip, and skipping it is the single reason most second brains are abandoned.* Fourteen days of use is what turns a structure into a habit, and no amount of building substitutes for it. If the owner insists, do not argue twice. Write the refusal in the progress file, note the date, and hold the cap.
 
@@ -165,7 +171,7 @@ Say both of these out loud early, because the owner's instinct will be that more
 
 ## DEFINITION OF DONE
 
-1. **The progress file exists**, the constitution points at it, and a session that has never seen the owner before can resume from it alone.
+1. **The state can be resumed from a file**, either a progress file the constitution points at, or the state block inside the constitution when nothing loads a second file. A session that has never seen the owner before can pick up from it alone.
 2. **Stages 1 to 5 passed their own exit tests**, each with the proof written next to it, not remembered.
 3. **The loop is written into the constitution** with a real mechanism named at each of the three steps.
 4. **The two week stop actually happened**, on the calendar, with dates in the file.

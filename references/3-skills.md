@@ -8,7 +8,9 @@ A skill is not a prompt and not a document. It is a named procedure with a trigg
 
 ## What belongs in it
 
-**Something the owner has now done three times the same way, badly the first time.** That is the whole entry test. A method earns a file when repeating it from memory has started to produce different results.
+**Something the owner has now done three times the same way, badly the first time.** That is the whole entry test for a method the owner writes. A method earns a file when repeating it from memory has started to produce different results.
+
+**The guided door in [onboarding/_proj-onboarding.md](../onboarding/_proj-onboarding.md) seeds against a second test, and it is worth stating rather than leaving as an inconsistency.** Eleven methods land in the folder on day one. Four of them are the methods behind steps the script has just run by hand, so the owner can redo any of those steps properly instead of going back to the repository. The rest are the ones a first month reliably needs. The entry test above still governs everything the owner adds afterwards, and the cap still governs what is switched on.
 
 A skill file that works contains: what it is for, what it requires and what happens when those requirements are missing, the trigger, what must be true when it is finished, and one line the AI adds to the always loaded core or the skills-CONTEXT file so it can be found when the trigger fires.
 
@@ -23,7 +25,7 @@ A skill file that works contains: what it is for, what it requires and what happ
 - **A behaviour rule.** One line about how to respond is a constitution line, not a skill.
 - **Anything that only works for this one owner's exact folders.** If it cannot be handed to another person's AI and rebuilt inside a different system, it is a personal script.
 - **Anything that does not actually work.** A method the owner has never successfully run is a demo. Publishing demos beside working methods is how a library stops being trusted.
-- **More than three of them, before the loop has closed once.** See [feedback-loop.md](feedback-loop.md). This is the rule everyone breaks and it is the reason most second brains are abandoned.
+- **More than three of them switched on, before the loop has closed once.** See [feedback-loop.md](feedback-loop.md). This is the rule everyone breaks and it is the reason most second brains are abandoned. **Switched on means standing**, which means the trigger line is in the constitution, read on every message, able to run without being asked. A file sitting in the folder is *present*: it costs nothing, does nothing, and waits for its trigger word. The cap counts standing. It has never counted files.
 
 ---
 

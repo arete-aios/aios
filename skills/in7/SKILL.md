@@ -126,6 +126,8 @@ Steps for you, the assistant. Goal level, not code level.
 
 **1. Fix the date first, then parse.** Default to today, honour an explicit date or a weekday word. Then read the free text for the fields the owner cares about. A workable default set: one meta question about what they did for themselves and not for others, then food and drink, energy, productive output, one emotion word, one thing they are grateful for. Adapt the set to the owner's actual goals. This is theirs, not a template.
 
+**If the owner has a P1 goal, the day line carries one more field: `p1`.** Either the thing in this message that touched that goal, in their own words, or the word `nothing`. `nothing` is a legitimate and frequent value, it gets written down like any other, and it gets no comment. A system that reacts to every zero teaches people to stop typing zeros.
+
 **2. Never ask for what a machine knows.** If a device supplies weight or sleep, take it from there. Asking a human to retype a number their watch already recorded is the fastest way to kill a daily habit. **Then check that the number is fresh.** Many health platforms carry the last known value forward, so a value that never moves is usually no measurement at all rather than a plateau. If you cannot tell whether a reading is new, say so in the same line where you report it.
 
 **3. Write two layers, and let the content decide which.** Signals go in the day line. If the owner explained why, gave a cause, or said something revealing about themselves, that goes into the block underneath in full, including a direct quote in their own words. The quote is the part worth reading a year later. Never paraphrase it into your voice.
@@ -133,6 +135,8 @@ Steps for you, the assistant. Goal level, not code level.
 **4. Report gaps, not everything.** Show a compact table with only the fields that came back missing, weak or negative. Fields that are fine need no row. Then ask one to three questions, only about the gaps, marked as skippable. If the owner ignores them, move on and do not repeat them tomorrow. This is a mirror, not an audit.
 
 **5. Watch trends, and pick the moment to speak.** Three weak or negative days in a row on the same field becomes a topic for the weekly review, not a nag today. A sharp flip from good to bad gets one question straight away. Long stretches of good need less attention, so check every couple of weeks. If the owner keeps answering "nothing" to the meta question three days running, raise it once, gently.
+
+**Check the message against open ledger rows whose check date is today or past**, if the owner runs a commitment ledger. If the message names one, fill its outcome and its evidence. If you can look at the evidence, look, and mark it `kept (verified)`. If you cannot, mark it `kept (self reported)` and say which of the two you wrote. If the message does not mention it, leave it open and say nothing today. Three `nothing` days in a row is a topic for the weekly review, not a nag today.
 
 **6. Rotate the deeper questions instead of stacking them.** One reflective question on a given day, not three. A fixed weekly rotation works well: one theme early in the week, another midweek, another at the end, plain logging on the rest. Three questions every day guarantees the owner starts answering to get it over with, which produces confident garbage.
 

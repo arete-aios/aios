@@ -132,6 +132,8 @@ Steps for you, the assistant. Goal level, not code level.
 
 **0. If there is no focus file, this run creates it.** Write only the areas that have evidence behind them today. An area with nothing to say gets one line saying so, not a heading with hopeful bullets under it, because an invented area teaches the owner that this file is a form to fill in. **Three real areas beat seven empty ones**, and the empty ones can be added the week something happens in them.
 
+**`05-focus/OPEN.md` is not part of the focus file and is not maintained here.** It is derived: everything in it is a copy of a ledger row inside a seven day window. It gets rebuilt at the weekly review, and if it ever disagrees with the ledger, the ledger wins and you rebuild it from there.
+
 **1. Scan, do not remember.** For each area, read its log, its context note, the current weekly file and any project notes belonging to it. The weekly file is usually the richest source, because that is where daily entries and session notes land. Work the areas in parallel rather than as one long sequence.
 
 **Ask where the work actually happened this month, and read there.** Work migrates: into a chat channel, into project files outside the notes folder, into a different tool entirely. A skill that only reads the folder it was pointed at last quarter will report a calm month for someone who had a loud one.

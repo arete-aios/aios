@@ -123,7 +123,7 @@ Steps for you, the assistant. Goal level, not code level.
 
 **1. Read the week before asking a single question.** Daily entries, calendar planned against calendar happened, files changed, things shipped, money. Arrive with a filled draft. **A blank page handed to a tired person on a Sunday evening is the most common way this habit dies.** You write first, they correct.
 
-**2. Check last week's decisions first.** They were written down, so mark each one done, dropped, or still running before anything new is discussed. A review that never audits its own previous output is a suggestion box.
+**2. Check last week's decisions first, and check them against the ledger rather than against memory.** They were written down as rows in `05-focus/accountability/ledger-<year>-Q<n>.md`, each with a check date and an evidence source. Read every row that came due this week and every row still marked open from before. **Read the outside source the goal names before you ask the owner a single question:** if the evidence is the sent mail folder, open the sent mail folder; if it is a sheet, read the number. Hand back a filled table for the owner to correct, not a question for them to answer. Where the week's own words and the outside source disagree, both go in the table with their sources named, and neither is resolved by you. A review that audits its own previous output from memory is the one thing this skill refuses to do everywhere else.
 
 **3. Count the money, every week, in its own section.** What came in, what went out, and the one number that tells this owner where they stand. Someone living on savings wants runway, given as a date, because months are abstract and a date is not. A business wants its cash position. Someone on a salary wants money in against money out this week, nothing more. Pick the number once and keep it for a year. **Never estimate a number a statement holds.** Missing is a legitimate value, and a guess in a permanent record becomes a fact by repetition.
 
@@ -132,6 +132,8 @@ Then the part that makes this belong here rather than in a finance app: **say wh
 **4. Look across weeks, not inside one.** Keep a short standing list of live patterns and mark each one continuing, broken, or new. **Something on its third consecutive week is a signal. One bad Tuesday is weather.** Report what changed state and stay quiet about the rest, because a pattern list read out in full every week gets skipped in full.
 
 **5. Force it down to at most three decisions.** A decision names what changes, who does it, and when it gets checked. "Be better about X" is a feeling. If the week produced none, say so in one line rather than manufacturing one. If it produced eleven, the owner has a week of intentions and no week to put them in.
+
+**A decision becomes a ledger row before the session ends, or it is not a decision.** Made today, in the owner's own words as a quote, serving a named goal, with a check date and an evidence source. **A proposed commitment with no possible evidence source gets said out loud as such**, and the owner decides whether to keep it anyway. Keeping it is allowed. Hiding it is not.
 
 **6. Update the focus layer. This is the redirect, and it is what makes this a loop rather than a record.** Every decision lands either in the focus layer or in a task with a date. Anything that lands nowhere gets deleted in front of the owner, with a sentence saying why. If they have a dedicated focus routine, hand it over rather than editing that file yourself.
 
