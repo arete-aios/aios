@@ -1,15 +1,18 @@
 # Goal: NOT SET
 
 _Parent: 05-focus/accountability/_accountability-CONTEXT.md_
-_Serves the north star in 05-focus/north-star.md. If it does not serve it, this is not a goal, it is work._
+_During guided onboarding this is provisional until step 11. After a north star is chosen it serves 05-focus/north-star.md; if none is chosen, it is explicitly marked as a standalone 90-day commitment._
 _Filename: _goal-<slug>.md, where the slug is two or three of my own words, not a code._
 
+state: NOT SET
 rank: NOT SET
 set: NOT SET
 check rhythm: NOT SET
+where this came from: NOT SET
 
-<!-- rank is P1, P2 or P3, and it is asked for, not assigned. check rhythm is usually weekly. Both
-     stay NOT SET until I have said them. -->
+<!-- state is running/provisional/paused/finished. Rank is P1, P2 or P3 and is asked for, not
+     assigned. Check rhythm is usually weekly. Provenance names a confirmed line in the harvest,
+     dump or assets list. All stay NOT SET until I have said or confirmed them. -->
 
 ---
 
@@ -28,7 +31,10 @@ where the date came from: NOT SET
 
 ## How anyone would know
 
-NOT SET. Observable. A number, a thing sent, a thing published, a thing signed, a date that arrived.
+measure: NOT SET
+current value: NOT SET
+
+<!-- Observable: a number, a thing sent, a thing published, a thing signed, a date that arrived. -->
 
 ---
 
@@ -38,11 +44,11 @@ source: NOT SET
 what to look at: NOT SET
 connected: no
 
-**This field is required and it is the one that decides whether this system is real.** At least one
-goal has to have its evidence in a system outside these files: mail, calendar, a bank, a repository,
-a sheet. A goal whose only evidence is me saying it went well is a goal nobody can hold me to. If the
-honest answer is that nothing outside holds it, write `source: I type it in every week` and keep the
-goal. That is a legitimate answer written as one rather than a gap.
+**This field is required and it is the one that decides how strong the measurement is.** The strong
+version has evidence in a system outside these files: mail, calendar, a bank, a repository, a sheet.
+A goal whose only evidence is me saying it went well is weaker and must say so. If the honest answer
+is that nothing outside holds it, write `source: I type it in every week` and keep the goal. That is
+a legitimate manual mode written as one rather than a gap; never claim it is independently verified.
 
 It is also what decides which tool gets connected first. Whichever source this line names is the
 first connector worth setting up, and the ones no goal names can wait. Connections chosen without a

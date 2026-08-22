@@ -4,9 +4,9 @@ description: "WEEK7: read the week's own records, count the money, name the patt
 license: CC-BY-4.0
 metadata:
   author: fulldigital.me
-  version: "1.0.0"
+  version: "1.0.1"
   source: week7
-  synced: "2026-07-23"
+  synced: "2026-08-22"
 ---
 
 # SKILL: The weekly review that changes the next week
@@ -148,7 +148,9 @@ Then the part that makes this belong here rather than in a finance app: **say wh
 1. **The weekly file exists**, holding raw numbers rather than a summary of them.
 2. **Money is written down:** in, out, and the one number that fits this owner, a runway date on savings, cash position for a business, money in against money out on a salary.
 3. **Live patterns are listed**, each marked continuing, broken, or new.
-4. **Last week's decisions are marked** done, dropped, or running.
+4. **Last week's decisions use the ledger's fixed outcomes:** `open`, `kept (verified)`,
+   `kept (self reported)`, `missed`, `dropped`, or `changed`. The weekly file copies that result; it
+   does not invent a second vocabulary.
 5. **At most three decisions for next week**, each with a person and a check date.
 6. **The focus layer was updated**, or a line explains why nothing changed.
 

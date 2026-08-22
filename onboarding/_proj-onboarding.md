@@ -18,9 +18,9 @@ Read the whole file before you act on any part of it. There are gates in here, a
 
 ---
 
-## The eleven steps, across three sessions
+## The eleven steps, across at least three sessions
 
-Nine steps in the first session, one in the second, one in the third. The numbers are used by the onboarding block in the constitution, so they are fixed. Do not renumber them.
+Steps 1–7 are the first session. Steps 8–9 stay there only if the owner is awake enough; otherwise they become a second session. Step 10 runs in the next session and step 11 in the one after that. The numbers are used by the onboarding block in the constitution, so they are fixed. Do not renumber them.
 
 | # | Step | Session |
 |---|---|---|
@@ -31,27 +31,29 @@ Nine steps in the first session, one in the second, one in the third. The number
 | 5 | Strengths and assets | 1 |
 | 6 | The memory layer | 1 |
 | 7 | The constitution | 1 |
-| 8 | The quarter goal, and the accountability system | 1, or the next one if they are tired |
-| 9 | The one connection, and hand over | 1 |
-| 10 | The completeness check | 2 |
-| 11 | The north star, and the three priorities | 3 |
+| 8 | The quarter goal, and the accountability system | 1, or 2 if they are tired |
+| 9 | The one connection, and hand over | the same session as step 8 |
+| 10 | The completeness check | the next session |
+| 11 | The north star, and the three priorities | the session after that |
 
-**Step 8 is the payoff and it is the one step you are allowed to move.** At the end of step 7 you offer to stop. If the owner is tired, step 8 and step 9 run at the start of the next session and the state block carries them there. Setup finished in one exhausted sitting is setup that gets abandoned.
+**Step 8 is the payoff and it is the one step you are allowed to move.** At the end of step 7 you offer to pause for the day, not to stop the onboarding. If the owner is tired, step 8 and step 9 run at the start of the next session and the state block carries them there. That makes the full path four sessions instead of three. Setup finished in one exhausted sitting is setup that gets abandoned.
 
 ---
 
 ## Hard rules
 
-1. **Nothing is written before the owner says yes.** Not a folder, not a placeholder, not a helpful starter file. The gate below is the first thing that happens.
+1. **Nothing in the AIOS is written before the owner says yes.** The one exception is `aios-write-test.txt`, because the entry launcher explicitly authorizes that test before any AIOS write; depending on the launcher, the script may be read before or after the test. It proves the path and nothing more. Do not create a folder, calendar event, placeholder or AIOS file until the owner approves the exact list below. Ask separately before deleting the test file.
 2. **You never invent a fact about the owner.** Not a job title, not a company, not a number, not a preference. If you do not know, ask. If they do not know either, it goes in Open questions at the bottom of this file, not in memory.
 3. **Anything you found rather than were told is unconfirmed until they confirm it out loud.** Unconfirmed material never enters memory. It waits in Open questions.
 4. **You do not decide how many files this person needs.** There is no target count. A person with one business and one client needs less than a person with three of each, and both are correct.
 5. **You stop when this file says stop.** The owner is allowed to be slow.
 6. **You write in their words.** If they said "my customers", you do not write "my client base".
-7. **Nothing seeded is switched on.** Eleven methods arrive in the skills folder. Three of them are named in the constitution and may run without being asked. The other eight are files that do nothing until the owner types their trigger word. You say this out loud at the gate, in plain words, and you never switch a fourth one on. The cap counts standing skills, not files.
-8. **The constitution is created holding the onboarding block, and the block is never deleted.** It is created at step 1 with that block and nothing else in it. The rest of it is filled at step 7 from `templates/CONSTITUTION.md`. The block leaves the file in exactly one way: replaced by a single line saying the onboarding is finished, on the date it finished.
+7. **Only three seeded methods are switched on.** Eleven methods arrive in the skills folder. `in7`, `exit7` and `focus7` are named in the constitution and may run without being asked. The other eight are present files that do nothing until the owner types their trigger word. You say this out loud at the gate, in plain words, and you never switch a fourth one on. The cap counts standing skills, not files.
+8. **The constitution is created holding the onboarding block, and the block never vanishes without a trace.** It is created at step 1 with that block and nothing else in it. The rest is filled at step 7 from `templates/CONSTITUTION.md`. Completion replaces it with one dated finished line. An explicit stop replaces it with one dated stopped marker containing the full resume snapshot, so AIOS can restore every field rather than merely remember a step number.
 9. **A section you could not fill stays in the file, marked empty, with the consequence written next to it.** You do not quietly drop a heading because the owner did not answer. An empty section with a stated consequence is information. A missing section is a hole nobody can see.
 10. **At most one block in the constitution speaks without being asked, and only at the end of a reply.** While the onboarding block is in the file, that block is the onboarding block. The accountability block created at step 8 stays silent until the onboarding block is gone, and it says so in its own text.
+11. **The paths and names the owner approves become the real paths.** Paths in this script and the templates are defaults. Once the owner renames one, write the resolved paths into the state block and use those paths everywhere. Never silently fall back to a default name later.
+12. **Every template has one deterministic source.** Use `00-system/aios/templates/<filename>` in file mode. If that local copy is unavailable, open `https://raw.githubusercontent.com/arete-aios/aios/main/templates/<filename>`. Never describe a template from memory, and never claim a bare repository-relative path was available in owner-saved mode.
 
 ---
 
@@ -67,9 +69,9 @@ Three things happen here, in this order, and the first one is the one that was m
 
 Ask it, out loud, now. There are three answers and only three.
 
-**A place exists.** Project instructions, custom instructions, a memory feature, a core file the client loads by itself. Ask the owner to paste in the state block from the second box on the page they copied the first one from, then put it in that place today, in this session, before the interview starts. Not the whole constitution, the block. Then say plainly: this is a copy, the file is the original, and if the two ever disagree the file wins.
+**A place exists.** Project instructions, custom instructions, a memory feature, a core file the client loads by itself. Ask the owner to paste in the state block from the second box on the page they copied the first one from. Keep that exact block as the one block for this setup; do not invent a second version. Record the intended place now, then put the copy there after the owner approves the file list. Not the whole constitution, the block. Then say plainly: this is a copy, the file is the original. If you can read the original, it wins. If you cannot, the newest copy the owner loaded or pasted is the authority for that session, and you say that rather than claiming to have compared it with a file you cannot see.
 
-**No place exists, but they have a calendar.** Make one repeating event now, weekly, on a day they choose. The title is the next step. The description holds the block and one sentence: paste this as the first message of a new chat and type ONBOARD. **The calendar is the alarm and the description is the payload.** It takes about a minute, and in plain chat it is the only thing that arrives without the owner remembering anything.
+**No place exists, but they have a calendar.** Record this choice now. After the owner approves the list, ask before creating one repeating event, weekly, on a day they choose. The title is the next step. The description holds the block and one sentence: paste this as the first message of a new chat and type AIOS. **The calendar is the alarm and the description is the payload.** It takes about a minute, and in plain chat it is the only thing that arrives without the owner remembering anything.
 
 **Neither.** Say the honest sentence out loud and write it into the block: nothing will remind them, this continues only when they open the file themselves, and the next session may not happen. That is a worse system and it is still a real one. Pretending the mechanism is working when it is not is the only version of this that is actually broken.
 
@@ -85,8 +87,8 @@ Show the owner a list, not a summary. Name every folder and every file you propo
                            onboarding block and nothing else. Filled at step 7
   02-memory/               everything the system knows, opened when relevant
     _memory-CONTEXT.md     what is in here, and the rule for how this folder works
-    braindump.md           the raw capture file, emptied later, never a task list
-    work-history.md        your CV or your LinkedIn in plain text. Step 4 does not pass without one
+    braindump.md           the raw capture file, created with the owner's words at step 3
+    work-history.md        created at step 4 from CV, LinkedIn or dictation; refusal leaves a limit
     harvest-<date>.md      everything recovered from this account's own history, if there is any
                            and you want it kept
   03-skills/               methods written down once so they run the same way
@@ -102,6 +104,10 @@ Show the owner a list, not a summary. Name every folder and every file you propo
     north-star.md          the sentence, and the three that serve it. Created at step 8
     OPEN.md                read at the start of every session. Created at step 8
     accountability/        the promises, and what happened to them. Created at step 8
+      _accountability-CONTEXT.md  what is here and the evidence rules
+      goals/_goal-<slug>.md       the one quarter goal
+      ledger-<year>-Q<n>.md       every promise, check date, evidence and outcome
+      weeks/week-<YYYY-Www>.md    the current file for IN7 and the weekly review
   06-archive/              finished and superseded material, one place, still listed where it came from
   00-system/aios/          a copy of the public AIOS files, including all the skills, so they can
                            always be reopened
@@ -111,7 +117,7 @@ Show the owner a list, not a summary. Name every folder and every file you propo
 
 First: eleven methods land in the skills folder. Three of them are switched on, which means they are named in the constitution, read every session, and able to run without being asked. The other eight are files. They sit there and do nothing until the owner types their name. They cost nothing and they are not waiting for attention. A fourth cannot be switched on until one of the three has run unasked once.
 
-Second: `work-history.md` is not optional. Step 4 stops there. Say the reason now rather than at the gate they hit: everything else in this system is what the owner thinks about themselves this week, and a work history is the only document that says what they have actually done, in order, with dates, and what other people paid them for.
+Second: the `work-history.md` decision is not optional. Step 4 stops there until the owner supplies real history or explicitly chooses the written advice limitation. Say the reason now rather than at the gate they hit: everything else in this system is what the owner thinks about themselves this week, and a work history is the only document that says what they have actually done, in order, with dates, and what other people paid them for.
 
 Third: the constitution is created now, empty except for the onboarding block. That block is what stops this setup from disappearing between today and the next time they open a chat.
 
@@ -124,9 +130,11 @@ Then ask, and wait:
 
 Do not ask "shall I proceed". Ask about the list. If they change a name, use their name everywhere from then on, including inside the files.
 
-Once they answer, create what they agreed to and nothing else. Save the copy of the public AIOS files into the system folder in the same move, so the person is never dependent on the repository staying online, and copy the eleven skill folders out of it into `03-skills/`.
+Once they answer, create only the step-1 base they approved: the folders; `CONSTITUTION.md` with the live state block; the five layer master files; this onboarding project file; the archive folder; the local public AIOS copy; and the eleven seeded skill folders plus their skills master. Do not create `braindump.md`, `work-history.md`, a harvest, the goal, ledger, `OPEN.md`, north-star or weekly file yet; the tree approved them, but their labelled steps create them with real content. Save the public AIOS copy into the system folder in the same move, so the person is never dependent on the repository staying online.
 
 **If you cannot write files at all, which is the common case in a plain chat, the folder is still real, it is just kept by the owner.** Hand them each file as a block to save, in order, and say plainly which ones they must keep and which are convenience. The skills layer in this mode is the CONTEXT file only: eleven names, eleven trigger lines, and the path to fetch each one from the repository when they want to run it. Say that out loud rather than pretending eleven folders exist.
+
+**In a mode where the owner saves the files, handing over a block is not completion.** Ask them to say when it is saved and where. A file step passes only after that acknowledgement. Never report a path, folder or local AIOS copy as existing because you supplied text for it.
 
 ---
 
@@ -136,43 +144,65 @@ Once they answer, create what they agreed to and nothing else. Save the copy of 
 
 The nine stage build in `SKILL.md` keeps a separate progress file and points at it from the core. That is correct there, because that build assumes a client with file access that can follow a pointer. The guided door does not assume that. **The rule that covers both: the state lives in the file that actually loads. If a progress file exists and loads, point at it. If it does not, the state is inline.** Inline is the default here.
 
-This is the exact block. Create it at step 1. Fill the state lines. Count it and tell the owner the number of tokens, because it is in the file that is paid for on every message and it is temporary.
+The second box on the page is the canonical block. At step 1, preserve every field it arrived with, add `state` and `script` if they are absent, and fill the values. Do not create a shorter second schema and do not replace known values with blanks. Count the filled block and tell the owner the number of tokens, because it is in the file that is paid for on every message and it is temporary. Its canonical filled shape is:
 
 ```markdown
 ## ONBOARDING
 
+AIOS STATE
+
 me: this block is how the setup finds its way back to me. If a new chat does not seem to know about
 it, I paste these lines in as the first message. It leaves this file when the setup is finished.
 state: running
+owner: <owner's name, or not given>
+mode: <A, B or C>
+where my files live: <full resolved path, owner-kept location, or nowhere>
+resolved names: <only names changed from the proposed list, or defaults>
+carried in: <where the copy of this block lives, or nowhere>
 step: 1 of 11, the slot, permission, and the folder. Part done: <what is already answered, or nothing>
 touched: <date I last did setup work>. Stamped: <date you last said the line>
 postponed until: not postponed. Postpones in a row: 0
 ignored in a row: 0
-carried in: <where the copy of this block lives, or nowhere>
+north star: not chosen yet
+this quarter: <one-line goal, or not chosen yet>
+first build: personal accountability system, not started
 script: 05-focus/_proj-onboarding.md
 
 Assistant. Read these lines before you answer anything, then do exactly this and no more.
 
-1. state stopped: say nothing about onboarding, ever. Only the word ONBOARD from me restarts it.
-2. state postponed and that date has not passed: say nothing.
+1. state quiet: say nothing about onboarding. Only the word AIOS from me returns state to running at
+   the step and Part done written here. A stopped setup uses the permanent stopped line, not this block.
+2. state postponed and that date has not passed: say nothing. When it has passed, state becomes
+   running before you use rule 4.
 3. stamped is today: say nothing. It has been said once already today.
 4. Otherwise: answer what I asked first. Then, at the end of that first reply only, one line: the
    step, its number, how long since touched, and these four words, carry on, postpone, stop, quiet.
    Set stamped to today in the same move. Never before my answer, never in the middle of a task,
    never twice in one day.
-5. I do not answer that line: add one to ignored in a row if you can write to this file. At two, keep
-   the one line, drop the question, and say once that you have stopped asking. If you cannot write to
-   this file you cannot count, so do not pretend you can: the once a day limit and the word quiet are
-   what protect me instead.
-6. I say postpone: ask for a date, take seven days if I do not name one, add one to postpones in a
+5. I do not answer that line and later send another message: only then add one to ignored in a row,
+   if you can write to this file. Never infer an ignored answer from a chat ending. At two, keep the
+   one line, drop the question, and say once that you have stopped asking. If you cannot write to
+   this file you cannot count, so do not pretend you can.
+6. I say carry on: state becomes running, clear postponed until, and continue the named step without
+   repeating anything in Part done. Reset Postpones in a row to 0 once a material answer or write
+   advances Part done. I say postpone: ask for a date, take seven days if I do not name
+   one, set state postponed, and add one to postpones in a
    row. At three, say it plainly: this has been put off three times, so the next step gets cut in
-   half or stopped, which one. Then do the one I pick and never raise it again. I say quiet or stop:
-   state becomes stopped, with today's date and the step. That line stays in this file forever.
-7. Write these lines whenever anything in them changes, and hand them back to me to save at the end
-   of any session where they changed. If a session ends in the middle of a step, fill part done
-   first, and never re ask something sitting in that field. Never delete this block. When step 11 is
-   done, replace it with one line: onboarding finished on <date>.
+   half or stopped, which one. If I choose half, return to running and finish the smallest useful
+   half now; Part done carries the remainder. I say quiet: state becomes quiet and AIOS resumes it. I say stop:
+   replace this block and every carried copy with one permanent marker. It starts `onboarding stopped
+   on <date>` and then preserves every current state field in one compact resume snapshot: owner,
+   mode, where my files live, resolved names, carried in, step and Part done, touched and Stamped,
+   postpone and ignore counters, north star, this quarter, first build, and the resolved script path.
+   End it: `Do not mention this unless I say AIOS. Then reopen the saved script path and reconstruct
+   the canonical block from this snapshot.` Do not hard-code a default path or drop a known value.
+7. Update Part done immediately after every answer or material write, not when the chat ends. Write
+   this whole block whenever anything in it changes, and hand the whole block back to me to save in
+   any session where it changed. Never re ask something sitting in Part done. When step 11 is done,
+   replace it with one line: onboarding finished on <date>.
 ```
+
+Mode means exactly this: **A** = the assistant wrote and read back a file on the owner's real disk. **B** = no disk writing, but the client keeps project instructions, memory or a pinned document. **C** = plain chat; the owner keeps one document and pastes what the session needs. Use these letters only with those meanings.
 
 **Every design choice in there is against a specific way this fails. Say these out loud to the owner once, at the gate, because a mechanism nobody understands gets deleted the first time it is annoying.**
 
@@ -183,16 +213,16 @@ Assistant. Read these lines before you answer anything, then do exactly this and
 - **The four answers are inside the one line, not inside the question.** After two ignores the question is dropped and the stamp stays, so the exit word has to be somewhere the owner can still see it. Carry on, postpone, stop, quiet.
 - **Postponing expires.** A postpone with no date is a stop that nobody admitted to. Seven days is the default because it is one week, and the owner can name any date instead.
 - **Three postpones in a row gets one sentence and a choice, not a diagnosis of the person.** Say what happened: this has been put off three times, so the next step gets cut in half or stopped. Then do the one they pick and do not raise it again.
-- **A session that ends mid step writes what it already has into part done.** Otherwise the next session restarts the step from the top and re asks what they answered forty minutes ago, and repetition is the second most reliable way to kill an onboarding.
-- **Stopping is a real answer and it leaves a mark.** The block is rewritten to say stopped, with the date and the step. It stays in the file forever, one line. The whole problem was that this vanished by accident. Stopping on purpose is fine. Vanishing is not.
+- **Part done is updated after each material answer.** A chat ending is not an event you can reliably observe. Immediate updates are what stop the next session restarting the step and re asking what the owner answered forty minutes ago.
+- **Stopping is a real answer and it leaves a resumable mark.** The block and every carried copy become the same compact stopped marker with the full state snapshot. It stays forever without the `## ONBOARDING` heading, so accountability can run and a stale reminder cannot restart setup. Stopping on purpose is fine. Losing the state is not.
 
 ### When the client does not load the constitution by itself
 
 **Assume it does not, because for most people it does not.** That is why step 1 finds the slot before anything else happens.
 
-At the end of every onboarding session, hand back **the state lines only**, updated, as one copy block, with one sentence: replace the lines at the top of your constitution with these. Do not hand back the whole file. A person will paste eight lines. Nobody re-pastes a whole constitution, and asking them to is how the file stops being maintained in week two.
+At the end of every onboarding session, hand back **the whole AIOS STATE block**, updated, as one copy block, with one sentence: replace the block at the top of your constitution with this. Do not hand back the whole constitution. A person will replace one bounded block. Nobody re-pastes a whole constitution, and asking them to is how the file stops being maintained in week two.
 
-**The calendar event set at step 1 is what carries this in plain chat.** Check at the end of every session that it still exists and that its description matches the lines you just handed back. If the owner deleted it, do not make a second one. Ask whether they want to stop, and if they do, write stopped in the block. A reminder that has been deleted is an answer.
+**The calendar event approved and set at step 1 is what carries this in plain chat.** Check at the end of every session that it still exists and that its description matches the block you just handed back. If the owner deleted it, do not make a second one. Ask whether they want to stop, and if they do, replace the block with the dated stopped line. A reminder that has been deleted is an answer.
 
 If they say plainly that they will not maintain it by hand, believe them and write it down. Set the state line to `running, unmaintained`, and say the honest position out loud once: from here the onboarding continues only when they open this file and read it themselves, and you will not be able to remind them.
 
@@ -285,7 +315,7 @@ Do not stop at the first pile you find. One sweep returns the loudest material a
 - By number: prices, weights, counts, dates, deadlines.
 - By period: what was being discussed six months ago and is never mentioned now.
 
-**Keep going until two passes in a row return nothing new.** Then say how many passes you ran and what the last one added, so they can see whether you actually reached the bottom or ran out of patience.
+**For this first build, stop after ten minutes or three high-yield passes, whichever comes first.** Say how many passes you ran, what the last one added, and that step 10 returns for the gaps. The complete harvest may take hours; hiding it inside a bounded first build is not honest. This pass needs enough confirmed material to write a useful constitution, not an exhaustive dossier.
 
 Four rules on how you record it:
 
@@ -384,9 +414,9 @@ Write only what they confirm. Anything they say is wrong is discarded, not softe
 
 ---
 
-### Gate 2: the work history. This step does not pass without it.
+### Gate 2: the work-history consequence gate
 
-**You do not go to step 5 until `02-memory/work-history.md` exists and has something real in it.** This is the second and last hard gate in the whole script, and it is here rather than at the constitution because the constitution is written from it.
+**There are two valid exits, and neither is silent.** The normal exit is that `02-memory/work-history.md` exists and holds something real. The refusal exit is the explicit empty file and explicit advice limitation below. Do not call the second one complete work history; call it the consequence the owner chose. This gate is here rather than at the constitution because the constitution is written from it.
 
 **Say the reason before you ask, in one short paragraph, because a gate with no reason reads as a form.**
 
@@ -405,6 +435,8 @@ Whichever arrives, write it into `02-memory/work-history.md` as plain text, keep
 > No work history in this system. Do not give me advice on my career, my price, my positioning or my next move until this is filled. Say so instead.
 
 That is a real consequence rather than a nag, it is honest, and it means the assistant will raise it exactly when it matters, which is the only time raising it is useful.
+
+The step passes only after one of those two exits exists in the file. In owner-saved mode, it passes only after the owner confirms they saved it.
 
 ---
 
@@ -454,7 +486,7 @@ The file has held the onboarding block since step 1. Now the rest of it gets fil
 
 **Category 8 from the harvest is the part to mine hardest.** Every time this person told an assistant to stop doing something, that was them writing a hard rule without knowing it. Those lines are worth more than anything they would produce by being asked "how do you want me to talk to you", because they were written while annoyed rather than while being polite to a form.
 
-**The template is `templates/CONSTITUTION.md` in this repository. Use it as the shape and fill every section.** Each section in it carries the question that fills it and one example line showing the level of detail expected. Delete each of those comments as you fill its section, because they are in a file that is paid for on every message. The onboarding block is already at the top of the file and does not come from the template.
+**The template is `00-system/aios/templates/CONSTITUTION.md` in the owner's local copy, or `https://raw.githubusercontent.com/arete-aios/aios/main/templates/CONSTITUTION.md` if the local copy is unavailable. Use the content below its state placeholder as the shape, but leave `This quarter` for step 8 and do not add the `Accountability` block until step 8. Fill every owner section now.** Each section carries the question that fills it and one example line showing the level of detail expected. Delete each of those comments as you fill its section, because they are in a file that is paid for on every message. The live onboarding block is already at the top of the file. Preserve it byte for byte except for state changes; never paste a template block over it and never leave two onboarding blocks.
 
 **Write it in the language the owner thinks in.** Keep the section headings in English so the method stays comparable across people, and write everything under them in their language. A constitution written in a language the owner does not think in produces polite, thin answers, and thin is the failure this step exists against.
 
@@ -480,11 +512,31 @@ The test that keeps them apart: **the thing that must not move when the week goe
 - **A section is not finished when it has a sentence in it. It is finished when the sentence would change what you do.** Read your own draft back and mark every line with the behaviour it changes. Any line you cannot mark comes out or gets rewritten until you can.
 - **When an answer is thin, ask once more with a concrete case rather than a general question.** Not "what are your values", which produces a poster. Instead: name a real thing they told you about in the last hour and ask what they did and why. Values come out of cases. They never come out of the question.
 
+### The constitution quality gate
+
+Before you show the draft, make a temporary evidence map outside the constitution: `section → confirmed source → behaviour changed`. Do not save that map unless the owner asks. The step stays open unless every row below is either `PASS`, or `LIMITED` with a dated operational consequence the owner explicitly confirmed:
+
+| Section | Minimum that passes |
+|---|---|
+| Who I am | a real role plus one constraint that changes advice |
+| My business | what is sold, who pays, and where money actually comes from; price only if confirmed |
+| What I have actually done | the work-history pointer plus one implication for advice, or the exact refusal limitation |
+| Who depends on me | named people or categories, or the explicit confirmed answer that nobody does |
+| What I believe | at least two real cases turned into rules that finish “so you must”; if the material contains only one, keep the section visibly incomplete |
+| Permissions | send, spend, delete, publish and speak-in-my-name are each decided, plus at least two things always allowed |
+| How to speak | language, directness, and one behaviour to avoid |
+| AI failures | one failure and the rule it creates, or the explicit confirmed answer that none has happened yet |
+| The loop | the actual capture, storage and next-action mechanisms, with real paths or owner-kept locations |
+
+An empty heading does not pass. A generic sentence that could belong to another owner does not pass. When a row is missing, run one targeted gap round using a named thing already said in this session; do not restart a general interview. If the owner cannot or will not answer, write `Not yet — <date>` and the exact operational consequence, and report that row as `LIMITED`, not `PASS`. A confirmed limitation may let the setup continue; a blank or plausible filler may not.
+
+Then show the whole draft and the compact evidence map. Ask the owner to approve or correct it. Silence is not approval. At this point the slot must graduate from carrying only the temporary state to loading the approved constitution: in file mode, the client's always-loaded file points at or contains it; in project or memory mode, the full approved constitution is saved or pinned there; in plain chat, the owner pastes the full approved constitution for the proof session. The state block stays at its top in every mode. Step 7 passes only after the owner explicitly approves it, confirms the approved version was saved in the named place, and a fresh session proves the client loaded it.
+
 Three things to finish with:
 
 - **Say its size in tokens**, and say what that costs across a month, because this is the one file that is paid for on every single message. Say what the onboarding block costs separately, and that it leaves when the onboarding finishes.
 - **Prove it works.** Start a fresh session and ask something only the constitution would let you answer. If it cannot, the file is in the wrong place. Go back to step 1 and check the slot, because that is where this fails.
-- **Offer to stop.** Step 8 is the payoff and it needs the owner awake. Ask whether to do it now or at the start of the next session. Either way, update the state block, hand the lines back, and check the calendar event if there is one. If they stop here, say in one sentence what step 8 is, so the thing they are coming back for has a name.
+- **Offer to pause for the day.** Step 8 is the payoff and it needs the owner awake. Ask whether to do it now or at the start of the next session. This is `postpone`, not the permanent `stop`. Either way, update the state block, hand the whole block back, and check the calendar event if there is one. If they pause here, say in one sentence what step 8 is, so the thing they are coming back for has a name.
 
 Full method, if they want to go deeper later: `03-skills/constitution7/SKILL.md`.
 
@@ -506,18 +558,23 @@ Say that out loud, and say the reason for doing the quarter anyway: ninety days 
 
 **One goal. Not three.** A new owner with three goals has none, and the second one is what makes the first one optional. Three is the ceiling ever, a second is allowed only after this one has been checked four weeks running, and the third has to displace something. Say the rule now, while nothing is at stake.
 
-Draft it yourself from what they told you in steps 2 to 6. Show them a filled one and let them correct it. It goes into its own file, `05-focus/accountability/goals/_goal-<slug>.md`, from `templates/_goal-SLUG.md`, and the slug is two or three words in their own language, not a code.
+Draft it yourself from what they told you in steps 2 to 6. Show them a filled one and let them correct it. It goes into its own file, `05-focus/accountability/goals/_goal-<slug>.md`, from `_goal-SLUG.md` using hard rule 12, and the slug is two or three words in their own language, not a code.
 
 Every line is required:
 
 ```
+state:                  running, provisional until step 11
+rank:                   P1 for the first goal, confirmed by the owner
+set:                    today's date, after the owner approves the goal
+check rhythm:           the weekly day the owner chose
 what will be true:      one sentence, their words, something someone else could check
 by:                     a date, and where the date came from
-the number:             one number that says it happened, and its value today
-read from:              where that number lives. A file, a tool, a bank, or "I type it in"
+measure/current value:  one number that says it happened, and its value today
+source/what to look at: where that number lives and the exact field. Or "I type it in"
+connected:              yes, read only; or no, manual
+next action:            one observable action small enough to finish in a day
 what stops:             what they give up to make room. If nothing stops, nothing starts
 where this came from:   the line in the harvest, the dump or the assets list that points at it
-state:                  running, provisional until step 11
 ```
 
 **The line people skip is `what stops`, and it is the one that decides whether this happens.** A goal added to a full week is a wish. Ask it directly and do not accept "I will find the time". If they genuinely cannot name anything, write `nothing stops, so this competes with everything` and put it in the file, because that sentence will explain the outcome in six weeks.
@@ -542,14 +599,15 @@ state:           running
 
 Dates for projects go in the focus file's dated table, not in the project header. Every date in the focus layer appears in that table once.
 
-### Then the four files that make it an accountability system
+### Then the five files that make it an accountability system
 
 From the templates in this repository, filled rather than empty. **Every unfilled line reads NOT SET, and NOT SET is never replaced by a plausible guess.** An empty file teaches the owner that this is a form to fill in later, and later does not arrive.
 
-1. **`05-focus/north-star.md`**, from `templates/north-star.md`. The sentence stays NOT SET. Fill only the quarter's three priorities if they already exist, which today they do not, so those stay NOT SET too. Ask the owner for the drop order rather than writing one for them.
-2. **`05-focus/accountability/_accountability-CONTEXT.md`**, from the template. The node master, the list and the rule.
-3. **`05-focus/accountability/ledger-<year>-Q<n>.md`**, from the template. **It gets at least one real row today.** If the north star is not chosen, that first row is choosing it: made today, in the owner's words, and ask them for the check date rather than setting one. The owner is allowed to be slow, and a deadline on the one step this script deliberately leaves undated is not yours to add.
-4. **`05-focus/OPEN.md`**, from the template. One screen, hard limit, because it is read at the start of every session. Fill `review day` with the day they picked and `quarter ends` with the goal's date.
+1. **`05-focus/north-star.md`**, from `north-star.md` using hard rule 12. The sentence stays NOT SET. The three priorities and their drop order do not exist yet, so they stay NOT SET without a question. Step 11 asks for the drop order only after real priorities exist.
+2. **`05-focus/accountability/_accountability-CONTEXT.md`**, from `_accountability-CONTEXT.md` using hard rule 12. The node master, the list and the rule.
+3. **`05-focus/accountability/ledger-<year>-Q<n>.md`**, from `ledger-YEAR-Qn.md` using hard rule 12. **It gets at least one real row today.** If the north star is not chosen, that first row is choosing it: made today, in the owner's words, and ask them for the check date rather than setting one. The owner is allowed to be slow, and a deadline on the one step this script deliberately leaves undated is not yours to add.
+4. **`05-focus/OPEN.md`**, from `OPEN.md` using hard rule 12. One screen, hard limit, because it is read at the start of every session. Fill `review day` with the day they picked and `quarter ends` with the goal's date.
+5. **`05-focus/accountability/weeks/week-<YYYY-Www>.md`**, from `week-YYYY-Www.md` using hard rule 12, the current weekly file that `in7` writes and the weekly review reads. Replace the placeholder with the ISO week, for example `week-2026-W34.md`; each new ISO week opens one new file. Under Review write the review day, this week's one promise as a ledger-row pointer, and `outcome: open`. Do not create a daily logging rule that points at a file which does not exist.
 
 ### The accountability block in the constitution
 
@@ -558,17 +616,19 @@ Add it to `CONSTITUTION.md`, under the onboarding block. **It stays silent while
 ```markdown
 ## Accountability
 
-North star: <sentence, or not chosen yet> · chosen <date> · detail 05-focus/north-star.md
+North star: <sentence and chosen date, or not chosen yet> · detail 05-focus/north-star.md
 Read 05-focus/OPEN.md before you answer the first message of any session.
 While the ONBOARDING block is still in this file, say nothing here.
 Once it is gone, say something about OPEN.md only when one of these is true, then say it in one line
-at the end of the reply and stop: a check date in OPEN.md is today or past; the last day line in my
-weekly file is three or more days old; today is my review day and this week's review has not run;
+at the end of the reply and stop: a check date in OPEN.md is today or past; the last day line in the
+current ISO-week file under 05-focus/accountability/weeks/ is three or more days old; today is my review day and this week's review has not run;
 the quarter ends within seven days.
 If none of them is true, say nothing about it and answer what I asked.
-If OPEN.md says paused, stay silent until the date it names.
+If OPEN.md has a future `paused until` date, or its state is stopped, stay silent.
 Whenever you do raise it, offer three answers and accept any of them: carry on, postpone, stop.
 A pause always takes a date, seven days if I do not name one.
+If I say stop, set OPEN.md to state stopped and stay silent until I explicitly say ACCOUNTABILITY.
+That word returns it to state running; it does not change any ledger row.
 ```
 
 **The silence rule is the load bearing half.** Without it every session opens with a status report, and a status report at the top of every session is the thing people switch off in week two.
@@ -583,7 +643,7 @@ Say the size of this block in tokens when you add it.
 
 **After four weeks, read the four marks together.** If the promise was kept fewer than twice, cut the size of the promise and keep the ritual. Say that to them now, before the first miss, because it cannot be said credibly afterwards.
 
-That is `in7` writing the daily line, `week7` reading the week and marking the promise, and `focus7` rebuilding what matters from what actually happened. Three of the eleven, all three already standing, and between them they are the loop pointed at something. **The loop was never missing from this method. It just never had a goal to close around.**
+That is `in7` writing the daily line, `week7` reading the week and marking the promise, and `focus7` rebuilding what matters from what actually happened. `in7`, `exit7` and `focus7` are the three standing skills. `week7` is present and runs when the weekly trigger or reminder calls it; it is not a fourth standing skill. Between them they point the loop at something. **The loop was never missing from this method. It just never had a goal to close around.**
 
 Then update the state block to step 9 and go on.
 
@@ -598,13 +658,29 @@ Then update the state block to step 9 and go on.
 *What it unlocks:* the weekly check becomes a measurement instead of a mood. This is the single connection that changes the most.
 *Without it:* the owner types the number in every week, on the same day. **That is never skipped, connected or not.** A goal with no number this week is a goal nobody is keeping.
 
-**Nothing gets write scope today.** Read only, without exception. A calendar that can write and a mailbox that can send are later decisions with their own gates, and they are not made at the end of a long first session. Ask for read scope when connecting and decline write scope even when it is offered.
+**No new outside connector gets write scope today.** The already approved folder write and any calendar reminder from step 1 are not expanded. A calendar connector that can create new events and a mailbox that can send are later decisions with their own gates, and they are not made at the end of a long first-build session. Ask for read scope when connecting the goal-number source and decline write scope even when it is offered.
 
-**The other four go into `04-tools/_tools-CONTEXT.md` as rows, not as offers.** State `not connected`, with what each one would unlock and its written fallback beside it. They get offered the day a goal names one of them, and not before. The template holds all five rows and the fallbacks are written as instructions rather than as apologies, because a fallback nobody wrote is a step that quietly does not happen.
+**Write all five rows truthfully in `04-tools/_tools-CONTEXT.md`.** Row 1 records the real folder or owner-saved mode. Row 4 records the goal-number source as `connected, read only` or `manual`. Rows 2, 3 and 5 stay `not connected`, with what each would unlock and its fallback beside it. They get offered the day a goal names one of them, and not before. The template holds all five rows and the fallbacks are instructions rather than apologies, because a fallback nobody wrote is a step that quietly does not happen.
 
 **When someone will not connect anything, say this plainly rather than selling them on it:**
 
 > The system still works. Here is exactly what you lose. Every number in your weekly check is one you typed, which means the check is exactly as honest as your memory on a Sunday evening. The method is the value. The connection is the convenience. You can add any of these later without changing anything you have built.
+
+### The first-build exit test
+
+Before handover, report `PASS` or `NOT PASS` for lines 1–8 below. Any `NOT PASS` keeps step 9 open; do not describe the first build as working yet. Once 1–8 pass, update the state block to step 10, synchronize every carried copy, and then test line 9. This order prevents the state from advancing before the build passes.
+
+1. A fresh session loaded the approved constitution and answered something it could know only from that file.
+2. Every constitution row passed the step 7 evidence gate, or its explicit dated limitation is visible.
+3. Work history is real, or the exact refusal limitation is present.
+4. The memory master lists every memory file and folder actually created.
+5. In file mode, the skills master lists eleven present skill folders. In owner-saved mode, it lists eleven available methods with their exact repository fetch paths and does not claim the folders exist. Both modes name exactly `in7`, `exit7`, `focus7` as standing.
+6. The tools master records the real state of every row. The goal-number source is either read-only connected or explicitly manual; no connection is claimed from a supplied template.
+7. The focus layer has one goal, its number and current value, evidence source, owner-confirmed date, rank, check rhythm and next action; `OPEN.md` derives Today from that action; one promise is in the ledger; and the current weekly file exists.
+8. In file mode, the local `00-system/aios/` copy contains this onboarding file, all eleven seeded skill folders and every referenced template. In owner-saved mode, the owner has confirmed saving the complete current bundle: constitution, memory master and generated memory, skills master, tools master, focus master, goal, ledger, `OPEN.md`, weekly file and AIOS STATE block. “I saved some of it” does not pass.
+9. After lines 1–8 passed, the state block says step 10, its Part done is current, and every carried copy matches it.
+
+This is an artifact test, not a conversation summary. Name the exact missing file or field on any `NOT PASS`, fix it, then rerun only the failed lines.
 
 ### Then hand over
 
@@ -618,17 +694,17 @@ Do not run those two yourself in this session, even if there is time. The gap is
 **Four things before you stop, and none of them is optional.**
 
 1. **Update the onboarding block** to step 10, today's date, state running.
-2. **Hand back the state lines as one copy block** with the one sentence: replace the lines at the top of your constitution with these. Do this even if the client auto loads files, because clients change and the owner should know how the mechanism works.
+2. **Hand back the whole AIOS STATE block as one copy block** with the one sentence: replace the block at the top of your constitution with this. Do this even if the client auto loads files, because clients change and the owner should know how the mechanism works.
 3. **Check the slot.** If there is a calendar event, confirm its description matches the lines you just handed back. If there is a project or a memory, update the copy there and repeat that the file is the original.
 4. **Say the one sentence that this whole session was for:** you now have a goal with a number and a day of the week when it gets checked. Everything else here supports that. If they remember one thing from today, it should be the day.
 
 ---
 
-## The two sessions after this one
+## The two sessions after the first build
 
-> **Read this, do not run it.** The rest of this section is the script for the second and third sessions. It sits in this file so that whichever session opens it knows what it is for. Running it in session one, because there was time and it seemed helpful, is the one failure this whole file is shaped to prevent.
+> **Read this, do not run it during the first-build session.** The rest is the script for the next two sessions after step 9. It sits here so whichever session opens it knows what it is for. Running it early because there was time is the failure this separation prevents.
 
-### Step 10, session two: the completeness check
+### Step 10, the next session: the completeness check
 
 Go back over the harvest, the dump and the memory layer, and look for what is missing rather than for what is wrong. The first pass always misses things, and it misses them in a predictable direction: whatever the owner did not think to mention because it is obvious to them.
 
@@ -637,12 +713,12 @@ Check specifically for the areas of life with nothing in them, the people mentio
 **Then three things that are new and belong here rather than at the end.**
 
 - **Read the goal's number out loud and say when it was last read.** If nobody has read it since step 8, that is the finding, and it goes first. A number in a file that nobody reads is a decoration.
-- **Check that the constitution's work history section is not the empty version.** If it is, this is the last good moment to fill it, before the north star gets chosen from material that does not include what this person has actually done.
-- **If step 8 was postponed from session one, run it now, first, before anything else.** It is the reason the owner came back.
+- **Check the constitution's work history section.** If it is accidentally blank, fix the broken gate. If it holds the owner-confirmed refusal limitation, do not ask again; only say that the north-star candidates cannot use absent work history. Reopen that choice only if the owner asks.
+- **Verify that step 9's first-build exit test is still all PASS.** If not, return to the failed line before adding more material. Step 10 never substitutes for unfinished steps 8–9.
 
 Update the onboarding block to step 11 before you stop.
 
-### Step 11, session three: the north star
+### Step 11, the following session: the north star
 
 **Pull the candidates out of what they have already written.** This is not a visioning exercise and you are not there to inspire anyone. Everything you need is in the harvest, the dump, the assets list and the work history, and the owner's job is to recognise something rather than to invent it.
 
@@ -662,11 +738,13 @@ For each of the three, give five things and nothing more:
 
 Then say plainly that this is a proposal drawn from their own words, not a diagnosis, and that they can pick one, merge two, or reject all three. **Rejecting all three is a good outcome, not a failed session.** The rejection almost always names the real one, and it names it faster than any question you could have asked.
 
+If they reject all three and do not name a replacement, do not force a fourth candidate. Write this exact state into `north-star.md` and the constitution: `North star not chosen — three candidates rejected on <date>. Do not infer one.` Keep P1, P2, P3 and the drop order as `NOT SET`. The existing quarter goal may still run, but it must be marked standalone until a north star is chosen.
+
 ### Then the quarter goal gets re-read against it
 
-**This is the step that stops the two from drifting apart.** The owner set a quarter goal in step 8, before the north star existed, and it was marked provisional for exactly this moment. Now put them side by side and ask one question: does this quarter move that, yes or no.
+**This is the step that stops the two from drifting apart.** The owner set a quarter goal in step 8, before the north star existed, and it was marked provisional for exactly this moment. If a north star was chosen, put them side by side and ask one question: does this quarter move that, yes or no. If all three were rejected without a replacement, ask instead whether the quarter is still worth doing as a standalone 90-day commitment; confirm, replace or drop it, and record the answer explicitly.
 
-Three honest outcomes, and all three are fine:
+When a north star was chosen, there are three honest outcomes, and all three are fine:
 
 - **Yes.** Take the word provisional off it and note the date it was confirmed.
 - **No, and the quarter is wrong.** Replace it. The weeks already spent are not wasted, they are how the owner found out, and say that rather than letting it feel like a false start.
@@ -683,9 +761,9 @@ Propose three, in order, and only three. Call them P1, P2 and P3: the first, sec
 
 **Write the priorities into `05-focus/north-star.md`, never into the constitution.** They are in the focus layer, in the file the goals serve, with one pointer line in `_focus-CONTEXT.md`. Priorities change every few months by design and the drop order is built to move in a bad week. The constitution takes only the four lines that do not move: the north star, the quarter in one sentence, the one number, and the date the quarter ends.
 
-Last, go back to layer one and replace the honest empty north star line with the chosen one, and note the date it was chosen. That date matters later: a north star nobody has looked at in a year is either finished or wrong, and both are worth knowing.
+Last, go back to layer one and replace the honest empty north star line with the chosen one and its date, or with the exact dated rejection line above. Update the `North star:` line inside the Accountability block to the same chosen or rejected state before that block becomes active. A dated decision matters later: a direction nobody has looked at in a year is either finished or wrong, and both are worth knowing.
 
-**Then close the onboarding properly.** Replace the whole onboarding block in the constitution with one line: `onboarding finished on <date>`. That line is also what switches the accountability block on, so say to the owner in one sentence what will change: from the next session, when something is due, they will hear about it in one line at the end of the first reply, and never anywhere else. Tell them what removing the onboarding block just saved them in tokens on every message. Move this file to the archive and leave it listed in the focus layer's CONTEXT file.
+**Then close the onboarding properly.** Replace the whole onboarding block in the constitution with one line: `onboarding finished on <date>`. That line is also what switches the accountability block on, so say to the owner in one sentence what will change: from the next session, when something is due, they will hear about it in one line at the end of the first reply, and never anywhere else. Tell them what removing the onboarding block just saved them in tokens on every message. Remove or replace every carried copy in project instructions, memory or the calendar with the same finished line; a stale live block must not restart completed onboarding. Move this file to the archive and leave it listed in the focus layer's CONTEXT file.
 
 ---
 
@@ -700,7 +778,7 @@ Everything unconfirmed lives here with a date. It leaves this list in one of two
 
 ## If the session was interrupted
 
-**The onboarding block at the top of the constitution is the authority, not this table.** It is the only copy that is read at the start of a session, and it is the only one that is kept up to date. If the two disagree, the block is right and this table is stale.
+**The onboarding block at the top of the constitution is the authority, not this table.** Every carried copy is synchronized when it changes. If you can read the constitution and copies disagree, the constitution wins and the carried copies are repaired. If you cannot read it, the newest copy the owner loaded or pasted is the session authority; never claim you compared a file you could not see. The Progress table may be stale and never overrides the block.
 
 When a new session opens this file, read the block first, then read what is already in memory, then continue from the step the block names. **Read the part done field before you ask anything, and never re ask something sitting in it.** Do not restart the interview from the top.
 
@@ -715,7 +793,8 @@ Write one line in the Progress table below every time you finish a step, and upd
 
 ---
 
-_This file is finished when the north star exists, the quarter has been re-read against it, and the owner has run one week without adding anything. Then it moves to the archive and stays listed in the focus layer's CONTEXT file._
+_This file is finished when step 11 closes: the north star exists or the owner explicitly rejected all three candidates, the quarter has been re-read against that result, every carried copy says finished, and the accountability block is the only unsolicited block left. The first operating week is evidence about the system, not a hidden twelfth onboarding step._
 _LOG: created from https://github.com/arete-aios/aios . Update this line with the date whenever the script itself changes._
 _2026-08-12: added Step 1, harvesting an existing account's own history, and Step 6, writing the constitution, which the script created at the gate and then never filled. Added the script for the second and third sessions, including three north star candidates drawn from the owner's own words and the three priorities that follow from the one they choose._
 _2026-08-21: the gate became step 1 and every step number moved up by one. Step 1 now begins by finding the slot, meaning the place this client reads without being asked, and putting the state block there before anything is created. The folder arrives seeded: eleven skills, three of them standing, and templates for the constitution, the skills, tools and focus CONTEXT files. The constitution is created at step 1 holding an onboarding block that carries the state, stamps itself at most once a day, and stops asking after two ignores. A second hard gate was added at step 4: a CV, a LinkedIn profile or ten minutes of dictated work history, one of the three, with a written consequence if none arrives. Step 8 is new and is where the owner gets one quarter goal with a number, at most three projects, a commitment ledger and a weekly promise that gets marked kept or not kept. Step 9 offers one connection rather than five, and the other four are written into the tools file with their fallbacks. Step 7 now offers to stop before step 8._
+_2026-08-22: unified the page and repository around one AIOS STATE block, made owner-saved files require save acknowledgement, bounded the first history harvest, added a section-by-section constitution evidence gate, created the weekly file the running loop points at, and added an artifact-based first-build exit test. Clarified the standing set, refusal path, pause schedule and cleanup of carried state copies._

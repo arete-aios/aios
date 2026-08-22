@@ -8,13 +8,16 @@ _Toward my north star: a method that runs the same way every time is the only ki
 
 ## The rule for this folder, and it is the only one
 
-**Eleven methods are in here. Three of them are switched on. Eight are files that do nothing.**
+**File mode:** eleven method folders are in here. Three are switched on and eight are present files
+that wait. **Owner-saved mode:** no method folder is claimed to exist; this file registers eleven
+methods available from their exact public source, with the same three switched on.
 
 **Switched on, which this method calls standing:** the trigger line is in my constitution. My AI reads
 it on every message, and the method can run without me asking for it.
 
-**A file, which this method calls present:** it sits in this folder and is listed below. It costs me
-nothing, it is not waiting for my attention, and it does not exist until I type its name.
+**Present, in file mode:** the skill file sits in this folder and is listed below. **Available, in
+owner-saved mode:** the row and exact fetch rule exist, but the folder does not. Both cost no loaded
+context and wait for the owner to type the trigger.
 
 **A fourth one does not get switched on until one of the three has run without me asking, once, and
 what came back changed what I did next.** That is the whole cap and it is the only rule in this
@@ -57,6 +60,11 @@ already ran by hand, so I can redo any of those steps properly without going bac
 **`week7` is not standing, and that is deliberate.** What reminds me is the Accountability block in
 my constitution, which speaks on my review day when the review has not run, and the calendar event
 set up during the onboarding. A reminder is a rule. It does not have to be a fourth standing skill.
+
+**Owner-saved mode fetch rule:** the exact source for every row is
+`https://raw.githubusercontent.com/arete-aios/aios/main/skills/<name>/SKILL.md`, replacing `<name>`
+with that row's skill name. Open it when the trigger fires; never describe it from memory and never
+claim a local folder exists.
 
 **The first one to add after these:** `context7`, the day this system grows past the point where I can
 scan it. The full library is in `00-system/aios/skills/`.

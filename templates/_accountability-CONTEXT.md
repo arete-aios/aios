@@ -12,6 +12,7 @@ _Toward my north star: this is the only place in the system where something I sa
 |---|---|
 | `goals/_goal-<slug>.md` | One file per live goal, at most three. Each names one source outside these files that would show it moved |
 | `ledger-<year>-Q<n>.md` | Every commitment I made this quarter, its check date, its evidence and its outcome. Never cleaned |
+| `weeks/week-<YYYY-Www>.md` | The current week's day lines, detail and review. `<YYYY-Www>` is the ISO week, for example `2026-W34`; IN7 writes it and WEEK7 closes it |
 | `../north-star.md` | The sentence the goals serve. It lives in the parent because it outlives every goal in here |
 | `../OPEN.md` | The small file read at the start of every session. Same reason |
 

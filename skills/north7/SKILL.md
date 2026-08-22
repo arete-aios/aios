@@ -1,12 +1,12 @@
 ---
 name: north7
-description: "NORTH7: build the accountability system that connects a north star to what you do on a Tuesday, and make it come back at you unasked. Use in week one, before any other method is added."
+description: "NORTH7: build the accountability system that connects a north star to what you do on a Tuesday, and make it come back at you unasked. Use in week one, before daily capture starts running."
 license: CC-BY-4.0
 metadata:
   author: fulldigital.me
-  version: "1.0.0"
+  version: "1.0.1"
   source: north7
-  synced: "2026-08-21"
+  synced: "2026-08-22"
 ---
 
 # SKILL: Build the thing that holds you to what you said
@@ -16,7 +16,7 @@ metadata:
 **Human:** paste this file into your AI. Nothing else is needed from you until it asks.
 **Assistant:** everything below is addressed to you. Adapt it to this owner's system. The goal and the hard rules matter, the exact implementation is yours to choose.
 
-> **This is a build skill. It runs once, and then it gets out of the way.** It creates five files and one block in the constitution. After that the system runs on `in7`, `week7` and `focus7`, which already exist and do not change. Run it again at a quarter, or when the north star changes. **It gets no trigger line in the constitution**, because a build skill that runs once does not need to be read on every message, and putting it there would make it standing under this method's own definition.
+> **This is a build skill. It runs once, and then it gets out of the way.** It creates six files and one block in the constitution. After that the accountability loop uses `in7`, `week7` and `focus7` as they become available. The guided build seeds them before this run; the staged build may install them afterwards. Run this skill again at a quarter, or when the north star changes. **It gets no trigger line in the constitution**, because a build skill that runs once does not need to be read on every message, and putting it there would make it standing under this method's own definition.
 
 ---
 
@@ -24,8 +24,8 @@ metadata:
 
 **This skill has two modes, and nothing below is a hard blocker.**
 
-**File mode:** you can write to a folder. You create the five files, add the constitution block, and the system reads itself from then on.
-**Chat mode:** there are no files. The same five files become five named blocks in one document the owner keeps, and they paste it at the start of a session. Same headings, same rules, same tables, and they do the filing. Say plainly what that costs: the return only happens when they paste, so in chat mode the calendar carries the trigger instead of the loaded file. Moving to file mode later changes who saves the entry, not the method.
+**File mode:** you can write to a folder. You create the six files, add the constitution block, and the system reads itself from then on.
+**Chat mode:** there are no files. The same six files become six named blocks in one document the owner keeps, and they paste it at the start of a session. Same headings, same rules, same tables, and they do the filing. Say plainly what that costs: the return only happens when they paste, so in chat mode the calendar carries the trigger instead of the loaded file. Moving to file mode later changes who saves the entry, not the method.
 
 | What | Needed | How to connect |
 |---|---|---|
@@ -61,7 +61,7 @@ The goal gets written into a focus file. The day gets written into a weekly file
 
 **The owner's north star has a check date on it, and something written on Monday reaches them on a Thursday without them going to look for it.**
 
-Six things are true when this has run:
+Seven things are true when this has run:
 
 1. **A north star sentence with a date it was chosen**, or an honest NOT SET and a ledger row for choosing one.
 2. **At most three goals**, each serving that sentence, each with an observable test and a next action. One goal is the normal number in the first months.
@@ -69,13 +69,14 @@ Six things are true when this has run:
 4. **A ledger with rows in it**, each with a check date and an evidence source.
 5. **`OPEN.md` exists, is under one screen, and is read at the start of a session.** Proven this run, not assumed.
 6. **The owner has said which of the three return mechanisms is theirs**, and it has been set up in this session rather than described.
+7. **The current weekly file exists**, with `Days`, `Detail` and `Review`, so daily capture and weekly review point at a real shared record.
 
 ---
 
 ## TRIGGER
 
 - The owner writes `NORTH7`, or asks where they stand, what they promised, or why nothing is moving.
-- **Week one, after the memory layer exists and before any daily method is installed.** This is the ordinary trigger. There is nothing to hold anyone to before the folders exist, and there is nothing worth capturing daily until there is a goal it feeds.
+- **Week one, after the memory layer exists and before any daily method starts writing.** The skill files may already be seeded; present is not running. This is the ordinary trigger. There is nothing to hold anyone to before the folders exist, and there is nothing worth capturing daily until there is a goal it feeds.
 - **The quarter.** Runs as the reset, inside the weekly review, not as a separate ritual.
 - **The north star changed**, or a weekly review produced decisions and there was nowhere to write them.
 
@@ -100,17 +101,19 @@ Read the constitution first for two reasons. The owner's hard rules decide what 
 ```
 ## Accountability
 
-North star: {sentence, or not chosen yet} · chosen {date} · detail 05-focus/north-star.md
+North star: {sentence and chosen date, or not chosen yet} · detail 05-focus/north-star.md
 Read 05-focus/OPEN.md before you answer the first message of any session.
 While the ONBOARDING block is still in this file, say nothing here.
 Once it is gone, say something about OPEN.md only when one of these is true, then say it in one line
-at the end of the reply and stop: a check date in OPEN.md is today or past; the last day line in my
-weekly file is three or more days old; today is my review day and this week's review has not run;
+at the end of the reply and stop: a check date in OPEN.md is today or past; the last day line in the
+current ISO-week file under 05-focus/accountability/weeks/ is three or more days old; today is my review day and this week's review has not run;
 the quarter ends within seven days.
 If none of them is true, say nothing about it and answer what I asked.
-If OPEN.md says paused, stay silent until the date it names.
+If OPEN.md has a future `paused until` date, or its state is stopped, stay silent.
 Whenever you do raise it, offer three answers and accept any of them: carry on, postpone, stop.
 A pause always takes a date, seven days if I do not name one.
+If I say stop, set OPEN.md to `state: stopped` and stay silent until I explicitly say
+`ACCOUNTABILITY`. That word returns it to `state: running`; it does not change a ledger row.
 ```
 
 **The silence rule is the load bearing half.** Without it every session opens with a status report, and a status report at the top of every session is the thing people switch off in week two.
@@ -123,7 +126,7 @@ Say the size of the block in tokens when you add it. It is paid for on every mes
 
 **The ledger is memory and it is never cleaned.** One file per quarter, rows appended, format frozen for a year. Comparability is the entire asset, and reordering or tidying a ledger destroys it silently.
 
-**The day lines go into the weekly file `in7` already writes.** Do not create a second daily file. Two records of the same week contradict each other inside a month and there is no way to choose between them afterwards.
+**The day lines go into one weekly file shared with `in7`.** Reuse it if it exists; otherwise create the current ISO-week file under `05-focus/accountability/weeks/`, for example `week-2026-W34.md`. Open one new file when the ISO week changes. Do not create a second daily file. Two records of the same week contradict each other inside a month and there is no way to choose between them afterwards.
 
 **What rots:** the goal files. A goal whose next action has not changed in three weeks is either finished, blocked or abandoned, and all three are worth writing down. Say which one you believe and why.
 
@@ -143,9 +146,9 @@ File read and write is the only hard requirement. The evidence sources are what 
 
 Steps for you, the assistant. Goal level, not code level.
 
-**1. Ask whether the north star exists, and do not invent one.** If it has been chosen, take the sentence in the owner's exact words and the date it was chosen. If it has not, write NOT SET, say plainly that this is the honest state, and make choosing it the first row in the ledger. **Ask the owner for that row's check date rather than setting one.** The owner is allowed to be slow, and a deadline on the one decision the method deliberately leaves undated is not yours to add. A borrowed north star in a permanently loaded file is worse than an empty line, because everything downstream quietly aligns to it.
+**1. Ask whether the north star exists, and do not invent one.** If it has been chosen, take the sentence in the owner's exact words and the date it was chosen. If it has not, write NOT SET, say plainly that this is the honest state, and make choosing it the first row in the ledger. **Ask the owner for that row's check date rather than setting one.** The owner is allowed to be slow, and a deadline on the one decision the method deliberately leaves undated is not yours to add. A borrowed north star in a permanently loaded file is worse than an empty line, because everything downstream quietly aligns to it. In either case, update the `North star:` line in the Accountability block to the same state; never leave the active block with an older north star than `north-star.md`.
 
-**2. Write the five files, filled rather than empty.** Every file gets its parent line, its purpose line, the rule for how it works, the table headings with one clearly marked example row, and a dated log line at the bottom. **An empty file teaches the owner that this is a form to fill in later, and later does not arrive.** Every unfilled line reads NOT SET, and NOT SET is never replaced by a plausible guess. That includes `rank`, `check rhythm`, the drop order and `serves`: ask, or leave them.
+**2. Write the six files, filled rather than empty.** They are `north-star.md`, `_accountability-CONTEXT.md`, one `_goal-<slug>.md`, the current quarter ledger, `OPEN.md`, and `weeks/week-<YYYY-Www>.md`. Use the matching repository templates where they exist. Every file gets its parent line, its purpose line, its working fields or table headings, and a dated log line at the bottom. **An empty file teaches the owner that this is a form to fill in later, and later does not arrive.** Every unfilled line reads NOT SET, and NOT SET is never replaced by a plausible guess. That includes `rank`, `check rhythm`, the drop order and `serves`: ask, or leave them.
 
 **3. Take at most three goals, and make each one name its evidence before you write it down.** One is the normal number in the first months. The evidence field is where this skill either becomes real or stays decorative. Ask the question directly: if you did this, what would show it, somewhere that is not this folder. Mail, calendar, bank, repository, sheet, invoice, a published page. **If none of the goals can name an outside source, say so out loud rather than lowering the standard.** The owner may keep the goal anyway, and then it is written as `source: I type it in every week`, which is a legitimate answer written as one rather than a gap.
 
@@ -155,7 +158,7 @@ Steps for you, the assistant. Goal level, not code level.
 
 **6. Prove the check fires, before you call the run finished.** Open a fresh session and ask something unrelated. Either the assistant mentions the due row, or it correctly says nothing because nothing is due, and you can show which of the four conditions it evaluated. **This is the step that separates an accountability system from a folder with dates in it**, and it is the one that gets skipped, because writing the files feels like the work. The wiring is the work.
 
-**7. Register the running behaviour with the three skills that will do it.** One line into `in7` about the `p1` field and the ledger check. One line into `week7` about reading the ledger first. `focus7` gets the diff at the weekly review and keeps the dated table. You do not write a fourth daily routine.
+**7. Register the running behaviour with the three methods that will do it.** One line into `in7` about the `p1` field and the ledger check. One line into `week7` about reading the ledger first. `focus7` gets the diff at the weekly review and keeps the dated table. If one is not installed yet, write its exact pending registration into the skills CONTEXT file and apply it when that method arrives; do not claim you edited a file that does not exist. You do not write a fourth daily routine, and this does not change the standing trio chosen by the surrounding AIOS build.
 
 **8. Hand back one line and stop.** What was created, where, and which of the four conditions will fire first. No summary of the session, no encouragement, no list of what could be added next.
 
@@ -239,7 +242,7 @@ encouragement.
 
 ## DEFINITION OF DONE
 
-1. **The five files exist and none of them is empty.** Every unfilled line reads NOT SET and no NOT SET was replaced by a guess.
+1. **The six files exist and none of them is empty.** The current weekly file has `Days`, `Detail` and `Review`. Every unfilled line reads NOT SET and no NOT SET was replaced by a guess.
 2. **At most three goals, and at least one of them names an evidence source outside these files**, or the absence was said out loud and written down as `I type it in every week`.
 3. **The ledger has at least one row**, with a check date the owner chose and an evidence source. If the north star is not chosen, that row is choosing it.
 4. **`OPEN.md` is under one screen** and you told the owner its size rather than an impression of it.

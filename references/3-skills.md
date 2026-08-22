@@ -10,7 +10,7 @@ A skill is not a prompt and not a document. It is a named procedure with a trigg
 
 **Something the owner has now done three times the same way, badly the first time.** That is the whole entry test for a method the owner writes. A method earns a file when repeating it from memory has started to produce different results.
 
-**The guided door in [onboarding/_proj-onboarding.md](../onboarding/_proj-onboarding.md) seeds against a second test, and it is worth stating rather than leaving as an inconsistency.** Eleven methods land in the folder on day one. Four of them are the methods behind steps the script has just run by hand, so the owner can redo any of those steps properly instead of going back to the repository. The rest are the ones a first month reliably needs. The entry test above still governs everything the owner adds afterwards, and the cap still governs what is switched on.
+**The guided door in [onboarding/_proj-onboarding.md](../onboarding/_proj-onboarding.md) seeds against a second test, and it is worth stating rather than leaving as an inconsistency.** Eleven methods land in the folder on day one. Five of them are the methods behind steps the script has just run by hand, so the owner can redo any of those steps properly instead of going back to the repository. The rest are the ones a first month reliably needs. The entry test above still governs everything the owner adds afterwards, and the cap still governs what is switched on.
 
 A skill file that works contains: what it is for, what it requires and what happens when those requirements are missing, the trigger, what must be true when it is finished, and one line the AI adds to the always loaded core or the skills-CONTEXT file so it can be found when the trigger fires.
 
@@ -31,15 +31,15 @@ A skill file that works contains: what it is for, what it requires and what happ
 
 ## What is offered here
 
-Twenty-eight, grouped by one rule: **what is different in the world when the skill finishes.**
+Thirty, grouped by one rule: **what is different in the world when the skill finishes.**
 
 | Group | After a run | Skills |
 |---|---|---|
 | **loop** | The loop closes: something written returns unasked and changes a decision | `in7` `exit7` `focus7` |
-| **start** | The system exists where there was nothing | `constitution7` `braindump7` `deepdive7` `memory7` `channel7` |
+| **start** | The system exists where there was nothing | `constitution7` `braindump7` `deepdive7` `memory7` `north7` `channel7` |
 | **aios** | The system's own always loaded files have changed | `context7` `focus7` `exit7` `week7` `audit7` `dashboard7` |
 | **capture** | Memory holds a record that did not exist | `in7` `inbox7` `voice7` `watch7` `meeting7` `news7` |
-| **decide** | A written judgment exists where there was an opinion | `eval7` `evalx` `verify7` `kw7` `companies7` |
+| **decide** | A written judgment exists where there was an opinion | `eval7` `evalx` `verify7` `kw7` `companies7` `web7` |
 | **people** | You know one named human better | `warm7` |
 | **reach** | Something outside your own files has changed | `mail7` `slides7` `site-cloudflare7` `site-lovable7` `ads7` |
 
@@ -54,7 +54,7 @@ Install:
 
 Or take one file and paste it into any assistant, with nothing installed at all. The file tells the AI what to do with itself.
 
-**Nobody needs all twenty-eight.** Three is a working system. The rest are answers to needs that have not happened yet, and installing an answer before the need is the most expensive habit in this whole layer.
+**Nobody needs all thirty.** Three is a working system. The rest are answers to needs that have not happened yet, and installing an answer before the need is the most expensive habit in this whole layer.
 
 ---
 

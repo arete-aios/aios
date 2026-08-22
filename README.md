@@ -48,9 +48,19 @@ Expect the honest answer to be shorter than you hoped. For most systems that are
 
 ## How to start
 
-There are two doors. Both end in the same system, so pick the one that matches how you want to spend the next hour.
+There are two doors. Both end in the same system, so pick the one that matches how you want to work through the first build.
 
-**Door one, guided.** You paste two blocks and your AI does the rest, stopping to ask permission before it creates anything. It interviews you, reads what you have already published about yourself if you let it, and writes the first files with you. About an hour, most of it answering questions, and it offers to stop before the last step so you can finish that part another day. Your folder arrives with eleven methods in it, three of them switched on, and it ends with one goal, one number and one day of the week when that goal gets checked. Start here if you want something working today: **[onboarding/_proj-onboarding.md](onboarding/_proj-onboarding.md)**.
+**Door one, guided.** You paste two blocks and your AI does the rest, stopping to ask permission before it creates anything. It interviews you, reads what you have already published about yourself if you let it, and writes the first files with you. Allow two to four hours for the first working build, across one or two sittings; the completeness and north-star sessions come later on purpose. Your folder arrives with eleven methods in it, three of them switched on, and the first build ends with one goal, one number and one day of the week when that goal gets checked. Start here if you want something working today: **[onboarding/_proj-onboarding.md](onboarding/_proj-onboarding.md)**.
+
+The public Build AIOS page supplies the normal two blocks. If you came straight to GitHub and do not have them, paste this smaller launcher instead. The onboarding file contains the canonical blank state block it needs:
+
+```text
+I want the guided AIOS build. Read all of
+https://raw.githubusercontent.com/arete-aios/aios/main/onboarding/_proj-onboarding.md before acting.
+Quote its first heading so I know it opened. I came directly from GitHub, so use the canonical blank
+AIOS STATE block inside that file. Test whether you can write to my real folder, then follow the file
+exactly. Apart from aios-write-test.txt, write nothing until you show me the full list and I approve it.
+```
 
 **Door two, the nine stages.** You build it yourself over weeks, one stage at a time, each with an exit test. Slower and deeper, and it is the same five layers. Everything below describes this door.
 

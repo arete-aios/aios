@@ -2,7 +2,7 @@
 
 _Parent: CONSTITUTION.md_
 _Layer 4. How my AI reaches anything that is not these files._
-_Toward my north star: exactly one connection here exists to make my goal's number a measurement rather than something I remember on a Sunday. The rest wait until a goal names them._
+_Toward my north star: zero or one outside connection may exist here. The goal's number is either read from that source or entered manually on the review day. The rest wait until a goal names them._
 
 ---
 
@@ -10,9 +10,9 @@ _Toward my north star: exactly one connection here exists to make my goal's numb
 
 **A connection is made when a method that is already running needs it, and not before.** Connectors
 accumulate faster than they get used, and every one is a permission granted, a surface to maintain,
-and something to be surprised by later. Row 4 below is the one my onboarding connected, because it is
-the one my goal names. The others are written down so I know what they would buy, not so I collect
-them.
+and something to be surprised by later. Row 4 below is the only one my onboarding offered, because it
+is the one my goal names. Its honest state may be `connected, read only` or `manual`. The others are
+written down so I know what they would buy, not so I collect them.
 
 **Read only, everywhere, until I say otherwise in writing.** A calendar that can write and a mailbox
 that can send are separate decisions with their own gates, and they do not get made at the end of a
@@ -54,4 +54,4 @@ Where mine are:
 
 ---
 
-_LOG: <date>, five connections listed by the onboarding, one connected. Update this line whenever a connection is added, dies, or changes scope._
+_LOG: <date>, five connections listed by the onboarding; goal-number source: <connected read only or manual>. Update this line whenever a connection is added, dies, or changes scope._

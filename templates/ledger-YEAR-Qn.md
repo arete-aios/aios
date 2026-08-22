@@ -1,4 +1,4 @@
-# Commitment ledger, 2026 Q3
+# Commitment ledger, <YEAR> Q<n>
 
 _Parent: 05-focus/accountability/_accountability-CONTEXT.md_
 _Every commitment I made this quarter, its check date, its evidence and what happened._
@@ -11,7 +11,7 @@ _Written by the weekly review and by the daily check in. Read at the start of ev
 
 | Made | Commitment, my words | Serves | Check | Evidence | Outcome | What it changed |
 |---|---|---|---|---|---|---|
-| EXAMPLE 2026-08-18 | send the pricing mail to the three names on the list | P1 | 2026-08-25 | mail, sent folder | open |  |
+| EXAMPLE <made date> | send the pricing mail to the three names on the list | P1 | <check date> | mail, sent folder | open |  |
 
 Delete the example row on the first real entry.
 
