@@ -105,7 +105,7 @@ Each raises a specific layer. When an evaluation finds a gap, the skill that clo
 | **capture** | memory holds a record that did not exist | `in7` `inbox7` `voice7` `watch7` `meeting7` `news7` |
 | **decide** | a written judgment exists where there was an opinion | `eval7` `evalx` `verify7` `kw7` `companies7` `web7` |
 | **people** | you know one named human better | `warm7` |
-| **reach** | something outside your own files changed | `mail7` `slides7` `site-cloudflare7` `site-lovable7` `ads7` |
+| **reach** | something outside your own files changed | `mail7` `slides7` `site-cloudflare7` `site-lovable7` `ads7` `video7` |
 
 `loop` is a cross-section, not a seventh category. Those three also sit in the group that describes what they do; they are gathered here because "install only three" is advice nobody can follow if the command hands you twelve.
 

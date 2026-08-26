@@ -7,3 +7,11 @@ Attribution line to keep if you republish:
 
   Skills by Egils Boitmanis, FullDigital (fulldigital.me). CC BY 4.0.
   Source: https://github.com/arete-aios/aios
+
+Contributed methods:
+
+  skills/video7 — the cutting method, boundary verification, frame snapping and
+  recut-safe caption timing are by Gianluca Mauro, published here with his
+  permission. The archive protocol and the two-lane split are by Egils Boitmanis.
+  Everything in that skill is a worked example intended to be adapted, not a
+  library to depend on.
