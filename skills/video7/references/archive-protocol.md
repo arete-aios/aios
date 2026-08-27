@@ -14,7 +14,7 @@ The half of `video7` that keeps its value even if no video is ever cut.
       _<slug>-CONTEXT.md       the project record
       edl.json                 cut decisions
       *.fcpxml / *.xml         editing timelines, if any
-      sources/                 originals, never edited, never renamed
+      sources/                 originals, never edited; renamed only to add a tag
       work/                    intermediates, deletable at any moment
       out/                     finished files, versioned
 ```
@@ -33,7 +33,11 @@ Folder names are for machines: lowercase, ASCII, hyphens, no spaces, no leading 
 
 A leading dash is worth spelling out because it fails so strangely. A path beginning with `-` is read as a command line option by nearly every tool, and the error says something about an unknown option rather than about a file, so it reads like a bug in your script. The same applies to spaces: an unquoted path with a space arrives as two arguments and the tool reports both halves missing.
 
-Source files keep the name the camera gave them. That name is the thread back to the device, and it is the only way to find the original again if the archive is ever rebuilt. Human readable names go in `out/`, where a person actually reads them, and the mapping between the two lives in the context file.
+Source files keep the identifier the camera gave them **and gain a short tag**: `IMG_4590_corridor-and-241.MOV`. The number is the thread back to the device, the only way to find the original again if the archive is ever rebuilt; the tag is what lets a person, or an assistant, open the folder in a year and know which file holds what without opening any of them.
+
+This is a correction to the obvious rule. Keeping the bare camera name is safe but useless: a folder of `IMG_4590.MOV` through `IMG_4599.MOV` forces you to play all ten. Renaming entirely is meaningful but severs the link. Keeping both costs nothing.
+
+Fully human-readable names still go in `out/`, where a person actually reads them.
 
 ---
 

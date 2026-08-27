@@ -73,7 +73,7 @@ Measure at the same time: duration, resolution, frame rate, rotation, and the au
   <MM>-<slug>/
     _<slug>-CONTEXT.md      what, why, what came out
     edl.json                the cut decisions
-    sources/                originals, never edited, never renamed
+    sources/                originals, never edited; renamed only to add a tag
     work/                   intermediates, deletable at any moment
     out/                    finished files, v1 / v2 / v3
 ```
@@ -84,7 +84,11 @@ Full folder rules and the context file template: [references/archive-protocol.md
 
 Segment level timings are not enough; the cut happens between words.
 
-**Be honest with the owner about the cost.** On a small local machine, word level transcription runs slower than real time, sometimes ten to fifteen times slower. Ninety seconds of audio can take twenty minutes. A fourteen minute talk is an overnight job, not a conversation. Say this before starting it, offer a smaller model for a rough pass, and start the long one in the background rather than making them wait.
+🔴 **Never assume the language. Detect it.** The most expensive mistake in this pipeline is a hardcoded language hint on a recording in a different language. A large model survives it and transcribes what it hears; a smaller one obeys the hint and returns fluent nonsense in the wrong language, which reads like a broken model rather than a wrong parameter. Run detection first, then pin the language.
+
+**Be honest with the owner about the cost, and measure before quoting.** On a small local machine a large model runs a few times slower than real time — measured on a four-core single-board computer: 96 s of audio in 340 s, about 3.5×. That makes ninety seconds a coffee break and a fourteen minute talk under an hour.
+
+**But measure it uncontended.** The same pipeline appeared to be forty times slower when transcription and video rendering competed for the same cores. Never run them together, and never quote a number taken while they were.
 
 ### 4. Find the cuts, and verify them against the sound
 
@@ -117,6 +121,19 @@ Normalise loudness to about −16 LUFS. Then verify, every time: the output fram
 **Hand over a timeline** when choosing the moment is taste rather than technique: family footage, stories, anything where the owner will disagree with you about which shot is the good one. Generate an editing project file with every clip and title as a separate object, and let them finish it in a real editor. A flat exported video imports anywhere but is welded shut; only a timeline stays editable.
 
 Recording the lane in the context file stops this being re-argued every time.
+
+### The round trip, when a person finishes the edit
+
+**An editing app does not write back into the project file you handed it.** Importing creates its own library; from that moment your file is a dead document, and the person's work lives somewhere you cannot see. They will tell you their changes "did not save". They did save, just not where either of you was looking.
+
+So build the loop explicitly:
+
+1. You generate the timeline file.
+2. They edit, then **export** a new one next to yours, under a different name.
+3. You read it back and report what changed, clip by clip: trims, reordering, removals, additions, effects, retiming.
+4. You render from their version, and the cycle repeats.
+
+Step 3 is the one people skip, and it is the one that turns file exchange into collaboration. Without it you are guessing what they did; with it you can discuss an edit in numbers.
 
 ---
 
