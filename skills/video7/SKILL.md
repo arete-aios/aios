@@ -1,168 +1,124 @@
 ---
 name: video7
-description: "VIDEO7: turn a pile of phone clips into an archive that describes itself, then cut a finished video out of it. Use when footage arrives faster than it gets edited, and nobody remembers what is in the files."
+description: "VIDEO7: inspect, archive, cut, and verify raw footage when phone clips need to become a findable archive, finished video, or editable timeline."
 license: CC-BY-4.0
 metadata:
   author: fulldigital.me
   contributors: "Gianluca Mauro (cutting method), Egils Boitmanis (archive protocol)"
-  version: "1.0.0"
+  version: "2.0.0"
   source: video7
-  synced: "2026-08-26"
+  synced: "2026-08-31"
 ---
 
 # SKILL: Keep footage findable, then cut it
 
-**Trigger word: `VIDEO7`.**
+**Trigger words: `VIDEO7` or the short alias `VID7`.**
 
-**Human:** paste this file into your AI. It will ask where your footage lives, and nothing else until it has looked at it.
-**Assistant:** everything below is addressed to you. Adapt it to this owner's system. The goal and the hard rules matter, the exact implementation is yours to choose. The code shapes here are a worked example, not a library: read them, then write your own.
-
----
+**Human:** paste this file into your AI and point it at the footage. It will inspect what it can reach before proposing a cut.
+**Assistant:** everything below is addressed to you. Adapt it to this owner's system. The goal and hard rules matter; the exact implementation is yours to choose.
 
 ## REQUIRES
 
-| What | Needed | How to connect |
+**This skill has two modes. Operating mode can complete the delivery; advisory mode can progress only as far as the supplied evidence allows.**
+
+**Operating mode:** you can read the media and run local video tools. Inspect, archive, transcribe, render, and verify the result.
+
+**Advisory mode:** the owner supplies metadata, contact sheets, an audio envelope, and a transcript with word times. You can design the archive, storyboard, cuts, and timeline specification, but state plainly that you did not inspect or render the original media. If those artefacts are also unavailable, stop after the brief and tell the owner exactly what must be produced next.
+
+| What | Needed for | How to connect |
 |---|---|---|
-| **A video tool** | required | `ffmpeg` and `ffprobe`, free: [ffmpeg.org](https://ffmpeg.org). Static builds need no admin rights |
-| **Speech to text with word times** | required for anything with talking | faster-whisper: [github.com/SYSTRAN/faster-whisper](https://github.com/SYSTRAN/faster-whisper), local and offline, or any hosted model that returns word level timestamps |
-| **An image library** | required for on-screen text | Pillow, or anything that renders a PNG. Many static ffmpeg builds ship **without** a text filter, so type is drawn as a transparent image and laid over the frame |
-| **Disk** | required | Roughly three times the source size while working. Intermediates are deleted afterwards |
+| **ffmpeg and ffprobe** | media inspection, contact sheets, cutting, rendering, loudness checks | [ffmpeg.org](https://ffmpeg.org) |
+| **Speech to text with word times** | spoken footage | [faster-whisper](https://github.com/SYSTRAN/faster-whisper), or another tool that returns word-level timestamps |
+| **An image renderer** | cards and title overlays | [Pillow](https://pillow.readthedocs.io), or any tool that creates transparent PNG files |
+| **A numeric array library** | audio-envelope example code | [NumPy](https://numpy.org), or equivalent short-window RMS calculations |
+| **Disk space** | sources, working files, and outputs | allow roughly three times the source size while rendering |
+| **A named editor and version** | editable timeline delivery | the owner chooses Final Cut Pro, Premiere Pro, DaVinci Resolve, or another target; do not guess |
+| **An editor format validator** | editable timeline delivery | the chosen editor's schema or DTD, plus an XML parser |
 
-No API key and no paid account. On the local path, nothing leaves the owner's machine, which matters because home footage is the most private material most people own.
-
-**Setup time, honestly.** Ten minutes for the video tool. The speech model pulls a few gigabytes on first run and is offline forever after. Budget an afternoon once.
-
----
+No paid account is required for the local path. A speech model may download several gigabytes on first use. Budget ten minutes for ffmpeg setup and an afternoon for the first complete pipeline. Do not run transcription and rendering on the same limited machine at the same time when measuring performance.
 
 ## WHAT
 
-**Footage arrives faster than it gets edited, and undescribed footage is lost footage.**
+Raw footage arrives faster than it gets edited. A folder of camera names tells neither the owner nor their AI what is inside, which take worked, or why it was filmed. Six months later the material exists but cannot be found by meaning.
 
-A folder called `IMG_4590.MOV` tells nobody anything. Six months later the owner cannot find the clip they remember, cannot tell which of four takes was the good one, and cannot ask you for help either, because you cannot watch video. So the pile grows, and the one video that was supposed to get made never does.
+VIDEO7 solves the archive before the edit. A described archive keeps its value even if nobody finishes the video. Once the material, intent, and good spans are written down, the cut becomes repeatable and every revision starts from decisions rather than memory.
 
-This skill does two things, and the first matters more than the second:
+## GOAL
 
-1. **An archive that describes itself.** Every clip lands in a dated folder with a written record of what is in it, what it is for, and what came out. That record is text, so it is searchable, versionable, and readable by you next year.
-2. **A cut.** Once the material is described, cutting is mechanical.
+Create a searchable archive and the delivery the owner needs: a finished video, an editable timeline, or both. Keep the originals untouched, record the cut decisions, verify the media rather than trusting a successful command, and leave the next session able to reproduce the result.
 
-The reason the order is that way round: an unedited archive that is well described still has all its value. A finished video on top of an undescribed pile has none, because the next one starts from zero again.
+The owner decides the audience, destination, acceptable length, captions, target editor and version, and whether the footage may leave their circle. You recommend aspect ratio and framing from both the material and destination; the owner approves them. Read known choices from their constitution or memory. If any are missing, ask once in one combined request. Never infer publication rights from permission to edit.
 
----
+## TRIGGER
 
-## HOW
+- The owner writes `VIDEO7` or `VID7` and names or shares footage.
+- A pile of clips needs to become searchable before anyone knows what to cut.
+- A finished cut needs an editable timeline, a reproducible revision, or a boundary audit.
+- A video sounds clipped, drifts out of sync, loses overlays, or imports incorrectly in an editor.
 
-### 1. Look at the footage. You can, and most assistants forget it
+**Not a trigger:** downloading or republishing somebody else's media without permission. Also not a trigger when the owner only wants feedback on a published video and has supplied no source material; review it as a review, not as an edit.
 
-You cannot watch a video. You **can** read an image. So turn each clip into one:
+## AIOS
 
-```bash
-dur=$(ffprobe -v error -show_entries format=duration -of csv=p=0 clip.mov)
-ffmpeg -i clip.mov -vf "fps=9/$dur,scale=480:-1,tile=3x3" -frames:v 1 sheet.jpg
-```
+This skill comes from an **AI operating system**: five layers a person owns and their AI reads. **Constitution** is who they are and which rules always apply. **Memory** is what the system knows. **Skills** are methods like this one. **Tools** are how the AI reaches media and editors. **Focus** is what matters now.
 
-Nine frames spread across the whole clip, in one picture you can open. This one trick is the difference between guessing and knowing. It has found a football match filed under basketball, identified which child in a team was the owner's, and caught that a frame was too tight for the on-screen cards that were planned for it.
+Read the owner's layers before touching footage. Private family material, public brand work, and a client recording can look identical to a video tool while carrying different consent, retention, and publication rules.
 
-Do this **before** proposing anything. A treatment written without looking is fiction.
+### CONSTITUTION
 
-Measure at the same time: duration, resolution, frame rate, rotation, and the audio level. A recording averaging −45 dB has room tone and footsteps, not speech, and that changes what the video can be.
+If video work is frequent, add one short trigger line to the always-loaded core. If it is occasional, register VIDEO7 in the skills index the core already links to. Publication, copyright, family, and deletion rules remain in the constitution, not in this skill.
 
-### 2. Put it away properly
+### MEMORY
 
-```
-<year>/
-  <MM>-<slug>/
-    _<slug>-CONTEXT.md      what, why, what came out
-    edl.json                the cut decisions
-    sources/                originals, never edited; renamed only to add a tag
-    work/                   intermediates, deletable at any moment
-    out/                    finished files, v1 / v2 / v3
-```
+Keep one project context file with the inventory, goal, format, lane, open work, results, and lessons. Store raw measurements and cut decisions next to the project. Move only durable lessons and published results into long-term memory. Dates, current filenames, and output versions belong in the project record.
 
-Full folder rules and the context file template: [references/archive-protocol.md](references/archive-protocol.md).
+### TOOLS
 
-### 3. Transcribe, with word times
+Prefer local tools for private footage. Before using a hosted transcription, rendering, or storage service, tell the owner what leaves the machine and wait for approval. A connector or API is only the transport; the Tools layer records how it is reached and what permissions it has.
 
-Segment level timings are not enough; the cut happens between words.
+> 🔒 **Never publish, message, upload, overwrite, or delete media without the owner's explicit approval for that action and destination. Keep the original media bytes untouched. Copy into the archive, verify the copy by SHA-256, and preserve the camera identifier. A copied archive filename may gain a short tag only when the mapping is recorded.**
 
-🔴 **Never assume the language. Detect it.** The most expensive mistake in this pipeline is a hardcoded language hint on a recording in a different language. A large model survives it and transcribes what it hears; a smaller one obeys the hint and returns fluent nonsense in the wrong language, which reads like a broken model rather than a wrong parameter. Run detection first, then pin the language.
+## HOW IT RUNS
 
-**Be honest with the owner about the cost, and measure before quoting.** On a small local machine a large model runs a few times slower than real time — measured on a four-core single-board computer: 96 s of audio in 340 s, about 3.5×. That makes ninety seconds a coffee break and a fourteen minute talk under an hour.
+1. **Fix the brief before the cut.** Ask one combined question for the audience and destination, purpose, target length, aspect ratio or framing preference, captions, privacy and cloud-processing permission, publication rights, and target editor plus version. Choose finished render, editable timeline, or both. Until the brief is answered, you may inventory and inspect locally but you do not choose the story or release preset. Missing publication rights block upload, not a local edit: mark it `private, not approved for publication`.
 
-**But measure it uncontended.** The same pipeline appeared to be forty times slower when transcription and video rendering competed for the same cores. Never run them together, and never quote a number taken while they were.
+2. **Inspect what is actually there.** Inventory every source with `ffprobe`: duration, streams, resolution, nominal and average frame rate, time base, rotation, colour and HDR metadata, audio, and creation or location metadata. Detect variable frame rate from frame timestamps rather than trusting one FPS field. Create evenly sampled contact sheets and look at them. Do not describe footage you have not inspected; in advisory mode label every supplied observation as owner-provided.
 
-### 4. Find the cuts, and verify them against the sound
+3. **Archive before editing.** Copy sources into the archive, compare SHA-256 hashes, then create the project context, byte-unchanged `sources/`, regenerable `work/`, versioned `out/`, and a durable cut-decision file. An archive copy may keep its camera name or gain a short descriptive tag after that identifier; record the mapping and never rename the device or inbox original. Follow [the archive protocol](references/archive-protocol.md) and [the brief and decision-list contract](references/brief-and-decisions.md). Media stays out of version control; descriptions, decisions, and timelines may be tracked. Cleanup of `work/` happens only after outputs pass and the owner approves it.
 
-Read the transcript for aborted takes, restarted sentences, and dead air. Decide which spans to keep. Then, before rendering anything:
+4. **Transcribe speech with detected language and word times.** Detect language before pinning it. The transcript decides which ideas to keep, not the exact frame where a cut lands.
 
-- **Never cut on word timestamps.** They are off by up to a few hundred milliseconds, which is exactly enough to clip the first consonant off a word.
-- **Verify every boundary against the audio envelope.** Compute short-window loudness, find the real onset of speech, and place the cut about 0.10 s before it. Leave about 0.15 s of room tone after the last word so the ending does not sound chopped.
-- **Snap every region's duration to a whole frame.** Without it, video rounds up to a frame while audio keeps the exact length, and the drift accumulates across joins into audible lip sync error.
+5. **Propose the story from evidence.** Name the kept spans, order, pace, audio cleanup, colour and HDR treatment, reframing, jump-cut treatment, cards, captions, brand elements, music, and ending. Recommend aspect ratio from the destination and what the frames can safely hold; the owner approves it. Show real frames for visual decisions. Ask for one approval on the proposed story before an expensive render when the owner's taste decides the result.
 
-The algorithms and the traps in detail: [references/cutting-code.md](references/cutting-code.md).
+6. **Place cuts against sound and frames.** Use the audio envelope to find real speech onsets and decays. Start about 0.10 seconds before onset and leave at least 0.15 seconds of room tone after the last word. For constant-frame-rate media, snap regions to whole output frames. For variable-frame-rate phone footage, either create and record a constant-frame-rate mezzanine or preserve original rational timestamps; never apply one scalar FPS formula to VFR media. Read [the cutting method](references/cutting-code.md) before implementing boundaries.
 
-### 5. Dress it
+7. **Render and write the chosen editor's timeline from the same decision list.** The decision list records source ID and hash, rational time base, kept spans, transforms, audio, captions, overlays, target editor and render preset. Draw text into tested transparent images when the video build lacks a reliable text renderer. Version the render, timeline, and source lineage together without overwriting earlier results. Follow [the timeline round trip](references/timeline-roundtrip.md) so media paths, schema, parent time, and return edits survive another machine.
 
-On-screen text as rendered PNG overlays, captions as a subtitle file burned in at the end.
+8. **Master, then prove the output.** Use a destination-specific loudness and true-peak preset, then measure the file. If no destination is set, label the output a review copy rather than a release master. Use two-pass linear loudness correction whenever the mix has an intentional fade or swell. Verify frame count or rational duration, audio-video alignment, first and last spoken boundaries, several visual frames, captions, colour metadata, media paths, and timeline validation. Caption checks include reading speed, safe zones, contrast, language review, and whether delivery is burned-in, sidecar, or both. Record timeline status as `schema_validated`, `import_tested`, or `import_unverified`; if the named editor is unavailable, never claim a successful import. A playable file is not yet a passed file.
 
-⚠️ **Verify fonts by rendering, never by inspecting the font file.** A font containing a language's glyphs is not proof that your renderer will draw them. Render one frame with the actual accented characters and look at it.
+9. **Clear rights, remove leaks, then hand off.** Before upload, confirm permission from the speaker, client, and footage owner, plus licences for music, fonts, logos, and other assets. Strip or intentionally preserve GPS and QuickTime metadata, and remove local absolute paths from a timeline package. Update the project result with filenames, versions, checks, publication state, link if approved, and the lesson that should change the next edit. Upload only the verified version to the approved destination and privacy setting.
 
-Anything laid over a speaker needs measuring per take, not reusing last time's numbers. The clear band above someone's head moves by hundreds of pixels between recordings.
+## DEFINITION OF DONE
 
-### 6. Master and check
+- Every source is inventoried from evidence, copied with matching SHA-256, its media bytes remain unchanged, and any archive filename tag preserves the camera identifier.
+- The archive context names the goal, audience, format, lane, open work, and result.
+- Cut decisions follow the documented schema and can reproduce the edit.
+- The finished render and timeline for the owner's named editor and version are versioned together.
+- Speech boundaries include a natural tail; CFR durations are frame-snapped, VFR timing follows the recorded policy, and measured drift is within one output frame.
+- Loudness, duration, image, captions, colour, paths, and timeline structure have been checked after rendering, and timeline import status is explicit.
+- Publication status, people and asset rights, metadata handling, and consent are explicit; no upload is implied by a successful local edit.
 
-Normalise loudness to about −16 LUFS. Then verify, every time: the output frame count matches the sum of the regions, and audio and video are aligned at several probe points. Single pass loudness correction can undershoot by more than a decibel; measure the result rather than trusting the request.
+## MAKE IT YOURS
 
----
+1. Set the archive root, naming pattern, and context template for the owner's filesystem.
+2. Pick one transcription engine and one overlay renderer. Keep editor export profiles separate by editor and version rather than choosing for the owner.
+3. Define platform presets for aspect ratio, captions, loudness, thumbnails, and privacy, but keep publication as a separate approval.
+4. Turn every real failure into a regression check: clipped words, drift, missing glyphs, broken media paths, invalid schema, or overlays attached to the wrong parent.
 
-## TWO LANES, DECIDED PER VIDEO
+Assistant, on ingest: if the owner explicitly asked to install this skill, save it in the skills layer in your own format, add the trigger line to the skills index, and confirm in one line what you saved, where, and the trigger. Otherwise use it for the current task without changing their system, and offer installation only after delivery.
 
-**Render it finished** when the edit is "remove the mistakes, add the text": a talk, an intro, a short piece. The machine can do all of it.
+**Skill by Egils Boitmanis, [FullDigital](https://fulldigital.me), a Latvia registered nonprofit association that teaches people to build an AI operating system they own. Cutting method developed with Gianluca Mauro and published with permission.**
 
-**Hand over a timeline** when choosing the moment is taste rather than technique: family footage, stories, anything where the owner will disagree with you about which shot is the good one. Generate an editing project file with every clip and title as a separate object, and let them finish it in a real editor. A flat exported video imports anywhere but is welded shut; only a timeline stays editable.
+**Licensed CC BY 4.0.**
 
-Recording the lane in the context file stops this being re-argued every time.
-
-### The round trip, when a person finishes the edit
-
-**An editing app does not write back into the project file you handed it.** Importing creates its own library; from that moment your file is a dead document, and the person's work lives somewhere you cannot see. They will tell you their changes "did not save". They did save, just not where either of you was looking.
-
-So build the loop explicitly:
-
-1. You generate the timeline file.
-2. They edit, then **export** a new one next to yours, under a different name.
-3. You read it back and report what changed, clip by clip: trims, reordering, removals, additions, effects, retiming.
-4. You render from their version, and the cycle repeats.
-
-Step 3 is the one people skip, and it is the one that turns file exchange into collaboration. Without it you are guessing what they did; with it you can discuss an edit in numbers.
-
----
-
-## HARD RULES
-
-- **`sources/` is never edited and never renamed.** It is the thread back to the camera. The human readable names live in the context file.
-- **`work/` may be deleted without asking.** If something must not be lost, it does not belong there.
-- **No spaces, accents, or leading dashes in folder names.** A leading dash makes a path look like a command line option and commands fail in ways that read as missing files. The human name lives in the text.
-- **Media never goes into version control.** Track the descriptions and the cut decisions, exclude the media. Those are the parts that cannot be regenerated from the originals.
-- **Sync is not backup.** Two machines kept identical propagate a deletion in seconds. One genuine one-way copy that never deletes is worth more than three synced ones.
-- **Never publish someone's footage, or music you do not have rights to, because a private edit worked.** A video made for a group chat is not cleared for a website. Ask before anything leaves the owner's circle.
-
----
-
-## FAILURE MODES SEEN IN PRACTICE
-
-| What happens | Why | What to do instead |
-|---|---|---|
-| Words lose their first consonant | Cut placed on a word timestamp | Verify against the audio envelope |
-| Lip sync drifts on longer edits | Region durations not snapped to whole frames | Snap the duration, pad the audio |
-| Accented characters render as blanks | Font assumed rather than tested | Render a frame and look at it |
-| Cards land on the speaker's face | Reused positions from a previous take | Measure the clear band per take |
-| The finished file cannot be adjusted | A flat export was handed over | Hand over a timeline as well |
-| A project folder can no longer find its media | Files moved after the timeline was written | Rewrite the relative paths and check every one resolves |
-
----
-
-## CREDIT
-
-The cutting method here, the boundary verification, the frame snapping, and the caption timing that survives a recut are **Gianluca Mauro's** work, published with his permission. The archive protocol, the contact sheet inspection step, and the two lane split are **Egils Boitmanis'**.
-
-Everything here is an example to adapt, not a library to depend on. Take it, change the parts that do not fit, and keep whichever hard rules you have not yet learned the hard way.
+_Part of the AIOS library: [github.com/arete-aios/aios](https://github.com/arete-aios/aios)_

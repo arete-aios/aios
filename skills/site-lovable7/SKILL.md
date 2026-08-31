@@ -29,7 +29,7 @@ Start in whichever mode today allows. Moving from drafting to operating changes 
 
 | What | Needed | How to connect |
 |---|---|---|
-| **A builder account** | required for operating mode | [lovable.dev](https://lovable.dev) · docs: [docs.lovable.dev](https://docs.lovable.dev/) |
+| **A builder account** | required for operating mode | setup and product documentation: [docs.lovable.dev](https://docs.lovable.dev/) |
 | **The builder's MCP server** | required for operating mode | [docs.lovable.dev/integrations/lovable-mcp-server](https://docs.lovable.dev/integrations/lovable-mcp-server). What MCP is: [modelcontextprotocol.io](https://modelcontextprotocol.io) |
 | **Credits** | required, every agent change spends them | [docs.lovable.dev/introduction/credits-and-usage](https://docs.lovable.dev/introduction/credits-and-usage) |
 | **A paid plan, for a live custom domain** | required to ship on the owner's own address | [docs.lovable.dev/features/custom-domain](https://docs.lovable.dev/features/custom-domain) |

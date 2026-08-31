@@ -87,7 +87,14 @@ Your AI creates a small progress file in stage 1 and reads it at the start of ev
 /plugin install loop@arete-aios
 ```
 
-**There is a group with exactly three skills in it, and it is the one most people should stop at.** `loop` is that group: `in7`, `exit7`, `focus7`, the three that close the loop and the ceiling until one of them has run without you asking. The other groups are `start`, `aios`, `capture`, `decide`, `people`, `reach`. Install `start` at stage 1 if you want the build stages themselves as skills, `loop` at stage 5, and the rest only when a stage calls for them. The cap of three counts standing skills, the ones still running after the build. The marketplace alone installs nothing; you pick the group.
+To install VIDEO7 by itself:
+
+```
+/plugin marketplace add arete-aios/aios
+/plugin install video7@arete-aios
+```
+
+**There is a group with exactly three skills in it, and it is the one most people should stop at.** `loop` is that group: `in7`, `exit7`, `focus7`, the three that close the loop and the ceiling until one of them has run without you asking. The other category groups are `start`, `aios`, `capture`, `decide`, `people`, `reach`; `video7` is a one-skill installation shortcut. Install `start` at stage 1 if you want the build stages themselves as skills, `loop` at stage 5, and the rest only when a stage calls for them. The cap of three counts standing skills, the ones still running after the build. The marketplace alone installs nothing; you pick the group.
 
 Or take any single skill as a file and paste it in, with nothing installed at all. The skills are in [skills/](skills/) in this repository, one folder each. When you paste a folder skill, its `references/` files are not pasted with it, so if a skill mentions one, either add it too or tell your AI it is not present.
 
@@ -108,6 +115,8 @@ Each raises a specific layer. When an evaluation finds a gap, the skill that clo
 | **reach** | something outside your own files changed | `mail7` `slides7` `site-cloudflare7` `site-lovable7` `ads7` `video7` |
 
 `loop` is a cross-section, not a seventh category. Those three also sit in the group that describes what they do; they are gathered here because "install only three" is advice nobody can follow if the command hands you twelve.
+
+`video7` is also an installation shortcut, not another category. The same skill remains in `reach`; the shortcut lets a filmmaker install it without pulling the other reach skills.
 
 **Do not install them all.** The build is staged for a reason: three standing skills until the loop closes once. The evaluation in [references/evaluate.md](references/evaluate.md) tells you which few you need, in order.
 

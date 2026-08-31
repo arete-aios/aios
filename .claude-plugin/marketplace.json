@@ -21,6 +21,15 @@
       ]
     },
     {
+      "name": "video7",
+      "description": "Inspect, archive, cut, and verify footage",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/video7"
+      ]
+    },
+    {
       "name": "start",
       "description": "The system exists where there was nothing",
       "source": "./",
@@ -95,7 +104,8 @@
         "./skills/slides7",
         "./skills/site-cloudflare7",
         "./skills/site-lovable7",
-        "./skills/ads7"
+        "./skills/ads7",
+        "./skills/video7"
       ]
     }
   ]

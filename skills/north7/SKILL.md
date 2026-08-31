@@ -126,7 +126,7 @@ Say the size of the block in tokens when you add it. It is paid for on every mes
 
 **The ledger is memory and it is never cleaned.** One file per quarter, rows appended, format frozen for a year. Comparability is the entire asset, and reordering or tidying a ledger destroys it silently.
 
-**The day lines go into one weekly file shared with `in7`.** Reuse it if it exists; otherwise create the current ISO-week file under `05-focus/accountability/weeks/`, for example `week-2026-W34.md`. Open one new file when the ISO week changes. Do not create a second daily file. Two records of the same week contradict each other inside a month and there is no way to choose between them afterwards.
+**The day lines go into one weekly file shared with `in7`.** Reuse it if it exists; otherwise create the current ISO-week file under `05-focus/accountability/weeks/`, named `week-<ISO-year>-<ISO-week>.md`. Open one new file when the ISO week changes. Do not create a second daily file. Two records of the same week contradict each other inside a month and there is no way to choose between them afterwards.
 
 **What rots:** the goal files. A goal whose next action has not changed in three weeks is either finished, blocked or abandoned, and all three are worth writing down. Say which one you believe and why.
 
@@ -164,7 +164,7 @@ Steps for you, the assistant. Goal level, not code level.
 
 ---
 
-## WHAT RUNS AFTERWARDS
+## AFTER THE BUILD
 
 **The session start check.** Read `OPEN.md` before answering the first message. Speak only when a check date is today or past, or the last day line is three or more days old, or it is the review day and this week's review has not run, or the quarter ends within seven days. Otherwise say nothing and answer what was asked. When you do speak: one line, at the end of the reply, about the file, the smallest next step, and the three answers, carry on, postpone, stop. A pause always takes a date, seven days by default.
 
@@ -180,7 +180,7 @@ Steps for you, the assistant. Goal level, not code level.
 
 ## WHEN IT BREAKS
 
-**Days one and two missed: nothing.** No mention, no gentle note. One missed day is not a broken run. The finding this follows is on the record: Lally, van Jaarsveld, Potts and Wardle, European Journal of Social Psychology, 2010, found that missing one opportunity to perform a behaviour did not materially affect habit formation.
+**Days one and two missed: nothing.** No mention, no gentle note. One missed day is not a broken run. A published habit-formation study found that missing one opportunity to perform a behaviour did not materially affect habit formation.
 
 **Day three: one line, about the file.** Backfill from memory, leave the gap, or pause the daily for a week. All three are complete answers. A backfill is marked as written from memory rather than on the day, because a remembered day and a logged day are different evidence. A gap left as a gap is a real record and it is not filled in with a plausible reconstruction. Then do not come back to it.
 
@@ -225,8 +225,8 @@ the one thing that would show it: NOT SET
 
 | Date | What moved it |
 |---|---|
-| EXAMPLE 2026-08-20 | sent the pricing mail |
-| EXAMPLE 2026-08-21 | nothing |
+| EXAMPLE DATE A | sent the pricing mail |
+| EXAMPLE DATE B | nothing |
 
 Rule: one line a day. The word `nothing` is a real answer and gets written down like any other.
 Rule: my words, not tidied.

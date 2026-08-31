@@ -14,14 +14,14 @@ The half of `video7` that keeps its value even if no video is ever cut.
       _<slug>-CONTEXT.md       the project record
       edl.json                 cut decisions
       *.fcpxml / *.xml         editing timelines, if any
-      sources/                 originals, never edited; renamed only to add a tag
-      work/                    intermediates, deletable at any moment
+      sources/                 verified archive copies; media bytes never edited
+      work/                    regenerable intermediates; cleanup is approved
       out/                     finished files, versioned
 ```
 
 **Why the month is in the project folder name and not its own level.** Two videos in one month turn a bare `08/` into a box with two unnamed things in it, and the year view stops telling you what happened. `08-old-room-return/` sorts chronologically and reads as a sentence.
 
-**Why four folders and not two.** The tempting shape is originals and results. It fails at the third folder, the intermediates, which are large, regenerable, and indistinguishable from results once they sit side by side. Six months later nobody dares delete anything. Separating `work/` makes the disposal rule trivial: if it is in `work/`, it can go.
+**Why four folders and not two.** The tempting shape is originals and results. It fails at the third folder, the intermediates, which are large, regenerable, and indistinguishable from results once they sit side by side. Six months later nobody dares delete anything. Separating `work/` makes the disposal decision clear: after verified outputs exist, its contents are eligible for owner-approved cleanup. They are not deleted automatically.
 
 **Why `edl.json` sits outside `work/`.** It is the one artefact that cannot be regenerated. Everything else is a function of the sources; the decision about where to cut is a function of somebody's judgement, and losing it means doing the work again.
 
@@ -33,7 +33,7 @@ Folder names are for machines: lowercase, ASCII, hyphens, no spaces, no leading 
 
 A leading dash is worth spelling out because it fails so strangely. A path beginning with `-` is read as a command line option by nearly every tool, and the error says something about an unknown option rather than about a file, so it reads like a bug in your script. The same applies to spaces: an unquoted path with a space arrives as two arguments and the tool reports both halves missing.
 
-Source files keep the identifier the camera gave them **and gain a short tag**: `IMG_4590_corridor-and-241.MOV`. The number is the thread back to the device, the only way to find the original again if the archive is ever rebuilt; the tag is what lets a person, or an assistant, open the folder in a year and know which file holds what without opening any of them.
+Copy each source into the archive and compare SHA-256 before editing. The device or inbox original stays where it is and keeps its name. The archive copy keeps the identifier the camera gave it and **may gain a short tag**: `IMG_4590_corridor-and-241.MOV`. Record original name, archive name, and hash in the context file. The number is the thread back to the device; the tag lets a person or assistant know what the copy contains without opening it.
 
 This is a correction to the obvious rule. Keeping the bare camera name is safe but useless: a folder of `IMG_4590.MOV` through `IMG_4599.MOV` forces you to play all ten. Renaming entirely is meaningful but severs the link. Keeping both costs nothing.
 
@@ -61,7 +61,7 @@ What this video is for and who sees it. A piece for a group chat and a piece for
 
 Aspect ratio, target length, captions or none, language.
 
-Choose the aspect ratio from the material, not the platform default. A vertical crop suits corridors and single subjects and destroys wide views. When a film's payoff shot is wide, a squarer frame that keeps it beats a taller frame that cuts it in half.
+Recommend the aspect ratio from both the destination and the material, then ask the owner to approve it. A vertical crop suits corridors and single subjects and destroys wide views. When a film's payoff shot is wide, a squarer frame that keeps it may beat a taller frame that cuts it in half, even when the platform prefers tall video.
 
 ### 4 · Lane
 

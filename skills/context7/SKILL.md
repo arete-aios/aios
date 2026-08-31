@@ -1,6 +1,6 @@
 ---
 name: context7
-description: "CONTEXT7: give every node one CONTEXT file that lists everything inside it and states how it works, so your AI reads one CONTEXT file instead of a thousand files. Use when the vault grows faster than you can read it."
+description: "CONTEXT7: give every folder one CONTEXT file that lists what is inside and how it works. Use when a vault grows faster than its owner or AI can navigate it."
 license: CC-BY-4.0
 metadata:
   author: fulldigital.me

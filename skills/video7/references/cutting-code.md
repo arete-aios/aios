@@ -33,6 +33,11 @@ Make the verifier a separate step that either passes cleanly or names the bounda
 
 ## Frame snapping, or the drift that ruins long edits
 
+First determine whether the source is constant frame rate or variable frame rate. Phone footage is often VFR even when one metadata field prints a familiar nominal FPS. Compare frame timestamps, `avg_frame_rate`, `r_frame_rate`, and the stream time base.
+
+- **CFR source:** use the formula below and snap every region to whole output frames.
+- **VFR source:** either transcode a high-quality CFR mezzanine and record the source-to-mezzanine mapping, or keep source rational timestamps through the decision list and timeline. Do not multiply VFR seconds by one nominal FPS and call the result frame-exact.
+
 The single worst bug in this kind of pipeline, because it is inaudible on one join and obvious across twenty:
 
 ```python
@@ -72,9 +77,11 @@ Many static video builds ship without a text drawing filter. Render type as tran
 - **Auto-fit every label.** A layout that fits in one language overflows in the next.
 - **One emphatic element per view.** If a logo or corner mark is already using the accent colour, everything else is secondary.
 
+Caption QC is separate from timing. Check reading speed, line length, safe zones, contrast over the real frame, language and punctuation, and whether the destination expects burned-in captions, a sidecar file, or both.
+
 ## Mastering
 
-Normalise to about −16 LUFS, then measure the result. Single pass loudness correction can undershoot by more than a decibel; one master landed at −17.4 and would have been quieter than everything around it. If it misses, run the two pass correction rather than shipping it.
+Use the chosen destination's loudness and true-peak preset, then measure the result. About −16 LUFS can be a useful speech-led review-copy target, but it is not a universal release specification. If no destination is named, label the file as a review copy. Single-pass loudness correction can undershoot by more than a decibel; if it misses, run the two-pass correction rather than shipping it.
 
 Two behaviours that look like bugs and are not: containers report audio around 100 ms longer than video because of codec tail padding, and an overlay set to end with the shortest input drops the final frame unless the overlay stream emits a couple of frames more than the base.
 
