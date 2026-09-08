@@ -48,21 +48,28 @@ Expect the honest answer to be shorter than you hoped. For most systems that are
 
 ## How to start
 
-There are two doors. Both end in the same system, so pick the one that matches how you want to work through the first build.
+There are two ways to build. Both end in the same system, so pick the one that matches how you want to work through the first build. The word “doors” below is reserved for Work and Codex, because both can open the same folder.
 
-**Door one, guided.** You paste two blocks and your AI does the rest, stopping to ask permission before it creates anything. It interviews you, reads what you have already published about yourself if you let it, and writes the first files with you. Allow two to four hours for the first working build, across one or two sittings; the completeness and north-star sessions come later on purpose. Your folder arrives with eleven methods in it, three of them switched on, and the first build ends with one goal, one number and one day of the week when that goal gets checked. Start here if you want something working today: **[onboarding/_proj-onboarding.md](onboarding/_proj-onboarding.md)**.
+**Guided build.** You paste two blocks and your AI does the rest, stopping to ask permission before it creates anything. It first establishes whether the system is for private life, one business or project, several businesses or projects, or a deliberate mix. Then it interviews you, reads what you have already published about yourself or the included businesses if you let it, and writes the first files with you. Allow two to four hours for the first working build, across one or two sittings; the completeness and final north-star session comes later on purpose. Your rough 12-month direction is captured at the start in your own words and tested against the evidence later. Your folder arrives with eleven methods in it, three of them switched on, and the first build ends with one goal, one number and one day of the week when that goal gets checked. Start here if you want something working today: **[onboarding/_proj-onboarding.md](onboarding/_proj-onboarding.md)**.
+
+The onboarding file is one engine with three explicit launch paths. A direct GitHub start uses `full-onboarding mode` and runs all eleven steps. The self-guided Circle page at `areteaios.com/my` uses `circle-guide mode`: it pauses for the page's starting-context file, finishes the constitution foundation and hands control back to Circle for the first agent and weekly review. A live business course may use `business-foundation mode`: it finishes the constitution and seven-block business profile, then hands off at three of five course steps. The launcher must name either shorter path; otherwise the full onboarding is used. Work and Codex are only two doors to the same attached root folder, never two different AIOS builds.
 
 The public Build AIOS page supplies the normal two blocks. If you came straight to GitHub and do not have them, paste this smaller launcher instead. The onboarding file contains the canonical blank state block it needs:
 
 ```text
-I want the guided AIOS build. Read all of
+I want the guided AIOS build in `full-onboarding mode`. Read all of
 https://raw.githubusercontent.com/arete-aios/aios/main/onboarding/_proj-onboarding.md before acting.
-Quote its first heading so I know it opened. I came directly from GitHub, so use the canonical blank
-AIOS STATE block inside that file. Test whether you can write to my real folder, then follow the file
-exactly. Apart from aios-write-test.txt, write nothing until you show me the full list and I approve it.
+Quote its first heading so I know it opened. Continue in the language of this message unless I ask
+otherwise. I came directly from GitHub, so use the canonical blank AIOS STATE block inside that file.
+Treat the folder already attached to this Work or Codex session as the real AIOS root; do not create
+another AIOS folder inside it. Test whether you can write to that real folder and tell me the exact
+path you tested. Then follow the file exactly, including the early scope and rough 12-month-direction
+questions. Apart from aios-write-test.txt, write nothing until you show me the full list and I approve it.
 ```
 
-**Door two, the nine stages.** You build it yourself over weeks, one stage at a time, each with an exit test. Slower and deeper, and it is the same five layers. Everything below describes this door.
+If you came from the Circle page or a live course, use the setup text supplied there instead of this direct-GitHub launcher. Those launchers name their hand-off point and keep the rest of the architecture identical.
+
+**Staged build.** You build it yourself over weeks, one stage at a time, each with an exit test. Slower and deeper, and it is the same five layers. Everything below describes this path.
 
 If your AI is reading this file as part of the guided path, follow the onboarding file and ignore the rest of this section.
 
