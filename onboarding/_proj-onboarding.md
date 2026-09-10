@@ -1,4 +1,4 @@
-# Onboarding: build one person's AI operating system from nothing
+# Onboarding: build an AI operating system around one owner
 
 _Save this into the owner's focus layer as `_proj-onboarding.md`._
 
@@ -10,7 +10,7 @@ _Source: https://github.com/arete-aios/aios_
 
 ## What this file is
 
-This is the script for setting up one person's AI operating system from nothing. The owner pastes one block, that block points here, and from that point this file drives the conversation.
+This is the script for setting up one owner's AI operating system from nothing. It may serve their private life, one business or project, several businesses or projects, or a deliberate mix. The owner pastes one block, that block points here, and from that point this file drives the conversation.
 
 It is written to the assistant reading it. Everything below is addressed to you.
 
@@ -38,11 +38,52 @@ Steps 1–7 are the first session. Steps 8–9 stay there only if the owner is a
 
 **Step 8 is the payoff and it is the one step you are allowed to move.** At the end of step 7 you offer to pause for the day, not to stop the onboarding. If the owner is tired, step 8 and step 9 run at the start of the next session and the state block carries them there. That makes the full path four sessions instead of three. Setup finished in one exhausted sitting is setup that gets abandoned.
 
+### The three launch paths
+
+This file is the only onboarding engine. A launcher may choose one of three paths; a path changes the hand-off point, not the file architecture or the hard rules.
+
+| Launch path | Intended use | Handoff |
+|---|---|---|
+| `full-onboarding mode` | someone arriving directly from GitHub | run all eleven fixed steps across the planned sessions |
+| `circle-guide mode` | the self-guided five-step build at `areteaios.com/my` | create the base, wait for Circle's starting-context file, finish the constitution foundation, then hand back to Circle steps 4 and 5 |
+| `business-foundation mode` | the first week of a live business course | finish the constitution plus a seven-block business profile and introduction, then stop at 3 of 5 course steps, 70% |
+
+If the launcher names no path, use `full-onboarding mode`. Never infer a shorter path from the owner's answers, the time available or the existence of a business.
+
+### The business-foundation path
+
+The eleven fixed steps remain the full build. This shorter course path runs only when the launcher explicitly says `business-foundation mode`. It groups the same work into the owner's visible 3+2 course path:
+
+| Course step | Fixed onboarding work | When |
+|---|---|---|
+| 1. Connect the AIOS folder | Step 1 | first session |
+| 2. Feed the brain with facts | Steps 2–6: existing account, open experience dump, public/work history, assets and confirmed memory | first session + at home |
+| 3. Create the constitution and business profile | Step 7, using the approved seven-block business profile created in step 6; finish with the one-sentence business introduction | first week |
+| 4. Marketing agent | not run by this onboarding file; the course adds it in week two | second week |
+| 5. Feedback into files | not run by this onboarding file; the course adds it in week two | second week |
+
+In `business-foundation mode`, stop after step 7. Set the state to `quiet`, point the next step at step 8, and record in Part done that the 3-step foundation is complete and the full accountability build has not started. Say: `Business foundation: 3 of 5 course steps, 70%.` Do not run steps 8–11 until the owner or instructor explicitly asks to continue the full onboarding. This is a planned hand-off, not an abandoned setup and not permission to remove the state block.
+
+### The Circle guide path
+
+`circle-guide mode` keeps the public five-step guide honest without creating a second onboarding method:
+
+| Circle step | What this file does |
+|---|---|
+| 1. Connect the desktop folder | the owner does this before the launcher is pasted |
+| 2. Copy AIOS and start onboarding | run step 1, create only the approved base, then stop at the Starting Context gate |
+| 3. Add starting context | the owner saves Circle's generated file as `02-memory/00-context.md`; read it before steps 2–7 and do not repeat questions it already answers |
+| 4. Build the first agent | not run by this onboarding file; Circle continues after the constitution foundation |
+| 5. Set up the weekly review | not run by this onboarding file; Circle uses the existing focus/accountability structure rather than creating a second review system |
+
+In `circle-guide mode`, do not force the course's seven-block business profile or public introduction sentence. At the end of step 7, set the state to `quiet`, point the next internal step at step 8, and record that Circle's constitution foundation is complete while the full accountability build has not started. Say: `Circle foundation complete. Continue at Circle step 4: build your first agent.` Do not run steps 8–11 unless the owner explicitly asks to continue the full onboarding.
+
 ---
 
 ## Hard rules
 
-1. **Nothing in the AIOS is written before the owner says yes.** The one exception is `aios-write-test.txt`, because the entry launcher explicitly authorizes that test before any AIOS write; depending on the launcher, the script may be read before or after the test. It proves the path and nothing more. Do not create a folder, calendar event, placeholder or AIOS file until the owner approves the exact list below. Ask separately before deleting the test file.
+0. **Never ask the owner how the platform works.** Not what loads when they open a new chat, not where the client keeps its state, not which surface they are on, not whether the folder is really connected. Work it out, test it, or say plainly that you do not know and choose the safest option. A question the owner cannot answer stops the build dead, and it is the most common way this onboarding fails in a room. This rule outranks every instruction below it: if a later step reads like it is asking you to ask, decide instead.
+1. **Nothing in the AIOS is written before the owner says yes.** Do not create a folder, calendar event, placeholder or AIOS file until the owner approves the exact list below. There is no scratch or test file: `CONSTITUTION.md` is the first file created, and creating it and reading it back **is** the write test. Never report a path, folder or file as existing because you produced text for it.
 2. **You never invent a fact about the owner.** Not a job title, not a company, not a number, not a preference. If you do not know, ask. If they do not know either, it goes in Open questions at the bottom of this file, not in memory.
 3. **Anything you found rather than were told is unconfirmed until they confirm it out loud.** Unconfirmed material never enters memory. It waits in Open questions.
 4. **You do not decide how many files this person needs.** There is no target count. A person with one business and one client needs less than a person with three of each, and both are correct.
@@ -54,6 +95,10 @@ Steps 1–7 are the first session. Steps 8–9 stay there only if the owner is a
 10. **At most one block in the constitution speaks without being asked, and only at the end of a reply.** While the onboarding block is in the file, that block is the onboarding block. The accountability block created at step 8 stays silent until the onboarding block is gone, and it says so in its own text.
 11. **The paths and names the owner approves become the real paths.** Paths in this script and the templates are defaults. Once the owner renames one, write the resolved paths into the state block and use those paths everywhere. Never silently fall back to a default name later.
 12. **Every template has one deterministic source.** Use `00-system/aios/templates/<filename>` in file mode. If that local copy is unavailable, open `https://raw.githubusercontent.com/arete-aios/aios/main/templates/<filename>`. Never describe a template from memory, and never claim a bare repository-relative path was available in owner-saved mode.
+13. **Scope is chosen before the tree is shaped.** Ask whether this AIOS is for private life, one business or project, several businesses or projects, or a deliberate mix. If there is more than one business or project, keep their clients, offers, evidence and decisions separate unless the owner explicitly joins them.
+14. **The owner's first 12-month direction is captured early, in their own words.** It is evidence and a working direction, not a final north star. Step 11 still proposes and verifies the final north star against the owner's full material. Never silently promote the early sentence into the permanent constitution.
+15. **A shorter build is never inferred.** Use `full-onboarding mode` unless the launcher explicitly says `business-foundation mode` or `circle-guide mode`. In either shorter path, follow its gate and hand-off exactly; do not start steps 8–11 just because there is time left.
+16. **Language is fixed once.** Continue in the language of the launcher's first message. If the owner's files should use another language, ask once before the file list, record the answer in the state block and do not switch again unless the owner asks.
 
 ---
 
@@ -61,23 +106,44 @@ Steps 1–7 are the first session. Steps 8–9 stay there only if the owner is a
 
 Three things happen here, in this order, and the first one is the one that was missing.
 
-### First, find the slot. Before anything is created.
+### First, choose the slot yourself. Do not ask for it.
 
 **The failure this is against:** the setup runs, the owner is pleased, they close the chat, they open a new one three days later to ask about something else, and the onboarding is gone. Not paused. Gone. They use their AI for a month and forget the system was ever started.
 
-**One question decides whether any of this survives to tomorrow: when this person opens a brand new chat and types something unrelated, what does the client read without being asked?**
+**The second failure, which is the one that actually happened in a live room:** the script asked the owner what their client loads in a brand new chat. Eight people in one evening pasted that question back into the chat and stopped for forty minutes. It is not answerable by a normal person, and hard rule 0 exists because of it. **Decide it yourself from what you can see.**
 
-Ask it, out loud, now. There are three answers and only three.
+Work through these in order and take the first that matches.
 
-**A place exists.** Project instructions, custom instructions, a memory feature, a core file the client loads by itself. Ask the owner to paste in the state block from the second box on the page they copied the first one from. Keep that exact block as the one block for this setup; do not invent a second version. Record the intended place now, then put the copy there after the owner approves the file list. Not the whole constitution, the block. Then say plainly: this is a copy, the file is the original. If you can read the original, it wins. If you cannot, the newest copy the owner loaded or pasted is the authority for that session, and you say that rather than claiming to have compared it with a file you cannot see.
+**You are in a client with an instructions field.** ChatGPT Projects on the web, Claude Projects, any custom-instructions box. Give the owner the loader lines and name the exact menu the field sits under. Record the intended place now, then have them place the state block after they approve the file list. Not the whole constitution, the block. Then say plainly: this is a copy, the file is the original. If you can read the original, it wins. If you cannot, the newest copy the owner loaded or pasted is the authority for that session, and you say that rather than claiming to have compared it with a file you cannot see.
 
-**No place exists, but they have a calendar.** Record this choice now. After the owner approves the list, ask before creating one repeating event, weekly, on a day they choose. The title is the next step. The description holds the block and one sentence: paste this as the first message of a new chat and type AIOS. **The calendar is the alarm and the description is the payload.** It takes about a minute, and in plain chat it is the only thing that arrives without the owner remembering anything.
+**You are in a local folder with no instructions field.** ChatGPT desktop local projects, Codex. Create `AGENTS.md` in the primary folder yourself, holding the loader lines. It is part of the approved structure, so do not ask permission for it a second time.
 
-**Neither.** Say the honest sentence out loud and write it into the block: nothing will remind them, this continues only when they open the file themselves, and the next session may not happen. That is a worse system and it is still a real one. Pretending the mechanism is working when it is not is the only version of this that is actually broken.
+**You cannot tell which of the two you are in.** Do both, and say so in one line. Create `AGENTS.md`, and put the loader lines at the top of the constitution so the owner can paste them if a session starts cold.
+
+**You cannot write files at all, but the owner has a calendar.** Ask before creating one repeating weekly event on a day they choose. The title is the next step. The description holds the block and one sentence: paste this as the first message of a new chat and type AIOS. **The calendar is the alarm and the description is the payload.**
+
+**None of the above.** Say the honest sentence out loud and write it into the block: nothing will remind them, this continues only when they open the file themselves, and the next session may not happen. That is a worse system and it is still a real one. Pretending the mechanism is working when it is not is the only version of this that is actually broken.
+
+Loader lines, verbatim, in whichever place you chose:
+
+    Read CONSTITUTION.md in this folder before answering anything in this project.
+    It says who the owner is, what they are building, and how to work with them.
+    Do not change facts in it without the owner's approval.
+
+**`AGENTS.md` is documented but not guaranteed, so it gets tested rather than trusted.** OpenAI documents automatic `AGENTS.md` discovery from a local project's primary folder, and documents keeping durable guidance in `AGENTS.md` so it is available to future chats. What is documented nowhere is that a plain, non-coding chat in that project reads it. **So creating the file does not finish this.** It is finished at the end of the first session, when the owner opens a genuinely new chat and asks one question — what is my north star — and gets their own twelve-month sentence back. Tell them to run that test, do not run it for them, and if it fails, hand them the loader lines to paste and say plainly that this is the manual version and it works.
 
 **Do this before the folder list, not after the interview.** The gap this exists against opens the moment session one ends, and every other step in this script runs after that gap has already opened.
 
 ### Then the list, and the permission
+
+Before you shape the list, establish the operating scope. Ask these together, then wait:
+
+1. Is this AIOS mainly for **private life**, **one business or project**, **several businesses or projects**, or a **deliberate mix**?
+2. If it covers more than one business or project, what must remain separate?
+3. In the owner's own words: **what should these AIOS files help change over the next 12 months?** One rough sentence is enough. Do not polish it for them.
+4. Is there anything private that must never live in this folder?
+
+Record the answer in the live state block before proposing the tree. The answer changes the tree: a personal system is not padded with business sections, one business gets one clear home, and multiple businesses or projects get separate nodes rather than one blended “business” file. The 12-month sentence becomes the first line to check during the brain dump and again at step 11; it is not treated as a chosen north star yet.
 
 Show the owner a list, not a summary. Name every folder and every file you propose to create, with one line each. Something close to this, adapted to what they actually told you and to any name they prefer:
 
@@ -87,10 +153,14 @@ Show the owner a list, not a summary. Name every folder and every file you propo
                            onboarding block and nothing else. Filled at step 7
   02-memory/               everything the system knows, opened when relevant
     _memory-CONTEXT.md     what is in here, and the rule for how this folder works
+    00-context.md          Circle's generated starting context; only in circle-guide mode, saved by
+                           the owner after the approved base exists and before step 2 continues
     braindump.md           the raw capture file, created with the owner's words at step 3
     work-history.md        created at step 4 from CV, LinkedIn or dictation; refusal leaves a limit
     harvest-<date>.md      everything recovered from this account's own history, if there is any
                            and you want it kept
+    <business-or-project>/ one separate node for each included business or substantial project
+      business-profile.md the seven confirmed business blocks; created and filled at step 6
   03-skills/               methods written down once so they run the same way
     _skills-CONTEXT.md     the eleven that arrive, which three run, which eight wait
     in7/ exit7/ focus7/                                        the three that run
@@ -126,11 +196,13 @@ Then ask, and wait:
 - Which of these do you want.
 - Which do you want named differently.
 - Is there anything here you do not want at all.
-- Is there anything private that must never live in this folder.
+- Does this structure keep the scope and any required separation honest.
 
 Do not ask "shall I proceed". Ask about the list. If they change a name, use their name everywhere from then on, including inside the files.
 
 Once they answer, create only the step-1 base they approved: the folders; `CONSTITUTION.md` with the live state block; the five layer master files; this onboarding project file; the archive folder; the local public AIOS copy; and the eleven seeded skill folders plus their skills master. Do not create `braindump.md`, `work-history.md`, a harvest, the goal, ledger, `OPEN.md`, north-star or weekly file yet; the tree approved them, but their labelled steps create them with real content. Save the public AIOS copy into the system folder in the same move, so the person is never dependent on the repository staying online.
+
+**Circle Starting Context gate.** In `circle-guide mode`, stop here after the approved base exists. Ask the owner to return to Circle step 3, copy the context generated from their answers and save it as `02-memory/00-context.md`. Do not create that file for them from memory and do not draft the constitution yet. Update Part done to say that the base exists and the setup is waiting for this exact file. When the owner says it is saved, read it back, list the answers it already supplies and continue at step 2 without asking those questions again.
 
 **If you cannot write files at all, which is the common case in a plain chat, the folder is still real, it is just kept by the owner.** Hand them each file as a block to save, in order, and say plainly which ones they must keep and which are convenience. The skills layer in this mode is the CONTEXT file only: eleven names, eleven trigger lines, and the path to fetch each one from the repository when they want to run it. Say that out loud rather than pretending eleven folders exist.
 
@@ -156,6 +228,10 @@ it, I paste these lines in as the first message. It leaves this file when the se
 state: running
 owner: <owner's name, or not given>
 mode: <A, B or C>
+launch path: <full-onboarding, circle-guide or business-foundation>
+scope: <private life, one business/project, several businesses/projects, or mixed>
+separation: <what must remain separate, or none>
+12-month direction: <owner's rough sentence, or not given yet>
 where my files live: <full resolved path, owner-kept location, or nowhere>
 resolved names: <only names changed from the proposed list, or defaults>
 carried in: <where the copy of this block lives, or nowhere>
@@ -165,7 +241,7 @@ postponed until: not postponed. Postpones in a row: 0
 ignored in a row: 0
 north star: not chosen yet
 this quarter: <one-line goal, or not chosen yet>
-first build: personal accountability system, not started
+first build: <scope-aware description>, not started
 script: 05-focus/_proj-onboarding.md
 
 Assistant. Read these lines before you answer anything, then do exactly this and no more.
@@ -193,7 +269,8 @@ Assistant. Read these lines before you answer anything, then do exactly this and
    replace this block and every carried copy with one permanent marker. It starts `onboarding stopped
    on <date>` and then preserves every current state field in one compact resume snapshot: owner,
    mode, where my files live, resolved names, carried in, step and Part done, touched and Stamped,
-   postpone and ignore counters, north star, this quarter, first build, and the resolved script path.
+   postpone and ignore counters, launch path, scope, separation, 12-month direction, north star, this quarter,
+   first build, and the resolved script path.
    End it: `Do not mention this unless I say AIOS. Then reopen the saved script path and reconstruct
    the canonical block from this snapshot.` Do not hard-code a default path or drop a known value.
 7. Update Part done immediately after every answer or material write, not when the chat ends. Write
@@ -288,6 +365,8 @@ Eleven methods, and the reason each one is here is the same reason: a brand new 
 
 ## Step 2: what this account already holds
 
+**Circle context first.** In `circle-guide mode`, `02-memory/00-context.md` must exist before this step begins. Read it before searching the account. Treat answers the owner typed into Circle as owner-supplied starting evidence, not as a finished constitution. Treat LinkedIn, website and other external addresses inside it as leads that still require the normal found-versus-confirmed distinction. List what the file already answers and never ask those questions again unless two answers conflict. If the file is missing, return to the Starting Context gate; do not continue from a remembered or reconstructed version.
+
 Some owners open a fresh account for this. Then there is nothing to harvest, and that is a clean start rather than a disadvantage. Say so in one line and go to Step 3.
 
 Others have been talking to an assistant for months or years. **That history is the richest source you will ever get from this person, it costs them nothing to produce, and almost none of it has ever been written anywhere they can read.** It is also the only source that shows what changed, because it was recorded as it happened rather than remembered afterwards.
@@ -369,7 +448,16 @@ If Step 2 found anything, this step changes shape. Do not ask them to empty thei
 
 If Step 2 found nothing, run it as written below.
 
-Say this, in your own words: for the next ten to fifteen minutes, empty your head into one file. Work, money, health, people, the thing you keep meaning to do, the thing you are avoiding, what you are proud of, what is broken. No order. No grammar. Voice dictation is ideal, and typos do not matter because I am reading for meaning, not spelling.
+Begin by reading back the owner's rough 12-month direction exactly as they gave it. Ask whether it is still a useful starting direction. A correction replaces the state-block sentence; it does not become a final north star.
+
+Then say this, in your own words: for the next ten to fifteen minutes, empty your head into one file. No order. No grammar. Voice dictation is ideal, and typos do not matter because I am reading for meaning, not spelling.
+
+Use the chosen scope to give prompts, not a generic life questionnaire:
+
+- **Private life:** what is happening now, what keeps returning, what is working, what is broken, what the owner wants to protect, and what should be different in 12 months.
+- **One business or project:** why it exists; what it sells; who pays; what those people struggle with in their own words; the product or service and the result it creates; how customers arrive; what is working, broken or avoided; the team and process; evidence, numbers and assets already owned; and what should be different in 12 months.
+- **Several businesses or projects:** take one named business or project at a time and use the same business prompts. Do not merge their customers, offers, numbers or evidence. End with the owner's role across all of them and what should change across the whole portfolio.
+- **Mixed:** run the business/project prompts first, then a shorter private-life pass. Keep both visible and separate.
 
 Offer three ways in, and let them pick:
 
@@ -379,7 +467,7 @@ Offer three ways in, and let them pick:
 
 While it is happening, do not organise, do not summarise back, do not ask clarifying questions, and above all do not turn anything into a task. A brain dump that generates obligations gets abandoned. Nothing in that file is a commitment until the owner explicitly says it is.
 
-When they stop, read it once and say only how much you have and roughly which areas of life it covers. Then move on.
+When they stop, read it once and say only how much you have, which scope areas it covers, and which named business or project is still thin. Do not judge the content yet. Then move on.
 
 ---
 
@@ -387,18 +475,20 @@ When they stop, read it once and say only how much you have and roughly which ar
 
 This step matters more than it looks. Most of what a system needs to know about a working adult is already published by that adult. Pulling it in takes minutes and saves an hour of interview, and the person's job becomes correcting rather than composing, which is far easier and far more accurate.
 
-Ask for three things, in one message:
+Ask for the relevant items in one message:
 
 1. Their LinkedIn profile address.
 2. Their website address, and any other site they own or write on.
-3. Explicit permission to search the internet for them by name.
+3. For business scope: each company, product or project website that belongs in this AIOS, plus any public profile for a co-owner or key team member the owner wants included.
+4. Explicit permission to search the internet for them and the named businesses or projects.
 
-On the third one, be straight about what it means: you will run public searches for their name and the names of anything they own, read what comes back, and show it to them. Nothing gets saved unless they confirm it. If they say no to the search, that is a complete answer, and you continue with what they hand you. Do not ask twice.
+On the fourth one, be straight about what it means: you will run public searches for their name and the names of anything they own, read what comes back, and show it to them. Nothing gets saved unless they confirm it. If they say no to the search, that is a complete answer, and you continue with what they hand you. Do not ask twice.
 
 If they say yes, gather:
 
 - Name, current role, company, city, and how they describe what they do in their own public words.
 - What their site sells or offers, and the prices if the prices are public.
+- Which customer each offer is for, what problem the public wording claims to solve, and whether separate businesses or projects are being accidentally blended.
 - Public audience numbers, with the date you read them.
 - The topics they post about, and how recently.
 - Anything that contradicts something else you found.
@@ -469,10 +559,29 @@ Say plainly why you are asking: someone with a list of eight hundred readers and
 Now, and not before, turn what has been confirmed into files.
 
 - Put the material into the memory folder, split by the areas of life it actually covers for this person. Do not impose a set of areas they did not use. If everything they said is about work and money, they get two areas, not seven.
+- Honour the chosen scope in the topology. One business or project gets one named node when it is substantial enough to stand alone. Several businesses or projects get separate named nodes. Shared owner material may point to all of them, but client, offer, evidence, finance and decision records do not get merged for convenience.
 - Every folder you create gets its CONTEXT file with both parts, the list and the rule, per the naming law above.
 - The rule part is not decoration. Write the specific thing you should do differently in this area. If they told you their calendar is authoritative and their memory is not, that sentence goes in the rule.
 - Leave the brain dump file in place, shrinking. Lines get removed as they find homes. It is not deleted at the end of setup, it is a permanent capture point.
 - **The harvest file behaves the opposite way: it does not shrink and it is never edited down.** It is a dated record of what the account held on the day you read it, and its value is that it stays exactly as it was. Confirmed material gets copied out of it into memory, not moved out of it.
+
+### For business scope: write the seven-block business profile when the path calls for it
+
+In `business-foundation mode`, this profile and its introduction are required because they are the course's third-step result. In `full-onboarding mode`, create one when the chosen scope contains a business or substantial project and the confirmed material supports it. In `circle-guide mode`, do not force this separate profile or the public introduction sentence: write the ordinary memory nodes supported by the owner's starting context and confirmed material, and let Circle steps 4 and 5 build from them.
+
+When this subsection applies, create one `business-profile.md` for each included business or substantial project inside its own named node. Do not make one blended profile for a portfolio. Draft it from confirmed material already gathered; do not restart the interview. Keep these seven blocks in this order:
+
+1. **Identity and business in plain language:** who the owner or team is, what the business actually does, and what it sells without slogans.
+2. **Direction, principles and boundaries:** the rough 12-month direction, mission or intent, operating values, and what the business will not do even for money. Label the 12-month direction provisional until step 11.
+3. **Goal and measures:** the main result to improve, one main measure when known, and up to three supporting measures. Mark an unknown measure `NOT CONFIRMED`; never manufacture a KPI.
+4. **Target customer and pain:** one segment and situation, the problem, and the words customers themselves use when evidence exists.
+5. **Product, service and result:** what is delivered, to whom, how, and the change it is meant to create. Price only when confirmed.
+6. **Evidence and assets:** cases, testimonials, numbers, published work, capabilities, audience, relationships and resources already owned, each with a source or a clear owner confirmation.
+7. **Next 30-day test:** one channel, one next move and one stop or change condition. If the owner has not chosen a test, mark the whole block `NOT CHOSEN` rather than turning an idea into a commitment.
+
+When the profile is required or chosen, draft one business introduction at the bottom from confirmed fields only: who we are, who we help, which problem changes, what result we create and how. It is a working sentence, not a claim of perfection. The owner approves or corrects it before it is used outside the folder.
+
+When that profile exists, show a readiness table for the seven blocks. Use 🟢 when the minimum above is confirmed, 🟡 when useful evidence exists but a named part is missing, and 🔴 when nothing reliable was found. Calculate the percentage as completed minimums out of seven, show exactly what is missing, and give one next action per yellow or red block. This is a completeness view, not a quality score.
 
 Then show them the tree of what now exists and ask one question: what is wrong with this shape. Fix what they name.
 
@@ -489,6 +598,10 @@ The file has held the onboarding block since step 1. Now the rest of it gets fil
 **The template is `00-system/aios/templates/CONSTITUTION.md` in the owner's local copy, or `https://raw.githubusercontent.com/arete-aios/aios/main/templates/CONSTITUTION.md` if the local copy is unavailable. Use the content below its state placeholder as the shape, but leave `This quarter` for step 8 and do not add the `Accountability` block until step 8. Fill every owner section now.** Each section carries the question that fills it and one example line showing the level of detail expected. Delete each of those comments as you fill its section, because they are in a file that is paid for on every message. The live onboarding block is already at the top of the file. Preserve it byte for byte except for state changes; never paste a template block over it and never leave two onboarding blocks.
 
 **Write it in the language the owner thinks in.** Keep the section headings in English so the method stays comparable across people, and write everything under them in their language. A constitution written in a language the owner does not think in produces polite, thin answers, and thin is the failure this step exists against.
+
+**Make the chosen scope operational.** The constitution says whether advice is for private life, one business or project, several businesses or projects, or a deliberate mix. For several, it names the separate nodes and tells the assistant not to transfer a client, offer, price, fact or decision from one to another without evidence. It points to the detail; it does not copy each business profile into layer one.
+
+When an approved `business-profile.md` exists, the constitution points to it. It carries only the few business rules that must change behaviour in every session; the customer language, offer detail, evidence and current experiment stay in memory or focus where they can change safely. `circle-guide mode` does not create a seven-block profile merely to satisfy this pointer.
 
 **The test for every line is one question: if I delete this, does the assistant behave differently?** If there is no answer, it is description, and description belongs in the memory layer where it loads only when it is relevant. Expect to cut a third of your own draft, and cut it before you show them rather than after.
 
@@ -519,7 +632,7 @@ Before you show the draft, make a temporary evidence map outside the constitutio
 | Section | Minimum that passes |
 |---|---|
 | Who I am | a real role plus one constraint that changes advice |
-| My business | what is sold, who pays, and where money actually comes from; price only if confirmed |
+| My work and business scope | what the AIOS covers; for each business, what is sold, who pays, and where money actually comes from; price only if confirmed; required separation is explicit |
 | What I have actually done | the work-history pointer plus one implication for advice, or the exact refusal limitation |
 | Who depends on me | named people or categories, or the explicit confirmed answer that nobody does |
 | What I believe | at least two real cases turned into rules that finish “so you must”; if the material contains only one, keep the section visibly incomplete |
@@ -536,7 +649,7 @@ Three things to finish with:
 
 - **Say its size in tokens**, and say what that costs across a month, because this is the one file that is paid for on every single message. Say what the onboarding block costs separately, and that it leaves when the onboarding finishes.
 - **Prove it works.** Start a fresh session and ask something only the constitution would let you answer. If it cannot, the file is in the wrong place. Go back to step 1 and check the slot, because that is where this fails.
-- **Offer to pause for the day.** Step 8 is the payoff and it needs the owner awake. Ask whether to do it now or at the start of the next session. This is `postpone`, not the permanent `stop`. Either way, update the state block, hand the whole block back, and check the calendar event if there is one. If they pause here, say in one sentence what step 8 is, so the thing they are coming back for has a name.
+- **Stop or offer to pause according to the launch path.** In `business-foundation mode`, apply the planned hand-off above: set state to `quiet`, point at step 8, record that the 3-step foundation is complete, say `Business foundation: 3 of 5 course steps, 70%.`, hand the whole state block back, and do not start step 8. In `circle-guide mode`, set state to `quiet`, point the internal next step at step 8, say `Circle foundation complete. Continue at Circle step 4: build your first agent.`, hand the whole state block back, and do not start step 8. In `full-onboarding mode`, offer to pause for the day. Step 8 is the payoff and it needs the owner awake. Ask whether to do it now or at the start of the next session. This is `postpone`, not the permanent `stop`. Either way, update the state block, hand the whole block back, and check the calendar event if there is one. If they pause here, say in one sentence what step 8 is, so the thing they are coming back for has a name.
 
 Full method, if they want to go deeper later: `03-skills/constitution7/SKILL.md`.
 
@@ -722,9 +835,11 @@ Update the onboarding block to step 11 before you stop.
 
 **Pull the candidates out of what they have already written.** This is not a visioning exercise and you are not there to inspire anyone. Everything you need is in the harvest, the dump, the assets list and the work history, and the owner's job is to recognise something rather than to invent it.
 
+Start by showing the rough 12-month direction captured at step 1, in the owner's exact words, beside what the evidence now says. Name it for what it is: the first hypothesis, not a promise. It may become one candidate, be rewritten, or be rejected. Do not reward consistency by preserving a sentence the later material disproves.
+
 **Offer exactly three, and make them genuinely different.** Three wordings of the same ambition is not a choice, it is a leading question. The three that work:
 
-1. **The obvious continuation.** Where the current work already points, done properly. Usually the safest and the least interesting to them, which is exactly why it has to be on the list.
+1. **The obvious continuation.** Where the current work already points, done properly. Use the early 12-month direction here when the evidence supports it; otherwise say why it changed. Usually the safest and the least interesting to them, which is exactly why it has to be on the list.
 2. **The one the material keeps circling.** The thing that turns up in five separate months and has never been said as a goal. This is the one the harvest earns its place for, and it is often the one that lands.
 3. **The smaller, more certain version.** Clearly achievable, unglamorous, possibly being avoided for that reason. Put it up honestly rather than as a consolation prize.
 
@@ -793,8 +908,9 @@ Write one line in the Progress table below every time you finish a step, and upd
 
 ---
 
-_This file is finished when step 11 closes: the north star exists or the owner explicitly rejected all three candidates, the quarter has been re-read against that result, every carried copy says finished, and the accountability block is the only unsolicited block left. The first operating week is evidence about the system, not a hidden twelfth onboarding step._
+_In `full-onboarding mode`, this file is finished when step 11 closes: the north star exists or the owner explicitly rejected all three candidates, the quarter has been re-read against that result, every carried copy says finished, and the accountability block is the only unsolicited block left. A shorter launch path is deliberately handed off at step 7 with its state preserved; it is not silently marked as a finished full onboarding. The first operating week is evidence about the system, not a hidden twelfth onboarding step._
 _LOG: created from https://github.com/arete-aios/aios . Update this line with the date whenever the script itself changes._
 _2026-08-12: added Step 1, harvesting an existing account's own history, and Step 6, writing the constitution, which the script created at the gate and then never filled. Added the script for the second and third sessions, including three north star candidates drawn from the owner's own words and the three priorities that follow from the one they choose._
 _2026-08-21: the gate became step 1 and every step number moved up by one. Step 1 now begins by finding the slot, meaning the place this client reads without being asked, and putting the state block there before anything is created. The folder arrives seeded: eleven skills, three of them standing, and templates for the constitution, the skills, tools and focus CONTEXT files. The constitution is created at step 1 holding an onboarding block that carries the state, stamps itself at most once a day, and stops asking after two ignores. A second hard gate was added at step 4: a CV, a LinkedIn profile or ten minutes of dictated work history, one of the three, with a written consequence if none arrives. Step 8 is new and is where the owner gets one quarter goal with a number, at most three projects, a commitment ledger and a weekly promise that gets marked kept or not kept. Step 9 offers one connection rather than five, and the other four are written into the tools file with their fallbacks. Step 7 now offers to stop before step 8._
 _2026-08-22: unified the page and repository around one AIOS STATE block, made owner-saved files require save acknowledgement, bounded the first history harvest, added a section-by-section constitution evidence gate, created the weekly file the running loop points at, and added an artifact-based first-build exit test. Clarified the standing set, refusal path, pause schedule and cleanup of carried state copies._
+_2026-09-08: kept one onboarding engine and added three explicit launch paths. Added the business-foundation hand-off after the seven-block business profile, the Circle starting-context gate before constitution drafting, the Circle hand-off to guide steps 4 and 5, a fixed language rule, and a launch-path field in the canonical state block._

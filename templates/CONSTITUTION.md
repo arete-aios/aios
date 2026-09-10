@@ -78,12 +78,16 @@ If I say stop, set OPEN.md to `state: stopped` and stay silent until I explicitl
      the owner cannot answer, write `Not yet — <date>` plus the operational consequence. The guided
      onboarding's section-by-section evidence gate is authoritative. -->
 
-## My business
+## My work and business scope
 
-<!-- QUESTION: what does it sell, to whom, at what price, and where does the money actually come
-     from this year? Enough that advice is not written for a generic business. No history.
-     EXAMPLE: Project work for mid sized manufacturers, four to twelve thousand euro a project,
-     found through one recruiter and word of mouth. No list, no inbound. -->
+<!-- QUESTION: is this AIOS for private life, one business or project, several businesses or
+     projects, or a deliberate mix? For every included business: what does it sell, to whom, and
+     where does the money actually come from this year? Price only when confirmed. If there is more
+     than one, name what must stay separate and point to each detail node rather than blending their
+     clients, offers, evidence or decisions here.
+     EXAMPLE: This AIOS covers my design studio and my own professional development. The studio sells
+     project work to mid sized manufacturers, found through one recruiter and word of mouth. Studio
+     client and finance detail stays in 02-memory/design-studio/. -->
 
 ## What I have actually done
 
@@ -136,6 +140,25 @@ If I say stop, set OPEN.md to `state: stopped` and stay silent until I explicitl
      Write this section, and every section under it, in the language I actually think in.
      EXAMPLE: Latvian for anything I will send, English for anything technical. Short sentences.
      Lead with the answer. No summary of what I just said. If you are guessing, say the word guess. -->
+
+### The four settings, answered out loud
+
+<!-- ASK THESE FOUR AS A MENU, not as an open question. An open "how should I write to you?" gets
+     "normally" from almost everybody, and then nothing changes. Offer both ends of each and write
+     down the answer. Owners who have never been asked this assume the way their AI writes is fixed,
+     and stop reading it.
+
+     1. LENGTH — short and direct, or fuller with the reasoning shown?
+     2. TONE — plain conversation or formal? Emoji, or none?
+     3. SHAPE — prose, headings, or bullet lists?
+     4. DEPTH — explain from the beginning, or assume I know the field? And on a hard question:
+        think it through properly even though it is slower and costs more, or answer fast and cheap?
+
+     Then say this out loud: none of these are locked. Say so mid-conversation and I change, and I
+     write the change into this file rather than obeying it once and forgetting.
+
+     EXAMPLE: Short. Plain, no emoji. Prose, lists only for real lists. Assume I know marketing,
+     explain anything technical. Think properly when the answer will cost me money. -->
 
 ## What has gone wrong with an AI before
 
