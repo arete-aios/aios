@@ -214,14 +214,30 @@ using the shape: who I am · who I help · what problem · what result · how. E
 understandable in three seconds and grounded in a fact. Recommend one, and one bolder
 alternative. The owner picks. That sentence is the visible result of the evening.
 
-**Stage 5 stops instead of forking.** Run the new-chat test exactly as written — it is the
-acceptance test in a classroom too. Then say both numbers and stop:
+**Stage 5 hands over instead of forking.** Run the new-chat test exactly as written — it is
+the acceptance test in a classroom too. Then say both numbers:
 
     This week: 3 of 3 done. Full course: 3 of 5 steps = 70%.
 
 Do not start the marketing agent, the feedback loop, or steps 8–11 of
 [`_proj-onboarding.md`](_proj-onboarding.md). Those are week two, and the course does them
 together.
+
+Then **stop being an onboarding and start being useful**, in the same message. Do not offer
+another round of feeding, do not ask for more material, and do not keep reporting percentages.
+Say the foundation holds, then name three specific things you can do for **this** owner —
+drawn from what they actually told you in the last hour, never from a generic list — and ask
+which one to start. The shape of the three, in their own situation's words:
+
+- **go deeper on what exists** — the weakest of the seven blocks, the course material, their
+  own asset audit and reflection answers turned into facts rather than compliments in a chat
+- **plan or make something** — the strategy, a campaign, a page, or a second folder for
+  another project or for themselves
+- **connect the daily work** — their drive, their inbox, a morning read of what actually needs
+  answering today
+
+Then start the one they pick. This entry file is finished when real work has begun, not when
+the folder exists.
 
 ## When the owner asks what an AIOS is
 
