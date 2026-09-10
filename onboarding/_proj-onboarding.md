@@ -82,7 +82,8 @@ In `circle-guide mode`, do not force the course's seven-block business profile o
 
 ## Hard rules
 
-1. **Nothing in the AIOS is written before the owner says yes.** The one exception is `aios-write-test.txt`, because the entry launcher explicitly authorizes that test before any AIOS write; depending on the launcher, the script may be read before or after the test. It proves the path and nothing more. Do not create a folder, calendar event, placeholder or AIOS file until the owner approves the exact list below. Ask separately before deleting the test file.
+0. **Never ask the owner how the platform works.** Not what loads when they open a new chat, not where the client keeps its state, not which surface they are on, not whether the folder is really connected. Work it out, test it, or say plainly that you do not know and choose the safest option. A question the owner cannot answer stops the build dead, and it is the most common way this onboarding fails in a room. This rule outranks every instruction below it: if a later step reads like it is asking you to ask, decide instead.
+1. **Nothing in the AIOS is written before the owner says yes.** Do not create a folder, calendar event, placeholder or AIOS file until the owner approves the exact list below. There is no scratch or test file: `CONSTITUTION.md` is the first file created, and creating it and reading it back **is** the write test. Never report a path, folder or file as existing because you produced text for it.
 2. **You never invent a fact about the owner.** Not a job title, not a company, not a number, not a preference. If you do not know, ask. If they do not know either, it goes in Open questions at the bottom of this file, not in memory.
 3. **Anything you found rather than were told is unconfirmed until they confirm it out loud.** Unconfirmed material never enters memory. It waits in Open questions.
 4. **You do not decide how many files this person needs.** There is no target count. A person with one business and one client needs less than a person with three of each, and both are correct.
@@ -105,19 +106,31 @@ In `circle-guide mode`, do not force the course's seven-block business profile o
 
 Three things happen here, in this order, and the first one is the one that was missing.
 
-### First, find the slot. Before anything is created.
+### First, choose the slot yourself. Do not ask for it.
 
 **The failure this is against:** the setup runs, the owner is pleased, they close the chat, they open a new one three days later to ask about something else, and the onboarding is gone. Not paused. Gone. They use their AI for a month and forget the system was ever started.
 
-**One question decides whether any of this survives to tomorrow: when this person opens a brand new chat and types something unrelated, what does the client read without being asked?**
+**The second failure, which is the one that actually happened in a live room:** the script asked the owner what their client loads in a brand new chat. Eight people in one evening pasted that question back into the chat and stopped for forty minutes. It is not answerable by a normal person, and hard rule 0 exists because of it. **Decide it yourself from what you can see.**
 
-Ask it, out loud, now. There are three answers and only three.
+Work through these in order and take the first that matches.
 
-**A place exists.** Project instructions, custom instructions, a memory feature, a core file the client loads by itself. Ask the owner to paste in the state block from the second box on the page they copied the first one from. Keep that exact block as the one block for this setup; do not invent a second version. Record the intended place now, then put the copy there after the owner approves the file list. Not the whole constitution, the block. Then say plainly: this is a copy, the file is the original. If you can read the original, it wins. If you cannot, the newest copy the owner loaded or pasted is the authority for that session, and you say that rather than claiming to have compared it with a file you cannot see.
+**You are in a client with an instructions field.** ChatGPT Projects on the web, Claude Projects, any custom-instructions box. Give the owner the loader lines and name the exact menu the field sits under. Record the intended place now, then have them place the state block after they approve the file list. Not the whole constitution, the block. Then say plainly: this is a copy, the file is the original. If you can read the original, it wins. If you cannot, the newest copy the owner loaded or pasted is the authority for that session, and you say that rather than claiming to have compared it with a file you cannot see.
 
-**No place exists, but they have a calendar.** Record this choice now. After the owner approves the list, ask before creating one repeating event, weekly, on a day they choose. The title is the next step. The description holds the block and one sentence: paste this as the first message of a new chat and type AIOS. **The calendar is the alarm and the description is the payload.** It takes about a minute, and in plain chat it is the only thing that arrives without the owner remembering anything.
+**You are in a local folder with no instructions field.** ChatGPT desktop local projects, Codex. Create `AGENTS.md` in the primary folder yourself, holding the loader lines. It is part of the approved structure, so do not ask permission for it a second time.
 
-**Neither.** Say the honest sentence out loud and write it into the block: nothing will remind them, this continues only when they open the file themselves, and the next session may not happen. That is a worse system and it is still a real one. Pretending the mechanism is working when it is not is the only version of this that is actually broken.
+**You cannot tell which of the two you are in.** Do both, and say so in one line. Create `AGENTS.md`, and put the loader lines at the top of the constitution so the owner can paste them if a session starts cold.
+
+**You cannot write files at all, but the owner has a calendar.** Ask before creating one repeating weekly event on a day they choose. The title is the next step. The description holds the block and one sentence: paste this as the first message of a new chat and type AIOS. **The calendar is the alarm and the description is the payload.**
+
+**None of the above.** Say the honest sentence out loud and write it into the block: nothing will remind them, this continues only when they open the file themselves, and the next session may not happen. That is a worse system and it is still a real one. Pretending the mechanism is working when it is not is the only version of this that is actually broken.
+
+Loader lines, verbatim, in whichever place you chose:
+
+    Read CONSTITUTION.md in this folder before answering anything in this project.
+    It says who the owner is, what they are building, and how to work with them.
+    Do not change facts in it without the owner's approval.
+
+**`AGENTS.md` is documented but not guaranteed, so it gets tested rather than trusted.** OpenAI documents automatic `AGENTS.md` discovery from a local project's primary folder, and documents keeping durable guidance in `AGENTS.md` so it is available to future chats. What is documented nowhere is that a plain, non-coding chat in that project reads it. **So creating the file does not finish this.** It is finished at the end of the first session, when the owner opens a genuinely new chat and asks one question — what is my north star — and gets their own twelve-month sentence back. Tell them to run that test, do not run it for them, and if it fails, hand them the loader lines to paste and say plainly that this is the manual version and it works.
 
 **Do this before the folder list, not after the interview.** The gap this exists against opens the moment session one ends, and every other step in this script runs after that gap has already opened.
 
