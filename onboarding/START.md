@@ -7,7 +7,7 @@ This is the entry. It gets someone from an empty folder to a working constitutio
 sitting. The full eleven-step build lives in
 [`_proj-onboarding.md`](_proj-onboarding.md); stage 5 says when to go there.
 
-## Three rules that never change
+## Four rules that never change
 
 1. **Never ask the owner how the platform works.** Not what loads in a new chat, not where
    state is kept, not which client they are using, not whether a folder is really connected.
@@ -17,6 +17,12 @@ sitting. The full eleven-step build lives in
    unconfirmed until they confirm it. Missing stays `NOT CONFIRMED`. Never invented.
 3. **One short block, then one question.** No walls of text, no status tables, no step numbers
    shown. The exception is stage 2, where all four questions go out in one message.
+4. **Never end a reply with a report.** A list of what you just created, with no next move in
+   it, hands the owner a problem they cannot solve: they have to guess what to type. Every
+   reply ends either with a question or with a named next action and permission to start it.
+   "The skeleton exists, the content does not" is a status; "here is what I built — shall I
+   now ask you the four questions that fill the constitution?" is a reply. Only ever the
+   second kind. You are driving; the owner is answering.
 
 ## Every reply ends with exactly one progress line
 
@@ -51,17 +57,54 @@ is not finished when the file exists. It is finished when stage 5's new-chat tes
 
 ## Stage 1 — the folder
 
-Explain in three sentences what an AIOS is, in the owner's language. Say what you are about to
-create. Ask one yes/no.
+Explain in three sentences what an AIOS is, in the owner's language. Then **show the exact
+list below**, as a list, and ask one yes/no. Do not summarise it, do not create anything
+before the owner answers, and do not ask "shall I proceed" without showing what.
 
-On yes: create the folder tree, `CONSTITUTION.md` holding the state block and nothing else,
-one CONTEXT file per folder, and the loader above.
+### The structure is fixed. You do not design it.
+
+**You never invent folder names.** This tree is the AIOS. A folder set built from what
+sounded sensible — inbox, strategy, offers, marketing, sales, operations, finance — is not an
+AIOS, it is a filing cabinet, and every later step in this file will fail against it.
+
+```
+<their folder>/
+  CONSTITUTION.md        who I am and the rules that hold every session. Created now,
+                         holding the state block and nothing else. Filled in stage 2 and 4
+  02-memory/             everything the system knows about me
+    _memory-CONTEXT.md   what is in here, and how this folder works
+  03-skills/             methods written down once so they run the same way
+    _skills-CONTEXT.md   which methods arrived, which run, which wait for a trigger word
+  04-tools/              how the AI reaches anything outside these files
+    _tools-CONTEXT.md    what is connected, what it unlocks, what happens without it
+  05-focus/              what matters right now
+    _focus-CONTEXT.md    what is true now, and pointers to goals and dates
+  06-archive/            finished and superseded material
+  00-system/aios/        a copy of the public AIOS files, so they can always be reopened
+```
+
+Six numbered nodes, one constitution, one CONTEXT file per node. If the owner works in
+another language you may translate the words after the number — `02-atmiņa/`, `03-prasmes/`
+and so on — but never the numbers, never the order, and never the count. Write the resolved
+names into the constitution and use them everywhere from then on.
+
+### Copy the public AIOS files in the same move
+
+Into `00-system/aios/`, copy the contents of `https://github.com/arete-aios/aios` —
+`SKILL.md`, the whole `skills/` folder, `references/` and `templates/`. Fetch the raw files;
+do not summarise them and do not write your own version of them. This is what makes the
+methods available later without the owner going back to a website. If you cannot fetch them,
+say so in one line and continue — but never claim they are there when they are not.
+
+### Then write, and prove you wrote
 
 **The first real file is the write test. There is no scratch file.** Create
 `CONSTITUTION.md` first, read it back, and report two lines: the exact full path you read, and
 how many folders and files now exist. If you cannot write, or cannot read back what you wrote,
 stop there and give only the fix — not a workaround, not a summary of what you would have
 created. Never report a path as existing because you produced text for it.
+
+Then create the rest of the tree above, the CONTEXT files, and the loader.
 
 ## Stage 2 — four questions
 
