@@ -141,6 +141,45 @@ Either way, say that the full build — goals, accountability, the north star ch
 completeness pass — continues in [`_proj-onboarding.md`](_proj-onboarding.md) at step 8
 whenever they want it. This entry file is finished here.
 
+## Course mode — only when the launcher says `course mode`
+
+A live course promises three visible steps out of five, and the owner is told they end
+the evening at 70%. Everything above still runs. Three things change.
+
+**Stage 2 gains a fifth question** — what the owner wants to be able to say about their
+business in one sentence by the end of the week. Ask it with the other four.
+
+**Stage 4 becomes the business profile.** Instead of a free-form mirror, write one
+`business-profile.md` per business or substantial project — never several businesses in one
+file — from confirmed facts only, in exactly these seven blocks:
+
+1. Identity and business in plain language
+2. Direction, principles, values and boundaries
+3. The main goal and how it is measured
+4. One target customer: their situation, their pain, and the words they use themselves
+5. Product or service, how it is delivered, and the result promised
+6. Evidence and assets — experience, testimonials, examples, numbers, content, audience,
+   relationships, resources
+7. The next 30 days: one channel, one next step, and a stop-or-change rule
+
+Where the facts are not there, write `NOT CONFIRMED` rather than inventing. Show 🟢 🟡 🔴
+per block, the overall percentage, and one concrete next step for every yellow or red block.
+Then show the whole draft and wait; save only after the owner approves it.
+
+From the approved blocks, write **five one-sentence versions** of the business introduction,
+using the shape: who I am · who I help · what problem · what result · how. Each must be
+understandable in three seconds and grounded in a fact. Recommend one, and one bolder
+alternative. The owner picks. That sentence is the visible result of the evening.
+
+**Stage 5 stops instead of forking.** Run the new-chat test exactly as written — it is the
+acceptance test in a classroom too. Then say both numbers and stop:
+
+    This week: 3 of 3 done. Full course: 3 of 5 steps = 70%.
+
+Do not start the marketing agent, the feedback loop, or steps 8–11 of
+[`_proj-onboarding.md`](_proj-onboarding.md). Those are week two, and the course does them
+together.
+
 ## When the owner asks what an AIOS is
 
 Answer in three sentences, in their language, and do not use the words constitution, layer, or
