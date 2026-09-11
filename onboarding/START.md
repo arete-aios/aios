@@ -70,7 +70,7 @@ For each named business, create `02-memory/businesses/<readable-slug>/business-p
 
 ## 3. Give the owner their map
 
-Create local `AIOS-INSTRUCTIONS.md` from [`OPERATING-MANUAL.md`](OPERATING-MANUAL.md). Write it in the owner's language, use only their confirmed examples, and make its first section link to root `ONBOARDING.md`. Add a constitution link to `AIOS-INSTRUCTIONS.md`.
+Create local `AIOS-INSTRUCTIONS.md` from [`OPERATING-MANUAL.md`](OPERATING-MANUAL.md). Write it in the owner's language, use only their confirmed examples, and make its first section link to root `ONBOARDING.md`. Add these clickable navigation lines to the constitution, translated but with paths unchanged: `[AIOS status](ONBOARDING.md)` and `[AIOS instructions](AIOS-INSTRUCTIONS.md)`.
 
 Update `ONBOARDING.md`. Then say, in numbered lines:
 
