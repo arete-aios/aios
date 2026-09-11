@@ -24,9 +24,10 @@ If a file conflicts with the constitution, stop and show the conflict. Do not si
 |---|---|
 | `AIOS status`, asks where something lives, or asks what has been set up | `ONBOARDING.md` |
 | `AIOS instructions`, `AIOS instrukcijas`, or asks how to use this folder | `AIOS-INSTRUCTIONS.md` |
-| `AIOS Deep Dive`, asks for self-reflection questions, self-coaching, or help understanding their potential | `00-system/aios/onboarding/DEEP-DIVE.md` |
-| `AIOS Business Profile` or asks to build/update a business profile | `00-system/aios/onboarding/BUSINESS-PROFILE.md` |
-| `AIOS Personal Audit` or asks how they appear online | `00-system/aios/onboarding/PERSONAL-AUDIT.md` |
+| `AIOS Deep Dive`, asks for self-reflection questions, self-coaching, or help understanding their potential | Read the Deep Dive URL in `00-system/aios/README.md` |
+| `AIOS Business Profile` or asks to build/update a business profile | Read the Business Profile URL in `00-system/aios/README.md` |
+| `AIOS Personal Audit` or asks how they appear online | Read the Personal Audit URL in `00-system/aios/README.md` |
+| `Install the full AIOS library` | Explain the cost and file count, show the plan, and wait for approval before downloading |
 
 When the owner asks how to work with the AIOS, give a clickable link to `AIOS-INSTRUCTIONS.md` and say that it is the map of the system. Do not paste the whole manual into chat unless they ask.
 

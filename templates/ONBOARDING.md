@@ -4,10 +4,11 @@ This is the live status panel for this AIOS. Translate the explanatory text into
 
 ## Current status
 
-- Onboarding: `0/5 · 0%`
-- Current step: `1 — approve the plan`
+- Current step: `1/5 — approve the plan`
+- Finished steps: `none`
 - Next action: `owner approves or corrects the proposed structure`
 - Confirmed business coverage: `0/7 · 0%` — coverage, not quality
+- Setup mode: `LIGHT · free-account friendly`
 - Onboarding completed: `NOT CONFIRMED`
 - Support reminder until: `NOT CONFIRMED`
 - Last updated: `YYYY-MM-DD`
@@ -37,7 +38,7 @@ Use only `NOT STARTED`, `CURRENT`, `DONE`, or `SKIPPED`. A deliberate skip compl
 | `04-tools/` | connected systems and permissions | NOT STARTED |
 | `05-focus/` | current priorities and measures | NOT STARTED |
 | `06-archive/` | finished or replaced material | NOT STARTED |
-| `00-system/aios/` | local copy of the public AIOS method | NOT STARTED |
+| `00-system/aios/README.md` | links to optional public methods; full library not installed | NOT STARTED |
 
 ## Seven-block business coverage
 

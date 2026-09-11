@@ -21,18 +21,16 @@ The result is not another notes folder. It is a working loop: something happens,
 Attach an empty local folder to ChatGPT, Codex, Claude, or another assistant that can read and write files. Then paste this:
 
 ```text
-Help me build an AIOS in the folder attached to this chat. Work in the language of this message.
+Build an AIOS business brain in the folder attached to this chat.
 
-This message ends with READY. If you do not see that word, tell me the copy was cut off and do nothing else.
-
-Read this file completely before doing anything:
+Read and follow:
 https://raw.githubusercontent.com/arete-aios/aios/main/onboarding/START.md
 
-Follow it exactly. First explain the plan and show me the complete folder and file list. Do not create or change anything until I answer yes. If you cannot open the file, say so and stop instead of inventing the method.
+First show a short plan and the complete file tree. Create nothing until I answer YES.
 
-Only after I answer yes, copy the AIOS method into the attached root and create the foundation files there.
+After YES, build only the lightweight foundation directly in the attached folder. Do not create another AIOS folder or copy the full GitHub repository.
 
-READY
+If you cannot read the instructions or write to the folder, say so and stop.
 ```
 
 The first session follows a visible rhythm:
@@ -46,6 +44,8 @@ The first session follows a visible rhythm:
 The local root also gets `AGENTS.md`. That file tells a new chat to read the constitution and onboarding map, and routes phrases such as **AIOS instructions**, **AIOS Deep Dive**, **AIOS Business Profile**, and **AIOS Personal Audit** to the right method.
 
 Deep Dive and the new-chat test are not required onboarding steps. The owner can call Deep Dive later; the new-chat test remains an optional troubleshooting check.
+
+The first setup is free-account friendly: it creates about ten small files and keeps the larger method library online until a specific method is requested.
 
 ## What you can do after the foundation
 
