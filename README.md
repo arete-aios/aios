@@ -1,151 +1,65 @@
 # AIOS · an AI operating system you own
 
-Most people now have an AI that is good at everything and knows nothing about them. Every session starts from zero: who you are, what you are working on, what you decided last month, how you want to be spoken to. You explain it again, and tomorrow you explain it again.
+Most AI tools are capable but forgetful. They know the world and still make you explain who you are, what you are building, what you decided, and how you want to work.
 
-An **AIOS** fixes that with five layers you own and your AI reads. This repository is how one gets built, in stages, with a test at the end of each one.
+An **AIOS** fixes that with plain files you own. Your AI reads those files before it answers, uses the methods inside them, and writes important learning back where the next session can find it.
 
----
+## What you build
 
-## What you will have at the end
+| Layer | What it holds |
+|---|---|
+| **Constitution** | Who you are, where you are going, and the rules that hold in every session |
+| **Memory** | The facts, history, people, projects, and evidence the AI may use |
+| **Skills** | Repeatable methods, each with a clear trigger and stopping rule |
+| **Tools** | The systems the AI can reach and what it may do there |
+| **Focus** | What matters now, how it is measured, and when it is reviewed |
 
-Concretely, five things:
+The result is not another notes folder. It is a working loop: something happens, the useful learning is written back, and the next session behaves differently because of it.
 
-1. **A core file** your AI reads at the start of every session, short enough to be cheap, written so that every line changes what it does.
-2. **Folders that fit you**, built from your own material, where a new note has an obvious home without you thinking about it.
-3. **Three working methods**, not twenty. One of them will run without you asking for it.
-4. **A closed loop**: something happened, it got written where the next session sees it, and it changed what you did next. This is the part that separates a system from a folder of notes.
-5. **One file that says what matters right now**, current enough that your AI argues with you when you propose something new.
+## Start here
 
-Plain files, in a folder you keep. No platform, no subscription, nothing that stops working when a tool is replaced.
-
----
-
-## The five layers
-
-| # | Layer | What it is | Kept by |
-|---|---|---|---|
-| 1 | **[Constitution](references/1-constitution.md)** | Who you are and the rules that hold in every session. One of the two files that cost you on every message | `constitution7` |
-| 2 | **[Memory](references/2-memory.md)** | Everything the system knows. Long, cheap, opened when relevant | `memory7`, `context7` |
-| 3 | **[Skills](references/3-skills.md)** | Methods written down once, so they run the same way every time | the library, `audit7` |
-| 4 | **[Tools](references/4-tools.md)** | How the AI reaches anything outside its own files | each skill's requirements |
-| 5 | **[Focus](references/5-focus.md)** | What matters right now. One small file | `focus7`, `week7` |
-
-And the thing that makes them a system rather than five folders: **[the loop](references/feedback-loop.md)**. Read that one first if you only read one.
-
----
-
-## Already have a second brain? Start here instead
-
-Then this is a comparison, not a build, and the rest of this page is written for someone starting from nothing.
-
-**Do not paste SKILL.md, that one builds from nothing. Hand your AI [references/evaluate.md](references/evaluate.md) instead**, and if it can browse, give it the repository link too so it can open the skill it recommends. If you can only paste, tell it plainly that it cannot open the skill files, so it names them rather than describing them from memory.
-
-That file holds the scoring dimensions: one per layer, plus the loop, plus whether the whole thing actually fits the person carrying it. It returns either a score per dimension with an overall and a band, or, when the system has not really started, no score at all and the first move instead. When three or more of the six dimensions fall below 25, the file tells your AI to skip the table, the total and the lists, and give you the first move instead, because a precise score of something that has not started is theatre. Either way every low score names the skill in [skills/](skills/) that raises it, so you end with a move rather than a grade.
-
-Expect the honest answer to be shorter than you hoped. For most systems that are already running, the useful advice is to remove something, not to add one more thing.
-
----
-
-## How to start
-
-There are two ways to build. Both end in the same system, so pick the one that matches how you want to work through the first build. The word “doors” below is reserved for Work and Codex, because both can open the same folder.
-
-**Guided build.** You paste two blocks and your AI does the rest, stopping to ask permission before it creates anything. It first establishes whether the system is for private life, one business or project, several businesses or projects, or a deliberate mix. Then it interviews you, reads what you have already published about yourself or the included businesses if you let it, and writes the first files with you. Allow two to four hours for the first working build, across one or two sittings; the completeness and final north-star session comes later on purpose. Your rough 12-month direction is captured at the start in your own words and tested against the evidence later. Your folder arrives with eleven methods in it, three of them switched on, and the first build ends with one goal, one number and one day of the week when that goal gets checked. Start here if you want something working today: **[onboarding/START.md](onboarding/START.md)**.
-
-**Two entry points, one build.** [`onboarding/START.md`](onboarding/START.md) is two pages and five stages: a folder, four questions, feeding the brain, the mirror, and a test that proves the constitution loads itself in a new chat. It is what a first sitting or a live classroom should use. [`onboarding/_proj-onboarding.md`](onboarding/_proj-onboarding.md) is the full engine — eleven steps, the accountability build, the north-star session — and `START.md` hands off to it at step 8 for anyone who wants the whole thing. Do not run both from the beginning.
-
-The full onboarding file is one engine with three explicit launch paths. A direct GitHub start uses `full-onboarding mode` and runs all eleven steps. The self-guided Circle page at `areteaios.com/my` uses `circle-guide mode`: it pauses for the page's starting-context file, finishes the constitution foundation and hands control back to Circle for the first agent and weekly review. A live business course may use `business-foundation mode`: it finishes the constitution and seven-block business profile, then hands off at three of five course steps. The launcher must name either shorter path; otherwise the full onboarding is used. Work and Codex are only two doors to the same attached root folder, never two different AIOS builds.
-
-The public Build AIOS page supplies the normal two blocks. If you came straight to GitHub and do not have them, paste this smaller launcher instead. The onboarding file contains the canonical blank state block it needs:
+Attach an empty local folder to ChatGPT, Codex, Claude, or another assistant that can read and write files. Then paste this:
 
 ```text
-I want the guided AIOS build in `full-onboarding mode`. Read all of
-https://raw.githubusercontent.com/arete-aios/aios/main/onboarding/_proj-onboarding.md before acting.
-Quote its first heading so I know it opened. Continue in the language of this message unless I ask
-otherwise. I came directly from GitHub, so use the canonical blank AIOS STATE block inside that file.
-Treat the folder already attached to this Work or Codex session as the real AIOS root; do not create
-another AIOS folder inside it. Test whether you can write to that real folder and tell me the exact
-path you tested. Then follow the file exactly, including the early scope and rough 12-month-direction
-questions. Write nothing until you show me the full list and I approve it; then create CONSTITUTION.md
-first, read it back, and show me the exact path — that is the write test, and there is no scratch file.
+Help me build an AIOS in the folder attached to this chat. Work in the language of this message.
+
+This message ends with READY. If you do not see that word, tell me the copy was cut off and do nothing else.
+
+Read this file completely before doing anything:
+https://raw.githubusercontent.com/arete-aios/aios/main/onboarding/START.md
+
+Follow it exactly. First explain the plan and show me the complete folder and file list. Do not create or change anything until I answer yes. If you cannot open the file, say so and stop instead of inventing the method.
+
+READY
 ```
 
-If you came from the Circle page or a live course, use the setup text supplied there instead of this direct-GitHub launcher. Those launchers name their hand-off point and keep the rest of the architecture identical.
+The first session follows a visible rhythm:
 
-**Staged build.** You build it yourself over weeks, one stage at a time, each with an exit test. Slower and deeper, and it is the same five layers. Everything below describes this path.
+1. You see and approve the exact structure.
+2. The assistant creates the constitution first and proves it can read it back.
+3. You answer four short foundation questions.
+4. You receive a personal `AIOS-INSTRUCTIONS.md` showing what the system can now do and how to call each deeper workflow.
+5. A new-chat test proves whether the constitution loads automatically.
 
-If your AI is reading this file as part of the guided path, follow the onboarding file and ignore the rest of this section.
+The local root also gets `AGENTS.md`. That file tells a new chat to read the constitution and routes phrases such as **AIOS instructions**, **AIOS Deep Dive**, **AIOS Business Profile**, and **AIOS Personal Audit** to the right method.
+
+## What you can do after the foundation
+
+- **[AIOS Deep Dive](onboarding/DEEP-DIVE.md):** a self-coaching interview that turns reflections, patterns, strengths, constraints, and future potential into a confirmed personal map.
+- **[AIOS Business Profile](onboarding/BUSINESS-PROFILE.md):** one seven-part profile per business, ending in a one-sentence explanation a stranger can understand.
+- **[AIOS Personal Audit](onboarding/PERSONAL-AUDIT.md):** a sourced audit of how you appear on the public web, kept separate from private memory and from the technical AIOS audit.
+- **[AIOS operating manual](onboarding/OPERATING-MANUAL.md):** the source used to create your local instructions file in your own language.
+
+The detailed eleven-step build still exists in [`onboarding/_proj-onboarding.md`](onboarding/_proj-onboarding.md). It adds the quarter goal, accountability loop, completeness pass, and deeper north-star work. It is the full engine, not the first file an owner needs to read.
+
+Already have a second brain or an AIOS-like folder? Use [`references/evaluate.md`](references/evaluate.md) instead of rebuilding from zero.
+
+## Skills
+
+The reusable methods live in [`skills/`](skills/). Install only what solves a real need. A skill that is present in a folder costs nothing; a standing skill is loaded every session and should stay rare.
+
+If you build manually over several weeks, start with [`SKILL.md`](SKILL.md). That is the staged path with exit tests. The guided `START.md` path is faster and ends in the same five-layer architecture.
 
 ---
 
-**One link, one paste.**
-
-1. Open **[SKILL.md](SKILL.md)** in this repository.
-2. Copy the whole file and paste it into your AI. Claude, ChatGPT, or anything that reads text. Nothing to install.
-3. It will start stage 1, which is writing the file your AI reads first. That takes one session, most of it your AI asking and you answering.
-
-**What "reads first" needs.** For this to be an operating system and not another chat, your AI has to reliably see your core at the start of work. There is a ladder for that, best to workable: (a) a client with a project or memory feature that auto-loads files, so the core loads itself every session; (b) a client where you paste or pin the core at the start of a working session; (c) plain chat, where you paste the core each session. All three work. Starting in plain ChatGPT is fine and common, and stage 1 writes a real constitution either way, the last option just costs the most effort and is the thing the later stages exist to remove. What changes as you go is how automatically the core loads, not whether it exists.
-
-There are nine stages and each has an exit test. **Stage 1 passes when a brand new session answers something it could only know from what you wrote.** Not before.
-
-Your AI creates a small progress file in stage 1 and reads it at the start of every session after that. This is deliberate: a build that runs over weeks cannot survive in a chat window.
-
-**Install the skills** when a stage calls for them. First add the marketplace, then install only the group you need:
-
-```
-/plugin marketplace add arete-aios/aios
-/plugin install loop@arete-aios
-```
-
-To install VIDEO7 by itself:
-
-```
-/plugin marketplace add arete-aios/aios
-/plugin install video7@arete-aios
-```
-
-**There is a group with exactly three skills in it, and it is the one most people should stop at.** `loop` is that group: `in7`, `exit7`, `focus7`, the three that close the loop and the ceiling until one of them has run without you asking. The other category groups are `start`, `aios`, `capture`, `decide`, `people`, `reach`; `video7` is a one-skill installation shortcut. Install `start` at stage 1 if you want the build stages themselves as skills, `loop` at stage 5, and the rest only when a stage calls for them. The cap of three counts standing skills, the ones still running after the build. The marketplace alone installs nothing; you pick the group.
-
-Or take any single skill as a file and paste it in, with nothing installed at all. The skills are in [skills/](skills/) in this repository, one folder each. When you paste a folder skill, its `references/` files are not pasted with it, so if a skill mentions one, either add it too or tell your AI it is not present.
-
----
-
-## The skills, grouped by what changes when they finish
-
-Each raises a specific layer. When an evaluation finds a gap, the skill that closes it is here, in `skills/`.
-
-| Group | After a run | Skills |
-|---|---|---|
-| **loop** | something you wrote came back unasked and changed what you did next | `in7` `exit7` `focus7` |
-| **start** | the system exists where there was nothing | `constitution7` `braindump7` `deepdive7` `memory7` `north7` `channel7` |
-| **aios** | the system's own files stay honest | `context7` `focus7` `exit7` `week7` `audit7` `dashboard7` |
-| **capture** | memory holds a record that did not exist | `in7` `inbox7` `voice7` `watch7` `meeting7` `news7` |
-| **decide** | a written judgment exists where there was an opinion | `eval7` `evalx` `verify7` `kw7` `companies7` `web7` |
-| **people** | you know one named human better | `warm7` |
-| **reach** | something outside your own files changed | `mail7` `slides7` `site-cloudflare7` `site-lovable7` `ads7` `video7` |
-
-`loop` is a cross-section, not a seventh category. Those three also sit in the group that describes what they do; they are gathered here because "install only three" is advice nobody can follow if the command hands you twelve.
-
-`video7` is also an installation shortcut, not another category. The same skill remains in `reach`; the shortcut lets a filmmaker install it without pulling the other reach skills.
-
-**Do not install them all.** The build is staged for a reason: three standing skills until the loop closes once. The evaluation in [references/evaluate.md](references/evaluate.md) tells you which few you need, in order.
-
-**Standing means something specific, and the guided door now seeds eleven methods, so it is worth saying out loud.** A skill is *present* when its file is in your skills folder and listed: it costs nothing and does nothing until you type its name. A skill is *standing* when its trigger line is in your constitution: it is read on every message and it can run without you asking. **The cap of three has always counted standing skills, not files.** Eleven present with three standing is the same rule, not a relaxation of it, and the fourth one still waits for the loop to close once.
-
----
-
-## Honestly, how long
-
-**This is weeks of small work, not an afternoon.**
-
-The first stage is one sitting. Stages 1 to 5 spread across one to two weeks, twenty to forty minutes at a time, and the limiting factor is your thinking, not the AI's speed.
-
-**Stage 6 is a deliberate stop: two full weeks of using it and adding nothing.** That is the step everybody wants to skip, and skipping it is the reason most second brains are abandoned in the third week. There is a hard rule in the build to stop you: no more than three standing skills, the ones that keep running, before the loop has closed once. The one-time build skills in `start` do not count against it.
-
-Anyone selling you a complete second brain in an afternoon is selling you a folder.
-
----
-
-**Built by Egils Boitmanis with [FullDigital](https://fulldigital.me), a Latvia registered nonprofit association that teaches people to build an AI operating system they own.**
-What an AIOS is: [fulldigital.me/aios](https://fulldigital.me/aios) · The skills live in [skills/](skills/) in this repository
-Licensed CC BY 4.0. Use it, change it, ship it. Keep the attribution.
+Built by Egils Boitmanis with [FullDigital](https://fulldigital.me). Licensed CC BY 4.0. Use it, change it, ship it, and keep the attribution.
