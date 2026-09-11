@@ -4,6 +4,12 @@ This is the English source for the owner's local `AIOS-INSTRUCTIONS.md`. During 
 
 The local manual is a map, not a second copy of the method. Keep it short and link to the detailed files under `00-system/aios/`.
 
+## Your current AIOS status
+
+Start with the root `ONBOARDING.md`, generated from the [`ONBOARDING.md` template](../templates/ONBOARDING.md). In the owner's local manual, link directly to `ONBOARDING.md`. It shows what has been completed, the next useful action, where each major part lives, and how much of the seven-block business context is supported by confirmed facts.
+
+Say **AIOS status** or **Where is something in my AIOS?** to reopen that panel. It measures coverage and navigation, not the quality of the owner or their business.
+
 ## What this folder does
 
 Your AIOS is a folder of plain files that gives an AI continuity. A new chat can read who you are, what matters now, what the system knows, which methods it can run, and which outside systems it may touch.
@@ -53,11 +59,11 @@ The assistant opens [`PERSONAL-AUDIT.md`](PERSONAL-AUDIT.md). In the owner's loc
 
 This is not `AUDIT7`. Personal Audit examines how you appear online. `AUDIT7` checks whether the AIOS machinery, files, and tools are still honest and working.
 
-### Empty a brain dump
+### Enrich the brain
 
-Say: **Here is a brain dump**, then write or dictate without organising it.
+Say: **Enrich my AIOS brain**, then upload, link, write, or dictate without organising it first. In Latvian use **Smadzeņu papildināšana**, never a literal translation such as `smadzeņu izgāztuve`.
 
-The assistant saves the raw dump first. It then separates facts, decisions, ideas, questions, and possible tasks. Nothing becomes a commitment just because it appeared in the dump.
+Useful sources include websites, CVs, presentations, offers, images, interviews, reviews, call transcripts, business numbers, and the owner's own story. The assistant saves raw input first, then separates facts, decisions, ideas, questions, and possible tasks. Nothing becomes a commitment merely because it appeared in the input.
 
 ### Decide what matters now
 
@@ -87,6 +93,8 @@ The assistant first explains what access is needed, what the connection may read
 - A tool is not considered connected because a document says it is. It is connected after a live read-only test succeeds.
 
 ## If a new chat knows nothing
+
+This is optional troubleshooting, not an onboarding requirement.
 
 Check that the chat is attached to the correct root and that `AGENTS.md` sits beside `CONSTITUTION.md`. Ask the new chat to read both files. If the client has a project-instructions field, use:
 

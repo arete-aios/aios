@@ -30,6 +30,8 @@ https://raw.githubusercontent.com/arete-aios/aios/main/onboarding/START.md
 
 Follow it exactly. First explain the plan and show me the complete folder and file list. Do not create or change anything until I answer yes. If you cannot open the file, say so and stop instead of inventing the method.
 
+Only after I answer yes, copy the AIOS method into the attached root and create the foundation files there.
+
 READY
 ```
 
@@ -37,11 +39,13 @@ The first session follows a visible rhythm:
 
 1. You see and approve the exact structure.
 2. The assistant creates the constitution first and proves it can read it back.
-3. You answer four short foundation questions.
-4. You receive a personal `AIOS-INSTRUCTIONS.md` showing what the system can now do and how to call each deeper workflow.
-5. A new-chat test proves whether the constitution loads automatically.
+3. You answer three short foundation questions, using simple choices where useful.
+4. You receive `ONBOARDING.md`, a live status and system map, plus personal `AIOS-INSTRUCTIONS.md` showing what the system can do.
+5. You may add real source material; the assistant then asks no more than five missing business questions and hands the system over.
 
-The local root also gets `AGENTS.md`. That file tells a new chat to read the constitution and routes phrases such as **AIOS instructions**, **AIOS Deep Dive**, **AIOS Business Profile**, and **AIOS Personal Audit** to the right method.
+The local root also gets `AGENTS.md`. That file tells a new chat to read the constitution and onboarding map, and routes phrases such as **AIOS instructions**, **AIOS Deep Dive**, **AIOS Business Profile**, and **AIOS Personal Audit** to the right method.
+
+Deep Dive and the new-chat test are not required onboarding steps. The owner can call Deep Dive later; the new-chat test remains an optional troubleshooting check.
 
 ## What you can do after the foundation
 
