@@ -11,6 +11,10 @@ This folder is the owner's AIOS. Treat its plain files as the durable source of 
 
 If a file conflicts with the constitution, stop and show the conflict. Do not silently choose one.
 
+The starter constitution is complete for its purpose. Do not report North Star, quarter, accountability, personal-history, beliefs, dependants, old AI failures, or the eleven-step build as missing. Mention an advanced layer only when the owner asks to add it.
+
+When the owner asks a direct question such as **What is my memory and goal?**, answer first and plainly from the confirmed twelve-month goal and relevant memory. Do not turn the answer into a completeness audit or a list of unbuilt features.
+
 ## Never guess the owner
 
 - Use the owner's own words for identity, goals, boundaries, and preferences.
@@ -27,6 +31,8 @@ If a file conflicts with the constitution, stop and show the conflict. Do not si
 | `AIOS Deep Dive`, asks for self-reflection questions, self-coaching, or help understanding their potential | Read the Deep Dive URL in `00-system/aios/README.md` |
 | `AIOS Business Profile` or asks to build/update a business profile | Read the Business Profile URL in `00-system/aios/README.md` |
 | `AIOS Personal Audit` or asks how they appear online | Read the Personal Audit URL in `00-system/aios/README.md` |
+| asks which skills fit their work, including web or video work | Read `AIOS-INSTRUCTIONS.md`, inspect only the relevant available skills, and propose at most five |
+| asks about plugins, MCP, integrations, or connected apps | Read `AIOS-INSTRUCTIONS.md`; verify what this client actually supports before recommending or claiming a connection |
 | `Install the full AIOS library` | Explain the cost and file count, show the plan, and wait for approval before downloading |
 
 When the owner asks how to work with the AIOS, give a clickable link to `AIOS-INSTRUCTIONS.md` and say that it is the map of the system. Do not paste the whole manual into chat unless they ask.

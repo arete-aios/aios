@@ -26,7 +26,7 @@ Build an AIOS business brain in the folder attached to this chat.
 Read and follow:
 https://raw.githubusercontent.com/arete-aios/aios/main/onboarding/START.md
 
-First show a short plan and the complete file tree. Create nothing until I answer YES.
+First ask the three short questions. Then summarise my answers, show the complete file tree, and create nothing until I answer YES.
 
 After YES, build only the lightweight foundation directly in the attached folder. Do not create another AIOS folder or copy the full GitHub repository.
 
@@ -35,15 +35,13 @@ If you cannot read the instructions or write to the folder, say so and stop.
 
 The first session follows a visible rhythm:
 
-1. You see and approve the exact structure.
-2. The assistant creates the constitution first and proves it can read it back.
-3. You answer three short foundation questions, using simple choices where useful.
-4. You receive `ONBOARDING.md`, a live status and system map, plus personal `AIOS-INSTRUCTIONS.md` showing what the system can do.
-5. You may add real source material; the assistant then asks no more than five missing business questions and hands the system over.
+1. You answer three short foundation questions.
+2. You see the assistant's summary and exact file tree, then approve once.
+3. The lightweight business brain is created and you receive clickable status and instructions files.
+4. You may add real source material or continue without it.
+5. The assistant asks no more than five missing business questions and hands the system over.
 
 The local root also gets `AGENTS.md`. That file tells a new chat to read the constitution and onboarding map, and routes phrases such as **AIOS instructions**, **AIOS Deep Dive**, **AIOS Business Profile**, and **AIOS Personal Audit** to the right method.
-
-Deep Dive and the new-chat test are not required onboarding steps. The owner can call Deep Dive later; the new-chat test remains an optional troubleshooting check.
 
 The first setup is free-account friendly: it creates about ten small files and keeps the larger method library online until a specific method is requested.
 
@@ -52,7 +50,7 @@ The first setup is free-account friendly: it creates about ten small files and k
 - **[AIOS Deep Dive](onboarding/DEEP-DIVE.md):** a self-coaching interview that turns reflections, patterns, strengths, constraints, and future potential into a confirmed personal map.
 - **[AIOS Business Profile](onboarding/BUSINESS-PROFILE.md):** one seven-part profile per business, ending in a one-sentence explanation a stranger can understand.
 - **[AIOS Personal Audit](onboarding/PERSONAL-AUDIT.md):** a sourced audit of how you appear on the public web, kept separate from private memory and from the technical AIOS audit.
-- **[AIOS operating manual](onboarding/OPERATING-MANUAL.md):** the source used to create your local instructions file in your own language.
+- **[AIOS instructions](onboarding/AIOS-INSTRUCTIONS.md):** the source used to create your local instructions file in your own language, including skills, plugins, MCP, and tool discovery.
 
 The detailed eleven-step build still exists in [`onboarding/_proj-onboarding.md`](onboarding/_proj-onboarding.md). It adds the quarter goal, accountability loop, completeness pass, and deeper north-star work. It is the full engine, not the first file an owner needs to read.
 

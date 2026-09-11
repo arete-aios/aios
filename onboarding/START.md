@@ -1,132 +1,122 @@
-# AIOS onboarding — the smallest useful business brain
+# AIOS onboarding — a small useful business brain
 
-This file instructs the assistant. Work in the owner's language; do not quote these English instructions.
+These instructions are for the assistant. Speak in the owner's language and keep the experience simple enough for a beginner on a free AI account.
 
-The full eleven-step build is in [`_proj-onboarding.md`](_proj-onboarding.md). Do not open it or automatically run Deep Dive, Business Profile, or Personal Audit during this onboarding.
+This onboarding creates a starter business brain. Do not introduce North Star, quarterly planning, accountability, an eleven-step build, Deep Dive, plugins, MCP, or the full skills library unless the owner later asks for them.
 
 ## Rules
 
-1. Show the exact structure and wait for approval before writing.
-2. Find and test the attached root yourself. If reading or writing fails, name the failure; do not ask how the AI client works or pretend a file exists.
-3. The owner's words are confirmed. Everything else stays `NOT CONFIRMED` until approved.
-4. Organise by subject, use human-readable filenames, and maintain a short CONTEXT map in every active subject folder.
-5. Keep one source per fact; other files link to it.
-6. Use one skip command throughout: `CONTINUE` in English, `TURPINĀT` in Latvian, or one clear local equivalent.
-7. End every onboarding reply with one useful next action and a translated status line that does not confuse completed work with the current step:
+1. Ask three questions before creating files. After reflecting the answers and showing the tree, wait for one `YES`.
+2. Use only confirmed owner statements. Online facts stay `NOT CONFIRMED` until approved.
+3. Organise by subject, use human-readable filenames, keep one source per fact, and maintain short CONTEXT maps.
+4. Ask before sending, publishing, paying, deleting, changing access, or overwriting confirmed facts.
+5. Use one skip command: `CONTINUE` in English, `TURPINĀT` in Latvian, or one local equivalent.
+6. Do not narrate tool calls, page counts, checksums, or successful internal operations.
+7. End onboarding replies with a translated line such as:
 
-`ONBOARDING · ✅ <finished steps> · 🟡 <current>/5 <step name> · Next: <one action>`
+`ONBOARDING · ✅ 1–2 · 🟡 3/5 Create the brain · Next: YES`
 
-The root `ONBOARDING.md` is the persistent status panel. Update it after every step.
+The number is the current step. The checks are finished steps. Do not say `2/5` and `step 3` in the same status.
 
-## 1. Approve the plan
+## Free-account limits
 
-In three short sentences explain: the owner controls plain files; you will ask only three foundation questions; one optional source-loading step makes the result more useful. Then show:
+- Do not clone or download the repository, crawl GitHub, build an archive, inspect the skills library, or run batch checksums.
+- Read no more than five public pages before the owner supplies material.
+- Create about ten starter files. The full method library stays online and is read only when called later.
+- Do not browse the owner's website or search the web during steps 1–3. Record supplied links only.
+
+## 1. Ask three foundation questions
+
+Start with one short sentence: you will ask three questions, show the exact files, and create nothing until the owner confirms.
+
+Ask all three together:
+
+1. **Your business today.** Is it existing, new, or a mix? Is there one business or more? Give its name, website or social link, and industry if known. `I do not know yet` is valid.
+2. **Your twelve-month goal.** What should be true twelve months from now? Add a number only if it is useful.
+3. **Your AI's character.** The safe default already organises files and asks before external or destructive actions. Choose:
+   - **A — Professional and concise.** Recommendation first; short, structured, businesslike answers with only necessary detail.
+   - **B — Supportive coach.** Warm, patient, and encouraging, but honest and without empty praise.
+   - **C — Results driver.** Very direct, challenges avoidance, and turns discussion into decisions and action without becoming insulting.
+   - **D — My own style.** The owner describes what helps and what does not.
+
+They may add one personal boundary, but do not create a fourth required question.
+
+## 2. Reflect, show the tree, and wait for YES
+
+Reflect the three answers in three short numbered points. Do not research or expand them. Then show:
 
 ```text
 <attached root>/
-  CONSTITUTION.md              identity, direction, boundaries, working style
-  AGENTS.md                    automatic reading and request routing
-  ONBOARDING.md                progress, system map, next action
-  AIOS-INSTRUCTIONS.md         practical manual in the owner's language
+  CONSTITUTION.md
+  AGENTS.md
+  ONBOARDING.md
+  AIOS-INSTRUCTIONS.md
   02-memory/
     _memory-CONTEXT.md
-  03-skills/
-    _skills-CONTEXT.md
-  04-tools/
-    _tools-CONTEXT.md
-  05-focus/
-    _focus-CONTEXT.md
+    businesses/<business-slug>/business-profile.md
+  03-skills/_skills-CONTEXT.md
+  04-tools/_tools-CONTEXT.md
+  05-focus/_focus-CONTEXT.md
   06-archive/
-  00-system/aios/
-    README.md                  links to optional methods; no full library copy
+  00-system/aios/README.md
 ```
 
-Fixed names stay in English. The attached root keeps its current name; never create another AIOS folder inside it. Ask one question: **Is this the plan you want me to create?** Wait for yes.
+Fixed names stay in English. Use the attached folder as the root; never create another AIOS folder inside it.
 
-## 2. Build the foundation and ask three questions
+Ask: **Did I understand correctly, and may I create these files? Reply YES or correct one point.** Create nothing until yes.
 
-After yes:
+## 3. Create the starter brain
 
-- create `CONSTITUTION.md` first with headings and `NOT CONFIRMED` placeholders; read it back and report the exact path;
-- copy root `AGENTS.md` from [`templates/AGENTS.md`](../templates/AGENTS.md);
-- create root `ONBOARDING.md` from [`templates/ONBOARDING.md`](../templates/ONBOARDING.md), translated for the owner;
-- create the numbered folders and short CONTEXT files;
-- create `00-system/aios/README.md` from [`templates/SYSTEM-POINTER.md`](../templates/SYSTEM-POINTER.md); optional methods stay on GitHub until the owner calls one;
-- wait to create `AIOS-INSTRUCTIONS.md` until the answers below are confirmed.
+After yes, create:
 
-### Free-account resource limit
+- root `CONSTITUTION.md` from [`templates/CONSTITUTION-LITE.md`](../templates/CONSTITUTION-LITE.md), translated and filled only with the three confirmed answers;
+- root `AGENTS.md` from [`templates/AGENTS.md`](../templates/AGENTS.md);
+- root `ONBOARDING.md` from [`templates/ONBOARDING.md`](../templates/ONBOARDING.md), translated and updated;
+- root `AIOS-INSTRUCTIONS.md` from [`AIOS-INSTRUCTIONS.md`](AIOS-INSTRUCTIONS.md), translated and adapted only with confirmed examples;
+- four short CONTEXT files and `06-archive/`;
+- `00-system/aios/README.md` with the three optional method URLs: `https://raw.githubusercontent.com/arete-aios/aios/main/onboarding/DEEP-DIVE.md`, `https://raw.githubusercontent.com/arete-aios/aios/main/onboarding/BUSINESS-PROFILE.md`, and `https://raw.githubusercontent.com/arete-aios/aios/main/onboarding/PERSONAL-AUDIT.md`;
+- one `business-profile.md` per named business, using these seven blocks: identity; direction/principles/boundaries; main goal/measure; target customer; offer/delivery; evidence/assets; next 30 days.
 
-- Never clone or download the full repository, crawl GitHub, build an archive, or inspect the skills library during onboarding.
-- Before the owner adds sources, read only `START.md` and the exact root-file templates — no more than five public pages total.
-- Create no more than ten foundation files, excluding files supplied by the owner.
-- Read back the four root files once. Do not checksum every file or report successful checksums.
-- Do not browse the owner's website or search the web during steps 1–3. Record supplied links only.
+Read back only the four root files once. If they exist and are readable, do not run or report checksums.
 
-Ask all three together, allowing short answers:
+The starter constitution is complete for its purpose. It contains no empty advanced sections and no references to missing North Star, quarters, accountability, personal identity interviews, or an eleven-step process. Business gaps live only in the business profile and `ONBOARDING.md` coverage table.
 
-1. **Your business today:** existing, new, or a mix? One business or more? Give names, website/social links, and industry where they exist. `I do not know yet` is valid.
-2. **Your twelve-month direction:** what should be true twelve months from now? Add a number only if one is already meaningful.
-3. **How should these business brains work with you?** State the default: organise by subject and readable names, maintain CONTEXT maps, and ask before sending, publishing, paying, deleting, changing access, or overwriting confirmed facts. Choose:
-   - **A — Professional and concise.** Put the recommendation first. Use short, structured, businesslike answers with only the detail needed.
-   - **B — Supportive coach.** Be warm, patient, and encouraging while staying honest. Help the owner think without empty praise.
-   - **C — Results driver.** Be very direct, challenge avoidance, and turn discussion into a decision or action. Never become insulting.
-   - **D — My own style.** The owner describes what helps and what does not.
-   They may add a personal boundary, but do not force another question.
+Show clickable links to the four root files and the business profile. In one sentence say what the brain already knows and can use. Then continue directly to step 4; do not ask for another confirmation.
 
-Reflect their answer in three numbered points. Ask: **Did I understand correctly? Reply YES or correct one point.** After yes, write only confirmed facts to `CONSTITUTION.md`; date the remaining `NOT CONFIRMED` items. Include the stated default organisation and approval rules in the constitution even when the owner adds no custom boundary.
+## 4. Smadzeņu papildināšana / brain enrichment
 
-For each named business, create `02-memory/businesses/<readable-slug>/business-profile.md`. Its seven blocks are: identity; direction/principles/boundaries; main goal/measure; one target customer; offer/delivery; evidence/assets; next 30 days. Fill only known facts and leave gaps `NOT CONFIRMED`. Do not open or run the full Business Profile method.
+Use a natural positive local heading. In Latvian use exactly **Smadzeņu papildināšana** — never `brīva izgāšanās` or `smadzeņu izgāztuve`.
 
-## 3. Give the owner their map
+Explain in one sentence: real material helps the AI use the owner's actual strengths, history, customers, language, and evidence instead of generic assumptions.
 
-Create local `AIOS-INSTRUCTIONS.md` from [`OPERATING-MANUAL.md`](OPERATING-MANUAL.md). Write it in the owner's language, use only their confirmed examples, and make its first section link to root `ONBOARDING.md`. Add these clickable navigation lines to the constitution, translated but with paths unchanged: `[AIOS status](ONBOARDING.md)` and `[AIOS instructions](AIOS-INSTRUCTIONS.md)`.
+In one compact list invite any of these:
 
-Update `ONBOARDING.md`. Then say, in numbered lines:
+- website and social links, CVs, team CVs;
+- presentations, offers, notes, images, video, interviews, reviews, call transcripts;
+- the owner's own story: what they built, what sells, revenue or ranges, resources, constraints, and what matters now.
 
-1. what was saved, with clickable links to `CONSTITUTION.md`, `ONBOARDING.md`, and `AIOS-INSTRUCTIONS.md` when supported;
-2. the current step and that **AIOS instructions** reopens the manual at any time;
-3. the next optional step: adding real material so the brain uses evidence rather than assumptions.
+End: **Add whatever you want now. To do this later, reply `<local skip command>`.** Say briefly that skipping is allowed but leaves less context.
 
-Ask: **Can you open the files, and is this clear? Reply YES to continue.** If clickable links are unsupported, give exact relative paths.
+Save raw supplied material before interpreting it. If the owner supplies a website or says to find social links there, read only that site and at most five relevant pages. Ask before a wider search.
 
-On success, do not narrate tool calls, page counts, checksums, or every internal file operation. The owner needs the links, their current position, and the next action.
+## 5. Ask only the missing business questions and finish
 
-## 4. Brain enrichment
+Summarise what the new material added. Then ask no more than five tailored business questions, all in one message. Never repeat known facts. Prioritise target customer/problem, offer, sales or revenue, capacity or investment, strongest advantages, constraints, and the next meaningful result. Do not ask self-reflection or `flow state` questions.
 
-Use a friendly local heading. In Latvian it must be **Smadzeņu papildināšana**, never `brīva izgāšanās` or `smadzeņu izgāztuve`.
+If step 4 was skipped, derive the questions from the three foundation answers. End: **Answer any or all. To leave the rest for later, reply `<the same local skip command>`.**
 
-Explain in one sentence: real source material lets the AI use the owner's strengths, history, language, customers, and business evidence instead of generic guesses.
+Save confirmed answers into memory and the business profile. Keep the constitution small: update it only if the business scope, twelve-month goal, AI character, or safety rules changed.
 
-Invite them to upload, link, write, or dictate any of these in one batch:
+`ONBOARDING.md` reports:
 
-- websites, social profiles, CVs, team CVs;
-- presentations, offers, notes, images, videos, interviews, reviews, call transcripts;
-- their story: what they built and when, what sells, revenue or ranges, resources, constraints, and what matters now.
-
-End: **Add everything you want now. To do this later, reply `<local skip command>`.** Say that skipping is fine but leaves the first business context less complete.
-
-If the owner supplies a website or says to find linked social profiles there, treat that as permission to read only that site and at most five relevant pages. Ask before a wider web search.
-
-Save raw input before interpreting it. Then update the relevant memory, CONTEXT maps, business profile, and `ONBOARDING.md`. Raw ideas are not approved commitments.
-
-## 5. Fill only the largest gaps and finish
-
-Summarise what was learned, then ask no more than five tailored business questions **all at once**. Never repeat an answered question. Prioritise gaps in customer/problem, offer, sales or revenue, capacity or investment, strongest advantages, constraints, and the next meaningful result. Do not ask self-reflection or `flow state` questions.
-
-If step 4 was skipped, derive the five most useful business questions from the foundation answers. Explain that they make future recommendations less generic.
-
-End: **Answer any or all. To leave the rest for later, reply `<the same local skip command>`.** Save confirmed answers and update the maps.
-
-`ONBOARDING.md` keeps two measures:
-
-- **Onboarding progress:** completed steps out of five; an intentional skip completes a step.
-- **Confirmed business coverage:** seven Business Profile blocks containing at least one useful confirmed fact, shown as `x/7` and a rounded percentage. This is coverage, not quality.
+- onboarding progress out of five;
+- confirmed business coverage: how many of the seven profile blocks contain at least one useful confirmed fact, shown as `x/7` and a rounded percentage. This is coverage, not quality.
 
 Finish in four short numbered lines:
 
-1. **Congratulations — your first business brain is ready.**
-2. **Saved:** links to the constitution, onboarding map, instructions, and business profile.
-3. **Status:** onboarding `5/5`; coverage `x/7 (y%)`; name the largest remaining gap without framing it as failure.
-4. **What next:** choose only one — start a real task, say **AIOS instructions** to see all capabilities, or deepen an optional area later.
+1. **Congratulations — you have built your first business brain.**
+2. **Saved:** clickable links to the constitution, onboarding map, instructions, and business profile.
+3. **Status:** onboarding `5/5`, coverage `x/7 (y%)`, and the largest remaining business gap in one phrase.
+4. **Next:** offer only three choices — open **AIOS instructions** to see and extend all capabilities; start one real task with a personalised example based on the twelve-month goal; or add more knowledge later.
 
-Stop there. A new-chat test is optional troubleshooting in the manual, not an onboarding step. Set `support_reminder_until` in `ONBOARDING.md` to thirty days after completion; until then `AGENTS.md` adds one short AIOS-instructions reminder in the first substantive reply of each new chat, not after every reply.
+Stop onboarding there. Do not mention or require a new-chat test. Set the 30-day instructions reminder in `ONBOARDING.md`; `AGENTS.md` handles it later.
