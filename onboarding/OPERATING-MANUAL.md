@@ -2,7 +2,7 @@
 
 This is the English source for the owner's local `AIOS-INSTRUCTIONS.md`. During onboarding, rewrite it in the owner's language, keep the fixed file and folder names in English, and replace generic examples with examples from their confirmed context.
 
-The local manual is a map, not a second copy of the method. Keep it short and link to the detailed files under `00-system/aios/`.
+The local manual is a map, not a second copy of the method. Keep it short. The lightweight setup stores optional-method links in `00-system/aios/README.md` and reads a method only when the owner calls it.
 
 ## Your current AIOS status
 
@@ -43,19 +43,19 @@ The assistant decides which memory node owns the fact, shows the destination, an
 
 Say: **Run AIOS Deep Dive**, or ask for self-reflection questions, self-coaching, or help understanding your larger potential.
 
-The assistant opens [`DEEP-DIVE.md`](DEEP-DIVE.md). In the owner's local manual this link becomes `00-system/aios/onboarding/DEEP-DIVE.md`. It starts with what is already known, lets you speak freely, asks one focused question at a time, and returns a confirmed map of strengths, patterns, constraints, values, and direction.
+The assistant reads the Deep Dive URL in `00-system/aios/README.md`. It starts with what is already known, lets you speak freely, asks one focused question at a time, and returns a confirmed map of strengths, patterns, constraints, values, and direction.
 
 ### Build an AIOS Business Profile
 
 Say: **Build my AIOS Business Profile.**
 
-The assistant opens [`BUSINESS-PROFILE.md`](BUSINESS-PROFILE.md). In the owner's local manual this link becomes `00-system/aios/onboarding/BUSINESS-PROFILE.md`. It creates one seven-part profile for one business or substantial project and ends with a clear one-sentence introduction: who you are, who you help, which problem you solve, which result you create, and how.
+The assistant reads the Business Profile URL in `00-system/aios/README.md`. It creates one seven-part profile for one business or substantial project and ends with a clear one-sentence introduction: who you are, who you help, which problem you solve, which result you create, and how.
 
 ### Run an AIOS Personal Audit
 
 Say: **Run my AIOS Personal Audit.**
 
-The assistant opens [`PERSONAL-AUDIT.md`](PERSONAL-AUDIT.md). In the owner's local manual this link becomes `00-system/aios/onboarding/PERSONAL-AUDIT.md`. Your command is permission to inspect your public web presence. It announces what it will search, verifies that results belong to you, cites the pages it uses, and separates evidence from interpretation before anything is saved.
+The assistant reads the Personal Audit URL in `00-system/aios/README.md`. Your command is permission to inspect your public web presence. It announces what it will search, verifies that results belong to you, cites the pages it uses, and separates evidence from interpretation before anything is saved.
 
 This is not `AUDIT7`. Personal Audit examines how you appear online. `AUDIT7` checks whether the AIOS machinery, files, and tools are still honest and working.
 
@@ -108,6 +108,6 @@ Then test again with a question only your constitution can answer.
 
 ## The full library
 
-The copied public method lives in `00-system/aios/`. Its reusable methods are in `00-system/aios/skills/`; the five-layer explanations are in `00-system/aios/references/`; the full eleven-step build is in `00-system/aios/onboarding/_proj-onboarding.md`.
+The lightweight onboarding does not copy the full repository. `00-system/aios/README.md` points to the public methods, which are read only when called. Say **Install the full AIOS library** later if offline access becomes useful; the assistant must show the file count and wait for approval first.
 
-Do not install every skill. Keep the few that solve repeated work, and leave the rest as a library until a real need appears.
+Do not install every skill. Add only what solves repeated work.
