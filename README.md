@@ -24,7 +24,7 @@ Attach an empty local folder to ChatGPT, Codex, Claude, or another assistant tha
 Build an AIOS business brain in the folder attached to this chat.
 
 Read and follow:
-https://github.com/arete-aios/aios/blob/main/onboarding/START.md
+https://raw.githubusercontent.com/arete-aios/aios/main/onboarding/START.md
 
 First ask the three short questions. Then summarise my answers, show the complete file tree, and create nothing until I answer YES.
 
@@ -33,7 +33,7 @@ After YES, build only the lightweight foundation directly in the attached folder
 If you cannot read the instructions or write to the folder, say so and stop.
 ```
 
-Some AI clients block `raw.githubusercontent.com`, so the launcher uses the normal GitHub document page. For a live workshop, use the immutable commit link supplied with the release.
+This short launcher always reads the current onboarding method from GitHub.
 
 The first session follows a visible rhythm:
 
