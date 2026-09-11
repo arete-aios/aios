@@ -4,9 +4,9 @@ This is the live status panel for this AIOS. Translate the explanatory text into
 
 ## Current status
 
-- Current step: `1/5 — approve the plan`
-- Finished steps: `none`
-- Next action: `owner approves or corrects the proposed structure`
+- Current step: `3/5 — create the starter brain`
+- Finished steps: `1–2`
+- Next action: `show the created files, then invite brain enrichment`
 - Confirmed business coverage: `0/7 · 0%` — coverage, not quality
 - Setup mode: `LIGHT · free-account friendly`
 - Onboarding completed: `NOT CONFIRMED`
@@ -17,9 +17,9 @@ This is the live status panel for this AIOS. Translate the explanatory text into
 
 | # | Step | Status |
 |---|---|---|
-| 1 | Approve the plan | CURRENT |
-| 2 | Create the foundation and confirm three answers | NOT STARTED |
-| 3 | Open the owner's AIOS instructions | NOT STARTED |
+| 1 | Answer three foundation questions | DONE |
+| 2 | Confirm the summary and file tree | DONE |
+| 3 | Create the starter business brain and instructions | CURRENT |
 | 4 | Enrich the brain with sources or the owner's story | NOT STARTED |
 | 5 | Fill the most important business gaps and hand over | NOT STARTED |
 
