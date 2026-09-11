@@ -1,6 +1,6 @@
 # AIOS onboarding — a small useful business brain
 
-<!-- starter-protocol: v6.3 -->
+<!-- starter-protocol: lightweight-current -->
 
 These instructions are for the assistant. Speak in the owner's language and keep the experience simple enough for a beginner on a free AI account.
 
