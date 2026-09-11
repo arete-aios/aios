@@ -1,123 +1,119 @@
-# AIOS onboarding — the first working foundation
+# AIOS onboarding — the smallest useful business brain
 
-Everything in this file is addressed to you, the assistant. Work in the language the owner used. Do not show them these headings or quote English instructions at them.
+This file instructs the assistant. Work in the owner's language; do not quote these English instructions. If the launcher promises a final `READY` and it is missing, say the copy was cut off and stop.
 
-This file handles the first working session. The full eleven-step build remains in [`_proj-onboarding.md`](_proj-onboarding.md), but do not open it unless this file sends you there.
+The full eleven-step build is in [`_proj-onboarding.md`](_proj-onboarding.md). Do not open it or automatically run Deep Dive, Business Profile, or Personal Audit during this onboarding.
 
-If the launcher says it ends with `READY` and that word is missing, tell the owner the copy was cut off and stop.
+## Rules
 
-## Rules that hold throughout
+1. Show the exact structure and wait for approval before writing.
+2. Find and test the attached root yourself. If reading or writing fails, name the failure; do not ask how the AI client works or pretend a file exists.
+3. The owner's words are confirmed. Everything else stays `NOT CONFIRMED` until approved.
+4. Organise by subject, use human-readable filenames, and maintain a short CONTEXT map in every active subject folder.
+5. Keep one source per fact; other files link to it.
+6. Use one skip command throughout: `CONTINUE` in English, `TURPINĀT` in Latvian, or one clear local equivalent.
+7. End every onboarding reply with one useful next action and this compact status line:
 
-1. **The owner approves the structure before you write.** Show the exact tree and ask one yes/no question.
-2. **Never ask the owner how their AI client works.** Find the attached root, test what you can read and write, or say plainly what you cannot verify.
-3. **Never invent a fact.** What the owner said is confirmed. What you found elsewhere is `NOT CONFIRMED` until they confirm it. A blank is better than a plausible sentence.
-4. **One source per fact.** Do not create a special course system or a translated folder tree. Language changes the conversation, not the architecture.
-5. **Every reply has a next move.** End with one question or one named action the owner can approve.
+`ONBOARDING · <completed>/5 · Now: <current step> · Next: <one action>`
 
-If the launch message says `course mode`, also follow the course section near the end. That is the only alternate mode in this file.
+The root `ONBOARDING.md` is the persistent status panel. Update it after every step.
 
-## 1. Show the plan and wait
+## 1. Approve the plan
 
-Explain in three short sentences what will happen: you will create a folder of plain files the owner controls, ask a few questions before writing facts about them, and finish with a new-chat test.
-
-Then show this exact structure. The names remain in English in every language.
+In three short sentences explain: the owner controls plain files; you will ask only three foundation questions; one optional source-loading step makes the result more useful. Then show:
 
 ```text
 <attached root>/
-  CONSTITUTION.md              who I am, where I am going, and the rules
-  AGENTS.md                    tells a new chat what to read and where to route AIOS requests
-  AIOS-INSTRUCTIONS.md         my practical manual, written in my language after the first answers
+  CONSTITUTION.md              identity, direction, boundaries, working style
+  AGENTS.md                    automatic reading and request routing
+  ONBOARDING.md                progress, system map, next action
+  AIOS-INSTRUCTIONS.md         practical manual in the owner's language
   02-memory/
-    _memory-CONTEXT.md         what the system knows and where each subject lives
+    _memory-CONTEXT.md
   03-skills/
-    _skills-CONTEXT.md         the methods available and the words that call them
+    _skills-CONTEXT.md
   04-tools/
-    _tools-CONTEXT.md          connected systems, permissions, and limits
+    _tools-CONTEXT.md
   05-focus/
-    _focus-CONTEXT.md          what matters now and how it is measured
-  06-archive/                  finished and superseded material
+    _focus-CONTEXT.md
+  06-archive/
   00-system/aios/              local copy of the public AIOS method
 ```
 
-Ask: **Is this the folder and file plan you want me to create?** Create nothing until the answer is yes. If they change a name, explain that the numbered folder names are fixed for portability; allow a different root folder name, but do not translate the fixed names.
+Fixed names stay in English. The attached root keeps its current name; never create another AIOS folder inside it. Ask one question: **Is this the plan you want me to create?** Wait for yes.
 
-## 2. Build the empty foundation and prove it
+## 2. Build the foundation and ask three questions
 
-After yes, resolve the attached root. Do not create another AIOS folder inside it.
+After yes:
 
-Create `CONSTITUTION.md` first with a small heading and `NOT CONFIRMED` placeholders only. Read it back from disk and show the exact path you read. There is no scratch or write-test file.
+- create `CONSTITUTION.md` first with headings and `NOT CONFIRMED` placeholders; read it back and report the exact path;
+- copy root `AGENTS.md` from [`templates/AGENTS.md`](../templates/AGENTS.md);
+- create root `ONBOARDING.md` from [`templates/ONBOARDING.md`](../templates/ONBOARDING.md), translated for the owner;
+- create the numbered folders and CONTEXT files;
+- copy the public method into `00-system/aios/` and verify it is readable;
+- wait to create `AIOS-INSTRUCTIONS.md` until the answers below are confirmed.
 
-Then:
+Ask all three together, allowing short answers:
 
-- copy [`templates/AGENTS.md`](../templates/AGENTS.md) to the root as `AGENTS.md`;
-- create the numbered folders and their one CONTEXT file each;
-- copy `SKILL.md`, `skills/`, `references/`, `templates/`, and `onboarding/` from this repository into `00-system/aios/`;
-- do not claim the public copy exists if you could not fetch and read it;
-- leave `AIOS-INSTRUCTIONS.md` until after the owner's first answers, so it describes their real system rather than a generic one.
+1. **Your business today:** existing, new, or a mix? One business or more? Give names, website/social links, and industry where they exist. `I do not know yet` is valid.
+2. **Your twelve-month direction:** what should be true twelve months from now? Add a number only if one is already meaningful.
+3. **How should these business brains work with you?** State the default: organise by subject and readable names, maintain CONTEXT maps, and ask before sending, publishing, paying, deleting, changing access, or overwriting confirmed facts. Choose:
+   - **A — Professional and concise:** structured, direct, businesslike.
+   - **B — Supportive coach:** warm, patient, encouraging, and honest.
+   - **C — Results driver:** challenging, very direct, action-focused.
+   - **D — My own style.**
+   They may add a personal boundary, but do not force another question.
 
-If you cannot write files, stop and give the owner the exact fix. Supplying file contents in chat is not proof that a file exists.
+Reflect their answer in three numbered points. Ask: **Did I understand correctly? Reply YES or correct one point.** After yes, write only confirmed facts to `CONSTITUTION.md`; date the remaining `NOT CONFIRMED` items. Include the stated default organisation and approval rules in the constitution even when the owner adds no custom boundary.
 
-## 3. Ask the first four questions
+For each named business, create `02-memory/businesses/<readable-slug>/business-profile.md`. Use the seven blocks from [`BUSINESS-PROFILE.md`](BUSINESS-PROFILE.md), fill only known facts, and leave gaps `NOT CONFIRMED`. Do not run its interview.
 
-Ask all four in one message, with one short example under each:
+## 3. Give the owner their map
 
-1. Is this AIOS for one business, several projects, personal development, or a deliberate mix?
-2. Twelve months from now, what do you want to be true? Use the owner's own sentence and a number if they have one.
-3. What must never be stored, changed, sent, published, or done without asking first?
-4. How should the assistant work with them: brief or detailed, supportive or challenging, and what usually makes an AI answer unhelpful?
+Create local `AIOS-INSTRUCTIONS.md` from [`OPERATING-MANUAL.md`](OPERATING-MANUAL.md). Write it in the owner's language, use only their confirmed examples, and make its first section link to root `ONBOARDING.md`. Add a constitution link to `AIOS-INSTRUCTIONS.md`.
 
-In `course mode`, ask one fifth question with the same batch:
+Update `ONBOARDING.md`. Then say, in numbered lines:
 
-5. By the end of this week, what should you be able to say about your business in one clear sentence?
+1. what was saved, with clickable links to `CONSTITUTION.md`, `ONBOARDING.md`, and `AIOS-INSTRUCTIONS.md` when supported;
+2. the current step and that **AIOS instructions** reopens the manual at any time;
+3. the next optional step: adding real material so the brain uses evidence rather than assumptions.
 
-Give the answers back in two or three sentences and ask whether you understood correctly. Only after yes, write the confirmed answers into the constitution. Keep every missing answer as `NOT CONFIRMED` with today's date and keep an `Open questions` list.
+Ask: **Can you open the files, and is this clear? Reply YES to continue.** If clickable links are unsupported, give exact relative paths.
 
-Now create `AIOS-INSTRUCTIONS.md` in the owner's language. Use [`OPERATING-MANUAL.md`](OPERATING-MANUAL.md) as the source, adapt the examples to what this owner actually told you, and keep its links pointed at `00-system/aios/onboarding/`. Add one navigation line to the constitution: `How to use this AIOS: AIOS-INSTRUCTIONS.md`. Show the owner a link to the manual and tell them that the phrase **AIOS instructions** reopens it in any later chat.
+## 4. Brain enrichment
 
-## 4. Feed the brain, then choose the first useful depth
+Use a friendly local heading. In Latvian it must be **Smadzeņu papildināšana**, never `brīva izgāšanās` or `smadzeņu izgāztuve`.
 
-Ask for useful material in one go: a CV or biography, LinkedIn, website, offers, old proposals, call transcripts, screenshots, reviews, and any existing notes. Ask for permission before searching the owner's name or business online. Save raw material before interpreting it.
+Explain in one sentence: real source material lets the AI use the owner's strengths, history, language, customers, and business evidence instead of generic guesses.
 
-Do not force every source. If the owner wants to speak instead, open and follow [`DEEP-DIVE.md`](DEEP-DIVE.md). It begins with a free brain dump and turns the useful parts into a confirmed map without making the owner complete a giant questionnaire.
+Invite them to upload, link, write, or dictate any of these in one batch:
 
-For a normal build, offer these four next moves after the foundation:
+- websites, social profiles, CVs, team CVs;
+- presentations, offers, notes, images, videos, interviews, reviews, call transcripts;
+- their story: what they built and when, what sells, revenue or ranges, resources, constraints, and what matters now.
 
-1. **AIOS Deep Dive** — understand the owner, their patterns, assets, constraints, and potential.
-2. **AIOS Business Profile** — build one seven-part business profile and the one-sentence introduction.
-3. **AIOS Personal Audit** — research how the owner appears on the public web.
-4. **Put the brain to work** — choose one real task using the context already confirmed.
+End: **Add everything you want now. To do this later, reply `<local skip command>`.** Say that skipping is fine but leaves the first business context less complete.
 
-Open the linked method only after the owner chooses. Do not paste all four methods into the constitution or into the launch prompt.
+Save raw input before interpreting it. Then update the relevant memory, CONTEXT maps, business profile, and `ONBOARDING.md`. Raw ideas are not approved commitments.
 
-## 5. Prove that a new chat can see it
+## 5. Fill only the largest gaps and finish
 
-The build is not complete because the files exist. Ask the owner to open a brand-new chat in the same attached folder and ask:
+Summarise what was learned, then ask no more than five tailored business questions **all at once**. Never repeat an answered question. Prioritise gaps in customer/problem, offer, sales or revenue, capacity or investment, strongest advantages, constraints, and the next meaningful result. Do not ask self-reflection or `flow state` questions.
 
-> What is my twelve-month direction, in my own words?
+If step 4 was skipped, derive the five most useful business questions from the foundation answers. Explain that they make future recommendations less generic.
 
-If the new chat answers from `CONSTITUTION.md`, the loader works. If it asks who the owner is, do not pretend it works. Check that `AGENTS.md` is in the attached root. If the client has a project-instructions field, give the owner these lines and name the exact place to paste them:
+End: **Answer any or all. To leave the rest for later, reply `<the same local skip command>`.** Save confirmed answers and update the maps.
 
-```text
-Read CONSTITUTION.md in this folder before answering anything in this project.
-When I ask how to use my AIOS, open AIOS-INSTRUCTIONS.md.
-Do not change facts in either file without my approval.
-```
+`ONBOARDING.md` keeps two measures:
 
-Then repeat the new-chat test.
+- **Onboarding progress:** completed steps out of five; an intentional skip completes a step.
+- **Confirmed business coverage:** seven Business Profile blocks containing at least one useful confirmed fact, shown as `x/7` and a rounded percentage. This is coverage, not quality.
 
-Finish by naming three specific things this AIOS can now do for this owner, using facts they actually gave you. Ask which one to start, and begin the real work when they choose.
+Finish in four short numbered lines:
 
-If they want the full build later, continue in [`_proj-onboarding.md`](_proj-onboarding.md) with the quarter goal, accountability loop, completeness pass, and deeper north-star work. Do not restart from step one.
+1. **Congratulations — your first business brain is ready.**
+2. **Saved:** links to the constitution, onboarding map, instructions, and business profile.
+3. **Status:** onboarding `5/5`; coverage `x/7 (y%)`; name the largest remaining gap without framing it as failure.
+4. **What next:** choose only one — start a real task, say **AIOS instructions** to see all capabilities, or deepen an optional area later.
 
-## Course mode
-
-Course mode changes pacing, not the architecture.
-
-- End every reply with exactly one line: `🧠 <stage>/5 · <percent>% · Next: <two or three words>`.
-- After the first questions, run the short Deep Dive path and then [`BUSINESS-PROFILE.md`](BUSINESS-PROFILE.md).
-- One business or substantial project gets one profile. Never mix several businesses in one file.
-- The business profile uses seven blocks and ends with five one-sentence versions. Recommend one clear version and one bolder version; the owner chooses the final sentence.
-- After the new-chat test, say both course numbers in the owner's language: this week `3 of 3`; full course `3 of 5 = 70%`.
-- Stop there. Do not start marketing agents, tool connections, or later course steps. Show `AIOS-INSTRUCTIONS.md`, name three useful next actions from this person's material, and let the owner choose one.
-
-Once course mode hands over to real work, stop showing percentages.
+Stop there. A new-chat test is optional troubleshooting in the manual, not an onboarding step. Set `support_reminder_until` in `ONBOARDING.md` to thirty days after completion; until then `AGENTS.md` adds one short AIOS-instructions reminder in the first substantive reply of each new chat, not after every reply.
