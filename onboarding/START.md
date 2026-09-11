@@ -83,10 +83,12 @@ AIOS, it is a filing cabinet, and every later step in this file will fail agains
   00-system/aios/        a copy of the public AIOS files, so they can always be reopened
 ```
 
-Six numbered nodes, one constitution, one CONTEXT file per node. If the owner works in
-another language you may translate the words after the number — `02-atmiņa/`, `03-prasmes/`
-and so on — but never the numbers, never the order, and never the count. Write the resolved
-names into the constitution and use them everywhere from then on.
+Six numbered nodes, one constitution, one CONTEXT file per node. **These names are in English
+even when everything else is not, and you never translate them.** A folder called `02-atmiņa`
+or `03-compétences` reads well for a week and then breaks something: sync clients, backup
+tools, command lines and URLs all handle accented folder names differently, and the owner
+finds out on the day a file quietly fails to arrive on their second machine. The conversation
+happens in the owner's language; the folder names do not.
 
 ### Copy the public AIOS files in the same move
 
