@@ -8,7 +8,7 @@ This is the live status panel for this AIOS. Translate the explanatory text into
 - Finished steps: `1–2`
 - Next action: `show the created files, then invite brain enrichment`
 - Confirmed business coverage: `0/7 · 0%` — coverage, not quality
-- Setup mode: `LIGHT · free-account friendly`
+- Setup mode: `<A · LIGHT · free-account friendly | B · FULL LOCAL LIBRARY · paid-account recommended>`
 - Onboarding completed: `NOT CONFIRMED`
 - Support reminder until: `NOT CONFIRMED`
 - Last updated: `YYYY-MM-DD`
@@ -38,7 +38,7 @@ Use only `NOT STARTED`, `CURRENT`, `DONE`, or `SKIPPED`. A deliberate skip compl
 | `04-tools/` | connected systems and permissions | NOT STARTED |
 | `05-focus/` | current priorities and measures | NOT STARTED |
 | `06-archive/` | finished or replaced material | NOT STARTED |
-| `00-system/aios/README.md` | links to optional public methods; full library not installed | NOT STARTED |
+| `00-system/aios/` | A: links to online methods; B: full local method library | NOT STARTED |
 
 ## Seven-block business coverage
 

@@ -27,6 +27,8 @@ Your AIOS stores useful context in plain files you control. It helps an AI remem
 
 Say **AIOS instructions** at any time to reopen this file as a clickable document.
 
+Optional methods live in one of two places. In a light setup, `00-system/aios/README.md` links to the online methods. In a full local setup, use the installed files under `00-system/aios/` first; do not read the whole library unless the task requires it.
+
 ## The most useful commands
 
 ### Correct the foundation
@@ -57,13 +59,13 @@ The assistant reads the twelve-month goal, relevant memory, and current focus. I
 
 Say: **AIOS Business Profile.**
 
-The assistant reads the Business Profile link in `00-system/aios/README.md`, completes seven evidence-based blocks, asks no more than five questions at once, and creates five versions of the business super-sentence. You choose the final version.
+The assistant opens the local Business Profile method when installed, otherwise its link in `00-system/aios/README.md`. It completes seven evidence-based blocks, asks no more than five questions at once, and creates five versions of the business super-sentence. You choose the final version.
 
 ### Explore yourself more deeply
 
 Say: **AIOS Deep Dive**, ask for self-coaching, or ask to understand your strengths and larger potential.
 
-This is optional. The assistant reads the Deep Dive link in `00-system/aios/README.md` and runs the deeper reflection separately from onboarding.
+This is optional. The assistant opens the local Deep Dive method when installed, otherwise its link in `00-system/aios/README.md`, and runs the deeper reflection separately from onboarding.
 
 ### Audit your public presence
 

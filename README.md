@@ -26,9 +26,9 @@ Build an AIOS business brain in the folder attached to this chat.
 Read and follow:
 https://raw.githubusercontent.com/arete-aios/aios/main/onboarding/START.md
 
-First ask the three short questions. Then summarise my answers, show the complete file tree, and create nothing until I answer YES.
+First briefly explain what we are building and ask the three short questions. Show one-sentence explanations for the A, B, and C AI character choices. Then summarise my answers and offer two clearly explained setup options: A, a light start without copying the GitHub library; or B, the full local AIOS library, recommended for a paid account. Show the exact trees and create nothing until I answer A + YES or B + YES.
 
-After YES, build only the lightweight foundation directly in the attached folder. Do not create another AIOS folder or copy the full GitHub repository.
+After my approval, build the selected version directly in the attached folder, then continue immediately to Brain Enrichment. Do not create another AIOS folder, repeat the foundation questions, start automatic web research, or request a new-chat test.
 
 If you cannot read the instructions or write to the folder, say so and stop.
 ```
@@ -38,14 +38,14 @@ This short launcher always reads the current onboarding method from GitHub.
 The first session follows a visible rhythm:
 
 1. You answer three short foundation questions.
-2. You see the assistant's summary and exact file tree, then approve once.
-3. The lightweight business brain is created and you receive clickable status and instructions files.
+2. You choose A, the light setup, or B, the full local method library, then approve once.
+3. The selected business brain is created and you receive clickable status and instructions files with their exact paths.
 4. You may add real source material or continue without it.
 5. The assistant asks no more than five missing business questions and hands the system over.
 
 The local root also gets `AGENTS.md`. That file tells a new chat to read the constitution and onboarding map, and routes phrases such as **AIOS instructions**, **AIOS Deep Dive**, **AIOS Business Profile**, and **AIOS Personal Audit** to the right method.
 
-The first setup is free-account friendly: it creates about ten small files and keeps the larger method library online until a specific method is requested.
+Option A is free-account friendly: it creates about ten small files and keeps the larger method library online until requested. Option B copies the library locally without loading every file into the conversation and is recommended when the owner has a paid account and wants all methods on disk.
 
 ## What you can do after the foundation
 
