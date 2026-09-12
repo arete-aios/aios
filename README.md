@@ -1,5 +1,7 @@
 # AIOS · an AI operating system you own
 
+**Open method and files.** Learn what a business brain is and choose how to build yours at [AreteAIOS.com](https://areteaios.com).
+
 Most AI tools are capable but forgetful. They know the world and still make you explain who you are, what you are building, what you decided, and how you want to work.
 
 An **AIOS** fixes that with plain files you own. Your AI reads those files before it answers, uses the methods inside them, and writes important learning back where the next session can find it.
@@ -15,6 +17,14 @@ An **AIOS** fixes that with plain files you own. Your AI reads those files befor
 | **Focus** | What matters now, how it is measured, and when it is reviewed |
 
 The result is not another notes folder. It is a working loop: something happens, the useful learning is written back, and the next session behaves differently because of it.
+
+## Choose your path
+
+- **Build it yourself:** attach a folder to ChatGPT, Claude, Codex, or another file-capable AI and use the prompt below.
+- **Follow the free guided version:** use [My Circle](https://areteaios.com/my), where the same foundation is explained step by step.
+- **Build it with support:** join a [free masterclass](https://areteaios.com/masterclass) or the [eight-week cohort](https://areteaios.com/cohort).
+
+All three paths use the same public onboarding method and the same five-layer folder model. Moving from the free guide to training does not require rebuilding the brain from zero.
 
 ## Start here
 
@@ -68,4 +78,4 @@ If you build manually over several weeks, start with [`SKILL.md`](SKILL.md). Tha
 
 ---
 
-Built by Egils Boitmanis with [FullDigital](https://fulldigital.me). Licensed CC BY 4.0. Use it, change it, ship it, and keep the attribution.
+Built by [Egils Boitmanis at AreteAIOS](https://areteaios.com) with [FullDigital](https://fulldigital.me). Licensed CC BY 4.0. Use it, change it, ship it, and keep the attribution.
