@@ -31,9 +31,12 @@ When the owner asks a direct question such as **What is my memory and goal?**, a
 | `AIOS Deep Dive`, asks for self-reflection questions, self-coaching, or help understanding their potential | Open local `00-system/aios/onboarding/DEEP-DIVE.md` if installed; otherwise read its URL in `00-system/aios/README.md` |
 | `AIOS Business Profile` or asks to build/update a business profile | Open local `00-system/aios/onboarding/BUSINESS-PROFILE.md` if installed; otherwise read its URL in `00-system/aios/README.md` |
 | `AIOS Personal Audit` or asks how they appear online | Open local `00-system/aios/onboarding/PERSONAL-AUDIT.md` if installed; otherwise read its URL in `00-system/aios/README.md` |
+| `WEEK7`, asks for a weekly review, or asks what weekly rhythm would fit | Read the constitution, business profile, relevant memory and focus first; then open local `00-system/aios/skills/week7/SKILL.md` if installed, otherwise read its URL in `00-system/aios/README.md` |
 | asks which skills fit their work, including web or video work | Read `AIOS-INSTRUCTIONS.md`, inspect only the relevant available skills, and propose at most five |
 | asks about plugins, MCP, integrations, or connected apps | Read `AIOS-INSTRUCTIONS.md`; verify what this client actually supports before recommending or claiming a connection |
 | `Install the full AIOS library` | Explain the cost and file count, show the plan, and wait for approval before downloading |
+
+For a public-profile or web audit, locate the owner's real website, company, LinkedIn, and other known links from the constitution, business profile, and existing memory indexes. If the required link or identity is missing, ask once. Never assume that a particular file such as `memory/00-context.md` exists, and never create a parallel memory tree merely to satisfy an example prompt.
 
 When the owner asks how to work with the AIOS, give a clickable link to `AIOS-INSTRUCTIONS.md` and say that it is the map of the system. Do not paste the whole manual into chat unless they ask.
 

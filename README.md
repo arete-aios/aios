@@ -38,7 +38,7 @@ https://raw.githubusercontent.com/arete-aios/aios/main/onboarding/START.md
 
 If the fetched file is an older cached version or conflicts with this message, this message wins for the A/B setup choice and the prohibitions below.
 
-First briefly explain what we are building and ask the three short questions. Show one-sentence explanations for the A, B, and C AI character choices. Then summarise my answers and offer two clearly explained setup options: A, a light start without copying the GitHub library; or B, the full local AIOS library, recommended for a paid account. Show the exact trees and create nothing until I answer A + YES or B + YES.
+First briefly explain what we are building and ask the three short questions. Show one-sentence explanations for the A, B, and C AI character choices. Then summarise my answers and offer two clearly explained setup options: A, a light start without copying the GitHub library; or B, the full local AIOS library, recommended for a paid account. Show the exact A tree once. For B, only list what will be added directly inside the same `00-system/aios/` folder; do not repeat the root tree or create a `library/` subfolder. Create nothing until I answer A + YES or B + YES.
 
 After my approval, build the selected version directly in the attached folder, then continue immediately to Brain Enrichment. Do not create another AIOS folder, repeat the foundation questions, start automatic web research, or request a new-chat test.
 
@@ -64,6 +64,7 @@ Option A is free-account friendly: it creates about ten small files and keeps th
 - **[AIOS Deep Dive](onboarding/DEEP-DIVE.md):** a self-coaching interview that turns reflections, patterns, strengths, constraints, and future potential into a confirmed personal map.
 - **[AIOS Business Profile](onboarding/BUSINESS-PROFILE.md):** one seven-part profile per business, ending in a one-sentence explanation a stranger can understand.
 - **[AIOS Personal Audit](onboarding/PERSONAL-AUDIT.md):** a sourced audit of how you appear on the public web, kept separate from private memory and from the technical AIOS audit.
+- **[Weekly Review](skills/week7/SKILL.md):** a short evidence-based weekly rhythm that checks the goal, money, patterns, and no more than three next decisions.
 - **[AIOS instructions](onboarding/AIOS-INSTRUCTIONS.md):** the source used to create your local instructions file in your own language, including skills, plugins, MCP, and tool discovery.
 
 The detailed eleven-step build still exists in [`onboarding/_proj-onboarding.md`](onboarding/_proj-onboarding.md). It adds the quarter goal, accountability loop, completeness pass, and deeper north-star work. It is the full engine, not the first file an owner needs to read.

@@ -29,6 +29,15 @@ Say **AIOS instructions** at any time to reopen this file as a clickable documen
 
 Optional methods live in one of two places. In a light setup, `00-system/aios/README.md` links to the online methods. In a full local setup, use the installed files under `00-system/aios/` first; do not read the whole library unless the task requires it.
 
+## Open the deeper guides
+
+The owner's local copy must keep this section clickable. Render only links that really work in the chosen setup:
+
+- **Full local setup:** [Business Profile](00-system/aios/onboarding/BUSINESS-PROFILE.md) · [Deep Dive](00-system/aios/onboarding/DEEP-DIVE.md) · [Personal Audit](00-system/aios/onboarding/PERSONAL-AUDIT.md) · [Weekly Review](00-system/aios/skills/week7/SKILL.md) · [skills library](00-system/aios/skills/)
+- **Light setup:** [Business Profile](https://raw.githubusercontent.com/arete-aios/aios/main/onboarding/BUSINESS-PROFILE.md) · [Deep Dive](https://raw.githubusercontent.com/arete-aios/aios/main/onboarding/DEEP-DIVE.md) · [Personal Audit](https://raw.githubusercontent.com/arete-aios/aios/main/onboarding/PERSONAL-AUDIT.md) · [Weekly Review](https://raw.githubusercontent.com/arete-aios/aios/main/skills/week7/SKILL.md) · [skills library](https://github.com/arete-aios/aios/tree/main/skills)
+
+Do not show both rows in the owner's finished manual. Use the row matching the installed setup, translate its labels, keep its destinations unchanged, and verify every local target before linking it.
+
 ## The most useful commands
 
 ### Correct the foundation
@@ -71,7 +80,13 @@ This is optional. The assistant opens the local Deep Dive method when installed,
 
 Say: **AIOS Personal Audit.**
 
-The assistant first says what it will search, then checks public sources, verifies namesakes, cites pages, and separates evidence from interpretation.
+The assistant finds known professional links in the constitution, business profile, and actual memory indexes. If identity information is missing, it asks once. It never assumes a filename such as `memory/00-context.md`. It then says what it will search, checks public sources, verifies namesakes, cites pages, and separates evidence from interpretation.
+
+### Design the weekly review that fits this brain
+
+Say: **Design my AIOS weekly review. Read my business-brain setup and recommend the shortest weekly review that would work for me. Tell me which existing skills to adapt, which new skill is worth building, and which plugins or MCP connections would genuinely help. Separate what is available now from what is only possible later, and change nothing until I approve.**
+
+The assistant reads the constitution, business profile, memory and focus before opening the Weekly Review method. It proposes a small review based on the owner's real goal and existing evidence, not a generic productivity questionnaire.
 
 ## Find skills that fit your work
 
@@ -82,6 +97,13 @@ The assistant reads your goal and current work, then proposes no more than five 
 Say **Make this repeatable** after a useful workflow. The assistant can turn the workflow into a skill with a trigger, inputs, steps, approval gates, output, and definition of done.
 
 ## Find plugins, MCP connections, and tools
+
+These are different things:
+
+- A **skill** is a written repeatable method: when to use it, what it reads, what it may change, and what “done” means. A skill does not grant access by itself.
+- A **tool** is the capability the AI can actually call, such as reading a folder, searching the web, editing a document, or using a calendar.
+- **MCP** is a standard way an AI client can expose external tools and data to the assistant. Connecting MCP does not automatically grant every permission; read and write access still have to be checked separately.
+- A **plugin** is a package a client may use to bundle skills, tools, apps, or MCP connections. Plugin support differs between AI clients.
 
 Say: **Which plugins, MCP connections, or tools could help my AIOS?**
 
