@@ -10,7 +10,7 @@ This file is the only onboarding authority for this starter run. Do not open or 
 
 ## Rules
 
-1. Ask three questions before creating files. After reflecting the answers, show the two setup choices and their trees, then wait for one combined choice and approval.
+1. Ask three questions before creating files. After reflecting the answers, show the light tree once, explain the full library as additions inside its existing system folder, then wait for one combined choice and approval.
 2. Use only confirmed owner statements. Online facts stay `NOT CONFIRMED` until approved.
 3. Organise by subject, use human-readable filenames, keep one source per fact, and maintain short CONTEXT maps.
 4. Ask before sending, publishing, paying, deleting, changing access, or overwriting confirmed facts.
@@ -31,6 +31,7 @@ This file is the only onboarding authority for this starter run. Do not open or 
 
 - **Option A:** do not clone or download the repository, crawl GitHub, build an archive, inspect the skills library, or run batch checksums. Create about ten starter files. The full method library stays online and is read only when called later.
 - **Option B:** copy the public method library locally, but do not read every copied file into the conversation and do not run batch checksums. Prefer one shallow clone or archive download into a temporary location, then copy only `README.md`, `SKILL.md`, `LICENSE`, `NOTICE`, `skills/`, `references/`, `templates/`, and `onboarding/` into `00-system/aios/`. If bulk copy is unavailable, say so and offer Option A instead of opening dozens of pages.
+- Never create `00-system/aios/library/` or another wrapper around the copied library. In Option B, the copied items sit directly inside the already shown `00-system/aios/` folder.
 - In either option, read no more than five public pages before the owner supplies material, excluding a filesystem-level Option B copy that is not loaded into model context.
 - Do not browse the owner's website or search the web during steps 1–3. Record supplied links only.
 
@@ -54,14 +55,14 @@ Show the one-sentence explanation beside A, B, and C. Never reduce these choices
 
 They may add one personal boundary, but do not create a fourth required question.
 
-## 2. Reflect, offer A or B, and wait for one approval
+## 2. Reflect, show one tree, offer A or B, and wait for one approval
 
 Reflect the three answers in three short numbered points. Do not research or expand them. Then explain the choice plainly:
 
 - **A — Light start, recommended for free accounts.** Creates only the essential working files. It does not copy the GitHub library; instructions, starter examples, and links remain available, and optional methods are opened online only when requested. Fastest and lowest-resource setup.
 - **B — Full local AIOS library, recommended for paid accounts.** Creates the same working files and also copies the public AIOS methods into this folder, including all skills, references, templates, and onboarding documents. Everything is available locally, but initial setup uses more operations, time, and disk space. The copied library is not automatically read into every conversation.
 
-Show the shared tree:
+Show the exact Option A tree once:
 
 ```text
 <attached root>/
@@ -76,16 +77,13 @@ Show the shared tree:
   04-tools/_tools-CONTEXT.md
   05-focus/_focus-CONTEXT.md
   06-archive/
-  00-system/aios/
+  00-system/aios/README.md
 ```
 
-Then show both option-specific additions clearly:
+Do not print the whole root tree again for Option B. Explain that B creates the same working tree and replaces the lightweight pointer with these items directly inside the already shown `00-system/aios/` folder:
 
 ```text
-A — LIGHT
-  00-system/aios/README.md       links to optional online methods
-
-B — FULL LOCAL LIBRARY
+B — additions inside the existing 00-system/aios/
   00-system/aios/
     README.md
     SKILL.md
@@ -96,6 +94,8 @@ B — FULL LOCAL LIBRARY
     templates/
     onboarding/
 ```
+
+Say explicitly: **B does not create a `library/` subfolder and does not duplicate the complete root tree.**
 
 Fixed names stay in English. Use the attached folder as the root; never create another AIOS folder inside it.
 
@@ -116,8 +116,10 @@ After `A + YES` or `B + YES`, create the shared starter:
 
 Then apply the chosen setup:
 
-- **A — Light:** create `00-system/aios/README.md` with the three optional method URLs: `https://raw.githubusercontent.com/arete-aios/aios/main/onboarding/DEEP-DIVE.md`, `https://raw.githubusercontent.com/arete-aios/aios/main/onboarding/BUSINESS-PROFILE.md`, and `https://raw.githubusercontent.com/arete-aios/aios/main/onboarding/PERSONAL-AUDIT.md`.
+- **A — Light:** create `00-system/aios/README.md` from [`templates/SYSTEM-POINTER.md`](../templates/SYSTEM-POINTER.md). Preserve its links to Business Profile, Deep Dive, Personal Audit, Weekly Review, the skills library, the instructions source, and the full public library.
 - **B — Full local library:** copy the public library items listed in Setup limits into `00-system/aios/`. Do not read the whole library, generate an archive for the owner, or report checksums. Verify with one directory listing and one read of `00-system/aios/SKILL.md`. Record in `ONBOARDING.md` that the full local library is installed.
+
+The local `AIOS-INSTRUCTIONS.md` must preserve a compact clickable methods section. For Option A, link directly to the online method files. For Option B, link to the installed local paths. Include at least Business Profile, Deep Dive, Personal Audit, WEEK7, and the skills library. Never show a local link before verifying that its target exists, never invent a `library/` path, and do not remove the link section while translating or personalising the manual.
 
 Read back only the four root files once. If they exist and are readable, do not run or report checksums.
 
