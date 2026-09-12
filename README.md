@@ -26,6 +26,8 @@ Build an AIOS business brain in the folder attached to this chat.
 Read and follow:
 https://raw.githubusercontent.com/arete-aios/aios/main/onboarding/START.md
 
+If the fetched file is an older cached version or conflicts with this message, this message wins for the A/B setup choice and the prohibitions below.
+
 First briefly explain what we are building and ask the three short questions. Show one-sentence explanations for the A, B, and C AI character choices. Then summarise my answers and offer two clearly explained setup options: A, a light start without copying the GitHub library; or B, the full local AIOS library, recommended for a paid account. Show the exact trees and create nothing until I answer A + YES or B + YES.
 
 After my approval, build the selected version directly in the attached folder, then continue immediately to Brain Enrichment. Do not create another AIOS folder, repeat the foundation questions, start automatic web research, or request a new-chat test.
@@ -33,7 +35,7 @@ After my approval, build the selected version directly in the attached folder, t
 If you cannot read the instructions or write to the folder, say so and stop.
 ```
 
-This short launcher always reads the current onboarding method from GitHub.
+This launcher requests the current onboarding method from GitHub. Its explicit A/B rules also protect the run if an AI client's web cache returns an older copy.
 
 The first session follows a visible rhythm:
 
