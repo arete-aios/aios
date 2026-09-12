@@ -28,9 +28,9 @@ When the owner asks a direct question such as **What is my memory and goal?**, a
 |---|---|
 | `AIOS status`, asks where something lives, or asks what has been set up | `ONBOARDING.md` |
 | `AIOS instructions`, `AIOS instrukcijas`, or asks how to use this folder | `AIOS-INSTRUCTIONS.md` |
-| `AIOS Deep Dive`, asks for self-reflection questions, self-coaching, or help understanding their potential | Read the Deep Dive URL in `00-system/aios/README.md` |
-| `AIOS Business Profile` or asks to build/update a business profile | Read the Business Profile URL in `00-system/aios/README.md` |
-| `AIOS Personal Audit` or asks how they appear online | Read the Personal Audit URL in `00-system/aios/README.md` |
+| `AIOS Deep Dive`, asks for self-reflection questions, self-coaching, or help understanding their potential | Open local `00-system/aios/onboarding/DEEP-DIVE.md` if installed; otherwise read its URL in `00-system/aios/README.md` |
+| `AIOS Business Profile` or asks to build/update a business profile | Open local `00-system/aios/onboarding/BUSINESS-PROFILE.md` if installed; otherwise read its URL in `00-system/aios/README.md` |
+| `AIOS Personal Audit` or asks how they appear online | Open local `00-system/aios/onboarding/PERSONAL-AUDIT.md` if installed; otherwise read its URL in `00-system/aios/README.md` |
 | asks which skills fit their work, including web or video work | Read `AIOS-INSTRUCTIONS.md`, inspect only the relevant available skills, and propose at most five |
 | asks about plugins, MCP, integrations, or connected apps | Read `AIOS-INSTRUCTIONS.md`; verify what this client actually supports before recommending or claiming a connection |
 | `Install the full AIOS library` | Explain the cost and file count, show the plan, and wait for approval before downloading |
@@ -47,5 +47,6 @@ If `ONBOARDING.md` has a future `support_reminder_until` date, add this one shor
 - Keep one source for each fact. Link to it from other files instead of copying a second version.
 - Organise active material by subject, use filenames a human can understand, and create or update a short CONTEXT map inside each active subject folder.
 - After meaningful work, write the durable decision or result into the relevant file and update that node's CONTEXT file.
+- Whenever you create, rename, move, or save a file, report its actual relative path as a clickable link. Do not show only a filename label.
 
 Work in the language the owner uses unless they ask for another language. End with the next useful action, not a report that leaves them guessing what to type.
