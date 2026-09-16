@@ -10,7 +10,9 @@ A skill is not a prompt and not a document. It is a named procedure with a trigg
 
 **Something the owner has now done three times the same way, badly the first time.** That is the whole entry test for a method the owner writes. A method earns a file when repeating it from memory has started to produce different results.
 
-**The guided door in [onboarding/_proj-onboarding.md](../onboarding/_proj-onboarding.md) seeds against a second test, and it is worth stating rather than leaving as an inconsistency.** Eleven methods land in the folder on day one. Five of them are the methods behind steps the script has just run by hand, so the owner can redo any of those steps properly instead of going back to the repository. The rest are the ones a first month reliably needs. The entry test above still governs everything the owner adds afterwards, and the cap still governs what is switched on.
+**The two doors seed different amounts, and it is worth stating rather than leaving as an inconsistency.** The guided starter in [onboarding/START.md](../onboarding/START.md) installs five methods, `eval7`, `exit7`, `context7`, `meeting7` and `focus7`, registered in [templates/\_skills-STARTER-CONTEXT.md](../templates/_skills-STARTER-CONTEXT.md), and switches none of them on as standing. Everything below about eleven and three belongs to the longer build.
+
+**The guided door in [onboarding/_proj-onboarding.md](../onboarding/_proj-onboarding.md) seeds against a second test.** Eleven methods land in the folder on day one. Five of them are the methods behind steps the script has just run by hand, so the owner can redo any of those steps properly instead of going back to the repository. The rest are the ones a first month reliably needs. The entry test above still governs everything the owner adds afterwards, and the cap still governs what is switched on.
 
 A skill file that works contains: what it is for, what it requires and what happens when those requirements are missing, the trigger, what must be true when it is finished, and one line the AI adds to the always loaded core or the skills-CONTEXT file so it can be found when the trigger fires.
 

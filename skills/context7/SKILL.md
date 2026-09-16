@@ -4,9 +4,9 @@ description: "CONTEXT7: give every folder one CONTEXT file that lists what is in
 license: CC-BY-4.0
 metadata:
   author: fulldigital.me
-  version: "1.0.0"
+  version: "1.0.1"
   source: context7
-  synced: "2026-07-23"
+  synced: "2026-09-16"
 ---
 
 # SKILL: Give every node one CONTEXT file your AI reads first
@@ -64,6 +64,8 @@ What complete means is the owner's structure, not a generic one. Take the naming
 - **Before you claim a folder does not contain something.** If the CONTEXT file is stale, your claim is about the CONTEXT file and not about reality.
 
 **Not a trigger:** the urge to reorganise. This skill indexes what exists. It does not move, rename or merge files to make a folder read better, and a restructure disguised as a CONTEXT check is how a vault loses things.
+
+**What this skill does not claim.** It checks findability, not truth: whether a file is listed and its links resolve, never whether what the file says is correct, useful, or good for the business. It does not create projects, does not decide what a fact means, and does not delete or archive anything itself; it proposes the index lines and waits. A folder you could not read is reported as `not checked`, with the reason. And **not indexed** means a findability risk, not a claim that the AI could never locate the file by searching.
 
 ---
 

@@ -34,11 +34,25 @@ Use only `NOT STARTED`, `CURRENT`, `DONE`, or `SKIPPED`. A deliberate skip compl
 | `AGENTS.md` | automatic reading and routing rules for assistants | NOT STARTED |
 | `ONBOARDING.md` | this status panel and system map | CURRENT |
 | `02-memory/` | facts, history, businesses, people, projects, and evidence | NOT STARTED |
-| `03-skills/` | repeatable methods | NOT STARTED |
+| `03-skills/` | the installed methods and their triggers | NOT STARTED |
 | `04-tools/` | connected systems and permissions | NOT STARTED |
-| `05-focus/` | current priorities and measures | NOT STARTED |
+| `05-focus/` | current priorities, projects, and tasks | NOT STARTED |
 | `06-archive/` | finished or replaced material | NOT STARTED |
 | `00-system/aios/` | A: links to online methods; B: full local method library | NOT STARTED |
+
+## The five installed methods
+
+The index with triggers and sources is `03-skills/_skills-CONTEXT.md`. Use only `INSTALLED`, `NOT INSTALLED — source only`, or `ADAPTED`. A method file that has not been read back is not installed.
+
+| Method | Trigger | File | State |
+|---|---|---|---|
+| Score one thing | `EVAL7` | `03-skills/eval7/SKILL.md` | NOT STARTED |
+| Close a session | `EXIT7` | `03-skills/exit7/SKILL.md` | NOT STARTED |
+| Keep folders findable | `COX7` / `CONTEXT7` | `03-skills/context7/SKILL.md` | NOT STARTED |
+| Meetings into decisions | `MEETING7` | `03-skills/meeting7/SKILL.md` | NOT STARTED |
+| Priorities, projects, tasks | `FOCUS7` | `03-skills/focus7/SKILL.md` | NOT STARTED |
+
+This table is not onboarding progress. The step counter above stays out of five.
 
 ## Seven-block business coverage
 
@@ -56,4 +70,6 @@ Count a block only when it contains at least one confirmed, useful fact. Percent
 
 ## Maintenance rule
 
-Update this file after every onboarding step and whenever a major file, tool connection, active focus, or business-coverage block changes. Keep it short. Link to the source file instead of copying its contents here.
+Update this file after every onboarding step and whenever a major file, tool connection, method, active focus, or business-coverage block changes. Keep it short. Link to the source file instead of copying its contents here.
+
+At `5/5`, set `Onboarding completed` to the date and shorten the visible setup history. This file stays: it is the live map that `AGENTS.md` reads and the constitution links to. Do not delete or archive it, and do not replace it with a differently named status file. Archive the long history only when the owner asks, and check every link that pointed here before moving anything.

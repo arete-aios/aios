@@ -4,9 +4,9 @@ description: "MEETING7: turn a conversation into a record of what was decided an
 license: CC-BY-4.0
 metadata:
   author: fulldigital.me
-  version: "1.0.0"
+  version: "1.1.0"
   source: meeting7
-  synced: "2026-07-23"
+  synced: "2026-09-16"
 ---
 
 # SKILL: Turn meetings into decisions, and many meetings into a person
@@ -90,7 +90,7 @@ Read the constitution and memory before the transcript, because the transcript c
 One line makes this skill exist. In meetings most days, put it in the always loaded core. Occasional, put it in the skills-CONTEXT file the core already links to. A skill the AI cannot see when the trigger fires does not exist. A core stuffed with lines nobody triggers is broken the other way.
 
 ```
-MEETING7. After every meeting: one note, fixed sections, their words quoted not summarised, every commitment dated where I will see it. After several meetings with one person: one profile, two lenses, confidence stated. Never process the same meeting twice. Spec: skills/meeting7/SKILL.md
+MEETING7. After every meeting: one dated note, fixed sections, their words quoted not summarised, commitments proposed for my approval and then handed to FOCUS7 where I will see them. After several meetings with one person: one profile, two lenses, confidence stated. Never process the same meeting twice. Spec: skills/meeting7/SKILL.md
 ```
 
 ### MEMORY
@@ -125,9 +125,13 @@ Steps for you, the assistant. Goal level, not code level.
 
 The test is a year out. A summary reads as your interpretation of a conversation you were not in, and a quote is still evidence. When unsure, quote it. The cost is a few words.
 
+**Quote only what is really in the source.** If the owner told you the gist, write it as their account of what was said, attributed and marked as such. Turning a paraphrase into quotation marks manufactures evidence, and a year later nobody can tell which sentences were invented. The same holds for the note's own facts: an unknown date, participant, or owner is `to confirm`, never a plausible guess. Keep the source named, and keep what was said apart from what you concluded from it.
+
 **4. Use the same sections every time.** Decide them once with the owner and never improvise per meeting, because comparability across a year is most of the value. What was decided, what was promised and by whom, what the other person needs, what landed, what is still open.
 
 **5. Every commitment gets a date, somewhere the owner will actually see it.** Not inside the note. The task list, the calendar, whatever they open without being asked. **A meeting that produced a promise and no date produced nothing**, and this is the step most often skipped, because by then the note already looks finished.
+
+**The owner decides what becomes a commitment**, and you propose each one with the owner, the deadline, and the project it belongs to taken from the source only. Unknown stays `to confirm`; an invented date is worse than an empty one. What they approve goes to the layer that actually runs work, which in this system is `FOCUS7`, as one task carrying a link back to this note. Do not start a parallel list of meeting tasks, do not send the summary to the participants, do not put anything in a calendar, and do not create an outside CRM record unless that was asked for separately.
 
 **6. Clean up only what succeeded.** Move processed files out of the intake, leave failures where they are and name them in the report. A skill that empties the inbox on failure gets distrusted once and forever.
 

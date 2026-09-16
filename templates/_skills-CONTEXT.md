@@ -1,5 +1,7 @@
 # Skills
 
+<!-- This is the registry of the full eleven-step build in `onboarding/_proj-onboarding.md`: eleven methods seeded, three standing. The guided starter in `onboarding/START.md` does not use this file. It uses `templates/_skills-STARTER-CONTEXT.md`, which registers five installed methods and no standing ones, and its rules do not apply here. Do not merge the two. -->
+
 _Parent: CONSTITUTION.md_
 _Layer 3. Methods written down once, so they run the same way every time instead of being improvised again._
 _Toward my north star: a method that runs the same way every time is the only kind whose results can be compared, and nothing gets to the north star without comparing results._

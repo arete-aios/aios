@@ -4,9 +4,9 @@ description: "EXIT7: close a work session by finding everything that exists only
 license: CC-BY-4.0
 metadata:
   author: fulldigital.me
-  version: "1.0.0"
+  version: "1.0.1"
   source: exit7
-  synced: "2026-07-23"
+  synced: "2026-09-16"
 ---
 
 # SKILL: Close a session so nothing survives only in the chat
@@ -119,9 +119,11 @@ Steps for you, the assistant. Goal level, not code level.
 
 **2. Run the four hanging checks.** Was something written in the chat, a draft, a list, an analysis, that exists in no file? Did you ask a question the owner never got around to answering before the topic moved on? Was something decided in conversation that no file knows about? Did a "we should" appear with no owner and no date? Each hit becomes a numbered item.
 
-**3. Verify the CONTEXT file actively, do not ask about it.** For every node the session touched, check that each new file is listed in its parent CONTEXT file, and that status changes are recorded in the right master file. Run the checker if one exists. Asking "is anything missing?" always returns no, because the owner does not hold that map in their head, which is the entire reason this step exists. Do not return a clean result until it is actually clean.
+**3. Verify the CONTEXT file actively, do not ask about it.** For every node the session touched, check that each new file is listed in its parent CONTEXT file, and that status changes are recorded in the right master file. Run the checker if one exists. Check the nodes this session actually touched, and say that is what you checked. "I verified the whole system" is a claim you did not earn in a closing run. Asking "is anything missing?" always returns no, because the owner does not hold that map in their head, which is the entire reason this step exists. Do not return a clean result until it is actually clean.
 
 **4. Ask the one focus question.** Does anything here change what the owner is working on right now: a shift in priority, a new critical date, a discovery that changes direction? Respect the size limits of the focus layer, and send overflow into the log rather than deleting it. If the change touches several areas, hand it to the dedicated focus update routine instead of doing it here.
+
+**An approved project or task goes to the focus layer, which in this system is `FOCUS7`, and keeps a link back to where it was decided.** Never open a second list of session tasks beside it. An idea that came up is one written line, not an approved project.
 
 **5. Come back with diffs, never with questions.** Each item states the file, the section, and the exact line to add. The owner replies OK to all, OK to some, or no to one. Partial approval is normal and expected. A question puts the work back on the person who just spent the session doing it.
 
@@ -134,7 +136,7 @@ Steps for you, the assistant. Goal level, not code level.
 ## DEFINITION OF DONE
 
 1. **Every hanging item is either written, or explicitly declined by the owner.** Nothing is left in the maybe state.
-2. **Each written item landed in a file the next session loads**, not in a note about the session.
+2. **Each written item landed in a file the next session loads**, not in a note about the session. A summary in the chat is not a saved result, and what was shown but not approved is reported as still proposed.
 3. **The CONTEXT check came back genuinely clean**, having been run rather than asked about.
 4. **The focus question was asked and answered**, even when the answer was no change.
 5. **Anything with a date is in the task or calendar layer**, not only in prose.

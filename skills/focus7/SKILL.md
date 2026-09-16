@@ -1,12 +1,12 @@
 ---
 name: focus7
-description: "FOCUS7: rebuild the one file that says what matters right now, area by area, from real data, with a diff the owner approves. Use at the weekly review or after a decision that moves priorities."
+description: "FOCUS7: rebuild the one file that says what matters right now, area by area, from real data, and run the projects and tasks that come out of it, with a diff the owner approves. Use at the weekly review, after a decision that moves priorities, or when a goal has to become a project."
 license: CC-BY-4.0
 metadata:
   author: fulldigital.me
-  version: "1.0.0"
+  version: "1.1.0"
   source: focus7
-  synced: "2026-07-23"
+  synced: "2026-09-16"
 ---
 
 # SKILL: Keep the file that says what matters now true
@@ -24,6 +24,8 @@ metadata:
 
 **Cold start, no focus file yet.** The common case, and this skill is how it ends. You read whatever the system already holds, write the first version from that evidence, and wire it so the client loads it at the start of every session. The wiring is part of the run, not a follow-up: a focus file nobody loads is a document.
 **Maintenance, the file exists.** Everything below, as a diff the owner approves area by area.
+
+**Inside both modes there is a smaller job that runs far more often: projects and tasks.** A starter brain usually has no areas, no weekly ledger, and no north star, just a goal that has to become something doable this week. That part is [Projects and tasks](#projects-and-tasks) below. It needs nothing but file read and write, and it never requires the area interview, the seven areas, the weekly ledger, a CRM, or an outside task application.
 
 Both modes run with or without data feeds. **With them:** you scan calendar, health, money and notes yourself, and the numbers come from measurements rather than impressions. Faster and far harder to argue with. **Without them:** the same thing as a structured interview, one area at a time, one line per answer. Slower, and still a true file, because the diff and the approval are the valuable parts.
 
@@ -73,6 +75,7 @@ The owner decides what an area is and where the limits sit. Take both from their
 ## TRIGGER
 
 - The owner writes `FOCUS7`, optionally with one area name to do just that area, or a mode word for a fast pass or a deep pass.
+- **The owner wants a goal or a decision turned into a project, asks what is open right now, or reports that something is finished, waiting, or dead.** That is the projects and tasks part, and it runs on its own without a full rescan.
 - **The weekly review.** This is the recurring trigger and it is the one that keeps the file small.
 - **After a decision or event big enough to change what the owner should be doing.** A result arrived, a plan died, a date moved.
 - **An evaluation just scored this owner low on focus or on the loop.** Do not wait for them to type the trigger. Say what you are about to do, run it in the same conversation, and hand them a draft. A low score followed by a suggestion is a report card; a low score followed by a first draft is the fix.
@@ -99,7 +102,7 @@ One line makes this skill exist. Where it goes depends on how central it is to t
 Either way the line is the same:
 
 ```
-FOCUS7 [area]. Rescan my life areas from real data, show a diff per area, write only what I approve, move overflow to the logs, never delete. Spec: skills/focus7/SKILL.md
+FOCUS7 [area | project]. Keep what matters now true from real data, run my projects and tasks from it, show a diff before changing a priority or a status, write only what I approve, move overflow to the logs, never delete. Spec: skills/focus7/SKILL.md
 ```
 
 A skill the AI cannot see when the trigger fires does not exist. A core stuffed with lines nobody triggers is broken the other way.
@@ -156,6 +159,43 @@ Steps for you, the assistant. Goal level, not code level.
 
 ---
 
+## PROJECTS AND TASKS
+
+**A priority nobody turned into a next action is a sentence.** This part of the skill is how the file that says what matters becomes work that has a state, and it is the part a new brain needs first.
+
+**1. Find the structure before you make one.** Read what already exists: a projects folder, project files, a task list, an index. If it is there, continue inside it, in its naming and its language. Generating a second catalogue beside a working one is the most common damage this skill can do.
+
+**The starter default, only when there is nothing:** `05-focus/_focus-CONTEXT.md` is a short index of the active projects, one line and a link each, and each project lives in one file, `05-focus/projects/<project-slug>.md`, holding its own tasks. A small `projects/` folder does not need a second index file of its own; the existing focus file indexes it. When it grows past what one screen can scan, apply the node rule from `CONTEXT7`.
+
+**2. Propose a project, do not declare one.** From an approved goal or result, offer a small card: what will be finished, what finished looks like, what is in and what is out, and the next physical step. Show it and wait. **An idea is not an approved project**, and a wish is not a goal.
+
+**3. After approval, write the file.** Creating a project means a project file exists, not that a name appeared in a priority list.
+
+Minimal card, and an unknown field says `to confirm` rather than carrying a guess:
+
+- the goal, and a link to the confirmed direction it serves;
+- the expected result, and how you will know it is finished;
+- status;
+- the next step, one action, small enough to do in a sitting;
+- the tasks;
+- the decisions and sources behind it.
+
+Do not produce a decorative ten-section form for someone who has one project.
+
+**4. Run the tasks.** Create, add, mark done, or explicitly stop a task, and keep the open questions and dependencies visible.
+
+Minimal task: a stable local identifier or an unmistakable line; one concrete action; a status from `OPEN`, `DOING`, `WAITING`, `DONE`, `CANCELLED`; an owner when known; a deadline only when one was agreed; a link to the source or the result.
+
+**`DONE` means a result exists**, with a link or a named artefact. An assistant writing the word is not evidence. `WAITING` names what it is waiting for. `CANCELLED` and `DONE` both stay visible and traceable; neither disappears. Do not demand a date for every idea.
+
+**5. Answer the real question: what now.** Three groups, short. What to do now. What is waiting on the owner's decision or on someone else. What not to start yet, and why. That last group is the one that makes the first two believable.
+
+**6. Take work handed over by other methods.** An approved commitment from `MEETING7`, an unfinished thread from `EXIT7`, something from the business profile or a research run: it lands here as a task, keeping a link back to where it came from. One task has **one authoritative home**. The index shows a link; it never holds a second copy of the task table. If the owner already uses an outside task system, agree its role and permissions first, claim no synchronisation that does not exist, and never treat a deadline written in a file as a calendar event that was created.
+
+**7. Show the diff before you move anything that already exists.** A changed priority, a moved deadline, a status flipped on someone else's behalf: propose, then write. **Never pick a new business direction for the owner**, and never promote an idea to a priority because it was the last thing discussed.
+
+---
+
 ## DEFINITION OF DONE
 
 1. **Every area is either updated and approved, or explicitly marked unchanged.** No area silently skipped.
@@ -164,6 +204,12 @@ Steps for you, the assistant. Goal level, not code level.
 4. **Everything cut landed in a log with a date**, and the moves were reported line by line.
 5. **Every gap you could not fill is visible in the file** as a marker addressed to the owner, not smoothed over.
 6. **A fresh session answered something it could only know from this file**, or the owner knows exactly what they paste and when. Tested this run, not assumed from last time.
+
+When the run touched projects or tasks, three more hold:
+
+7. **The approved project exists as a file**, not only as a line in an index, and the index links to it.
+8. **Every task has a status, and every `DONE` has a result behind it.** Nothing was closed because it had been open a long time.
+9. **Every task has exactly one home.** Nothing was copied into a second list, and no synchronisation with an outside system was claimed that does not exist.
 
 Missing the fourth means you deleted. Missing the fifth means the file now contains your guesses, and nobody will be able to tell which lines those were. Missing the sixth means you wrote a document, and the owner will keep it current for about two weeks before noticing nothing reads it.
 

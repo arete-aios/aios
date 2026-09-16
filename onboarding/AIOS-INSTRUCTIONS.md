@@ -20,14 +20,30 @@ Your AIOS stores useful context in plain files you control. It helps an AI remem
 | `CONSTITUTION.md` | business scope, twelve-month goal, AI character, standing rules |
 | `ONBOARDING.md` | current setup status, file map, business-context coverage |
 | `02-memory/` | business facts, history, people, projects, sources, evidence |
-| `03-skills/` | repeatable methods you choose to install |
+| `03-skills/` | the five installed methods, their triggers, and any you add later |
 | `04-tools/` | connected services, permissions, costs, limits |
-| `05-focus/` | what matters now and how success is measured |
+| `05-focus/` | what matters now, the active projects, and their tasks |
 | `06-archive/` | finished or replaced material kept for traceability |
 
 Say **AIOS instructions** at any time to reopen this file as a clickable document.
 
 Optional methods live in one of two places. In a light setup, `00-system/aios/README.md` links to the online methods. In a full local setup, use the installed files under `00-system/aios/` first; do not read the whole library unless the task requires it.
+
+## Your five methods
+
+Both setups install the same five. Each one is a written method in `03-skills/`, and the index with the triggers and sources is [`03-skills/_skills-CONTEXT.md`](03-skills/_skills-CONTEXT.md).
+
+| Say this | What happens | Use it when |
+|---|---|---|
+| `EVAL7 <thing>` | One finished thing is scored against its own goal: seven dimensions with evidence, visible arithmetic, and the fixes worth making first | A page, an offer, a proposal, or a message is ready and you want to know how good it actually is |
+| `EXIT7` | Everything that exists only in this chat is collected, shown with its destination, and saved after you approve | You are done for the day, or a session produced decisions |
+| `COX7` or `CONTEXT7 <folder>` | One folder is checked: one index file, everything inside it listed, links that really exist | Your AI keeps missing something that is plainly in the folder |
+| `MEETING7` | Notes or a transcript become one dated note with decisions, open questions, and commitments proposed for approval | Right after a meeting or call, while you still remember it |
+| `FOCUS7` | What matters now stays true, and the projects and tasks that come out of it get created and updated | You want to know what to do next, or turn a goal into a project |
+
+Installed is not running. A method file costs nothing until you type its trigger. None of them evaluates your work, rewrites your priorities, or contacts anyone on its own, and none of them is permission to send, publish, pay, delete, or change access.
+
+The other methods stay in the public library and are added one at a time, after real work has shown the need: [skills library](https://github.com/arete-aios/aios/tree/main/skills).
 
 ## Open the deeper guides
 
@@ -58,11 +74,31 @@ Say: **Enrich my AIOS brain.** In Latvian: **Smadzeņu papildināšana.**
 
 Upload or link CVs, websites, presentations, offers, reviews, interviews, transcripts, images, videos, numbers, or your own story. The assistant stores the source before interpreting it and separates facts from ideas.
 
+### Just tell it everything
+
+Say it in your own words, in one long message or out loud: what happened, what worries you, what you are thinking of doing.
+
+The assistant saves what you allowed it to save as the source first, then splits it into **facts, assumptions, questions, and possible work**, and asks you to confirm the reading. Nothing becomes a task, a project, or a confirmed fact until you say so. An idea is an idea. What you told it directly is never presented back to you as something verified elsewhere, and where your words contradict a confirmed fact, the assistant raises it instead of quietly overwriting it.
+
 ### Decide what to do next
 
 Say: **What should I do next?** or **Review my focus.**
 
 The assistant reads the twelve-month goal, relevant memory, and current focus. It recommends a small next move instead of merely adding another idea to a list.
+
+### Run projects and tasks
+
+Say: **`FOCUS7` — make a project out of this goal**, or **what is open right now?**
+
+The assistant works inside the structure you already have. If there is none, the starter default is one short index at `05-focus/_focus-CONTEXT.md` and one file per project at `05-focus/projects/<project-name>.md` holding that project's own tasks.
+
+A project card is small: the goal and what it serves, what finished looks like, the status, the next step, the tasks, and the decisions and sources behind it. An empty field says `to confirm` rather than being filled with a guess.
+
+A task is one concrete action with a status — `OPEN`, `DOING`, `WAITING`, `DONE`, or `CANCELLED` — an owner if known, a deadline only if you agreed one, and a link to where the result lives. `WAITING` names what it is waiting for. `DONE` means there is a result, not that the AI wrote the word.
+
+One task lives in one place. The index links to it and never copies the table. If you already use another task system, its role and permissions are agreed first; nothing is called synchronised until it really is, and a date in a file is not a calendar event.
+
+Approved commitments from `MEETING7` and unfinished business from `EXIT7` land here too, each keeping a link back to where it came from.
 
 ### Build the full business profile
 
@@ -117,6 +153,34 @@ For each suggestion it explains:
 - what still works without the connection.
 
 No tool is connected merely because a document mentions it. Read-only access and write access are separate approvals. Never store passwords or secret keys in Markdown files.
+
+## Keeping the five layers current
+
+The layers do not maintain themselves, and each one is kept up to date by a different sentence from you.
+
+| Layer | You say or give | What the AI does | What that is not |
+|---|---|---|---|
+| Constitution | "From now on, work with me like this…" | Shows the exact change to the standing rule and rewrites it only after you approve | A passing wish does not rewrite a rule |
+| Memory | A story, a file, a source, a correction | Saves the source, proposes the tidied facts with where each came from, files the approved ones under the right subject | `COX7` checks that a fact is findable, never that it is true |
+| Skills | "Which do I already have?" · "Make this repeatable" | Shows the installed five; after real work, offers to adapt one or add one | A library of available methods is not a list of your methods |
+| Tools | "What needs connecting for this job?" | Names the read and write access required, the cost, and checks what this client actually supports | A method's text grants no access |
+| Focus | "Make a project out of this" · "What should I do next?" | Project, tasks, a provable next step, and status changes through `FOCUS7` | Another idea is not a new priority |
+
+Above the five sits the one thing that makes them worth having: a loop that closes.
+
+## One closed loop
+
+Here is the whole cycle with nothing connected: you hand over meeting notes → `MEETING7` finds the decision worth confirming → you confirm it → `FOCUS7` writes the task into the project file → at the next work session you bring the result → `EVAL7` scores it when you ask for it → the fix you choose changes the work → `EXIT7` saves what changed and `COX7` checks that the links still resolve.
+
+Email, calendar, web sources, and LinkedIn are possible inputs to that loop, not the loop itself. A schedule that produces no saved result and no next decision is not a closed loop.
+
+An automated version is a separate decision, and it needs all of it named: the source, the rhythm, where it runs, the permissions, where results are saved, what a failure looks like, and the point where a human decides. Setting up your brain never by itself creates a schedule, connects an account, pays for research, or acts on a social network.
+
+## Now, with setup, and only with your permission
+
+- **Now, with nothing connected:** everything in this file that reads and writes your own files — memory, the five methods, projects and tasks, the business profile.
+- **After a setup step:** anything that reads outside your folder — web pages, a calendar, a mailbox, a recorder, analytics. Each one is an account, a permission, and sometimes a cost, and it is verified in your client before it is promised.
+- **Only with your explicit permission, each time:** sending a message, publishing, paying, deleting, changing access, or acting in your name.
 
 ## Keep the system clean
 

@@ -40,6 +40,8 @@ If the fetched file is an older cached version or conflicts with this message, t
 
 First briefly explain what we are building and ask the three short questions. Show one-sentence explanations for the A, B, and C AI character choices. Then summarise my answers and offer two clearly explained setup options: A, a light start without copying the GitHub library; or B, the full local AIOS library, recommended for a paid account. Show the exact A tree once. For B, only list what will be added directly inside the same `00-system/aios/` folder; do not repeat the root tree or create a `library/` subfolder. Create nothing until I answer A + YES or B + YES.
 
+Both options install the same five starter methods into `03-skills/` and register their triggers: EVAL7, EXIT7, COX7 (also written CONTEXT7), MEETING7, and FOCUS7. Installed means the file is on disk and opens when I type its trigger, not that it runs by itself.
+
 After my approval, build the selected version directly in the attached folder, then continue immediately to Brain Enrichment. Do not create another AIOS folder, repeat the foundation questions, start automatic web research, or request a new-chat test.
 
 If you cannot read the instructions or write to the folder, say so and stop.
@@ -51,13 +53,27 @@ The first session follows a visible rhythm:
 
 1. You answer three short foundation questions.
 2. You choose A, the light setup, or B, the full local method library, then approve once.
-3. The selected business brain is created and you receive clickable status and instructions files with their exact paths.
+3. The selected business brain is created, with five working methods, and you receive clickable status and instructions files with their exact paths.
 4. You may add real source material or continue without it.
 5. The assistant asks no more than five missing business questions and hands the system over.
 
-The local root also gets `AGENTS.md`. That file tells a new chat to read the constitution and onboarding map, and routes phrases such as **AIOS instructions**, **AIOS Deep Dive**, **AIOS Business Profile**, and **AIOS Personal Audit** to the right method.
+The local root also gets `AGENTS.md`. That file tells a new chat to read the constitution and onboarding map, and routes the five method triggers and phrases such as **AIOS instructions**, **AIOS Deep Dive**, **AIOS Business Profile**, and **AIOS Personal Audit** to the right file. Clients that read `CLAUDE.md` instead get a two-line pointer to the same rules.
 
-Option A is free-account friendly: it creates about ten small files and keeps the larger method library online until requested. Option B copies the library locally without loading every file into the conversation and is recommended when the owner has a paid account and wants all methods on disk.
+Option A is free-account friendly: it creates about ten small files plus the five methods, and keeps the rest of the library online until requested. Option B copies the library locally without loading every file into the conversation and is recommended when the owner has a paid account and wants all methods on disk.
+
+## The five methods you start with
+
+| Trigger | What it does |
+|---|---|
+| [`EVAL7`](skills/eval7/SKILL.md) | Scores one finished thing against its own goal: seven dimensions with evidence, visible arithmetic, and the fixes worth making first |
+| [`EXIT7`](skills/exit7/SKILL.md) | Closes a session by finding what exists only in the chat and handing back changes to approve |
+| [`COX7` / `CONTEXT7`](skills/context7/SKILL.md) | Checks that a folder has one index, that it lists what is really there, and that its links resolve |
+| [`MEETING7`](skills/meeting7/SKILL.md) | Turns notes or a transcript into one dated note with decisions and commitments to approve |
+| [`FOCUS7`](skills/focus7/SKILL.md) | Keeps what matters now true, and runs the projects and tasks that come out of it |
+
+They are the same five in both setups. The starter registry, with the triggers and sources, is [`templates/_skills-STARTER-CONTEXT.md`](templates/_skills-STARTER-CONTEXT.md).
+
+Already have an AIOS folder? Use [`onboarding/UPGRADE.md`](onboarding/UPGRADE.md) to add the missing methods without rebuilding anything.
 
 ## What you can do after the foundation
 
@@ -73,7 +89,7 @@ Already have a second brain or an AIOS-like folder? Use [`references/evaluate.md
 
 ## Skills
 
-The reusable methods live in [`skills/`](skills/). Install only what solves a real need. A skill that is present in a folder costs nothing; a standing skill is loaded every session and should stay rare.
+The reusable methods live in [`skills/`](skills/). Beyond the five above, install only what solves a real need, one at a time, after real work has shown it. A skill that is present in a folder costs nothing; a standing skill is loaded every session and should stay rare.
 
 If you build manually over several weeks, start with [`SKILL.md`](SKILL.md). That is the staged path with exit tests. The guided `START.md` path is faster and ends in the same five-layer architecture.
 
