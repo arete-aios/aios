@@ -36,13 +36,19 @@ Build an AIOS business brain in the folder attached to this chat.
 Read and follow:
 https://raw.githubusercontent.com/arete-aios/aios/main/onboarding/START.md
 
-If the fetched file is an older cached version or conflicts with this message, this message wins for the A/B setup choice and the prohibitions below.
+If the fetched file is an older cached version or conflicts with this message, this message wins for the setup rules below.
 
-First briefly explain what we are building and ask the three short questions. Show one-sentence explanations for the A, B, and C AI character choices. Then summarise my answers and offer two clearly explained setup options: A, a light start without copying the GitHub library; or B, the full local AIOS library, recommended for a paid account. Show the exact A tree once. For B, only list what will be added directly inside the same `00-system/aios/` folder; do not repeat the root tree or create a `library/` subfolder. Create nothing until I answer A + YES or B + YES.
+If setup was interrupted, resume from ONBOARDING.md without repeating confirmed answers or overwriting files. If this is an already completed AIOS, follow https://raw.githubusercontent.com/arete-aios/aios/main/onboarding/UPGRADE.md instead; show the proposed additions and updates and wait for approval.
 
-Both options install the same five starter methods into `03-skills/` and register their triggers: EVAL7, EXIT7, COX7 (also written CONTEXT7), MEETING7, and FOCUS7. Installed means the file is on disk and opens when I type its trigger, not that it runs by itself.
+For an empty folder, briefly explain what we are building and ask only the three foundation questions, including three AI character choices with short explanations.
+
+After my answers, briefly summarise what you understood and offer two choices: A, the working foundation with all five core skill files locally; or B, the same foundation and five files plus the full public AIOS library for reference. Show the exact A tree once. For B, only list what will be added directly inside the same `00-system/aios/` folder; do not repeat the root tree or create a `library/` subfolder. A is the smaller download; either choice depends on the app's file and network access, not just the subscription. Create nothing until I answer A + YES or B + YES, in my own language.
+
+For both A and B, copy all five complete core skill instructions from the starter's exact sources into 03-skills/: EVAL7, EXIT7, COX7/CONTEXT7, MEETING7, and FOCUS7. COX7 uses the context7 folder, not a sixth skill. In B, copy the library first, then take the five files from it. Briefly verify each saved file and its version yourself. Links alone are not an installation. If any file is unavailable, preserve progress and report an incomplete setup, not five skills installed. Do not invent replacements. FOCUS7 covers projects and next tasks; dates are optional unless agreed.
 
 After my approval, build the selected version directly in the attached folder, then continue immediately to Brain Enrichment. Do not create another AIOS folder, repeat the foundation questions, start automatic web research, or request a new-chat test.
+
+Keep ordinary work short; leave the full instructions available for optional reading. Do not ask me to run tests or all five skills before starting real work. Keep ONBOARDING.md as the live system map, not a file to archive after setup.
 
 If you cannot read the instructions or write to the folder, say so and stop.
 ```
