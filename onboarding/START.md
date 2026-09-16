@@ -73,6 +73,8 @@ Reflect the three answers in three short numbered points. Do not research or exp
 
 Say in one line what the five methods do for the owner: score one thing, close a session, keep the folders findable, turn meetings into decisions, and run the current priorities, projects, and tasks.
 
+Say in one more line what actually separates them: A downloads less. Both need this client to read and write the folder, and to reach the network unless the library is already on disk. Neither depends on which plan the owner pays for.
+
 Show the exact Option A tree once:
 
 ```text
@@ -198,4 +200,4 @@ Finish in four short numbered lines:
 3. **Status:** onboarding `5/5`, coverage `x/7 (y%)`, the number of methods actually installed, and the largest remaining business gap in one phrase. If a required file is missing, say what is left to finish instead of reporting a complete setup.
 4. **Next:** offer only three choices — open **AIOS instructions** to see and extend all capabilities; start one real task with a personalised example based on the twelve-month goal, naming the method it would use, for example `FOCUS7` to turn that goal into a first project; or add more knowledge later.
 
-Stop onboarding there. Do not mention or require a new-chat test. Set the 30-day instructions reminder in `ONBOARDING.md`; `AGENTS.md` handles it later.
+Stop onboarding there. Do not mention or require a new-chat test. Set the 30-day instructions reminder in `ONBOARDING.md`; `AGENTS.md` handles it later. `ONBOARDING.md` stays as the live system map after `5/5` — it is not archived because setup finished.

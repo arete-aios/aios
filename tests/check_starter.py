@@ -103,6 +103,8 @@ check("Never call it five installed methods when it is four" in start, "START.md
 check("not the owner's subscription" in start, "START.md does not say A/B depends on access rather than the plan")
 check("exercise all five methods before" in start, "START.md does not forbid demanding all five methods before real work")
 check("Check every one of the five yourself" in start, "START.md verifies fewer than five installed files")
+check("Neither depends on which plan" in start, "the A/B explanation shown to the owner still sells the choice as a plan")
+check("not archived because setup finished" in start, "START.md does not keep ONBOARDING.md alive after 5/5")
 
 # The old registry states which path it belongs to.
 check(
