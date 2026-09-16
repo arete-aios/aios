@@ -10,6 +10,8 @@ This file is the only onboarding authority for this starter run. Do not open or 
 
 **If the attached folder already holds an AIOS** — a constitution, an onboarding map, or the numbered layer folders — stop and follow [`UPGRADE.md`](UPGRADE.md) instead. It adds what is missing without rebuilding what the owner already has.
 
+**If a setup was started and interrupted**, `ONBOARDING.md` says where it stopped. Continue from that step. Do not ask a confirmed answer again, do not overwrite a file that already exists, and do not start a second brain beside the first.
+
 ## Rules
 
 1. Ask three questions before creating files. After reflecting the answers, show the light tree once, explain the full library as additions inside its existing system folder, then wait for one combined choice and approval.
@@ -18,8 +20,8 @@ This file is the only onboarding authority for this starter run. Do not open or 
 4. Ask before sending, publishing, paying, deleting, changing access, or overwriting confirmed facts.
 5. Use one skip command: `CONTINUE` in English, `TURPINĀT` in Latvian, or one local equivalent.
 6. Do not narrate tool calls, page counts, checksums, or successful internal operations.
-7. There is exactly one approval gate: the owner's `A + YES` or `B + YES` after the summary and file trees. Never ask the old four-question foundation interview after that approval.
-8. Never mention, propose, or require a new-chat test during this onboarding.
+7. There is exactly one approval gate: the owner's `A + YES` or `B + YES` after the summary and file trees — in their own language, so `A + JĀ` in Latvian or any clear local equivalent counts. The letter carries the choice and the second word carries the approval; never make the owner repeat it in English. Never ask the old four-question foundation interview after that approval.
+8. Never mention, propose, or require a new-chat test during this onboarding, and never ask the owner to exercise all five methods before their first real piece of work.
 9. Never browse a supplied website or search the web automatically. Retrieving the five method files listed in Setup limits is not browsing and not searching; it is the install. During brain enrichment, the owner may explicitly ask you to read a supplied site.
 10. Installed is not the same as running. The five starter methods sit in files and load only when their trigger fires. Never promise that they run on every message, and never start a full audit, evaluation, or interview because a method exists.
 11. End each onboarding reply with the status for that exact moment. Translate the words, but preserve the numbers:
@@ -37,7 +39,9 @@ This file is the only onboarding authority for this starter run. Do not open or 
 - **Option B:** copy the public method library locally, but do not read every copied file into the conversation and do not run batch checksums. Prefer one shallow clone or archive download into a temporary location, then copy only `README.md`, `SKILL.md`, `LICENSE`, `NOTICE`, `skills/`, `references/`, `templates/`, and `onboarding/` into `00-system/aios/`. Take the five active method files from that local copy instead of fetching them again. If bulk copy is unavailable, say so and offer Option A instead of opening dozens of pages.
 - Never create `00-system/aios/library/` or another wrapper around the copied library. In Option B, the copied items sit directly inside the already shown `00-system/aios/` folder.
 - In either option, read no more than five public pages of your own choosing before the owner supplies material. The five required method files are outside that budget, and so is a filesystem-level Option B copy that is not loaded into model context.
-- If this client cannot retrieve URLs and cannot copy files, say so plainly, register the five methods in `03-skills/_skills-CONTEXT.md` with their source URLs, and mark them `NOT INSTALLED — source only`. Never report a local file you have not read back.
+- **Both options need the client to reach files and, unless the library is already local, the network.** That, not the owner's subscription, is what decides whether a setup can run. Changing plan does not install anything by itself.
+- If a method file cannot be retrieved, keep what already worked, say which ones are missing, and report an unfinished setup. **Never call it five installed methods when it is four.** Do not substitute a method you wrote yourself for one you could not fetch.
+- If this client cannot retrieve URLs and cannot copy files at all, say so plainly, register the five methods in `03-skills/_skills-CONTEXT.md` with their source URLs, and mark them `NOT INSTALLED — source only`. Never report a local file you have not read back.
 - Do not browse the owner's website or search the web during steps 1–3. Record supplied links only.
 
 ## 1. Ask three foundation questions
@@ -140,7 +144,7 @@ Both options install the same five, into `03-skills/<name>/SKILL.md`: `eval7`, `
 2. Keep each file's attribution and licence line, and record its source URL, its version from the file's own metadata block, and today's date in `03-skills/_skills-CONTEXT.md`.
 3. Adapt only the paths and the owner's confirmed way of working. Never write a personal fact into a method as a universal rule.
 4. Register all five triggers in `03-skills/_skills-CONTEXT.md`, and leave one line in the constitution pointing at that file. Do not paste whole method files into the constitution or into `AGENTS.md`.
-5. Read back one of the five files to confirm the install, then say in one line which five triggers now work and that each one opens its file only when it is called.
+5. Check every one of the five yourself: the file is in place and readable, and its version matches what you recorded. A link is not an installation. Then say in one line which triggers now work and that each one opens its file only when it is called. If one is missing, name it and report the setup as unfinished.
 
 Then apply the chosen setup:
 
@@ -149,7 +153,7 @@ Then apply the chosen setup:
 
 The local `AIOS-INSTRUCTIONS.md` must preserve a compact clickable methods section. For Option A, link directly to the online method files. For Option B, link to the installed local paths. Include at least Business Profile, Deep Dive, Personal Audit, WEEK7, and the skills library. Never show a local link before verifying that its target exists, never invent a `library/` path, and do not remove the link section while translating or personalising the manual.
 
-Read back only the four root files and one method file once. If they exist and are readable, do not run or report checksums.
+Read back the four root files and the five method files once. If they exist and are readable, do not run or report checksums.
 
 The starter constitution is complete for its purpose. It contains no empty advanced sections and no references to missing North Star, quarters, accountability, personal identity interviews, or an eleven-step process. Business gaps live only in the business profile and `ONBOARDING.md` coverage table.
 
@@ -191,7 +195,7 @@ Finish in four short numbered lines:
 
 1. **Congratulations — you have built your first business brain.**
 2. **Saved:** clickable links to the constitution, onboarding map, instructions, and business profile.
-3. **Status:** onboarding `5/5`, coverage `x/7 (y%)`, five methods installed, and the largest remaining business gap in one phrase.
+3. **Status:** onboarding `5/5`, coverage `x/7 (y%)`, the number of methods actually installed, and the largest remaining business gap in one phrase. If a required file is missing, say what is left to finish instead of reporting a complete setup.
 4. **Next:** offer only three choices — open **AIOS instructions** to see and extend all capabilities; start one real task with a personalised example based on the twelve-month goal, naming the method it would use, for example `FOCUS7` to turn that goal into a first project; or add more knowledge later.
 
 Stop onboarding there. Do not mention or require a new-chat test. Set the 30-day instructions reminder in `ONBOARDING.md`; `AGENTS.md` handles it later.

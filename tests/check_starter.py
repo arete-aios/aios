@@ -96,6 +96,14 @@ for skill in STARTER_SKILLS:
 check("00-system/aios/library/" in start, "START.md lost the no-library/ prohibition")
 check("05-focus/projects/" in start, "START.md does not name the starter projects location")
 
+# The starter must match what areteaios.com/my tells the owner to expect.
+check("A + JĀ" in start, "START.md only accepts the English approval word; the Latvian page says A + JĀ")
+check("ONBOARDING.md` says where it stopped" in start, "START.md has no resume rule for an interrupted setup")
+check("Never call it five installed methods when it is four" in start, "START.md lets a partial install be reported as five")
+check("not the owner's subscription" in start, "START.md does not say A/B depends on access rather than the plan")
+check("exercise all five methods before" in start, "START.md does not forbid demanding all five methods before real work")
+check("Check every one of the five yourself" in start, "START.md verifies fewer than five installed files")
+
 # The old registry states which path it belongs to.
 check(
     "templates/_skills-STARTER-CONTEXT.md" in read("templates/_skills-CONTEXT.md"),
