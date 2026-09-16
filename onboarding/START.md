@@ -127,7 +127,7 @@ After `A + YES` or `B + YES`, create the shared starter:
 - root `ONBOARDING.md` from [`templates/ONBOARDING.md`](../templates/ONBOARDING.md), translated and updated;
 - root `AIOS-INSTRUCTIONS.md` from [`AIOS-INSTRUCTIONS.md`](AIOS-INSTRUCTIONS.md), translated and adapted only with confirmed examples;
 - four short CONTEXT files and `06-archive/`, where `03-skills/_skills-CONTEXT.md` comes from [`templates/_skills-STARTER-CONTEXT.md`](../templates/_skills-STARTER-CONTEXT.md) and never from the eleven-skill registry in `templates/_skills-CONTEXT.md`;
-- `05-focus/_focus-CONTEXT.md` as a short index: what matters now in a few lines, a list of active projects with one line and a link each, and a note that each project's own file holds its tasks. Create `05-focus/projects/` with the first real project, not before;
+- `05-focus/_focus-CONTEXT.md` as a short index: what matters now in a few lines, a list of active projects with one line and a link each, and a note that each project's own file holds its tasks. Create `05-focus/projects/` with the first real project, not before. The line saying there is no project yet is replaced when the first one appears, never left standing beside it;
 - one `business-profile.md` per named business, using these seven blocks: identity; direction/principles/boundaries; main goal/measure; target customer; offer/delivery; evidence/assets; next 30 days.
 
 If the owner's client reads `CLAUDE.md` rather than `AGENTS.md`, also create root `CLAUDE.md` from [`templates/CLAUDE.md`](../templates/CLAUDE.md). It is a two-line pointer to the same rules, not a second constitution, and the shared files are never rewritten for one vendor.

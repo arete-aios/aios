@@ -153,6 +153,7 @@ for status in ["OPEN", "DOING", "WAITING", "DONE", "CANCELLED"]:
     check(status in focus, f"focus7 does not define the {status} status")
 check("05-focus/projects/" in focus, "focus7 does not give a starter default location")
 check("one authoritative home" in focus, "focus7 does not state the single-home rule for a task")
+check("no active project yet" in focus, "focus7 does not require the empty-state line to be replaced")
 
 # 8. MEETING7 hands approved work to FOCUS7 instead of a parallel list.
 meeting = read("skills/meeting7/SKILL.md")

@@ -171,6 +171,8 @@ Steps for you, the assistant. Goal level, not code level.
 
 **3. After approval, write the file.** Creating a project means a project file exists, not that a name appeared in a priority list.
 
+**Then fix the index, do not only append to it.** An empty-state line such as *no active project yet* is replaced the moment the first project appears. Never-delete protects the owner's content and their history; it does not protect a sentence that the same file now contradicts two paragraphs later.
+
 Minimal card, and an unknown field says `to confirm` rather than carrying a guess:
 
 - the goal, and a link to the confirmed direction it serves;
