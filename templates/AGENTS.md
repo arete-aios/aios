@@ -6,8 +6,9 @@ This folder is the owner's AIOS. Treat its plain files as the durable source of 
 
 1. Read `CONSTITUTION.md`.
 2. Read `ONBOARDING.md`; it is the short live map of setup status, file locations, and business-context coverage.
-3. Read `05-focus/_focus-CONTEXT.md` when the request concerns priorities, current work, goals, or dates.
-4. Read only the relevant CONTEXT file and detail files for the task. Do not load the whole folder without a reason.
+3. Read `05-focus/_focus-CONTEXT.md` when the request concerns priorities, current work, projects, tasks, or dates.
+4. Read `03-skills/_skills-CONTEXT.md` to see which methods exist and what their triggers are. It is a short index; open a method file only when its trigger fires.
+5. Read only the relevant CONTEXT file and detail files for the task. Do not load the whole folder without a reason.
 
 If a file conflicts with the constitution, stop and show the conflict. Do not silently choose one.
 
@@ -26,6 +27,11 @@ When the owner asks a direct question such as **What is my memory and goal?**, a
 
 | The owner says this or something clearly equivalent | Open and follow |
 |---|---|
+| `EVAL7`, or asks how good one finished thing is | `03-skills/eval7/SKILL.md` |
+| `EXIT7`, or says they are done for the day | `03-skills/exit7/SKILL.md` |
+| `COX7`, `CONTEXT7`, or asks why you keep missing something that is in the folder | `03-skills/context7/SKILL.md` |
+| `MEETING7`, or hands over meeting notes or a transcript | `03-skills/meeting7/SKILL.md` |
+| `FOCUS7`, asks what to do next, or asks to turn a goal into a project or a task | `03-skills/focus7/SKILL.md` |
 | `AIOS status`, asks where something lives, or asks what has been set up | `ONBOARDING.md` |
 | `AIOS instructions`, `AIOS instrukcijas`, or asks how to use this folder | `AIOS-INSTRUCTIONS.md` |
 | `AIOS Deep Dive`, asks for self-reflection questions, self-coaching, or help understanding their potential | Open local `00-system/aios/onboarding/DEEP-DIVE.md` if installed; otherwise read its URL in `00-system/aios/README.md` |
@@ -35,6 +41,10 @@ When the owner asks a direct question such as **What is my memory and goal?**, a
 | asks which skills fit their work, including web or video work | Read `AIOS-INSTRUCTIONS.md`, inspect only the relevant available skills, and propose at most five |
 | asks about plugins, MCP, integrations, or connected apps | Read `AIOS-INSTRUCTIONS.md`; verify what this client actually supports before recommending or claiming a connection |
 | `Install the full AIOS library` | Explain the cost and file count, show the plan, and wait for approval before downloading |
+
+Before you follow a row above, check that the file is really there. If a method file is missing, say so, open the source URL recorded in `03-skills/_skills-CONTEXT.md`, and do not improvise the method from memory. Route, do not copy: never paste a whole method file into this adapter or into the constitution.
+
+The five method files are the only methods this brain starts with. Nothing here loads them automatically, and none of them is permission to send, publish, pay, delete, or change access.
 
 For a public-profile or web audit, locate the owner's real website, company, LinkedIn, and other known links from the constitution, business profile, and existing memory indexes. If the required link or identity is missing, ask once. Never assume that a particular file such as `memory/00-context.md` exists, and never create a parallel memory tree merely to satisfy an example prompt.
 

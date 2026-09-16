@@ -17,6 +17,12 @@
 
 <!-- A, B, C, or the owner's custom style, written as behaviour rather than a label. -->
 
+## My methods
+
+<!-- One pointer. The trigger lines themselves live in the index, so this file stays short. -->
+
+My installed methods and their triggers: `03-skills/_skills-CONTEXT.md`. Read that index, and open a method file only when its trigger fires.
+
 ## Standing rules
 
 - Organise active material by subject and use filenames a human can understand.
@@ -24,6 +30,7 @@
 - Ask before sending, publishing, paying, deleting, changing access, or overwriting a confirmed fact.
 - Treat the owner's statements as confirmed. Mark external findings `NOT CONFIRMED` until the owner approves them.
 - Keep one source per fact and link to it elsewhere instead of making competing copies.
+- A result exists when it is in a file. Show the proposed change, write it after I approve it, and tell me the path.
 
 <!-- Add only extra boundaries the owner explicitly gave. -->
 

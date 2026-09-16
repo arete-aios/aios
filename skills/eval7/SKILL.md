@@ -4,9 +4,9 @@ description: "EVAL7: score one existing thing against its goal across seven dime
 license: CC-BY-4.0
 metadata:
   author: fulldigital.me
-  version: "1.0.0"
+  version: "1.0.1"
   source: eval7
-  synced: "2026-07-23"
+  synced: "2026-09-16"
 ---
 
 # SKILL: Score one thing against its goal
@@ -115,6 +115,8 @@ Steps for you, the assistant. Goal level, not code level.
 **2. Choose the seven dimensions from context.** They are not a fixed list, because a landing page and a training plan fail in different ways, and the conversation has usually already named the criteria that matter. A solid default set: goal hit, audience resonance, clarity and structure, evidence and substance, voice and energy, craft and delivery hygiene, next step and accountability. One exception: when scoring a repeat of something you scored before, reuse the previous dimensions exactly, or the trend line means nothing.
 
 **3. Score with evidence.** Whole numbers, 0 to 100. No percentage without a reason that names a specific place in the content. "Fairly good" is not a comment. Domain specifics live in the comment column, never in the dimension names, so two different artifacts stay comparable a month later.
+
+**When you cannot reach part of the thing you are scoring**, a page you cannot open, a file you were not given, a number nobody has, name the limit and score what you saw. Never invent the evidence for a dimension, and never rewrite a score inside some other task the owner asked for; a new score happens when they ask for one. These numbers are a structured judgement, not a measurement of the business.
 
 **4. Overall score.** Default is the unweighted average of the seven, rounded.
 
