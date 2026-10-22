@@ -1,0 +1,1129 @@
+{
+  "eyebrow": "COMMS7 · communication review",
+  "onboarding": "SKILL.md",
+  "related": [],
+  "how": {
+    "title": "What happens when you invoke COMMS7",
+    "lead": "Three phases, seven stages. Read prior decisions, check actual sources, then help you decide and preserve state. This is an AI work protocol; background service acceptance is separate."
+  },
+  "groupSteps": {
+    "prepare": [
+      "01",
+      "02"
+    ],
+    "review": [
+      "03",
+      "04"
+    ],
+    "decide": [
+      "05",
+      "06",
+      "07"
+    ]
+  },
+  "filesLead": "All portable instructions and the optional offline helper are included. Your account data and credentials stay in your own protected workspace.",
+  "fileTypes": [
+    {
+      "ext": "MD",
+      "title": "Work method",
+      "text": "SKILL.md routes the request. RUN-CONTRACT.md defines output and states. READINESS.md explains the evidence boundary."
+    },
+    {
+      "ext": "JSON",
+      "title": "Metadata and viewer content",
+      "text": "manifest.json and view.json feed the shared SKILLS7 builder. Real configuration is internal only."
+    },
+    {
+      "ext": "HTML",
+      "title": "Human explanation",
+      "text": "This offline page has four tabs and a clickable workflow. It is not a connected account-management app."
+    }
+  ],
+  "fileGroups": [
+    {
+      "id": "start",
+      "zip": true,
+      "title": "Start here",
+      "desc": "AI entry and the actual run contract.",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "desc": "Purpose, selection, context and loading order."
+        },
+        {
+          "path": "references/RUN-CONTRACT.md",
+          "desc": "Seven stages, expected output and state transitions."
+        },
+        {
+          "path": "references/PRINCIPLES.md",
+          "desc": "Why to reply, act, wait or skip."
+        },
+        {
+          "path": "references/GMAIL-WORKFLOW.md",
+          "desc": "GTD labels, filters, subscriptions and verified execution."
+        },
+        {
+          "path": "references/AIOS-INTEGRATION.md",
+          "desc": "FOCUS7, CRM7, tools and the five layers."
+        },
+        {
+          "path": "references/STORAGE-PLAN.md",
+          "desc": "Current storage and a controlled organisation proposal."
+        },
+        {
+          "path": "SOURCE.json",
+          "desc": "Community adaptation and release record."
+        },
+        {
+          "path": "LICENSE.txt",
+          "desc": "Attribution and reuse rights."
+        }
+      ]
+    },
+    {
+      "id": "understand",
+      "zip": true,
+      "title": "Understand and verify",
+      "desc": "Actual readiness and a fictional result.",
+      "files": [
+        {
+          "path": "references/READINESS.md",
+          "desc": "What is evidenced and which acceptance tests remain."
+        },
+        {
+          "path": "references/EXAMPLE.md",
+          "desc": "A fictional review; nothing was sent."
+        },
+        {
+          "path": "references/SCORECARD.md",
+          "desc": "Basis for fit, complexity and token assumptions."
+        }
+      ]
+    },
+    {
+      "id": "modes",
+      "zip": true,
+      "title": "Additional selection when requested",
+      "desc": "Use the relevant mode, not every mode automatically.",
+      "files": [
+        {
+          "path": "REVIEW-MODES.md",
+          "desc": "Twenty optional review modes."
+        },
+        {
+          "path": "references/README.md",
+          "desc": "Reference map."
+        }
+      ]
+    },
+    {
+      "id": "helpers",
+      "zip": true,
+      "title": "Python and optional engagement",
+      "desc": "Run the helper for structured input; load social mode when requested.",
+      "files": [
+        {
+          "path": "scripts/review_pack.py",
+          "desc": "An actual offline structured packing helper."
+        },
+        {
+          "path": "scripts/README.md",
+          "desc": "Helper entry and ownership."
+        },
+        {
+          "path": "references/PYTHON-HELPER.md",
+          "desc": "Input, decisions, invocation and verification limits."
+        },
+        {
+          "path": "references/SOCIAL-MODE.md",
+          "desc": "Communication, engagement and channel connections."
+        }
+      ]
+    }
+  ],
+  "flow": {
+    "presentation": "journey",
+    "revision": "2026-10-22-foundation",
+    "width": 1400,
+    "height": 675,
+    "left": 0,
+    "top": 0,
+    "start": "invoke",
+    "sequence": [
+      "invoke",
+      "scope",
+      "prepare",
+      "review",
+      "brief",
+      "act",
+      "close"
+    ],
+    "eyebrow": "COMMS7 · workflow",
+    "title": "Review, decide and save",
+    "lead": "The detailed diagram includes sources, Python, files and context. The short diagram shows the main work loop.",
+    "notes": [
+      {
+        "x": 20,
+        "w": 450,
+        "label": "Goal and saved state"
+      },
+      {
+        "x": 480,
+        "w": 510,
+        "label": "Sources · Python · AI"
+      },
+      {
+        "x": 1000,
+        "w": 380,
+        "label": "Decisions and continuation"
+      }
+    ],
+    "goal": {
+      "x": 50,
+      "y": 83,
+      "w": 240,
+      "h": 155,
+      "label": "Goal",
+      "text": "Who needs a reply, what needs doing and what I am waiting for. Every item has a clear next step."
+    },
+    "nodes": [
+      {
+        "id": "invoke",
+        "x": 60,
+        "y": 300,
+        "kind": "you",
+        "icon": "user",
+        "step": 1,
+        "min": true,
+        "label": "You ask for COMMS7",
+        "actor": "You · in chat",
+        "paragraphs": [
+          "Type COMMS7 in chat. AI loads the skill and its instructions. You can ask for the overall priorities, Action, Waiting or a specific conversation.",
+          "If you ask for a skill or workflow explanation, AI works on the explanation. A communication review starts when that is your goal."
+        ],
+        "what": "Type COMMS7 in chat. AI loads the skill and its instructions. You can ask for the overall priorities, Action, Waiting or a specific conversation.",
+        "out": "AI understands the help you want.",
+        "files": [
+          "SKILL.md"
+        ],
+        "example": "COMMS7 — what matters now in Gmail and WhatsApp?  /  COMMS7 — review current Waiting.",
+        "summary": "Tell the chat what to review. AI loads COMMS7.",
+        "headerIcons": [
+          "user"
+        ]
+      },
+      {
+        "id": "scope",
+        "x": 210,
+        "y": 300,
+        "kind": "ai",
+        "icon": "ai",
+        "step": 2,
+        "min": true,
+        "label": "Agree on scope",
+        "actor": "AI · with you",
+        "paragraphs": [
+          "AI uses your request, previous decisions and Business context. Agree on the goal, channels, accounts and review depth; do not ask again for information already supplied.",
+          "If you type only “COMMS7”, AI proposes a useful starting point, such as important unanswered requests and open promises. It asks a follow-up when the answer changes what should be reviewed.",
+          "Current FOCUS7 priorities inform importance. CRM7 provides the matched person’s latest professional context where a granted reader is available. Reading does not grant CRM writes."
+        ],
+        "what": "AI uses your request, previous decisions and Business context. Agree on the goal, channels, accounts and review depth; do not ask again for information already supplied.",
+        "out": "A clear review scope and expected result.",
+        "files": [
+          "SKILL.md",
+          "references/RUN-CONTRACT.md",
+          "references/PRINCIPLES.md",
+          "references/AIOS-INTEGRATION.md"
+        ],
+        "summary": "AI uses what you already said and asks only for details that change the review.",
+        "headerIcons": [
+          "ai"
+        ]
+      },
+      {
+        "id": "prepare",
+        "x": 360,
+        "y": 300,
+        "kind": "ai",
+        "icon": "ai",
+        "step": 3,
+        "min": true,
+        "label": "Open the review record",
+        "actor": "AI · saved records",
+        "paragraphs": [
+          "AI reads saved state so older open items remain and completed actions do not return.",
+          "Record the goal, sources and clarifications for this review. Existing CRM and tasks remain in their authoritative home; the review links to them."
+        ],
+        "what": "Before checking new messages, AI reads the saved current state. This preserves older open items and avoids repeating work already completed or deliberately ignored.",
+        "out": "A review record and a known starting state.",
+        "files": [
+          "references/RUN-CONTRACT.md"
+        ],
+        "summary": "AI reads previous state and records this review’s goal, accounts and clarifications.",
+        "headerIcons": [
+          "ai",
+          "file"
+        ],
+        "companion": "file",
+        "storageRef": "reviews",
+        "stored": {
+          "title": "Agreed private review home",
+          "text": "Keep the review ID/date, purpose, source coverage, decisions and links to authoritative task records, in the agreed Markdown or JSON format."
+        }
+      },
+      {
+        "id": "review",
+        "x": 510,
+        "y": 300,
+        "kind": "ai",
+        "icon": "ai",
+        "step": 4,
+        "min": true,
+        "label": "Check the sources",
+        "actor": "AI · selected sources",
+        "paragraphs": [
+          "AI or the granted reader retrieves agreed account data and states coverage, freshness and gaps.",
+          "For structured input, review_pack.py merges duplicate actions and compares current evidence with the previous review. Unchanged closed items stay resolved; older open items remain.",
+          "Python processes structure, not meaning. Before recommending action, AI checks required full context, latest replies and deadline evidence."
+        ],
+        "what": "In one step, AI checks every agreed source. Your current use centres on Gmail and WhatsApp. For each account it states coverage, freshness and any gap.",
+        "out": "Checked conversation facts, source links and explicit coverage.",
+        "files": [
+          "references/RUN-CONTRACT.md",
+          "references/PYTHON-HELPER.md"
+        ],
+        "channels": [
+          {
+            "icon": "gmail",
+            "label": "Gmail"
+          },
+          {
+            "icon": "whatsapp",
+            "label": "WhatsApp"
+          }
+        ],
+        "summary": "Collect the agreed sources and coverage. Python builds a compact pack; AI reads full conversation context when needed.",
+        "headerIcons": [
+          "ai"
+        ],
+        "helper": {
+          "title": "Python · change selection and merging",
+          "text": "review_pack.py is built and tested on synthetic inputs. It produces compact JSON, open items and decision progress. Account connectors remain separate.",
+          "file": "scripts/review_pack.py"
+        }
+      },
+      {
+        "id": "brief",
+        "x": 810,
+        "y": 300,
+        "kind": "ai",
+        "icon": "ai",
+        "step": 5,
+        "min": true,
+        "label": "Show the priorities",
+        "actor": "AI · chat and record",
+        "paragraphs": [
+          "AI compares new information with saved decisions and separates my actions, waiting on others, resolved items and information requiring no action. An old open promise remains even without a new message.",
+          "Chat first shows up to five priority next actions. Each has a clear reason, one question or action, an owner and the relevant source. Other open items remain in the record.",
+          "The review file keeps the summary, source IDs and status decisions needed to continue. There is no need to copy entire mailboxes and chats."
+        ],
+        "what": "AI compares new information with saved decisions and separates my actions, waiting on others, resolved items and information requiring no action. An old open promise remains even without a new message.",
+        "out": "You have a short action list and AI has the review record needed to continue.",
+        "files": [
+          "references/RUN-CONTRACT.md",
+          "references/EXAMPLE.md",
+          "references/PRINCIPLES.md"
+        ],
+        "summary": "AI checks conversation context and highlights up to five priority next actions. Evidence remains in the review record.",
+        "headerIcons": [
+          "ai",
+          "file"
+        ],
+        "companion": "file",
+        "storageRef": "reviews",
+        "stored": {
+          "title": "The record keeps the evidence",
+          "text": "Relevant conversation IDs, summaries and open questions. No need to copy the whole mailbox."
+        }
+      },
+      {
+        "id": "act",
+        "x": 1020,
+        "y": 300,
+        "kind": "you",
+        "icon": "user",
+        "step": 6,
+        "min": true,
+        "label": "Decide and act",
+        "actor": "You + AI · repeatable loop",
+        "paragraphs": [
+          "Work through the items in chat. AI explains the situation, drafts a reply or prepares the next action. You can say “sent”, “done”, “waiting for a reply”, “defer until…” or “ignore this”. External sending follows the specific task authorisation.",
+          "After each decision, AI updates the review record and the relevant existing state entry. “Sent” records that reply; an outstanding delivery or promise stays open. Current state shows actions and waits.",
+          "Align Gmail labels with evidenced state: Action, Waiting, Someday/Maybe or Read/Later, using existing account names. Verify authorised changes by reading them back. Without a writer, show the suggestion and pending change. Review filters and subscriptions when needed.",
+          "Progress shows the share of items raised in this review that have an explicit decision and next step. It appears in chat and the review record. A newly raised question also increases the total.",
+          "WAITING is decided for this review when we know who owes what and when to check again. DEFER needs a date or clear trigger. 100% means every review item has a decision; external obligations can remain open."
+        ],
+        "what": "Work through the items in chat. AI explains the situation, drafts a reply or prepares the next action. You can say “sent”, “done”, “waiting for a reply”, “defer until…” or “ignore this”. External sending follows the specific task authorisation.",
+        "out": "Each reviewed item has a decision, saved state and a next check where needed.",
+        "files": [
+          "references/RUN-CONTRACT.md",
+          "references/GMAIL-WORKFLOW.md"
+        ],
+        "companion": "ai",
+        "caption": "Decide → save → next item",
+        "progress": {
+          "title": "Review decisions",
+          "summary": "3 of 5 example items are decided; two still need your choice.",
+          "items": [
+            {
+              "decided": false,
+              "label": "Reply about team training"
+            },
+            {
+              "decided": true,
+              "label": "Remember your promise by 16:00"
+            },
+            {
+              "decided": true,
+              "label": "Follow up on the proposal"
+            },
+            {
+              "decided": false,
+              "label": "Arrange the next call"
+            },
+            {
+              "decided": true,
+              "label": "Waiting for the partner’s file"
+            }
+          ],
+          "note": "Fictional example · 21 Oct 2026 · nothing sent. This progress tracking is a workflow proposal, not a live execution measure."
+        },
+        "summary": "AI helps prepare the action. You report the result and AI updates that item’s state.",
+        "headerIcons": [
+          "user",
+          "ai",
+          "file"
+        ],
+        "storageRef": "reviews",
+        "stored": {
+          "title": "Update the review and current state",
+          "text": "Save the outcome and next step after each decision. WAITING remains open. Python can calculate progress from structured decisions; unified live-source integration still needs acceptance."
+        }
+      },
+      {
+        "id": "close",
+        "x": 1250,
+        "y": 300,
+        "kind": "ai",
+        "icon": "ai",
+        "step": 7,
+        "min": true,
+        "label": "Save and close",
+        "actor": "AI · verified handoff",
+        "paragraphs": [
+          "When you end the review, chat or day, AI states what is done, what remains open and when to return. The target is an explicit decision for every item raised.",
+          "If a question is undecided, preserve and name it instead of claiming 100%. Unavailable sources and unchecked conversations remain explicit review limits.",
+          "At EXIT7, AI saves the record and current state, verifies readback and leaves a clear continuation. The next review starts from saved state and checks new messages."
+        ],
+        "what": "When you end the review, chat or day, AI states what is done, what remains open and when to return. The target is an explicit decision for every item raised.",
+        "out": "A saved review, preserved open work and clear next checks.",
+        "files": [
+          "references/RUN-CONTRACT.md",
+          "references/READINESS.md",
+          "references/AIOS-INTEGRATION.md",
+          "references/STORAGE-PLAN.md"
+        ],
+        "caption": "EXIT7",
+        "summary": "AI saves decisions and open follow-ups, verifies readback and closes with EXIT7.",
+        "headerIcons": [
+          "ai",
+          "file"
+        ],
+        "companion": "file",
+        "storageRef": "reviews",
+        "stored": {
+          "title": "Preserved continuation · EXIT7",
+          "text": "What is decided, what is waiting and when to check again."
+        }
+      },
+      {
+        "id": "record",
+        "x": 310,
+        "y": 83,
+        "w": 150,
+        "h": 155,
+        "kind": "tool",
+        "icon": "file",
+        "artifact": true,
+        "min": true,
+        "detailFor": "prepare",
+        "label": "Review record",
+        "caption": "Purpose · evidence · decisions",
+        "files": []
+      },
+      {
+        "id": "state",
+        "x": 930,
+        "y": 100,
+        "w": 270,
+        "h": 95,
+        "kind": "tool",
+        "icon": "file",
+        "artifact": true,
+        "min": true,
+        "detailFor": "act",
+        "label": "Current COMMS7 state",
+        "caption": "Existing authority · Action / Waiting · next actions",
+        "files": []
+      },
+      {
+        "id": "pack",
+        "x": 660,
+        "y": 300,
+        "kind": "py",
+        "icon": "python",
+        "min": true,
+        "detailFor": "review",
+        "label": "Python prepares input",
+        "caption": "review_pack.py",
+        "files": [
+          "scripts/review_pack.py",
+          "references/PYTHON-HELPER.md"
+        ],
+        "tool": "review-pack"
+      },
+      {
+        "id": "context",
+        "artifact": true,
+        "x": 530,
+        "y": 105,
+        "w": 330,
+        "h": 95,
+        "label": "FOCUS7 + CRM7",
+        "caption": "Priorities and person context · read",
+        "detailFor": "scope",
+        "icon": "file",
+        "kind": "tool",
+        "files": []
+      }
+    ],
+    "edges": [
+      [
+        "invoke",
+        "scope"
+      ],
+      [
+        "scope",
+        "prepare"
+      ],
+      [
+        "prepare",
+        "review"
+      ],
+      [
+        "review",
+        "pack"
+      ],
+      [
+        "pack",
+        "brief"
+      ],
+      [
+        "brief",
+        "act"
+      ],
+      [
+        "act",
+        "close"
+      ],
+      [
+        "prepare",
+        "record",
+        "side",
+        {
+          "path": "M390 300 V238"
+        }
+      ],
+      [
+        "state",
+        "prepare",
+        "side",
+        {
+          "path": "M930 147 H900 Q880 147 880 120 V75 Q880 55 860 55 H530 Q510 55 510 75 V235 Q510 250 490 250 H340 Q320 250 320 270 V295 Q320 315 340 315 H360",
+          "label": "Previous state",
+          "x": 590,
+          "y": 45
+        }
+      ],
+      [
+        "act",
+        "state",
+        "side",
+        {
+          "path": "M1080 330 H1110 Q1135 330 1135 305 V215 Q1135 195 1115 195"
+        }
+      ],
+      [
+        "act",
+        "brief",
+        "loop",
+        {
+          "path": "M1050 300 V260 Q1050 230 1020 230 H870 Q840 230 840 260 V300",
+          "label": "↺ Decide · save · continue",
+          "x": 855,
+          "y": 218
+        }
+      ],
+      [
+        "close",
+        "prepare",
+        "loop",
+        {
+          "path": "M1280 360 C1280 640 300 640 300 390 Q300 345 360 345",
+          "label": "↺ Next review: saved state + new messages",
+          "x": 710,
+          "y": 630
+        }
+      ],
+      [
+        "context",
+        "scope",
+        "side",
+        {
+          "path": "M530 152 H495 V270 H240 V300"
+        }
+      ]
+    ],
+    "channels": {
+      "x": 490,
+      "y": 430,
+      "w": 425,
+      "h": 120,
+      "label": "Possible sources · connect separately or supply selected content",
+      "current": [
+        {
+          "icon": "gmail",
+          "label": "Gmail"
+        },
+        {
+          "icon": "whatsapp",
+          "label": "WhatsApp"
+        }
+      ],
+      "optional": [
+        {
+          "icon": "link",
+          "label": "Web / CRM enquiries"
+        },
+        {
+          "icon": "slack",
+          "label": "Slack"
+        },
+        {
+          "icon": "telegram",
+          "label": "Telegram"
+        },
+        {
+          "icon": "chat",
+          "label": "Facebook / LinkedIn"
+        }
+      ]
+    },
+    "rhythm": {
+      "x": 1220,
+      "y": 100,
+      "w": 135,
+      "h": 95,
+      "label": "On request",
+      "text": "Schedule separately"
+    },
+    "legend": {
+      "you": "You",
+      "ai": "AI",
+      "tool": "Saved record",
+      "loop": "Dashed arrow = repeat",
+      "py": "Python"
+    },
+    "modeNote": "The switch changes only the diagram. Full step explanations below it stay identical in both views.",
+    "stepsTitle": "Read the workflow in order",
+    "stepLabel": "Step",
+    "resultLabel": "After this step:",
+    "docsLabel": "Method sources",
+    "note": "The offline Python helper is included. Account readers, writers and recurring monitoring must be connected and verified in your own workspace.",
+    "defaultMode": "detailed",
+    "modeLabels": {
+      "detailed": "Detailed",
+      "simple": "Short diagram"
+    },
+    "simpleRepeat": "↺ Decide and save each item.  ↺ Check new messages at the next review.",
+    "modeBehavior": "canvas",
+    "simple": {
+      "width": 1000,
+      "height": 310,
+      "goal": "Goal: know your next action and preserve open questions.",
+      "nodes": [
+        {
+          "id": "start",
+          "target": "invoke",
+          "kind": "you",
+          "icon": "user",
+          "label": "You invoke COMMS7",
+          "caption": "Say what to review",
+          "x": 40,
+          "y": 110
+        },
+        {
+          "id": "check",
+          "target": "review",
+          "kind": "ai",
+          "icon": "ai",
+          "label": "AI reviews",
+          "caption": "Context, messages, saved state",
+          "x": 240,
+          "y": 110
+        },
+        {
+          "id": "priority",
+          "target": "brief",
+          "kind": "ai",
+          "icon": "ai",
+          "label": "See the priorities",
+          "caption": "Act · wait · skip",
+          "x": 440,
+          "y": 110
+        },
+        {
+          "id": "choose",
+          "target": "act",
+          "kind": "you",
+          "icon": "user",
+          "label": "You decide",
+          "caption": "AI helps prepare action",
+          "x": 640,
+          "y": 110
+        },
+        {
+          "id": "save",
+          "target": "close",
+          "kind": "ai",
+          "icon": "file",
+          "label": "Save and continue",
+          "caption": "Open items remain",
+          "x": 840,
+          "y": 110
+        }
+      ],
+      "edges": [
+        [
+          "start",
+          "check"
+        ],
+        [
+          "check",
+          "priority"
+        ],
+        [
+          "priority",
+          "choose"
+        ],
+        [
+          "choose",
+          "save"
+        ],
+        [
+          "save",
+          "check",
+          "loop"
+        ]
+      ],
+      "loopLabel": "↺ Your decisions persist; the next review checks what changed."
+    }
+  },
+  "ui": {
+    "all_files": "Method files in reading order",
+    "no_runs": "Private executions are omitted from this shareable view.",
+    "tab_settings": "Settings",
+    "tab_log": "Changes",
+    "changes_title": "Method and viewer changes",
+    "fit_sub": "Illustrative estimate · not measured",
+    "qs_sub": "Copy into your AI chat. You can name a source or ask only for Action / Waiting.",
+    "tab_example": "Example",
+    "overview_example": "See an example →",
+    "qs_title": "Start with COMMS7",
+    "copy": "Copy request",
+    "d_local": "Version",
+    "d_status": "Review mode"
+  },
+  "scoreDoc": "references/SCORECARD.md",
+  "scoreHint": "Illustrative planning estimate · 21 Oct 2026. Actual token use has not been measured.",
+  "layout": {
+    "tabs": [
+      "overview",
+      "principles",
+      "flow",
+      "example",
+      "log"
+    ],
+    "changesOnly": true,
+    "overviewFiles": false,
+    "filesTitle": "Skill files",
+    "filesNote": "Main instructions, selection rules and supporting files in one package.",
+    "overviewBrief": {
+      "title": "What you get",
+      "items": [
+        {
+          "title": "Priority next actions",
+          "text": "Up to five items, each with a reason and source."
+        },
+        {
+          "title": "A reply draft",
+          "text": "A concrete reply to review together and send."
+        },
+        {
+          "title": "A saved handoff",
+          "text": "Your decisions and open questions for the next review."
+        }
+      ],
+      "note": "Start with a few selected conversations. Add verified connections only when useful."
+    },
+    "exampleTab": true,
+    "behavior": {
+      "title": "What COMMS7 does",
+      "text": "AI checks conversation context and previous decisions, selects what matters and helps draft a reply. Gmail messages are organised with GTD labels.",
+      "items": [
+        {
+          "label": "Action",
+          "text": "My next action"
+        },
+        {
+          "label": "Waiting",
+          "text": "A result owed by someone else"
+        },
+        {
+          "label": "Someday/Maybe",
+          "text": "An optional future idea"
+        },
+        {
+          "label": "Read/Later",
+          "text": "Selected reading"
+        }
+      ],
+      "note": "Label changes follow your existing task authorisation. New filters and unsubscribes require an accepted concrete proposal and a supported writer.",
+      "docs": [
+        {
+          "file": "SKILL.md",
+          "label": "Main instruction · SKILL.md"
+        },
+        {
+          "file": "references/GMAIL-WORKFLOW.md",
+          "label": "Gmail operating rules"
+        }
+      ]
+    },
+    "routes": {
+      "aios": {
+        "tab": "principles",
+        "anchor": "guide-aios"
+      }
+    },
+    "overview": {
+      "compact": true,
+      "hideRelated": true
+    },
+    "filesTab": "principles"
+  },
+  "preview": {
+    "eyebrow": "COMMS7 · example output",
+    "title": "Your communication review in one place",
+    "lead": "A fictional review showing next actions, context, reply drafts and a preserved waiting item. Nothing here is connected to an account.",
+    "label": "Fictional teaching example · nothing sent",
+    "period": "21 October 2026 · 10:30 · Europe/Riga",
+    "headline": "Five items. Two still need your choice.",
+    "summary": "Two replies, one promise, one follow-up and a saved WAITING item.",
+    "statLabels": [
+      "review items",
+      "explicit decisions",
+      "still undecided"
+    ],
+    "progress": {
+      "decided": 3,
+      "total": 5,
+      "percent": 60,
+      "meaning": "decisions in this review, not completed obligations"
+    },
+    "progressLabel": "Decision progress:",
+    "progressNote": "WAITING is a decided review item while its obligation remains open.",
+    "actionLabel": "Next step:",
+    "draftLabel": "Suggested draft",
+    "waitLabel": "What remains for next time",
+    "copyLabel": "Copy draft",
+    "items": [
+      {
+        "id": "email",
+        "icon": "gmail",
+        "channel": "Gmail",
+        "priority": "P1",
+        "attention": true,
+        "person": "Līga · Demo Studio",
+        "title": "Reply about team training",
+        "contextLabel": "Incoming email",
+        "quote": "Could we arrange training for six people on 12 November? Please reply by 22 October.",
+        "why": "A customer request has an explicit reply deadline. Date availability still needs checking.",
+        "action": "Clarify the team’s goal and prepare a reply.",
+        "draft": "Hello Līga,\n\nThank you for your message. I will check availability for 12 November. To prepare a relevant proposal, please send two key examples of the team’s work.\n\nBest regards",
+        "decisionLabel": "Your decision on the reply is still needed.",
+        "source": "DEMO-E01 · fictional Gmail conversation",
+        "decided": false
+      },
+      {
+        "id": "promise",
+        "icon": "gmail",
+        "channel": "Gmail",
+        "priority": "Your promise",
+        "attention": true,
+        "person": "Presentation delivery",
+        "title": "Remember your promise by 16:00",
+        "contextLabel": "What you promised",
+        "quote": "I will send the presentation and examples today by 16:00.",
+        "why": "The reply has been sent; the promised delivery is still due.",
+        "action": "Finish the file, check access and then send it.",
+        "draft": "Hello,\n\nI have attached the presentation and examples we agreed on. Please let me know if you cannot access the files.",
+        "decisionLabel": "You chose DOING. Delivery remains open.",
+        "source": "DEMO-E02 · fictional owner promise",
+        "decided": true,
+        "draftNote": "Use after attaching the file and checking access."
+      },
+      {
+        "id": "reminder",
+        "icon": "gmail",
+        "channel": "Gmail",
+        "priority": "Follow-up",
+        "person": "Partner proposal",
+        "title": "Follow up on the proposal",
+        "contextLabel": "Conversation follow-up",
+        "quote": "I will review the proposal and reply by 20 October.",
+        "why": "In this example, the promised date has passed with no new reply.",
+        "action": "Prepare one short follow-up.",
+        "draft": "Hello,\n\nFollowing up on our proposal. Is it still relevant? If so, we can agree on the next step.",
+        "decisionLabel": "You chose REPLY. The draft has not been sent.",
+        "source": "DEMO-E03 · fictional partner promise",
+        "decided": true
+      },
+      {
+        "id": "whatsapp",
+        "icon": "whatsapp",
+        "channel": "WhatsApp",
+        "priority": "To arrange",
+        "person": "Mārtiņš · collaboration",
+        "title": "Arrange the next call",
+        "contextLabel": "Incoming message",
+        "quote": "Hi! Could we have a 15-minute call this week?",
+        "why": "There is a specific request. AI helps agree on a next step without inventing calendar availability.",
+        "action": "Ask for two possible times and the call topic.",
+        "draft": "Hi! Happy to help. Please send two times that work for you and the topic you want to discuss.",
+        "decisionLabel": "Your choice is still needed; no WhatsApp message has been sent.",
+        "source": "DEMO-W01 · fictional WhatsApp conversation",
+        "decided": false
+      },
+      {
+        "id": "waiting",
+        "icon": "file",
+        "channel": "Saved state",
+        "priority": "WAITING",
+        "waiting": true,
+        "person": "Receiving materials",
+        "title": "Waiting for the partner’s file",
+        "contextLabel": "Previously open item",
+        "quote": "I will send the file by 22 October.",
+        "why": "No new message in this pass, but the open promise remains.",
+        "action": "Keep waiting; check on 23 October.",
+        "followup": "Who: the partner.\nExpected: the agreed materials file.\nNext check: 23 Oct 2026.\n\nNo additional reminder has been selected now.",
+        "decisionLabel": "You chose WAITING. The decision is clear; the obligation remains open.",
+        "source": "DEMO-S01 · fictional saved item",
+        "decided": true
+      }
+    ],
+    "note": "All scenarios are fictional. Copy buttons only copy text to the clipboard. The actual review_pack.py calculated this example’s decision progress from synthetic inputs.",
+    "sourceDoc": "references/EXAMPLE.md",
+    "sourceLabel": "Example scenarios and number basis",
+    "layouts": {
+      "default": "desk",
+      "labels": {
+        "desk": "EXAMPLE 1 · List",
+        "cards": "EXAMPLE 2 · Cards"
+      },
+      "note": "The same five items. Open only what you need."
+    }
+  },
+  "guides": {
+    "principles": {
+      "eyebrow": "COMMS7 · SKILL.md",
+      "title": "How COMMS7 chooses the next action",
+      "lead": "COMMS7 looks for unresolved commitments and their next step. An unread message is not itself a task; your promise can remain open after sending a reply.",
+      "sections": [
+        {
+          "title": "What the main SKILL.md contains",
+          "text": "AI starts with this file: purpose, invocation mode, selection rules, context sources and limits. The detailed run contract and optional modes live in linked files loaded when relevant.",
+          "docs": [
+            {
+              "file": "SKILL.md",
+              "label": "Open the main instructions"
+            },
+            {
+              "file": "references/RUN-CONTRACT.md",
+              "label": "Full run contract"
+            }
+          ]
+        },
+        {
+          "title": "Five decision checks",
+          "rows": [
+            {
+              "label": "1. Who is addressed?",
+              "text": "Is the request directed at you or someone whose work you coordinate? A group mention alone creates no task."
+            },
+            {
+              "label": "2. What is unresolved?",
+              "text": "Identify the actual question, your promise, expected result or deadline, then one verifiable next step."
+            },
+            {
+              "label": "3. Is it already resolved?",
+              "text": "Check the latest thread, sent messages, other authorised channels and your previous decision."
+            },
+            {
+              "label": "4. Why now?",
+              "text": "Use actual deadlines, consequences, person context and accepted FOCUS7 priorities. Do not invent urgency."
+            },
+            {
+              "label": "5. What does evidence support?",
+              "text": "Recommend replying, doing, calling, waiting, deferring or skipping. If required context is missing, state the gap."
+            }
+          ],
+          "docs": []
+        },
+        {
+          "title": "How decisions appear in Gmail",
+          "rows": [
+            {
+              "label": "Action / Waiting",
+              "text": "I need to act or am waiting on someone else. A sent reply can leave a promised delivery open; both labels can be justified on one thread."
+            },
+            {
+              "label": "Someday/Maybe / Read/Later",
+              "text": "An optional future idea or selected reading. A deferred commitment keeps its action and restart date."
+            },
+            {
+              "label": "Filters and subscriptions",
+              "text": "Proposes repeatable sorting or unsubscribe with a reason. Executes the concrete change only after acceptance and with an available tool."
+            }
+          ],
+          "note": "Uses existing account label names. “Suggested” and “applied and verified in Gmail” are different results.",
+          "docs": [
+            {
+              "file": "references/GMAIL-WORKFLOW.md",
+              "label": "Label and filter contract"
+            }
+          ]
+        },
+        {
+          "title": "What this changes in practice",
+          "items": [
+            {
+              "title": "“Thanks!”",
+              "text": "With no new question or commitment, no reply or task is needed."
+            },
+            {
+              "title": "“I will send the slides tomorrow”",
+              "text": "The reply may be sent while the promised delivery remains open."
+            },
+            {
+              "title": "“I will reply on Friday”",
+              "text": "Wait for the other party until the agreed date; do not invent an earlier reminder."
+            },
+            {
+              "title": "Promotion or newsletter",
+              "text": "Usually requires no reply. Relevant reading can be considered through NEWS7 when that is your task."
+            }
+          ],
+          "note": "An AI suggestion is not an accepted task. You decide; DONE closes only the named action.",
+          "docs": []
+        },
+        {
+          "title": "How tools are selected",
+          "rows": [
+            {
+              "label": "Gmail / WhatsApp",
+              "text": "Read received and sent context for the authorised account; a Gmail snippet or WhatsApp metadata alone is not a full review."
+            },
+            {
+              "label": "CRM7",
+              "text": "Match the person and read relevant recent context where the granted tool is available."
+            },
+            {
+              "label": "Calendar and documents",
+              "text": "Use when needed to verify a particular deadline, availability or delivery."
+            },
+            {
+              "label": "Other channels",
+              "text": "Additional sources need a named account, permissions and verified coverage."
+            }
+          ],
+          "docs": [
+            {
+              "file": "references/PRINCIPLES.md",
+              "label": "Full selection principles"
+            }
+          ]
+        },
+        {
+          "id": "guide-aios",
+          "title": "COMMS7 in your AIOS system",
+          "text": "System integration: high. COMMS7 can review supplied conversations on its own. With AIOS it also knows your direction, active commitments and relationship history, so selection is specific to your work.",
+          "rows": [
+            {
+              "label": "01 · Constitution",
+              "text": "North Star and working principles guide which opportunities deserve attention, alongside real deadlines and existing obligations."
+            },
+            {
+              "label": "02 · Memory",
+              "text": "Project and relationship history explains what was agreed. Accepted business conclusions return to the correct project or CRM home; private messages keep their protected audience."
+            },
+            {
+              "label": "03 · Skills",
+              "text": "FOCUS7, CRM7 and relevant delivery methods coordinate the next step with permitted agent roles. One skill does not duplicate their authorities."
+            },
+            {
+              "label": "04 · Tools",
+              "text": "Uses the same shared, permitted mail, messaging, CRM and calendar connections as other work. Every source still needs real verified capability."
+            },
+            {
+              "label": "05 · Focus",
+              "text": "Active goals, projects, tasks and deliberate pauses show what matters now. A fresh message does not silently create a new priority."
+            }
+          ],
+          "note": "High is a qualitative dependency assessment, not a measured quality score. Standalone use needs you to provide this context manually. Integration keeps it available between reviews; missing context must remain visible.",
+          "docs": [
+            {
+              "file": "references/AIOS-INTEGRATION.md",
+              "label": "Full AIOS integration"
+            },
+            {
+              "file": "references/STORAGE-PLAN.md",
+              "label": "Storage proposal"
+            }
+          ],
+          "items": [
+            {
+              "title": "Used on its own",
+              "text": "Can identify questions, promises and deadlines in supplied conversations. You provide the goals, history and priorities."
+            },
+            {
+              "title": "Within AIOS",
+              "text": "Uses accepted direction and current context, remembers decisions and preserves the handoff in the right place. Less repeated explanation."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

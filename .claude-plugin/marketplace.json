@@ -107,6 +107,15 @@
         "./skills/ads7",
         "./skills/video7"
       ]
+    },
+    {
+      "name": "comms7",
+      "description": "Review selected communication, prioritise open commitments and prepare the next action",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/comms7"
+      ]
     }
   ]
 }
