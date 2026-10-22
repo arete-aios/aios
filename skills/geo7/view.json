@@ -1,0 +1,1467 @@
+{
+  "eyebrow": "GEO7 · SEO / GEO",
+  "onboarding": "INSTALL.md",
+  "filesLead": {
+    "lv": "Instrukcija nosaka izvēli; metode un īstie palīgi dod pārbaudāmu izpildi.",
+    "en": "Instructions define decisions; the method and real helpers support verifiable execution."
+  },
+  "fileGroups": [
+    {
+      "id": "method",
+      "title": {
+        "lv": "Darba metode",
+        "en": "Work method"
+      },
+      "zip": true,
+      "files": [
+        {
+          "path": "SKILL.md",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        },
+        {
+          "path": "INSTALL.md",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        },
+        {
+          "path": "references/METHOD.md",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        },
+        {
+          "path": "references/REPORTING.md",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        },
+        {
+          "path": "references/INPUTS.md",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        },
+        {
+          "path": "references/README.md",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        }
+      ]
+    },
+    {
+      "id": "helpers",
+      "title": {
+        "lv": "Izpildes palīgi",
+        "en": "Execution helpers"
+      },
+      "zip": true,
+      "files": [
+        {
+          "path": "scripts/README.md",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        },
+        {
+          "path": "scripts/audit.py",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        },
+        {
+          "path": "scripts/research_plan.py",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        },
+        {
+          "path": "scripts/ai_visibility.py",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        },
+        {
+          "path": "scripts/performance.py",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        },
+        {
+          "path": "scripts/report.py",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        },
+        {
+          "path": "scripts/report_detail.py",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        },
+        {
+          "path": "scripts/test_geo7.py",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        }
+      ]
+    },
+    {
+      "id": "provenance",
+      "title": {
+        "lv": "Izcelsme un licences",
+        "en": "Provenance and licences"
+      },
+      "zip": true,
+      "files": [
+        {
+          "path": "SOURCE.json",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        },
+        {
+          "path": "LICENSE.txt",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        },
+        {
+          "path": "references/THIRD-PARTY.md",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        },
+        {
+          "path": "references/LICENSE-STAKSOFT.txt",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        },
+        {
+          "path": "references/LICENSE-RESCIENCELAB.txt",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        }
+      ]
+    },
+    {
+      "id": "report-assets",
+      "title": {
+        "lv": "Reporta resursi",
+        "en": "Report assets"
+      },
+      "zip": true,
+      "files": [
+        {
+          "path": "assets/README.md",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        },
+        {
+          "path": "assets/fonts.css",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        },
+        {
+          "path": "assets/logo-areteaios.svg",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        },
+        {
+          "path": "assets/Inter-OFL.txt",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        },
+        {
+          "path": "assets/Literata-OFL.txt",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        },
+        {
+          "path": "assets/JetBrains-Mono-OFL.txt",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        },
+        {
+          "path": "assets/inter-latin.woff2",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        },
+        {
+          "path": "assets/inter-latin-ext.woff2",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        },
+        {
+          "path": "assets/literata-latin.woff2",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        },
+        {
+          "path": "assets/literata-latin-ext.woff2",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        },
+        {
+          "path": "assets/jetbrains-mono-latin.woff2",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        },
+        {
+          "path": "assets/jetbrains-mono-latin-ext.woff2",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        }
+      ]
+    },
+    {
+      "id": "examples",
+      "title": {
+        "lv": "Bezsaistes piemēri",
+        "en": "Offline examples"
+      },
+      "zip": true,
+      "files": [
+        {
+          "path": "examples/README.md",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        },
+        {
+          "path": "examples/offline_crawl.json",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        },
+        {
+          "path": "examples/observations.json",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "title": {
+        "lv": "Pakotnes dati",
+        "en": "Package data"
+      },
+      "zip": true,
+      "files": [
+        {
+          "path": "manifest.json",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        },
+        {
+          "path": "view.json",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        }
+      ]
+    }
+  ],
+  "ui": {
+    "tab_settings": {
+      "lv": "Iestatījumi",
+      "en": "Settings"
+    },
+    "overview_example": {
+      "lv": "Skatīt report piemēru →",
+      "en": "See report example →"
+    },
+    "qs_sub": {
+      "lv": "Iekopē pieprasījumu AI, kuram pieejami šīs metodes faili un tavi atļautie avoti.",
+      "en": "Copy the request into an AI that has this method’s files and your authorised sources."
+    },
+    "onboarding": {
+      "lv": "Lasīt darba instrukciju",
+      "en": "Read the work instructions"
+    },
+    "tab_log": {
+      "lv": "Izmaiņas",
+      "en": "Changes"
+    }
+  },
+  "layout": {
+    "tabs": [
+      "overview",
+      "principles",
+      "flow",
+      "example",
+      "log"
+    ],
+    "overview": {
+      "compact": true,
+      "hideRelated": true
+    },
+    "overviewFiles": false,
+    "filesTab": "principles",
+    "filesTitle": {
+      "lv": "Metode un tās palīgi",
+      "en": "Method and its helpers"
+    },
+    "filesNote": {
+      "lv": "ZIP ir metodes un koda tekstu komplekts. Pilnam HTML reportam kopē visu GEO7 mapi ar esošajiem assets/fontiem; kontu autorizācija un privātie auditi neietilpst.",
+      "en": "The ZIP contains method and code text. For a complete HTML report copy the entire GEO7 folder with its existing assets/fonts; account authorisation and private audits are excluded."
+    },
+    "exampleTab": true,
+    "changesOnly": true,
+    "overviewBrief": {
+      "title": {
+        "lv": "Ko iegūsti",
+        "en": "What you get"
+      },
+      "items": [
+        {
+          "title": {
+            "lv": "Pamatota prioritāte",
+            "en": "A justified priority"
+          },
+          "text": {
+            "lv": "Novērojums → biznesa nozīme → konkrēts labojums.",
+            "en": "Observation → business relevance → specific improvement."
+          }
+        },
+        {
+          "title": {
+            "lv": "Lapas briefs",
+            "en": "A page brief"
+          },
+          "text": {
+            "lv": "Īstā klienta jautājums, pierādījumi, struktūra un CTA.",
+            "en": "The intended customer’s question, evidence, structure and CTA."
+          }
+        },
+        {
+          "title": {
+            "lv": "Pārbaudāms iznākums",
+            "en": "A verifiable outcome"
+          },
+          "text": {
+            "lv": "Avoti, owner, pieņemšanas kritērijs un mērījuma trūkumi.",
+            "en": "Sources, owner, acceptance criterion and measurement gaps."
+          }
+        }
+      ],
+      "note": {
+        "lv": "Sāc ar vienu jautājumu un vienu lapu. Skats pats neveic izsaukumus.",
+        "en": "Start with one question and one page. The guide itself makes no calls."
+      }
+    }
+  },
+  "guides": {
+    "principles": {
+      "eyebrow": "GEO7 · Decisions",
+      "title": {
+        "lv": "Kā GEO7 izvēlas vērtīgo",
+        "en": "How GEO7 selects useful work"
+      },
+      "lead": {
+        "lv": "No tehniska novērojuma līdz klienta nodomam un pārbaudāmam labojumam. Atrodamība palīdz kvalificētai sarunai.",
+        "en": "From a technical observation to customer intent and a verifiable improvement. Discoverability supports a qualified conversation."
+      },
+      "sections": [
+        {
+          "title": {
+            "lv": "Pieci atlases principi",
+            "en": "Five selection principles"
+          },
+          "rows": [
+            {
+              "label": {
+                "lv": "Klienta nodoms",
+                "en": "Customer intent"
+              },
+              "text": {
+                "lv": "Jautājums atbilst piedāvājumam, tirgum un nākamajai darbībai. Mazāks, konkrēts pieprasījums var būt vērtīgāks par plašu tēmu.",
+                "en": "The question fits the offer, market and next action. Smaller, specific demand can be more useful than a broad topic."
+              }
+            },
+            {
+              "label": {
+                "lv": "Bloķētājs pirms apjoma",
+                "en": "Resolve blockers before volume"
+              },
+              "text": {
+                "lv": "Divi dažādi URL atdod vienādu HTTP tekstu → vispirms pārbauda maršrutu/renderu. Indeksācija vēl nav pierādīta.",
+                "en": "Different URLs return identical HTTP text → inspect routing/rendering first. Indexation remains unproven."
+              }
+            },
+            {
+              "label": {
+                "lv": "Konkurents no SERP",
+                "en": "Competitor from the SERP"
+              },
+              "text": {
+                "lv": "Vaicājums + tirgus + laiks + rezultāta URL. Pazīstams zīmols bez šī pamata paliek kandidāts.",
+                "en": "Query + market + time + result URL. A familiar brand without that basis remains a candidate."
+              }
+            },
+            {
+              "label": {
+                "lv": "Pārbaudāms labojums",
+                "en": "Verifiable improvement"
+              },
+              "text": {
+                "lv": "Katram ieteikumam konkrēta lapa, avots, owner un pieņemšanas pārbaude. Schema atbilst redzamajiem faktiem.",
+                "en": "Each recommendation has a page, source, owner and acceptance check. Schema matches visible facts."
+              }
+            },
+            {
+              "label": {
+                "lv": "Biznesa pierādījums",
+                "en": "Business evidence"
+              },
+              "text": {
+                "lv": "Klikšķus, sesijas un kontaktēšanos sasaista ar CRM kvalifikāciju. AI citējums prasa saglabātu Search atbildi.",
+                "en": "Connect clicks, sessions and contact actions to CRM qualification. An AI citation requires a saved Search answer."
+              }
+            }
+          ],
+          "docs": [
+            {
+              "file": "SKILL.md",
+              "label": {
+                "lv": "AI instrukcija",
+                "en": "AI instructions"
+              }
+            }
+          ]
+        },
+        {
+          "title": {
+            "lv": "Ko nozīmē prioritāte",
+            "en": "What priority means"
+          },
+          "text": {
+            "lv": "P1/P2/P3 nosaka darba secību pēc klienta ceļa nozīmes, pierādījuma stipruma un labojuma pārbaudāmības. Kvalitatīvs spriedums; tā nav izmērīta ranga vai AI citēšanas ietekme. Ja pierādījums nepietiek, prioritāte ir pārbaude.",
+            "en": "P1/P2/P3 orders work by customer-path relevance, evidence strength and verifiability. A qualitative judgment, not measured ranking or AI-citation impact. Insufficient evidence makes a check the priority."
+          },
+          "note": {
+            "lv": "Tukšs GSC, HTTP 429 un AI unknown/error paliek nezināms. Nav izdomāta GEO kopvērtējuma vai izaugsmes procenta.",
+            "en": "Empty GSC, HTTP 429 and AI unknown/error stay unknown. No invented GEO score or growth percentage."
+          },
+          "docs": [
+            {
+              "file": "references/METHOD.md",
+              "label": {
+                "lv": "Mērījumi un prioritātes",
+                "en": "Measurements and priorities"
+              }
+            }
+          ]
+        },
+        {
+          "id": "guide-aios",
+          "title": {
+            "lv": "GEO7 kopējā AIOS sistēmā",
+            "en": "GEO7 in the AIOS system"
+          },
+          "text": {
+            "lv": "Saistība: vidēja. Audits un briefs darbojas atsevišķi; pilns sarunu izcelsmes pierādījums un atkārtots mērījums prasa projekta faktus, kontus un CRM. Kvalitatīvs atkarību raksturojums.",
+            "en": "Integration: medium. Audits and briefs work independently; full attribution and repeated measurement require project facts, accounts and CRM. A qualitative dependency assessment."
+          },
+          "rows": [
+            {
+              "label": "01 · Constitution",
+              "text": {
+                "lv": "North Star un sarunu mērķis → atlasa piedāvājumam atbilstošu nodomu un atļauto darbību → darbs ved uz vērtīgu sarunu.",
+                "en": "North Star and conversation goal → select relevant intent and permitted action → support a useful conversation."
+              }
+            },
+            {
+              "label": "02 · Memory",
+              "text": {
+                "lv": "Piedāvājuma fakti, agrāki auditi un CRM → pārbauda hipotēzes un saglabā avotus projektā → izsekojama prioritāte un sarunas izcelsme.",
+                "en": "Offer facts, prior audits and CRM → check hypotheses and preserve sources in the project → traceable priorities and attribution."
+              }
+            },
+            {
+              "label": "03 · Skills",
+              "text": {
+                "lv": "GEO7 dod diagnozi un briefu; izvēlētā izpildes prasme veic labojumu, pārbaude saglabā pierādījumu → viens skaidrs rezultāta atbildīgais.",
+                "en": "GEO7 supplies diagnosis and a brief; your chosen delivery skill implements a change, review preserves evidence → one clear person responsible for the result."
+              }
+            },
+            {
+              "label": "04 · Tools",
+              "text": {
+                "lv": "HTTP un atļautie GSC/GA4/Keyword Planner/SERP dati → nolasa tikai vajadzīgo ar laiku un budžetu → secinājumu var pārbaudīt avotā. Logo nav savienojuma tests.",
+                "en": "HTTP and authorised GSC/GA4/Keyword Planner/SERP data → read only what is needed with time and budget → verify findings at their source. A logo is not a connection test."
+              }
+            },
+            {
+              "label": "05 · Focus",
+              "text": {
+                "lv": "Pieņemtā prioritāte un pauze → izvēlas vienu nākamo lapu vai tikai metodes darbu → paliek aktuālajā projektā bez jauna grafika.",
+                "en": "Accepted priority and pause → choose one next page or method-only work → stay with the current project without a new schedule."
+              }
+            }
+          ],
+          "note": {
+            "lv": "Atsevišķi dod vietni vai HTML, auditoriju/piedāvājumu un tirgu. Bez kontiem nav to datu; bez reālām AI atbildēm nav citējumu; bez CRM nav kvalificētu sarunu pierādījuma.",
+            "en": "Standalone, supply a site or HTML, audience/offer and market. No accounts means no account data; no actual AI answers means no citations; no CRM means no qualified-conversation proof."
+          },
+          "docs": [
+            {
+              "file": "references/METHOD.md",
+              "label": {
+                "lv": "AIOS un patstāvīgais režīms",
+                "en": "AIOS and standalone use"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "flow": {
+    "presentation": "journey",
+    "modeBehavior": "canvas",
+    "revision": "geo7-skills7-2",
+    "width": 1420,
+    "height": 720,
+    "left": 20,
+    "top": 40,
+    "start": "audit",
+    "sequence": [
+      "audit",
+      "keywords",
+      "competitors",
+      "content",
+      "implementation",
+      "measurement"
+    ],
+    "defaultMode": "detailed",
+    "modeLabels": {
+      "detailed": {
+        "lv": "Detalizēti",
+        "en": "Detailed"
+      },
+      "simple": {
+        "lv": "Īsi",
+        "en": "Short"
+      }
+    },
+    "eyebrow": "GEO7 · Workflow",
+    "title": {
+      "lv": "No pierādījuma līdz nākamajai prioritātei",
+      "en": "From evidence to the next priority"
+    },
+    "lead": {
+      "lv": "Seši metodes posmi. Kods atkārto pārbaudes; AI izvēlas un pamato. Faila mezgli ir saglabājami rezultāti.",
+      "en": "Six method stages. Code repeats checks; AI selects and explains. File nodes are outputs to preserve."
+    },
+    "notes": [
+      {
+        "x": 20,
+        "w": 450,
+        "label": {
+          "lv": "Pierādījumi un nodoms",
+          "en": "Evidence and intent"
+        }
+      },
+      {
+        "x": 480,
+        "w": 460,
+        "label": {
+          "lv": "Atšķirība un labojums",
+          "en": "Difference and improvement"
+        }
+      },
+      {
+        "x": 950,
+        "w": 450,
+        "label": {
+          "lv": "Ieviešana un mērījums",
+          "en": "Implementation and measurement"
+        }
+      }
+    ],
+    "goal": {
+      "x": 45,
+      "y": 75,
+      "w": 210,
+      "h": 130,
+      "label": {
+        "lv": "Mērķis",
+        "en": "Goal"
+      },
+      "text": {
+        "lv": "Īstais klients atrod atbildi un nonāk līdz kvalificētai sarunai.",
+        "en": "The intended customer finds an answer and reaches a qualified conversation."
+      }
+    },
+    "nodes": [
+      {
+        "id": "audit",
+        "step": 1,
+        "x": 50,
+        "y": 320,
+        "kind": "you",
+        "icon": "user",
+        "min": true,
+        "label": {
+          "lv": "Audits",
+          "en": "Audit"
+        },
+        "actor": {
+          "lv": "Tu + AI",
+          "en": "You + AI"
+        },
+        "what": {
+          "lv": "Nosaka mērķi, vietni, tirgu, periodu, rezultātu mājvietu un atļaujas. Sāk ar ierobežotu publisku HTTP auditu vai dotu HTML. Noindex, canonical un satura novērojumi nepierāda indeksāciju vai JS renderu. Atļautos kontus lasa tikai atļautā darbā.",
+          "en": "Set the goal, site, market, period, output home and permissions. Start with a bounded public HTTP audit or supplied HTML. Noindex, canonical and content observations do not prove indexation or JS rendering. Read authorised accounts only in an authorised task."
+        },
+        "paragraphs": [
+          {
+            "lv": "Nosaka mērķi, vietni, tirgu, periodu, rezultātu mājvietu un atļaujas. Sāk ar ierobežotu publisku HTTP auditu vai dotu HTML. Noindex, canonical un satura novērojumi nepierāda indeksāciju vai JS renderu. Atļautos kontus lasa tikai atļautā darbā.",
+            "en": "Set the goal, site, market, period, output home and permissions. Start with a bounded public HTTP audit or supplied HTML. Noindex, canonical and content observations do not prove indexation or JS rendering. Read authorised accounts only in an authorised task."
+          }
+        ],
+        "summary": {
+          "lv": "Avota JSON un novērojumi ar laiku/tvērumu.",
+          "en": "Source JSON and observations with time/scope."
+        },
+        "in": {
+          "lv": "Avoti un atļautais uzdevums",
+          "en": "Evidence and authorised task"
+        },
+        "out": {
+          "lv": "Avota JSON un novērojumi ar laiku/tvērumu.",
+          "en": "Source JSON and observations with time/scope."
+        },
+        "files": [
+          "references/METHOD.md",
+          "scripts/audit.py"
+        ],
+        "headerIcons": [
+          "ai"
+        ],
+        "helper": {
+          "title": {
+            "lv": "Esošais Python palīgs",
+            "en": "Existing Python helper"
+          },
+          "text": {
+            "lv": "Atkārtojama datu darbība; lēmumu pamato AI.",
+            "en": "Repeatable data processing; AI explains the decision."
+          },
+          "file": "scripts/audit.py"
+        }
+      },
+      {
+        "id": "keywords",
+        "step": 2,
+        "x": 270,
+        "y": 320,
+        "kind": "ai",
+        "icon": "ai",
+        "min": true,
+        "label": {
+          "lv": "Atslēgvārdi",
+          "en": "Keywords"
+        },
+        "actor": {
+          "lv": "AI",
+          "en": "AI"
+        },
+        "what": {
+          "lv": "Atlasa klienta jautājumu pēc piedāvājuma, valsts/valodas un nodoma. GSC vaicājumus un Keyword Planner idejas vērtē atbilstoši avotam; Ads competition nav SEO difficulty. Katram nodomam piesaista lapu un klienta nākamo darbību.",
+          "en": "Select customer questions by offer, market/language and intent. Assess GSC queries and Keyword Planner ideas according to their source; Ads competition is not SEO difficulty. Map each intent to a page and customer next action."
+        },
+        "paragraphs": [
+          {
+            "lv": "Atlasa klienta jautājumu pēc piedāvājuma, valsts/valodas un nodoma. GSC vaicājumus un Keyword Planner idejas vērtē atbilstoši avotam; Ads competition nav SEO difficulty. Katram nodomam piesaista lapu un klienta nākamo darbību.",
+            "en": "Select customer questions by offer, market/language and intent. Assess GSC queries and Keyword Planner ideas according to their source; Ads competition is not SEO difficulty. Map each intent to a page and customer next action."
+          }
+        ],
+        "summary": {
+          "lv": "Jautājums → nodoms → mērķa lapa; nezināmie atzīmēti.",
+          "en": "Question → intent → target page; unknowns marked."
+        },
+        "in": {
+          "lv": "Avoti un atļautais uzdevums",
+          "en": "Evidence and authorised task"
+        },
+        "out": {
+          "lv": "Jautājums → nodoms → mērķa lapa; nezināmie atzīmēti.",
+          "en": "Question → intent → target page; unknowns marked."
+        },
+        "files": [
+          "references/METHOD.md"
+        ],
+        "headerIcons": [
+          "ai"
+        ]
+      },
+      {
+        "id": "competitors",
+        "step": 3,
+        "x": 490,
+        "y": 320,
+        "kind": "ai",
+        "icon": "ai",
+        "min": true,
+        "label": {
+          "lv": "Konkurenti",
+          "en": "Competitors"
+        },
+        "actor": {
+          "lv": "AI",
+          "en": "AI"
+        },
+        "what": {
+          "lv": "No konkrētā SERP izvēlas līdz pieciem faktiskajiem konkurentiem; saglabā URL, vaicājumu, tirgu un laiku. Salīdzina pierādījumus, piemērus, struktūru un CTA. research_plan.py veido ierobežotu maksas plānu; tas nav rangu rezultāts un neveic izsaukumus.",
+          "en": "Choose up to five actual competitors from the specific SERP; save URLs, query, market and time. Compare evidence, examples, structure and CTA. research_plan.py creates a bounded paid-query plan; it is not a ranking result and makes no calls."
+        },
+        "paragraphs": [
+          {
+            "lv": "No konkrētā SERP izvēlas līdz pieciem faktiskajiem konkurentiem; saglabā URL, vaicājumu, tirgu un laiku. Salīdzina pierādījumus, piemērus, struktūru un CTA. research_plan.py veido ierobežotu maksas plānu; tas nav rangu rezultāts un neveic izsaukumus.",
+            "en": "Choose up to five actual competitors from the specific SERP; save URLs, query, market and time. Compare evidence, examples, structure and CTA. research_plan.py creates a bounded paid-query plan; it is not a ranking result and makes no calls."
+          }
+        ],
+        "summary": {
+          "lv": "Avotu un satura atšķirību tabula vai neizpildīts plāns.",
+          "en": "Source/content-gap table, or an unexecuted plan."
+        },
+        "in": {
+          "lv": "Avoti un atļautais uzdevums",
+          "en": "Evidence and authorised task"
+        },
+        "out": {
+          "lv": "Avotu un satura atšķirību tabula vai neizpildīts plāns.",
+          "en": "Source/content-gap table, or an unexecuted plan."
+        },
+        "files": [
+          "references/METHOD.md",
+          "scripts/research_plan.py"
+        ],
+        "headerIcons": [
+          "ai"
+        ],
+        "helper": {
+          "title": {
+            "lv": "Esošais Python palīgs",
+            "en": "Existing Python helper"
+          },
+          "text": {
+            "lv": "Atkārtojama datu darbība; lēmumu pamato AI.",
+            "en": "Repeatable data processing; AI explains the decision."
+          },
+          "file": "scripts/research_plan.py"
+        }
+      },
+      {
+        "id": "content",
+        "step": 4,
+        "x": 710,
+        "y": 320,
+        "kind": "ai",
+        "icon": "ai",
+        "min": true,
+        "label": {
+          "lv": "Saturs",
+          "en": "Content"
+        },
+        "actor": {
+          "lv": "AI + growth lead",
+          "en": "AI + growth lead"
+        },
+        "what": {
+          "lv": "Apvieno diagnozi un nodomu lapas briefā: viena atbilde, faktu avoti, piemērs, sadaļas, iekšējās saites un CTA. P1/P2/P3 pamato ar klienta ceļu un pierādījumu. AI teksts paliek drafts līdz faktu un īpašnieka pārbaudei.",
+          "en": "Combine diagnosis and intent in a page brief: one answer, factual sources, example, sections, internal links and CTA. Justify P1/P2/P3 using the customer path and evidence. AI text remains a draft until facts and owner review are checked."
+        },
+        "paragraphs": [
+          {
+            "lv": "Apvieno diagnozi un nodomu lapas briefā: viena atbilde, faktu avoti, piemērs, sadaļas, iekšējās saites un CTA. P1/P2/P3 pamato ar klienta ceļu un pierādījumu. AI teksts paliek drafts līdz faktu un īpašnieka pārbaudei.",
+            "en": "Combine diagnosis and intent in a page brief: one answer, factual sources, example, sections, internal links and CTA. Justify P1/P2/P3 using the customer path and evidence. AI text remains a draft until facts and owner review are checked."
+          }
+        ],
+        "summary": {
+          "lv": "Lapas briefs, prioritāte, owner un pieņemšanas pārbaude.",
+          "en": "Page brief, priority, owner and acceptance check."
+        },
+        "in": {
+          "lv": "Avoti un atļautais uzdevums",
+          "en": "Evidence and authorised task"
+        },
+        "out": {
+          "lv": "Lapas briefs, prioritāte, owner un pieņemšanas pārbaude.",
+          "en": "Page brief, priority, owner and acceptance check."
+        },
+        "files": [
+          "references/METHOD.md",
+          "references/REPORTING.md"
+        ],
+        "headerIcons": [
+          "ai"
+        ],
+        "stored": {
+          "title": {
+            "lv": "Saglabā projekta mājvietā",
+            "en": "Preserve in project home"
+          },
+          "text": {
+            "lv": "Lapas briefs, prioritāte, owner un pieņemšanas pārbaude.",
+            "en": "Page brief, priority, owner and acceptance check."
+          }
+        },
+        "storageRef": "project"
+      },
+      {
+        "id": "implementation",
+        "step": 5,
+        "x": 930,
+        "y": 320,
+        "kind": "you",
+        "icon": "user",
+        "min": true,
+        "label": {
+          "lv": "Ieviešana",
+          "en": "Implementation"
+        },
+        "actor": {
+          "lv": "Tu + izstrādātājs pēc vajadzības",
+          "en": "You + a developer as needed"
+        },
+        "what": {
+          "lv": "Sagatavo diff/preview, atkopšanu un pārbaudes. growth lead nosaka biznesa prioritāti; developer palīdz tehniskam labojumam. Publicēšana notiek konkrētās autorizācijas robežās. Pēc ieviešanas atkārto skarto lapu HTTP un vajadzīgo rendera pārbaudi.",
+          "en": "Prepare a diff/preview, recovery and checks. growth lead sets business priority; developer helps with technical changes. Publication follows the specific authorisation. Recheck affected pages with HTTP and required rendering after implementation."
+        },
+        "paragraphs": [
+          {
+            "lv": "Sagatavo diff/preview, atkopšanu un pārbaudes. growth lead nosaka biznesa prioritāti; developer palīdz tehniskam labojumam. Publicēšana notiek konkrētās autorizācijas robežās. Pēc ieviešanas atkārto skarto lapu HTTP un vajadzīgo rendera pārbaudi.",
+            "en": "Prepare a diff/preview, recovery and checks. growth lead sets business priority; developer helps with technical changes. Publication follows the specific authorisation. Recheck affected pages with HTTP and required rendering after implementation."
+          }
+        ],
+        "summary": {
+          "lv": "Pieņemta izmaiņa un kvīts; līdz atļaujai saglabāts drafts.",
+          "en": "Accepted change and receipt; preserved draft until authorised."
+        },
+        "in": {
+          "lv": "Avoti un atļautais uzdevums",
+          "en": "Evidence and authorised task"
+        },
+        "out": {
+          "lv": "Pieņemta izmaiņa un kvīts; līdz atļaujai saglabāts drafts.",
+          "en": "Accepted change and receipt; preserved draft until authorised."
+        },
+        "files": [
+          "references/METHOD.md"
+        ],
+        "headerIcons": [
+          "ai"
+        ]
+      },
+      {
+        "id": "measurement",
+        "step": 6,
+        "x": 1150,
+        "y": 320,
+        "kind": "ai",
+        "icon": "ai",
+        "min": true,
+        "label": {
+          "lv": "Mērījumi",
+          "en": "Measurement"
+        },
+        "actor": {
+          "lv": "AI + growth lead",
+          "en": "AI + growth lead"
+        },
+        "what": {
+          "lv": "Salīdzina vienādus periodus, tirgus un lapas. GSC, GA4 un CRM rāda atšķirīgus ceļa posmus. AI Search vērtē tikai no saglabātām faktiskām atbildēm ar engine/model/laiku; unknown/error nav nulle. report.py apvieno avotus reportā. growth lead izvēlas nākamo pamatoto prioritāti.",
+          "en": "Compare matching periods, markets and pages. GSC, GA4 and CRM describe different stages. Evaluate AI Search only from saved actual answers with engine/model/time; unknown/error is not zero. report.py combines evidence into a report. growth lead selects the next justified priority."
+        },
+        "paragraphs": [
+          {
+            "lv": "Salīdzina vienādus periodus, tirgus un lapas. GSC, GA4 un CRM rāda atšķirīgus ceļa posmus. AI Search vērtē tikai no saglabātām faktiskām atbildēm ar engine/model/laiku; unknown/error nav nulle. report.py apvieno avotus reportā. growth lead izvēlas nākamo pamatoto prioritāti.",
+            "en": "Compare matching periods, markets and pages. GSC, GA4 and CRM describe different stages. Evaluate AI Search only from saved actual answers with engine/model/time; unknown/error is not zero. report.py combines evidence into a report. growth lead selects the next justified priority."
+          }
+        ],
+        "summary": {
+          "lv": "Report, avoti, mērījumu trūkumi un nākamā prioritāte.",
+          "en": "Report, sources, measurement gaps and next priority."
+        },
+        "in": {
+          "lv": "Avoti un atļautais uzdevums",
+          "en": "Evidence and authorised task"
+        },
+        "out": {
+          "lv": "Report, avoti, mērījumu trūkumi un nākamā prioritāte.",
+          "en": "Report, sources, measurement gaps and next priority."
+        },
+        "files": [
+          "scripts/report.py",
+          "scripts/ai_visibility.py",
+          "references/REPORTING.md"
+        ],
+        "headerIcons": [
+          "ai"
+        ],
+        "helper": {
+          "title": {
+            "lv": "Esošais Python palīgs",
+            "en": "Existing Python helper"
+          },
+          "text": {
+            "lv": "Atkārtojama datu darbība; lēmumu pamato AI.",
+            "en": "Repeatable data processing; AI explains the decision."
+          },
+          "file": "scripts/report.py"
+        },
+        "stored": {
+          "title": {
+            "lv": "Saglabā projekta mājvietā",
+            "en": "Preserve in project home"
+          },
+          "text": {
+            "lv": "Report, avoti, mērījumu trūkumi un nākamā prioritāte.",
+            "en": "Report, sources, measurement gaps and next priority."
+          }
+        },
+        "storageRef": "project"
+      },
+      {
+        "id": "audit-code",
+        "x": 300,
+        "y": 85,
+        "kind": "py",
+        "icon": "python",
+        "label": "audit.py",
+        "caption": {
+          "lv": "HTTP parseris",
+          "en": "HTTP parser"
+        },
+        "detailFor": "audit",
+        "files": [
+          "scripts/audit.py"
+        ]
+      },
+      {
+        "id": "plan-code",
+        "x": 665,
+        "y": 85,
+        "kind": "py",
+        "icon": "python",
+        "label": "research_plan.py",
+        "caption": {
+          "lv": "Plāns bez izsaukuma",
+          "en": "Plan without a call"
+        },
+        "detailFor": "competitors",
+        "files": [
+          "scripts/research_plan.py"
+        ]
+      },
+      {
+        "id": "sources",
+        "artifact": true,
+        "x": 220,
+        "y": 525,
+        "w": 190,
+        "h": 100,
+        "kind": "tool",
+        "icon": "file",
+        "label": {
+          "lv": "Avota JSON",
+          "en": "Source JSON"
+        },
+        "caption": {
+          "lv": "Laiks + tvērums",
+          "en": "Time + scope"
+        },
+        "detailFor": "audit",
+        "files": []
+      },
+      {
+        "id": "brief",
+        "artifact": true,
+        "x": 690,
+        "y": 525,
+        "w": 190,
+        "h": 100,
+        "kind": "tool",
+        "icon": "file",
+        "label": {
+          "lv": "Lapas briefs",
+          "en": "Page brief"
+        },
+        "caption": {
+          "lv": "Prioritāte + pieņemšana",
+          "en": "Priority + acceptance"
+        },
+        "detailFor": "content",
+        "files": []
+      },
+      {
+        "id": "report-code",
+        "x": 1070,
+        "y": 85,
+        "kind": "py",
+        "icon": "python",
+        "label": "report.py",
+        "caption": {
+          "lv": "Savieno avotus",
+          "en": "Combines sources"
+        },
+        "detailFor": "measurement",
+        "files": [
+          "scripts/report.py"
+        ]
+      },
+      {
+        "id": "report",
+        "artifact": true,
+        "x": 1130,
+        "y": 525,
+        "w": 220,
+        "h": 100,
+        "kind": "tool",
+        "icon": "file",
+        "label": "HTML / MD / JSON",
+        "caption": {
+          "lv": "Report + trūkumi",
+          "en": "Report + gaps"
+        },
+        "detailFor": "measurement",
+        "files": []
+      }
+    ],
+    "edges": [
+      [
+        "audit",
+        "keywords"
+      ],
+      [
+        "keywords",
+        "competitors"
+      ],
+      [
+        "competitors",
+        "content"
+      ],
+      [
+        "content",
+        "implementation"
+      ],
+      [
+        "implementation",
+        "measurement"
+      ],
+      [
+        "audit-code",
+        "audit",
+        "side"
+      ],
+      [
+        "plan-code",
+        "competitors",
+        "side"
+      ],
+      [
+        "audit",
+        "sources",
+        "side"
+      ],
+      [
+        "content",
+        "brief",
+        "side"
+      ],
+      [
+        "report-code",
+        "measurement",
+        "side"
+      ],
+      [
+        "measurement",
+        "report",
+        "side"
+      ],
+      [
+        "measurement",
+        "keywords",
+        "loop",
+        {
+          "path": "M 1205 365 C 1205 685, 325 685, 325 415",
+          "label": {
+            "lv": "Rezultāts maina nākamo prioritāti",
+            "en": "Outcomes inform the next priority"
+          },
+          "x": 770,
+          "y": 680
+        }
+      ]
+    ],
+    "stepsTitle": {
+      "lv": "Pilnā darba secība",
+      "en": "Full work sequence"
+    },
+    "stepLabel": {
+      "lv": "Posms",
+      "en": "Stage"
+    },
+    "resultLabel": {
+      "lv": "Rezultāts",
+      "en": "Output"
+    },
+    "docsLabel": {
+      "lv": "Avoti un kods",
+      "en": "Sources and code"
+    },
+    "legend": {
+      "you": {
+        "lv": "Tu",
+        "en": "You"
+      },
+      "ai": "AI",
+      "tool": {
+        "lv": "Saglabāts fails",
+        "en": "Saved file"
+      },
+      "py": "Python",
+      "loop": {
+        "lv": "Pārtraukta bulta = nākamais aplis",
+        "en": "Dashed arrow = next cycle"
+      }
+    },
+    "modeNote": {
+      "lv": "Mainās tikai shēma. Pilnie apraksti zem abām ir vienādi; īsais skats neatceļ pārbaudes vai atļaujas.",
+      "en": "Only the diagram changes. Full descriptions below are identical; the short view retains all checks and permissions."
+    },
+    "note": {
+      "lv": "Skats nepalaiž auditu, kontus vai grafiku un nepublicē vietni.",
+      "en": "The guide does not run an audit, call accounts, schedule or publish a site."
+    },
+    "simple": {
+      "width": 1000,
+      "height": 330,
+      "goal": {
+        "lv": "Mērķis: atrastā atbilde ved uz kvalificētu sarunu.",
+        "en": "Goal: a discovered answer leads to a qualified conversation."
+      },
+      "nodes": [
+        {
+          "id": "input",
+          "target": "audit",
+          "kind": "you",
+          "icon": "user",
+          "label": {
+            "lv": "Nosaki jautājumu",
+            "en": "Set the question"
+          },
+          "caption": {
+            "lv": "Mērķis un robežas",
+            "en": "Goal and scope"
+          },
+          "x": 40,
+          "y": 110
+        },
+        {
+          "id": "evidence",
+          "target": "competitors",
+          "kind": "ai",
+          "icon": "ai",
+          "label": {
+            "lv": "Pārbaudi avotus",
+            "en": "Check evidence"
+          },
+          "caption": {
+            "lv": "Audits, nodoms, SERP",
+            "en": "Audit, intent, SERP"
+          },
+          "x": 260,
+          "y": 110
+        },
+        {
+          "id": "draft",
+          "target": "content",
+          "kind": "ai",
+          "icon": "file",
+          "label": {
+            "lv": "Sagatavo labojumu",
+            "en": "Prepare improvement"
+          },
+          "caption": {
+            "lv": "Briefs un pieņemšana",
+            "en": "Brief and acceptance"
+          },
+          "x": 480,
+          "y": 110
+        },
+        {
+          "id": "outcome",
+          "target": "measurement",
+          "kind": "ai",
+          "icon": "file",
+          "label": {
+            "lv": "Ievies un salīdzini",
+            "en": "Implement and compare"
+          },
+          "caption": {
+            "lv": "Atļauja, avoti, sarunas",
+            "en": "Permission, sources, conversations"
+          },
+          "x": 700,
+          "y": 110
+        }
+      ],
+      "edges": [
+        [
+          "input",
+          "evidence"
+        ],
+        [
+          "evidence",
+          "draft"
+        ],
+        [
+          "draft",
+          "outcome"
+        ],
+        [
+          "outcome",
+          "evidence",
+          "loop"
+        ]
+      ],
+      "loopLabel": {
+        "lv": "Mērījums → nākamā prioritāte",
+        "en": "Measurement → next priority"
+      }
+    }
+  },
+  "preview": {
+    "eyebrow": "GEO7 · Example",
+    "title": {
+      "lv": "Kompakts prioritāšu reports",
+      "en": "Compact priority report"
+    },
+    "lead": {
+      "lv": "Trīs secinājumi vienam izdomātam B2B uzņēmumam: pierādījums, lēmums un pārbaude.",
+      "en": "Three findings for a fictional B2B business: evidence, decision and a check."
+    },
+    "label": {
+      "lv": "Sintētisks mācību piemērs · nav veikts crawl, kontu izsaukums vai publikācija",
+      "en": "Synthetic teaching example · no crawl, account call or publication"
+    },
+    "period": {
+      "lv": "Izdomāta situācija · 22.10.2026.",
+      "en": "Fictional scenario · 22 Oct 2026"
+    },
+    "headline": {
+      "lv": "Vispirms atšķir lapu atbildes; tad uzlabo klienta ceļu.",
+      "en": "First distinguish page answers; then improve the customer path."
+    },
+    "summary": {
+      "lv": "example.com piedāvā AI darba ieviešanu maziem uzņēmumiem. Mērķis: kvalificēta ieviešanas saruna.",
+      "en": "example.com offers AI work implementation for small businesses. Goal: a qualified implementation conversation."
+    },
+    "actionLabel": {
+      "lv": "Nākamais solis:",
+      "en": "Next step:"
+    },
+    "waitLabel": {
+      "lv": "Kas nav pierādīts",
+      "en": "What is unproven"
+    },
+    "draftLabel": {
+      "lv": "Labojuma briefs",
+      "en": "Improvement brief"
+    },
+    "copyLabel": {
+      "lv": "Kopēt briefu",
+      "en": "Copy brief"
+    },
+    "sourceDoc": "references/REPORTING.md",
+    "sourceLabel": {
+      "lv": "Report līgums",
+      "en": "Report contract"
+    },
+    "note": {
+      "lv": "Visi novērojumi izdomāti. P1/P2 ir pamatota parauga secība; nav izmērīta izaugsme, AI citējumi vai sarunu skaits. Nekas nav nosūtīts vai publicēts.",
+      "en": "All observations are fictional. P1/P2 is a justified sample order; no measured growth, AI citations or conversation count. Nothing has been sent or published."
+    },
+    "items": [
+      {
+        "id": "routing",
+        "icon": "file",
+        "channel": {
+          "lv": "Tehnika",
+          "en": "Technical"
+        },
+        "priority": "P1",
+        "title": {
+          "lv": "Divi pirkšanas nodomi saņem vienu atbildi",
+          "en": "Two purchase intents receive one answer"
+        },
+        "brief": {
+          "lv": "developer: atšķir lapu atbildes un pārbauda renderu.",
+          "en": "developer: distinguish page answers and check rendering."
+        },
+        "contextLabel": {
+          "lv": "Izdomātais novērojums",
+          "en": "Fictional observation"
+        },
+        "quote": {
+          "lv": "/services un /training parauga HTML ir vienāds normalizētais teksts.",
+          "en": "/services and /training sample HTML has identical normalized text."
+        },
+        "why": {
+          "lv": "P1, jo diviem klienta jautājumiem nav atšķirīgas atbildes. Pamato route/render pārbaudi; indeksācijas vai ranga zudums nav pierādīts.",
+          "en": "P1 because two customer questions lack distinct answers. Justifies a route/render check; lost indexation or ranking is unproven."
+        },
+        "action": {
+          "lv": "developer sagatavo preview ar saturu katram URL; growth lead pārbauda nodomu un CTA.",
+          "en": "developer prepares content per URL in a preview; growth lead checks intent and CTA."
+        },
+        "draft": {
+          "lv": "Lapa: /services. Auditorija: īpašnieks ar atkārtotu darba procesu. Atbilde: kā ieviešana notiek vienā procesā. Pierādījums: pārbaudīta demonstrācija. CTA: pārrunāt vienu konkrētu procesu. Pieņemšana: /services un /training HTTP teksts, H1 un pārlūka saturs atbilst saviem nodomiem. Publicēt atļautā darbā.",
+          "en": "Page: /services. Audience: an owner with a recurring process. Answer: how implementation works for one process. Evidence: verified demonstration. CTA: discuss one concrete process. Acceptance: /services and /training HTTP text, H1 and browser content match their respective intents. Publish within an authorised task."
+        },
+        "source": "DEMO-HTTP-01 · synthetic HTML fixture",
+        "draftNote": {
+          "lv": "JS render, indeksācija un biznesa ietekme vēl nav pārbaudīti.",
+          "en": "JS rendering, indexation and business impact are unchecked."
+        }
+      },
+      {
+        "id": "intent",
+        "icon": "eye",
+        "channel": {
+          "lv": "Nodoms",
+          "en": "Intent"
+        },
+        "priority": "P2",
+        "title": {
+          "lv": "Konkrēts ieviešanas jautājums pirms plaša “AI rīki”",
+          "en": "Specific implementation question before broad “AI tools”"
+        },
+        "brief": {
+          "lv": "growth lead: vienam jautājumam atbilstoša lapa.",
+          "en": "growth lead: a relevant page for one question."
+        },
+        "contextLabel": {
+          "lv": "Izdomātā atlase",
+          "en": "Fictional selection"
+        },
+        "quote": {
+          "lv": "“Kā sakārtot piedāvājumu gatavošanu ar AI?” atbilst pakalpojumam; “AI rīki” ir plašs.",
+          "en": "“How can AI improve preparing proposals?” fits the service; “AI tools” is broad."
+        },
+        "why": {
+          "lv": "Atbilst vienam procesam un nākamajai sarunai. Apjoms nav mērīts; P2 nav SEO grūtības rezultāts.",
+          "en": "Fits one process and the next conversation. Volume is unmeasured; P2 is not an SEO-difficulty result."
+        },
+        "action": {
+          "lv": "Sagatavo lapas briefu ar procesa piemēru; konkurentus apstiprina pēc konkrēta SERP avota.",
+          "en": "Prepare a page brief with a process example; confirm competitors from a specific SERP source."
+        },
+        "followup": {
+          "lv": "Nav iegūts apjoms vai dzīvs SERP. Kandidāti vēl nav pierādīti konkurenti.",
+          "en": "No volume or live SERP collected. Candidates are not yet proven competitors."
+        },
+        "source": "DEMO-INTENT-02 · fictional offer"
+      },
+      {
+        "id": "measurement",
+        "icon": "check",
+        "channel": {
+          "lv": "Mērījumi",
+          "en": "Measurement"
+        },
+        "priority": "P2",
+        "title": {
+          "lv": "Kontaktēšanās notikums vēl nav kvalificēta saruna",
+          "en": "A contact event is not yet a qualified conversation"
+        },
+        "brief": {
+          "lv": "growth lead: notikums → CRM saruna → kvalifikācija.",
+          "en": "growth lead: event → CRM conversation → qualification."
+        },
+        "contextLabel": {
+          "lv": "Izdomātais trūkums",
+          "en": "Fictional gap"
+        },
+        "quote": {
+          "lv": "GSC tukšs; PageSpeed kļūda; AI atbilžu nav. CRM sarunas izcelsme nav sasaistīta.",
+          "en": "GSC empty; PageSpeed failed; no AI answers. CRM conversation attribution is unlinked."
+        },
+        "why": {
+          "lv": "Nezināmos datus nevar pārvērst nullē vai izaugsmes procentā. Vispirms nosaka salīdzinājuma pamatu.",
+          "en": "Unknown data cannot become zero or a growth percentage. Define the comparison basis first."
+        },
+        "action": {
+          "lv": "Atļautā nolasīšanā saglabā periodu/avotu; sasaisti kontaktēšanos ar vienu CRM sarunu un tās kvalifikācijas pamatu.",
+          "en": "In an authorised read preserve period/source; link the contact action to one CRM conversation and its qualification basis."
+        },
+        "followup": {
+          "lv": "AI citējumi, CWV un kvalificētās sarunas nav mērītas.",
+          "en": "AI citations, CWV and qualified conversations are unmeasured."
+        },
+        "source": "DEMO-MEASURE-03 · fictional missing-data case"
+      }
+    ]
+  }
+}

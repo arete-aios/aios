@@ -1,0 +1,712 @@
+{
+  "id": "skills7",
+  "name": "SKILLS7",
+  "title": {
+    "lv": "Prasmju izveide, audits un skaidrojums",
+    "en": "Skill creation, audit and explanation"
+  },
+  "version": "2.0.0",
+  "updated_on": "2026-10-22",
+  "author": "Egils Boitmanis / FullDigital",
+  "owner": {
+    "role": "engineering",
+    "label": "Maintainer / Engineering"
+  },
+  "status_label": {
+    "lv": "Pārnesama metode un pilns skata dzinējs",
+    "en": "Portable method and complete viewer engine"
+  },
+  "purpose": {
+    "lv": "No atkārtotas vajadzības līdz pārbaudāmai AI metodei, tās skaidrojumam un piegādei.",
+    "en": "From a recurring need to a verifiable AI method, its guide and delivery."
+  },
+  "standard": "references/VIEW-CONTRACT.md",
+  "overview": {
+    "title": {
+      "lv": "Izveido jaunu prasmi. Uzlabo esošo.",
+      "en": "Create a new skill. Improve an existing one."
+    },
+    "summary": {
+      "lv": "Nosaki, kas AI jādara, pēc kā jāizvēlas un kā rezultātu pārbaudīt. SKILLS7 sakārto instrukciju, sistēmas saiknes un saprotamu HTML skatu.",
+      "en": "Define what AI should do, how it should choose and how to verify the result. SKILLS7 brings together instructions, system integration and a clear HTML guide."
+    },
+    "starting_prompt": {
+      "lv": "SKILLS7 — izveido jaunu prasmi vai auditē esošo. Sāc ar manu mērķi un esošajiem avotiem; sagatavo metodi, darba plūsmu un pārbaudāmu rezultātu.",
+      "en": "SKILLS7 — create a new skill or audit an existing one. Start with my goal and existing sources; prepare the method, workflow and a verifiable result."
+    },
+    "additional_prompts": [
+      {
+        "id": "visualise-any-skill",
+        "title": {
+          "lv": "Vizualizē jebkuru prasmi",
+          "en": "Visualise any skill"
+        },
+        "description": {
+          "lv": "Dod savam AI SKILLS7 un GitHub saiti. Tas izskaidros avotos redzamo darba plūsmu, rīkus un robežas; prasmi neizpildīs.",
+          "en": "Give your AI SKILLS7 and a GitHub link. It will explain the source-backed workflow, tools and boundaries without executing the skill."
+        },
+        "prompt": "**Visualise any skill with SKILLS7.** You have the SKILLS7 skill above. Use it in audit + view mode on this external skill: **[paste a GitHub link to a skill folder or its SKILL.md]**.\n1. Open the link. Read SKILL.md and only the files it references (references/, scripts/, examples/). If you cannot open links, ask me to paste the SKILL.md text. Do not run scripts or connect any accounts.\n2. Build one self-contained HTML page (single file, no external libraries) with: **Overview** — what it does, when it triggers, what you get at the end; **Workflow** — every step in order, decision points, loops and where a human approves, with the tools each step uses (MCP servers, scripts, APIs, apps, files read or written); **Simple view** — the same flow in 5–7 boxes for a beginner; **What it needs** — accounts, permissions, installs, costs, and what it can change or send; **Risks and limits**; **In my AIOS** — how it connects to my Constitution, Memory, Skills, Tools and Focus, and whether it is worth adding or one good prompt is enough.\n3. Describe only what the files say; mark anything you infer as \"inferred\".\n4. Give me the HTML as a downloadable file, then a three-line summary.",
+        "copy_label": {
+          "lv": "Kopēt “Visualise any skill”",
+          "en": "Copy “Visualise any skill”"
+        },
+        "file": "references/VISUALISE-ANY-SKILL.md"
+      }
+    ]
+  },
+  "workflow": [
+    {
+      "id": "need",
+      "number": "01",
+      "name": {
+        "lv": "Nosaki vajadzību",
+        "en": "Define the need"
+      },
+      "doc": "references/METHOD.md#1-nosaki-vajadzību",
+      "label": {
+        "lv": "Mērķis, izveide vai audits un sagaidāmais rezultāts.",
+        "en": "Goal, creation or audit, and the expected result."
+      },
+      "output": {
+        "lv": "Mērķis, izveide vai audits un sagaidāmais rezultāts.",
+        "en": "Goal, creation or audit, and the expected result."
+      }
+    },
+    {
+      "id": "sources",
+      "number": "02",
+      "name": {
+        "lv": "Pārbaudi pamatu",
+        "en": "Check the foundation"
+      },
+      "doc": "references/METHOD.md#2-pārbaudi-avotus-un-robežas",
+      "label": {
+        "lv": "Esošā metode, avoti, owner un atļautās darbības.",
+        "en": "Existing method, sources, owner and permitted actions."
+      },
+      "output": {
+        "lv": "Esošā metode, avoti, owner un atļautās darbības.",
+        "en": "Existing method, sources, owner and permitted actions."
+      }
+    },
+    {
+      "id": "decisions",
+      "number": "03",
+      "name": {
+        "lv": "Definē principus",
+        "en": "Define decision rules"
+      },
+      "doc": "references/METHOD.md#3-definē-lēmumus-un-aios-saikni",
+      "label": {
+        "lv": "Kā AI izvēlas un ko dod kopējā AIOS sistēma.",
+        "en": "How AI chooses and what the AIOS system contributes."
+      },
+      "output": {
+        "lv": "Kā AI izvēlas un ko dod kopējā AIOS sistēma.",
+        "en": "How AI chooses and what the AIOS system contributes."
+      }
+    },
+    {
+      "id": "method",
+      "number": "04",
+      "name": {
+        "lv": "Uzraksti metodi",
+        "en": "Write the method"
+      },
+      "doc": "references/METHOD.md#4-uzraksti-instrukciju-un-vajadzīgos-palīgus",
+      "label": {
+        "lv": "Īss SKILL.md, vajadzīgās atsauces un lietderīgs kods.",
+        "en": "Concise SKILL.md, necessary references and useful code."
+      },
+      "output": {
+        "lv": "Īss SKILL.md, vajadzīgās atsauces un lietderīgs kods.",
+        "en": "Concise SKILL.md, necessary references and useful code."
+      }
+    },
+    {
+      "id": "explain",
+      "number": "05",
+      "name": {
+        "lv": "Izskaidro cilvēkam",
+        "en": "Explain it to people"
+      },
+      "doc": "references/METHOD.md#5-izveido-skaidrojumu-un-piemēru",
+      "label": {
+        "lv": "Pārskats, principi, shēma un konkrēts piemērs.",
+        "en": "Overview, principles, diagram and a concrete example."
+      },
+      "output": {
+        "lv": "Pārskats, principi, shēma un konkrēts piemērs.",
+        "en": "Overview, principles, diagram and a concrete example."
+      }
+    },
+    {
+      "id": "verify",
+      "number": "06",
+      "name": {
+        "lv": "Pārbaudi rezultātu",
+        "en": "Verify the result"
+      },
+      "doc": "references/METHOD.md#6-pārbaudi-uzvedību-un-skatu",
+      "label": {
+        "lv": "Reālistisks pieprasījums, rīku robežas un HTML pārbaude.",
+        "en": "Realistic request, tool boundaries and HTML checks."
+      },
+      "output": {
+        "lv": "Reālistisks pieprasījums, rīku robežas un HTML pārbaude.",
+        "en": "Realistic request, tool boundaries and HTML checks."
+      }
+    },
+    {
+      "id": "deliver",
+      "number": "07",
+      "name": {
+        "lv": "Piegādā un saglabā",
+        "en": "Deliver and preserve"
+      },
+      "doc": "references/METHOD.md#7-piegādā-un-saglabā-turpinājumu",
+      "label": {
+        "lv": "Versija, atļautā publikācija, pierādījumi un turpinājums.",
+        "en": "Version, authorised publication, evidence and handoff."
+      },
+      "output": {
+        "lv": "Versija, atļautā publikācija, pierādījumi un turpinājums.",
+        "en": "Version, authorised publication, evidence and handoff."
+      }
+    }
+  ],
+  "tool_groups": [
+    {
+      "id": "prepare",
+      "title": {
+        "en": "Prepare",
+        "lv": "Sagatavošana"
+      },
+      "description": {
+        "lv": "Vajadzība, fakti, lēmumi un sistēmas saiknes.",
+        "en": "Need, facts, decisions and system integration."
+      },
+      "requirement_label": {
+        "en": "The skill's own files and an AI that can read them",
+        "lv": "Prasmes faili un AI, kas tos var lasīt"
+      },
+      "tools": [
+        "skill-files",
+        "ai-workspace"
+      ]
+    },
+    {
+      "id": "build",
+      "title": {
+        "en": "Build",
+        "lv": "Būve"
+      },
+      "description": {
+        "en": "Turn the content into one offline page.",
+        "lv": "No satura uztaisi vienu bezsaistes lapu."
+      },
+      "requirement_label": {
+        "en": "Python required · Node for the ZIP check",
+        "lv": "Vajag Python · Node — ZIP pārbaudei"
+      },
+      "tools": [
+        "python",
+        "node",
+        "logo-library"
+      ]
+    },
+    {
+      "id": "review",
+      "title": {
+        "en": "Review",
+        "lv": "Pārbaude"
+      },
+      "description": {
+        "lv": "Pārbaudi uzvedību un piegādi; saglabā faktisko statusu.",
+        "en": "Verify behavior and delivery; preserve actual status."
+      },
+      "requirement_label": {
+        "en": "Owner review required · browser strongly recommended",
+        "lv": "Vajag īpašnieka vērtējumu · ļoti ieteicams pārlūks"
+      },
+      "tools": [
+        "browser",
+        "owner-review",
+        "cox7"
+      ]
+    }
+  ],
+  "tools": [
+    {
+      "id": "skill-files",
+      "name": {
+        "en": "The skill's own files",
+        "lv": "Prasmes faili"
+      },
+      "icon_id": "doc",
+      "importance": 5,
+      "requirement": "required",
+      "purpose": {
+        "en": "SKILL.md, manifest.json, method and references.",
+        "lv": "SKILL.md, manifest.json, metode un atsauces."
+      },
+      "scope": {
+        "en": "Read inside the skill folder only.",
+        "lv": "Lasa tikai prasmes mapē."
+      },
+      "limit": {
+        "en": "The viewer shows what the files say; it does not prove the skill works.",
+        "lv": "Skats rāda to, kas rakstīts failos; tas nepierāda, ka prasme strādā."
+      }
+    },
+    {
+      "id": "ai-workspace",
+      "name": {
+        "en": "An AI that can read and write files",
+        "lv": "AI, kas var lasīt un rakstīt failus"
+      },
+      "icon_id": "ai",
+      "importance": 5,
+      "requirement": "required",
+      "purpose": {
+        "lv": "Izveido vai auditē lēmumu metodi; sagatavo skaidrojumu un piemēru.",
+        "en": "Create or audit the decision method; prepare its explanation and example."
+      },
+      "scope": {
+        "lv": "Rakstīšana seko tavas vides atļaujām un failu noteikumiem.",
+        "en": "Writes follow your environment’s permissions and filing rules."
+      },
+      "limit": {
+        "en": "Must not invent tools, results or scores.",
+        "lv": "Nedrīkst izdomāt rīkus, rezultātus vai vērtējumus."
+      }
+    },
+    {
+      "id": "python",
+      "name": {
+        "en": "Python 3",
+        "lv": "Python 3"
+      },
+      "icon_id": "python",
+      "importance": 5,
+      "requirement": "required",
+      "purpose": {
+        "lv": "Strukturāls audits, determinēta skata būve un pārbaude.",
+        "en": "Structural audit, deterministic viewer build and checks."
+      },
+      "scope": {
+        "en": "Standard library only; no network.",
+        "lv": "Tikai standarta bibliotēka; bez tīkla."
+      },
+      "limit": {
+        "en": "Does not open a browser.",
+        "lv": "Neatver pārlūku."
+      }
+    },
+    {
+      "id": "node",
+      "name": {
+        "en": "Node.js",
+        "lv": "Node.js"
+      },
+      "icon_id": "build",
+      "importance": 3,
+      "requirement": "recommended",
+      "purpose": {
+        "en": "Runs the page's own ZIP code for the byte check.",
+        "lv": "Palaiž lapas pašas ZIP kodu baitu pārbaudei."
+      },
+      "scope": {
+        "en": "verify_zip.js only.",
+        "lv": "Tikai verify_zip.js."
+      },
+      "limit": {
+        "en": "Without it, check_view.py reports the ZIP check as failed.",
+        "lv": "Bez tā check_view.py ZIP pārbaudi atzīmē kā neizdevušos."
+      }
+    },
+    {
+      "id": "logo-library",
+      "name": {
+        "lv": "Iegultās rīku ikonas",
+        "en": "Bundled provider icons"
+      },
+      "icon_id": "skill",
+      "importance": 4,
+      "requirement": "required",
+      "purpose": {
+        "lv": "Atbilstošie attēli ir assets/icons ar izcelsmi un tiesībām.",
+        "en": "Required images are in assets/icons with provenance and rights."
+      },
+      "scope": {
+        "lv": "Lokāli resursi, bez ārējas bibliotēkas.",
+        "en": "Local assets; no external library."
+      },
+      "limit": {
+        "en": "A logo does not prove an account connection.",
+        "lv": "Logo nepierāda konta savienojumu."
+      }
+    },
+    {
+      "id": "browser",
+      "name": {
+        "en": "Browser check",
+        "lv": "Pārlūka pārbaude"
+      },
+      "icon_id": "googlechrome",
+      "importance": 4,
+      "requirement": "recommended",
+      "purpose": {
+        "en": "Look at 1440 px and 390 px, EN and LV.",
+        "lv": "Paskaties 1440 px un 390 px, EN un LV."
+      },
+      "scope": {
+        "lv": "Pieejams izolēts pārlūks vai īpašnieka pārbaude.",
+        "en": "Available isolated browser or owner review."
+      },
+      "limit": {
+        "lv": "Vizuāla pārbaude nepierāda dzīvu kontu darbību.",
+        "en": "Visual checks do not prove live account operation."
+      }
+    },
+    {
+      "id": "owner-review",
+      "name": {
+        "en": "Owner review",
+        "lv": "Īpašnieka vērtējums"
+      },
+      "icon_id": "user",
+      "importance": 5,
+      "requirement": "required",
+      "purpose": {
+        "en": "The owner decides what becomes the accepted view.",
+        "lv": "Īpašnieks izlemj, kas kļūst par pieņemto skatu."
+      },
+      "scope": {
+        "en": "Per skill and version.",
+        "lv": "Katrai prasmei un versijai."
+      },
+      "limit": {
+        "en": "Approval for one skill does not carry over to another.",
+        "lv": "Vienas prasmes apstiprinājums neattiecas uz citu."
+      }
+    },
+    {
+      "id": "cox7",
+      "name": {
+        "lv": "Failu pieņemšana",
+        "en": "File acceptance"
+      },
+      "icon_id": "shield",
+      "importance": 5,
+      "requirement": "required",
+      "purpose": {
+        "en": "Recovery, parent index, catalogue and strict check.",
+        "lv": "Atkopšana, vecāka indekss, katalogs un strict pārbaude."
+      },
+      "scope": {
+        "lv": "Tavas darba vides noteikumi.",
+        "en": "Your workspace’s rules."
+      },
+      "limit": {
+        "en": "Checks indexes, not visual quality.",
+        "lv": "Pārbauda indeksus, ne vizuālo kvalitāti."
+      }
+    }
+  ],
+  "tool_rating": {
+    "label": {
+      "en": "Usefulness for this work",
+      "lv": "Noderīgums šim darbam"
+    },
+    "basis": {
+      "en": "Suggested priorities for building a skill viewer; guidance, not a measured benchmark.",
+      "lv": "Ieteiktās prioritātes prasmes skata būvei; orientieris, ne izmērīts etalons."
+    },
+    "assessed_on": "2026-10-20",
+    "scale": [
+      {
+        "value": 0,
+        "label": {
+          "en": "Not used",
+          "lv": "Neizmanto"
+        }
+      },
+      {
+        "value": 1,
+        "label": {
+          "en": "Nice to have",
+          "lv": "Patīkams papildinājums"
+        }
+      },
+      {
+        "value": 2,
+        "label": {
+          "en": "Useful option",
+          "lv": "Noderīga izvēle"
+        }
+      },
+      {
+        "value": 3,
+        "label": {
+          "en": "Recommended option",
+          "lv": "Ieteicama izvēle"
+        }
+      },
+      {
+        "value": 4,
+        "label": {
+          "en": "Strong default",
+          "lv": "Spēcīgs sākuma variants"
+        }
+      },
+      {
+        "value": 5,
+        "label": {
+          "en": "Core capability",
+          "lv": "Pamata spēja"
+        }
+      }
+    ]
+  },
+  "runs": [],
+  "changelog": [
+    {
+      "version": "2.0.0",
+      "date": "2026-10-22",
+      "changes": [
+        {
+          "lv": "Pilna izveides/audita metode, AIOS sadaļas mērķis un lietderīgs strukturālā audita Python palīgs.",
+          "en": "Full creation/audit method, AIOS explanation purpose and useful structural-audit Python helper."
+        },
+        {
+          "lv": "Pašas prasmes piecu ciļņu skaidrojums ar detalizētu un īsu shēmu, vienādiem aprakstiem un piemēru.",
+          "en": "The skill’s own five-tab guide with detailed/short diagrams, identical descriptions and an example."
+        },
+        {
+          "lv": "Pilns pārnesams bināro resursu arhīvs un otra kopējama uzvedne “Visualise any skill”.",
+          "en": "Complete portable binary-asset archive and second copyable “Visualise any skill” prompt."
+        }
+      ]
+    },
+    {
+      "version": "1.2.4",
+      "date": "2026-10-22",
+      "changes": [
+        {
+          "lv": "Izvēles kompakts Pārskats, no kontiem veidots avotu kopsavilkums un failu bibliotēka izvēlētā cilnē.",
+          "en": "Optional compact Overview, account-derived source summary and file library in a selected guide tab."
+        }
+      ]
+    },
+    {
+      "version": "1.2.3",
+      "date": "2026-10-22",
+      "changes": [
+        {
+          "lv": "Kompaktajām kontu rindām izvēles HTTPS saite uz avota lapu.",
+          "en": "Optional HTTPS source-page link in compact account rows."
+        }
+      ]
+    },
+    {
+      "version": "1.2.2",
+      "date": "2026-10-22",
+      "changes": [
+        {
+          "lv": "Izvēles iestatījumu apakšcilnes un saderība ar iepriekšējām sadaļu saitēm.",
+          "en": "Optional settings subviews and compatibility with previous section links."
+        }
+      ]
+    },
+    {
+      "version": "1.2.1",
+      "date": "2026-10-22",
+      "changes": [
+        {
+          "lv": "Izvēles kompakts metodes darbības lauks Pārskatā ar kategorijām un tiešiem instrukciju avotiem.",
+          "en": "Optional compact behaviour summary in Overview with categories and direct instruction sources."
+        }
+      ]
+    },
+    {
+      "version": "1.2.0",
+      "date": "2026-10-22",
+      "changes": [
+        {
+          "lv": "Izvēles Principu un AIOS cilnes; kompakti konti, ceļi un kanālu padomi.",
+          "en": "Optional Principles and AIOS tabs; compact accounts, paths and channel hints."
+        },
+        {
+          "lv": "Īsa un detalizēta shēma ar identiskiem pilnajiem aprakstiem; soļu skaitu nosaka prasme.",
+          "en": "Short and detailed diagrams with identical full explanations; step count follows the skill."
+        }
+      ]
+    },
+    {
+      "version": "1.1.0",
+      "date": "2026-10-21",
+      "changes": [
+        {
+          "lv": "Izvēles piecu ciļņu izkārtojums ar atsevišķu piemēru un iekšējiem iestatījumiem; īsais metodes apraksts Pārskatā.",
+          "en": "Optional five-tab layout with separate examples and internal setup; brief method in Overview."
+        },
+        {
+          "lv": "Vienots journey audekls, īsi vai detalizēti soļu apraksti, atsevišķas failu un Python lomas.",
+          "en": "One journey canvas, short or detailed step explanations, explicit file and Python roles."
+        },
+        {
+          "lv": "Kompakti piemēri divos izkārtojumos; lēmumu statistika tikai prasmēm ar definētu pamatu.",
+          "en": "Compact examples in two layouts; decision statistics only where a basis is defined."
+        }
+      ]
+    },
+    {
+      "version": "1.0.1",
+      "date": "2026-10-20",
+      "changes": [
+        {
+          "en": "Runs can link to real evidence outside the package (url, urlLabel).",
+          "lv": "Izpildes var saistīt ar īstu pierādījumu ārpus pakotnes (url, urlLabel)."
+        }
+      ]
+    },
+    {
+      "version": "1.0.0",
+      "date": "2026-10-20",
+      "changes": [
+        {
+          "en": "Shared four-tab viewer: Overview, How it works, Workflow canvas, Log.",
+          "lv": "Kopīgs četru ciļņu skats: Pārskats, Kā tas strādā, Darba plūsma, Žurnāls."
+        },
+        {
+          "en": "Builder, checks and byte-identical in-page ZIP; public export without owner data.",
+          "lv": "Būve, pārbaudes un baitu precīzs ZIP no lapas; publisks eksports bez īpašnieka datiem."
+        },
+        {
+          "en": "Fonts, logo and template kept once here; icons from the provider logo library.",
+          "lv": "Fonti, logo un veidne glabājas vienreiz šeit; ikonas no logo bibliotēkas."
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "python3",
+      "purpose": "Python 3.10+ standard library for local build/audit/check",
+      "access": "local"
+    },
+    {
+      "id": "node",
+      "purpose": "Node.js 18+ for true in-page binary ZIP parity",
+      "access": "local"
+    }
+  ],
+  "resources": [
+    "LICENSE.txt",
+    "README.md",
+    "SKILL.md",
+    "SOURCE.json",
+    "assets/README.md",
+    "assets/fonts/Inter-OFL.txt",
+    "assets/fonts/JetBrains-Mono-OFL.txt",
+    "assets/fonts/Literata-OFL.txt",
+    "assets/fonts/README.md",
+    "assets/fonts/fonts.css",
+    "assets/fonts/inter-latin-ext.woff2",
+    "assets/fonts/inter-latin.woff2",
+    "assets/fonts/jetbrains-mono-latin-ext.woff2",
+    "assets/fonts/jetbrains-mono-latin.woff2",
+    "assets/fonts/literata-latin-ext.woff2",
+    "assets/fonts/literata-latin.woff2",
+    "assets/icons/README.md",
+    "assets/icons/Simple-Icons-CC0.txt",
+    "assets/icons/gmail.svg",
+    "assets/icons/googleads.svg",
+    "assets/icons/googleanalytics.svg",
+    "assets/icons/googlechrome.svg",
+    "assets/icons/googlesearchconsole.svg",
+    "assets/icons/posthog.svg",
+    "assets/icons/provenance.json",
+    "assets/icons/python.svg",
+    "assets/icons/slack.svg",
+    "assets/icons/telegram.svg",
+    "assets/icons/whatsapp.svg",
+    "assets/logo-areteaios.svg",
+    "assets/ui.json",
+    "assets/viewer.html",
+    "manifest.json",
+    "references/METHOD.md",
+    "references/README.md",
+    "references/VIEW-CONTRACT.md",
+    "references/VISUALISE-ANY-SKILL.md",
+    "scripts/README.md",
+    "scripts/audit_package.py",
+    "scripts/build_view.py",
+    "scripts/check_view.py",
+    "scripts/verify_zip.js",
+    "view.json",
+    "index.html"
+  ],
+  "ui": {
+    "default_language": "en",
+    "languages": [
+      "en",
+      "lv"
+    ]
+  },
+  "aliases": [
+    "SKILLS7",
+    "SKILL7"
+  ],
+  "distribution": "community",
+  "archive": {
+    "kind": "complete-source",
+    "files": [
+      "LICENSE.txt",
+      "README.md",
+      "SKILL.md",
+      "SOURCE.json",
+      "assets/README.md",
+      "assets/fonts/Inter-OFL.txt",
+      "assets/fonts/JetBrains-Mono-OFL.txt",
+      "assets/fonts/Literata-OFL.txt",
+      "assets/fonts/README.md",
+      "assets/fonts/fonts.css",
+      "assets/fonts/inter-latin-ext.woff2",
+      "assets/fonts/inter-latin.woff2",
+      "assets/fonts/jetbrains-mono-latin-ext.woff2",
+      "assets/fonts/jetbrains-mono-latin.woff2",
+      "assets/fonts/literata-latin-ext.woff2",
+      "assets/fonts/literata-latin.woff2",
+      "assets/icons/README.md",
+      "assets/icons/Simple-Icons-CC0.txt",
+      "assets/icons/gmail.svg",
+      "assets/icons/googleads.svg",
+      "assets/icons/googleanalytics.svg",
+      "assets/icons/googlechrome.svg",
+      "assets/icons/googlesearchconsole.svg",
+      "assets/icons/posthog.svg",
+      "assets/icons/provenance.json",
+      "assets/icons/python.svg",
+      "assets/icons/slack.svg",
+      "assets/icons/telegram.svg",
+      "assets/icons/whatsapp.svg",
+      "assets/logo-areteaios.svg",
+      "assets/ui.json",
+      "assets/viewer.html",
+      "manifest.json",
+      "references/METHOD.md",
+      "references/README.md",
+      "references/VIEW-CONTRACT.md",
+      "references/VISUALISE-ANY-SKILL.md",
+      "scripts/README.md",
+      "scripts/audit_package.py",
+      "scripts/build_view.py",
+      "scripts/check_view.py",
+      "scripts/verify_zip.js",
+      "view.json"
+    ],
+    "generated_html": "Rebuild index.html offline with the included engine; excluded from its own archive."
+  }
+}

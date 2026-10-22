@@ -1,0 +1,20 @@
+{
+  "schema": "arete-community-source/v1",
+  "skill": "skills7",
+  "version": "2.0.0",
+  "author": "Egils Boitmanis / FullDigital",
+  "license": "CC-BY-4.0",
+  "source": {
+    "edition": "Accepted SKILLS7 2.0.0 native method and guide",
+    "accepted_view_sha256": "98e6dff2d05920ee0706760d394872baf799cb90ce70d5eff5cd78e07a240936",
+    "date": "2026-10-22"
+  },
+  "adaptations": [
+    "Portable English method and references; EN/LV human guide retained.",
+    "No owner setup, account data, personal histories or machine-specific paths.",
+    "Complete source archive adds byte-exact binary assets and local icon provenance.",
+    "Optional additional copyable prompt includes the owner-provided Visualise any skill text."
+  ],
+  "third_party_rights": "Fonts: SIL OFL. Provider icon rights individually documented in assets/icons/provenance.json. Arete identity remains the owner’s brand.",
+  "checks_do_not_prove": "AI judgment, live tools or business outcomes."
+}

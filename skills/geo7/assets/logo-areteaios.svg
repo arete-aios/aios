@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="200" height="100" role="img" aria-label="AreteAIOS">
+  <defs>
+    <linearGradient id="aiosBlue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0045a9"/>
+      <stop offset="55%" stop-color="#0066ae"/>
+      <stop offset="100%" stop-color="#0081ff"/>
+    </linearGradient>
+  </defs>
+  <path
+    d="M 50,50 C 50,24 85,24 100,50 C 115,76 150,76 150,50 C 150,24 115,24 100,50 C 85,76 50,76 50,50 Z"
+    fill="none"
+    stroke="url(#aiosBlue)"
+    stroke-width="9"
+    stroke-linecap="round"
+    stroke-linejoin="round"/>
+  <circle cx="50" cy="50" r="7.5" fill="#04a3aa"/>
+  <circle cx="150" cy="50" r="7.5" fill="#04a3aa"/>
+</svg>

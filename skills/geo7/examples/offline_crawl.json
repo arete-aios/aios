@@ -1,0 +1,98 @@
+{
+  "schema": "geo7-crawl/v1",
+  "site": "https://example.com",
+  "timestamp_riga": "2026-10-22T12:00:00+03:00",
+  "scope": "SYNTHETIC OFFLINE FIXTURE; not a live crawl",
+  "pages": [
+    {
+      "url": "https://example.com/guide",
+      "final_url": "https://example.com/guide",
+      "status": 200,
+      "x_robots_tag": "",
+      "content_type": "text/html",
+      "title": "Synthetic review",
+      "meta": {
+        "description": "Fictional sample only"
+      },
+      "canonical": "https://example.com/guide",
+      "html_lang": "en",
+      "hreflang": [],
+      "headings": [
+        {
+          "level": 1,
+          "text": "One synthetic answer"
+        }
+      ],
+      "h1_count": 1,
+      "http_text_words": 29,
+      "text_excerpt": "One synthetic answer This fictional HTML fixture lets you test the parser and report without requesting a website. It does not demonstrate any real search result or customer outcome.",
+      "internal_links": 0,
+      "external_links": 0,
+      "hrefs": [],
+      "schema_types": [],
+      "jsonld_blocks": 0,
+      "jsonld_invalid": [],
+      "noindex": false,
+      "images": 0,
+      "images_without_nonempty_alt": 0,
+      "has_table": false
+    },
+    {
+      "url": "https://example.com/pricing",
+      "final_url": "https://example.com/pricing",
+      "status": 200,
+      "x_robots_tag": "",
+      "content_type": "text/html",
+      "title": "Synthetic review",
+      "meta": {
+        "description": "Fictional sample only"
+      },
+      "canonical": "https://example.com/pricing",
+      "html_lang": "en",
+      "hreflang": [],
+      "headings": [
+        {
+          "level": 1,
+          "text": "One synthetic answer"
+        }
+      ],
+      "h1_count": 1,
+      "http_text_words": 29,
+      "text_excerpt": "One synthetic answer This fictional HTML fixture lets you test the parser and report without requesting a website. It does not demonstrate any real search result or customer outcome.",
+      "internal_links": 0,
+      "external_links": 0,
+      "hrefs": [],
+      "schema_types": [],
+      "jsonld_blocks": 0,
+      "jsonld_invalid": [],
+      "noindex": false,
+      "images": 0,
+      "images_without_nonempty_alt": 0,
+      "has_table": false
+    }
+  ],
+  "raw": [
+    {
+      "url": "https://example.com/guide",
+      "final_url": "https://example.com/guide",
+      "status": 200,
+      "x_robots_tag": "",
+      "content_type": "text/html",
+      "body": "<html lang=\"en\"><head><title>Synthetic review</title><meta name=\"description\" content=\"Fictional sample only\"><link rel=\"canonical\" href=\"https://example.com/guide\"></head><body><h1>One synthetic answer</h1><p>This fictional HTML fixture lets you test the parser and report without requesting a website. It does not demonstrate any real search result or customer outcome.</p></body></html>"
+    },
+    {
+      "url": "https://example.com/pricing",
+      "final_url": "https://example.com/pricing",
+      "status": 200,
+      "x_robots_tag": "",
+      "content_type": "text/html",
+      "body": "<html lang=\"en\"><head><title>Synthetic review</title><meta name=\"description\" content=\"Fictional sample only\"><link rel=\"canonical\" href=\"https://example.com/pricing\"></head><body><h1>One synthetic answer</h1><p>This fictional HTML fixture lets you test the parser and report without requesting a website. It does not demonstrate any real search result or customer outcome.</p></body></html>"
+    }
+  ],
+  "sitemap_urls": [
+    "https://example.com/guide",
+    "https://example.com/pricing"
+  ],
+  "errors": [],
+  "robot_advisory": {}
+}

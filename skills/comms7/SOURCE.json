@@ -1,16 +1,17 @@
 {
   "edition": "community",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "author": "Egils Boitmanis / FullDigital",
   "license": "CC-BY-4.0",
   "method": "COMMS7",
-  "source_version": "1.5.0",
-  "adaptation": "Self-contained English teaching edition; owner accounts, data, infrastructure and execution receipts excluded. Shared SKILLS7 HTML is a generated explanation, not an installed account reader.",
+  "basis_community_version": "1.5.0",
+  "native_method_version": "1.5.1",
+  "native_instruction_sha256": "f3dc10beac0b3c73afb100ff737823e85c6ee6784eda58b00d1921846796306e",
+  "native_aios_reference_sha256": "40b9a4f4245a63bb76c80499419f3b0202826a22cffa820ad897e2de533d5e6f",
+  "helper_sha256": "5aae90559e9c8c6fcd8b930acaaf1c1d185104dbe99fe809f7e590edefe5a524",
+  "adaptation": "Self-contained community edition. Separates optional source-activity checks from semantic reply and commitment decisions. Owner accounts, private schedules, messages, state and execution receipts excluded. Bilingual guide uses the shared portable SKILLS7 engine.",
   "prepared": "2026-10-22",
   "native_activation": false,
   "account_connections_included": false,
-  "schedule_included": false,
-  "native_instruction_sha256": "aebf6a3c05abef20ec87eb78142023ca7fb0b48f07b08a5b49d24b1c453b772d",
-  "native_aios_reference_sha256": "40b9a4f4245a63bb76c80499419f3b0202826a22cffa820ad897e2de533d5e6f",
-  "shared_view_engine_version": "2.0.0"
+  "schedule_included": false
 }

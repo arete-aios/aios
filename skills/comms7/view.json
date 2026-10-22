@@ -1,10 +1,19 @@
 {
-  "eyebrow": "COMMS7 · communication review",
+  "eyebrow": {
+    "lv": "COMMS7 · saziņas apskats",
+    "en": "COMMS7 · communication review"
+  },
   "onboarding": "SKILL.md",
   "related": [],
   "how": {
-    "title": "What happens when you invoke COMMS7",
-    "lead": "Three phases, seven stages. Read prior decisions, check actual sources, then help you decide and preserve state. This is an AI work protocol; background service acceptance is separate."
+    "title": {
+      "lv": "Kas tieši notiek pie COMMS7",
+      "en": "What happens when you invoke COMMS7"
+    },
+    "lead": {
+      "lv": "Trīs fāzes, septiņi posmi. Vispirms atceras tavu iepriekšējo lēmumu, tad pārbauda reālos avotus, beigās palīdz izlemt un saglabā stāvokli. Šis ir AI darba protokols; fona pakalpojums jāpieņem atsevišķi.",
+      "en": "Three phases, seven stages. Read prior decisions, check actual sources, then help you decide and preserve state. This is an AI work protocol; background service acceptance is separate."
+    }
   },
   "groupSteps": {
     "prepare": [
@@ -21,122 +30,232 @@
       "07"
     ]
   },
-  "filesLead": "All portable instructions and the optional offline helper are included. Your account data and credentials stay in your own protected workspace.",
+  "filesLead": {
+    "en": "Portable instructions, supporting references and an optional offline helper. Your account data and credentials remain in your protected workspace.",
+    "lv": "Pārnesama instrukcija, vajadzīgās atsauces un izvēles lokālais palīgs. Kontu dati un piekļuves paliek tavā aizsargātajā vidē."
+  },
   "fileTypes": [
     {
       "ext": "MD",
-      "title": "Work method",
-      "text": "SKILL.md routes the request. RUN-CONTRACT.md defines output and states. READINESS.md explains the evidence boundary."
+      "title": {
+        "lv": "Darba metode",
+        "en": "Work method"
+      },
+      "text": {
+        "lv": "SKILL.md izvēlas režīmu. RUN-CONTRACT.md nosaka rezultātu un statusus. READINESS.md pasaka, ko pierādījumi tiešām sedz.",
+        "en": "SKILL.md routes the request. RUN-CONTRACT.md defines output and states. READINESS.md explains the evidence boundary."
+      }
     },
     {
       "ext": "JSON",
-      "title": "Metadata and viewer content",
-      "text": "manifest.json and view.json feed the shared SKILLS7 builder. Real configuration is internal only."
+      "title": {
+        "lv": "Metadati un skata saturs",
+        "en": "Metadata and viewer content"
+      },
+      "text": {
+        "lv": "manifest.json un view.json kopīgajam SKILLS7 dzinējam. Īstā konfigurācija ir tikai iekšējā skatā.",
+        "en": "manifest.json and view.json feed the shared SKILLS7 builder. Real configuration is internal only."
+      }
     },
     {
       "ext": "HTML",
-      "title": "Human explanation",
-      "text": "This offline page has four tabs and a clickable workflow. It is not a connected account-management app."
+      "title": {
+        "lv": "Skaidrojums cilvēkam",
+        "en": "Human explanation"
+      },
+      "text": {
+        "lv": "Šī bezsaistes lapa ar četrām cilnēm un klikšķināmu plūsmu. Tā nav savienota kontu vadības lietotne.",
+        "en": "This offline page has four tabs and a clickable workflow. It is not a connected account-management app."
+      }
     }
   ],
   "fileGroups": [
     {
       "id": "start",
       "zip": true,
-      "title": "Start here",
-      "desc": "AI entry and the actual run contract.",
+      "title": {
+        "lv": "Sāc šeit",
+        "en": "Start here"
+      },
+      "desc": {
+        "lv": "AI ieeja un konkrētais izpildes līgums.",
+        "en": "AI entry and the actual run contract."
+      },
       "files": [
         {
           "path": "SKILL.md",
-          "desc": "Purpose, selection, context and loading order."
+          "desc": {
+            "lv": "Mērķis, atlase, konteksts un ielādes kārtība.",
+            "en": "Purpose, selection, context and loading order."
+          }
         },
         {
           "path": "references/RUN-CONTRACT.md",
-          "desc": "Seven stages, expected output and state transitions."
+          "desc": {
+            "lv": "Septiņi posmi, sagaidāmā atbilde un statusu pārejas.",
+            "en": "Seven stages, expected output and state transitions."
+          }
         },
         {
           "path": "references/PRINCIPLES.md",
-          "desc": "Why to reply, act, wait or skip."
+          "desc": {
+            "lv": "Kāpēc atbildēt, rīkoties, gaidīt vai izlaist.",
+            "en": "Why to reply, act, wait or skip."
+          }
         },
         {
           "path": "references/GMAIL-WORKFLOW.md",
-          "desc": "GTD labels, filters, subscriptions and verified execution."
+          "desc": {
+            "lv": "GTD etiķetes, filtri, abonementi un pārbaudīta izpilde.",
+            "en": "GTD labels, filters, subscriptions and verified execution."
+          }
         },
         {
           "path": "references/AIOS-INTEGRATION.md",
-          "desc": "FOCUS7, CRM7, tools and the five layers."
+          "desc": {
+            "lv": "FOCUS7, CRM7, rīki un piecu slāņu lomas.",
+            "en": "FOCUS7, CRM7, tools and the five layers."
+          }
         },
         {
           "path": "references/STORAGE-PLAN.md",
-          "desc": "Current storage and a controlled organisation proposal."
+          "desc": {
+            "lv": "Pašreizējais izvietojums un kontrolēts sakārtošanas plāns.",
+            "en": "Current storage and a controlled organisation proposal."
+          }
+        },
+        {
+          "path": "references/MONITORING.md",
+          "desc": {
+            "en": "Source changes, quiet cycles and semantic review.",
+            "lv": "Avota izmaiņas, klusais cikls un semantiskais apskats."
+          }
         },
         {
           "path": "SOURCE.json",
-          "desc": "Community adaptation and release record."
+          "desc": {
+            "en": "Community adaptation and provenance.",
+            "lv": "Kopienas adaptācija un izcelsme."
+          }
         },
         {
           "path": "LICENSE.txt",
-          "desc": "Attribution and reuse rights."
+          "desc": {
+            "en": "Attribution and reuse rights.",
+            "lv": "Autors un atkārtotas lietošanas tiesības."
+          }
         }
       ]
     },
     {
       "id": "understand",
       "zip": true,
-      "title": "Understand and verify",
-      "desc": "Actual readiness and a fictional result.",
+      "title": {
+        "lv": "Saproti un pārbaudi",
+        "en": "Understand and verify"
+      },
+      "desc": {
+        "lv": "Faktiskais stāvoklis un izdomāts rezultāts.",
+        "en": "Actual readiness and a fictional result."
+      },
       "files": [
         {
           "path": "references/READINESS.md",
-          "desc": "What is evidenced and which acceptance tests remain."
+          "desc": {
+            "lv": "Kas ir pierādīts un kādi pieņemšanas testi vēl palikuši.",
+            "en": "What is evidenced and which acceptance tests remain."
+          }
         },
         {
           "path": "references/EXAMPLE.md",
-          "desc": "A fictional review; nothing was sent."
+          "desc": {
+            "lv": "Izdomāts apskats; nekas nav nosūtīts.",
+            "en": "A fictional review; nothing was sent."
+          }
         },
         {
           "path": "references/SCORECARD.md",
-          "desc": "Basis for fit, complexity and token assumptions."
+          "desc": {
+            "lv": "Noderīguma, sarežģītības un tokenu pieņēmumu pamatojums.",
+            "en": "Basis for fit, complexity and token assumptions."
+          }
         }
       ]
     },
     {
       "id": "modes",
       "zip": true,
-      "title": "Additional selection when requested",
-      "desc": "Use the relevant mode, not every mode automatically.",
+      "title": {
+        "lv": "Papildu atlase pēc pieprasījuma",
+        "en": "Additional selection when requested"
+      },
+      "desc": {
+        "lv": "Lieto tikai vajadzīgo režīmu, ne visus automātiski.",
+        "en": "Use the relevant mode, not every mode automatically."
+      },
       "files": [
         {
           "path": "REVIEW-MODES.md",
-          "desc": "Twenty optional review modes."
+          "desc": {
+            "lv": "20 izvēles pārbaudes režīmi.",
+            "en": "Twenty optional review modes."
+          }
         },
         {
           "path": "references/README.md",
-          "desc": "Reference map."
+          "desc": {
+            "lv": "Atsauču karte.",
+            "en": "Reference map."
+          }
         }
       ]
     },
     {
       "id": "helpers",
       "zip": true,
-      "title": "Python and optional engagement",
-      "desc": "Run the helper for structured input; load social mode when requested.",
+      "title": {
+        "lv": "Python un izvēles iesaiste",
+        "en": "Python and optional engagement"
+      },
+      "desc": {
+        "lv": "Palīgu izpilda strukturētai ievadei; sociālo režīmu ielādē pēc pieprasījuma.",
+        "en": "Run the helper for structured input; load social mode when requested."
+      },
       "files": [
         {
           "path": "scripts/review_pack.py",
-          "desc": "An actual offline structured packing helper."
+          "desc": {
+            "lv": "Īsts, bez tīkla strādājošs strukturētas atlases palīgs.",
+            "en": "An actual offline structured packing helper."
+          }
         },
         {
           "path": "scripts/README.md",
-          "desc": "Helper entry and ownership."
+          "desc": {
+            "lv": "Palīga ieeja un atbildība.",
+            "en": "Helper entry and ownership."
+          }
         },
         {
           "path": "references/PYTHON-HELPER.md",
-          "desc": "Input, decisions, invocation and verification limits."
+          "desc": {
+            "lv": "Ievade, lēmumi, komanda un pārbaudes robežas.",
+            "en": "Input, decisions, invocation and verification limits."
+          }
         },
         {
           "path": "references/SOCIAL-MODE.md",
-          "desc": "Communication, engagement and channel connections."
+          "desc": {
+            "lv": "Saziņa, iesaiste un kanālu pieslēgšana.",
+            "en": "Communication, engagement and channel connections."
+          }
+        },
+        {
+          "path": "scripts/test_review_pack.py",
+          "desc": {
+            "en": "Offline behaviour checks; no account access.",
+            "lv": "Lokālas uzvedības pārbaudes bez kontu piekļuves."
+          }
         }
       ]
     }
@@ -158,24 +277,42 @@
       "act",
       "close"
     ],
-    "eyebrow": "COMMS7 · workflow",
-    "title": "Review, decide and save",
-    "lead": "The detailed diagram includes sources, Python, files and context. The short diagram shows the main work loop.",
+    "eyebrow": {
+      "lv": "COMMS7 · darba plūsma",
+      "en": "COMMS7 · workflow"
+    },
+    "title": {
+      "lv": "Pārbaudām, izlemjam un saglabājam",
+      "en": "Review, decide and save"
+    },
+    "lead": {
+      "lv": "Detalizētā shēma rāda avotus, Python, failus un kontekstu. Īsā shēma parāda galveno darba apli.",
+      "en": "The detailed diagram includes sources, Python, files and context. The short diagram shows the main work loop."
+    },
     "notes": [
       {
         "x": 20,
         "w": 450,
-        "label": "Goal and saved state"
+        "label": {
+          "lv": "Mērķis un iepriekšējais statuss",
+          "en": "Goal and saved state"
+        }
       },
       {
         "x": 480,
         "w": 510,
-        "label": "Sources · Python · AI"
+        "label": {
+          "lv": "Avoti · Python · AI",
+          "en": "Sources · Python · AI"
+        }
       },
       {
         "x": 1000,
         "w": 380,
-        "label": "Decisions and continuation"
+        "label": {
+          "lv": "Lēmumi un turpinājums",
+          "en": "Decisions and continuation"
+        }
       }
     ],
     "goal": {
@@ -183,8 +320,14 @@
       "y": 83,
       "w": 240,
       "h": 155,
-      "label": "Goal",
-      "text": "Who needs a reply, what needs doing and what I am waiting for. Every item has a clear next step."
+      "label": {
+        "lv": "Mērķis",
+        "en": "Goal"
+      },
+      "text": {
+        "lv": "Kam jāatbild, kas jāizdara un ko gaidu. Katram punktam skaidrs nākamais solis.",
+        "en": "Who needs a reply, what needs doing and what I am waiting for. Every item has a clear next step."
+      }
     },
     "nodes": [
       {
@@ -195,19 +338,43 @@
         "icon": "user",
         "step": 1,
         "min": true,
-        "label": "You ask for COMMS7",
-        "actor": "You · in chat",
+        "label": {
+          "lv": "Tu izsauc COMMS7",
+          "en": "You ask for COMMS7"
+        },
+        "actor": {
+          "lv": "Tu · čatā",
+          "en": "You · in chat"
+        },
         "paragraphs": [
-          "Type COMMS7 in chat. AI loads the skill and its instructions. You can ask for the overall priorities, Action, Waiting or a specific conversation.",
-          "If you ask for a skill or workflow explanation, AI works on the explanation. A communication review starts when that is your goal."
+          {
+            "lv": "Čatā ieraksti COMMS7. AI ielādē prasmi un tās darba kārtību. Vari uzreiz pateikt, ko vēlies pārskatīt: svarīgāko kopumā, Action, Waiting vai vienu konkrētu sarunu.",
+            "en": "Type COMMS7 in chat. AI loads the skill and its instructions. You can ask for the overall priorities, Action, Waiting or a specific conversation."
+          },
+          {
+            "lv": "Ja prasi tikai prasmes vai darba plūsmas skaidrojumu, AI strādā ar aprakstu. Saziņas apskats sākas tad, kad tas ir tavs mērķis.",
+            "en": "If you ask for a skill or workflow explanation, AI works on the explanation. A communication review starts when that is your goal."
+          }
         ],
-        "what": "Type COMMS7 in chat. AI loads the skill and its instructions. You can ask for the overall priorities, Action, Waiting or a specific conversation.",
-        "out": "AI understands the help you want.",
+        "what": {
+          "lv": "Čatā ieraksti COMMS7. AI ielādē prasmi un tās darba kārtību. Vari uzreiz pateikt, ko vēlies pārskatīt: svarīgāko kopumā, Action, Waiting vai vienu konkrētu sarunu.",
+          "en": "Type COMMS7 in chat. AI loads the skill and its instructions. You can ask for the overall priorities, Action, Waiting or a specific conversation."
+        },
+        "out": {
+          "lv": "AI saprot, kādu palīdzību tu vēlies.",
+          "en": "AI understands the help you want."
+        },
         "files": [
           "SKILL.md"
         ],
-        "example": "COMMS7 — what matters now in Gmail and WhatsApp?  /  COMMS7 — review current Waiting.",
-        "summary": "Tell the chat what to review. AI loads COMMS7.",
+        "example": {
+          "lv": "COMMS7 — kas man šobrīd svarīgākais Gmail un WhatsApp?  /  COMMS7 — pārskati aktuālo Waiting.",
+          "en": "COMMS7 — what matters now in Gmail and WhatsApp?  /  COMMS7 — review current Waiting."
+        },
+        "summary": {
+          "lv": "Čatā pasaki, ko vēlies pārskatīt. AI ielādē COMMS7.",
+          "en": "Tell the chat what to review. AI loads COMMS7."
+        },
         "headerIcons": [
           "user"
         ]
@@ -220,22 +387,46 @@
         "icon": "ai",
         "step": 2,
         "min": true,
-        "label": "Agree on scope",
-        "actor": "AI · with you",
+        "label": {
+          "lv": "Vienojamies par tvērumu",
+          "en": "Agree on scope"
+        },
+        "actor": {
+          "lv": "AI · ar tevi",
+          "en": "AI · with you"
+        },
         "paragraphs": [
-          "AI uses your request, previous decisions and Business context. Agree on the goal, channels, accounts and review depth; do not ask again for information already supplied.",
-          "If you type only “COMMS7”, AI proposes a useful starting point, such as important unanswered requests and open promises. It asks a follow-up when the answer changes what should be reviewed.",
-          "Current FOCUS7 priorities inform importance. CRM7 provides the matched person’s latest professional context where a granted reader is available. Reading does not grant CRM writes."
+          {
+            "lv": "AI izmanto jau pateikto, iepriekšējos lēmumus un Business darba kontekstu. Vienojas par mērķi, kanāliem, kontiem un apskata dziļumu; jau atbildēto nejautā vēlreiz.",
+            "en": "AI uses your request, previous decisions and Business context. Agree on the goal, channels, accounts and review depth; do not ask again for information already supplied."
+          },
+          {
+            "lv": "Ja ieraksti tikai “COMMS7”, AI piedāvā saprātīgu sākumu, piemēram, svarīgākos neatbildētos jautājumus un atvērtos solījumus. Papildu jautājumu uzdod tad, ja atbilde mainītu to, ko pārbaudīt.",
+            "en": "If you type only “COMMS7”, AI proposes a useful starting point, such as important unanswered requests and open promises. It asks a follow-up when the answer changes what should be reviewed."
+          },
+          {
+            "lv": "FOCUS7 pašreizējās prioritātes palīdz noteikt svarīgumu. CRM7 dod atrastā cilvēka pēdējo profesionālo kontekstu, ja pieejams piešķirts lasītājs. Tas pats nepiešķir jaunu CRM rakstīšanu.",
+            "en": "Current FOCUS7 priorities inform importance. CRM7 provides the matched person’s latest professional context where a granted reader is available. Reading does not grant CRM writes."
+          }
         ],
-        "what": "AI uses your request, previous decisions and Business context. Agree on the goal, channels, accounts and review depth; do not ask again for information already supplied.",
-        "out": "A clear review scope and expected result.",
+        "what": {
+          "lv": "AI izmanto jau pateikto, iepriekšējos lēmumus un Business darba kontekstu. Vienojas par mērķi, kanāliem, kontiem un apskata dziļumu; jau atbildēto nejautā vēlreiz.",
+          "en": "AI uses your request, previous decisions and Business context. Agree on the goal, channels, accounts and review depth; do not ask again for information already supplied."
+        },
+        "out": {
+          "lv": "Skaidrs, ko šajā apskatā pārbaudām un kādu rezultātu gaidām.",
+          "en": "A clear review scope and expected result."
+        },
         "files": [
           "SKILL.md",
           "references/RUN-CONTRACT.md",
           "references/PRINCIPLES.md",
           "references/AIOS-INTEGRATION.md"
         ],
-        "summary": "AI uses what you already said and asks only for details that change the review.",
+        "summary": {
+          "lv": "AI izmanto jau pateikto un precizē tikai to, kas tiešām maina apskatu.",
+          "en": "AI uses what you already said and asks only for details that change the review."
+        },
         "headerIcons": [
           "ai"
         ]
@@ -248,18 +439,39 @@
         "icon": "ai",
         "step": 3,
         "min": true,
-        "label": "Open the review record",
-        "actor": "AI · saved records",
+        "label": {
+          "lv": "Atveram apskata pierakstu",
+          "en": "Open the review record"
+        },
+        "actor": {
+          "lv": "AI · saglabātie faili",
+          "en": "AI · saved records"
+        },
         "paragraphs": [
-          "AI reads saved state so older open items remain and completed actions do not return.",
-          "Record the goal, sources and clarifications for this review. Existing CRM and tasks remain in their authoritative home; the review links to them."
+          {
+            "lv": "AI nolasa saglabāto statusu, lai vecie atvērtie punkti nepazustu un pabeigtais neatgrieztos.",
+            "en": "AI reads saved state so older open items remain and completed actions do not return."
+          },
+          {
+            "lv": "Konkrētajam apskatam pieraksta mērķi, avotus un precizējumus. Esošie CRM un uzdevumi paliek savā autoritatīvajā vietā; apskats uz tiem atsaucas.",
+            "en": "Record the goal, sources and clarifications for this review. Existing CRM and tasks remain in their authoritative home; the review links to them."
+          }
         ],
-        "what": "Before checking new messages, AI reads the saved current state. This preserves older open items and avoids repeating work already completed or deliberately ignored.",
-        "out": "A review record and a known starting state.",
+        "what": {
+          "lv": "Pirms jaunām ziņām AI nolasa saglabāto aktuālo statusu. Tas palīdz nepazaudēt vecos atvērtos punktus un atkārtoti neuzdot to, ko jau esi pabeidzis vai apzināti ignorējis.",
+          "en": "Before checking new messages, AI reads the saved current state. This preserves older open items and avoids repeating work already completed or deliberately ignored."
+        },
+        "out": {
+          "lv": "Ir konkrētā apskata pieraksts un zināms, no kura stāvokļa turpinām.",
+          "en": "A review record and a known starting state."
+        },
         "files": [
           "references/RUN-CONTRACT.md"
         ],
-        "summary": "AI reads previous state and records this review’s goal, accounts and clarifications.",
+        "summary": {
+          "lv": "AI nolasa iepriekšējo statusu un šajā apskatā pieraksta mērķi, kontus un precizējumus.",
+          "en": "AI reads previous state and records this review’s goal, accounts and clarifications."
+        },
         "headerIcons": [
           "ai",
           "file"
@@ -267,8 +479,14 @@
         "companion": "file",
         "storageRef": "reviews",
         "stored": {
-          "title": "Agreed private review home",
-          "text": "Keep the review ID/date, purpose, source coverage, decisions and links to authoritative task records, in the agreed Markdown or JSON format."
+          "title": {
+            "en": "Agreed private review home",
+            "lv": "Saskaņotā privātā apskata vieta"
+          },
+          "text": {
+            "en": "Record ID/date, purpose, coverage, decisions and links to authoritative tasks in the agreed Markdown or JSON format.",
+            "lv": "Saskaņotajā Markdown vai JSON formātā glabā ID/datumu, mērķi, pārklājumu, lēmumus un saites uz autoritatīvajiem uzdevumiem."
+          }
         }
       },
       {
@@ -279,18 +497,44 @@
         "icon": "ai",
         "step": 4,
         "min": true,
-        "label": "Check the sources",
-        "actor": "AI · selected sources",
+        "label": {
+          "lv": "Pārbaudām avotus",
+          "en": "Check the sources"
+        },
+        "actor": {
+          "lv": "AI · izvēlētie avoti",
+          "en": "AI · selected sources"
+        },
         "paragraphs": [
-          "AI or the granted reader retrieves agreed account data and states coverage, freshness and gaps.",
-          "For structured input, review_pack.py merges duplicate actions and compares current evidence with the previous review. Unchanged closed items stay resolved; older open items remain.",
-          "Python processes structure, not meaning. Before recommending action, AI checks required full context, latest replies and deadline evidence."
+          {
+            "lv": "AI vai piešķirtais lasītājs iegūst norunāto kontu ziņas un pasaka, kas pārbaudīts, cik svaigi ir dati un kas palicis nepieejams.",
+            "en": "AI or the granted reader retrieves agreed account data and states coverage, freshness and gaps."
+          },
+          {
+            "lv": "Strukturētai ievadei review_pack.py apvieno vienas darbības dublikātus un salīdzina jauno ar iepriekšējo apskatu. Nemainīgi aizvērti punkti neatgriežas; vecie atvērtie paliek.",
+            "en": "For structured input, review_pack.py merges duplicate actions and compares current evidence with the previous review. Unchanged closed items stay resolved; older open items remain."
+          },
+          {
+            "lv": "Python izvērtē struktūru, ne sarunas nozīmi. Pirms ieteikt rīcību AI pārbauda vajadzīgo pilno kontekstu, jaunāko atbildi un termiņa pamatojumu.",
+            "en": "Python processes structure, not meaning. Before recommending action, AI checks required full context, latest replies and deadline evidence."
+          },
+          {
+            "en": "A source monitor may supply a new-message signal. Treat it as evidence to check, not an automatic Action or obligation to reply; keep unresolved older commitments too.",
+            "lv": "Avota monitors var iedot jaunas ziņas signālu. Tas ir pārbaudāms pierādījums, ne automātisks Action vai pienākums atbildēt; paturi arī vecākās neatrisinātās saistības."
+          }
         ],
-        "what": "In one step, AI checks every agreed source. Your current use centres on Gmail and WhatsApp. For each account it states coverage, freshness and any gap.",
-        "out": "Checked conversation facts, source links and explicit coverage.",
+        "what": {
+          "lv": "Vienā solī AI pārbauda visus norunātos avotus. Tavā pašreizējā lietojumā tie ir Gmail un WhatsApp. Katram kontam pasaka, ko izdevās pārbaudīt, cik svaigi ir dati un kur palika trūkums.",
+          "en": "In one step, AI checks every agreed source. Your current use centres on Gmail and WhatsApp. For each account it states coverage, freshness and any gap."
+        },
+        "out": {
+          "lv": "Pārbaudīti sarunu fakti, avotu saites un godīgi nosaukts pārklājums.",
+          "en": "Checked conversation facts, source links and explicit coverage."
+        },
         "files": [
           "references/RUN-CONTRACT.md",
-          "references/PYTHON-HELPER.md"
+          "references/PYTHON-HELPER.md",
+          "references/MONITORING.md"
         ],
         "channels": [
           {
@@ -302,13 +546,22 @@
             "label": "WhatsApp"
           }
         ],
-        "summary": "Collect the agreed sources and coverage. Python builds a compact pack; AI reads full conversation context when needed.",
+        "summary": {
+          "lv": "Savācam norunāto kanālu datus un pārklājumu. Python tos apvieno īsā ievadē; AI pēc vajadzības nolasa pilno sarunu.",
+          "en": "Collect the agreed sources and coverage. Python builds a compact pack; AI reads full conversation context when needed."
+        },
         "headerIcons": [
           "ai"
         ],
         "helper": {
-          "title": "Python · change selection and merging",
-          "text": "review_pack.py is built and tested on synthetic inputs. It produces compact JSON, open items and decision progress. Account connectors remain separate.",
+          "title": {
+            "lv": "Python · izmaiņu atlase un apvienošana",
+            "en": "Python · change selection and merging"
+          },
+          "text": {
+            "lv": "review_pack.py ir izveidots un pārbaudīts ar sintētiskiem datiem. Tas dod īsu JSON ievadi, atvērtos punktus un aprēķinātu lēmumu progresu. Kontu savienotāji paliek atsevišķi.",
+            "en": "review_pack.py is built and tested on synthetic inputs. It produces compact JSON, open items and decision progress. Account connectors remain separate."
+          },
           "file": "scripts/review_pack.py"
         }
       },
@@ -320,21 +573,45 @@
         "icon": "ai",
         "step": 5,
         "min": true,
-        "label": "Show the priorities",
-        "actor": "AI · chat and record",
+        "label": {
+          "lv": "Izceļam svarīgāko",
+          "en": "Show the priorities"
+        },
+        "actor": {
+          "lv": "AI · čats un pieraksts",
+          "en": "AI · chat and record"
+        },
         "paragraphs": [
-          "AI compares new information with saved decisions and separates my actions, waiting on others, resolved items and information requiring no action. An old open promise remains even without a new message.",
-          "Chat first shows up to five priority next actions. Each has a clear reason, one question or action, an owner and the relevant source. Other open items remain in the record.",
-          "The review file keeps the summary, source IDs and status decisions needed to continue. There is no need to copy entire mailboxes and chats."
+          {
+            "lv": "AI salīdzina jauno informāciju ar iepriekšējiem lēmumiem un atšķir: man jārīkojas, gaidu no cita, jau atrisināts vai nav vajadzīga rīcība. Vecs neatrisināts solījums nepazūd tikai tāpēc, ka jaunajā atlasē nav jaunas ziņas.",
+            "en": "AI compares new information with saved decisions and separates my actions, waiting on others, resolved items and information requiring no action. An old open promise remains even without a new message."
+          },
+          {
+            "lv": "Čatā vispirms saņem līdz pieciem svarīgākajiem nākamajiem soļiem. Pie katra ir saprotams iemesls, viens konkrēts jautājums vai rīcība, atbildīgais un vajadzīgais avots. Pārējie atvērtie punkti paliek pierakstā.",
+            "en": "Chat first shows up to five priority next actions. Each has a clear reason, one question or action, an owner and the relevant source. Other open items remain in the record."
+          },
+          {
+            "lv": "Apskata failā saglabā kopsavilkumu, avotu ID un statusus, lai var turpināt darbu. Visu pastkastīšu un čatu tekstus bez vajadzības nekopē.",
+            "en": "The review file keeps the summary, source IDs and status decisions needed to continue. There is no need to copy entire mailboxes and chats."
+          }
         ],
-        "what": "AI compares new information with saved decisions and separates my actions, waiting on others, resolved items and information requiring no action. An old open promise remains even without a new message.",
-        "out": "You have a short action list and AI has the review record needed to continue.",
+        "what": {
+          "lv": "AI salīdzina jauno informāciju ar iepriekšējiem lēmumiem un atšķir: man jārīkojas, gaidu no cita, jau atrisināts vai nav vajadzīga rīcība. Vecs neatrisināts solījums nepazūd tikai tāpēc, ka jaunajā atlasē nav jaunas ziņas.",
+          "en": "AI compares new information with saved decisions and separates my actions, waiting on others, resolved items and information requiring no action. An old open promise remains even without a new message."
+        },
+        "out": {
+          "lv": "Tev ir īss rīcības saraksts; AI ir saglabāts pilnais šā apskata turpinājums.",
+          "en": "You have a short action list and AI has the review record needed to continue."
+        },
         "files": [
           "references/RUN-CONTRACT.md",
           "references/EXAMPLE.md",
           "references/PRINCIPLES.md"
         ],
-        "summary": "AI checks conversation context and highlights up to five priority next actions. Evidence remains in the review record.",
+        "summary": {
+          "lv": "AI pārbauda sarunas kontekstu un izceļ līdz pieciem svarīgākajiem nākamajiem soļiem. Pamatojums paliek apskata pierakstā.",
+          "en": "AI checks conversation context and highlights up to five priority next actions. Evidence remains in the review record."
+        },
         "headerIcons": [
           "ai",
           "file"
@@ -342,8 +619,14 @@
         "companion": "file",
         "storageRef": "reviews",
         "stored": {
-          "title": "The record keeps the evidence",
-          "text": "Relevant conversation IDs, summaries and open questions. No need to copy the whole mailbox."
+          "title": {
+            "lv": "Pierakstā paliek pamatojums",
+            "en": "The record keeps the evidence"
+          },
+          "text": {
+            "lv": "Svarīgo sarunu ID, kopsavilkumi un atvērtie jautājumi. Nav jākopē visa pastkaste.",
+            "en": "Relevant conversation IDs, summaries and open questions. No need to copy the whole mailbox."
+          }
         }
       },
       {
@@ -354,51 +637,108 @@
         "icon": "user",
         "step": 6,
         "min": true,
-        "label": "Decide and act",
-        "actor": "You + AI · repeatable loop",
+        "label": {
+          "lv": "Izlemjam un rīkojamies",
+          "en": "Decide and act"
+        },
+        "actor": {
+          "lv": "Tu + AI · atkārtojams aplis",
+          "en": "You + AI · repeatable loop"
+        },
         "paragraphs": [
-          "Work through the items in chat. AI explains the situation, drafts a reply or prepares the next action. You can say “sent”, “done”, “waiting for a reply”, “defer until…” or “ignore this”. External sending follows the specific task authorisation.",
-          "After each decision, AI updates the review record and the relevant existing state entry. “Sent” records that reply; an outstanding delivery or promise stays open. Current state shows actions and waits.",
-          "Align Gmail labels with evidenced state: Action, Waiting, Someday/Maybe or Read/Later, using existing account names. Verify authorised changes by reading them back. Without a writer, show the suggestion and pending change. Review filters and subscriptions when needed.",
-          "Progress shows the share of items raised in this review that have an explicit decision and next step. It appears in chat and the review record. A newly raised question also increases the total.",
-          "WAITING is decided for this review when we know who owes what and when to check again. DEFER needs a date or clear trigger. 100% means every review item has a decision; external obligations can remain open."
+          {
+            "lv": "Izejat punktiem cauri sarunā. AI palīdz saprast situāciju, sagatavo atbildi vai nākamo soli. Tu vari pateikt “nosūtīju”, “izdarīts”, “gaidu atbildi”, “atlikt līdz…” vai “šo ignorējam”. Ārēja sūtīšana notiek pēc konkrētā uzdevuma atļaujas.",
+            "en": "Work through the items in chat. AI explains the situation, drafts a reply or prepares the next action. You can say “sent”, “done”, “waiting for a reply”, “defer until…” or “ignore this”. External sending follows the specific task authorisation."
+          },
+          {
+            "lv": "Pēc katra lēmuma AI papildina apskata pierakstu un attiecīgo esošā statusa ierakstu. “Nosūtīju” atzīmē konkrēto atbildi; ja vēl jāsaņem fails vai jāizpilda solījums, tas paliek atvērts. Kopīgā statusa failā redzams, kas jādara un ko gaidām.",
+            "en": "After each decision, AI updates the review record and the relevant existing state entry. “Sent” records that reply; an outstanding delivery or promise stays open. Current state shows actions and waits."
+          },
+          {
+            "lv": "Gmail etiķetes salāgo ar pierādīto stāvokli: Action, Waiting, Someday/Maybe vai Read/Later, izmantojot konta esošos nosaukumus. Autorizētās izmaiņas pārbauda ar atkārtotu lasījumu. Ja rakstītāja nav, redzams ieteikums un neizpildītais atlikums. Filtrus un abonementus pārskata pēc vajadzības.",
+            "en": "Align Gmail labels with evidenced state: Action, Waiting, Someday/Maybe or Read/Later, using existing account names. Verify authorised changes by reading them back. Without a writer, show the suggestion and pending change. Review filters and subscriptions when needed."
+          },
+          {
+            "lv": "Progresa % rāda, cik šajā apskatā paceltajiem punktiem ir skaidrs lēmums un nākamais solis. To redzi čatā un apskata pierakstā. Ja nāk klāt jauns jautājums, pieaug arī kopējais punktu skaits.",
+            "en": "Progress shows the share of items raised in this review that have an explicit decision and next step. It appears in chat and the review record. A newly raised question also increases the total."
+          },
+          {
+            "lv": "GAIDU ir izlemts punkts šim apskatam, ja zināms, no kā un ko gaidām un kad pārbaudīsim vēlreiz. ATLIKT vajag datumu vai skaidru atsākšanas nosacījumu. 100% nozīmē “viss šajā apskatā izlemts”; ārējās saistības vēl var turpināties.",
+            "en": "WAITING is decided for this review when we know who owes what and when to check again. DEFER needs a date or clear trigger. 100% means every review item has a decision; external obligations can remain open."
+          }
         ],
-        "what": "Work through the items in chat. AI explains the situation, drafts a reply or prepares the next action. You can say “sent”, “done”, “waiting for a reply”, “defer until…” or “ignore this”. External sending follows the specific task authorisation.",
-        "out": "Each reviewed item has a decision, saved state and a next check where needed.",
+        "what": {
+          "lv": "Izejat punktiem cauri sarunā. AI palīdz saprast situāciju, sagatavo atbildi vai nākamo soli. Tu vari pateikt “nosūtīju”, “izdarīts”, “gaidu atbildi”, “atlikt līdz…” vai “šo ignorējam”. Ārēja sūtīšana notiek pēc konkrētā uzdevuma atļaujas.",
+          "en": "Work through the items in chat. AI explains the situation, drafts a reply or prepares the next action. You can say “sent”, “done”, “waiting for a reply”, “defer until…” or “ignore this”. External sending follows the specific task authorisation."
+        },
+        "out": {
+          "lv": "Katram izskatītajam punktam ir lēmums, saglabāts statuss un vajadzības gadījumā nākamā pārbaude.",
+          "en": "Each reviewed item has a decision, saved state and a next check where needed."
+        },
         "files": [
           "references/RUN-CONTRACT.md",
           "references/GMAIL-WORKFLOW.md"
         ],
         "companion": "ai",
-        "caption": "Decide → save → next item",
+        "caption": {
+          "lv": "Lēmums → saglabāšana → nākamais punkts",
+          "en": "Decide → save → next item"
+        },
         "progress": {
-          "title": "Review decisions",
-          "summary": "3 of 5 example items are decided; two still need your choice.",
+          "title": {
+            "lv": "Apskata lēmumi",
+            "en": "Review decisions"
+          },
+          "summary": {
+            "lv": "3 no 5 piemēra punktiem izlemti; diviem vēl vajadzīga tava izvēle.",
+            "en": "3 of 5 example items are decided; two still need your choice."
+          },
           "items": [
             {
               "decided": false,
-              "label": "Reply about team training"
+              "label": {
+                "lv": "Atbildēt par komandas apmācībām",
+                "en": "Reply about team training"
+              }
             },
             {
               "decided": true,
-              "label": "Remember your promise by 16:00"
+              "label": {
+                "lv": "Atceries savu solījumu līdz 16.00",
+                "en": "Remember your promise by 16:00"
+              }
             },
             {
               "decided": true,
-              "label": "Follow up on the proposal"
+              "label": {
+                "lv": "Atgādināt par nosūtīto piedāvājumu",
+                "en": "Follow up on the proposal"
+              }
             },
             {
               "decided": false,
-              "label": "Arrange the next call"
+              "label": {
+                "lv": "Uzrakstīt par nākamo zvanu",
+                "en": "Arrange the next call"
+              }
             },
             {
               "decided": true,
-              "label": "Waiting for the partner’s file"
+              "label": {
+                "lv": "Gaidu failu no partnera",
+                "en": "Waiting for the partner’s file"
+              }
             }
           ],
-          "note": "Fictional example · 21 Oct 2026 · nothing sent. This progress tracking is a workflow proposal, not a live execution measure."
+          "note": {
+            "lv": "Izdomāts piemērs · 21.10.2026. · nekas nav nosūtīts. Šī progresa uzskaite ir plūsmas priekšlikums, ne pašreizējās izpildes mērījums.",
+            "en": "Fictional example · 21 Oct 2026 · nothing sent. This progress tracking is a workflow proposal, not a live execution measure."
+          }
         },
-        "summary": "AI helps prepare the action. You report the result and AI updates that item’s state.",
+        "summary": {
+          "lv": "AI palīdz sagatavot rīcību. Tu pasaki rezultātu, un AI atjauno konkrētā punkta statusu.",
+          "en": "AI helps prepare the action. You report the result and AI updates that item’s state."
+        },
         "headerIcons": [
           "user",
           "ai",
@@ -406,8 +746,14 @@
         ],
         "storageRef": "reviews",
         "stored": {
-          "title": "Update the review and current state",
-          "text": "Save the outcome and next step after each decision. WAITING remains open. Python can calculate progress from structured decisions; unified live-source integration still needs acceptance."
+          "title": {
+            "lv": "Atjaunojas apskats un aktuālais statuss",
+            "en": "Update the review and current state"
+          },
+          "text": {
+            "lv": "Pēc katra lēmuma saglabā rezultātu un nākamo soli. GAIDU paliek atvērts. Python spēj aprēķināt progresu no strukturētiem lēmumiem; vienota dzīvo avotu piesaiste vēl jāpieņem.",
+            "en": "Save the outcome and next step after each decision. WAITING remains open. Python can calculate progress from structured decisions; unified live-source integration still needs acceptance."
+          }
         }
       },
       {
@@ -418,15 +764,36 @@
         "icon": "ai",
         "step": 7,
         "min": true,
-        "label": "Save and close",
-        "actor": "AI · verified handoff",
+        "label": {
+          "lv": "Saglabājam un noslēdzam",
+          "en": "Save and close"
+        },
+        "actor": {
+          "en": "AI · verified handoff",
+          "lv": "AI · pārbaudīts turpinājums"
+        },
         "paragraphs": [
-          "When you end the review, chat or day, AI states what is done, what remains open and when to return. The target is an explicit decision for every item raised.",
-          "If a question is undecided, preserve and name it instead of claiming 100%. Unavailable sources and unchecked conversations remain explicit review limits.",
-          "At EXIT7, AI saves the record and current state, verifies readback and leaves a clear continuation. The next review starts from saved state and checks new messages."
+          {
+            "lv": "Kad beidzat šo apskatu, čatu vai dienu, AI pasaka, kas izdarīts, kas paliek atvērts un kad pie tā atgriezties. Mērķis ir 100% skaidru lēmumu par apskatā paceltajiem punktiem.",
+            "en": "When you end the review, chat or day, AI states what is done, what remains open and when to return. The target is an explicit decision for every item raised."
+          },
+          {
+            "lv": "Ja kāds jautājums vēl nav izlemts, to saglabā un nosauc; 100% nepaziņo. Arī nepieejamie avoti un nepārbaudītās sarunas paliek redzamas apskata robežas.",
+            "en": "If a question is undecided, preserve and name it instead of claiming 100%. Unavailable sources and unchecked conversations remain explicit review limits."
+          },
+          {
+            "lv": "EXIT7 laikā AI saglabā pierakstu un aktuālos statusus, pārbauda, ka tos var nolasīt, un atstāj skaidru turpinājumu. Nākamais apskats sākas ar saglabāto stāvokli un pārbauda jaunās ziņas.",
+            "en": "At EXIT7, AI saves the record and current state, verifies readback and leaves a clear continuation. The next review starts from saved state and checks new messages."
+          }
         ],
-        "what": "When you end the review, chat or day, AI states what is done, what remains open and when to return. The target is an explicit decision for every item raised.",
-        "out": "A saved review, preserved open work and clear next checks.",
+        "what": {
+          "lv": "Kad beidzat šo apskatu, čatu vai dienu, AI pasaka, kas izdarīts, kas paliek atvērts un kad pie tā atgriezties. Mērķis ir 100% skaidru lēmumu par apskatā paceltajiem punktiem.",
+          "en": "When you end the review, chat or day, AI states what is done, what remains open and when to return. The target is an explicit decision for every item raised."
+        },
+        "out": {
+          "lv": "Saglabāts apskats, atvērto darbu turpinājums un skaidras nākamās pārbaudes.",
+          "en": "A saved review, preserved open work and clear next checks."
+        },
         "files": [
           "references/RUN-CONTRACT.md",
           "references/READINESS.md",
@@ -434,7 +801,10 @@
           "references/STORAGE-PLAN.md"
         ],
         "caption": "EXIT7",
-        "summary": "AI saves decisions and open follow-ups, verifies readback and closes with EXIT7.",
+        "summary": {
+          "lv": "AI saglabā lēmumus un atvērtos turpinājumus, pārbauda nolasīšanu un noslēdz ar EXIT7.",
+          "en": "AI saves decisions and open follow-ups, verifies readback and closes with EXIT7."
+        },
         "headerIcons": [
           "ai",
           "file"
@@ -442,8 +812,14 @@
         "companion": "file",
         "storageRef": "reviews",
         "stored": {
-          "title": "Preserved continuation · EXIT7",
-          "text": "What is decided, what is waiting and when to check again."
+          "title": {
+            "lv": "Saglabāts turpinājums · EXIT7",
+            "en": "Preserved continuation · EXIT7"
+          },
+          "text": {
+            "lv": "Kas izlemts, kas gaida un kad pārbaudīt vēlreiz.",
+            "en": "What is decided, what is waiting and when to check again."
+          }
         }
       },
       {
@@ -457,8 +833,14 @@
         "artifact": true,
         "min": true,
         "detailFor": "prepare",
-        "label": "Review record",
-        "caption": "Purpose · evidence · decisions",
+        "label": {
+          "en": "Review record",
+          "lv": "Apskata pieraksts"
+        },
+        "caption": {
+          "en": "Purpose · evidence · decisions",
+          "lv": "Mērķis · pierādījumi · lēmumi"
+        },
         "files": []
       },
       {
@@ -472,8 +854,14 @@
         "artifact": true,
         "min": true,
         "detailFor": "act",
-        "label": "Current COMMS7 state",
-        "caption": "Existing authority · Action / Waiting · next actions",
+        "label": {
+          "lv": "COMMS7 aktuālais statuss",
+          "en": "Current COMMS7 state"
+        },
+        "caption": {
+          "lv": "Esošā autoritāte · Action / Waiting · nākamie soļi",
+          "en": "Existing authority · Action / Waiting · next actions"
+        },
         "files": []
       },
       {
@@ -484,7 +872,10 @@
         "icon": "python",
         "min": true,
         "detailFor": "review",
-        "label": "Python prepares input",
+        "label": {
+          "lv": "Python sagatavo ievadi",
+          "en": "Python prepares input"
+        },
         "caption": "review_pack.py",
         "files": [
           "scripts/review_pack.py",
@@ -500,7 +891,10 @@
         "w": 330,
         "h": 95,
         "label": "FOCUS7 + CRM7",
-        "caption": "Priorities and person context · read",
+        "caption": {
+          "lv": "Prioritātes un cilvēka konteksts · lasījums",
+          "en": "Priorities and person context · read"
+        },
         "detailFor": "scope",
         "icon": "file",
         "kind": "tool",
@@ -550,7 +944,10 @@
         "side",
         {
           "path": "M930 147 H900 Q880 147 880 120 V75 Q880 55 860 55 H530 Q510 55 510 75 V235 Q510 250 490 250 H340 Q320 250 320 270 V295 Q320 315 340 315 H360",
-          "label": "Previous state",
+          "label": {
+            "lv": "Iepriekšējais statuss",
+            "en": "Previous state"
+          },
           "x": 590,
           "y": 45
         }
@@ -569,7 +966,10 @@
         "loop",
         {
           "path": "M1050 300 V260 Q1050 230 1020 230 H870 Q840 230 840 260 V300",
-          "label": "↺ Decide · save · continue",
+          "label": {
+            "lv": "↺ Izlemjam · saglabājam · turpinām",
+            "en": "↺ Decide · save · continue"
+          },
           "x": 855,
           "y": 218
         }
@@ -580,7 +980,10 @@
         "loop",
         {
           "path": "M1280 360 C1280 640 300 640 300 390 Q300 345 360 345",
-          "label": "↺ Next review: saved state + new messages",
+          "label": {
+            "lv": "↺ Nākamajā apskatā: saglabātais + jaunais",
+            "en": "↺ Next review: saved state + new messages"
+          },
           "x": 710,
           "y": 630
         }
@@ -599,7 +1002,10 @@
       "y": 430,
       "w": 425,
       "h": 120,
-      "label": "Possible sources · connect separately or supply selected content",
+      "label": {
+        "en": "Possible sources · connect separately or supply selected content",
+        "lv": "Iespējamie avoti · pieslēdz atsevišķi vai iedod atlasīto saturu"
+      },
       "current": [
         {
           "icon": "gmail",
@@ -613,7 +1019,10 @@
       "optional": [
         {
           "icon": "link",
-          "label": "Web / CRM enquiries"
+          "label": {
+            "lv": "Web / CRM pieteikumi",
+            "en": "Web / CRM enquiries"
+          }
         },
         {
           "icon": "slack",
@@ -634,41 +1043,92 @@
       "y": 100,
       "w": 135,
       "h": 95,
-      "label": "On request",
-      "text": "Schedule separately"
+      "label": {
+        "en": "On request / scheduled",
+        "lv": "Pēc lūguma / grafika"
+      },
+      "text": {
+        "en": "Source change ≠ Action",
+        "lv": "Avota izmaiņas ≠ Action"
+      }
     },
     "legend": {
-      "you": "You",
+      "you": {
+        "lv": "Tu",
+        "en": "You"
+      },
       "ai": "AI",
-      "tool": "Saved record",
-      "loop": "Dashed arrow = repeat",
+      "tool": {
+        "lv": "Saglabāts fails",
+        "en": "Saved record"
+      },
+      "loop": {
+        "lv": "Pārtraukta bulta = atgriešanās",
+        "en": "Dashed arrow = repeat"
+      },
       "py": "Python"
     },
-    "modeNote": "The switch changes only the diagram. Full step explanations below it stay identical in both views.",
-    "stepsTitle": "Read the workflow in order",
-    "stepLabel": "Step",
-    "resultLabel": "After this step:",
-    "docsLabel": "Method sources",
-    "note": "The offline Python helper is included. Account readers, writers and recurring monitoring must be connected and verified in your own workspace.",
+    "modeNote": {
+      "lv": "Pārslēdzis maina tikai shēmu. Pilnie soļu apraksti zem tās abos skatos ir vienādi.",
+      "en": "The switch changes only the diagram. Full step explanations below it stay identical in both views."
+    },
+    "stepsTitle": {
+      "lv": "Izlasi darba plūsmu pēc kārtas",
+      "en": "Read the workflow in order"
+    },
+    "stepLabel": {
+      "lv": "Solis",
+      "en": "Step"
+    },
+    "resultLabel": {
+      "lv": "Pēc šī soļa:",
+      "en": "After this step:"
+    },
+    "docsLabel": {
+      "lv": "Metodes avoti",
+      "en": "Method sources"
+    },
+    "note": {
+      "en": "The offline Python helper is included. Account readers, writers and any recurring monitor need their own verified setup. An activity signal never replaces semantic conversation review.",
+      "lv": "Lokālais Python palīgs ir iekļauts. Kontu lasītājiem, rakstītājiem un regulāram monitoram vajag atsevišķi pārbaudītu uzstādījumu. Aktivitātes signāls neaizstāj sarunas semantisko apskatu."
+    },
     "defaultMode": "detailed",
     "modeLabels": {
-      "detailed": "Detailed",
-      "simple": "Short diagram"
+      "detailed": {
+        "lv": "Detalizēti",
+        "en": "Detailed"
+      },
+      "simple": {
+        "lv": "Īsā shēma",
+        "en": "Short diagram"
+      }
     },
-    "simpleRepeat": "↺ Decide and save each item.  ↺ Check new messages at the next review.",
+    "simpleRepeat": {
+      "lv": "↺ Izlemjam un saglabājam katru punktu.  ↺ Nākamajā apskatā pārbaudām jauno.",
+      "en": "↺ Decide and save each item.  ↺ Check new messages at the next review."
+    },
     "modeBehavior": "canvas",
     "simple": {
       "width": 1000,
       "height": 310,
-      "goal": "Goal: know your next action and preserve open questions.",
+      "goal": {
+        "lv": "Mērķis: zināt nākamo darbību un nepazaudēt atvērtos jautājumus.",
+        "en": "Goal: know your next action and preserve open questions."
+      },
       "nodes": [
         {
           "id": "start",
           "target": "invoke",
           "kind": "you",
           "icon": "user",
-          "label": "You invoke COMMS7",
-          "caption": "Say what to review",
+          "label": {
+            "lv": "Tu izsauc COMMS7",
+            "en": "You invoke COMMS7"
+          },
+          "caption": {
+            "lv": "Pasaki, ko pārskatīt",
+            "en": "Say what to review"
+          },
           "x": 40,
           "y": 110
         },
@@ -677,8 +1137,14 @@
           "target": "review",
           "kind": "ai",
           "icon": "ai",
-          "label": "AI reviews",
-          "caption": "Context, messages, saved state",
+          "label": {
+            "lv": "AI pārbauda",
+            "en": "AI reviews"
+          },
+          "caption": {
+            "lv": "Konteksts, ziņas, iepriekšējais",
+            "en": "Context, messages, saved state"
+          },
           "x": 240,
           "y": 110
         },
@@ -687,8 +1153,14 @@
           "target": "brief",
           "kind": "ai",
           "icon": "ai",
-          "label": "See the priorities",
-          "caption": "Act · wait · skip",
+          "label": {
+            "lv": "Saņem svarīgāko",
+            "en": "See the priorities"
+          },
+          "caption": {
+            "lv": "Rīkoties · gaidīt · izlaist",
+            "en": "Act · wait · skip"
+          },
           "x": 440,
           "y": 110
         },
@@ -697,8 +1169,14 @@
           "target": "act",
           "kind": "you",
           "icon": "user",
-          "label": "You decide",
-          "caption": "AI helps prepare action",
+          "label": {
+            "lv": "Tu izlem",
+            "en": "You decide"
+          },
+          "caption": {
+            "lv": "AI palīdz sagatavot rīcību",
+            "en": "AI helps prepare action"
+          },
           "x": 640,
           "y": 110
         },
@@ -707,8 +1185,14 @@
           "target": "close",
           "kind": "ai",
           "icon": "file",
-          "label": "Save and continue",
-          "caption": "Open items remain",
+          "label": {
+            "lv": "Saglabājam",
+            "en": "Save and continue"
+          },
+          "caption": {
+            "lv": "Atvērtie punkti paliek",
+            "en": "Open items remain"
+          },
           "x": 840,
           "y": 110
         }
@@ -736,26 +1220,71 @@
           "loop"
         ]
       ],
-      "loopLabel": "↺ Your decisions persist; the next review checks what changed."
+      "loopLabel": {
+        "lv": "↺ Tavs lēmums saglabājas; nākamajā reizē pārbaudām izmaiņas.",
+        "en": "↺ Your decisions persist; the next review checks what changed."
+      }
     }
   },
   "ui": {
-    "all_files": "Method files in reading order",
-    "no_runs": "Private executions are omitted from this shareable view.",
-    "tab_settings": "Settings",
-    "tab_log": "Changes",
-    "changes_title": "Method and viewer changes",
-    "fit_sub": "Illustrative estimate · not measured",
-    "qs_sub": "Copy into your AI chat. You can name a source or ask only for Action / Waiting.",
-    "tab_example": "Example",
-    "overview_example": "See an example →",
-    "qs_title": "Start with COMMS7",
-    "copy": "Copy request",
-    "d_local": "Version",
-    "d_status": "Review mode"
+    "all_files": {
+      "lv": "Metodes faili lasīšanas secībā",
+      "en": "Method files in reading order"
+    },
+    "no_runs": {
+      "lv": "Šajā kopīgojamajā skatā privāto izpilžu nav.",
+      "en": "Private executions are omitted from this shareable view."
+    },
+    "tab_settings": {
+      "lv": "Iestatījumi",
+      "en": "Settings"
+    },
+    "tab_log": {
+      "lv": "Izmaiņas",
+      "en": "Changes"
+    },
+    "changes_title": {
+      "lv": "Kas mainījies metodē un skatā",
+      "en": "Method and viewer changes"
+    },
+    "fit_sub": {
+      "lv": "Ilustratīvs vērtējums · nav mērījums",
+      "en": "Illustrative estimate · not measured"
+    },
+    "qs_sub": {
+      "lv": "Iekopē savā AI čatā. Vari norādīt konkrētu avotu vai tikai Action / Waiting.",
+      "en": "Copy into your AI chat. You can name a source or ask only for Action / Waiting."
+    },
+    "tab_example": {
+      "lv": "Piemērs",
+      "en": "Example"
+    },
+    "overview_example": {
+      "lv": "Skatīt rezultāta piemēru →",
+      "en": "See an example →"
+    },
+    "qs_title": {
+      "lv": "Sāc ar COMMS7",
+      "en": "Start with COMMS7"
+    },
+    "copy": {
+      "lv": "Kopēt pieprasījumu",
+      "en": "Copy request"
+    },
+    "d_local": {
+      "lv": "Versija",
+      "en": "Version"
+    },
+    "d_status": {
+      "lv": "Darba režīms",
+      "en": "Review mode"
+    }
   },
   "scoreDoc": "references/SCORECARD.md",
-  "scoreHint": "Illustrative planning estimate · 21 Oct 2026. Actual token use has not been measured.",
+  "scoreHint": {
+    "lv": "Ilustratīvs plānošanas novērtējums · 21.10.2026. Faktiskais tokenu patēriņš nav mērīts.",
+    "en": "Illustrative planning estimate · 21 Oct 2026. Actual token use has not been measured."
+  },
   "layout": {
     "tabs": [
       "overview",
@@ -766,57 +1295,114 @@
     ],
     "changesOnly": true,
     "overviewFiles": false,
-    "filesTitle": "Skill files",
-    "filesNote": "Main instructions, selection rules and supporting files in one package.",
+    "filesTitle": {
+      "lv": "Prasmes faili",
+      "en": "Skill files"
+    },
+    "filesNote": {
+      "lv": "Galvenā instrukcija, atlases noteikumi un palīgfaili vienā pakotnē.",
+      "en": "Main instructions, selection rules and supporting files in one package."
+    },
     "overviewBrief": {
-      "title": "What you get",
+      "title": {
+        "lv": "Ko saņemsi",
+        "en": "What you get"
+      },
       "items": [
         {
-          "title": "Priority next actions",
-          "text": "Up to five items, each with a reason and source."
+          "title": {
+            "lv": "Svarīgākie nākamie soļi",
+            "en": "Priority next actions"
+          },
+          "text": {
+            "lv": "Līdz pieciem punktiem ar pamatojumu un avotu.",
+            "en": "Up to five items, each with a reason and source."
+          }
         },
         {
-          "title": "A reply draft",
-          "text": "A concrete reply to review together and send."
+          "title": {
+            "lv": "Atbildes sagatave",
+            "en": "A reply draft"
+          },
+          "text": {
+            "lv": "Konkrēts teksts, ko kopā pārskatīt un nosūtīt.",
+            "en": "A concrete reply to review together and send."
+          }
         },
         {
-          "title": "A saved handoff",
-          "text": "Your decisions and open questions for the next review."
+          "title": {
+            "lv": "Saglabāts turpinājums",
+            "en": "A saved handoff"
+          },
+          "text": {
+            "lv": "Tavi lēmumi un atvērtie jautājumi nākamajam apskatam.",
+            "en": "Your decisions and open questions for the next review."
+          }
         }
       ],
-      "note": "Start with a few selected conversations. Add verified connections only when useful."
+      "note": {
+        "en": "Start with a few selected conversations. Add verified connections only when useful.",
+        "lv": "Sāc ar dažām atlasītām sarunām. Pievieno pārbaudītus savienojumus tad, kad tie ir vajadzīgi."
+      }
     },
     "exampleTab": true,
     "behavior": {
-      "title": "What COMMS7 does",
-      "text": "AI checks conversation context and previous decisions, selects what matters and helps draft a reply. Gmail messages are organised with GTD labels.",
+      "title": {
+        "lv": "Ko COMMS7 dara",
+        "en": "What COMMS7 does"
+      },
+      "text": {
+        "lv": "AI pārbauda sarunas kontekstu un iepriekšējos lēmumus, atlasa aktuālo un palīdz sagatavot atbildi. Gmail ziņas sakārto pēc GTD.",
+        "en": "AI checks conversation context and previous decisions, selects what matters and helps draft a reply. Gmail messages are organised with GTD labels."
+      },
       "items": [
         {
           "label": "Action",
-          "text": "My next action"
+          "text": {
+            "lv": "Mana nākamā darbība",
+            "en": "My next action"
+          }
         },
         {
           "label": "Waiting",
-          "text": "A result owed by someone else"
+          "text": {
+            "lv": "Gaidu konkrētu rezultātu no cita",
+            "en": "A result owed by someone else"
+          }
         },
         {
           "label": "Someday/Maybe",
-          "text": "An optional future idea"
+          "text": {
+            "lv": "Iespējama iecere vēlāk",
+            "en": "An optional future idea"
+          }
         },
         {
           "label": "Read/Later",
-          "text": "Selected reading"
+          "text": {
+            "lv": "Izvēlēta lasāmviela",
+            "en": "Selected reading"
+          }
         }
       ],
-      "note": "Label changes follow your existing task authorisation. New filters and unsubscribes require an accepted concrete proposal and a supported writer.",
+      "note": {
+        "en": "Labels follow existing task authorisation. Filters, unsubscribes and monitoring require their accepted concrete scope and supported tools.",
+        "lv": "Etiķetes uztur esošās uzdevuma atļaujas robežās. Filtriem, atteikumiem un monitoram vajag pieņemtu konkrētu tvērumu un pieejamus rīkus."
+      },
       "docs": [
         {
           "file": "SKILL.md",
-          "label": "Main instruction · SKILL.md"
+          "label": {
+            "lv": "Galvenā instrukcija · SKILL.md",
+            "en": "Main instruction · SKILL.md"
+          }
         },
         {
           "file": "references/GMAIL-WORKFLOW.md",
-          "label": "Gmail operating rules"
+          "label": {
+            "lv": "Gmail darbības noteikumi",
+            "en": "Gmail operating rules"
+          }
         }
       ]
     },
@@ -833,17 +1419,47 @@
     "filesTab": "principles"
   },
   "preview": {
-    "eyebrow": "COMMS7 · example output",
-    "title": "Your communication review in one place",
-    "lead": "A fictional review showing next actions, context, reply drafts and a preserved waiting item. Nothing here is connected to an account.",
-    "label": "Fictional teaching example · nothing sent",
-    "period": "21 October 2026 · 10:30 · Europe/Riga",
-    "headline": "Five items. Two still need your choice.",
-    "summary": "Two replies, one promise, one follow-up and a saved WAITING item.",
+    "eyebrow": {
+      "lv": "COMMS7 · rezultāta piemērs",
+      "en": "COMMS7 · example output"
+    },
+    "title": {
+      "lv": "Tavs saziņas apskats vienā vietā",
+      "en": "Your communication review in one place"
+    },
+    "lead": {
+      "en": "A fictional review with next actions, context, reply drafts and a preserved waiting item. Nothing here is connected to an account.",
+      "lv": "Izdomāts apskats ar nākamajiem soļiem, kontekstu, atbilžu melnrakstiem un saglabātu gaidīšanu. Šis piemērs nav pieslēgts kontam."
+    },
+    "label": {
+      "lv": "Izdomāts mācību piemērs · nekas nav nosūtīts",
+      "en": "Fictional teaching example · nothing sent"
+    },
+    "period": {
+      "lv": "21. oktobris 2026 · 10.30 · Europe/Riga",
+      "en": "21 October 2026 · 10:30 · Europe/Riga"
+    },
+    "headline": {
+      "lv": "Pieci punkti. Diviem vēl vajadzīga tava izvēle.",
+      "en": "Five items. Two still need your choice."
+    },
+    "summary": {
+      "lv": "Divas atbildes, viens paša solījums, viens atgādinājums un saglabāts GAIDU.",
+      "en": "Two replies, one promise, one follow-up and a saved WAITING item."
+    },
     "statLabels": [
-      "review items",
-      "explicit decisions",
-      "still undecided"
+      {
+        "lv": "punkti apskatā",
+        "en": "review items"
+      },
+      {
+        "lv": "skaidri lēmumi",
+        "en": "explicit decisions"
+      },
+      {
+        "lv": "vēl jāizlemj",
+        "en": "still undecided"
+      }
     ],
     "progress": {
       "decided": 3,
@@ -851,12 +1467,30 @@
       "percent": 60,
       "meaning": "decisions in this review, not completed obligations"
     },
-    "progressLabel": "Decision progress:",
-    "progressNote": "WAITING is a decided review item while its obligation remains open.",
-    "actionLabel": "Next step:",
-    "draftLabel": "Suggested draft",
-    "waitLabel": "What remains for next time",
-    "copyLabel": "Copy draft",
+    "progressLabel": {
+      "lv": "Lēmumu progress:",
+      "en": "Decision progress:"
+    },
+    "progressNote": {
+      "lv": "GAIDU ir izlemts punkts, bet atvērtā saistība turpinās.",
+      "en": "WAITING is a decided review item while its obligation remains open."
+    },
+    "actionLabel": {
+      "lv": "Nākamais solis:",
+      "en": "Next step:"
+    },
+    "draftLabel": {
+      "lv": "Ieteiktais melnraksts",
+      "en": "Suggested draft"
+    },
+    "waitLabel": {
+      "lv": "Ko saglabājam nākamajai reizei",
+      "en": "What remains for next time"
+    },
+    "copyLabel": {
+      "lv": "Kopēt melnrakstu",
+      "en": "Copy draft"
+    },
     "items": [
       {
         "id": "email",
@@ -864,262 +1498,641 @@
         "channel": "Gmail",
         "priority": "P1",
         "attention": true,
-        "person": "Līga · Demo Studio",
-        "title": "Reply about team training",
-        "contextLabel": "Incoming email",
-        "quote": "Could we arrange training for six people on 12 November? Please reply by 22 October.",
-        "why": "A customer request has an explicit reply deadline. Date availability still needs checking.",
-        "action": "Clarify the team’s goal and prepare a reply.",
-        "draft": "Hello Līga,\n\nThank you for your message. I will check availability for 12 November. To prepare a relevant proposal, please send two key examples of the team’s work.\n\nBest regards",
-        "decisionLabel": "Your decision on the reply is still needed.",
-        "source": "DEMO-E01 · fictional Gmail conversation",
+        "person": {
+          "lv": "Līga · Demo Studio",
+          "en": "Līga · Demo Studio"
+        },
+        "title": {
+          "lv": "Atbildēt par komandas apmācībām",
+          "en": "Reply about team training"
+        },
+        "contextLabel": {
+          "lv": "Ienākušais e-pasts",
+          "en": "Incoming email"
+        },
+        "quote": {
+          "lv": "Vai 12. novembrī varam noorganizēt apmācības sešiem cilvēkiem? Lūdzu, dodiet ziņu līdz 22. oktobrim.",
+          "en": "Could we arrange training for six people on 12 November? Please reply by 22 October."
+        },
+        "why": {
+          "lv": "Ir konkrēts klienta jautājums un norādīts atbildes termiņš. Datuma pieejamība vēl jāpārbauda.",
+          "en": "A customer request has an explicit reply deadline. Date availability still needs checking."
+        },
+        "action": {
+          "lv": "Precizēt komandas mērķi un sagatavot atbildi.",
+          "en": "Clarify the team’s goal and prepare a reply."
+        },
+        "draft": {
+          "lv": "Labdien, Līga!\n\nPaldies par ziņu. Pārbaudīšu 12. novembra iespēju. Lai sagatavotu precīzu piedāvājumu, atsūtiet, lūdzu, divus svarīgākos komandas darba piemērus.\n\nAr sveicieniem",
+          "en": "Hello Līga,\n\nThank you for your message. I will check availability for 12 November. To prepare a relevant proposal, please send two key examples of the team’s work.\n\nBest regards"
+        },
+        "decisionLabel": {
+          "lv": "Vēl vajadzīgs tavs lēmums par atbildi.",
+          "en": "Your decision on the reply is still needed."
+        },
+        "source": {
+          "lv": "DEMO-E01 · izdomāta Gmail saruna",
+          "en": "DEMO-E01 · fictional Gmail conversation"
+        },
         "decided": false
       },
       {
         "id": "promise",
         "icon": "gmail",
         "channel": "Gmail",
-        "priority": "Your promise",
+        "priority": {
+          "lv": "Paša solījums",
+          "en": "Your promise"
+        },
         "attention": true,
-        "person": "Presentation delivery",
-        "title": "Remember your promise by 16:00",
-        "contextLabel": "What you promised",
-        "quote": "I will send the presentation and examples today by 16:00.",
-        "why": "The reply has been sent; the promised delivery is still due.",
-        "action": "Finish the file, check access and then send it.",
-        "draft": "Hello,\n\nI have attached the presentation and examples we agreed on. Please let me know if you cannot access the files.",
-        "decisionLabel": "You chose DOING. Delivery remains open.",
-        "source": "DEMO-E02 · fictional owner promise",
+        "person": {
+          "lv": "Prezentācijas piegāde",
+          "en": "Presentation delivery"
+        },
+        "title": {
+          "lv": "Atceries savu solījumu līdz 16.00",
+          "en": "Remember your promise by 16:00"
+        },
+        "contextLabel": {
+          "lv": "Ko tu esi solījis",
+          "en": "What you promised"
+        },
+        "quote": {
+          "lv": "Šodien līdz 16.00 atsūtīšu prezentāciju un piemērus.",
+          "en": "I will send the presentation and examples today by 16:00."
+        },
+        "why": {
+          "lv": "Atbilde jau ir nosūtīta; tagad jāizpilda solītā piegāde.",
+          "en": "The reply has been sent; the promised delivery is still due."
+        },
+        "action": {
+          "lv": "Pabeigt failu, pārbaudīt piekļuvi un tad nosūtīt.",
+          "en": "Finish the file, check access and then send it."
+        },
+        "draft": {
+          "lv": "Labdien!\n\nPievienoju prezentāciju un piemērus, par kuriem vienojāmies. Lūdzu, dodiet ziņu, ja failiem nevar piekļūt.",
+          "en": "Hello,\n\nI have attached the presentation and examples we agreed on. Please let me know if you cannot access the files."
+        },
+        "decisionLabel": {
+          "lv": "Tu izvēlējies: DARU. Piegāde paliek atvērta.",
+          "en": "You chose DOING. Delivery remains open."
+        },
+        "source": {
+          "lv": "DEMO-E02 · izdomāts paša solījums",
+          "en": "DEMO-E02 · fictional owner promise"
+        },
         "decided": true,
-        "draftNote": "Use after attaching the file and checking access."
+        "draftNote": {
+          "lv": "Lieto šo tekstu pēc faila pievienošanas un piekļuves pārbaudes.",
+          "en": "Use after attaching the file and checking access."
+        }
       },
       {
         "id": "reminder",
         "icon": "gmail",
         "channel": "Gmail",
-        "priority": "Follow-up",
-        "person": "Partner proposal",
-        "title": "Follow up on the proposal",
-        "contextLabel": "Conversation follow-up",
-        "quote": "I will review the proposal and reply by 20 October.",
-        "why": "In this example, the promised date has passed with no new reply.",
-        "action": "Prepare one short follow-up.",
-        "draft": "Hello,\n\nFollowing up on our proposal. Is it still relevant? If so, we can agree on the next step.",
-        "decisionLabel": "You chose REPLY. The draft has not been sent.",
-        "source": "DEMO-E03 · fictional partner promise",
+        "priority": {
+          "lv": "Atgādinājums",
+          "en": "Follow-up"
+        },
+        "person": {
+          "lv": "Partnera piedāvājums",
+          "en": "Partner proposal"
+        },
+        "title": {
+          "lv": "Atgādināt par nosūtīto piedāvājumu",
+          "en": "Follow up on the proposal"
+        },
+        "contextLabel": {
+          "lv": "Sarunas turpinājums",
+          "en": "Conversation follow-up"
+        },
+        "quote": {
+          "lv": "Piedāvājumu izskatīšu un atbildēšu līdz 20. oktobrim.",
+          "en": "I will review the proposal and reply by 20 October."
+        },
+        "why": {
+          "lv": "Piemēra sarunā solītais datums ir pagājis un jaunas atbildes nav.",
+          "en": "In this example, the promised date has passed with no new reply."
+        },
+        "action": {
+          "lv": "Sagatavot vienu īsu atgādinājumu.",
+          "en": "Prepare one short follow-up."
+        },
+        "draft": {
+          "lv": "Labdien!\n\nAtgriežos pie mūsu piedāvājuma. Vai tas joprojām ir aktuāls? Ja jā, varam vienoties par nākamo soli.",
+          "en": "Hello,\n\nFollowing up on our proposal. Is it still relevant? If so, we can agree on the next step."
+        },
+        "decisionLabel": {
+          "lv": "Tu izvēlējies: ATBILDĒT. Melnraksts vēl nav nosūtīts.",
+          "en": "You chose REPLY. The draft has not been sent."
+        },
+        "source": {
+          "lv": "DEMO-E03 · izdomāts partnera solījums",
+          "en": "DEMO-E03 · fictional partner promise"
+        },
         "decided": true
       },
       {
         "id": "whatsapp",
         "icon": "whatsapp",
         "channel": "WhatsApp",
-        "priority": "To arrange",
-        "person": "Mārtiņš · collaboration",
-        "title": "Arrange the next call",
-        "contextLabel": "Incoming message",
-        "quote": "Hi! Could we have a 15-minute call this week?",
-        "why": "There is a specific request. AI helps agree on a next step without inventing calendar availability.",
-        "action": "Ask for two possible times and the call topic.",
-        "draft": "Hi! Happy to help. Please send two times that work for you and the topic you want to discuss.",
-        "decisionLabel": "Your choice is still needed; no WhatsApp message has been sent.",
-        "source": "DEMO-W01 · fictional WhatsApp conversation",
+        "priority": {
+          "lv": "Jāsaskaņo",
+          "en": "To arrange"
+        },
+        "person": {
+          "lv": "Mārtiņš · sadarbība",
+          "en": "Mārtiņš · collaboration"
+        },
+        "title": {
+          "lv": "Uzrakstīt par nākamo zvanu",
+          "en": "Arrange the next call"
+        },
+        "contextLabel": {
+          "lv": "Ienākusī ziņa",
+          "en": "Incoming message"
+        },
+        "quote": {
+          "lv": "Sveiks! Vai šonedēļ varam sazvanīties uz 15 minūtēm?",
+          "en": "Hi! Could we have a 15-minute call this week?"
+        },
+        "why": {
+          "lv": "Ir konkrēts lūgums. AI palīdz vienoties par nākamo soli, neizdomājot brīvu kalendāra laiku.",
+          "en": "There is a specific request. AI helps agree on a next step without inventing calendar availability."
+        },
+        "action": {
+          "lv": "Palūgt divus iespējamos laikus un zvana tēmu.",
+          "en": "Ask for two possible times and the call topic."
+        },
+        "draft": {
+          "lv": "Sveiks! Varu palīdzēt. Atsūti, lūdzu, divus tev ērtus laikus un tēmu, ko gribi pārrunāt.",
+          "en": "Hi! Happy to help. Please send two times that work for you and the topic you want to discuss."
+        },
+        "decisionLabel": {
+          "lv": "Vēl vajadzīga tava izvēle; WhatsApp ziņa nav nosūtīta.",
+          "en": "Your choice is still needed; no WhatsApp message has been sent."
+        },
+        "source": {
+          "lv": "DEMO-W01 · izdomāta WhatsApp saruna",
+          "en": "DEMO-W01 · fictional WhatsApp conversation"
+        },
         "decided": false
       },
       {
         "id": "waiting",
         "icon": "file",
-        "channel": "Saved state",
+        "channel": {
+          "lv": "Saglabātais statuss",
+          "en": "Saved state"
+        },
         "priority": "WAITING",
         "waiting": true,
-        "person": "Receiving materials",
-        "title": "Waiting for the partner’s file",
-        "contextLabel": "Previously open item",
-        "quote": "I will send the file by 22 October.",
-        "why": "No new message in this pass, but the open promise remains.",
-        "action": "Keep waiting; check on 23 October.",
-        "followup": "Who: the partner.\nExpected: the agreed materials file.\nNext check: 23 Oct 2026.\n\nNo additional reminder has been selected now.",
-        "decisionLabel": "You chose WAITING. The decision is clear; the obligation remains open.",
-        "source": "DEMO-S01 · fictional saved item",
+        "person": {
+          "lv": "Materiālu saņemšana",
+          "en": "Receiving materials"
+        },
+        "title": {
+          "lv": "Gaidu failu no partnera",
+          "en": "Waiting for the partner’s file"
+        },
+        "contextLabel": {
+          "lv": "Iepriekš atvērtais punkts",
+          "en": "Previously open item"
+        },
+        "quote": {
+          "lv": "Failu nosūtīšu līdz 22. oktobrim.",
+          "en": "I will send the file by 22 October."
+        },
+        "why": {
+          "lv": "Jaunas ziņas šajā aplī nav, taču atvērtais solījums saglabājas.",
+          "en": "No new message in this pass, but the open promise remains."
+        },
+        "action": {
+          "lv": "Turpināt gaidīt; pārbaudīt 23. oktobrī.",
+          "en": "Keep waiting; check on 23 October."
+        },
+        "followup": {
+          "lv": "No kā: partneris.\nKo gaidu: saskaņoto materiālu failu.\nNākamā pārbaude: 23.10.2026.\n\nPapildu atgādinājums šobrīd nav izvēlēts.",
+          "en": "Who: the partner.\nExpected: the agreed materials file.\nNext check: 23 Oct 2026.\n\nNo additional reminder has been selected now."
+        },
+        "decisionLabel": {
+          "lv": "Tu izvēlējies: GAIDU. Lēmums skaidrs; saistība atvērta.",
+          "en": "You chose WAITING. The decision is clear; the obligation remains open."
+        },
+        "source": {
+          "lv": "DEMO-S01 · izdomāts saglabāts punkts",
+          "en": "DEMO-S01 · fictional saved item"
+        },
         "decided": true
       }
     ],
-    "note": "All scenarios are fictional. Copy buttons only copy text to the clipboard. The actual review_pack.py calculated this example’s decision progress from synthetic inputs.",
+    "note": {
+      "lv": "Visas situācijas ir izdomātas. Kopēšanas poga tikai iekopē tekstu starpliktuvē. Lēmumu progresu šim piemēram aprēķināja īstais review_pack.py ar sintētisku ievadi.",
+      "en": "All scenarios are fictional. Copy buttons only copy text to the clipboard. The actual review_pack.py calculated this example’s decision progress from synthetic inputs."
+    },
     "sourceDoc": "references/EXAMPLE.md",
-    "sourceLabel": "Example scenarios and number basis",
+    "sourceLabel": {
+      "lv": "Piemēra situācijas un skaitļu pamats",
+      "en": "Example scenarios and number basis"
+    },
     "layouts": {
       "default": "desk",
       "labels": {
-        "desk": "EXAMPLE 1 · List",
-        "cards": "EXAMPLE 2 · Cards"
+        "desk": {
+          "lv": "EXAMPLE 1 · Saraksts",
+          "en": "EXAMPLE 1 · List"
+        },
+        "cards": {
+          "lv": "EXAMPLE 2 · Kartītes",
+          "en": "EXAMPLE 2 · Cards"
+        }
       },
-      "note": "The same five items. Open only what you need."
+      "note": {
+        "lv": "Tie paši pieci punkti. Atver tikai vajadzīgo.",
+        "en": "The same five items. Open only what you need."
+      }
     }
   },
   "guides": {
     "principles": {
       "eyebrow": "COMMS7 · SKILL.md",
-      "title": "How COMMS7 chooses the next action",
-      "lead": "COMMS7 looks for unresolved commitments and their next step. An unread message is not itself a task; your promise can remain open after sending a reply.",
+      "title": {
+        "lv": "Pēc kā COMMS7 pieņem lēmumu",
+        "en": "How COMMS7 chooses the next action"
+      },
+      "lead": {
+        "lv": "COMMS7 meklē neatrisinātu saistību un tās nākamo soli. Nelasīta ziņa pati par sevi nav darbs, bet paša solījums paliek svarīgs arī pēc atbildes nosūtīšanas.",
+        "en": "COMMS7 looks for unresolved commitments and their next step. An unread message is not itself a task; your promise can remain open after sending a reply."
+      },
       "sections": [
         {
-          "title": "What the main SKILL.md contains",
-          "text": "AI starts with this file: purpose, invocation mode, selection rules, context sources and limits. The detailed run contract and optional modes live in linked files loaded when relevant.",
+          "title": {
+            "lv": "Kas ir galvenajā SKILL.md",
+            "en": "What the main SKILL.md contains"
+          },
+          "text": {
+            "lv": "AI sāk ar šo failu: mērķis, izsaukuma režīms, atlases noteikumi, konteksta avoti un robežas. Detalizētais apļa līgums un izvēles režīmi ir piesaistītajos failos, kurus ielādē pēc vajadzības.",
+            "en": "AI starts with this file: purpose, invocation mode, selection rules, context sources and limits. The detailed run contract and optional modes live in linked files loaded when relevant."
+          },
           "docs": [
             {
               "file": "SKILL.md",
-              "label": "Open the main instructions"
+              "label": {
+                "lv": "Atvērt galveno instrukciju",
+                "en": "Open the main instructions"
+              }
             },
             {
               "file": "references/RUN-CONTRACT.md",
-              "label": "Full run contract"
+              "label": {
+                "lv": "Pilnais izpildes līgums",
+                "en": "Full run contract"
+              }
             }
           ]
         },
         {
-          "title": "Five decision checks",
+          "title": {
+            "lv": "Pieci pārbaudes jautājumi",
+            "en": "Five decision checks"
+          },
           "rows": [
             {
-              "label": "1. Who is addressed?",
-              "text": "Is the request directed at you or someone whose work you coordinate? A group mention alone creates no task."
+              "label": {
+                "lv": "1. Kam tas adresēts?",
+                "en": "1. Who is addressed?"
+              },
+              "text": {
+                "lv": "Vai lūgums tiešām ir tev vai cilvēkam, kura darbību tu koordinē? Grupas pieminējums pats nerada darbu.",
+                "en": "Is the request directed at you or someone whose work you coordinate? A group mention alone creates no task."
+              }
             },
             {
-              "label": "2. What is unresolved?",
-              "text": "Identify the actual question, your promise, expected result or deadline, then one verifiable next step."
+              "label": {
+                "lv": "2. Kas ir atvērts?",
+                "en": "2. What is unresolved?"
+              },
+              "text": {
+                "lv": "Konkrēts jautājums, paša solījums, saņemams rezultāts vai termiņš; nosaki vienu pārbaudāmu nākamo soli.",
+                "en": "Identify the actual question, your promise, expected result or deadline, then one verifiable next step."
+              }
             },
             {
-              "label": "3. Is it already resolved?",
-              "text": "Check the latest thread, sent messages, other authorised channels and your previous decision."
+              "label": {
+                "lv": "3. Vai tas jau atrisināts?",
+                "en": "3. Is it already resolved?"
+              },
+              "text": {
+                "lv": "Pārbaudi jaunāko sarunu, nosūtīto, citu atļauto kanālu un tavu iepriekšējo lēmumu.",
+                "en": "Check the latest thread, sent messages, other authorised channels and your previous decision."
+              }
             },
             {
-              "label": "4. Why now?",
-              "text": "Use actual deadlines, consequences, person context and accepted FOCUS7 priorities. Do not invent urgency."
+              "label": {
+                "lv": "4. Kāpēc tagad?",
+                "en": "4. Why now?"
+              },
+              "text": {
+                "lv": "Ņem vērā īsto termiņu, sekas, cilvēka kontekstu un pieņemtās FOCUS7 prioritātes. Neizdomā steidzamību.",
+                "en": "Use actual deadlines, consequences, person context and accepted FOCUS7 priorities. Do not invent urgency."
+              }
             },
             {
-              "label": "5. What does evidence support?",
-              "text": "Recommend replying, doing, calling, waiting, deferring or skipping. If required context is missing, state the gap."
+              "label": {
+                "lv": "5. Ko var secināt?",
+                "en": "5. What does evidence support?"
+              },
+              "text": {
+                "lv": "Iesaki atbildēt, darīt, piezvanīt, gaidīt, atlikt vai izlaist. Ja vajadzīgais konteksts nav pieejams, nosauc trūkumu.",
+                "en": "Recommend replying, doing, calling, waiting, deferring or skipping. If required context is missing, state the gap."
+              }
             }
           ],
           "docs": []
         },
         {
-          "title": "How decisions appear in Gmail",
+          "title": {
+            "lv": "Kā izvēle parādās Gmail",
+            "en": "How decisions appear in Gmail"
+          },
           "rows": [
             {
               "label": "Action / Waiting",
-              "text": "I need to act or am waiting on someone else. A sent reply can leave a promised delivery open; both labels can be justified on one thread."
+              "text": {
+                "lv": "Man jārīkojas vai gaidu citu. Nosūtīta atbilde var atstāt solītu piegādi atvērtu; abas etiķetes vienā pavedienā var būt pamatotas.",
+                "en": "I need to act or am waiting on someone else. A sent reply can leave a promised delivery open; both labels can be justified on one thread."
+              }
             },
             {
               "label": "Someday/Maybe / Read/Later",
-              "text": "An optional future idea or selected reading. A deferred commitment keeps its action and restart date."
+              "text": {
+                "lv": "Vēl neuzņemta iecere vai izvēlēta lasīšana. Atlikts reāls solījums saglabā savu darbību un atsākšanas datumu.",
+                "en": "An optional future idea or selected reading. A deferred commitment keeps its action and restart date."
+              }
             },
             {
-              "label": "Filters and subscriptions",
-              "text": "Proposes repeatable sorting or unsubscribe with a reason. Executes the concrete change only after acceptance and with an available tool."
+              "label": {
+                "lv": "Filtri un abonementi",
+                "en": "Filters and subscriptions"
+              },
+              "text": {
+                "lv": "Piedāvā atkārtojamu šķirošanu vai atteikšanos ar pamatojumu. Konkrēto izmaiņu izpilda tikai pēc pieņemšanas un ar pieejamu rīku.",
+                "en": "Proposes repeatable sorting or unsubscribe with a reason. Executes the concrete change only after acceptance and with an available tool."
+              }
             }
           ],
-          "note": "Uses existing account label names. “Suggested” and “applied and verified in Gmail” are different results.",
+          "note": {
+            "lv": "Izmanto esošos konta label nosaukumus. “Ieteikts” un “Gmail izdarīts un pārbaudīts” ir dažādi rezultāti.",
+            "en": "Uses existing account label names. “Suggested” and “applied and verified in Gmail” are different results."
+          },
           "docs": [
             {
               "file": "references/GMAIL-WORKFLOW.md",
-              "label": "Label and filter contract"
+              "label": {
+                "lv": "Etiķešu un filtru līgums",
+                "en": "Label and filter contract"
+              }
             }
           ]
         },
         {
-          "title": "What this changes in practice",
+          "title": {
+            "lv": "Kā tas atšķiras praksē",
+            "en": "What this changes in practice"
+          },
           "items": [
             {
-              "title": "“Thanks!”",
-              "text": "With no new question or commitment, no reply or task is needed."
+              "title": {
+                "lv": "“Paldies!”",
+                "en": "“Thanks!”"
+              },
+              "text": {
+                "lv": "Ja jauna jautājuma vai saistības nav, atbildi neprasa un darbu neveido.",
+                "en": "With no new question or commitment, no reply or task is needed."
+              }
             },
             {
-              "title": "“I will send the slides tomorrow”",
-              "text": "The reply may be sent while the promised delivery remains open."
+              "title": {
+                "lv": "“Prezentāciju nosūtīšu rīt”",
+                "en": "“I will send the slides tomorrow”"
+              },
+              "text": {
+                "lv": "Atbilde var būt nosūtīta, bet prezentācijas piegāde vēl ir atvērta.",
+                "en": "The reply may be sent while the promised delivery remains open."
+              }
             },
             {
-              "title": "“I will reply on Friday”",
-              "text": "Wait for the other party until the agreed date; do not invent an earlier reminder."
+              "title": {
+                "lv": "“Atbildēšu piektdien”",
+                "en": "“I will reply on Friday”"
+              },
+              "text": {
+                "lv": "Gaidām otras puses atbildi līdz norunātajam datumam; neatgādinām patvaļīgi ātrāk.",
+                "en": "Wait for the other party until the agreed date; do not invent an earlier reminder."
+              }
             },
             {
-              "title": "Promotion or newsletter",
-              "text": "Usually requires no reply. Relevant reading can be considered through NEWS7 when that is your task."
+              "title": {
+                "lv": "Reklāma vai jaunumi",
+                "en": "Promotion or newsletter"
+              },
+              "text": {
+                "lv": "Parasti neprasa atbildi. Lasīšanai noderīgais var nonākt NEWS7 izvērtēšanā, ja tas ir tavs uzdevums.",
+                "en": "Usually requires no reply. Relevant reading can be considered through NEWS7 when that is your task."
+              }
             }
           ],
-          "note": "An AI suggestion is not an accepted task. You decide; DONE closes only the named action.",
+          "note": {
+            "lv": "AI ieteikums nav pieņemts uzdevums. Tu izvēlies; GATAVS aizver tikai nosaukto soli.",
+            "en": "An AI suggestion is not an accepted task. You decide; DONE closes only the named action."
+          },
           "docs": []
         },
         {
-          "title": "How tools are selected",
+          "title": {
+            "lv": "Kādus rīkus izvēlas",
+            "en": "How tools are selected"
+          },
           "rows": [
             {
               "label": "Gmail / WhatsApp",
-              "text": "Read received and sent context for the authorised account; a Gmail snippet or WhatsApp metadata alone is not a full review."
+              "text": {
+                "lv": "Saņemtā un nosūtītā konteksts no atļautā konta; Gmail izvilkums vai WA kolektora metadati vieni nav pilns apskats.",
+                "en": "Read received and sent context for the authorised account; a Gmail snippet or WhatsApp metadata alone is not a full review."
+              }
             },
             {
               "label": "CRM7",
-              "text": "Match the person and read relevant recent context where the granted tool is available."
+              "text": {
+                "lv": "Atrodi pareizo cilvēku un nolasi vajadzīgo pēdējās sarunas kontekstu, ja piešķirtais rīks ir pieejams.",
+                "en": "Match the person and read relevant recent context where the granted tool is available."
+              }
             },
             {
-              "label": "Calendar and documents",
-              "text": "Use when needed to verify a particular deadline, availability or delivery."
+              "label": {
+                "lv": "Kalendārs un dokumenti",
+                "en": "Calendar and documents"
+              },
+              "text": {
+                "lv": "Izmanto, ja tie vajadzīgi konkrēta termiņa, pieejamības vai piegādes pārbaudei.",
+                "en": "Use when needed to verify a particular deadline, availability or delivery."
+              }
             },
             {
-              "label": "Other channels",
-              "text": "Additional sources need a named account, permissions and verified coverage."
+              "label": {
+                "lv": "Citi kanāli",
+                "en": "Other channels"
+              },
+              "text": {
+                "lv": "LinkedIn, Circle un citus avotus pievieno ar nosauktu kontu, tiesībām un pārbaudītu pārklājumu.",
+                "en": "Additional sources need a named account, permissions and verified coverage."
+              }
             }
           ],
           "docs": [
             {
               "file": "references/PRINCIPLES.md",
-              "label": "Full selection principles"
+              "label": {
+                "lv": "Atlases principu pilnais teksts",
+                "en": "Full selection principles"
+              }
+            }
+          ]
+        },
+        {
+          "id": "guide-monitoring",
+          "title": {
+            "en": "A source signal is not a reply decision",
+            "lv": "Avota signāls vēl nav lēmums atbildēt"
+          },
+          "text": {
+            "en": "An authorised activity monitor can detect changed incoming evidence. The COMMS7 review still checks the full conversation and prior decisions before deciding what you owe.",
+            "lv": "Autorizēts avota monitors var pamanīt mainītu ienākošo saturu. COMMS7 apskats joprojām pārbauda pilno sarunu un iepriekšējos lēmumus, pirms nosaka, kas tev jādara."
+          },
+          "rows": [
+            {
+              "label": {
+                "en": "Source activity",
+                "lv": "Avota aktivitāte"
+              },
+              "text": {
+                "en": "An agreed reader, cadence and private destination; unchanged cycles remain quiet and old history is a baseline.",
+                "lv": "Saskaņots lasītājs, ritms un privāts saņēmējs; nemainīgs cikls klusē, vecā vēsture ir sākuma stāvoklis."
+              }
+            },
+            {
+              "label": {
+                "en": "Semantic review",
+                "lv": "Semantiskais apskats"
+              },
+              "text": {
+                "en": "A new “thanks” may need no action. An old promise can remain open without a new message. Read latest sent/draft context before proposing a reply.",
+                "lv": "Jauns “paldies” var neprasīt rīcību. Vecs solījums paliek atvērts arī bez jaunas ziņas. Pirms atbildes ieteikuma pārbaudi jaunāko nosūtīto un melnrakstus."
+              }
+            }
+          ],
+          "note": {
+            "en": "This package includes no connected account, owner schedule or notification service. Verify each actual reader, runner and delivery separately.",
+            "lv": "Šajā pakotnē nav pieslēgta konta, īpašnieka grafika vai paziņojumu servisa. Atsevišķi pārbaudi īsto lasītāju, palaidēju un piegādi."
+          },
+          "docs": [
+            {
+              "file": "references/MONITORING.md",
+              "label": {
+                "en": "Optional monitoring contract",
+                "lv": "Izvēles monitora līgums"
+              }
             }
           ]
         },
         {
           "id": "guide-aios",
-          "title": "COMMS7 in your AIOS system",
-          "text": "System integration: high. COMMS7 can review supplied conversations on its own. With AIOS it also knows your direction, active commitments and relationship history, so selection is specific to your work.",
+          "title": {
+            "lv": "COMMS7 kopējā AIOS sistēmā",
+            "en": "COMMS7 in the AIOS system"
+          },
+          "text": {
+            "lv": "Saistība ar AIOS: augsta. COMMS7 apvieno biznesa virzienu, aktuālo darbu un attiecību vēsturi, lai izvēlētos tev nozīmīgu nākamo soli.",
+            "en": "AIOS integration: high. COMMS7 combines business direction, current work and relationship history to choose a next step that matters to you."
+          },
           "rows": [
             {
               "label": "01 · Constitution",
-              "text": "North Star and working principles guide which opportunities deserve attention, alongside real deadlines and existing obligations."
+              "text": {
+                "lv": "North Star dod ilgtermiņa virzienu: kuras iespējas atbilst pieņemtajiem mērķiem? Tas palīdz noteikt vērtību līdzās īstiem termiņiem un saistībām.",
+                "en": "North Star supplies direction: which opportunities support accepted goals? It adds strategic relevance alongside actual deadlines and commitments."
+              }
             },
             {
               "label": "02 · Memory",
-              "text": "Project and relationship history explains what was agreed. Accepted business conclusions return to the correct project or CRM home; private messages keep their protected audience."
+              "text": {
+                "lv": "Projektu fakti un iepriekšējās vienošanās precizē atbildi. Pieņemtie ilglaicīgie secinājumi nonāk pareizajā projekta/CRM avotā; privātie apskati paliek īpašnieka datu mapē.",
+                "en": "Project facts and prior agreements make the reply specific. Accepted lasting outcomes go to the right project/CRM source; private reviews remain in owner storage."
+              }
             },
             {
               "label": "03 · Skills",
-              "text": "FOCUS7, CRM7 and relevant delivery methods coordinate the next step with permitted agent roles. One skill does not duplicate their authorities."
+              "text": {
+                "lv": "CRM7 dod cilvēka kontekstu; FOCUS7 apstrādā pieņemtas prioritāšu izmaiņas; NEWS7 var izvērtēt prasītu lasāmvielu. Piešķirtie aģenti palīdz savās lomās.",
+                "en": "CRM7 supplies person context; FOCUS7 handles accepted priority changes; NEWS7 can assess requested reading. Granted agents contribute within their roles."
+              }
             },
             {
               "label": "04 · Tools",
-              "text": "Uses the same shared, permitted mail, messaging, CRM and calendar connections as other work. Every source still needs real verified capability."
+              "text": {
+                "lv": "Izmanto kopīgos, piešķirtos kontu savienojumus un rīkus. Pārbauda to pieejamību un svaigumu; katrai prasmei nav jābūvē atsevišķs pieslēgums.",
+                "en": "Uses shared, granted account connections and tools. Checks availability and freshness; every skill need not build a separate connection."
+              }
             },
             {
               "label": "05 · Focus",
-              "text": "Active goals, projects, tasks and deliberate pauses show what matters now. A fresh message does not silently create a new priority."
+              "text": {
+                "lv": "Aktīvie projekti, uzdevumi un pieņemtās pauzes nosaka, kas svarīgs tagad. Ziņa par aktuālu piegādi saņem projekta kontekstu; jauna ideja automātiski nekļūst par prioritāti.",
+                "en": "Active projects, tasks and accepted pauses determine what matters now. A current delivery message gains project context; a new idea does not automatically become a priority."
+              }
             }
           ],
-          "note": "High is a qualitative dependency assessment, not a measured quality score. Standalone use needs you to provide this context manually. Integration keeps it available between reviews; missing context must remain visible.",
+          "note": {
+            "lv": "“Augsta” ir kvalitatīvs saistības vērtējums, ne izmērīta precizitāte. Piemērs: aktīvas piegādes turpinājumu salīdzina ar jauna projekta piedāvājumu, ņemot vērā North Star, Focus un vienošanos vēsturi. Dotu solījumu neatceļ arī tad, ja tas ir ārpus Focus.",
+            "en": "“High” is a qualitative integration assessment, not measured accuracy. Example: compare a current delivery follow-up with a new project offer using North Star, Focus and prior agreements. Commitments outside Focus still count."
+          },
           "docs": [
             {
               "file": "references/AIOS-INTEGRATION.md",
-              "label": "Full AIOS integration"
+              "label": {
+                "lv": "Pilnā AIOS saikne",
+                "en": "Full AIOS integration"
+              }
             },
             {
               "file": "references/STORAGE-PLAN.md",
-              "label": "Storage proposal"
+              "label": {
+                "lv": "Failu izvietojuma priekšlikums",
+                "en": "Storage proposal"
+              }
             }
           ],
           "items": [
             {
-              "title": "Used on its own",
-              "text": "Can identify questions, promises and deadlines in supplied conversations. You provide the goals, history and priorities."
+              "title": {
+                "lv": "Lietojot atsevišķi",
+                "en": "Used on its own"
+              },
+              "text": {
+                "lv": "Var atlasīt jautājumus, solījumus un termiņus no dotajām sarunām. Mērķis, vēsture un prioritātes jāiedod pašam.",
+                "en": "Can identify questions, promises and deadlines in supplied conversations. You provide the goals, history and priorities."
+              }
             },
             {
-              "title": "Within AIOS",
-              "text": "Uses accepted direction and current context, remembers decisions and preserves the handoff in the right place. Less repeated explanation."
+              "title": {
+                "lv": "Kopā ar AIOS",
+                "en": "Within AIOS"
+              },
+              "text": {
+                "lv": "Izmanto jau pieņemto virzienu un aktuālo kontekstu, atceras lēmumus un saglabā turpinājumu pareizajā vietā. Mazāk atkārtotas skaidrošanas.",
+                "en": "Uses accepted direction and current context, remembers decisions and preserves the handoff in the right place. Less repeated explanation."
+              }
             }
           ]
         }

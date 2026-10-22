@@ -1,0 +1,486 @@
+{
+  "id": "geo7",
+  "name": "GEO7",
+  "title": {
+    "lv": "Biznesa SEO un GEO uzlabošana",
+    "en": "Business SEO and GEO improvements"
+  },
+  "version": "1.2.0",
+  "updated_on": "2026-10-22",
+  "author": "Egils Boitmanis · FullDigital",
+  "purpose": "Audits, atslēgvārdi, konkurenti un konkrēti vietnes uzlabojumi — ar avotiem un rezultāta mērījumu.",
+  "overview": {
+    "title": {
+      "lv": "No meklētāja jautājuma līdz kvalificētai sarunai",
+      "en": "From a search question to a qualified conversation"
+    },
+    "summary": {
+      "lv": "GEO7 pārbauda vietni, atlasa biznesam atbilstošus meklējumus un sagatavo konkrētus labojumus ar avotiem un pieņemšanas pārbaudi.",
+      "en": "GEO7 audits a website, selects searches that fit the business and prepares specific improvements with evidence and acceptance checks."
+    },
+    "starting_prompt": {
+      "lv": "GEO7: izvērtē [vietni] [auditorijai] [valstī/valodā]. Mērķis: [kvalificēta saruna]. Vispirms sagatavo pamatotas prioritātes un lapas briefu; norādi avotus, trūkumus un vajadzīgo atļauju.",
+      "en": "GEO7: review [website] for [audience] in [market/language]. Goal: [qualified conversation]. First prepare evidence-backed priorities and a page brief; state sources, gaps and required permission."
+    }
+  },
+  "workflow": [
+    {
+      "id": "audit",
+      "number": "01",
+      "name": {
+        "lv": "Audits",
+        "en": "Audit"
+      },
+      "label": {
+        "lv": "Esošā situācija un robežas",
+        "en": "Current state and scope"
+      },
+      "output": {
+        "lv": "Avota JSON un pārbaudāmi novērojumi",
+        "en": "Source JSON and verifiable observations"
+      },
+      "doc": "references/METHOD.md"
+    },
+    {
+      "id": "keywords",
+      "number": "02",
+      "name": {
+        "lv": "Atslēgvārdi",
+        "en": "Keywords"
+      },
+      "label": {
+        "lv": "Ko meklē īstais klients",
+        "en": "What the intended customer searches for"
+      },
+      "output": {
+        "lv": "Jautājums → nodoms → mērķa lapa",
+        "en": "Question → intent → target page"
+      },
+      "doc": "references/METHOD.md"
+    },
+    {
+      "id": "competitors",
+      "number": "03",
+      "name": {
+        "lv": "Konkurenti",
+        "en": "Competitors"
+      },
+      "label": {
+        "lv": "Ko jau atbild meklēšana",
+        "en": "What search already answers"
+      },
+      "output": {
+        "lv": "SERP avoti un satura atšķirības",
+        "en": "SERP sources and content differences"
+      },
+      "doc": "references/METHOD.md"
+    },
+    {
+      "id": "content",
+      "number": "04",
+      "name": {
+        "lv": "Saturs",
+        "en": "Content"
+      },
+      "label": {
+        "lv": "Konkrēts lapas labojums",
+        "en": "A specific page improvement"
+      },
+      "output": {
+        "lv": "Lapas briefs un pieņemšanas kritēriji",
+        "en": "Page brief and acceptance criteria"
+      },
+      "doc": "references/METHOD.md"
+    },
+    {
+      "id": "implementation",
+      "number": "05",
+      "name": {
+        "lv": "Ieviešana",
+        "en": "Implementation"
+      },
+      "label": {
+        "lv": "Pieņemtā projekta ieviešana",
+        "en": "Implement the accepted draft"
+      },
+      "output": {
+        "lv": "Atļauts labojums, kvīts un atkārtota pārbaude",
+        "en": "Authorised change, receipt and recheck"
+      },
+      "doc": "references/METHOD.md"
+    },
+    {
+      "id": "measurement",
+      "number": "06",
+      "name": {
+        "lv": "Mērījumi",
+        "en": "Measurement"
+      },
+      "label": {
+        "lv": "Vai ceļš ved pie sarunas",
+        "en": "Does the path lead to a conversation"
+      },
+      "output": {
+        "lv": "Salīdzināmi dati un nākamā prioritāte",
+        "en": "Comparable data and the next priority"
+      },
+      "doc": "references/METHOD.md"
+    }
+  ],
+  "tools": [
+    {
+      "name": {
+        "lv": "Publisko lapu audits",
+        "en": "Public page audit"
+      },
+      "mark": "HTTP",
+      "category": "Obligāta spēja",
+      "purpose": "Vietnes HTTP saturs, robots, sitemap, meta un JSON-LD.",
+      "scope": {
+        "lv": "Publisks HTTP; robots/sitemap/HTML. Iepriekšējais paraugs: 30 lapas, 12.10.2026.",
+        "en": "Public HTTP; robots/sitemap/HTML. Previous sample: 30 pages, 12 Oct 2026."
+      },
+      "limit": {
+        "lv": "HTTP novērojums nepierāda indeksāciju, JS renderu vai AI citējumu.",
+        "en": "An HTTP observation does not prove indexation, JS rendering or an AI citation."
+      },
+      "id": "public-http",
+      "icon_id": "collect",
+      "historical_status_2026_10_12": "Darbojas",
+      "status": "Historical configuration; not rechecked in the 2026-10-22 method/view review"
+    },
+    {
+      "name": {
+        "lv": "Google Search Console",
+        "en": "Google Search Console"
+      },
+      "icon": "googlesearchconsole.svg",
+      "category": "Google mērījumiem",
+      "purpose": "Vietnes vaicājumi, lapas, impressions un clicks.",
+      "scope": {
+        "lv": "Iepriekšējā GSC nolasīšana: 12.10.2026.; pašreiz nav atkārtota.",
+        "en": "Previous GSC read: 12 Oct 2026; not repeated now."
+      },
+      "limit": {
+        "lv": "Tukša atbilde nav nulles trafika pierādījums.",
+        "en": "An empty response does not prove zero traffic."
+      },
+      "id": "gsc",
+      "icon_id": "googlesearchconsole",
+      "historical_status_2026_10_12": "VPS pieslēgts",
+      "status": "Historical configuration; not rechecked in the 2026-10-22 method/view review"
+    },
+    {
+      "name": {
+        "lv": "Google Analytics",
+        "en": "Google Analytics"
+      },
+      "icon": "googleanalytics.svg",
+      "category": "Biznesa rezultāta mērījumam",
+      "purpose": "Organiskā piesaiste un kontaktēšanās notikumi.",
+      "scope": {
+        "lv": "Iepriekšējā GA4 nolasīšana: 12.10.2026.; pašreiz nav atkārtota.",
+        "en": "Previous GA4 read: 12 Oct 2026; not repeated now."
+      },
+      "limit": {
+        "lv": "Sesijas/notikumi nav unikālas kvalificētas sarunas.",
+        "en": "Sessions/events are not unique qualified conversations."
+      },
+      "id": "ga4",
+      "icon_id": "googleanalytics",
+      "historical_status_2026_10_12": "Dati iegūti",
+      "status": "Historical configuration; not rechecked in the 2026-10-22 method/view review"
+    },
+    {
+      "name": {
+        "lv": "Keyword Planner",
+        "en": "Keyword Planner"
+      },
+      "icon": "googleads.svg",
+      "category": "Atslēgvārdu izpētei",
+      "purpose": "Tirgus pieprasījuma un atslēgvārdu idejas.",
+      "scope": {
+        "lv": "20 UK/English idejas, 11.10.2026.; nav jaunas atlases.",
+        "en": "20 UK/English ideas, 11 Oct 2026; no new selection."
+      },
+      "limit": {
+        "lv": "Reklāmu competition nav SEO difficulty.",
+        "en": "Ad competition is not SEO difficulty."
+      },
+      "id": "keyword-planner",
+      "icon_id": "googleads",
+      "historical_status_2026_10_12": "Dati iegūti",
+      "status": "Historical configuration; not rechecked in the 2026-10-22 method/view review"
+    },
+    {
+      "name": {
+        "lv": "DataForSEO",
+        "en": "DataForSEO"
+      },
+      "mark": "DFS",
+      "category": "SERP / konkurentu datiem",
+      "purpose": "Ranžētie vaicājumi, SERP, konkurenti un keyword gap.",
+      "scope": {
+        "lv": "Ir izsaukumu plānotājs; maksas vaicājumi nav izpildīti.",
+        "en": "A query planner exists; paid queries have not been executed."
+      },
+      "limit": {
+        "lv": "Vajadzīga aktuāla cena, atļauts task budžets un izsaukumu limits.",
+        "en": "Requires a current price, authorised task budget and call limit."
+      },
+      "id": "dataforseo",
+      "icon_id": "link",
+      "historical_status_2026_10_12": "Plāns sagatavots",
+      "status": "Historical configuration; not rechecked in the 2026-10-22 method/view review"
+    },
+    {
+      "name": {
+        "lv": "PageSpeed / CrUX",
+        "en": "PageSpeed / CrUX"
+      },
+      "mark": "PS",
+      "category": "Veiktspējas mērījumam",
+      "purpose": "Laboratorijas ātrums un pieejamie lauka dati.",
+      "scope": {
+        "lv": "Iepriekšējais keyless mēģinājums: HTTP 429, 12.10.2026.",
+        "en": "Previous keyless attempt: HTTP 429, 12 Oct 2026."
+      },
+      "limit": {
+        "lv": "429 nozīmē “nav izmērīts”; HTTP laiks nav Core Web Vitals.",
+        "en": "429 means “not measured”; HTTP time is not Core Web Vitals."
+      },
+      "id": "pagespeed",
+      "icon_id": "eye",
+      "historical_status_2026_10_12": "HTTP 429",
+      "status": "Historical configuration; not rechecked in the 2026-10-22 method/view review"
+    },
+    {
+      "name": {
+        "lv": "Firecrawl",
+        "en": "Firecrawl"
+      },
+      "mark": "FC",
+      "category": "Izvēles vietņu lasītājs",
+      "purpose": "Plašāks saturs un renderēts crawl, kad pieejams.",
+      "scope": {
+        "lv": "Izvēles ārējs crawl; šajā pārskatā nav pārbaudīts.",
+        "en": "Optional external crawl; not checked in this review."
+      },
+      "limit": {
+        "lv": "Logo vai iepriekšējs kredītu statuss nepierāda pieejamu rīku.",
+        "en": "A logo or prior credit status does not prove tool availability."
+      },
+      "id": "firecrawl",
+      "icon_id": "collect",
+      "historical_status_2026_10_12": "0 kredītu",
+      "status": "Historical configuration; not rechecked in the 2026-10-22 method/view review"
+    },
+    {
+      "name": {
+        "lv": "PostHog",
+        "en": "PostHog"
+      },
+      "icon": "posthog.svg",
+      "category": "Izvēles uzvedības analītika",
+      "purpose": "Produkta notikumi un kontaktēšanās ceļš.",
+      "scope": {
+        "lv": "Iepriekšējā pieņemšana minēta 11.10. kvītī; GEO7 to šeit neizsauc.",
+        "en": "Prior acceptance is recorded in the 11 Oct receipt; GEO7 does not call it here."
+      },
+      "limit": {
+        "lv": "Šis pārskats nepierāda pašreizēju pieslēgumu vai datu svaigumu.",
+        "en": "This review does not prove current connectivity or fresh data."
+      },
+      "id": "posthog",
+      "icon_id": "posthog",
+      "historical_status_2026_10_12": "VPS pieslēgts",
+      "status": "Historical configuration; not rechecked in the 2026-10-22 method/view review"
+    },
+    {
+      "name": {
+        "lv": "AI Search novērojumi",
+        "en": "AI Search observations"
+      },
+      "mark": "AI",
+      "category": "AI redzamības mērījumam",
+      "purpose": "Vai reālās atbildēs biznesu min, citē vai iesaka.",
+      "scope": {
+        "lv": "Protokols un saglabātu atbilžu apkopotājs; īsta izlase nav veikta.",
+        "en": "Protocol and saved-answer summarizer; no real sample collected."
+      },
+      "limit": {
+        "lv": "Error/unknown izslēdz no novēroto atbilžu saucēja.",
+        "en": "Exclude error/unknown from the observed-answer denominator."
+      },
+      "id": "ai-search",
+      "icon_id": "chat",
+      "historical_status_2026_10_12": "Vēl nav novēroti",
+      "status": "Historical configuration; not rechecked in the 2026-10-22 method/view review"
+    }
+  ],
+  "tool_groups": [
+    {
+      "id": "evidence",
+      "title": {
+        "lv": "Pierādījumi",
+        "en": "Evidence"
+      },
+      "tools": [
+        "public-http",
+        "gsc",
+        "ga4",
+        "keyword-planner"
+      ],
+      "description": {
+        "lv": "Publiskās lapas un atļautie mērījumi.",
+        "en": "Public pages and authorised measurements."
+      }
+    },
+    {
+      "id": "research",
+      "title": {
+        "lv": "Papildu izpēte",
+        "en": "Optional research"
+      },
+      "tools": [
+        "dataforseo",
+        "pagespeed",
+        "firecrawl",
+        "posthog",
+        "ai-search"
+      ],
+      "description": {
+        "lv": "Tikai vajadzīgais konkrētajam jautājumam.",
+        "en": "Only what the specific question needs."
+      }
+    }
+  ],
+  "ui": {
+    "default_language": "en"
+  },
+  "language": "en",
+  "edition": "community",
+  "owner": {
+    "role": "growth",
+    "label": "Your growth lead"
+  },
+  "status_label": {
+    "lv": "Kopienas metode un pilns lejupielādes komplekts",
+    "en": "Community method and complete downloadable package"
+  },
+  "runs": [],
+  "changelog": [
+    {
+      "version": "1.2.0",
+      "date": "2026-10-22",
+      "changes": [
+        {
+          "lv": "Pieņemtais piecu ciļņu skats un metode pielāgoti patstāvīgai lietošanai bez personīgajiem kontiem vai datiem.",
+          "en": "Accepted five-tab guide and method adapted for standalone use without personal accounts or data."
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "skills7-guide-builder",
+      "purpose": "Optional: rebuild the guide using the separate SKILLS7 community toolkit. Download the standalone HTML separately from APP; its ZIP contains complete method/code/assets and excludes the guide to avoid recursive embedding.",
+      "source": "https://app.areteaios.com/learning/skills/skills7",
+      "access": "local optional"
+    },
+    {
+      "id": "your-sources",
+      "purpose": "Use only the project facts and accounts you authorise; no accounts or credentials are included",
+      "access": "task-scoped"
+    },
+    {
+      "id": "python3",
+      "purpose": "Python3.10+ standard library; system TLS certificates and IANA timezone data for Europe/Riga",
+      "access": "local"
+    },
+    {
+      "id": "optional-analytics",
+      "purpose": "Optional authorised GSC/GA4 exports, Keyword Planner, SERP provider and saved AI search observations; no broker or account client is bundled",
+      "access": "external optional"
+    }
+  ],
+  "resources": [
+    "SKILL.md",
+    "INSTALL.md",
+    "references/METHOD.md",
+    "references/REPORTING.md",
+    "references/INPUTS.md",
+    "references/README.md",
+    "scripts/README.md",
+    "scripts/audit.py",
+    "scripts/research_plan.py",
+    "scripts/ai_visibility.py",
+    "scripts/performance.py",
+    "scripts/report.py",
+    "scripts/report_detail.py",
+    "scripts/test_geo7.py",
+    "SOURCE.json",
+    "LICENSE.txt",
+    "references/THIRD-PARTY.md",
+    "references/LICENSE-STAKSOFT.txt",
+    "references/LICENSE-RESCIENCELAB.txt",
+    "assets/README.md",
+    "assets/fonts.css",
+    "assets/logo-areteaios.svg",
+    "assets/Inter-OFL.txt",
+    "assets/Literata-OFL.txt",
+    "assets/JetBrains-Mono-OFL.txt",
+    "assets/inter-latin.woff2",
+    "assets/inter-latin-ext.woff2",
+    "assets/literata-latin.woff2",
+    "assets/literata-latin-ext.woff2",
+    "assets/jetbrains-mono-latin.woff2",
+    "assets/jetbrains-mono-latin-ext.woff2",
+    "examples/README.md",
+    "examples/offline_crawl.json",
+    "examples/observations.json",
+    "manifest.json",
+    "view.json",
+    "index.html"
+  ],
+  "archive": {
+    "files": [
+      "SKILL.md",
+      "INSTALL.md",
+      "references/METHOD.md",
+      "references/REPORTING.md",
+      "references/INPUTS.md",
+      "references/README.md",
+      "scripts/README.md",
+      "scripts/audit.py",
+      "scripts/research_plan.py",
+      "scripts/ai_visibility.py",
+      "scripts/performance.py",
+      "scripts/report.py",
+      "scripts/report_detail.py",
+      "scripts/test_geo7.py",
+      "SOURCE.json",
+      "LICENSE.txt",
+      "references/THIRD-PARTY.md",
+      "references/LICENSE-STAKSOFT.txt",
+      "references/LICENSE-RESCIENCELAB.txt",
+      "assets/README.md",
+      "assets/fonts.css",
+      "assets/logo-areteaios.svg",
+      "assets/Inter-OFL.txt",
+      "assets/Literata-OFL.txt",
+      "assets/JetBrains-Mono-OFL.txt",
+      "assets/inter-latin.woff2",
+      "assets/inter-latin-ext.woff2",
+      "assets/literata-latin.woff2",
+      "assets/literata-latin-ext.woff2",
+      "assets/jetbrains-mono-latin.woff2",
+      "assets/jetbrains-mono-latin-ext.woff2",
+      "examples/README.md",
+      "examples/offline_crawl.json",
+      "examples/observations.json",
+      "manifest.json",
+      "view.json"
+    ]
+  }
+}

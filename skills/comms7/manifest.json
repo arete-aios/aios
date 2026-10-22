@@ -1,15 +1,24 @@
 {
   "id": "comms7",
   "name": "COMMS7",
-  "title": "Communication review and next actions",
-  "version": "1.5.0",
+  "title": {
+    "en": "Communication review and next actions",
+    "lv": "Saziņas pārskats un nākamās darbības"
+  },
+  "version": "1.5.1",
   "updated_on": "2026-10-22",
   "author": "Egils Boitmanis · FullDigital",
   "owner": {
     "label": "Egils Boitmanis · FullDigital"
   },
-  "purpose": "Turn selected communication into sourced actions, reply drafts and a reliable handoff, guided by your goals and active projects.",
-  "status_label": "Community method · manual review",
+  "purpose": {
+    "en": "Turn selected communication into sourced actions, reply drafts and a reliable handoff, guided by your goals and active projects.",
+    "lv": "Pārvērt atlasīto saziņu pamatotās darbībās, atbilžu melnrakstos un saglabātā turpinājumā, ņemot vērā tavus mērķus un aktīvos projektus."
+  },
+  "status_label": {
+    "en": "Community method · manual review; monitoring requires separate setup",
+    "lv": "Kopienas metode · manuāls apskats; monitoru pieslēdz atsevišķi"
+  },
   "method_status": "community-method-not-account-activation",
   "aliases": [
     "COMMS7",
@@ -18,9 +27,18 @@
     "SAZINA7"
   ],
   "overview": {
-    "title": "Communication review and next actions",
-    "summary": "Review emails, messages and applications together. See what needs your action, who needs a reply and what you are waiting for.",
-    "starting_prompt": "COMMS7 — read the extracted SKILL.md. Review my selected communications and open commitments against my goals and active projects. Show up to five important next actions, check the newest context, and prepare the replies I choose. State coverage and any unsaved handoff."
+    "title": {
+      "en": "Communication review and next actions",
+      "lv": "Saziņas pārskats un nākamās darbības"
+    },
+    "summary": {
+      "en": "Review emails, messages and applications together. See what needs your action, who needs a reply and what you are waiting for.",
+      "lv": "Pārskati e-pastus, ziņas un pieteikumus vienuviet. Redzi, kas jāizdara, kam jāatbild un ko vēl gaidi."
+    },
+    "starting_prompt": {
+      "en": "COMMS7 — read the extracted SKILL.md. Review my selected communications and open commitments against my goals and active projects. Show up to five important next actions, check the newest context, and prepare the replies I choose. State coverage and any unsaved handoff.",
+      "lv": "COMMS7 — izlasi izpakoto SKILL.md. Pārskati atlasīto saziņu un atvērtos solījumus, ņemot vērā manus mērķus un aktīvos projektus. Parādi līdz pieciem svarīgākajiem nākamajiem soļiem, pārbaudi jaunāko kontekstu un sagatavo izvēlētās atbildes. Nosauc pārklājumu un nesaglabāto turpinājumu."
+    }
   },
   "workflow": [
     {
@@ -217,11 +235,17 @@
   ],
   "changelog": [
     {
-      "version": "1.5.0",
+      "version": "1.5.1",
       "date": "2026-10-22",
       "changes": [
-        "Self-contained community edition with goal-aware prioritisation, five-layer AIOS integration, Gmail GTD decisions and a preserved open-work handoff.",
-        "The portable method and optional Python helper include no account connections, private owner setup or recurring schedule."
+        {
+          "en": "Separates an optional source-activity signal from semantic reply and commitment decisions. No owner account, schedule or monitor activation is included.",
+          "lv": "Nošķirts izvēles avota izmaiņu signāls no semantiska atbildes vai saistības lēmuma. Nav iekļauti īpašnieka konti, grafiks vai monitora aktivācija."
+        },
+        {
+          "en": "Bilingual five-tab guide, accepted compact example and the same full explanations under both workflow diagrams.",
+          "lv": "Divvalodu piecu ciļņu skats, pieņemtais kompaktais piemērs un vienādi pilnie apraksti zem abām darba plūsmas shēmām."
+        }
       ]
     }
   ],
@@ -325,8 +349,8 @@
     "default_language": "en"
   },
   "github": {
-    "url": "https://github.com/ziemelis7/aios/tree/codex/comms7-community-20261022/skills/comms7",
-    "public_version": "1.5.0"
+    "url": "https://github.com/arete-aios/aios",
+    "public_version": null
   },
   "documents": [
     {
@@ -356,6 +380,10 @@
     {
       "file": "references/GMAIL-WORKFLOW.md",
       "title": "GMAIL-WORKFLOW"
+    },
+    {
+      "file": "references/MONITORING.md",
+      "title": "MONITORING"
     },
     {
       "file": "references/PRINCIPLES.md",
@@ -396,6 +424,10 @@
     {
       "file": "scripts/review_pack.py",
       "title": "review_pack"
+    },
+    {
+      "file": "scripts/test_review_pack.py",
+      "title": "test_review_pack"
     }
   ],
   "resources": [
@@ -406,6 +438,7 @@
     "references/AIOS-INTEGRATION.md",
     "references/EXAMPLE.md",
     "references/GMAIL-WORKFLOW.md",
+    "references/MONITORING.md",
     "references/PRINCIPLES.md",
     "references/PYTHON-HELPER.md",
     "references/READINESS.md",
@@ -416,8 +449,56 @@
     "references/STORAGE-PLAN.md",
     "scripts/README.md",
     "scripts/review_pack.py",
+    "scripts/test_review_pack.py",
     "manifest.json",
     "view.json",
     "index.html"
-  ]
+  ],
+  "dependencies": [
+    {
+      "id": "capable-ai",
+      "purpose": "Read selected conversations and relevant owner context; no platform-specific model is required.",
+      "access": "owner-selected AI workspace"
+    },
+    {
+      "id": "source-readers",
+      "purpose": "Optional verified account readers/writers for the selected sources; supplied content supports a partial manual path.",
+      "access": "task-specific permissions; no connection included"
+    },
+    {
+      "id": "python3",
+      "purpose": "Optional standard-library review_pack.py and offline behaviour tests.",
+      "access": "local Python3 execution; no network"
+    },
+    {
+      "id": "skills7",
+      "purpose": "Optional regeneration of the human guide from manifest.json/view.json using the shared portable SKILLS7 package.",
+      "access": "local build only; not required for manual review or the offline evidence helper"
+    }
+  ],
+  "archive": {
+    "files": [
+      "LICENSE.txt",
+      "REVIEW-MODES.md",
+      "SKILL.md",
+      "SOURCE.json",
+      "manifest.json",
+      "references/AIOS-INTEGRATION.md",
+      "references/EXAMPLE.md",
+      "references/GMAIL-WORKFLOW.md",
+      "references/MONITORING.md",
+      "references/PRINCIPLES.md",
+      "references/PYTHON-HELPER.md",
+      "references/READINESS.md",
+      "references/README.md",
+      "references/RUN-CONTRACT.md",
+      "references/SCORECARD.md",
+      "references/SOCIAL-MODE.md",
+      "references/STORAGE-PLAN.md",
+      "scripts/README.md",
+      "scripts/review_pack.py",
+      "scripts/test_review_pack.py",
+      "view.json"
+    ]
+  }
 }

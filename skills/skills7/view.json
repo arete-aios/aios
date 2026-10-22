@@ -1,0 +1,1396 @@
+{
+  "eyebrow": "SKILLS7 · Create / Audit",
+  "groupSteps": {
+    "prepare": [
+      "01",
+      "02",
+      "03"
+    ],
+    "build": [
+      "04",
+      "05"
+    ],
+    "review": [
+      "06",
+      "07"
+    ]
+  },
+  "filesLead": {
+    "lv": "Galvenā instrukcija nosaka metodi; atsauces dod vajadzīgo dziļumu. Python palīgi pārbauda struktūru un būvē skatu.",
+    "en": "The main instructions define the method; references provide detail as needed. Python helpers inspect structure and build the guide."
+  },
+  "fileTypes": [
+    {
+      "ext": "MD",
+      "title": {
+        "en": "Method and contract",
+        "lv": "Metode un līgums"
+      },
+      "text": {
+        "lv": "SKILL.md: mērķis, izsaukums, lēmumi un robežas. METHOD.md: izveides un audita kārtība.",
+        "en": "SKILL.md: purpose, trigger, decisions and limits. METHOD.md: creation and audit workflow."
+      }
+    },
+    {
+      "ext": "HTML",
+      "title": {
+        "en": "One page template",
+        "lv": "Viena lapas veidne"
+      },
+      "text": {
+        "en": "viewer.html holds the look and behaviour for every skill; ui.json holds the shared EN/LV wording.",
+        "lv": "viewer.html satur izskatu un uzvedību visām prasmēm; ui.json — kopīgos EN/LV tekstus."
+      }
+    },
+    {
+      "ext": "PY",
+      "title": {
+        "en": "Build and check",
+        "lv": "Būve un pārbaude"
+      },
+      "text": {
+        "lv": "audit_package.py apkopo failus; build_view.py būvē lapu; check_view.py pārbauda saites un ZIP.",
+        "en": "audit_package.py inventories files; build_view.py builds the page; check_view.py checks links and ZIP."
+      }
+    }
+  ],
+  "fileGroups": [
+    {
+      "id": "start",
+      "zip": true,
+      "title": {
+        "en": "Start here",
+        "lv": "Sāc šeit"
+      },
+      "desc": {
+        "en": "The rules for every skill viewer.",
+        "lv": "Noteikumi katram prasmes skatam."
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "desc": {
+            "lv": "Mērķis, izveide/audits/skats, lēmumu principi un robežas.",
+            "en": "Purpose, creation/audit/view modes, decision principles and limits."
+          }
+        },
+        {
+          "path": "references/METHOD.md",
+          "desc": {
+            "lv": "No vajadzības līdz pārbaudītai piegādei; abu režīmu rezultāti.",
+            "en": "From need to verified delivery; outcomes for both modes."
+          }
+        },
+        {
+          "path": "references/VIEW-CONTRACT.md",
+          "desc": {
+            "en": "Which manifest.json and view.json field goes where.",
+            "lv": "Kurš manifest.json un view.json lauks kur parādās."
+          }
+        },
+        {
+          "path": "references/VISUALISE-ANY-SKILL.md",
+          "desc": {
+            "lv": "Otra kopējamā uzvedne ārējas prasmes izskaidrošanai.",
+            "en": "Second copyable prompt for explaining an external skill."
+          }
+        }
+      ]
+    },
+    {
+      "id": "code",
+      "zip": true,
+      "title": {
+        "en": "Build code",
+        "lv": "Būves kods"
+      },
+      "desc": {
+        "en": "Local only: no network, no model calls.",
+        "lv": "Tikai lokāli: bez tīkla un modeļa izsaukumiem."
+      },
+      "files": [
+        {
+          "path": "scripts/audit_package.py",
+          "desc": {
+            "lv": "Bez rakstīšanas pārbauda pamatlaukus, resursus un lokālās atkarības.",
+            "en": "Read-only checks of core fields, resources and local dependencies."
+          }
+        },
+        {
+          "path": "scripts/build_view.py",
+          "desc": {
+            "en": "Builds index.html and the public export.",
+            "lv": "Būvē index.html un publisko eksportu."
+          }
+        },
+        {
+          "path": "scripts/check_view.py",
+          "desc": {
+            "en": "Checks freshness, links, ZIP and privacy.",
+            "lv": "Pārbauda aktualitāti, saites, ZIP un privātumu."
+          }
+        },
+        {
+          "path": "scripts/verify_zip.js",
+          "desc": {
+            "en": "Runs the page's own ZIP code.",
+            "lv": "Palaiž lapas pašas ZIP kodu."
+          }
+        },
+        {
+          "path": "scripts/README.md",
+          "desc": {
+            "en": "Commands.",
+            "lv": "Komandas."
+          }
+        }
+      ]
+    },
+    {
+      "id": "template",
+      "zip": true,
+      "title": {
+        "en": "Template and wording",
+        "lv": "Veidne un teksti"
+      },
+      "desc": {
+        "en": "Template, fonts, icons and licences are included in the full source archive.",
+        "lv": "Pilnais avotu arhīvs ietver veidni, fontus, ikonas un licences."
+      },
+      "files": [
+        {
+          "path": "assets/viewer.html",
+          "desc": {
+            "en": "The page template.",
+            "lv": "Lapas veidne."
+          }
+        },
+        {
+          "path": "assets/ui.json",
+          "desc": {
+            "en": "Shared EN/LV wording.",
+            "lv": "Kopīgie EN/LV teksti."
+          }
+        },
+        {
+          "path": "assets/README.md",
+          "desc": {
+            "en": "Asset origin.",
+            "lv": "Resursu izcelsme."
+          }
+        },
+        {
+          "path": "assets/fonts/fonts.css",
+          "desc": {
+            "en": "Font definitions.",
+            "lv": "Fontu definīcijas."
+          }
+        },
+        {
+          "path": "assets/logo-areteaios.svg",
+          "desc": {
+            "en": "Arete AIOS logo.",
+            "lv": "Arete AIOS logo."
+          }
+        }
+      ]
+    },
+    {
+      "id": "info",
+      "zip": true,
+      "title": {
+        "en": "Package info",
+        "lv": "Pakotnes informācija"
+      },
+      "desc": {
+        "en": "This viewer's own data and licence.",
+        "lv": "Šī skata dati un licence."
+      },
+      "files": [
+        {
+          "path": "manifest.json",
+          "desc": {
+            "en": "Metadata, tools, steps and history.",
+            "lv": "Metadati, rīki, soļi un vēsture."
+          }
+        },
+        {
+          "path": "view.json",
+          "desc": {
+            "en": "This page's wording and workflow.",
+            "lv": "Šīs lapas teksti un darba plūsma."
+          }
+        },
+        {
+          "path": "references/README.md",
+          "desc": {
+            "en": "Reference index.",
+            "lv": "Atsauču saraksts."
+          }
+        },
+        {
+          "path": "LICENSE.txt",
+          "desc": {
+            "en": "CC BY 4.0.",
+            "lv": "CC BY 4.0."
+          }
+        },
+        {
+          "path": "README.md",
+          "desc": {
+            "lv": "Lietošana un pilna pārbūve pēc izpakošanas.",
+            "en": "Usage and complete rebuild after unpacking."
+          }
+        },
+        {
+          "path": "SOURCE.json",
+          "desc": {
+            "lv": "Versijas izcelsme un adaptācijas.",
+            "en": "Version provenance and adaptations."
+          }
+        }
+      ]
+    }
+  ],
+  "related": [],
+  "layout": {
+    "tabs": [
+      "overview",
+      "principles",
+      "flow",
+      "example",
+      "log"
+    ],
+    "overview": {
+      "compact": true,
+      "hideRelated": true
+    },
+    "overviewFiles": false,
+    "filesTab": "principles",
+    "filesTitle": {
+      "lv": "Metodes un rīku faili",
+      "en": "Method and tool files"
+    },
+    "filesNote": {
+      "lv": "Pilnais ZIP ietver metodi, dzinēju, bināros fontus, ikonas un licences. Pēc izpakošanas HTML atjauno lokāli; nav vajadzīgs privāts serveris.",
+      "en": "The complete ZIP includes method, engine, binary fonts, icons and licences. Rebuild HTML locally after unpacking; no private server is required."
+    },
+    "changesOnly": true,
+    "exampleTab": true,
+    "overviewBrief": {
+      "title": {
+        "lv": "Trīs darba veidi",
+        "en": "Three ways to use it"
+      },
+      "items": [
+        {
+          "title": {
+            "lv": "Jauna prasme",
+            "en": "New skill"
+          },
+          "text": {
+            "lv": "Vajadzība → lēmumu metode → pārbaudāms iznākums.",
+            "en": "Need → decision method → verifiable outcome."
+          }
+        },
+        {
+          "title": {
+            "lv": "Esošas audits",
+            "en": "Audit an existing skill"
+          },
+          "text": {
+            "lv": "Solītais pret pierādīto; konkrēti labojumi.",
+            "en": "Compare claims with evidence; make specific fixes."
+          }
+        },
+        {
+          "title": {
+            "lv": "Skaidrs cilvēka skats",
+            "en": "Clear human guide"
+          },
+          "text": {
+            "lv": "Viena saprotama lapa no pašas prasmes avotiem.",
+            "en": "One clear page built from the skill’s sources."
+          }
+        }
+      ],
+      "note": {
+        "lv": "Ne katrai idejai vajag jaunu prasmi. Sāc ar atkārtojamu vajadzību.",
+        "en": "Not every idea needs a new skill. Start with a recurring need."
+      }
+    }
+  },
+  "ui": {
+    "tab_settings": {
+      "lv": "Iestatījumi",
+      "en": "Settings"
+    },
+    "overview_example": {
+      "lv": "Skatīt rezultāta piemēru →",
+      "en": "See an example →"
+    },
+    "qs_sub": {
+      "lv": "Iedod to savam AI kopā ar mērķi vai esošās prasmes failiem. Skats nepalaiž citas prasmes.",
+      "en": "Give this to your AI with your goal or existing skill files. The guide does not execute another skill."
+    },
+    "onboarding": {
+      "lv": "Lasīt instrukciju",
+      "en": "Read instructions"
+    }
+  },
+  "guides": {
+    "principles": {
+      "eyebrow": "SKILLS7 · SKILL.md",
+      "title": {
+        "lv": "No kā sastāv laba prasme",
+        "en": "What makes a useful skill"
+      },
+      "lead": {
+        "lv": "Prasme maina AI rīcību konkrētā atkārtotā darbā. Skaidrs rezultāts un lēmumu principi ir svarīgāki par failu daudzumu.",
+        "en": "A skill changes AI behavior for a particular recurring task. A clear outcome and decision rules matter more than the number of files."
+      },
+      "sections": [
+        {
+          "title": {
+            "lv": "Ko nosaka SKILL.md",
+            "en": "What SKILL.md defines"
+          },
+          "rows": [
+            {
+              "label": {
+                "lv": "Kad lietot",
+                "en": "When to use"
+              },
+              "text": {
+                "lv": "Precīza vajadzība un izsaukums; atšķir jaunu metodi, auditu un tikai skatu.",
+                "en": "A precise need and trigger; distinguish a new method, an audit and a viewer-only request."
+              }
+            },
+            {
+              "label": {
+                "lv": "Kā izvēlēties",
+                "en": "How to choose"
+              },
+              "text": {
+                "lv": "Darbību kritēriji, vajadzīgie pierādījumi un cilvēka lēmuma robeža.",
+                "en": "Action criteria, required evidence and the point for human decisions."
+              }
+            },
+            {
+              "label": {
+                "lv": "Ko saņemt",
+                "en": "What to deliver"
+              },
+              "text": {
+                "lv": "Novērojams rezultāts, faktiskais statuss un skaidrs turpinājums.",
+                "en": "An observable result, actual status and clear handoff."
+              }
+            }
+          ],
+          "docs": [
+            {
+              "file": "SKILL.md",
+              "label": {
+                "lv": "Atvērt galveno instrukciju",
+                "en": "Open the main instructions"
+              }
+            }
+          ]
+        },
+        {
+          "title": {
+            "lv": "Izveide un audits izmanto vienu pamatu",
+            "en": "Creation and audit share a foundation"
+          },
+          "items": [
+            {
+              "title": {
+                "lv": "Izveidē definē",
+                "en": "Creation defines"
+              },
+              "text": {
+                "lv": "Vajadzību, metodi, robežas un pārbaudes piemēru. Ja pietiek ar esošo, jaunu prasmi neveido.",
+                "en": "The need, method, boundaries and a test example. Reuse an existing skill when it is sufficient."
+              }
+            },
+            {
+              "title": {
+                "lv": "Auditā salīdzini",
+                "en": "Audit compares"
+              },
+              "text": {
+                "lv": "Ko prasme sola, kas īstenots un ko pierādījumi apstiprina. Labo konkrēto trūkumu, saglabā lietojamo.",
+                "en": "What the skill promises, what is implemented and what evidence supports. Fix the specific gap and retain what works."
+              }
+            }
+          ],
+          "docs": [
+            {
+              "file": "references/METHOD.md",
+              "label": {
+                "lv": "Izveides un audita kārtība",
+                "en": "Creation and audit method"
+              }
+            }
+          ]
+        },
+        {
+          "title": {
+            "lv": "Kods dara atkārtojamo",
+            "en": "Code handles repeatable work"
+          },
+          "text": {
+            "lv": "Python pārbauda failu struktūru, resursus un versijas; kopīgais dzinējs būvē HTML un pārbauda ZIP. AI pamato lēmumus un vērtē uzvedību. Skripts pats neprasa konta piekļuvi un nepiešķir atļauju.",
+            "en": "Python checks file structure, resources and versions; the shared engine builds HTML and verifies ZIP. AI explains decisions and evaluates behavior. A script does not itself grant account access or permission."
+          },
+          "docs": [
+            {
+              "file": "scripts/audit_package.py",
+              "label": {
+                "lv": "Strukturālā audita kods",
+                "en": "Structural audit code"
+              }
+            }
+          ]
+        },
+        {
+          "title": {
+            "lv": "Četri atšķirīgi pierādījumi",
+            "en": "Four distinct kinds of evidence"
+          },
+          "rows": [
+            {
+              "label": {
+                "lv": "Metode",
+                "en": "Method"
+              },
+              "text": {
+                "lv": "Vai pamatpieprasījumā prasme izvēlas atbilstošu rīcību un atpazīst savu robežu?",
+                "en": "Does the skill choose appropriate actions for its core request and recognise its limits?"
+              }
+            },
+            {
+              "label": {
+                "lv": "Rīki",
+                "en": "Tools"
+              },
+              "text": {
+                "lv": "Vai vajadzīgā spēja pieejama šajā vidē ar vajadzīgo kontu un atļauju?",
+                "en": "Is the capability available here with the intended account and permission?"
+              }
+            },
+            {
+              "label": {
+                "lv": "Skats",
+                "en": "Guide"
+              },
+              "text": {
+                "lv": "Vai shēma, faili, valodas, kopēšana un ZIP tiešām strādā?",
+                "en": "Do the diagram, files, languages, copy controls and ZIP actually work?"
+              }
+            },
+            {
+              "label": {
+                "lv": "Piegāde",
+                "en": "Delivery"
+              },
+              "text": {
+                "lv": "Vai pareizā versija nolasāma no paredzētās saites? Īpašnieka atsauksme paliek atsevišķi.",
+                "en": "Can the intended version be read at the delivery URL? Owner feedback remains separate."
+              }
+            }
+          ]
+        },
+        {
+          "id": "guide-aios",
+          "title": {
+            "lv": "SKILLS7 kopējā AIOS sistēmā",
+            "en": "SKILLS7 in the AIOS system"
+          },
+          "text": {
+            "lv": "Saistība ar AIOS: vidēja. Instrukciju izveide un audits ir lietojami atsevišķi; AIOS dod virzienu, esošo avotu karti un sakārtotu pieņemšanu. Kvalitatīvs vērtējums, ne mērījums.",
+            "en": "AIOS integration: medium. Instruction authoring and audit work independently; an AIOS supplies direction, an existing source map and governed delivery. A qualitative assessment, not a measurement."
+          },
+          "rows": [
+            {
+              "label": "01 · Constitution",
+              "text": {
+                "lv": "North Star un noteikumi palīdz izvēlēties, vai prasme vispār vajadzīga un kādas darbības pieļaujamas.",
+                "en": "North Star and rules help decide whether the skill is needed and which actions are allowed."
+              }
+            },
+            {
+              "label": "02 · Memory",
+              "text": {
+                "lv": "Esošie projektu fakti un pierādījumi palīdz pārbaudīt apgalvojumus; ilglaicīgie lēmumi paliek pareizajā projekta avotā.",
+                "en": "Existing project facts and evidence support claim checks; lasting decisions remain in the right project source."
+              }
+            },
+            {
+              "label": "03 · Skills",
+              "text": {
+                "lv": "Atrod tuvāko esošo metodi un sadarbojas ar tās atbildīgo; darba vides noteikumi nosaka failu pieņemšanu.",
+                "en": "Finds the nearest existing method and works with its owner; workspace rules govern file acceptance."
+              }
+            },
+            {
+              "label": "04 · Tools",
+              "text": {
+                "lv": "Pārbauda faktiskās kopīgās spējas un izmanto vienu skata dzinēju. Savienojuma apraksts nav piekļuve.",
+                "en": "Checks actual shared capabilities and uses one viewer engine. A connection description is not access."
+              }
+            },
+            {
+              "label": "05 · Focus",
+              "text": {
+                "lv": "Palīdz izvēlēties, kuru prasmi uzlabot tagad. Vienas pakotnes tehniskam auditam Focus nav obligāta atkarība.",
+                "en": "Helps select which skill to improve now. Focus is not required for a package’s technical audit."
+              }
+            }
+          ],
+          "note": {
+            "lv": "AIOS sadaļai katrā prasmē jāpamato tieši tās saistība ar sistēmu un patstāvīga lietojuma iespējas. Piecu mapju nosaukumu uzskaitījums nav pietiekams.",
+            "en": "Each skill’s AIOS section should explain its actual system contribution and standalone use. Listing five folder names is insufficient."
+          }
+        }
+      ]
+    }
+  },
+  "flow": {
+    "presentation": "journey",
+    "modeBehavior": "canvas",
+    "revision": "skills7-protocol-v2",
+    "width": 1460,
+    "height": 660,
+    "left": 20,
+    "top": 40,
+    "start": "need",
+    "sequence": [
+      "need",
+      "sources",
+      "decisions",
+      "method",
+      "explain",
+      "verify",
+      "deliver"
+    ],
+    "defaultMode": "detailed",
+    "modeLabels": {
+      "detailed": {
+        "lv": "Detalizēti",
+        "en": "Detailed"
+      },
+      "simple": {
+        "lv": "Īsi",
+        "en": "Short"
+      }
+    },
+    "eyebrow": "SKILLS7 · Create / Audit",
+    "title": {
+      "lv": "No vajadzības līdz pārbaudītai prasmei",
+      "en": "From need to a verified skill"
+    },
+    "lead": {
+      "lv": "Izveidē nosakām metodi. Auditā pārbaudām to pašu pamatu un labojam trūkumus. Abiem ceļiem viens skaidrs rezultāts.",
+      "en": "Creation defines the method. Audit checks the same foundation and fixes gaps. Both lead to a clear result."
+    },
+    "notes": [
+      {
+        "x": 20,
+        "w": 570,
+        "label": {
+          "lv": "Vajadzība un principi",
+          "en": "Need and principles"
+        }
+      },
+      {
+        "x": 600,
+        "w": 410,
+        "label": {
+          "lv": "Metode un skaidrojums",
+          "en": "Method and guide"
+        }
+      },
+      {
+        "x": 1020,
+        "w": 420,
+        "label": {
+          "lv": "Pārbaude un piegāde",
+          "en": "Verification and delivery"
+        }
+      }
+    ],
+    "goal": {
+      "x": 40,
+      "y": 80,
+      "w": 290,
+      "h": 150,
+      "label": {
+        "lv": "Mērķis",
+        "en": "Goal"
+      },
+      "text": {
+        "lv": "AI zina, ko darīt; cilvēks saprot, kāpēc un kā pārbaudīt rezultātu.",
+        "en": "AI knows what to do; people understand why and how to verify the result."
+      }
+    },
+    "nodes": [
+      {
+        "id": "need",
+        "step": 1,
+        "x": 45,
+        "y": 310,
+        "kind": "you",
+        "icon": "user",
+        "min": true,
+        "label": {
+          "lv": "Nosaki vajadzību",
+          "en": "Define the need"
+        },
+        "actor": {
+          "lv": "Tu",
+          "en": "You"
+        },
+        "what": {
+          "lv": "Pasaki, ko vēlies izveidot vai pārbaudīt. AI izmanto jau doto kontekstu; precizē tikai to, kas maina mērķi vai atļautās darbības. Vispirms atrod tuvāko esošo prasmi.",
+          "en": "Say what you want to create or inspect. AI uses the context already given and clarifies only what changes the goal or permitted actions. It first finds the nearest existing skill."
+        },
+        "summary": {
+          "lv": "Mērķis, izveide vai audits un sagaidāmais rezultāts.",
+          "en": "Goal, creation or audit, and the expected result."
+        },
+        "paragraphs": [
+          {
+            "lv": "Pasaki, ko vēlies izveidot vai pārbaudīt. AI izmanto jau doto kontekstu; precizē tikai to, kas maina mērķi vai atļautās darbības. Vispirms atrod tuvāko esošo prasmi.",
+            "en": "Say what you want to create or inspect. AI uses the context already given and clarifies only what changes the goal or permitted actions. It first finds the nearest existing skill."
+          }
+        ],
+        "in": {
+          "lv": "Tavs mērķis",
+          "en": "Your goal"
+        },
+        "out": {
+          "lv": "Mērķis, izveide vai audits un sagaidāmais rezultāts.",
+          "en": "Goal, creation or audit, and the expected result."
+        },
+        "files": [
+          "SKILL.md"
+        ],
+        "headerIcons": [
+          "user"
+        ]
+      },
+      {
+        "id": "sources",
+        "step": 2,
+        "x": 245,
+        "y": 310,
+        "kind": "ai",
+        "icon": "ai",
+        "min": true,
+        "label": {
+          "lv": "Pārbaudi pamatu",
+          "en": "Check the foundation"
+        },
+        "actor": {
+          "lv": "AI",
+          "en": "AI"
+        },
+        "what": {
+          "lv": "AI nolasa galveno instrukciju, vajadzīgos avotus un faktisko statusu. Nosaka īpašnieku, auditoriju, datu autoritāti un pieejamos rīkus. Auditā atdala solīto, īstenoto un pierādīto.",
+          "en": "AI reads the main instructions, relevant sources and actual status. It identifies the owner, audience, data authority and available tools. Audit separates claims, implementation and evidence."
+        },
+        "summary": {
+          "lv": "Esošā metode, avoti, owner un atļautās darbības.",
+          "en": "Existing method, sources, owner and permitted actions."
+        },
+        "paragraphs": [
+          {
+            "lv": "AI nolasa galveno instrukciju, vajadzīgos avotus un faktisko statusu. Nosaka īpašnieku, auditoriju, datu autoritāti un pieejamos rīkus. Auditā atdala solīto, īstenoto un pierādīto.",
+            "en": "AI reads the main instructions, relevant sources and actual status. It identifies the owner, audience, data authority and available tools. Audit separates claims, implementation and evidence."
+          }
+        ],
+        "in": {
+          "lv": "Iepriekšējā soļa rezultāts",
+          "en": "Previous step output"
+        },
+        "out": {
+          "lv": "Esošā metode, avoti, owner un atļautās darbības.",
+          "en": "Existing method, sources, owner and permitted actions."
+        },
+        "files": [
+          "references/METHOD.md"
+        ],
+        "headerIcons": [
+          "ai"
+        ]
+      },
+      {
+        "id": "decisions",
+        "step": 3,
+        "x": 445,
+        "y": 310,
+        "kind": "ai",
+        "icon": "ai",
+        "min": true,
+        "label": {
+          "lv": "Definē principus",
+          "en": "Define decision rules"
+        },
+        "actor": {
+          "lv": "AI",
+          "en": "AI"
+        },
+        "what": {
+          "lv": "Vienojas, pēc kā AI izvēlas darbību un kāds pierādījums to pamato. Parāda North Star, Memory, citu prasmju, kopīgo rīku un Focus reālo ieguldījumu; nosauc arī patstāvīga lietojuma iespējas.",
+          "en": "Define how AI chooses an action and what evidence supports it. Explain the actual contribution of North Star, Memory, other skills, shared tools and Focus, and what works independently."
+        },
+        "summary": {
+          "lv": "Kā AI izvēlas un ko dod kopējā AIOS sistēma.",
+          "en": "How AI chooses and what the AIOS system contributes."
+        },
+        "paragraphs": [
+          {
+            "lv": "Vienojas, pēc kā AI izvēlas darbību un kāds pierādījums to pamato. Parāda North Star, Memory, citu prasmju, kopīgo rīku un Focus reālo ieguldījumu; nosauc arī patstāvīga lietojuma iespējas.",
+            "en": "Define how AI chooses an action and what evidence supports it. Explain the actual contribution of North Star, Memory, other skills, shared tools and Focus, and what works independently."
+          }
+        ],
+        "in": {
+          "lv": "Iepriekšējā soļa rezultāts",
+          "en": "Previous step output"
+        },
+        "out": {
+          "lv": "Kā AI izvēlas un ko dod kopējā AIOS sistēma.",
+          "en": "How AI chooses and what the AIOS system contributes."
+        },
+        "files": [
+          "references/METHOD.md"
+        ],
+        "headerIcons": [
+          "ai"
+        ]
+      },
+      {
+        "id": "method",
+        "step": 4,
+        "x": 645,
+        "y": 310,
+        "kind": "ai",
+        "icon": "ai",
+        "min": true,
+        "label": {
+          "lv": "Uzraksti metodi",
+          "en": "Write the method"
+        },
+        "actor": {
+          "lv": "AI",
+          "en": "AI"
+        },
+        "what": {
+          "lv": "Galvenajā failā paliek īsa darba instrukcija. Dziļumu dod saistītās atsauces. Skriptu pievieno tikai konkrētai atkārtojamai darbībai; saglabā esošo lietderīgo saturu un atkopšanu.",
+          "en": "Keep the main file concise. Linked references provide depth. Add a script only for concrete repeatable work; preserve useful existing content and recovery."
+        },
+        "summary": {
+          "lv": "Īss SKILL.md, vajadzīgās atsauces un lietderīgs kods.",
+          "en": "Concise SKILL.md, necessary references and useful code."
+        },
+        "paragraphs": [
+          {
+            "lv": "Galvenajā failā paliek īsa darba instrukcija. Dziļumu dod saistītās atsauces. Skriptu pievieno tikai konkrētai atkārtojamai darbībai; saglabā esošo lietderīgo saturu un atkopšanu.",
+            "en": "Keep the main file concise. Linked references provide depth. Add a script only for concrete repeatable work; preserve useful existing content and recovery."
+          }
+        ],
+        "in": {
+          "lv": "Iepriekšējā soļa rezultāts",
+          "en": "Previous step output"
+        },
+        "out": {
+          "lv": "Īss SKILL.md, vajadzīgās atsauces un lietderīgs kods.",
+          "en": "Concise SKILL.md, necessary references and useful code."
+        },
+        "files": [
+          "references/METHOD.md"
+        ],
+        "headerIcons": [
+          "ai",
+          "file"
+        ],
+        "stored": {
+          "title": {
+            "lv": "Prasmes faili",
+            "en": "Skill files"
+          },
+          "text": {
+            "lv": "SKILL.md un tikai vajadzīgās atsauces/kods paliek vienā prasmes mapē.",
+            "en": "SKILL.md and only necessary references/code stay in one skill folder."
+          }
+        }
+      },
+      {
+        "id": "explain",
+        "step": 5,
+        "x": 845,
+        "y": 310,
+        "kind": "ai",
+        "icon": "ai",
+        "min": true,
+        "label": {
+          "lv": "Izskaidro cilvēkam",
+          "en": "Explain it to people"
+        },
+        "actor": {
+          "lv": "AI",
+          "en": "AI"
+        },
+        "what": {
+          "lv": "No metodes veido Pārskatu, Principus, detalizēto un īso shēmu un kompaktu piemēru. manifest.json glabā pakotnes faktus, view.json — cilvēka tekstus; kopīgais dzinējs uzbūvē index.html.",
+          "en": "Turn the method into Overview, Principles, detailed/short diagrams and a compact example. manifest.json holds package facts and view.json the human wording; the shared engine builds index.html."
+        },
+        "summary": {
+          "lv": "Pārskats, principi, shēma un konkrēts piemērs.",
+          "en": "Overview, principles, diagram and a concrete example."
+        },
+        "paragraphs": [
+          {
+            "lv": "No metodes veido Pārskatu, Principus, detalizēto un īso shēmu un kompaktu piemēru. manifest.json glabā pakotnes faktus, view.json — cilvēka tekstus; kopīgais dzinējs uzbūvē index.html.",
+            "en": "Turn the method into Overview, Principles, detailed/short diagrams and a compact example. manifest.json holds package facts and view.json the human wording; the shared engine builds index.html."
+          }
+        ],
+        "in": {
+          "lv": "Iepriekšējā soļa rezultāts",
+          "en": "Previous step output"
+        },
+        "out": {
+          "lv": "Pārskats, principi, shēma un konkrēts piemērs.",
+          "en": "Overview, principles, diagram and a concrete example."
+        },
+        "files": [
+          "references/METHOD.md"
+        ],
+        "headerIcons": [
+          "ai",
+          "file"
+        ]
+      },
+      {
+        "id": "verify",
+        "step": 6,
+        "x": 1045,
+        "y": 310,
+        "kind": "ai",
+        "icon": "ai",
+        "min": true,
+        "label": {
+          "lv": "Pārbaudi rezultātu",
+          "en": "Verify the result"
+        },
+        "actor": {
+          "lv": "AI",
+          "en": "AI"
+        },
+        "what": {
+          "lv": "Izmēģina reālistisku pamatpieprasījumu, blakus pieprasījumu un būtisku trūkstoša rīka/atļaujas gadījumu. Python pārbauda struktūru, saites un ZIP; pārlūkā pārbauda abus plūsmas režīmus, EN/LV, kopēšanu un lejupielādi.",
+          "en": "Try a realistic core request, a neighbouring request and a relevant missing-tool/permission case. Python checks structure, links and ZIP; browser checks cover both flow modes, EN/LV, copying and downloads."
+        },
+        "summary": {
+          "lv": "Reālistisks pieprasījums, rīku robežas un HTML pārbaude.",
+          "en": "Realistic request, tool boundaries and HTML checks."
+        },
+        "paragraphs": [
+          {
+            "lv": "Izmēģina reālistisku pamatpieprasījumu, blakus pieprasījumu un būtisku trūkstoša rīka/atļaujas gadījumu. Python pārbauda struktūru, saites un ZIP; pārlūkā pārbauda abus plūsmas režīmus, EN/LV, kopēšanu un lejupielādi.",
+            "en": "Try a realistic core request, a neighbouring request and a relevant missing-tool/permission case. Python checks structure, links and ZIP; browser checks cover both flow modes, EN/LV, copying and downloads."
+          }
+        ],
+        "in": {
+          "lv": "Iepriekšējā soļa rezultāts",
+          "en": "Previous step output"
+        },
+        "out": {
+          "lv": "Reālistisks pieprasījums, rīku robežas un HTML pārbaude.",
+          "en": "Realistic request, tool boundaries and HTML checks."
+        },
+        "files": [
+          "scripts/audit_package.py",
+          "scripts/check_view.py"
+        ],
+        "headerIcons": [
+          "ai",
+          "python"
+        ],
+        "helper": {
+          "title": {
+            "lv": "Strukturāls Python audits",
+            "en": "Structural Python audit"
+          },
+          "text": {
+            "lv": "Inventārs un kļūdu saraksts bez rakstīšanas. Spriestspēju pārbauda atsevišķi.",
+            "en": "An inventory and errors without writes. Reasoning is tested separately."
+          },
+          "file": "scripts/audit_package.py"
+        }
+      },
+      {
+        "id": "deliver",
+        "step": 7,
+        "x": 1245,
+        "y": 310,
+        "kind": "ai",
+        "icon": "ai",
+        "min": true,
+        "label": {
+          "lv": "Piegādā un saglabā",
+          "en": "Deliver and preserve"
+        },
+        "actor": {
+          "lv": "AI",
+          "en": "AI"
+        },
+        "what": {
+          "lv": "Saglabā versiju, pierādījumus un konkrētos atlikumus. Atļautajai auditorijai piegādā pārbaudītu pakotni; publiskā eksportā pārbauda visu tekstu. APP/GitHub saskaņo versijas un nolasa rezultātu. Ievēro savas darba vides failu pieņemšanu.",
+          "en": "Save the version, evidence and specific remaining work. Deliver the checked package to the authorised audience; inspect all public-export text. Align APP/GitHub versions and read them back. Follow your workspace’s file acceptance rules."
+        },
+        "summary": {
+          "lv": "Versija, atļautā publikācija, pierādījumi un turpinājums.",
+          "en": "Version, authorised publication, evidence and handoff."
+        },
+        "paragraphs": [
+          {
+            "lv": "Saglabā versiju, pierādījumus un konkrētos atlikumus. Atļautajai auditorijai piegādā pārbaudītu pakotni; publiskā eksportā pārbauda visu tekstu. APP/GitHub saskaņo versijas un nolasa rezultātu. Ievēro savas darba vides failu pieņemšanu.",
+            "en": "Save the version, evidence and specific remaining work. Deliver the checked package to the authorised audience; inspect all public-export text. Align APP/GitHub versions and read them back. Follow your workspace’s file acceptance rules."
+          }
+        ],
+        "in": {
+          "lv": "Iepriekšējā soļa rezultāts",
+          "en": "Previous step output"
+        },
+        "out": {
+          "lv": "Versija, atļautā publikācija, pierādījumi un turpinājums.",
+          "en": "Version, authorised publication, evidence and handoff."
+        },
+        "files": [
+          "references/METHOD.md"
+        ],
+        "headerIcons": [
+          "ai",
+          "file"
+        ]
+      },
+      {
+        "id": "instruction",
+        "artifact": true,
+        "detailFor": "method",
+        "x": 620,
+        "y": 110,
+        "w": 160,
+        "h": 100,
+        "kind": "tool",
+        "icon": "file",
+        "label": "SKILL.md",
+        "caption": {
+          "lv": "Metodes pamats",
+          "en": "Method source"
+        }
+      },
+      {
+        "id": "python",
+        "detailFor": "verify",
+        "x": 1070,
+        "y": 110,
+        "kind": "py",
+        "icon": "python",
+        "label": {
+          "lv": "Audits + būve",
+          "en": "Audit + build"
+        },
+        "caption": {
+          "lv": "Īsts lokāls kods",
+          "en": "Real local code"
+        },
+        "files": [
+          "scripts/audit_package.py",
+          "scripts/build_view.py"
+        ]
+      },
+      {
+        "id": "result",
+        "artifact": true,
+        "detailFor": "deliver",
+        "x": 1200,
+        "y": 500,
+        "w": 190,
+        "h": 100,
+        "kind": "tool",
+        "icon": "file",
+        "label": {
+          "lv": "Pakotne + pierādījumi",
+          "en": "Package + evidence"
+        },
+        "caption": {
+          "lv": "Viena versija",
+          "en": "One version"
+        }
+      }
+    ],
+    "edges": [
+      [
+        "need",
+        "sources"
+      ],
+      [
+        "sources",
+        "decisions"
+      ],
+      [
+        "decisions",
+        "method"
+      ],
+      [
+        "method",
+        "explain"
+      ],
+      [
+        "explain",
+        "verify"
+      ],
+      [
+        "verify",
+        "deliver"
+      ],
+      [
+        "instruction",
+        "method",
+        "side"
+      ],
+      [
+        "python",
+        "verify",
+        "side"
+      ],
+      [
+        "deliver",
+        "result",
+        "side"
+      ],
+      [
+        "verify",
+        "decisions",
+        "loop",
+        {
+          "path": "M 1090 355 C 1090 620, 490 620, 490 405",
+          "label": {
+            "lv": "Labojumi atgriežas avotos",
+            "en": "Fixes return to source files"
+          },
+          "x": 770,
+          "y": 590
+        }
+      ]
+    ],
+    "stepsTitle": {
+      "lv": "Darba secība",
+      "en": "Work sequence"
+    },
+    "stepLabel": {
+      "lv": "Solis",
+      "en": "Step"
+    },
+    "resultLabel": {
+      "lv": "Rezultāts",
+      "en": "Result"
+    },
+    "docsLabel": {
+      "lv": "Metodes avoti",
+      "en": "Method sources"
+    },
+    "legend": {
+      "you": {
+        "lv": "Tu",
+        "en": "You"
+      },
+      "ai": "AI",
+      "tool": {
+        "lv": "Fails",
+        "en": "File"
+      },
+      "py": "Python",
+      "loop": {
+        "lv": "Pārtraukta bulta = labojumu cikls",
+        "en": "Dashed arrow = revision loop"
+      }
+    },
+    "modeNote": {
+      "lv": "Mainās tikai shēma. Pilnie apraksti zem abām ir vienādi.",
+      "en": "Only the diagram changes. Full descriptions below are identical."
+    },
+    "note": {
+      "lv": "Skats procesu nepalaiž. Publicēšanas un rakstīšanas atļauju nosaka konkrētais uzdevums.",
+      "en": "The guide does not run the process. Publication and writing permissions follow the specific task."
+    },
+    "simple": {
+      "width": 1000,
+      "height": 310,
+      "goal": {
+        "lv": "Mērķis: skaidra metode, pārbaudāms rezultāts.",
+        "en": "Goal: a clear method and a verifiable result."
+      },
+      "nodes": [
+        {
+          "id": "ask",
+          "target": "need",
+          "kind": "you",
+          "icon": "user",
+          "label": {
+            "lv": "Pasaki vajadzību",
+            "en": "Describe the need"
+          },
+          "caption": {
+            "lv": "Jauna prasme vai audits",
+            "en": "New skill or audit"
+          },
+          "x": 40,
+          "y": 110
+        },
+        {
+          "id": "rules",
+          "target": "decisions",
+          "kind": "ai",
+          "icon": "ai",
+          "label": {
+            "lv": "AI sakārto metodi",
+            "en": "AI shapes the method"
+          },
+          "caption": {
+            "lv": "Mērķis, lēmumi, robežas",
+            "en": "Goal, decisions, limits"
+          },
+          "x": 240,
+          "y": 110
+        },
+        {
+          "id": "write",
+          "target": "explain",
+          "kind": "ai",
+          "icon": "file",
+          "label": {
+            "lv": "Izveido failus un skatu",
+            "en": "Build files and guide"
+          },
+          "caption": {
+            "lv": "Instrukcija un skaidrojums",
+            "en": "Instructions and explanation"
+          },
+          "x": 440,
+          "y": 110
+        },
+        {
+          "id": "check",
+          "target": "verify",
+          "kind": "py",
+          "icon": "python",
+          "label": {
+            "lv": "Pārbauda",
+            "en": "Verify"
+          },
+          "caption": {
+            "lv": "Uzvedība, faili un HTML",
+            "en": "Behavior, files and HTML"
+          },
+          "x": 640,
+          "y": 110
+        },
+        {
+          "id": "save",
+          "target": "deliver",
+          "kind": "ai",
+          "icon": "file",
+          "label": {
+            "lv": "Piegādā un saglabā",
+            "en": "Deliver and preserve"
+          },
+          "caption": {
+            "lv": "Versija un turpinājums",
+            "en": "Version and handoff"
+          },
+          "x": 840,
+          "y": 110
+        }
+      ],
+      "edges": [
+        [
+          "ask",
+          "rules"
+        ],
+        [
+          "rules",
+          "write"
+        ],
+        [
+          "write",
+          "check"
+        ],
+        [
+          "check",
+          "save"
+        ],
+        [
+          "save",
+          "rules",
+          "loop"
+        ]
+      ],
+      "loopLabel": {
+        "lv": "Pārbaude → konkrēts labojums → pārbaude vēlreiz",
+        "en": "Check → specific fix → check again"
+      }
+    }
+  },
+  "preview": {
+    "eyebrow": "SKILLS7 · Example",
+    "title": {
+      "lv": "Ko saņem pēc izveides vai audita",
+      "en": "What creation or audit delivers"
+    },
+    "lead": {
+      "lv": "Viens kompakts piemērs: metodes lēmums, konkrēts rezultāts un godīgs statuss.",
+      "en": "A compact example: a method decision, a concrete outcome and an honest status."
+    },
+    "label": {
+      "lv": "Izdomāts mācību piemērs · nav kontu izmaiņu vai publikācijas",
+      "en": "Fictional teaching example · no account changes or publication"
+    },
+    "period": {
+      "lv": "Piemēra situācijas · 22.10.2026.",
+      "en": "Example scenarios · 22 Oct 2026"
+    },
+    "headline": {
+      "lv": "Izveidot, pārbaudīt vai izmantot esošo.",
+      "en": "Create, audit or reuse."
+    },
+    "summary": {
+      "lv": "Rezultāts atkarīgs no vajadzības. Jauna mape nav obligāts iznākums.",
+      "en": "The outcome follows the need. A new folder is not always the answer."
+    },
+    "actionLabel": {
+      "lv": "Rezultāts:",
+      "en": "Outcome:"
+    },
+    "waitLabel": {
+      "lv": "Kas paliek atvērts",
+      "en": "What remains open"
+    },
+    "draftLabel": {
+      "lv": "Parauga rezultāts",
+      "en": "Sample output"
+    },
+    "copyLabel": {
+      "lv": "Kopēt piemēru",
+      "en": "Copy example"
+    },
+    "note": {
+      "lv": "Šīs situācijas ilustrē metodi; tās nav īstu klientu izpildes kvītis.",
+      "en": "These situations illustrate the method; they are not real customer run receipts."
+    },
+    "items": [
+      {
+        "id": "create",
+        "icon": "skill",
+        "channel": {
+          "lv": "Izveide",
+          "en": "Create"
+        },
+        "title": {
+          "lv": "Atkārtots klienta sagatavošanas darbs",
+          "en": "Recurring client preparation"
+        },
+        "contextLabel": {
+          "lv": "Pieprasījums",
+          "en": "Request"
+        },
+        "quote": {
+          "lv": "Katru nedēļu sagatavo mani klienta sarunai no esošā projekta un pēdējās vienošanās.",
+          "en": "Every week, prepare me for a client meeting using the project and latest agreement."
+        },
+        "why": {
+          "lv": "Atkārtojas viena izvēle un viens rezultāts. Prasmei vajag skaidru avotu un lēmuma kritēriju, ne visu CRM eksportu.",
+          "en": "The same decision and outcome recur. The skill needs a clear source and decision criterion, not a whole CRM export."
+        },
+        "action": {
+          "lv": "Īss SKILL.md, vajadzīgā atsauce, sagataves piemērs un pārbaudes scenārijs.",
+          "en": "Concise SKILL.md, a necessary reference, a preparation example and a test scenario."
+        },
+        "followup": {
+          "lv": "Dzīvais CRM savienojums vēl nav pārbaudīts; piemērs balstīts dotajā tekstā.",
+          "en": "The live CRM connection is not verified; the example uses supplied text."
+        },
+        "source": "DEMO-S01"
+      },
+      {
+        "id": "audit",
+        "icon": "eye",
+        "channel": {
+          "lv": "Audits",
+          "en": "Audit"
+        },
+        "title": {
+          "lv": "Prasme sola atbildēt, bet tikai veido melnrakstu",
+          "en": "Skill claims to reply but only creates a draft"
+        },
+        "contextLabel": {
+          "lv": "Atrasts",
+          "en": "Finding"
+        },
+        "quote": {
+          "lv": "Instrukcija saka “nosūtīts”; rīka rezultāts rāda tikai saglabātu melnrakstu.",
+          "en": "The instructions say “sent”; the tool result shows only a saved draft."
+        },
+        "why": {
+          "lv": "Statuss neatbilst pierādījumam. Nav jāmaina visa metode vai jāpiešķir plašāka sūtīšana.",
+          "en": "The status does not match the evidence. The whole method need not change, nor should sending permission expand."
+        },
+        "action": {
+          "lv": "Labo statusa noteikumu un piemēru; atkārtoti pārbauda ar melnraksta un nosūtīšanas atšķirību.",
+          "en": "Fix the status rule and example; retest the distinction between a draft and sending."
+        },
+        "followup": {
+          "lv": "Saglabāta atrastā kļūda, labojums un pārbaudes pierādījums.",
+          "en": "Preserve the finding, correction and test evidence."
+        },
+        "source": "DEMO-S02"
+      },
+      {
+        "id": "reuse",
+        "icon": "check",
+        "channel": {
+          "lv": "Esošā izmantošana",
+          "en": "Reuse"
+        },
+        "title": {
+          "lv": "Vajadzīgs tikai īsāks e-pasts",
+          "en": "Only a shorter email is needed"
+        },
+        "contextLabel": {
+          "lv": "Pieprasījums",
+          "en": "Request"
+        },
+        "quote": {
+          "lv": "Saīsini šo e-pastu līdz pieciem teikumiem.",
+          "en": "Shorten this email to five sentences."
+        },
+        "why": {
+          "lv": "Vienreizējs uzdevums ar skaidru izvadi. Atsevišķa jauna prasme šeit nedod pietiekamu pienesumu.",
+          "en": "A one-off task with a clear output. A new skill adds insufficient value here."
+        },
+        "action": {
+          "lv": "Izpilda uzdevumu ar parastu uzvedni vai esošu metodi.",
+          "en": "Complete the task with an ordinary prompt or existing method."
+        },
+        "followup": {
+          "lv": "Ja atkārtojas būtiski lēmumi un īpašs konteksts, prasmi var izvērtēt vēlāk.",
+          "en": "Reconsider a skill later if meaningful decisions and specific context recur."
+        },
+        "source": "DEMO-S03"
+      }
+    ]
+  }
+}

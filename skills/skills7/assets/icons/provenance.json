@@ -1,0 +1,147 @@
+{
+  "python": {
+    "file": "assets/icons/python.svg",
+    "bytes": 1518,
+    "sha256": "ad9468e1c4903f73ae7eebfbe980f0f727a10db695be3d914e7d8bd25356a862",
+    "source": {
+      "kind": "pinned-simple-icons",
+      "git_commit": "dc7b10662a0a2cfdfc9305e2a2b06c023c30724a",
+      "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/dc7b10662a0a2cfdfc9305e2a2b06c023c30724a/icons/python.svg",
+      "retrieved_at": "2026-10-20T08:27:48.874518+03:00"
+    },
+    "rights": {
+      "license": "CC0-1.0",
+      "license_file": "licenses/Simple-Icons-CC0.txt",
+      "trademark": "Provider trademark rights remain separate."
+    }
+  },
+  "googlechrome": {
+    "file": "assets/icons/googlechrome.svg",
+    "bytes": 535,
+    "sha256": "ce2ff9d2a010ed24f821ef34e40dc125d2bdf1dd28f42ded7b6017585b73c1dd",
+    "source": {
+      "kind": "pinned-simple-icons",
+      "git_commit": "dc7b10662a0a2cfdfc9305e2a2b06c023c30724a",
+      "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/dc7b10662a0a2cfdfc9305e2a2b06c023c30724a/icons/googlechrome.svg",
+      "retrieved_at": "2026-10-20T08:27:48.874518+03:00"
+    },
+    "rights": {
+      "license": "CC0-1.0",
+      "license_file": "licenses/Simple-Icons-CC0.txt",
+      "trademark": "Provider trademark rights remain separate."
+    }
+  },
+  "gmail": {
+    "file": "assets/icons/gmail.svg",
+    "bytes": 354,
+    "sha256": "21b263638deb769267d610a85382792624bdae2fc47c1bc2f8ae6fb6a50413e9",
+    "source": {
+      "kind": "existing-vps-cache"
+    },
+    "rights": {
+      "license": "not-recorded-in-existing-cache",
+      "notice": "Provider trademark; bytes retained unchanged. No permissive licence or endorsement inferred.",
+      "redistribution": "Original asset rights apply; not relicensed under the skill text licence."
+    }
+  },
+  "slack": {
+    "file": "assets/icons/slack.svg",
+    "bytes": 1787,
+    "sha256": "ba9882bc514ba01892038e0096aa931721d97957fe5f9b97fc9e0239519e75c8",
+    "source": {
+      "kind": "installed-plugin-cache",
+      "plugin_cache_relative": "openai-curated/slack/0722921d/assets/slack-small.svg"
+    },
+    "rights": {
+      "license": "not-stated-per-asset-in-plugin-manifest",
+      "notice": "Original provider/product logo distributed with installed plugin; identification only.",
+      "redistribution": "Provider rights apply; not relicensed by this registry."
+    }
+  },
+  "telegram": {
+    "file": "assets/icons/telegram.svg",
+    "bytes": 757,
+    "sha256": "4435c9a57e165a1c3b7f27e0b5b11b82b10d674ea4fff7f6748cb67b7fcb994e",
+    "source": {
+      "kind": "existing-vps-cache"
+    },
+    "rights": {
+      "license": "not-recorded-in-existing-cache",
+      "notice": "Provider trademark; bytes retained unchanged. No permissive licence or endorsement inferred.",
+      "redistribution": "Original asset rights apply; not relicensed under the skill text licence."
+    }
+  },
+  "whatsapp": {
+    "file": "assets/icons/whatsapp.svg",
+    "bytes": 1231,
+    "sha256": "3e197e0e1f3e679ee09823c75e1c7bad3a19da9bd1ba01df395268b9ae91816f",
+    "source": {
+      "kind": "existing-vps-cache"
+    },
+    "rights": {
+      "license": "not-recorded-in-existing-cache",
+      "notice": "Provider trademark; bytes retained unchanged. No permissive licence or endorsement inferred.",
+      "redistribution": "Original asset rights apply; not relicensed under the skill text licence."
+    }
+  },
+  "googleads": {
+    "file": "assets/icons/googleads.svg",
+    "bytes": 607,
+    "sha256": "729bf1f97587dd60e7592a98993543fec7ec3583a907a0e54b9fd88f7f28726f",
+    "source": {
+      "kind": "existing-vps-cache",
+      "upstream": "https://raw.githubusercontent.com/simple-icons/simple-icons/dc7b10662a0a2cfdfc9305e2a2b06c023c30724a/icons/googleads.svg",
+      "git_commit": "dc7b10662a0a2cfdfc9305e2a2b06c023c30724a"
+    },
+    "rights": {
+      "license": "CC0-1.0",
+      "license_file": "licenses/Simple-Icons-CC0.txt",
+      "trademark": "Provider trademark rights remain separate."
+    }
+  },
+  "googleanalytics": {
+    "file": "assets/icons/googleanalytics.svg",
+    "bytes": 738,
+    "sha256": "b21a9cd9544cefee6f2d09a38523cb2bc06a0d7606dd50af35675c11211d8a61",
+    "source": {
+      "kind": "existing-vps-cache",
+      "upstream": "https://raw.githubusercontent.com/simple-icons/simple-icons/dc7b10662a0a2cfdfc9305e2a2b06c023c30724a/icons/googleanalytics.svg",
+      "git_commit": "dc7b10662a0a2cfdfc9305e2a2b06c023c30724a"
+    },
+    "rights": {
+      "license": "CC0-1.0",
+      "license_file": "licenses/Simple-Icons-CC0.txt",
+      "trademark": "Provider trademark rights remain separate."
+    }
+  },
+  "googlesearchconsole": {
+    "file": "assets/icons/googlesearchconsole.svg",
+    "bytes": 1068,
+    "sha256": "2a9115b4cd3e3bcda3ff8cdb5732ff02ef3674ba72007bc3b3f7f9d69cf90f0e",
+    "source": {
+      "kind": "existing-vps-cache",
+      "upstream": "https://raw.githubusercontent.com/simple-icons/simple-icons/dc7b10662a0a2cfdfc9305e2a2b06c023c30724a/icons/googlesearchconsole.svg",
+      "git_commit": "dc7b10662a0a2cfdfc9305e2a2b06c023c30724a"
+    },
+    "rights": {
+      "license": "CC0-1.0",
+      "license_file": "licenses/Simple-Icons-CC0.txt",
+      "trademark": "Provider trademark rights remain separate."
+    }
+  },
+  "posthog": {
+    "file": "assets/icons/posthog.svg",
+    "bytes": 996,
+    "sha256": "5bf868765c8159a0d308d5577c86f2fc2f76d63795182a5a39bc362d5d4329f1",
+    "source": {
+      "kind": "existing-vps-cache",
+      "upstream": "https://raw.githubusercontent.com/simple-icons/simple-icons/dc7b10662a0a2cfdfc9305e2a2b06c023c30724a/icons/posthog.svg",
+      "git_commit": "dc7b10662a0a2cfdfc9305e2a2b06c023c30724a"
+    },
+    "rights": {
+      "license": "CC0-1.0",
+      "license_file": "licenses/Simple-Icons-CC0.txt",
+      "trademark": "Provider trademark rights remain separate."
+    }
+  }
+}
