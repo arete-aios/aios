@@ -14,3 +14,10 @@ actual write only within its authorised bounded scope and read it back.
 A recurring monitor is a separate acceptance: agreed cadence/audience, reliable
 runner, restart/overlap behaviour, protected storage, failure reporting and a useful
 first cycle. Do not label a historical manual review as an active monitor.
+
+## Source activity is a separate acceptance
+
+An authorised activity monitor can signal new incoming evidence without deciding
+that a reply or task is needed. Semantic review still needs the newest full
+context. See [MONITORING.md](MONITORING.md). An activity import, working reader or
+static guide is not an active scheduler or verified notification delivery.

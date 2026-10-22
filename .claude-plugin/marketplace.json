@@ -116,6 +116,33 @@
       "skills": [
         "./skills/comms7"
       ]
+    },
+    {
+      "name": "skills7",
+      "description": "Create, audit and explain reusable AI skills, and visualise any skill's workflow",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/skills7"
+      ]
+    },
+    {
+      "name": "geo7",
+      "description": "Audit a website and prepare evidence-based SEO and AI-search improvements",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/geo7"
+      ]
+    },
+    {
+      "name": "mit7",
+      "description": "Choose up to three meaningful daily results and close the day with evidence",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/mit7"
+      ]
     }
   ]
 }

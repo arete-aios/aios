@@ -1,0 +1,28 @@
+[
+  {
+    "prompt_id": "synthetic-question",
+    "engine": "Synthetic fixture",
+    "model": "none",
+    "market": "example/en",
+    "observed_at": "2026-10-22",
+    "run_id": "synthetic-1",
+    "answer_source": "SYNTHETIC FIXTURE: no actual search answer",
+    "status": "observed",
+    "cited": true,
+    "mentioned": true,
+    "recommended": false,
+    "citations": [
+      "https://example.com/guide"
+    ]
+  },
+  {
+    "prompt_id": "synthetic-question",
+    "engine": "Synthetic fixture",
+    "model": "none",
+    "market": "example/en",
+    "observed_at": "2026-10-22",
+    "run_id": "synthetic-2",
+    "answer_source": "SYNTHETIC FIXTURE: no actual search answer",
+    "status": "unknown"
+  }
+]

@@ -1,0 +1,156 @@
+{
+  "id": "geo7",
+  "version": "1.2.0",
+  "edition": "community",
+  "author": "Egils Boitmanis / Arete AIOS",
+  "publisher": "Arete AIOS",
+  "source": "https://github.com/arete-aios/aios",
+  "method_url": "https://app.areteaios.com/learning/skills/geo7",
+  "updated": "2026-10-22",
+  "source_kind": "Consolidated accepted Arete method; community privacy and portability adaptation",
+  "upstream": [
+    {
+      "name": "Staksoft",
+      "url": "https://github.com/staksoft/geo-seo-aeo-skill",
+      "revision": "003b5145fd79fe8996c18a9f02d94fe08d7c6e80",
+      "license": "MIT"
+    },
+    {
+      "name": "ReScienceLab",
+      "url": "https://github.com/ReScienceLab/opc-skills",
+      "revision": "83eed27e7693e3cea54ae44f3440dd1c40dd5b72",
+      "license": "Apache-2.0"
+    }
+  ],
+  "private_content_included": false,
+  "adaptations": [
+    "Output confined to explicitly selected working directory; no host-specific broker",
+    "Generic roles and source-derived report statements; full report fonts and licences bundled"
+  ],
+  "community_predecessor": {
+    "edition": "1.0.0-beta.1",
+    "author": "Egils Boitmanis / FullDigital",
+    "license": "CC-BY-4.0",
+    "source": "https://github.com/arete-aios/aios",
+    "source_revision": "19cd83a"
+  },
+  "accepted_method_version": "1.2.0",
+  "source_files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "94087d30b028a0739109671418634661fd3beaaba65d7c772f06ab8132babda4"
+    },
+    {
+      "path": "manifest.json",
+      "sha256": "e19886d55c2922caa9b21532fdcea11d414a3f9c3fcd18cad68359fb8cf6dc09"
+    },
+    {
+      "path": "view.json",
+      "sha256": "efe05bfc7c9b48dfa9b91cb2f7a8dd913ba07ab4d1c454eb9bdb6032eace715d"
+    },
+    {
+      "path": "scripts/test_geo7.py",
+      "sha256": "0e07736d10d6dff9367d4ff747ca029ee6cc189972048987073a29b9a15e0282"
+    },
+    {
+      "path": "scripts/ai_visibility.py",
+      "sha256": "44e2b31c89e7f90a221ddec671706259390c29c2c54d2f2b9a616b5dd6873964"
+    },
+    {
+      "path": "scripts/performance.py",
+      "sha256": "733a72ebd8e37049569d1ab0cebe5d6ac442b09fbd045b2c9689e60bdc84ada3"
+    },
+    {
+      "path": "scripts/audit.py",
+      "sha256": "c338fc7784b486c5c9989d94734ab0f0b1e5b90102a082f66db13f24b303e459"
+    },
+    {
+      "path": "scripts/report_detail.py",
+      "sha256": "eb1ceea4c4411e830dd7dc78ad3dfe8cb4dcc62605ef461884a1d84f2037548d"
+    },
+    {
+      "path": "scripts/research_plan.py",
+      "sha256": "b8c64b0f6e36a7524e15426a1282957be7d6a37bb438f548795ef3f139a8c5d2"
+    },
+    {
+      "path": "scripts/README.md",
+      "sha256": "3e410dcfa30d60affeff4fff700b65f9cf9f53d43c92be13a675790a532bff3d"
+    },
+    {
+      "path": "scripts/report.py",
+      "sha256": "78d317bd093fe0a6d82d3c07dc6c5321ad5cf285c7b533c0137b8a683d8cabd8"
+    },
+    {
+      "path": "assets/literata-latin-ext.woff2",
+      "sha256": "3f1abb33549406163ab6f4984f4a5e2e1199bd59377ecf927da0c7484c7ad43d"
+    },
+    {
+      "path": "assets/jetbrains-mono-latin-ext.woff2",
+      "sha256": "d5f407e28185790518c49ec8738fa89916ddc99f793010d249165d0e2c2452cc"
+    },
+    {
+      "path": "assets/inter-latin-ext.woff2",
+      "sha256": "a28eb6d3ccb534ae0c94ca999371df024aab60b08c3c8a5720ee9e32fa0faaa2"
+    },
+    {
+      "path": "assets/Inter-OFL.txt",
+      "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57"
+    },
+    {
+      "path": "assets/logo-areteaios.svg",
+      "sha256": "ff714e2d9cc32b3373e92d5a9841743090b9a49bfcd27dbd8a89871e46d21578"
+    },
+    {
+      "path": "assets/Literata-OFL.txt",
+      "sha256": "8742963604cd89dc81437811a850018fc03b2bfad686d7422c8235967c87614e"
+    },
+    {
+      "path": "assets/JetBrains-Mono-OFL.txt",
+      "sha256": "b2fe5e8987594e9ffd1d2ca52a2f5d73eb8335243893c5d6254b5ad69269591d"
+    },
+    {
+      "path": "assets/inter-latin.woff2",
+      "sha256": "c940764593d0fe5d596be327ca7558855e018039fb78509aa21921fd3644c3e4"
+    },
+    {
+      "path": "assets/literata-latin.woff2",
+      "sha256": "33b49c485e21a38bbfe68de764cc5b329b82c74e6ae4dc0cd9ace5b349da25fe"
+    },
+    {
+      "path": "assets/fonts.css",
+      "sha256": "7cd20fa022f648cbd1535670a144df7aa8d3f1cb2daac4403a2176ab1c435814"
+    },
+    {
+      "path": "assets/README.md",
+      "sha256": "fa6a30ef62d29a36c3398766d101f1d9db46631ffa8111a6c4092db8d0264aa3"
+    },
+    {
+      "path": "assets/jetbrains-mono-latin.woff2",
+      "sha256": "d3dcdccdaba31643defe2317942155d4af3ee03951d058adbe8bc02b13e61b0a"
+    },
+    {
+      "path": "references/LICENSE-RESCIENCELAB.txt",
+      "sha256": "7f0f022815d9ffe57a2b9a717d49893f77bfed052f16af179dcb99dbbb6f6ab8"
+    },
+    {
+      "path": "references/REPORTING.md",
+      "sha256": "5753c0f19f9eb1ad1468d1bccbbe9a70efef71120d1f2de84ca5695079fd0344"
+    },
+    {
+      "path": "references/THIRD-PARTY.md",
+      "sha256": "6f48a83cbb85f30d50fa77762fe9925e6451b7d5b46b96f6a01277a56429460e"
+    },
+    {
+      "path": "references/LICENSE-STAKSOFT.txt",
+      "sha256": "2e7deb5aa0806e402ff20019f60491f620b55ea991b67da301bc61f1e6938032"
+    },
+    {
+      "path": "references/README.md",
+      "sha256": "92dcab83cbb79c757fc8e3bc18fc6e6b0efa6f7286e9f334cb0a3d4aaaa36c37"
+    },
+    {
+      "path": "references/METHOD.md",
+      "sha256": "f989df3d251741a7c8813266b3454e6f7e467fb69fa23e2d225fa1a24da08bd5"
+    }
+  ]
+}

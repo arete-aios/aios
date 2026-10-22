@@ -24,3 +24,5 @@ evidence_ref. Conflicting duplicates and stale-evidence state updates are refuse
 Text can be truncated visibly; it is not complete evidence. Packing telemetry uses
 characters, not token savings. Decision progress describes this review's decisions,
 not obligations completed or the percentage of the entire inbox checked.
+
+A model-pack record without a decision is evidence awaiting semantic review. Its default OPEN state is not an accepted Gmail Action label or a notification decision.

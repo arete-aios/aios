@@ -1,0 +1,1101 @@
+{
+  "eyebrow": {
+    "lv": "MIT7 · Dienas rezultāti",
+    "en": "MIT7 · Daily results"
+  },
+  "layout": {
+    "tabs": [
+      "overview",
+      "principles",
+      "flow",
+      "example",
+      "log"
+    ],
+    "overview": {
+      "compact": true,
+      "hideRelated": true
+    },
+    "overviewFiles": false,
+    "filesTab": "principles",
+    "filesTitle": {
+      "lv": "Metodes faili",
+      "en": "Method files"
+    },
+    "filesNote": {
+      "lv": "Instrukcija un gatavības skaidrojums; privāti izpildes dati nav pievienoti.",
+      "en": "Instructions and readiness explanation; no private execution data is included."
+    },
+    "exampleTab": true,
+    "changesOnly": true
+  },
+  "fileGroups": [
+    {
+      "id": "method",
+      "title": {
+        "lv": "Darba metode",
+        "en": "Work method"
+      },
+      "zip": true,
+      "files": [
+        {
+          "path": "SKILL.md",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        },
+        {
+          "path": "INSTALL.md",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        },
+        {
+          "path": "references/METHOD.md",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        },
+        {
+          "path": "references/READINESS.md",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        },
+        {
+          "path": "references/README.md",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "title": {
+        "lv": "Pakotnes dati",
+        "en": "Package data"
+      },
+      "zip": true,
+      "files": [
+        {
+          "path": "manifest.json",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        },
+        {
+          "path": "view.json",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        },
+        {
+          "path": "SOURCE.json",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        },
+        {
+          "path": "LICENSE.txt",
+          "desc": {
+            "lv": "Pakotnes resurss.",
+            "en": "Package resource."
+          }
+        }
+      ]
+    }
+  ],
+  "fileTypes": [
+    {
+      "ext": "MD",
+      "title": {
+        "lv": "AI darba metode",
+        "en": "AI work method"
+      },
+      "text": {
+        "lv": "SKILL.md nosaka lēmumus; METHOD.md izskaidro secību un artefaktu lomas.",
+        "en": "SKILL.md defines decisions; METHOD.md explains the sequence and artifact roles."
+      }
+    },
+    {
+      "ext": "JSON",
+      "title": {
+        "lv": "Cilvēka skata dati",
+        "en": "Human guide data"
+      },
+      "text": {
+        "lv": "Kopīgais SKILLS7 2.0 dzinējs ģenerē HTML; sava Python palīga nav.",
+        "en": "The shared SKILLS7 2.0 engine generates HTML; there is no skill-owned Python helper."
+      }
+    }
+  ],
+  "guides": {
+    "principles": {
+      "eyebrow": {
+        "lv": "MIT7 · Principi",
+        "en": "MIT7 · Principles"
+      },
+      "title": {
+        "lv": "Rezultāts, ko var pabeigt",
+        "en": "An outcome you can finish"
+      },
+      "lead": {
+        "lv": "Dienas izvēle savieno virzienu, faktisko stāvokli un pieejamo laiku. Īpašnieka lēmums un pabeigta piegāde ir atsevišķi posmi.",
+        "en": "Daily choice connects direction, actual state and available time. Owner selection and completed delivery are distinct stages."
+      },
+      "sections": [
+        {
+          "title": {
+            "lv": "Ko AI izvēlas un pārbauda",
+            "en": "What AI selects and checks"
+          },
+          "rows": [
+            {
+              "label": {
+                "lv": "Rezultāts pirms kartītes",
+                "en": "Outcome before card"
+              },
+              "text": {
+                "lv": "Līdz trim rezultātiem ar “gatavs”. Tēmas lēmums un materiālu komplekts var būt viens rezultāts. Parādi kartīšu saistību ar rezultātiem un ievēro izvēlētā rīka robežas.",
+                "en": "Up to three outcomes with done criteria. A topic decision and materials package can form one outcome. Show how cards map to results and respect your chosen tracker’s limits."
+              }
+            },
+            {
+              "label": {
+                "lv": "Svaigs pierādījums",
+                "en": "Fresh evidence"
+              },
+              "text": {
+                "lv": "Ja projekts rāda piegādi, veca atvērta kartīte neatgriež darbu sākumā. Norāda īsto nākamo soli un salāgo tikai atļauto statusu.",
+                "en": "If the project shows delivery, an old open card does not restart the work. Identify the real next step and reconcile only authorised state."
+              }
+            },
+            {
+              "label": {
+                "lv": "Ietilpība",
+                "en": "Capacity"
+              },
+              "text": {
+                "lv": "Kalendāra solījumi un reālās minūtes ierobežo plānu. Bez piekļuves pieņēmums ir redzams; AI sagatavošanas laiks ir atsevišķs.",
+                "en": "Calendar commitments and realistic minutes constrain the plan. Without access show the assumption; AI preparation time remains separate."
+              }
+            },
+            {
+              "label": {
+                "lv": "Īpašnieka lēmums",
+                "en": "Owner decision"
+              },
+              "text": {
+                "lv": "Ieteikums nav izvēle. AI sagatavo/deleģē tikai atļautajā tvērumā; kartītes atbildīgais nepierāda palaistu darbu.",
+                "en": "A recommendation is not a choice. AI prepares/delegates only within authorised scope; a card’s assignee does not prove a dispatched task."
+              }
+            }
+          ],
+          "docs": [
+            {
+              "file": "SKILL.md",
+              "label": {
+                "lv": "Atvērt AI instrukciju",
+                "en": "Open AI instructions"
+              }
+            }
+          ]
+        },
+        {
+          "title": {
+            "lv": "Katram avotam sava loma",
+            "en": "Each source has its role"
+          },
+          "rows": [
+            {
+              "label": {
+                "lv": "Darba centrs",
+                "en": "Workboard"
+              },
+              "text": {
+                "lv": "Tajā pieņemtās izvēles, statuss un vēsture. Izvēlies vienu uzskaites vietu un nosaki, kuri lauki tai pieder.",
+                "en": "Accepted choices, status and history stored there. Choose one tracker and define which fields it owns."
+              }
+            },
+            {
+              "label": {
+                "lv": "Projekts un Focus",
+                "en": "Project and Focus"
+              },
+              "text": {
+                "lv": "Projekts glabā kontekstu, piegādi un pierādījumu; Focus dod pieņemto aktuālo uzmanību. Jauns ieteikums to pats nepārraksta.",
+                "en": "The project stores context, delivery and evidence; Focus supplies accepted current attention. A new suggestion does not rewrite it."
+              }
+            },
+            {
+              "label": {
+                "lv": "Ieteikumu avoti",
+                "en": "Recommendation sources"
+              },
+              "text": {
+                "lv": "Rīta briefs vai kolēģa ieteikums ir viens avots. Tas nepierāda pieņemtu izvēli vai automātisku visu darbu pārklājumu.",
+                "en": "A morning brief or colleague’s suggestion is one source. It does not prove an accepted choice or automatic coverage of all work."
+              }
+            },
+            {
+              "label": {
+                "lv": "Noslēgums",
+                "en": "Closeout"
+              },
+              "text": {
+                "lv": "Pabeigts / gaida / bloķēts / turpināms, pierādījums un nākamais solis. Saglabā datētu noslēgumu; pašreizējais statuss nav nemainīga pagātnes kvīts.",
+                "en": "Completed / waiting / blocked / continuing, evidence and next step. Save a dated closeout; current status is not an immutable historical receipt."
+              }
+            }
+          ],
+          "docs": [
+            {
+              "file": "references/READINESS.md",
+              "label": {
+                "lv": "Kas jau pastāv un kas vēl nav ieviests",
+                "en": "What exists and what remains unimplemented"
+              }
+            }
+          ]
+        },
+        {
+          "id": "guide-aios",
+          "title": {
+            "lv": "MIT7 kopējā AIOS sistēmā",
+            "en": "MIT7 in the AIOS system"
+          },
+          "text": {
+            "lv": "Saistība: vidēja patstāvīgai lietošanai, augsta personalizētā AIOS. Virziens, projektu pierādījumi un rīki maina atlasi. Tas ir kvalitatīvs atkarību vērtējums, ne mērījums.",
+            "en": "Integration: medium for standalone use, high in a personalised AIOS. Direction, project evidence and tools change selection. This is a qualitative dependency assessment, not a measurement."
+          },
+          "rows": [
+            {
+              "label": "01 · Constitution",
+              "text": {
+                "lv": "North Star + atļaujas → vērtīga un pieļaujama rezultāta izvēle → diena virza īpašnieka mērķi.",
+                "en": "North Star + permissions → choose a valuable, permitted outcome → the day advances the owner’s goal."
+              }
+            },
+            {
+              "label": "02 · Memory",
+              "text": {
+                "lv": "Jaunākais projekta lēmums + piegāde → neatkārtot pabeigto → īstais nākamais solis un atrodams pierādījums.",
+                "en": "Latest project decision + delivery → avoid repeating completed work → the real next step and findable evidence."
+              }
+            },
+            {
+              "label": "03 · Skills",
+              "text": {
+                "lv": "Atļautais saziņas un plāna konteksts → pamats kandidātiem; atbilstošā domēna prasme → piegāde; pārskats un noslēgums → saglabāts turpinājums.",
+                "en": "Authorised communication and planning context → evidence for candidates; the appropriate domain skill → delivery; review and closeout → preserved continuation."
+              }
+            },
+            {
+              "label": "04 · Tools",
+              "text": {
+                "lv": "Kalendārs + viena esošā uzskaite → samērīgas minūtes, saglabāta izvēle un nolasījums → pārbaudāms plāns. Konti paliek ārējas atkarības.",
+                "en": "Calendar + one existing tracker → feasible minutes, saved choice and readback → a verifiable plan. Accounts remain external dependencies."
+              }
+            },
+            {
+              "label": "05 · Focus",
+              "text": {
+                "lv": "Pieņemtā pašreizējā uzmanība → ierobežo kandidātus → jauna steidzama ideja neizspiež īpašnieka virzienu bez lēmuma.",
+                "en": "Accepted current attention → narrows candidates → a new urgent idea does not displace owner direction without a decision."
+              }
+            }
+          ],
+          "note": {
+            "lv": "Atsevišķi lietojama ar īpašnieka virzienu, svaigiem projekta faktiem, solījumiem, laika logu un vienu uzskaites vietu. Bez savienojumiem AI strādā ar doto tekstu un skaidri norāda nepārbaudīto; jauna DB nav vajadzīga.",
+            "en": "Usable standalone with owner direction, current project facts, commitments, a time window and one tracker. Without connections AI uses supplied text and labels what is unverified; no new database is required."
+          },
+          "docs": [
+            {
+              "file": "references/METHOD.md",
+              "label": {
+                "lv": "Pilnā metode un patstāvīga lietošana",
+                "en": "Full method and standalone use"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "flow": {
+    "presentation": "journey",
+    "modeBehavior": "canvas",
+    "defaultMode": "detailed",
+    "modeLabels": {
+      "simple": {
+        "lv": "Īsā shēma",
+        "en": "Short diagram"
+      },
+      "detailed": {
+        "lv": "Detalizētā shēma",
+        "en": "Detailed diagram"
+      }
+    },
+    "width": 1400,
+    "height": 720,
+    "top": 80,
+    "left": 40,
+    "start": "direction",
+    "sequence": [
+      "direction",
+      "evidence",
+      "capacity",
+      "choose",
+      "deliver",
+      "close"
+    ],
+    "eyebrow": {
+      "lv": "MIT7 · Darba plūsma",
+      "en": "MIT7 · Workflow"
+    },
+    "title": {
+      "lv": "Izvēle → piegāde → noslēgums",
+      "en": "Choice → delivery → closeout"
+    },
+    "lead": {
+      "lv": "Detalizētā shēma rāda lēmumus un saglabātos rezultātus. Īsā rāda galveno ceļu; pilnie apraksti abos ir vienādi.",
+      "en": "The detailed diagram shows decisions and preserved outputs. The short diagram shows the main path; full descriptions are identical in both."
+    },
+    "goal": {
+      "x": 40,
+      "y": 35,
+      "w": 900,
+      "h": 80,
+      "label": {
+        "lv": "Mērķis",
+        "en": "Goal"
+      },
+      "text": {
+        "lv": "Līdz trim sasniedzamiem dienas rezultātiem ar pierādāmu “gatavs” un skaidru turpinājumu.",
+        "en": "Up to three feasible daily outcomes with verifiable done criteria and a clear continuation."
+      }
+    },
+    "nodes": [
+      {
+        "id": "direction",
+        "step": 1,
+        "x": 65,
+        "y": 320,
+        "kind": "you",
+        "icon": "user",
+        "min": true,
+        "label": {
+          "lv": "Nosaki dienas mērķi",
+          "en": "Define the day’s goal"
+        },
+        "actor": {
+          "lv": "Īpašnieks + AI",
+          "en": "Owner + AI"
+        },
+        "what": {
+          "lv": "Izmanto īpašnieka mērķi, pieņemto North Star un pašreizējo Focus. Atšķir priekšlikumu, jau izvēlētā plāna turpinājumu un noslēgumu. Metodes vai HTML lūgums strādā tikai ar skaidrojumu.",
+          "en": "Use the owner’s goal, accepted North Star and current Focus. Distinguish a proposal, continuation of an accepted plan and closeout. A method or HTML request works only on the explanation."
+        },
+        "summary": {
+          "lv": "Dienas jautājums, datums un atļautais tvērums.",
+          "en": "The day’s question, date and authorised scope."
+        },
+        "paragraphs": [
+          {
+            "lv": "Izmanto īpašnieka mērķi, pieņemto North Star un pašreizējo Focus. Atšķir priekšlikumu, jau izvēlētā plāna turpinājumu un noslēgumu. Metodes vai HTML lūgums strādā tikai ar skaidrojumu.",
+            "en": "Use the owner’s goal, accepted North Star and current Focus. Distinguish a proposal, continuation of an accepted plan and closeout. A method or HTML request works only on the explanation."
+          }
+        ],
+        "in": {
+          "lv": "Īpašnieka pieprasījums un pieņemtais virziens",
+          "en": "Owner request and accepted direction"
+        },
+        "out": {
+          "lv": "Dienas jautājums, datums un atļautais tvērums.",
+          "en": "The day’s question, date and authorised scope."
+        },
+        "files": [
+          "references/METHOD.md"
+        ],
+        "headerIcons": [
+          "user",
+          "ai"
+        ]
+      },
+      {
+        "id": "evidence",
+        "step": 2,
+        "x": 275,
+        "y": 320,
+        "kind": "ai",
+        "icon": "ai",
+        "min": true,
+        "label": {
+          "lv": "Salāgo pierādījumus",
+          "en": "Reconcile evidence"
+        },
+        "actor": {
+          "lv": "AI",
+          "en": "AI"
+        },
+        "what": {
+          "lv": "Pārbaudi projekta jaunāko lēmumu un piegādi pret kartīti un solījumiem. Pabeigto neveido vēlreiz. Rīta ieteikumi ir viens avots; parādi pretrunas un datumus.",
+          "en": "Compare the project’s latest decision and delivery with the card and commitments. Do not recreate completed work. Morning recommendations are one input; show conflicts and dates."
+        },
+        "summary": {
+          "lv": "Avotu pamatojums un pareizais nākamais solis.",
+          "en": "Source rationale and the correct next step."
+        },
+        "paragraphs": [
+          {
+            "lv": "Pārbaudi projekta jaunāko lēmumu un piegādi pret kartīti un solījumiem. Pabeigto neveido vēlreiz. Rīta ieteikumi ir viens avots; parādi pretrunas un datumus.",
+            "en": "Compare the project’s latest decision and delivery with the card and commitments. Do not recreate completed work. Morning recommendations are one input; show conflicts and dates."
+          }
+        ],
+        "in": {
+          "lv": "Projektu avoti, pieņemtās kartītes un atļautais konteksts",
+          "en": "Project sources, accepted cards and permitted context"
+        },
+        "out": {
+          "lv": "Avotu pamatojums un pareizais nākamais solis.",
+          "en": "Source rationale and the correct next step."
+        },
+        "files": [
+          "references/METHOD.md"
+        ],
+        "headerIcons": [
+          "ai",
+          "file"
+        ]
+      },
+      {
+        "id": "capacity",
+        "step": 3,
+        "x": 485,
+        "y": 320,
+        "kind": "ai",
+        "icon": "ai",
+        "min": true,
+        "label": {
+          "lv": "Pārbaudi ietilpību",
+          "en": "Check capacity"
+        },
+        "actor": {
+          "lv": "AI + īpašnieks",
+          "en": "AI + owner"
+        },
+        "what": {
+          "lv": "Pārbaudi atļauto kalendāru un darba logus. Īpašnieka laiku atšķir no AI sagatavošanas. Bez kalendāra lieto īpašnieka doto logu un marķē, ka tas nav pārbaudīts; bez loga plāns paliek provizorisks. Notikumus nepārceļ pati plānošana.",
+          "en": "Check the authorised calendar and work windows. Separate owner time from AI preparation. Without calendar access use the owner’s stated window and mark it unverified; without a window the plan remains provisional. Planning itself does not move events."
+        },
+        "summary": {
+          "lv": "Reāls īpašnieka laika budžets un minūšu pieņēmumi.",
+          "en": "A realistic owner time budget and minute estimates."
+        },
+        "paragraphs": [
+          {
+            "lv": "Pārbaudi atļauto kalendāru un darba logus. Īpašnieka laiku atšķir no AI sagatavošanas. Bez kalendāra lieto īpašnieka doto logu un marķē, ka tas nav pārbaudīts; bez loga plāns paliek provizorisks. Notikumus nepārceļ pati plānošana.",
+            "en": "Check the authorised calendar and work windows. Separate owner time from AI preparation. Without calendar access use the owner’s stated window and mark it unverified; without a window the plan remains provisional. Planning itself does not move events."
+          }
+        ],
+        "in": {
+          "lv": "Fiksētie notikumi un īpašnieka dotie darba logi",
+          "en": "Fixed events and owner-provided work windows"
+        },
+        "out": {
+          "lv": "Reāls īpašnieka laika budžets un minūšu pieņēmumi.",
+          "en": "A realistic owner time budget and minute estimates."
+        },
+        "files": [
+          "references/METHOD.md"
+        ],
+        "headerIcons": [
+          "ai",
+          "file"
+        ]
+      },
+      {
+        "id": "choose",
+        "step": 4,
+        "x": 695,
+        "y": 320,
+        "kind": "you",
+        "icon": "user",
+        "min": true,
+        "label": {
+          "lv": "Piedāvā un izvēlies",
+          "en": "Propose and choose"
+        },
+        "actor": {
+          "lv": "AI piedāvā · īpašnieks izvēlas",
+          "en": "AI proposes · owner chooses"
+        },
+        "what": {
+          "lv": "AI pamato līdz trim sasniedzamiem rezultātiem: kāpēc šodien, “gatavs”, avots, atbildīgais, nākamā darbība un minūtes. Vairākas kartītes var veidot vienu rezultātu; ievēro sava rīka robežas. Tu izvēlies, un tikai autorizēto izvēli saglabā un nolasa.",
+          "en": "AI explains up to three feasible outcomes: why today, done criterion, source, responsible person, next action and minutes. Several cards may form one result; respect your tracker’s limits. You choose; only authorised choices are saved and read back."
+        },
+        "summary": {
+          "lv": "Līdz trim pieņemtiem rezultātiem ar skaidru “gatavs”.",
+          "en": "Up to three accepted results with explicit done criteria."
+        },
+        "paragraphs": [
+          {
+            "lv": "AI pamato līdz trim sasniedzamiem rezultātiem: kāpēc šodien, “gatavs”, avots, atbildīgais, nākamā darbība un minūtes. Vairākas kartītes var veidot vienu rezultātu; ievēro sava rīka robežas. Tu izvēlies, un tikai autorizēto izvēli saglabā un nolasa.",
+            "en": "AI explains up to three feasible outcomes: why today, done criterion, source, responsible person, next action and minutes. Several cards may form one result; respect your tracker’s limits. You choose; only authorised choices are saved and read back."
+          }
+        ],
+        "in": {
+          "lv": "Saskaņoti kandidāti un laika budžets",
+          "en": "Reconciled candidates and time budget"
+        },
+        "out": {
+          "lv": "Līdz trim pieņemtiem rezultātiem ar skaidru “gatavs”.",
+          "en": "Up to three accepted results with explicit done criteria."
+        },
+        "files": [
+          "references/METHOD.md"
+        ],
+        "headerIcons": [
+          "user",
+          "ai"
+        ],
+        "stored": {
+          "title": {
+            "lv": "Pieņemtā izvēle",
+            "en": "Accepted choice"
+          },
+          "text": {
+            "lv": "Izvēlētā uzskaite glabā izvēles datumu un vēsturi; projektu fakti paliek to esošajā mājvietā.",
+            "en": "Your chosen tracker stores selection date and history; project facts remain in their existing home."
+          }
+        }
+      },
+      {
+        "id": "deliver",
+        "step": 5,
+        "x": 905,
+        "y": 320,
+        "kind": "ai",
+        "icon": "ai",
+        "min": true,
+        "label": {
+          "lv": "Sagatavo un piegādā",
+          "en": "Prepare and deliver"
+        },
+        "actor": {
+          "lv": "Atļautais izpildītājs",
+          "en": "Authorised executor"
+        },
+        "what": {
+          "lv": "AI sagatavo vai deleģē konkrēto uzdoto darbu tikai dotajā tvērumā. Domēna prasme veic pašu piegādi. Aģenta vārds kartītē nav palaists darbs. Ārējā darbība seko konkrētajai atļaujai; pirms kartītes labojuma pārbauda aktuālo stāvokli.",
+          "en": "AI prepares or delegates the assigned work only within its authorised scope. The domain skill performs the delivery. An agent name on a card is not a dispatched job. External actions follow specific authorisation; check current state before changing a card."
+        },
+        "summary": {
+          "lv": "Piegāde un pārbaudāms pierādījums projekta mājvietā.",
+          "en": "Delivery and verifiable evidence in the project’s home."
+        },
+        "paragraphs": [
+          {
+            "lv": "AI sagatavo vai deleģē konkrēto uzdoto darbu tikai dotajā tvērumā. Domēna prasme veic pašu piegādi. Aģenta vārds kartītē nav palaists darbs. Ārējā darbība seko konkrētajai atļaujai; pirms kartītes labojuma pārbauda aktuālo stāvokli.",
+            "en": "AI prepares or delegates the assigned work only within its authorised scope. The domain skill performs the delivery. An agent name on a card is not a dispatched job. External actions follow specific authorisation; check current state before changing a card."
+          }
+        ],
+        "in": {
+          "lv": "Pieņemtā izvēle un konkrētā darba atļauja",
+          "en": "Accepted selection and task-specific permission"
+        },
+        "out": {
+          "lv": "Piegāde un pārbaudāms pierādījums projekta mājvietā.",
+          "en": "Delivery and verifiable evidence in the project’s home."
+        },
+        "files": [
+          "references/METHOD.md"
+        ],
+        "headerIcons": [
+          "ai",
+          "file"
+        ]
+      },
+      {
+        "id": "close",
+        "step": 6,
+        "x": 1115,
+        "y": 320,
+        "kind": "ai",
+        "icon": "ai",
+        "min": true,
+        "label": {
+          "lv": "Noslēdz un saglabā",
+          "en": "Close and preserve"
+        },
+        "actor": {
+          "lv": "Īpašnieks + AI",
+          "en": "Owner + AI"
+        },
+        "what": {
+          "lv": "Katram rezultātam fiksē pabeigts, gaida, bloķēts vai turpināms. Pievieno pierādījumu, iemeslu un nākamo soli. Saglabā datētu noslēgumu; rītdienas izvēli nepieņem automātiski.",
+          "en": "Record completed, waiting, blocked or continuing for each result. Add evidence, reason and next step. Preserve a dated closeout; do not select tomorrow automatically."
+        },
+        "summary": {
+          "lv": "Datēts iznākums, pierādījums un nākamais solis.",
+          "en": "Dated outcome, evidence and next step."
+        },
+        "paragraphs": [
+          {
+            "lv": "Katram rezultātam fiksē pabeigts, gaida, bloķēts vai turpināms. Pievieno pierādījumu, iemeslu un nākamo soli. Saglabā datētu noslēgumu; rītdienas izvēli nepieņem automātiski.",
+            "en": "Record completed, waiting, blocked or continuing for each result. Add evidence, reason and next step. Preserve a dated closeout; do not select tomorrow automatically."
+          }
+        ],
+        "in": {
+          "lv": "Faktiskā piegāde vai konkrēts šķērslis",
+          "en": "Actual delivery or a specific obstacle"
+        },
+        "out": {
+          "lv": "Datēts iznākums, pierādījums un nākamais solis.",
+          "en": "Dated outcome, evidence and next step."
+        },
+        "files": [
+          "references/METHOD.md"
+        ],
+        "headerIcons": [
+          "ai",
+          "file"
+        ],
+        "stored": {
+          "title": {
+            "lv": "Datēts noslēgums",
+            "en": "Dated closeout"
+          },
+          "text": {
+            "lv": "Esošajā projekta/dienas ierakstā: iznākums, pierādījums, atbildīgais un nākamais solis.",
+            "en": "In the existing project/day record: outcome, evidence, responsible person and next step."
+          }
+        }
+      },
+      {
+        "id": "source-note",
+        "artifact": true,
+        "detailFor": "evidence",
+        "x": 330,
+        "y": 140,
+        "w": 190,
+        "h": 100,
+        "kind": "tool",
+        "icon": "file",
+        "label": {
+          "lv": "Plāna pamatojums",
+          "en": "Planning rationale"
+        },
+        "caption": {
+          "lv": "Avoti, datumi, nezināmais",
+          "en": "Sources, dates, unknowns"
+        },
+        "files": []
+      },
+      {
+        "id": "accepted",
+        "artifact": true,
+        "detailFor": "choose",
+        "x": 735,
+        "y": 140,
+        "w": 200,
+        "h": 100,
+        "kind": "tool",
+        "icon": "file",
+        "label": {
+          "lv": "Pieņemtā dienas izvēle",
+          "en": "Accepted daily choice"
+        },
+        "caption": {
+          "lv": "Esošajā uzskaitē + nolasījums",
+          "en": "Existing tracker + readback"
+        },
+        "files": []
+      },
+      {
+        "id": "close-record",
+        "artifact": true,
+        "detailFor": "close",
+        "x": 1120,
+        "y": 530,
+        "w": 220,
+        "h": 100,
+        "kind": "tool",
+        "icon": "file",
+        "label": {
+          "lv": "Pierādījums + nākamais",
+          "en": "Evidence + next step"
+        },
+        "caption": {
+          "lv": "Datēts projekta/dienas ieraksts",
+          "en": "Dated project/day record"
+        },
+        "files": []
+      }
+    ],
+    "edges": [
+      [
+        "direction",
+        "evidence"
+      ],
+      [
+        "evidence",
+        "capacity"
+      ],
+      [
+        "capacity",
+        "choose"
+      ],
+      [
+        "choose",
+        "deliver"
+      ],
+      [
+        "deliver",
+        "close"
+      ],
+      [
+        "source-note",
+        "evidence",
+        "side"
+      ],
+      [
+        "choose",
+        "accepted",
+        "side"
+      ],
+      [
+        "close",
+        "close-record",
+        "side"
+      ],
+      [
+        "close",
+        "evidence",
+        "loop",
+        {
+          "path": "M 1170 365 C 1170 680, 320 680, 320 410",
+          "label": {
+            "lv": "Jauni pierādījumi pārskata izvēli",
+            "en": "New evidence reviews the choice"
+          },
+          "x": 740,
+          "y": 660
+        }
+      ]
+    ],
+    "stepsTitle": {
+      "lv": "Pilnā darba secība",
+      "en": "Full work sequence"
+    },
+    "stepLabel": {
+      "lv": "Solis",
+      "en": "Step"
+    },
+    "resultLabel": {
+      "lv": "Rezultāts",
+      "en": "Outcome"
+    },
+    "docsLabel": {
+      "lv": "Metodes avoti",
+      "en": "Method sources"
+    },
+    "legend": {
+      "you": {
+        "lv": "Īpašnieks",
+        "en": "Owner"
+      },
+      "ai": "AI",
+      "tool": {
+        "lv": "Saglabātais rezultāts",
+        "en": "Preserved output"
+      },
+      "loop": {
+        "lv": "Pārtraukta bulta = pārskatīt ar jauniem pierādījumiem",
+        "en": "Dashed arrow = review with new evidence"
+      },
+      "py": {
+        "lv": "Sava koda nav",
+        "en": "No skill-owned code"
+      }
+    },
+    "modeNote": {
+      "lv": "Mainās tikai shēma. Pilnie soļu apraksti zem abām ir identiski.",
+      "en": "Only the diagram changes. Full step descriptions below both are identical."
+    },
+    "note": {
+      "lv": "Shēma izskaidro metodi; tā pati neizvēlas MIT, nepieslēdz kontus un nepalaiž aģentus.",
+      "en": "The diagram explains the method; it does not select MITs, connect accounts or dispatch agents."
+    },
+    "simple": {
+      "width": 1000,
+      "height": 330,
+      "goal": {
+        "lv": "Tu izvēlies; pierādījums saglabājas.",
+        "en": "You choose; evidence persists."
+      },
+      "nodes": [
+        {
+          "id": "inputs",
+          "target": "evidence",
+          "kind": "ai",
+          "icon": "doc",
+          "label": {
+            "lv": "Avoti un ietilpība",
+            "en": "Sources and capacity"
+          },
+          "caption": {
+            "lv": "Virziens + fakti + laiks",
+            "en": "Direction + facts + time"
+          },
+          "x": 40,
+          "y": 110
+        },
+        {
+          "id": "proposal",
+          "target": "choose",
+          "kind": "ai",
+          "icon": "ai",
+          "label": {
+            "lv": "AI piedāvā rezultātus",
+            "en": "AI proposes outcomes"
+          },
+          "caption": {
+            "lv": "Līdz 3 ar “gatavs”",
+            "en": "Up to 3 with done criteria"
+          },
+          "x": 240,
+          "y": 110
+        },
+        {
+          "id": "decision",
+          "target": "choose",
+          "kind": "you",
+          "icon": "user",
+          "label": {
+            "lv": "Tu izvēlies",
+            "en": "You choose"
+          },
+          "caption": {
+            "lv": "Saglabā autorizēto",
+            "en": "Save the authorised choice"
+          },
+          "x": 440,
+          "y": 110
+        },
+        {
+          "id": "delivery",
+          "target": "deliver",
+          "kind": "ai",
+          "icon": "build",
+          "label": {
+            "lv": "Piegādā atļauto",
+            "en": "Deliver authorised work"
+          },
+          "caption": {
+            "lv": "Pati piegāde projektā",
+            "en": "Delivery in the project"
+          },
+          "x": 640,
+          "y": 110
+        },
+        {
+          "id": "ending",
+          "target": "close",
+          "kind": "tool",
+          "icon": "file",
+          "label": {
+            "lv": "Noslēgums un nākamais",
+            "en": "Closeout and next step"
+          },
+          "caption": {
+            "lv": "Statuss + pierādījums",
+            "en": "Status + evidence"
+          },
+          "x": 840,
+          "y": 110
+        }
+      ],
+      "edges": [
+        [
+          "inputs",
+          "proposal"
+        ],
+        [
+          "proposal",
+          "decision"
+        ],
+        [
+          "decision",
+          "delivery"
+        ],
+        [
+          "delivery",
+          "ending"
+        ],
+        [
+          "ending",
+          "inputs",
+          "loop"
+        ]
+      ],
+      "loopLabel": {
+        "lv": "Jauni pierādījumi → pārskatīta izvēle",
+        "en": "New evidence → reviewed choice"
+      }
+    }
+  },
+  "preview": {
+    "eyebrow": {
+      "lv": "MIT7 · Piemērs",
+      "en": "MIT7 · Example"
+    },
+    "title": {
+      "lv": "Divi rezultāti, trīs kartītes",
+      "en": "Two outcomes, three cards"
+    },
+    "lead": {
+      "lv": "Kompakts sintētisks dienas piemērs ar laika ietilpību un noslēgumu.",
+      "en": "A compact synthetic day showing capacity and closeout."
+    },
+    "label": {
+      "lv": "IZDOMĀTS MĀCĪBU PIEMĒRS · nav dzīvu izvēļu vai sūtījumu",
+      "en": "FICTIONAL TEACHING EXAMPLE · no live selections or sends"
+    },
+    "period": {
+      "lv": "Parauga diena · 22.10.2026.",
+      "en": "Example day · 22 Oct 2026"
+    },
+    "headline": {
+      "lv": "100 minūtes: 60 + 30, 10 minūtes rezervei.",
+      "en": "100 minutes: 60 + 30, 10 minutes in reserve."
+    },
+    "summary": {
+      "lv": "A + B kartīte veido vienu klienta piedāvājuma rezultātu. C ir atsevišķs materiāla rezultāts. Neviena īsta kartīte nav mainīta.",
+      "en": "Cards A + B form one client-proposal outcome. C is a separate materials outcome. No real card was changed."
+    },
+    "actionLabel": {
+      "lv": "Nākamais solis:",
+      "en": "Next step:"
+    },
+    "waitLabel": {
+      "lv": "Noslēgums",
+      "en": "Closeout"
+    },
+    "draftLabel": {
+      "lv": "Parauga ieraksts",
+      "en": "Sample record"
+    },
+    "copyLabel": {
+      "lv": "Kopēt piemēru",
+      "en": "Copy example"
+    },
+    "note": {
+      "lv": "Visi nosaukumi, kartīšu burti un minūtes ir izdomāti. Datums ir piemēra marķējums; nekas nav nosūtīts, publicēts vai pieņemts dzīvajā darba centrā.",
+      "en": "All names, card letters and minutes are fictional. The date labels the example; nothing was sent, published or accepted in the live workboard."
+    },
+    "items": [
+      {
+        "id": "proposal",
+        "icon": "file",
+        "channel": {
+          "lv": "Rezultāts 1 · 60 min",
+          "en": "Outcome 1 · 60 min"
+        },
+        "title": {
+          "lv": "Klienta lēmumam gatavs piedāvājums",
+          "en": "A proposal ready for a client decision"
+        },
+        "brief": {
+          "lv": "Divas kartītes, viens “gatavs”.",
+          "en": "Two cards, one done criterion."
+        },
+        "contextLabel": {
+          "lv": "Avots un ietilpība",
+          "en": "Source and capacity"
+        },
+        "quote": {
+          "lv": "Projekta jaunākajā avotā piedāvājuma melnraksts jau gatavs. Trūkst izvēles un cenas pārskata. Parauga kalendārā ir 100 darba minūtes.",
+          "en": "The latest project source already contains a draft proposal. A decision and price review remain. The example calendar has 100 work minutes."
+        },
+        "why": {
+          "lv": "Neveido melnrakstu vēlreiz. Kartīte A: lēmums 20 min; B: gala pārskats 40 min. “Gatavs” — īpašnieka pieņemts piedāvājums ar vienu nosauktu nākamo soli.",
+          "en": "Do not recreate the draft. Card A: decision 20 min; B: final review 40 min. Done means an owner-accepted proposal with one named next step."
+        },
+        "action": {
+          "lv": "Īpašnieks izvēlas A + B kā vienu rezultātu; AI sagatavo cenas salīdzinājumu.",
+          "en": "The owner chooses A + B as one outcome; AI prepares the price comparison."
+        },
+        "followup": {
+          "lv": "Pabeigts: pieņemtais fails un lēmums saglabāti parauga projekta ierakstā. Klientam nekas nav nosūtīts.",
+          "en": "Completed: accepted file and decision saved in the example project record. Nothing was sent to a client."
+        },
+        "source": "DEMO-M1"
+      },
+      {
+        "id": "materials",
+        "icon": "doc",
+        "channel": {
+          "lv": "Rezultāts 2 · 30 min",
+          "en": "Outcome 2 · 30 min"
+        },
+        "title": {
+          "lv": "Pārskatīts nodarbības darba lapas komplekts",
+          "en": "Reviewed lesson worksheet package"
+        },
+        "brief": {
+          "lv": "Viena kartīte; avota trūkums maina noslēgumu.",
+          "en": "One card; missing source changes closeout."
+        },
+        "contextLabel": {
+          "lv": "Pieņemtais plāns",
+          "en": "Accepted plan"
+        },
+        "quote": {
+          "lv": "Kartīte C: pārskatīt darba lapu 30 minūtēs. “Gatavs” — visi uzdevumi pārbaudīti pret pieņemto nodarbības tēmu.",
+          "en": "Card C: review the worksheet in 30 minutes. Done means every exercise checked against the accepted lesson topic."
+        },
+        "why": {
+          "lv": "Sagatavošana iederas atlikušajā logā. Pārskatā atklājas, ka viena piemēra avota fails nav saņemts.",
+          "en": "Preparation fits the remaining window. Review reveals that one example’s source file has not arrived."
+        },
+        "action": {
+          "lv": "Saglabā pārbaudīto daļu un nosauc vienu vajadzīgo failu; nepieskaita nepārbaudīto pabeigtajam.",
+          "en": "Save the checked part and name the one required file; do not count the unchecked part as completed."
+        },
+        "followup": {
+          "lv": "Bloķēts: trūkst piemēra avota. Nākamais — atbildīgais pievieno failu; pārskats turpinās pēc saņemšanas. Rītdienas MIT nav izvēlēts.",
+          "en": "Blocked: example source missing. Next: the responsible person supplies the file; review resumes after receipt. Tomorrow’s MIT is not selected."
+        },
+        "source": "DEMO-M2"
+      }
+    ]
+  },
+  "ui": {
+    "tab_settings": {
+      "lv": "Iestatījumi",
+      "en": "Settings"
+    },
+    "overview_example": {
+      "lv": "Skatīt rezultāta piemēru →",
+      "en": "See an outcome example →"
+    },
+    "qs_sub": {
+      "lv": "Iekopē pieprasījumu AI, kuram pieejami šīs metodes faili un tavi atļautie avoti.",
+      "en": "Copy the request into an AI that has this method’s files and your authorised sources."
+    },
+    "tab_log": {
+      "lv": "Izmaiņas",
+      "en": "Changes"
+    }
+  },
+  "onboarding": "INSTALL.md"
+}

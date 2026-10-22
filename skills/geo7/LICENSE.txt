@@ -1,0 +1,19 @@
+GEO7 community edition1.2.0
+
+Instruction text and method by Egils Boitmanis / FullDigital, CC BY4.0.
+https://creativecommons.org/licenses/by/4.0/legalcode
+Retain credit, source and licence link, and identify adaptations.
+
+This mixed-component package is not wholly CC BY or unrestricted:
+- PageParser-derived implementation in scripts/audit.py: Staksoft MIT licence,
+  preserved in references/LICENSE-STAKSOFT.txt; modifications documented in SOURCE.json.
+- Domain-gap request adaptation in scripts/research_plan.py: ReScienceLab
+  Apache2.0 licence, preserved in references/LICENSE-RESCIENCELAB.txt.
+- Remaining included Arete helper source is supplied as part of this attributed
+  teaching adaptation; source/provenance is recorded in SOURCE.json and
+  references/THIRD-PARTY.md. No third-party rights are expanded by this notice.
+- Inter, Literata and JetBrains Mono font files retain their bundled SIL OFL1.1 notices.
+- Arete AIOS name/symbol belong to Arete AIOS/Egils Boitmanis. Use unchanged for
+  Arete teaching material; they are not another brand's identity or CC BY artwork.
+
+Account access, private evidence and provider trademarks are not granted by this package.

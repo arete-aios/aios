@@ -97,6 +97,12 @@ Already have a second brain or an AIOS-like folder? Use [`references/evaluate.md
 
 **Communication follow-up:** [`COMMS7`](skills/comms7/SKILL.md) reviews selected messages and open commitments against your goals and active projects. It provides sourced next actions, reply drafts and a preserved Waiting list. Start with supplied conversations; connect each account separately. [Open the human guide](skills/comms7/index.html).
 
+**Skill building:** [`SKILLS7`](skills/skills7/SKILL.md) turns a repeated need into a reusable skill, audits an existing one and builds its human guide. It can also draw the workflow of any other skill from a GitHub link ([prompt](skills/skills7/references/VISUALISE-ANY-SKILL.md)). [Open the human guide](skills/skills7/index.html).
+
+**Search and AI visibility:** [`GEO7`](skills/geo7/SKILL.md) audits a public website, selects the questions real clients ask, checks the competitors that actually appear and prepares evidence-based SEO/GEO improvements measured by qualified conversations. See [`INSTALL.md`](skills/geo7/INSTALL.md). [Open the human guide](skills/geo7/index.html).
+
+**Daily results:** [`MIT7`](skills/mit7/SKILL.md) proposes up to three meaningful results for the day from your focus, commitments and calendar. You choose, and the day closes as done, waiting, blocked or continue. [Open the human guide](skills/mit7/index.html).
+
 The reusable methods live in [`skills/`](skills/). Beyond the five above, install only what solves a real need, one at a time, after real work has shown it. A skill that is present in a folder costs nothing; a standing skill is loaded every session and should stay rare.
 
 If you build manually over several weeks, start with [`SKILL.md`](SKILL.md). That is the staged path with exit tests. The guided `START.md` path is faster and ends in the same five-layer architecture.

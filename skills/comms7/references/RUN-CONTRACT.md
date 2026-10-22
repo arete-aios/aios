@@ -39,3 +39,10 @@ while its commitment remains open. No items means no percentage.
 Finish when the owner ends the review or each surfaced item has an explicit outcome.
 Retain unanswered owner decisions and missing coverage; never force completion.
 Scheduling, outbound messages and account mutations follow the task's actual scope.
+
+## Optional monitor handoff
+
+A source-change event enters the evidence/coverage stage. It never bypasses newest
+conversation context or directly assigns Action/Waiting. Carry unresolved older
+commitments even when no event arrives. Baseline imports and unchanged cycles do
+not create new alerts; monitoring cadence and delivery require separate acceptance.

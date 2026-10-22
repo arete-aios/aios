@@ -14,3 +14,8 @@ only when requested. Keep it distinct from unresolved personal inbox obligations
 review fit with the owner's North Star and active work. Drafts require source/context
 checks and the owner's accepted publishing scope. No scraping workaround, mass
 outreach or background schedule is installed by the portable method.
+
+A source's activity check, private messages and notification feed can expose
+different data and permissions. Verify each requested coverage boundary; do not
+infer full notification, attachment or inbox access from one accepted import.
+Incoming activity still passes through the semantic review before it becomes work.

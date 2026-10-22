@@ -4,7 +4,7 @@ description: Review selected communication and open commitments, prioritise agai
 license: CC-BY-4.0
 metadata:
   author: Egils Boitmanis / FullDigital
-  version: "1.5.0"
+  version: "1.5.1"
   edition: community
 ---
 
@@ -78,6 +78,25 @@ handoff for each layer. Preserve this explanation whenever the human guide chang
 [Review modes](REVIEW-MODES.md) offers optional focused reviews; load only the
 relevant mode, not every mode on every run.
 
+## Source activity and communication decisions
+
+A separately authorised source monitor can check for message changes on an agreed
+schedule and privately notify the owner about new incoming material or a coverage
+failure. It stays quiet while nothing relevant changes; importing old history is
+not a new-message alert. This package installs no monitor, schedule or notification
+route, and does not include a connected LinkedIn or other account.
+
+**A new-message signal is not an Action or a reply decision.** The semantic COMMS7
+review still checks the full selected exchange, newest sent/draft context and prior
+owner decisions. A new “thanks” may need nothing; an older promise can remain open
+without any new activity. Keep source freshness separate from obligation state.
+
+Configure each source, permitted read, cadence, notification destination and actual
+runner only within the owner's explicit task authorisation. Verify a real change
+and a quiet unchanged cycle before claiming an active monitor. If new content
+cannot be inspected, report the coverage gap rather than guessing its importance.
+[Monitoring contract](references/MONITORING.md) describes this optional path.
+
 ## Gmail labels, filters and subscriptions
 
 Classify by meaning, using the account's existing labels: **Action** is my concrete
@@ -128,4 +147,4 @@ review, not “100% of every channel handled”.
 - [Readiness](references/READINESS.md): method versus your installed connections.
 - [Source record](SOURCE.json) and [licence](LICENSE.txt).
 
-The full source distribution also contains `manifest.json`, `view.json` and the generated `index.html`; the optional executable is `scripts/review_pack.py`. The small AI-method ZIP contains the instructions and helper, while the human HTML is a separate download.
+The source ZIP contains the complete method, references, offline helper/tests, `manifest.json` and `view.json`. The [human guide](https://app.areteaios.com/learning/skills/comms7) uses existing member access; download its HTML separately and optionally save it as `index.html` beside these files. The source ZIP excludes that generated viewer to avoid including an archive inside itself. The optional executable is `scripts/review_pack.py`.

@@ -1,0 +1,329 @@
+{
+  "id": "mit7",
+  "name": "MIT7",
+  "title": {
+    "lv": "Dienas izvēle un rezultāta noslēgums",
+    "en": "Daily choice and outcome closeout"
+  },
+  "version": "1.0.0",
+  "updated_on": "2026-10-22",
+  "author": "Egils Boitmanis · FullDigital",
+  "purpose": {
+    "lv": "No aktuālajiem avotiem līdz sasniedzamai dienas izvēlei un datētam iznākumam.",
+    "en": "From current sources to a feasible daily choice and a dated outcome."
+  },
+  "overview": {
+    "title": {
+      "lv": "Ko šodien pabeigsim?",
+      "en": "What will we finish today?"
+    },
+    "summary": {
+      "lv": "AI salāgo virzienu, projektu pierādījumus un laika ietilpību, tad piedāvā līdz trim rezultātiem. Tu izvēlies; dienas beigās saglabājam faktisko iznākumu un nākamo soli.",
+      "en": "AI reconciles direction, project evidence and available time, then proposes up to three outcomes. You choose; at day’s end we preserve the actual result and next step."
+    },
+    "starting_prompt": {
+      "lv": "MIT7 — no mana pieņemtā virziena, jaunākajiem projekta faktiem un šodienas laika loga piedāvā līdz 3 sasniedzamiem rezultātiem ar “gatavs”, nākamo soli un man vajadzīgajām minūtēm. Es izvēlos.",
+      "en": "MIT7 — using my accepted direction, latest project facts and today’s time window, propose up to 3 feasible outcomes with done criteria, next actions and my required minutes. I choose."
+    }
+  },
+  "workflow": [
+    {
+      "id": "direction",
+      "number": "01",
+      "name": {
+        "lv": "Nosaki dienas mērķi",
+        "en": "Define the day’s goal"
+      },
+      "label": {
+        "lv": "Dienas jautājums, datums un atļautais tvērums.",
+        "en": "The day’s question, date and authorised scope."
+      },
+      "output": {
+        "lv": "Dienas jautājums, datums un atļautais tvērums.",
+        "en": "The day’s question, date and authorised scope."
+      },
+      "doc": "references/METHOD.md"
+    },
+    {
+      "id": "evidence",
+      "number": "02",
+      "name": {
+        "lv": "Salāgo pierādījumus",
+        "en": "Reconcile evidence"
+      },
+      "label": {
+        "lv": "Avotu pamatojums un pareizais nākamais solis.",
+        "en": "Source rationale and the correct next step."
+      },
+      "output": {
+        "lv": "Avotu pamatojums un pareizais nākamais solis.",
+        "en": "Source rationale and the correct next step."
+      },
+      "doc": "references/METHOD.md"
+    },
+    {
+      "id": "capacity",
+      "number": "03",
+      "name": {
+        "lv": "Pārbaudi ietilpību",
+        "en": "Check capacity"
+      },
+      "label": {
+        "lv": "Reāls īpašnieka laika budžets un minūšu pieņēmumi.",
+        "en": "A realistic owner time budget and minute estimates."
+      },
+      "output": {
+        "lv": "Reāls īpašnieka laika budžets un minūšu pieņēmumi.",
+        "en": "A realistic owner time budget and minute estimates."
+      },
+      "doc": "references/METHOD.md"
+    },
+    {
+      "id": "choose",
+      "number": "04",
+      "name": {
+        "lv": "Piedāvā un izvēlies",
+        "en": "Propose and choose"
+      },
+      "label": {
+        "lv": "Līdz trim pieņemtiem rezultātiem ar skaidru “gatavs”.",
+        "en": "Up to three accepted results with explicit done criteria."
+      },
+      "output": {
+        "lv": "Līdz trim pieņemtiem rezultātiem ar skaidru “gatavs”.",
+        "en": "Up to three accepted results with explicit done criteria."
+      },
+      "doc": "references/METHOD.md"
+    },
+    {
+      "id": "deliver",
+      "number": "05",
+      "name": {
+        "lv": "Sagatavo un piegādā",
+        "en": "Prepare and deliver"
+      },
+      "label": {
+        "lv": "Piegāde un pārbaudāms pierādījums projekta mājvietā.",
+        "en": "Delivery and verifiable evidence in the project’s home."
+      },
+      "output": {
+        "lv": "Piegāde un pārbaudāms pierādījums projekta mājvietā.",
+        "en": "Delivery and verifiable evidence in the project’s home."
+      },
+      "doc": "references/METHOD.md"
+    },
+    {
+      "id": "close",
+      "number": "06",
+      "name": {
+        "lv": "Noslēdz un saglabā",
+        "en": "Close and preserve"
+      },
+      "label": {
+        "lv": "Datēts iznākums, pierādījums un nākamais solis.",
+        "en": "Dated outcome, evidence and next step."
+      },
+      "output": {
+        "lv": "Datēts iznākums, pierādījums un nākamais solis.",
+        "en": "Dated outcome, evidence and next step."
+      },
+      "doc": "references/METHOD.md"
+    }
+  ],
+  "tools": [
+    {
+      "id": "sources",
+      "name": {
+        "lv": "Pieņemtie avoti",
+        "en": "Accepted sources"
+      },
+      "icon_id": "doc",
+      "requirement": "required",
+      "purpose": {
+        "lv": "Virziens, projekta fakti un esošās izvēles.",
+        "en": "Direction, project facts and existing choices."
+      },
+      "scope": {
+        "lv": "Tikai uzdevumam atļautie avoti.",
+        "en": "Only sources authorised for the task."
+      },
+      "limit": {
+        "lv": "Veca kartīte nav svaigs piegādes pierādījums.",
+        "en": "An old card is not fresh delivery evidence."
+      }
+    },
+    {
+      "id": "calendar",
+      "name": {
+        "lv": "Kalendārs vai dots laika logs",
+        "en": "Calendar or stated time window"
+      },
+      "icon_id": "collect",
+      "requirement": "required",
+      "purpose": {
+        "lv": "Laika budžets un reālās minūtes.",
+        "en": "Time budget and realistic minutes."
+      },
+      "scope": {
+        "lv": "Atļautais konts vai īpašnieka sniegtais logs.",
+        "en": "Authorised account or owner-provided window."
+      },
+      "limit": {
+        "lv": "Bez piekļuves kalendārs nav pārbaudīts.",
+        "en": "Without access the calendar is not verified."
+      }
+    },
+    {
+      "id": "workboard",
+      "name": {
+        "lv": "Esošā darbu uzskaite",
+        "en": "Existing work tracker"
+      },
+      "icon_id": "check",
+      "requirement": "required",
+      "purpose": {
+        "lv": "Saglabāt autorizēto izvēli un tās vēsturi.",
+        "en": "Save authorised choices and their history."
+      },
+      "scope": {
+        "lv": "Viena tava izvēlēta uzskaites vieta.",
+        "en": "One tracker you choose."
+      },
+      "limit": {
+        "lv": "Tu izvēlies; rīka faktiskās robežas jāpārbauda.",
+        "en": "You choose; verify the tracker’s actual limits."
+      }
+    },
+    {
+      "id": "ai",
+      "name": {
+        "lv": "AI un domēna prasmes",
+        "en": "AI and domain skills"
+      },
+      "icon_id": "ai",
+      "requirement": "required",
+      "purpose": {
+        "lv": "Pamatojums, sagatavošana un atļautā piegāde.",
+        "en": "Rationale, preparation and authorised delivery."
+      },
+      "scope": {
+        "lv": "Konkrētā darba atļauja.",
+        "en": "Task-specific authorisation."
+      },
+      "limit": {
+        "lv": "Aģenta vārds nav palaista izpilde.",
+        "en": "An agent name is not dispatched execution."
+      }
+    }
+  ],
+  "tool_groups": [
+    {
+      "id": "plan",
+      "title": {
+        "lv": "Plānošana",
+        "en": "Planning"
+      },
+      "description": {
+        "lv": "Avoti un ietilpība pirms izvēles.",
+        "en": "Sources and capacity before choice."
+      },
+      "tools": [
+        "sources",
+        "calendar"
+      ]
+    },
+    {
+      "id": "act",
+      "title": {
+        "lv": "Izvēle un piegāde",
+        "en": "Choice and delivery"
+      },
+      "description": {
+        "lv": "Īpašnieka lēmums un pārbaudāms turpinājums.",
+        "en": "Owner decision and verifiable continuation."
+      },
+      "tools": [
+        "workboard",
+        "ai"
+      ]
+    }
+  ],
+  "ui": {
+    "default_language": "en",
+    "languages": [
+      "lv",
+      "en"
+    ]
+  },
+  "language": "en",
+  "edition": "community",
+  "owner": {
+    "role": "main",
+    "label": "Your planning owner"
+  },
+  "status_label": {
+    "lv": "Kopienas metode un pilns lejupielādes komplekts",
+    "en": "Community method and complete downloadable package"
+  },
+  "runs": [],
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "date": "2026-10-22",
+      "changes": [
+        {
+          "lv": "Pieņemtais piecu ciļņu skats un metode pielāgoti patstāvīgai lietošanai bez personīgajiem kontiem vai datiem.",
+          "en": "Accepted five-tab guide and method adapted for standalone use without personal accounts or data."
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "skills7-guide-builder",
+      "purpose": "Optional: rebuild the guide using the separate SKILLS7 community toolkit. Download the standalone HTML separately from APP; its ZIP contains complete method/code/assets and excludes the guide to avoid recursive embedding.",
+      "source": "https://app.areteaios.com/learning/skills/skills7",
+      "access": "local optional"
+    },
+    {
+      "id": "your-sources",
+      "purpose": "Use only the project facts and accounts you authorise; no accounts or credentials are included",
+      "access": "task-scoped"
+    },
+    {
+      "id": "your-tracker",
+      "purpose": "Optional existing task list or board; explicitly authorise any writes; no tracker database is bundled",
+      "access": "task-scoped"
+    },
+    {
+      "id": "your-calendar",
+      "purpose": "Optional authorised calendar read or a user-provided time window marked as an assumption",
+      "access": "read optional"
+    }
+  ],
+  "resources": [
+    "SKILL.md",
+    "INSTALL.md",
+    "references/METHOD.md",
+    "references/READINESS.md",
+    "references/README.md",
+    "manifest.json",
+    "view.json",
+    "SOURCE.json",
+    "LICENSE.txt",
+    "index.html"
+  ],
+  "archive": {
+    "files": [
+      "SKILL.md",
+      "INSTALL.md",
+      "references/METHOD.md",
+      "references/READINESS.md",
+      "references/README.md",
+      "manifest.json",
+      "view.json",
+      "SOURCE.json",
+      "LICENSE.txt"
+    ]
+  }
+}
