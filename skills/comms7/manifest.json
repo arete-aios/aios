@@ -1,0 +1,423 @@
+{
+  "id": "comms7",
+  "name": "COMMS7",
+  "title": "Communication review and next actions",
+  "version": "1.5.0",
+  "updated_on": "2026-10-22",
+  "author": "Egils Boitmanis · FullDigital",
+  "owner": {
+    "label": "Egils Boitmanis · FullDigital"
+  },
+  "purpose": "Turn selected communication into sourced actions, reply drafts and a reliable handoff, guided by your goals and active projects.",
+  "status_label": "Community method · manual review",
+  "method_status": "community-method-not-account-activation",
+  "aliases": [
+    "COMMS7",
+    "COMS7",
+    "COMM7",
+    "SAZINA7"
+  ],
+  "overview": {
+    "title": "Communication review and next actions",
+    "summary": "Review emails, messages and applications together. See what needs your action, who needs a reply and what you are waiting for.",
+    "starting_prompt": "COMMS7 — read the extracted SKILL.md. Review my selected communications and open commitments against my goals and active projects. Show up to five important next actions, check the newest context, and prepare the replies I choose. State coverage and any unsaved handoff."
+  },
+  "workflow": [
+    {
+      "id": "step-1",
+      "number": "01",
+      "name": "Request and scope",
+      "label": "Choose communication review or method explanation.",
+      "output": "A mode and the already permitted accounts.",
+      "doc": "references/RUN-CONTRACT.md",
+      "state": "method"
+    },
+    {
+      "id": "step-2",
+      "number": "02",
+      "name": "Previous decisions",
+      "label": "Read saved outcomes before proposing new work.",
+      "output": "Open, completed, ignored and deferred items.",
+      "doc": "references/RUN-CONTRACT.md",
+      "state": "method"
+    },
+    {
+      "id": "step-3",
+      "number": "03",
+      "name": "Sources and coverage",
+      "label": "Verify real access, freshness, selection and unread backlog.",
+      "output": "Dated candidates and an honest coverage record.",
+      "doc": "references/RUN-CONTRACT.md",
+      "state": "method"
+    },
+    {
+      "id": "step-4",
+      "number": "04",
+      "name": "Conversation and evidence",
+      "label": "Check context, your replies and the actual deadline.",
+      "output": "A supported next step; resolved actions stay resolved.",
+      "doc": "references/RUN-CONTRACT.md",
+      "state": "method"
+    },
+    {
+      "id": "step-5",
+      "number": "05",
+      "name": "Short result",
+      "label": "Return up to five useful next actions.",
+      "output": "Fact, relevance, action, owner and source.",
+      "doc": "references/RUN-CONTRACT.md",
+      "state": "method"
+    },
+    {
+      "id": "step-6",
+      "number": "06",
+      "name": "Owner decision",
+      "label": "You choose the action and its status.",
+      "output": "A clear decision; a draft is not a sent message.",
+      "doc": "references/RUN-CONTRACT.md",
+      "state": "method"
+    },
+    {
+      "id": "step-7",
+      "number": "07",
+      "name": "Save and review again",
+      "label": "Save to the existing status authority and read it back.",
+      "output": "A verified record and a next-review handoff.",
+      "doc": "references/RUN-CONTRACT.md",
+      "state": "method"
+    }
+  ],
+  "tools": [
+    {
+      "id": "owner-context",
+      "name": "Your request",
+      "icon_id": "user",
+      "requirement": "required",
+      "purpose": "Chooses the mode and preserves your boundaries.",
+      "scope": "This chat and existing authorisation.",
+      "limit": "An HTML explanation does not start an inbox read."
+    },
+    {
+      "id": "saved-state",
+      "name": "Existing status authority",
+      "icon_id": "file",
+      "requirement": "required",
+      "purpose": "Preserves DONE, WAITING, IGNORE and DEFER.",
+      "scope": "One existing private home; links are in the internal view.",
+      "limit": "Without access, previous decisions cannot be claimed as checked."
+    },
+    {
+      "id": "permitted-source",
+      "name": "At least one permitted source",
+      "icon_id": "collect",
+      "requirement": "required",
+      "purpose": "Provides actual messages and their identities.",
+      "scope": "An available connector or owner-supplied material.",
+      "limit": "A requested Gmail or WhatsApp source must be checked or reported unavailable."
+    },
+    {
+      "id": "gmail",
+      "name": "Gmail",
+      "icon_id": "gmail",
+      "requirement": "alternative",
+      "purpose": "Inbox, Action/Waiting and relevant threads/SENT/DRAFT.",
+      "scope": "Required for a Gmail review; verify each account separately.",
+      "limit": "Connection and labels do not prove importance or payment."
+    },
+    {
+      "id": "whatsapp",
+      "name": "WhatsApp",
+      "icon_id": "whatsapp",
+      "requirement": "alternative",
+      "purpose": "Permitted direct messages and important group updates.",
+      "scope": "A granted reader or authorised operator collector.",
+      "limit": "Operator access does not grant native agent access; media metadata is not content analysis."
+    },
+    {
+      "id": "context-analysis",
+      "name": "AI context review",
+      "icon_id": "ai",
+      "requirement": "required",
+      "purpose": "Separates reply, delivery, waiting and opportunity.",
+      "scope": "Checks your latest reply, deadline and cross-channel resolution.",
+      "limit": "Thanks, silence or archive does not close an open outcome."
+    },
+    {
+      "id": "supporting-files",
+      "name": "Supporting files and media",
+      "icon_id": "doc",
+      "requirement": "optional",
+      "purpose": "Inspects a file needed for a specific decision.",
+      "scope": "Only needed, permitted material with the relevant tool.",
+      "limit": "An inaccessible Drive file or unread audio remains an explicit gap."
+    },
+    {
+      "id": "owner-decision",
+      "name": "Your decision",
+      "icon_id": "user",
+      "requirement": "required",
+      "purpose": "REPLY, DOING, WAITING, DONE, IGNORE or DEFER.",
+      "scope": "Closes only the named step; other commitments remain.",
+      "limit": "An AI suggestion does not create an accepted MIT or send permission."
+    },
+    {
+      "id": "state-write",
+      "name": "Save and verify",
+      "icon_id": "check",
+      "requirement": "required",
+      "purpose": "Updates existing status, receipt and index, then verifies the result.",
+      "scope": "Private state stays in its home; COX7 and catalogue checks match the scope.",
+      "limit": "Saving is not a full next-review or restart test."
+    },
+    {
+      "id": "review-pack",
+      "name": "Python · structured packing",
+      "icon_id": "python",
+      "requirement": "optional",
+      "purpose": "Merge duplicates, select changes and retain older open items.",
+      "scope": "Authorised JSON input and a derived previous review checkpoint.",
+      "limit": "Does not grant account access or semantic conversation review; token savings are unmeasured."
+    }
+  ],
+  "tool_groups": [
+    {
+      "id": "prepare",
+      "title": "Remember previous outcomes",
+      "description": "Start with the request and your prior decisions.",
+      "requirement_label": "Required before a new selection",
+      "tools": [
+        "owner-context",
+        "saved-state"
+      ]
+    },
+    {
+      "id": "review",
+      "title": "Check conversations",
+      "description": "Sources, necessary context and evidence limits.",
+      "requirement_label": "At least one permitted source; requested accounts must be accounted for",
+      "tools": [
+        "permitted-source",
+        "review-pack",
+        "gmail",
+        "whatsapp",
+        "context-analysis",
+        "supporting-files"
+      ]
+    },
+    {
+      "id": "decide",
+      "title": "Decide and preserve",
+      "description": "A short result, your decision and a traceable handoff.",
+      "requirement_label": "Sending and account changes require specific authorisation",
+      "tools": [
+        "owner-decision",
+        "state-write"
+      ]
+    }
+  ],
+  "changelog": [
+    {
+      "version": "1.5.0",
+      "date": "2026-10-22",
+      "changes": [
+        "Self-contained community edition with goal-aware prioritisation, five-layer AIOS integration, Gmail GTD decisions and a preserved open-work handoff.",
+        "The portable method and optional Python helper include no account connections, private owner setup or recurring schedule."
+      ]
+    }
+  ],
+  "scorecard": {
+    "status": "illustrative-planning-estimates",
+    "profile": "Example: AI consulting business",
+    "assessed_on": "2026-10-21",
+    "measured": false,
+    "default": "standard",
+    "business_fit": [
+      {
+        "category": "Operations-and-Finance",
+        "label": "Operations & Finance",
+        "score": 90,
+        "factors": [
+          4,
+          4,
+          4,
+          3,
+          3
+        ],
+        "benefit": "Preserve open actions and waits."
+      },
+      {
+        "category": "Company",
+        "label": "Strategy & Leadership",
+        "score": 85,
+        "factors": [
+          4,
+          3,
+          4,
+          3,
+          3
+        ],
+        "benefit": "See where your decision is needed."
+      },
+      {
+        "category": "Sales",
+        "label": "Sales",
+        "score": 80,
+        "factors": [
+          4,
+          3,
+          3,
+          3,
+          3
+        ],
+        "benefit": "Notice customer requests and follow-ups."
+      }
+    ],
+    "scenarios": {
+      "manual": {
+        "label": "A few supplied conversations",
+        "complexity": 10,
+        "complexity_factors": [
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "usage_intensity": 20,
+        "estimated_tokens": 8000,
+        "token_range": "5–15k",
+        "description": "Assumption: 2k conversations + 3k context + 2k repeated input + 1k output."
+      },
+      "standard": {
+        "label": "Gmail + WhatsApp review",
+        "complexity": 45,
+        "complexity_factors": [
+          2,
+          2,
+          1,
+          2,
+          2
+        ],
+        "usage_intensity": 40,
+        "estimated_tokens": 35000,
+        "token_range": "20–60k",
+        "description": "Assumption: 20 changed conversations × 1k, 4k context, 8k repeated input and 3k output."
+      },
+      "extended": {
+        "label": "Broader multichannel review",
+        "complexity": 70,
+        "complexity_factors": [
+          3,
+          3,
+          2,
+          3,
+          3
+        ],
+        "usage_intensity": 80,
+        "estimated_tokens": 180000,
+        "token_range": "100–300k",
+        "description": "Assumption: 80 conversations × 1.5k, 8k context, 40k repeated input and 12k output."
+      }
+    }
+  },
+  "updated": "2026-10-22",
+  "ui": {
+    "default_language": "en"
+  },
+  "github": {
+    "url": "https://github.com/ziemelis7/aios/tree/codex/comms7-community-20261022/skills/comms7",
+    "public_version": "1.5.0"
+  },
+  "documents": [
+    {
+      "file": "LICENSE.txt",
+      "title": "LICENSE"
+    },
+    {
+      "file": "REVIEW-MODES.md",
+      "title": "REVIEW-MODES"
+    },
+    {
+      "file": "SKILL.md",
+      "title": "SKILL"
+    },
+    {
+      "file": "SOURCE.json",
+      "title": "SOURCE"
+    },
+    {
+      "file": "references/AIOS-INTEGRATION.md",
+      "title": "AIOS-INTEGRATION"
+    },
+    {
+      "file": "references/EXAMPLE.md",
+      "title": "EXAMPLE"
+    },
+    {
+      "file": "references/GMAIL-WORKFLOW.md",
+      "title": "GMAIL-WORKFLOW"
+    },
+    {
+      "file": "references/PRINCIPLES.md",
+      "title": "PRINCIPLES"
+    },
+    {
+      "file": "references/PYTHON-HELPER.md",
+      "title": "PYTHON-HELPER"
+    },
+    {
+      "file": "references/READINESS.md",
+      "title": "READINESS"
+    },
+    {
+      "file": "references/README.md",
+      "title": "README"
+    },
+    {
+      "file": "references/RUN-CONTRACT.md",
+      "title": "RUN-CONTRACT"
+    },
+    {
+      "file": "references/SCORECARD.md",
+      "title": "SCORECARD"
+    },
+    {
+      "file": "references/SOCIAL-MODE.md",
+      "title": "SOCIAL-MODE"
+    },
+    {
+      "file": "references/STORAGE-PLAN.md",
+      "title": "STORAGE-PLAN"
+    },
+    {
+      "file": "scripts/README.md",
+      "title": "README"
+    },
+    {
+      "file": "scripts/review_pack.py",
+      "title": "review_pack"
+    }
+  ],
+  "resources": [
+    "LICENSE.txt",
+    "REVIEW-MODES.md",
+    "SKILL.md",
+    "SOURCE.json",
+    "references/AIOS-INTEGRATION.md",
+    "references/EXAMPLE.md",
+    "references/GMAIL-WORKFLOW.md",
+    "references/PRINCIPLES.md",
+    "references/PYTHON-HELPER.md",
+    "references/READINESS.md",
+    "references/README.md",
+    "references/RUN-CONTRACT.md",
+    "references/SCORECARD.md",
+    "references/SOCIAL-MODE.md",
+    "references/STORAGE-PLAN.md",
+    "scripts/README.md",
+    "scripts/review_pack.py",
+    "manifest.json",
+    "view.json",
+    "index.html"
+  ]
+}

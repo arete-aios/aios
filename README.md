@@ -95,6 +95,8 @@ Already have a second brain or an AIOS-like folder? Use [`references/evaluate.md
 
 ## Skills
 
+**Communication follow-up:** [`COMMS7`](skills/comms7/SKILL.md) reviews selected messages and open commitments against your goals and active projects. It provides sourced next actions, reply drafts and a preserved Waiting list. Start with supplied conversations; connect each account separately. [Open the human guide](skills/comms7/index.html).
+
 The reusable methods live in [`skills/`](skills/). Beyond the five above, install only what solves a real need, one at a time, after real work has shown it. A skill that is present in a folder costs nothing; a standing skill is loaded every session and should stay rare.
 
 If you build manually over several weeks, start with [`SKILL.md`](SKILL.md). That is the staged path with exit tests. The guided `START.md` path is faster and ends in the same five-layer architecture.
