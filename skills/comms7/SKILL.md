@@ -127,3 +127,5 @@ review, not “100% of every channel handled”.
 - [Channels and engagement](references/SOCIAL-MODE.md): optional extension with its own scope.
 - [Readiness](references/READINESS.md): method versus your installed connections.
 - [Source record](SOURCE.json) and [licence](LICENSE.txt).
+
+The full source distribution also contains `manifest.json`, `view.json` and the generated `index.html`; the optional executable is `scripts/review_pack.py`. The small AI-method ZIP contains the instructions and helper, while the human HTML is a separate download.
