@@ -18,6 +18,10 @@ An **AIOS** fixes that with plain files you own. Your AI reads those files befor
 
 The result is not another notes folder. It is a working loop: something happens, the useful learning is written back, and the next session behaves differently because of it.
 
+## Understand the system you have
+
+[Your AIOS Map](https://app.areteaios.com/learning/resources/aios-map) is an English interactive guide with a fictional example and a private browser-only planner. [DASHBOARD7](skills/dashboard7/SKILL.md) helps your own AI inspect selected evidence, ask focused questions and propose a useful next step while preserving your existing structure. The optional local scanner reads metadata only. No owner vault, account or client data is included.
+
 ## Choose your path
 
 - **Build it yourself:** attach a folder to ChatGPT, Claude, Codex, or another file-capable AI and use the prompt below.
@@ -110,3 +114,4 @@ If you build manually over several weeks, start with [`SKILL.md`](SKILL.md). Tha
 ---
 
 Built by [Egils Boitmanis at AreteAIOS](https://areteaios.com) with [FullDigital](https://fulldigital.me). Licensed CC BY 4.0. Use it, change it, ship it, and keep the attribution.
+

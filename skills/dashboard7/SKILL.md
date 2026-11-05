@@ -1,22 +1,64 @@
 ---
 name: dashboard7
-description: "DASHBOARD7: generate one HTML page showing the state of the owner's AIOS, pulled from their own files with private figures hidden. Use after the loop is closed, as the reward, not the start."
+description: "DASHBOARD7: map an existing AIOS, ask focused questions and propose one useful improvement, or help a beginner choose a small starting blueprint. Generate a private, evidence-labelled HTML snapshot. Use for an AIOS map, personal command center or onboarding orientation."
 license: CC-BY-4.0
 metadata:
   author: fulldigital.me
-  version: "1.0.0"
+  version: "1.1.0"
   source: dashboard7
-  synced: "2026-07-23"
+  updated: "2026-11-03"
 ---
 
 # SKILL: Draw the invisible system as one page
+
+## Map and improve — English community edition
+
+The owner may start with **“Map my AIOS and help me make it useful.”** Use the
+[map-and-improve method](references/MAP-AND-IMPROVE.md) first. It adds an optional
+orientation mode to the original snapshot workflow below; it does not rebuild an
+existing system or turn a proposed blueprint into a claim of working capability.
+
+- **New system:** ask three short foundation questions and show a small **planned
+  blueprint**. Use the existing public [starter](https://github.com/arete-aios/aios/blob/main/onboarding/START.md)
+  for actual setup; preserve its sequence and approval gate.
+- **Existing system:** inspect its short entry points, preserve its structure,
+  ask at most three material gap questions and propose up to three changes.
+- **Snapshot:** report observed evidence, the owner's statements and unknowns
+  separately. The original workflow below applies to a real working-system snapshot.
+- **First useful task:** walk through one owner-selected task. Mark an operation
+  completed only after its result is read back. A simulation remains a simulation.
+
+All instructions, prompts and community UI in this release are in English. The
+[interactive guide](https://app.areteaios.com/learning/resources/aios-map) uses a fictional example and a browser-only planner;
+it does not run an AI model, connect accounts, upload files or inspect local folders.
+An optional [metadata scanner](scripts/scan.py) runs on the owner's own machine and
+returns only bounded counts and fixed states. It never reads file contents or emits
+names, paths, account details or credentials. See the [report contract](references/REPORT-CONTRACT.md).
+
+**Data boundary:** the package contains methods and fictional examples only. The
+owner chooses which sources their AI may read. A cloud AI provider may process
+those sources under its own terms; a local-only webpage does not change that.
+Nothing is sent to Arete by this package. A future APP summary or Network post
+requires the owner to review the exact fields and explicitly choose to share it.
+Do not include raw client information, financial figures, contact details or paths
+in a shareable output. Absence of telemetry is not proof that a personal result is
+safe to publish.
+
+**Resources:** [manifest](manifest.json), [method](references/MAP-AND-IMPROVE.md),
+[report contract](references/REPORT-CONTRACT.md), [scanner](scripts/scan.py),
+[public library](https://github.com/arete-aios/aios), [licence and asset rights](LICENSE.txt).
+The lightweight AI ZIP contains the instruction, references, scanner, manifest and
+licence. The standalone interactive guide is a separate distribution. Check the
+version before using another copy from the public library.
+
+---
 
 **Trigger word: `DASHBOARD7`.**
 
 **Human:** paste this file into your AI. Nothing else is needed from you until it asks.
 **Assistant:** everything below is addressed to you. Adapt it to this owner's system. The goal and the hard rules matter, the exact implementation is yours to choose.
 
-> **Do this one last, not first.** Every other skill builds the system. This one draws a picture of it, and there is nothing to draw until the loop is closed. Treat it as the reward at the end of onboarding, not a starting point. A dashboard built before the system exists is a display for an empty room.
+> **A working-system snapshot comes after real work.** Orientation may show a clearly labelled planned blueprint earlier. It must never show proposed layers, accounts or automations as observed or operational. The original snapshot workflow below is for a system that already exists.
 
 ---
 
@@ -24,7 +66,7 @@ metadata:
 
 **This skill has two modes, and nothing below is a hard blocker.**
 
-**Snapshot mode** needs nothing connected. The AI writes one self-contained HTML file to the owner's disk, they open it in a browser, and it is fully private because it never left the machine. This is the whole skill for most people.
+**Snapshot mode** needs nothing connected to Arete. The AI writes one self-contained HTML file to the owner's disk and they open it locally. The page itself makes no network calls; the AI used to create it may still process sources in the cloud under its provider's terms.
 **Living mode** publishes that same file to an address and, optionally, regenerates it. Publishing is the upgrade, and it is owned by a separate skill, not re-solved here.
 
 Start in snapshot mode. Moving to living mode adds an address, it does not change how the page is built.
@@ -81,7 +123,7 @@ Never assume silently. If you had to guess whether a figure was private, treat i
 - **At a group checkpoint** where everyone shows where their system stands. A shared page shape makes systems comparable at a glance.
 - **When something structural changed** and the picture is now out of date: a layer came online, the constitution crossed its budget, the focus moved.
 
-**Not a trigger:** building it early because it feels productive. A calendar reminder to regenerate it on a schedule, which produces a page nobody looked at made from data nobody changed. And using it as a place to store operational data it was never meant to hold. It is a mirror, not a workspace.
+**Not a trigger:** a request to edit operational tasks, send messages or connect accounts. A scheduled refresh is a separate request. An early planned blueprint belongs to the orientation method above and cannot be presented as a working-system snapshot.
 
 ---
 
@@ -159,10 +201,16 @@ Every item here is deliverable with nothing connected. Publishing is never on th
 
 ---
 
-*Assistant, on ingest: save this in the skills layer in your own format, add the trigger line to the skills-CONTEXT file, and confirm to the owner in one line what you saved, where, and the trigger.*
+*Assistant: when the owner explicitly requests installation, save this in the existing skills layer, update its existing index, and read back the result. Merely reading the skill for diagnosis does not authorise installation or structural changes.*
 
 ---
 
 **Skill by Egils Boitmanis, [FullDigital](https://fulldigital.me), a Latvia registered nonprofit association that teaches people to build an AI operating system they own.**
 What an AIOS is: [fulldigital.me/aios](https://fulldigital.me/aios) · The full library: [github.com/arete-aios/aios](https://github.com/arete-aios/aios)
 Licensed CC BY 4.0. Use it, change it, ship it. Keep the attribution.
+
+## Source distribution
+
+The full source distribution also includes `index.html` and `assets/` for the
+standalone interactive guide. Those UI files are separate from the lightweight
+AI ZIP. All six files required to run the method are included in that ZIP.

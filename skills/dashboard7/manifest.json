@@ -1,0 +1,23 @@
+{
+  "id": "dashboard7",
+  "name": "Your AIOS Map",
+  "version": "1.1.0",
+  "language": "en",
+  "owner_role": "engineering",
+  "status": "community-beta",
+  "purpose": "Understand an existing AIOS or choose a small starting blueprint, then finish one useful task.",
+  "entry": "SKILL.md",
+  "human_view": "https://app.areteaios.com/learning/resources/aios-map",
+  "dependencies": [
+    {"name": "An AI environment", "required": true, "purpose": "Read selected evidence, reason and ask useful questions; provider terms apply."},
+    {"name": "Owner-selected folder access", "required": false, "purpose": "Observed inventory; otherwise use clearly labelled owner descriptions."},
+    {"name": "Python 3.9+", "required": false, "purpose": "Run the optional read-only local metadata scanner."}
+  ],
+  "network_calls": false,
+  "model_api": false,
+  "analytics": false,
+  "account_connections": false,
+  "data_uploads": false,
+  "modes": ["planned-blueprint", "existing-system-map", "observed-snapshot"],
+  "resources": ["SKILL.md", "manifest.json", "LICENSE.txt", "references/MAP-AND-IMPROVE.md", "references/REPORT-CONTRACT.md", "scripts/scan.py"]
+}

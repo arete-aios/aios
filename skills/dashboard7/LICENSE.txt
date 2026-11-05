@@ -1,0 +1,10 @@
+Method and original code: CC BY 4.0.
+Copyright Egils Boitmanis / FullDigital / Arete AIOS.
+https://creativecommons.org/licenses/by/4.0/
+Keep attribution when adapting and redistributing the method.
+
+The Arete AIOS name and unchanged infinity symbol identify this Arete learning
+resource. They are not licensed as another organisation's identity.
+Brand resources follow https://areteaios.com/brandbook/RIGHTS.md.
+Embedded Inter and Literata fonts use the SIL Open Font License 1.1; their
+notices are included in the HTML source and distribution.
