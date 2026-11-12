@@ -32,7 +32,17 @@ All three paths use the same public onboarding method and the same five-layer fo
 
 ## Start here
 
-Attach an empty local folder to ChatGPT, Codex, Claude, or another assistant that can read and write files. Then paste this:
+Attach an empty local folder to ChatGPT, Codex, Claude, or another assistant that can read and write files. Every setup creates the same five AIOS layers and installs the same five core methods, including the EXIT7 feedback loop.
+
+| Reply when asked | Choose this if you want |
+|---|---|
+| `A + YES` or `A + JĀ` | The smallest setup. The five core methods are local and the rest of the library stays online. |
+| `B + YES` or `B + JĀ` | The full library on disk, with CC7 Health off until you opt in. |
+| `B + YES + CC7` or `B + JĀ + CC7` | The full library and a local Health page with audit dates and evidence links for all five layers and EXIT7. |
+
+CC7 requires Python 3.9 or newer. To add Health to an existing B setup without rerunning onboarding, say **Set up CC7**. [CC7 Health setup instructions](skills/cc7/SKILL.md#set-up-once)
+
+Paste this prompt to start:
 
 ```text
 Build an AIOS business brain in the folder attached to this chat.
@@ -61,19 +71,15 @@ If you cannot read the instructions or write to the folder, say so and stop.
 
 This launcher requests the current onboarding method from GitHub. Its explicit A/B rules also protect the run if an AI client's web cache returns an older copy.
 
-In B, [CC7 Health](skills/cc7/SKILL.md) is optional. The local page shows the five layers and EXIT7 feedback loop with recorded audit dates and evidence. It is opened from the finished AIOS folder.
-
 The first session follows a visible rhythm:
 
 1. You answer three short foundation questions.
-2. You choose A, the light setup, or B, the full local method library, then approve once.
+2. You choose A or B, opt in to CC7 if you want it with B, and approve once.
 3. The selected business brain is created, with five working methods, and you receive clickable status and instructions files with their exact paths.
 4. You may add real source material or continue without it.
 5. The assistant asks no more than five missing business questions and hands the system over.
 
 The local root also gets `AGENTS.md`. That file tells a new chat to read the constitution and onboarding map, and routes the five method triggers and phrases such as **AIOS instructions**, **AIOS Deep Dive**, **AIOS Business Profile**, and **AIOS Personal Audit** to the right file. Clients that read `CLAUDE.md` instead get a two-line pointer to the same rules.
-
-Option A is free-account friendly: it creates about ten small files plus the five methods, and keeps the rest of the library online until requested. Option B copies the library locally without loading every file into the conversation and is recommended when the owner has a paid account and wants all methods on disk.
 
 ## The five methods you start with
 
