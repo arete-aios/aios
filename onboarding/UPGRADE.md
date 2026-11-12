@@ -39,3 +39,7 @@ Run it twice if in doubt. A second run must change nothing.
 It never deletes, never archives, never moves the owner's material, never starts an evaluation or an interview on its own, and never sends, publishes, pays, or changes access. Everything outside this list is a separate request.
 
 Test it on a copy first when the brain holds real work. A sample folder with invented data and a saved starting state costs one minute and makes the first run reversible.
+
+## Optional CC7 for an existing B setup
+
+When the owner asks to set up CC7, check for the [CC7 package](../skills/cc7/SKILL.md) at `00-system/aios/skills/cc7/`. If it is missing, propose adding just `SKILL.md` and `health.py` there from the current public library, plus a route in `AGENTS.md` to the local method. After approval, follow the CC7 method and preserve any existing audit register. An existing B setup does not need another onboarding run.

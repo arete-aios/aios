@@ -174,6 +174,10 @@ Here is the whole cycle with nothing connected: you hand over meeting notes → 
 
 When a difficulty repeats, you make a meaningful correction, or a check fails, `EXIT7` records one improvement with its evidence in the existing project or skill. If a change needs your approval, you see the exact diff. The improvement stays pending until the next relevant task shows its effect. `EXIT7` records that outcome at the source and links it from `ONBOARDING.md` when relevant. If you set up CC7, the same status can appear beside the five layers with its actual verification date, scope, result and evidence.
 
+### CC7 Health in the full local setup
+
+With B, say **Set up CC7** or follow the [local CC7 instructions](00-system/aios/skills/cc7/SKILL.md). After setup, open **Health** from `ONBOARDING.md` to see the six audit sections and their evidence. CC7 starts with no audits recorded. Add the date only after a check has been carried out. Omit this subsection in the owner's local instructions for A.
+
 Email, calendar, web sources, and LinkedIn are possible inputs to that loop, not the loop itself. A schedule that produces no saved result and no next decision is not a closed loop.
 
 An automated version is a separate decision, and it needs all of it named: the source, the rhythm, where it runs, the permissions, where results are saved, what a failure looks like, and the point where a human decides. Setting up your brain never by itself creates a schedule, connects an account, pays for research, or acts on a social network.

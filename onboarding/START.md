@@ -20,7 +20,7 @@ This file is the only onboarding authority for this starter run. Do not open or 
 4. Ask before sending, publishing, paying, deleting, changing access, or overwriting confirmed facts.
 5. Use one skip command: `CONTINUE` in English, `TURPINĀT` in Latvian, or one local equivalent.
 6. Do not narrate tool calls, page counts, checksums, or successful internal operations.
-7. There is exactly one approval gate: the owner's `A + YES` or `B + YES` after the summary and file trees — in their own language, so `A + JĀ` in Latvian or any clear local equivalent counts. The letter carries the choice and the second word carries the approval; never make the owner repeat it in English. Never ask the old four-question foundation interview after that approval.
+7. There is exactly one approval gate: the owner's `A + YES` or `B + YES` after the summary and file trees — in their own language, so `A + JĀ` in Latvian or any clear local equivalent counts. The letter carries the choice and the second word carries the approval; never make the owner repeat it in English. `B + YES + CC7` also opts in to the optional Health view once onboarding finishes. Never ask the old four-question foundation interview after that approval.
 8. Never mention, propose, or require a new-chat test during this onboarding, and never ask the owner to exercise all five methods before their first real piece of work.
 9. Never browse a supplied website or search the web automatically. Retrieving the five method files listed in Setup limits is not browsing and not searching; it is the install. During brain enrichment, the owner may explicitly ask you to read a supplied site.
 10. Installed is not the same as running. The five starter methods sit in files and load only when their trigger fires. Never promise that they run on every message, and never start a full audit, evaluation, or interview because a method exists.
@@ -120,7 +120,7 @@ Say one more thing about B: the owner's five active methods live in `03-skills/`
 
 Fixed names stay in English. Use the attached folder as the root; never create another AIOS folder inside it.
 
-Ask: **Which setup do you want? Reply `A + YES` for the light version or `B + YES` for the full local library. You may also correct one point.** Create nothing until that combined choice and approval. If the owner replies only `YES`, ask only `A or B?` and do nothing else.
+Ask: **Which setup do you want? Reply `A + YES` for the light version or `B + YES` for the full local library. You may also correct one point.** For B, offer `B + YES + CC7` to add the local Health view after step 5. It needs Python 3.9 or newer in the file-capable client and can also be chosen later. Create nothing until the combined choice and approval. If the owner replies only `YES`, ask only `A or B?` and do nothing else.
 
 Do not ask again whether this is one business, what the twelve-month goal is, what the AI may do, or how it should communicate. The three answers plus the default safety rules are the complete starter foundation.
 
@@ -152,6 +152,8 @@ Then apply the chosen setup:
 
 - **A — Light:** create `00-system/aios/README.md` from [`templates/SYSTEM-POINTER.md`](../templates/SYSTEM-POINTER.md). Preserve its links to Business Profile, Deep Dive, Personal Audit, Weekly Review, the skills library, the instructions source, and the full public library.
 - **B — Full local library:** copy the public library items listed in Setup limits into `00-system/aios/`. Do not read the whole library, generate an archive for the owner, or report checksums. Verify with one directory listing and one read of `00-system/aios/SKILL.md`. Record in `ONBOARDING.md` that the full local library is installed. The five active methods still live in `03-skills/`.
+
+If the owner also chose CC7, record that choice as pending in `ONBOARDING.md` now so it survives an interruption. Run CC7 setup after step 5.
 
 The local `AIOS-INSTRUCTIONS.md` must preserve a compact clickable methods section. For Option A, link directly to the online method files. For Option B, link to the installed local paths. Include at least Business Profile, Deep Dive, Personal Audit, WEEK7, and the skills library. Never show a local link before verifying that its target exists, never invent a `library/` path, and do not remove the link section while translating or personalising the manual.
 
@@ -192,6 +194,8 @@ Save confirmed answers into memory and the business profile. Keep the constituti
 - the five installed methods, each `INSTALLED` or `NOT INSTALLED — source only`.
 
 The onboarding's own `5/5` counts these five steps. It is not the number of installed methods, and the two numbers are never merged into one progress line.
+
+If the owner opted in with `B + YES + CC7`, after marking step 5 complete follow the [CC7 setup](../skills/cc7/SKILL.md) from the local copy at `00-system/aios/skills/cc7/SKILL.md`. Include the verified Health link or the exact blocker in the handoff. A, plain B, and a request just to view Health do not generate the page. With plain B the owner can say **Set up CC7** later.
 
 Finish in four short numbered lines:
 
