@@ -10,7 +10,7 @@ _Layer 3. A method written down once, so the same work runs the same way the sec
 | Trigger | What it does | Method file |
 |---|---|---|
 | `EVAL7 <thing>` | Scores one finished thing against its own stated goal: seven dimensions, evidence for each, visible arithmetic, and a ranked list of what to fix first | `03-skills/eval7/SKILL.md` |
-| `EXIT7` | Closes a working session by finding what exists only in the chat and handing back ready changes to approve | `03-skills/exit7/SKILL.md` |
+| `EXIT7` | Saves authorised results, shows exact diffs for decisions and tracks improvements until a later task verifies them | `03-skills/exit7/SKILL.md` |
 | `COX7` or `CONTEXT7 <folder>` | Checks that a folder has exactly one CONTEXT file, that it lists what is really inside, and that its links point at files that exist | `03-skills/context7/SKILL.md` |
 | `MEETING7` | Turns meeting notes or a transcript into one dated note with decisions, open questions, and candidate commitments to approve | `03-skills/meeting7/SKILL.md` |
 | `FOCUS7` | Keeps current priorities true, and runs the projects and tasks that come out of them | `03-skills/focus7/SKILL.md` |
@@ -34,7 +34,7 @@ EVAL7 {thing}. Score ONE existing thing against its stated goal, 7 dimensions wi
 ```
 
 ```
-EXIT7 at session close. Find everything that lives only in the chat, come back with ready diffs not questions, verify the CONTEXT file actively, then ask whether the focus layer changes. No new work. Spec: 03-skills/exit7/SKILL.md
+EXIT7 at session close. Save and verify authorised work. Check CONTEXT and show exact diffs for changes that need approval. Record an improvement with evidence and keep it pending until the next relevant task verifies its effect. Spec: 03-skills/exit7/SKILL.md
 ```
 
 ```
