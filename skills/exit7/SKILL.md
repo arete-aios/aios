@@ -1,12 +1,13 @@
 ---
 name: exit7
-description: "EXIT7: close a work session by finding everything that exists only in the chat and handing back ready-to-approve diffs, not questions. Use when the owner says they are done for the day."
+description: "EXIT7: close a work session, save authorised results, prepare diffs for owner decisions, and follow up on improvements. Use when the owner says they are done for the day."
 license: CC-BY-4.0
 metadata:
   author: fulldigital.me
-  version: "1.0.1"
+  version: "1.1.0"
   source: exit7
   synced: "2026-09-16"
+  updated: "2026-11-12"
 ---
 
 # SKILL: Close a session so nothing survives only in the chat
@@ -22,7 +23,7 @@ metadata:
 
 **This skill has two modes, and nothing below is a hard blocker.**
 
-**With write access:** you produce the diffs and, on approval, write them yourself. If the owner's system is also under version control, the session inventory comes free from the changed files list.
+**With write access:** save work the owner has already authorised and verify the write. For a change that needs approval under the owner's constitution, prepare an exact diff and wait for that approval. Version control can supply the changed files list.
 **Without write access:** you rebuild the inventory by rereading the conversation and hand back copy-ready blocks with the destination named for each one. Same discipline, the owner pastes. The moment storage exists, the skill upgrades itself with no rewrite.
 
 | What | Needed | How to connect |
@@ -52,9 +53,9 @@ It is the structural counterweight for an owner who starts a lot and finishes le
 
 ## GOAL
 
-**The session ends with either a clean confirmation, or a short numbered list of things that are still only in the chat, each one already written as the exact line to add and the exact place it goes.**
+**The session ends with verified saves, a short list of exact diffs that need the owner's decision, or a clean confirmation.**
 
-The owner approves with one word. Nothing from the session survives only as scrollback.
+Record where each saved item lives. Give pending changes their destination and the decision they need.
 
 Where each item goes is the owner's structure, not yours. Take it from their constitution and their existing files. If a thing genuinely has no home, say so and propose one, rather than inventing a folder at the end of a long day.
 
@@ -66,7 +67,7 @@ Where each item goes is the owner's structure, not yours. Take it from their con
 - **The end of any session that produced a decision**, even a short one. Length is not the test, output is.
 - **Before a break long enough that the context will be gone**, in practice anything over a day.
 
-**Not a trigger:** EXIT7 is not a summary of the day for the owner to read. It is a diff to approve. If you find yourself writing a pleasant recap of what a good session it was, you are running the wrong skill. It is also not a mid session checkpoint, because a gate that fires five times a day stops being a gate.
+Use EXIT7 once at the close of the work. Hand back the verified saves and the exact diffs still awaiting a decision.
 
 ---
 
@@ -88,7 +89,7 @@ One line makes this skill exist. Where it goes depends on how central it is to t
 Either way the line is the same:
 
 ```
-EXIT7 at session close. Find everything that lives only in the chat, come back with ready diffs not questions, verify the CONTEXT file actively, then ask whether the focus layer changes. No new work. Spec: skills/exit7/SKILL.md
+EXIT7 at session close. Save authorised results, verify CONTEXT, show exact diffs for decisions and capture any improvement that needs a follow-up check. Spec: skills/exit7/SKILL.md
 ```
 
 A skill the AI cannot see when the trigger fires does not exist. A core stuffed with lines nobody triggers is broken the other way.
@@ -107,7 +108,7 @@ Version control makes step one nearly free, since the changed files list is the 
 
 The layer is called Tools because a tool is what the model finally calls. Today it usually arrives as an MCP server or a connector the client installs. Name the mechanism when you use one, and do not let the mechanism rename the layer.
 
-> 🔒 **Approved lines only, and nothing new.** Write what the owner said yes to in this message, and not one item more. No new file, no new project, no helpful extra edit that seemed obvious while you were in there. This is the moment of the day with the least attention left in the room, which is precisely why it is the wrong moment to write anything unreviewed.
+> **Follow the owner's writing permissions.** A specific approval or a standing permission in the constitution covers the work it names. Changes to the constitution require the owner's approval of the exact diff. Propose any other write outside the authorised scope and wait for the owner's decision.
 
 ---
 
@@ -125,7 +126,7 @@ Steps for you, the assistant. Goal level, not code level.
 
 **An approved project or task goes to the focus layer, which in this system is `FOCUS7`, and keeps a link back to where it was decided.** Never open a second list of session tasks beside it. An idea that came up is one written line, not an approved project.
 
-**5. Come back with diffs, never with questions.** Each item states the file, the section, and the exact line to add. The owner replies OK to all, OK to some, or no to one. Partial approval is normal and expected. A question puts the work back on the person who just spent the session doing it.
+**5. Save authorised work and show the remaining diffs.** Verify each saved item and report its path. For each change awaiting a decision, show the file, the section, the exact diff and the evidence behind it. The owner can approve individual changes.
 
 **6. Refuse new work.** If the session surfaced a new idea or a new project, write it down and do not start it. This is a gate against novelty, not a door into it. When the owner floats optional polish of the system itself, answer whether it is worth it, not only whether it is possible, and say plainly when it would eat the one goal that pays.
 
@@ -133,14 +134,20 @@ Steps for you, the assistant. Goal level, not code level.
 
 ---
 
+## FEEDBACK LOOP
+
+1. **Capture the signal.** A repeated difficulty, a meaningful owner correction, or a failed check can justify one improvement entry. Use the existing project or skill home. Record the layer, evidence, proposed change and how to check its effect. Add further evidence to the same entry when the signal recurs.
+2. **Apply it within scope.** Follow the constitution's permissions. Show an exact diff and keep the entry pending whenever a decision is required.
+3. **Check the effect in real work.** On the next relevant task, record the outcome and its evidence at the source. Keep the entry pending until that check takes place.
+4. **Make the result easy to find.** Update the existing source and its status pointer in `ONBOARDING.md` when relevant. If the owner has set up CC7, show the feedback loop beside the five layers with the latest verified date, scope, result and evidence. Use the actual check date.
+
 ## DEFINITION OF DONE
 
-1. **Every hanging item is either written, or explicitly declined by the owner.** Nothing is left in the maybe state.
-2. **Each written item landed in a file the next session loads**, not in a note about the session. A summary in the chat is not a saved result, and what was shown but not approved is reported as still proposed.
-3. **The CONTEXT check came back genuinely clean**, having been run rather than asked about.
-4. **The focus question was asked and answered**, even when the answer was no change.
-5. **Anything with a date is in the task or calendar layer**, not only in prose.
-6. **Nothing new was started**, and any new idea left the session as one written line.
+1. **Each item has a recorded outcome.** It is saved, awaiting a specific decision, or declined by the owner.
+2. **Saved items live in their existing homes** and their contents have been checked after writing.
+3. **The CONTEXT check has run for the touched scope.** Any unresolved result has a destination and next step.
+4. **Focus reflects accepted decisions** and due commitments appear in their agreed task or calendar source.
+5. **Improvement entries show their real state.** A proposed, applied or verified change has the corresponding evidence and next step.
 
 A clean session ends at one line of confirmation. That is a valid result and should be reported as one, without inventing work to justify the run.
 
@@ -150,7 +157,7 @@ A clean session ends at one line of confirmation. That is a valid result and sho
 
 1. **Add a weekly variant.** On the owner's review day, also offer a draft of whatever public or group commitment they owe, one win and one next step, since the end of a session is where it naturally falls.
 2. **Set your own hanging checks.** Four is a working set. If the owner keeps losing a specific kind of thing, contacts, invoices, follow ups, add a fifth check for it, and delete any check that never fires.
-3. **Decide what you may write unasked.** Some owners want the obvious mechanical items, a CONTEXT file line, a status flag, written without a round trip, and only the judgment calls held back. Agree that boundary once and write it into the constitution line, because guessing it every evening is how the ritual becomes tiring.
+3. **Record any standing maintenance permission in the constitution.** State which categories and files it covers, such as verified CONTEXT links or source-backed status updates. Apply that permission within its recorded scope.
 4. **Set the size of a normal run.** If the list is regularly longer than five items, the problem is upstream: things are not being written when they happen. Say that out loud rather than getting better at the cleanup.
 5. **No file system at all?** Produce the numbered diffs as copy ready blocks and tell the owner where each one goes. Same discipline, manual paste.
 
