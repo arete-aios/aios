@@ -36,7 +36,7 @@ Both setups install the same five. Each one is a written method in `03-skills/`,
 | Say this | What happens | Use it when |
 |---|---|---|
 | `EVAL7 <thing>` | One finished thing is scored against its own goal: seven dimensions with evidence, visible arithmetic, and the fixes worth making first | A page, an offer, a proposal, or a message is ready and you want to know how good it actually is |
-| `EXIT7` | Everything that exists only in this chat is collected, shown with its destination, and saved after you approve | You are done for the day, or a session produced decisions |
+| `EXIT7` | Authorised results are saved and checked. Changes that need your decision get an exact diff. Improvements are checked on the next relevant task | You are done for the day, or a session produced decisions |
 | `COX7` or `CONTEXT7 <folder>` | One folder is checked: one index file, everything inside it listed, links that really exist | Your AI keeps missing something that is plainly in the folder |
 | `MEETING7` | Notes or a transcript become one dated note with decisions, open questions, and commitments proposed for approval | Right after a meeting or call, while you still remember it |
 | `FOCUS7` | What matters now stays true, and the projects and tasks that come out of it get created and updated | You want to know what to do next, or turn a goal into a project |
@@ -171,6 +171,8 @@ Above the five sits the one thing that makes them worth having: a loop that clos
 ## One closed loop
 
 Here is the whole cycle with nothing connected: you hand over meeting notes → `MEETING7` finds the decision worth confirming → you confirm it → `FOCUS7` writes the task into the project file → at the next work session you bring the result → `EVAL7` scores it when you ask for it → the fix you choose changes the work → `EXIT7` saves what changed and `COX7` checks that the links still resolve.
+
+When a difficulty repeats, you make a meaningful correction, or a check fails, `EXIT7` records one improvement with its evidence in the existing project or skill. If a change needs your approval, you see the exact diff. The improvement stays pending until the next relevant task shows its effect. `EXIT7` records that outcome at the source and links it from `ONBOARDING.md` when relevant. If you set up CC7, the same status can appear beside the five layers with its actual verification date, scope, result and evidence.
 
 Email, calendar, web sources, and LinkedIn are possible inputs to that loop, not the loop itself. A schedule that produces no saved result and no next decision is not a closed loop.
 
