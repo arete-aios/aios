@@ -48,6 +48,8 @@ For an empty folder, briefly explain what we are building and ask only the three
 
 After my answers, briefly summarise what you understood and offer two choices: A, the working foundation with all five core skill files locally; or B, the same foundation and five files plus the full public AIOS library for reference. Show the exact A tree once. For B, only list what will be added directly inside the same `00-system/aios/` folder; do not repeat the root tree or create a `library/` subfolder. A is the smaller download; either choice depends on the app's file and network access, not just the subscription. Create nothing until I answer A + YES or B + YES, in my own language.
 
+If I say B + YES + CC7, also set up the local CC7 Health view after onboarding. I can choose it later by saying Set up CC7.
+
 For both A and B, copy all five complete core skill instructions from the starter's exact sources into 03-skills/: EVAL7, EXIT7, COX7/CONTEXT7, MEETING7, and FOCUS7. COX7 uses the context7 folder, not a sixth skill. In B, copy the library first, then take the five files from it. Briefly verify each saved file and its version yourself. Links alone are not an installation. If any file is unavailable, preserve progress and report an incomplete setup, not five skills installed. Do not invent replacements. FOCUS7 covers projects and next tasks; dates are optional unless agreed.
 
 After my approval, build the selected version directly in the attached folder, then continue immediately to Brain Enrichment. Do not create another AIOS folder, repeat the foundation questions, start automatic web research, or request a new-chat test.
@@ -58,6 +60,8 @@ If you cannot read the instructions or write to the folder, say so and stop.
 ```
 
 This launcher requests the current onboarding method from GitHub. Its explicit A/B rules also protect the run if an AI client's web cache returns an older copy.
+
+In B, [CC7 Health](skills/cc7/SKILL.md) is optional. The local page shows the five layers and EXIT7 feedback loop with recorded audit dates and evidence. It is opened from the finished AIOS folder.
 
 The first session follows a visible rhythm:
 

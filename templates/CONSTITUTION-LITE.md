@@ -40,6 +40,8 @@ Finished or replaced material can be recorded in `06-archive/` after the owner a
 
 Use one Command Center view for the five layers and the EXIT7 loop. Show the last verified date, scope, result, evidence and open decisions for each layer and the feedback loop. Until a dashboard is installed, keep the same pointers and status in `ONBOARDING.md`. The dashboard links to the source files and permission rules.
 
+In B, I can say **Set up CC7** to create the local Health view. Its verified link belongs in `ONBOARDING.md`.
+
 ## EXIT7 — feedback from real work
 
 At session close, use EXIT7 to find decisions or evidence that still live only in the chat and check their intended home with COX7/CONTEXT7. Capture a repeated difficulty, meaningful owner correction or failed check as one proposed improvement with its source. Show the exact change when approval is needed. Check the accepted improvement on a real follow-up task and record the outcome at its source. Bring the owner the few decisions that need their judgement.

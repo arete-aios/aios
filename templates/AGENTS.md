@@ -34,6 +34,7 @@ When the owner asks a direct question such as **What is my memory and goal?**, a
 | `FOCUS7`, asks what to do next, or asks to turn a goal into a project or a task | `03-skills/focus7/SKILL.md` |
 | `AIOS status`, asks where something lives, or asks what has been set up | `ONBOARDING.md` |
 | `AIOS instructions`, `AIOS instrukcijas`, or asks how to use this folder | `AIOS-INSTRUCTIONS.md` |
+| `Set up CC7`, `CC7 Health`, or asks to update that view | In B, follow `00-system/aios/skills/cc7/SKILL.md`. A request to open Health uses the verified link in `ONBOARDING.md`; setup requires a separate explicit choice. In A, explain that the local CC7 package is part of B. |
 | `AIOS Deep Dive`, asks for self-reflection questions, self-coaching, or help understanding their potential | Open local `00-system/aios/onboarding/DEEP-DIVE.md` if installed; otherwise read its URL in `00-system/aios/README.md` |
 | `AIOS Business Profile` or asks to build/update a business profile | Open local `00-system/aios/onboarding/BUSINESS-PROFILE.md` if installed; otherwise read its URL in `00-system/aios/README.md` |
 | `AIOS Personal Audit` or asks how they appear online | Open local `00-system/aios/onboarding/PERSONAL-AUDIT.md` if installed; otherwise read its URL in `00-system/aios/README.md` |

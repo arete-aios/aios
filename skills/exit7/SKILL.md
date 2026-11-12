@@ -141,6 +141,8 @@ Steps for you, the assistant. Goal level, not code level.
 3. **Check the effect in real work.** On the next relevant task, record the outcome and its evidence at the source. Keep the entry pending until that check takes place.
 4. **Make the result easy to find.** Update the existing source and its status pointer in `ONBOARDING.md` when relevant. If the owner has set up CC7, show the feedback loop beside the five layers with the latest verified date, scope, result and evidence. Use the actual check date.
 
+In the public B starter, an existing `04-tools/cc7/audits.json` is the input to Health. Follow the installed CC7 method at `00-system/aios/skills/cc7/SKILL.md` to refresh it after an authorised update. Keep the last verified result while a later improvement awaits its check.
+
 ## DEFINITION OF DONE
 
 1. **Each item has a recorded outcome.** It is saved, awaiting a specific decision, or declined by the owner.
