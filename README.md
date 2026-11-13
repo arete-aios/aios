@@ -40,6 +40,8 @@ Attach an empty local folder to ChatGPT, Codex, Claude, or another assistant tha
 | `B + YES` or `B + JĀ` | The full library on disk, with CC7 Health off until you opt in. |
 | `B + YES + CC7` or `B + JĀ + CC7` | The full library and a local Health page with audit dates and evidence links for all five layers and EXIT7. |
 
+See the [CC7 Health demo](skills/cc7/examples/health-demo.md) before choosing. It shows the six audit sections with sample results and evidence.
+
 CC7 requires Python 3.9 or newer. To add Health to an existing B setup without rerunning onboarding, say **Set up CC7**. [CC7 Health setup instructions](skills/cc7/SKILL.md#set-up-once)
 
 Paste this prompt to start:
