@@ -1,12 +1,25 @@
 ---
 name: cc7
-description: "CC7: optionally set up and update a private Health view for a full local AIOS starter."
+description: "CC7: build a private Command Center or selected view from existing AIOS sources, or optionally set up and update starter B Health."
 license: CC-BY-4.0
 metadata:
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
-# CC7 · Health
+# CC7 · Command Center and Health
+
+## Choose the requested work
+
+- **Build my Command Center** or **copy this demo/view**: follow
+  [the portable Command Center recipe](references/command-center.md). It reuses
+  existing sources, a fictional EN/LV template and local-first checks. This
+  explicit request authorises preparing the selected view; it does not opt in
+  to starter B Health, connect accounts or publish private data.
+- **Set up CC7 Health**, **B + YES + CC7**, or an update to an existing Health
+  register: follow the unchanged Health workflow below.
+- **Open/read Health** remains read-only and never triggers setup.
+
+## Starter B Health
 
 CC7 is an optional local view for starter **B**. It shows the last recorded
 audit for Constitution, Memory, Skills, Tools, Focus, and the EXIT7 feedback
