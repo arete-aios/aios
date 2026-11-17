@@ -24,7 +24,7 @@ The result is not another notes folder. It is a working loop: something happens,
 
 ## Build your Command Center
 
-Explore the fictional Nora Vale / Vale Studio [English demo](https://areteaios.com/my/cc-demo) or [Latvian demo](https://areteaios.com/lv/my/cc-demo), with a project Gantt, light/dark modes and a finance example. **Copy CC7** prepares a request for your file-capable AI; **Copy this view** adapts one section to your own sources.
+Explore the fictional John Doe / Doe Studio [English demo](https://areteaios.com/my/cc-demo) or [Latvian demo](https://areteaios.com/lv/my/cc-demo), with a project Gantt, light/dark modes, a finance example and an opportunity RADAR. **Copy CC7** prepares a request for your file-capable AI; **Copy this view** adapts one section to your own sources.
 
 The [CC7 Command Center recipe](skills/cc7/references/command-center.md) and [complete portable example](skills/cc7/examples/command-center/START.md) include EN/LV HTML, a local Python preview, fonts and licences. The [ZIP](skills/cc7/examples/command-center/cc7-command-center.zip) needs no account or API key to open. Demo people, tasks, dates and amounts are fictional; preserve your own constitution and data sources. Building the page does not connect accounts or enable autonomous work. CC7 Health retains its separate opt-in setup.
 

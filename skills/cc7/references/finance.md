@@ -1,7 +1,7 @@
 # Finance · a private financial snapshot
 
 Parent: [CC7 Command Center](command-center.md). Portable workspace recipe,
-2026-11-13. The public Nora example uses invented EUR figures only.
+2026-11-13. The public John Doe example uses invented EUR figures only.
 
 Use the owner's approved accounting exports or existing reports as authority.
 Agree which aggregates may appear and who can see the page. If the constitution

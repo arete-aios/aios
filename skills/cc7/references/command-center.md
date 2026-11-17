@@ -18,8 +18,9 @@ files. For an empty brain, a clearly labelled blueprint is the first result;
 use the public onboarding starter before claiming a working system. Ask at most
 three material questions: desired outcome, allowed sources, and visibility.
 
-The Nora Vale / Vale Studio example is fictional. Reuse its layout and controls,
-never its clients, tasks, amounts, audit dates or healthy states as owner data.
+The John Doe / Doe Studio example is fictional. Reuse its layout and controls,
+never its clients, tasks, amounts, opportunities, audit dates or healthy states
+as owner data.
 The example ZIP opens through its standard-library local server; see its START.
 It includes both languages, fonts, source HTML and real GitHub method links.
 
@@ -61,6 +62,7 @@ specific authorisation. Build locally first unless publication is requested.
 | People · CRM7 | [Relationship workspace recipe](people.md) | Evidence, meetings, commitments and next contact |
 | Marketing | [GEO7](../../geo7/SKILL.md) | Comparable periods, sources and next improvement |
 | Finance | [Financial snapshot recipe](finance.md) | Cash received/paid, unpaid invoices, as-of date |
+| RADAR | [Opportunity watch recipe](radar.md) | Owner criteria/sources, fit and reason, owner-set statuses |
 | Skills | [SKILLS7](../../skills7/SKILL.md) | Actual methods, readiness, instructions and source links |
 | Tools · TOOLS7 | [Tool inventory recipe](tools.md) | Actual access, evidence/date and limits |
 | Folder map | [CONTEXT7](../../context7/SKILL.md) | Actual inventory, missing maps and broken references |

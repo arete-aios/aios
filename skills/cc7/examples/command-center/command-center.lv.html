@@ -564,6 +564,14 @@ html:not(.js) .pws+.pws{margin-top:16px}
 .fin-aging{list-style:none;padding:0;margin:24px 0 0}.fin-aging li{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 0;border-bottom:1px solid var(--stroke);font-size:13px}.fin-aging small{display:block;color:var(--muted);font-size:12px}.fin-aging b{white-space:nowrap}.card .fin-total{display:flex;justify-content:space-between;margin-top:16px;color:var(--text);font-size:14px}.fin-link{display:inline-block;margin-top:14px;font-size:13px;font-weight:600}
 @media(max-width:1100px){.fin-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.adopt-card{flex-wrap:wrap}.section-head{align-items:flex-start}}
 @media(max-width:480px){.adopt-card{padding:12px 14px;gap:10px}.fin-kpis{gap:8px}.fin-kpi{padding:12px}.fin-kpi b{font-size:22px}.fin-kpi .label{font-size:10px}.section-actions{gap:6px}.section-actions a,.section-actions button{font-size:11px;padding:6px 9px}.section-head{gap:10px}.fin-bars>div{grid-template-columns:65px minmax(0,1fr) 59px;gap:6px}.library-links{padding:24px 16px}}
+.radar-counts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:0 0 16px}.radar-count b{display:block;font-size:30px;line-height:1.1;color:var(--text)}.radar-count p:last-child{margin:6px 0 0;font-size:12px;color:var(--muted)}
+.radar-list{list-style:none;padding:0;margin:0;display:grid;gap:10px}.radar-item{display:grid;grid-template-columns:76px minmax(0,1fr) auto;gap:16px;align-items:start}.radar-fit b{display:block;font-size:22px;line-height:1.1;color:var(--blue)}.radar-fit span{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}.radar-fit>i{display:block;height:5px;margin-top:8px;border-radius:3px;background:var(--raised);overflow:hidden}.radar-fit>i>i{display:block;height:100%;background:var(--blue)}
+.radar-meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;margin:0 0 6px;font-size:12px;color:var(--muted)}.radar-body h3{margin:0 0 8px;font-size:15.5px}.radar-body p:not(.radar-meta){margin:4px 0 0;font-size:13.5px;color:var(--body)}
+.radar-note{margin:12px 0 0;font-size:12.5px;color:var(--muted)}.card .radar-caption{margin-top:14px;font-size:12.5px;color:var(--muted)}.radar-rules{display:grid;gap:6px;margin:12px 0 0;padding-left:18px;font-size:13.5px;color:var(--body)}
+@media(max-width:1100px){.radar-counts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.radar-item{grid-template-columns:56px minmax(0,1fr);gap:12px}.radar-st{grid-column:2}.radar-fit b{font-size:18px}}
+@media(max-width:650px){.radar-weeks{font-size:11.5px}.radar-weeks th,.radar-weeks td{padding:7px 4px}}
+@media(max-width:480px){.radar-item{grid-template-columns:minmax(0,1fr);gap:8px}.radar-st{grid-column:auto}.radar-fit{display:flex;align-items:center;gap:8px}.radar-fit>i{flex:1;max-width:120px;margin-top:0}.radar-counts{gap:8px}.radar-count{padding:12px}.radar-count b{font-size:22px}.radar-count .label{font-size:10px}}
 
 
 .language{display:flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600}
@@ -595,7 +603,7 @@ html:not(.js) .pws+.pws{margin-top:16px}
 
 <div class="shell">
   <nav class="side" aria-label="Vadības centra sadaļas">
-    <div class="who"><span class="avatar" aria-hidden="true">NV</span><div><b>Nora Vale</b><span>Vale Studio · izdomāts</span></div></div>
+    <div class="who"><span class="avatar" aria-hidden="true">JD</span><div><b>John Doe</b><span>Doe Studio · izdomāts</span></div></div>
     <div class="group"><p>Ikdiena</p>
       <a href="/lv/my/cc-demo" data-view="today" data-nav>Šodien</a>
       <a href="/lv/my/cc-demo/work" data-view="work" data-nav>Darbi <small>FOCUS7</small></a>
@@ -604,6 +612,7 @@ html:not(.js) .pws+.pws{margin-top:16px}
       <a href="/lv/my/cc-demo/people" data-view="people" data-nav>Cilvēki <small>crm7</small></a>
       <a href="/lv/my/cc-demo/marketing" data-view="marketing" data-nav>Mārketings <small>GEO7</small></a>
       <a href="/lv/my/cc-demo/finance" data-view="finance" data-nav>Finanses <small>cc7</small></a>
+      <a href="/lv/my/cc-demo/radar" data-view="radar" data-nav>RADAR <small>cc7</small></a>
     </div>
     <div class="group"><p>Resursi</p>
       <a href="/lv/my/cc-demo/skills" data-view="skills" data-nav>Prasmes<small>skills7</small></a>
@@ -617,9 +626,9 @@ html:not(.js) .pws+.pws{margin-top:16px}
   </nav>
 
   <main id="main"><div class="adopt-card"><div><b>Izveido savu vadības centru</b><p>Iekopē gatavu uzdevumu savā MI ar pievienotu smadzeņu mapi. <a href="https://areteaios.com/cc-demo/cc7-command-center.zip" download>Lejupielādēt parauga ZIP</a></p></div><div class="adopt-actions"><button type="button" class="copy-primary" data-copy-scope="cc7">Kopēt CC7</button><a href="https://github.com/arete-aios/aios/blob/main/skills/cc7/references/command-center.md" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div>
-    <details class="notice"><summary>Interaktīvs piemērs · izdomāti dati · 17.11.2026.</summary><p>Šis ir statisks Noras darba dienas paraugs. Sadaļas un pogas var izmēģināt; īsti konti, ziņas un MI nav pieslēgti.</p>
-      <p><b>Šis ir mācību piemērs ar izdomātiem datiem.</b> Nora Vale, Vale Studio, visi klienti, ziņas un skaitļi ir izdomāti. Izkārtojums seko vadības centram, ko Egils Boitmanis izmanto savā uzņēmumā; viņa dati šeit nav publicēti.</p>
-      <p>Piemērā visu uztur viena mape — Vale Studio uzņēmuma zināšanu bāze, kas veidota ar meistarklases sākuma komplektu. Vadības centru būvē pēdējo: tas parāda, kas jau glabājas mapē.</p>
+    <details class="notice"><summary>Interaktīvs piemērs · izdomāti dati · 17.11.2026.</summary><p>Šis ir statisks Džona darba dienas paraugs. Sadaļas un pogas var izmēģināt; īsti konti, ziņas un MI nav pieslēgti.</p>
+      <p><b>Šis ir mācību piemērs ar izdomātiem datiem.</b> John Doe, Doe Studio, visi klienti, ziņas un skaitļi ir izdomāti. Izkārtojums seko vadības centram, ko Egils Boitmanis izmanto savā uzņēmumā; viņa dati šeit nav publicēti.</p>
+      <p>Piemērā visu uztur viena mape — Doe Studio uzņēmuma zināšanu bāze, kas veidota ar meistarklases sākuma komplektu. Vadības centru būvē pēdējo: tas parāda, kas jau glabājas mapē.</p>
     </details>
 
     <!-- 01 TODAY -->
@@ -774,8 +783,8 @@ html:not(.js) .pws+.pws{margin-top:16px}
         <div class="card">
           <p class="label">Šodienas trīs</p>
           <ol class="list">
-            <li><span class="n">01</span><span class="t">Uzrakstīt Harbor Health ziņojuma secinājumus<small>Nora · HH-11</small></span><span class="st info">Procesā</span></li>
-            <li><span class="n">02</span><span class="t">Apstiprināt divus atbilžu melnrakstus sadaļā Komunikācija<small>Nora · 10 minūtes</small></span><span class="st warn">Gaida Noru</span></li>
+            <li><span class="n">01</span><span class="t">Uzrakstīt Harbor Health ziņojuma secinājumus<small>Džons · HH-11</small></span><span class="st info">Procesā</span></li>
+            <li><span class="n">02</span><span class="t">Apstiprināt divus atbilžu melnrakstus sadaļā Komunikācija<small>Džons · 10 minūtes</small></span><span class="st warn">Gaida Džonu</span></li>
             <li><span class="n">03</span><span class="t">Nosūtīt atgādinājumu par rēķinu #014<small>Izpildītājs sagatavojis · HH-13 · termiņš bija vakar</small></span><span class="st bad">Kavēts</span></li>
           </ol>
         </div>
@@ -783,7 +792,7 @@ html:not(.js) .pws+.pws{margin-top:16px}
         <div class="card" style="grid-column:1/-1">
           <p class="label">Rīta aplis · Izpildītājs</p>
 <pre class="log"><b>08:05</b> lasīts: fokuss, 5 projektu faili, Gmail, WhatsApp, Facebook lapa, kopienas čats, kalendārs
-<b>08:05</b> ieteikti šodienas trīs darbi (Nora var tos mainīt)
+<b>08:05</b> ieteikti šodienas trīs darbi (Džons var tos mainīt)
 <b>08:06</b> 2 atbilžu melnraksti, nav nosūtīti: Priya (Harbor Health), Lena (Northline)
 <b>08:06</b> 4 uzraudzīti ieraksti: 1 jautājums LinkedIn, 1 Facebook lapā
 <b>08:06</b> Pārbaudītāja vērtējums apkopojumam v1: LABOT, 2 punkti · Izpildītājs tos labo šodien (HH-10)
@@ -791,45 +800,45 @@ html:not(.js) .pws+.pws{margin-top:16px}
         </div>
       </div>
 
-      <p class="how"><b>No kurienes tas nāk.</b> Galvenais virziens, trīs rezultāti un laika plāns glabājas failā <span class="mono">05-focus/north-star.md</span>, ko Nora pārskata reizi mēnesī. Nedēļas plāns nāk no <span class="mono">05-focus/_focus-CONTEXT.md</span>, šodienas trīs — no uzdevumu tabulām mapē <span class="mono">05-focus/projects/</span>, bet rīta kopsavilkums — no Izpildītāja rīta apļa. Vadības centrā to atsevišķi neievada.</p>
+      <p class="how"><b>No kurienes tas nāk.</b> Galvenais virziens, trīs rezultāti un laika plāns glabājas failā <span class="mono">05-focus/north-star.md</span>, ko Džons pārskata reizi mēnesī. Nedēļas plāns nāk no <span class="mono">05-focus/_focus-CONTEXT.md</span>, šodienas trīs — no uzdevumu tabulām mapē <span class="mono">05-focus/projects/</span>, bet rīta kopsavilkums — no Izpildītāja rīta apļa. Vadības centrā to atsevišķi neievada.</p>
     <div class="protocols"><span>Turpini ar</span><a href="https://github.com/arete-aios/aios/blob/main/skills/focus7/SKILL.md" target="_blank" rel="noopener noreferrer">focus7</a><a href="https://github.com/arete-aios/aios/blob/main/skills/context7/SKILL.md" target="_blank" rel="noopener noreferrer">context7</a></div></section>
 
     <!-- 02 WORK -->
     <section class="panel" id="work" aria-labelledby="h-work">
       <div class="section-head"><p class="eyebrow">02 / Darbi · FOCUS7</p><div class="section-actions"><button type="button" data-copy-scope="view">Kopēt šo skatu</button><a href="https://github.com/arete-aios/aios/blob/main/skills/mit7/SKILL.md" target="_blank" rel="noopener noreferrer">GitHub · gtd7 ↗</a></div></div>
       <h2 id="h-work" tabindex="-1">Viens saraksts visiem darāmajiem darbiem</h2>
-      <p class="lead">Katram uzdevumam ir ID, atbildīgais, projekts un statuss. Nora un abi aģenti izmanto vienus uzdevumus, tāpēc jautājumam “ko tālāk?” ir viena atbilde.</p>
+      <p class="lead">Katram uzdevumam ir ID, atbildīgais, projekts un statuss. Džons un abi aģenti izmanto vienus uzdevumus, tāpēc jautājumam “ko tālāk?” ir viena atbilde.</p>
 
       <div class="filters" role="group" aria-label="Filtrēt uzdevumus">
         <button type="button" data-filter="all" aria-pressed="true">Visi</button>
-        <button type="button" data-filter="nora" aria-pressed="false">Nora</button>
+        <button type="button" data-filter="john" aria-pressed="false">Džons</button>
         <button type="button" data-filter="ai" aria-pressed="false">Aģenti</button>
         <button type="button" data-filter="waiting" aria-pressed="false">Gaida</button>
       </div>
 
       <div class="board">
         <div class="col"><h3>Iesūtne <span class="count" data-col-count>3</span></h3>
-          <div class="task" data-who="nora"><b>Ideja: pārvērst kopienas nodarbību trīsdaļīgā kursā</b><div class="meta"><span>balss piezīme</span><span class="tag">Nora</span></div></div>
+          <div class="task" data-who="john"><b>Ideja: pārvērst kopienas nodarbību trīsdaļīgā kursā</b><div class="meta"><span>balss piezīme</span><span class="tag">Džons</span></div></div>
           <div class="task" data-who="ai"><b>Saglabāt Brightwater decembra izlaiduma plānu</b><div class="meta"><span>e-pasta pielikums</span><span class="tag ai">Izpildītājs</span></div></div>
           <div class="task" data-who="ai"><b>Apkopot rakstu par izpētes darba organizēšanu</b><div class="meta"><span>saglabāta saite</span><span class="tag ai">Izpildītājs</span></div></div>
         </div>
         <div class="col"><h3>Darāms <span class="count" data-col-count>4</span></h3>
-          <div class="task" data-who="nora"><b>Nosūtīt Brightwater sadarbības piedāvājumu</b><div class="meta"><span class="mono">BW-05</span><span>Cet.</span><span class="tag">Nora</span></div></div>
-          <div class="task" data-who="nora"><b>Kopienas nodarbības slaidi</b><div class="meta"><span class="mono">NG-03</span><span>Treš.</span><span class="tag">Nora</span><span class="tag ai">Izpildītāja uzmetums</span></div></div>
-          <div class="task" data-who="nora"><b>Nosūtīt atgādinājumu par rēķinu #014</b><div class="meta"><span class="mono">HH-13</span><span class="st bad">termiņš bija vakar</span><span class="tag">Nora</span></div></div>
+          <div class="task" data-who="john"><b>Nosūtīt Brightwater sadarbības piedāvājumu</b><div class="meta"><span class="mono">BW-05</span><span>Cet.</span><span class="tag">Džons</span></div></div>
+          <div class="task" data-who="john"><b>Kopienas nodarbības slaidi</b><div class="meta"><span class="mono">NG-03</span><span>Treš.</span><span class="tag">Džons</span><span class="tag ai">Izpildītāja uzmetums</span></div></div>
+          <div class="task" data-who="john"><b>Nosūtīt atgādinājumu par rēķinu #014</b><div class="meta"><span class="mono">HH-13</span><span class="st bad">termiņš bija vakar</span><span class="tag">Džons</span></div></div>
           <div class="task" data-who="ai"><b>Izplānot jaunumu vēstules 9. numuru</b><div class="meta"><span class="mono">CP-09</span><span>23. nov.</span><span class="tag ai">Izpildītājs</span></div></div>
         </div>
         <div class="col"><h3>Procesā <span class="count" data-col-count>2</span></h3>
-          <div class="task" data-who="nora"><b>Harbor Health secinājumu sadaļa</b><div class="meta"><span class="mono">HH-11</span><span>Piekt.</span><span class="tag">Nora</span></div></div>
+          <div class="task" data-who="john"><b>Harbor Health secinājumu sadaļa</b><div class="meta"><span class="mono">HH-11</span><span>Piekt.</span><span class="tag">Džons</span></div></div>
           <div class="task" data-who="ai"><b>Izlabot abus Pārbaudītāja punktus apkopojumā v2</b><div class="meta"><span class="mono">HH-10</span><span>šodien</span><span class="tag ai">Izpildītājs</span></div></div>
         </div>
         <div class="col"><h3>Gaida <span class="count" data-col-count>3</span></h3>
-          <div class="task" data-who="nora" data-waiting><b>Klienta analītikas eksports</b><div class="meta"><span class="mono">HH-12</span><span>pieprasīts 12. nov.</span><span class="st warn">5 dienas</span></div></div>
-          <div class="task" data-who="nora" data-waiting><b>Telpu apstiprinājums ceturtdienai</b><div class="meta"><span class="mono">NG-04</span><span>pieprasīts pirmdien</span><span class="st info">1 diena</span></div></div>
-          <div class="task" data-who="ai" data-waiting><b>Sagatavot Brightwater projekta aprakstu</b><div class="meta"><span class="mono">VS-02</span><span>projekts apturēts līdz 1. dec.</span><span class="tag ai">Izpildītājs</span></div></div>
+          <div class="task" data-who="john" data-waiting><b>Klienta analītikas eksports</b><div class="meta"><span class="mono">HH-12</span><span>pieprasīts 12. nov.</span><span class="st warn">5 dienas</span></div></div>
+          <div class="task" data-who="john" data-waiting><b>Telpu apstiprinājums ceturtdienai</b><div class="meta"><span class="mono">NG-04</span><span>pieprasīts pirmdien</span><span class="st info">1 diena</span></div></div>
+          <div class="task" data-who="ai" data-waiting><b>Sagatavot Brightwater projekta aprakstu</b><div class="meta"><span class="mono">DS-02</span><span>projekts apturēts līdz 1. dec.</span><span class="tag ai">Izpildītājs</span></div></div>
         </div>
         <div class="col"><h3>Pabeigts šonedēļ <span class="count" data-col-count>3</span></h3>
-          <div class="task" data-who="nora"><b>Rēķins #013 nosūtīts</b><div class="meta"><span class="mono">BW-04</span><span class="st ok">Pirmd.</span><span class="tag">Nora</span></div></div>
+          <div class="task" data-who="john"><b>Rēķins #013 nosūtīts</b><div class="meta"><span class="mono">BW-04</span><span class="st ok">Pirmd.</span><span class="tag">Džons</span></div></div>
           <div class="task" data-who="ai"><b>P05–P06 apkopojums, melnraksts v1</b><div class="meta"><span class="mono">HH-08</span><span class="st ok">Pirmd.</span><span class="tag ai">Izpildītājs</span></div></div>
           <div class="task" data-who="ai"><b>Apkopojuma v1 pārbaude: LABOT, 2 punkti</b><div class="meta"><span class="mono">HH-09</span><span class="st ok">Pirmd.</span><span class="tag ai">Pārbaudītājs</span></div></div>
         </div>
@@ -842,7 +851,7 @@ html:not(.js) .pws+.pws{margin-top:16px}
     <section class="panel" id="messages" aria-labelledby="h-messages">
       <div class="section-head"><p class="eyebrow">03 / Komunikācija · COMMS7</p><div class="section-actions"><button type="button" data-copy-scope="view">Kopēt šo skatu</button><a href="https://github.com/arete-aios/aios/blob/main/skills/comms7/SKILL.md" target="_blank" rel="noopener noreferrer">GitHub · comms7 ↗</a></div></div>
       <h2 id="h-messages" tabindex="-1">Visas sarunas un komentāri, uz kuriem vērts atbildēt</h2>
-      <p class="lead">COMMS7 dara divus darbus. Tas sakārto sarunas pēc nākamā atbildīgā un uzrauga izvēlētu ierakstu komentārus, uz kuriem vērts atbildēt. MI lasa un gatavo melnrakstus; Nora izlemj un nosūta.</p>
+      <p class="lead">COMMS7 dara divus darbus. Tas sakārto sarunas pēc nākamā atbildīgā un uzrauga izvēlētu ierakstu komentārus, uz kuriem vērts atbildēt. MI lasa un gatavo melnrakstus; Džons izlemj un nosūta.</p>
 
       <div class="channels" aria-label="Piemērā savienotie kanāli">
         <div class="channel-tile"><span class="logo"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg></span><div><b>Gmail</b><span>Lasīšana + melnraksti · 14 dienas</span></div><span class="st ok">Ieslēgts</span></div>
@@ -883,12 +892,12 @@ html:not(.js) .pws+.pws{margin-top:16px}
           <div class="row msg" role="row">
             <span class="channel" role="cell"><span class="mini lettermark">in</span>LinkedIn</span>
             <span role="cell"><span class="who2">Tomás Ruiz<span class="sub">neatkarīgs konsultants</span></span><span class="txt"><q>Patika tavs ieraksts par ievadintervijām. Vai varam aprunāties?</q></span></span>
-            <span class="txt c-next" role="cell">Piedāvāt divus laikus nākamnedēļ.<span class="draft">Ieteikums · Nora raksta pati</span></span>
+            <span class="txt c-next" role="cell">Piedāvāt divus laikus nākamnedēļ.<span class="draft">Ieteikums · Džons raksta pats</span></span>
             <span role="cell"><span class="st warn">Jāatbild</span></span>
           </div>
           <div class="row msg" role="row">
             <span class="channel" role="cell"><span class="mini"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg></span>Gmail</span>
-            <span role="cell"><span class="who2">Ada Kim<span class="sub">Brightwater</span></span><span class="txt">Nora 12. novembrī nosūtīja jautājumus par sadarbības apjomu.</span></span>
+            <span role="cell"><span class="who2">Ada Kim<span class="sub">Brightwater</span></span><span class="txt">Džons 12. novembrī nosūtīja jautājumus par sadarbības apjomu.</span></span>
             <span class="txt c-next" role="cell">Ada atbildēs pēc plānošanas 18. novembrī. Pagaidām nekas nav jādara.</span>
             <span role="cell"><span class="st info">Gaida viņu atbildi</span></span>
           </div>
@@ -902,16 +911,16 @@ html:not(.js) .pws+.pws{margin-top:16px}
       </div>
 
       <div class="subpanel" data-sub="watch">
-        <p class="watch-rule"><b>Uzraudzības noteikums:</b> Noras pēdējo 14 dienu ieraksti un sešu sadaļā Cilvēki iekļauto cilvēku ieraksti par izpēti, lietotāju ievadīšanu vai dizaina komandām. Ieteiktais komentārs ir melnraksts. Nora to publicē pati vai izlaiž.</p>
+        <p class="watch-rule"><b>Uzraudzības noteikums:</b> Džona pēdējo 14 dienu ieraksti un sešu sadaļā Cilvēki iekļauto cilvēku ieraksti par izpēti, lietotāju ievadīšanu vai dizaina komandām. Ieteiktais komentārs ir melnraksts. Džons to publicē pats vai izlaiž.</p>
         <div class="grid g2">
           <article class="card post">
-            <div class="post-head"><span class="logo lettermark">in</span><div><b>Trīs jautājumi, ko uzdodu katrā ievadintervijā</b><span>Noras ieraksts · 11. nov. · uzrauga līdz 25. nov.</span></div></div>
+            <div class="post-head"><span class="logo lettermark">in</span><div><b>Trīs jautājumi, ko uzdodu katrā ievadintervijā</b><span>Džona ieraksts · 11. nov. · uzrauga līdz 25. nov.</span></div></div>
             <div class="post-stats"><span class="mono">6 jauni komentāri</span><span class="st warn">1 jautājums, uz ko atbildēt</span></div>
             <p class="post-q"><q>Vai jautājumus cilvēkiem nosūti iepriekš?</q></p>
             <p class="post-s"><b>Atbildes melnraksts:</b> “Nē, tikai tēmu. Jautājumi darbojas labāk, kad cilvēki atbild no atmiņas, nevis piezīmēm.”</p>
           </article>
           <article class="card post">
-            <div class="post-head"><span class="logo"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></span><div><b>Ceturtdien: MI dizaina komandām</b><span>Vale Studio lapa · 14. nov. · uzrauga līdz 21. nov.</span></div></div>
+            <div class="post-head"><span class="logo"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></span><div><b>Ceturtdien: MI dizaina komandām</b><span>Doe Studio lapa · 14. nov. · uzrauga līdz 21. nov.</span></div></div>
             <div class="post-stats"><span class="mono">2 jauni komentāri</span><span class="st warn">1 jautājums, uz ko atbildēt</span></div>
             <p class="post-q"><q>Vai nodarbību ierakstīs?</q></p>
             <p class="post-s"><b>Atbildes melnraksts:</b> “Šoreiz ne: daži dalībnieki strādā pie vēl neizlaistiem produktiem. Visi dalībnieki saņems slaidus.”</p>
@@ -924,27 +933,27 @@ html:not(.js) .pws+.pws{margin-top:16px}
           <article class="card post">
             <div class="post-head"><span class="logo lettermark">in</span><div><b>Izpētes organizēšana ir komandas darbs</b><span>Tomás Ruiz · jauns kontakts · 16. nov. · uzrauga līdz 24. nov.</span></div></div>
             <div class="post-stats"><span class="mono">9 komentāri</span><span class="st info">Pēc izvēles</span></div>
-            <p class="post-s"><b>Ieteiktais komentārs:</b> viens praktisks novērojums no Noras intervijām vai izlaist.</p>
+            <p class="post-s"><b>Ieteiktais komentārs:</b> viens praktisks novērojums no Džona intervijām vai izlaist.</p>
           </article>
         </div>
         <p class="watch-skip"><span class="st">Izlaists 16. nov.</span> vispārīgs ieraksts par to, ka MI aizstāj dizainerus: neatbilst galvenajam virzienam.</p>
       </div>
 
-      <p class="rule"><b>Galvenais noteikums:</b> MI lasa, kārto un gatavo melnrakstus. Bez Noras piekrišanas neko nesūta, nepublicē, nepieņem un nedzēš.</p>
-      <p class="how"><b>No kurienes tas nāk.</b> <span class="mono">02-memory/comms/_comms-CONTEXT.md</span> glabā avotus, lasāmo periodu, ritmu un uzraugāmo ierakstu sarakstu. Savienojumi un to robežas ir <span class="mono">04-tools/_tools-CONTEXT.md</span>. Kad Nora sarunu noslēdz vai atliek, lēmums nonāk attiecīgā projekta failā, lai nākamais pārskats to neatvērtu no jauna.</p>
+      <p class="rule"><b>Galvenais noteikums:</b> MI lasa, kārto un gatavo melnrakstus. Bez Džona piekrišanas neko nesūta, nepublicē, nepieņem un nedzēš.</p>
+      <p class="how"><b>No kurienes tas nāk.</b> <span class="mono">02-memory/comms/_comms-CONTEXT.md</span> glabā avotus, lasāmo periodu, ritmu un uzraugāmo ierakstu sarakstu. Savienojumi un to robežas ir <span class="mono">04-tools/_tools-CONTEXT.md</span>. Kad Džons sarunu noslēdz vai atliek, lēmums nonāk attiecīgā projekta failā, lai nākamais pārskats to neatvērtu no jauna.</p>
     <div class="protocols"><span>Turpini ar</span><a href="https://github.com/arete-aios/aios/blob/main/skills/meeting7/SKILL.md" target="_blank" rel="noopener noreferrer">meeting7</a><a href="https://github.com/arete-aios/aios/blob/main/skills/exit7/SKILL.md" target="_blank" rel="noopener noreferrer">exit7</a></div></section>
 
     <!-- 04 PROJECTS -->
     <section class="panel" id="projects" aria-labelledby="h-projects">
       <div class="section-head"><p class="eyebrow">04 / Projekti · FOCUS7</p><div class="section-actions"><button type="button" data-copy-scope="view">Kopēt šo skatu</button><a href="https://github.com/arete-aios/aios/blob/main/skills/mit7/SKILL.md" target="_blank" rel="noopener noreferrer">GitHub · gtd7 ↗</a></div></div>
       <h2 id="h-projects" tabindex="-1">Kur ir fokuss un kas katram projektam vajadzīgs tālāk</h2>
-      <p class="lead">FOCUS7 seko GTD pieejai: katrs projekts kalpo rezultātam, tam ir viena nākamā darbība un uzdevumi ar statusiem. Pirmdien Nora no šiem failiem izvēlas nedēļas fokusu. Pārējais paliek redzams, bet netraucē.</p>
+      <p class="lead">FOCUS7 seko GTD pieejai: katrs projekts kalpo rezultātam, tam ir viena nākamā darbība un uzdevumi ar statusiem. Pirmdien Džons no šiem failiem izvēlas nedēļas fokusu. Pārējais paliek redzams, bet netraucē.</p>
 
       <div class="stats">
         <div class="stat hero"><span class="label">Šīs nedēļas fokusā</span><b>3 no 5</b><span>projekti, aptuveni pa vienam katram rezultātam</span></div>
         <div class="stat"><span class="label">Uzdevumi projektu failos</span><b>13</b><span>4 pabeigti · 2 procesā · 4 darāmi · 3 gaida</span></div>
         <div class="stat"><span class="label">Kavēts</span><b>1</b><span>HH-13, rēķina atgādinājums sagatavots, nav nosūtīts</span></div>
-        <div class="stat"><span class="label">Gaida citus</span><b>2</b><span>Priya un Lena; vēl viens ir pašas Noras atlikts darbs</span></div>
+        <div class="stat"><span class="label">Gaida citus</span><b>2</b><span>Priya un Lena; vēl viens ir paša Džona atlikts darbs</span></div>
       </div>
 
       <div class="card fm">
@@ -975,7 +984,7 @@ html:not(.js) .pws+.pws{margin-top:16px}
           <div class="fm-out"><b><span class="fm-n">03</span>Atpazīstamība</b><small>Divi projektu apraksti līdz 15. janv. · MI atbildēs 6 no 25</small></div>
           <div class="fm-pills">
             <span class="pill"><span class="code">CP</span>Calm Product jaunumu vēstule<em>aktīvs · 9. numura uzmetums</em></span>
-            <span class="pill later"><span class="code">VS</span>Vale Studio vietne<em>atlikts līdz 1. dec.</em></span>
+            <span class="pill later"><span class="code">DS</span>Doe Studio vietne<em>atlikts līdz 1. dec.</em></span>
           </div>
         </div>
       </div>
@@ -985,21 +994,21 @@ html:not(.js) .pws+.pws{margin-top:16px}
         <div class="row" role="row">
           <span role="cell"><span class="pname"><span class="code">HH</span>Harbor Health izpēte</span><span class="path">05-focus/projects/harbor-health-discovery.md</span></span>
           <span class="serves txt" role="cell"><span class="cell-l">Kalpo</span>Klienti</span>
-          <span class="na" role="cell"><span class="cell-l">Nākamā darbība</span><b>Uzrakstīt secinājumu sadaļu</b><small>Nora · piektdien, 20. nov.</small></span>
+          <span class="na" role="cell"><span class="cell-l">Nākamā darbība</span><b>Uzrakstīt secinājumu sadaļu</b><small>Džons · piektdien, 20. nov.</small></span>
           <span role="cell"><span class="cell-l">Uzdevumi</span><span class="tcount">7 uzdevumi · 1 kavēts</span><span class="tbar" role="img" aria-label="3 pabeigti, 2 procesā, 1 darāms, 1 gaida"><span class="done" style="flex:3" title="3 pabeigti"></span><span class="doing" style="flex:2" title="2 procesā"></span><span class="open" style="flex:1" title="1 darāms"></span><span class="wait" style="flex:1" title="1 gaida"></span></span></span>
           <span class="stt-col" role="cell"><span class="st ok">Pēc plāna</span></span>
         </div>
         <div class="row" role="row">
           <span role="cell"><span class="pname"><span class="code">BW</span>Brightwater ilgtermiņa sadarbība</span><span class="path">05-focus/projects/brightwater-retainer.md</span></span>
           <span class="serves txt" role="cell"><span class="cell-l">Kalpo</span>Klienti</span>
-          <span class="na" role="cell"><span class="cell-l">Nākamā darbība</span><b>Nosūtīt sadarbības piedāvājumu</b><small>Nora · ceturtdien, 19. nov.</small></span>
+          <span class="na" role="cell"><span class="cell-l">Nākamā darbība</span><b>Nosūtīt sadarbības piedāvājumu</b><small>Džons · ceturtdien, 19. nov.</small></span>
           <span role="cell"><span class="cell-l">Uzdevumi</span><span class="tcount">2 uzdevumi</span><span class="tbar" role="img" aria-label="1 pabeigts, 1 darāms"><span class="done" style="flex:1" title="1 pabeigts"></span><span class="open" style="flex:1" title="1 darāms"></span></span></span>
           <span class="stt-col" role="cell"><span class="st ok">Pēc plāna</span></span>
         </div>
         <div class="row" role="row">
           <span role="cell"><span class="pname"><span class="code">NG</span>Northline kopienas nodarbība</span><span class="path">05-focus/projects/northline-guild-session.md</span></span>
           <span class="serves txt" role="cell"><span class="cell-l">Kalpo</span>Mācīšana</span>
-          <span class="na" role="cell"><span class="cell-l">Nākamā darbība</span><b>Pabeigt nodarbības slaidus</b><small>Nora; Izpildītājs gatavo uzmetumu · trešdien, 18. nov.</small></span>
+          <span class="na" role="cell"><span class="cell-l">Nākamā darbība</span><b>Pabeigt nodarbības slaidus</b><small>Džons; Izpildītājs gatavo uzmetumu · trešdien, 18. nov.</small></span>
           <span role="cell"><span class="cell-l">Uzdevumi</span><span class="tcount">2 uzdevumi</span><span class="tbar" role="img" aria-label="1 darāms, 1 gaida"><span class="open" style="flex:1" title="1 darāms"></span><span class="wait" style="flex:1" title="1 gaida"></span></span></span>
           <span class="stt-col" role="cell"><span class="st warn">Telpas vēl nav apstiprinātas</span></span>
         </div>
@@ -1011,11 +1020,11 @@ html:not(.js) .pws+.pws{margin-top:16px}
           <span class="stt-col" role="cell"><span class="st warn">8. numurs kavējās četras dienas</span></span>
         </div>
         <div class="row" role="row">
-          <span role="cell"><span class="pname"><span class="code">VS</span>Vale Studio vietne</span><span class="path">05-focus/projects/studio-website.md</span></span>
+          <span role="cell"><span class="pname"><span class="code">DS</span>Doe Studio vietne</span><span class="path">05-focus/projects/studio-website.md</span></span>
           <span class="serves txt" role="cell"><span class="cell-l">Kalpo</span>Atpazīstamība</span>
           <span class="na" role="cell"><span class="cell-l">Nākamā darbība</span><b>Sagatavot Brightwater projekta aprakstu</b><small>Izpildītājs · no 1. dec., vajag Adas piekrišanu</small></span>
           <span role="cell"><span class="cell-l">Uzdevumi</span><span class="tcount">1 uzdevums</span><span class="tbar" role="img" aria-label="1 gaida"><span class="wait" style="flex:1" title="1 gaida"></span></span></span>
-          <span class="stt-col" role="cell"><span class="st info">Nora atlikusi līdz 1. dec.</span></span>
+          <span class="stt-col" role="cell"><span class="st info">Džons atlicis līdz 1. dec.</span></span>
         </div>
       </div>
       <ul class="tlegend" aria-label="Uzdevumu joslas apzīmējumi"><li><i class="done"></i>Pabeigts</li><li><i class="doing"></i>Procesā</li><li><i class="open"></i>Darāms</li><li><i class="wait"></i>Gaida</li></ul>
@@ -1026,7 +1035,7 @@ html:not(.js) .pws+.pws{margin-top:16px}
           <ul class="list">
             <li><span class="n mono">HH-12</span><span class="t">Priya atsūtīs rezervācijas plūsmas eksportu<small>Pieprasīts 12. nov. · secinājumus var rakstīt arī bez tā</small></span></li>
             <li><span class="n mono">NG-04</span><span class="t">Lena apstiprinās telpas<small>Pieprasīts 16. nov. · atbilde par krēsliem un ekrāniem jau sagatavota</small></span></li>
-            <li><span class="n mono">VS-02</span><span class="t">Vietnes darba atsākšana 1. decembrī<small>Nora atlikusi pati, lai vispirms pabeigtu Harbor Health ziņojumu</small></span></li>
+            <li><span class="n mono">DS-02</span><span class="t">Vietnes darba atsākšana 1. decembrī<small>Džons atlicis pats, lai vispirms pabeigtu Harbor Health ziņojumu</small></span></li>
           </ul>
         </div>
         <div class="card">
@@ -1047,7 +1056,7 @@ html:not(.js) .pws+.pws{margin-top:16px}
     <section class="panel" id="people" aria-labelledby="h-people">
       <div class="section-head"><p class="eyebrow">05 / Cilvēki</p><div class="section-actions"><button type="button" data-copy-scope="view">Kopēt šo skatu</button><a href="https://github.com/arete-aios/aios/blob/main/skills/cc7/references/people.md" target="_blank" rel="noopener noreferrer">GitHub · crm7 ↗</a></div></div>
       <h2 id="h-people" tabindex="-1">Katram kontaktam sava privāta darba vieta</h2>
-      <p class="lead">Izvēlies cilvēku, lai redzētu, ko Nora zina par sadarbību, kopīgajiem projektiem un uzdevumiem, kā arī katru tikšanos un tās rezultātu.</p>
+      <p class="lead">Izvēlies cilvēku, lai redzētu, ko Džons zina par sadarbību, kopīgajiem projektiem un uzdevumiem, kā arī katru tikšanos un tās rezultātu.</p>
 
       <div class="people">
         <div class="people-list" role="group" aria-label="Cilvēki">
@@ -1062,8 +1071,8 @@ html:not(.js) .pws+.pws{margin-top:16px}
         <div class="pws-wrap">
           <!-- Priya -->
           <article class="pws" data-person="priya" aria-label="Darba vieta: Priya Shah">
-            <header class="pws-head"><span class="av lg">PS</span><div><span class="label">Noras privātā darba vieta</span><h3>Nora un Priya Shah</h3><span class="pws-meta">Produkta vadītāja, Harbor Health · pēdējā saziņa 13. nov. · nākamais: rezultātu prezentācija piektdien</span></div></header>
-            <p class="pws-private"><b>Tikai Norai.</b> Priya šo darba vietu nevar atvērt. Piezīmes un analīze paliek Noras mapē.</p>
+            <header class="pws-head"><span class="av lg">PS</span><div><span class="label">Džona privātā darba vieta</span><h3>Džons un Priya Shah</h3><span class="pws-meta">Produkta vadītāja, Harbor Health · pēdējā saziņa 13. nov. · nākamais: rezultātu prezentācija piektdien</span></div></header>
+            <p class="pws-private"><b>Tikai Džonam.</b> Priya šo darba vietu nevar atvērt. Piezīmes un analīze paliek Džona mapē.</p>
             <div class="pws-tabs" role="group" aria-label="Darba vietas sadaļas"><button type="button" data-tab="overview" aria-pressed="true">Pārskats</button><button type="button" data-tab="work" aria-pressed="false">Projekti un uzdevumi</button><button type="button" data-tab="meetings" aria-pressed="false">Tikšanās <span class="count">4</span></button></div>
             <div class="pws-panel" data-tab="overview">
               <div class="pws-cols">
@@ -1090,9 +1099,9 @@ html:not(.js) .pws+.pws{margin-top:16px}
             <div class="pws-panel" data-tab="work">
               <div class="pws-project"><span class="code">HH</span><b>Harbor Health izpēte</b><span class="st ok">Pēc plāna</span></div>
               <ul class="pws-tasks">
-                <li><span class="mono">HH-11</span>Ziņojuma secinājumu sadaļa<span class="tag">Nora</span><span class="st info">Procesā · piektdien</span></li>
+                <li><span class="mono">HH-11</span>Ziņojuma secinājumu sadaļa<span class="tag">Džons</span><span class="st info">Procesā · piektdien</span></li>
                 <li><span class="mono">HH-12</span>Rezervācijas plūsmas analītikas eksports<span class="tag">Priya</span><span class="st warn">Gaida kopš 12. nov.</span></li>
-                <li><span class="mono">HH-13</span>Atgādinājums par rēķinu #014<span class="tag">Nora</span><span class="st bad">Kavēts</span></li>
+                <li><span class="mono">HH-13</span>Atgādinājums par rēķinu #014<span class="tag">Džons</span><span class="st bad">Kavēts</span></li>
                 <li><span class="mono">HH-10</span>P05–P06 apkopojums v2<span class="tag ai">Izpildītājs</span><span class="st info">Procesā</span></li>
               </ul>
             </div>
@@ -1108,8 +1117,8 @@ html:not(.js) .pws+.pws{margin-top:16px}
 
           <!-- Ada -->
           <article class="pws" data-person="ada" aria-label="Darba vieta: Ada Kim">
-            <header class="pws-head"><span class="av lg">AK</span><div><span class="label">Noras privātā darba vieta</span><h3>Nora un Ada Kim</h3><span class="pws-meta">Produkta vadītāja, Brightwater · pēdējā saziņa 12. nov. · nākamais: sadarbības piedāvājums līdz ceturtdienai</span></div></header>
-            <p class="pws-private"><b>Tikai Norai.</b> Ada šo darba vietu nevar atvērt.</p>
+            <header class="pws-head"><span class="av lg">AK</span><div><span class="label">Džona privātā darba vieta</span><h3>Džons un Ada Kim</h3><span class="pws-meta">Produkta vadītāja, Brightwater · pēdējā saziņa 12. nov. · nākamais: sadarbības piedāvājums līdz ceturtdienai</span></div></header>
+            <p class="pws-private"><b>Tikai Džonam.</b> Ada šo darba vietu nevar atvērt.</p>
             <div class="pws-tabs" role="group" aria-label="Darba vietas sadaļas"><button type="button" data-tab="overview" aria-pressed="true">Pārskats</button><button type="button" data-tab="work" aria-pressed="false">Projekti un uzdevumi</button><button type="button" data-tab="meetings" aria-pressed="false">Tikšanās <span class="count">2</span></button></div>
             <div class="pws-panel" data-tab="overview">
               <div class="pws-cols">
@@ -1135,8 +1144,8 @@ html:not(.js) .pws+.pws{margin-top:16px}
             <div class="pws-panel" data-tab="work">
               <div class="pws-project"><span class="code">BW</span><b>Brightwater ilgtermiņa sadarbība</b><span class="st ok">Pēc plāna</span></div>
               <ul class="pws-tasks">
-                <li><span class="mono">BW-05</span>Nosūtīt sadarbības piedāvājumu<span class="tag">Nora</span><span class="st info">Darāms · ceturtdien</span></li>
-                <li><span class="mono">BW-04</span>Rēķins #013 par ievadīšanas plūsmas pārveidi<span class="tag">Nora</span><span class="st ok">Pabeigts 16. nov.</span></li>
+                <li><span class="mono">BW-05</span>Nosūtīt sadarbības piedāvājumu<span class="tag">Džons</span><span class="st info">Darāms · ceturtdien</span></li>
+                <li><span class="mono">BW-04</span>Rēķins #013 par ievadīšanas plūsmas pārveidi<span class="tag">Džons</span><span class="st ok">Pabeigts 16. nov.</span></li>
               </ul>
             </div>
             <div class="pws-panel" data-tab="meetings">
@@ -1149,8 +1158,8 @@ html:not(.js) .pws+.pws{margin-top:16px}
 
           <!-- Lena -->
           <article class="pws" data-person="lena" aria-label="Darba vieta: Lena Ortiz">
-            <header class="pws-head"><span class="av lg">LO</span><div><span class="label">Noras privātā darba vieta</span><h3>Nora un Lena Ortiz</h3><span class="pws-meta">Northline dizaina kopienas organizatore · pēdējā saziņa 16. nov. · nākamais: telpas ceturtdienai</span></div></header>
-            <p class="pws-private"><b>Tikai Norai.</b> Lena šo darba vietu nevar atvērt.</p>
+            <header class="pws-head"><span class="av lg">LO</span><div><span class="label">Džona privātā darba vieta</span><h3>Džons un Lena Ortiz</h3><span class="pws-meta">Northline dizaina kopienas organizatore · pēdējā saziņa 16. nov. · nākamais: telpas ceturtdienai</span></div></header>
+            <p class="pws-private"><b>Tikai Džonam.</b> Lena šo darba vietu nevar atvērt.</p>
             <div class="pws-tabs" role="group" aria-label="Darba vietas sadaļas"><button type="button" data-tab="overview" aria-pressed="true">Pārskats</button><button type="button" data-tab="work" aria-pressed="false">Projekti un uzdevumi</button><button type="button" data-tab="meetings" aria-pressed="false">Tikšanās <span class="count">1</span></button></div>
             <div class="pws-panel" data-tab="overview">
               <p class="label">Kā sadarbojamies</p>
@@ -1162,7 +1171,7 @@ html:not(.js) .pws+.pws{margin-top:16px}
             <div class="pws-panel" data-tab="work">
               <div class="pws-project"><span class="code">NG</span><b>Northline kopienas nodarbība</b><span class="st warn">Telpas vēl nav apstiprinātas</span></div>
               <ul class="pws-tasks">
-                <li><span class="mono">NG-03</span>Nodarbības slaidi<span class="tag">Nora</span><span class="st info">Darāms · trešdien</span></li>
+                <li><span class="mono">NG-03</span>Nodarbības slaidi<span class="tag">Džons</span><span class="st info">Darāms · trešdien</span></li>
                 <li><span class="mono">NG-04</span>Telpu apstiprinājums<span class="tag">Lena</span><span class="st warn">Gaida kopš 16. nov.</span></li>
               </ul>
             </div>
@@ -1175,27 +1184,27 @@ html:not(.js) .pws+.pws{margin-top:16px}
 
           <!-- Tomás -->
           <article class="pws" data-person="tomas" aria-label="Darba vieta: Tomás Ruiz">
-            <header class="pws-head"><span class="av lg">TR</span><div><span class="label">Noras privātā darba vieta</span><h3>Nora un Tomás Ruiz</h3><span class="pws-meta">Neatkarīgs produktu konsultants · pirmā saziņa šodien · nākamais: atbildēt ar diviem laikiem</span></div></header>
-            <p class="pws-private"><b>Tikai Norai.</b> Tomás šo darba vietu nevar atvērt.</p>
+            <header class="pws-head"><span class="av lg">TR</span><div><span class="label">Džona privātā darba vieta</span><h3>Džons un Tomás Ruiz</h3><span class="pws-meta">Neatkarīgs produktu konsultants · pirmā saziņa šodien · nākamais: atbildēt ar diviem laikiem</span></div></header>
+            <p class="pws-private"><b>Tikai Džonam.</b> Tomás šo darba vietu nevar atvērt.</p>
             <div class="pws-tabs" role="group" aria-label="Darba vietas sadaļas"><button type="button" data-tab="overview" aria-pressed="true">Pārskats</button><button type="button" data-tab="work" aria-pressed="false">Projekti un uzdevumi</button><button type="button" data-tab="meetings" aria-pressed="false">Tikšanās</button></div>
             <div class="pws-panel" data-tab="overview">
               <p class="label">Kā iepazināmies</p>
-              <p>11. novembrī komentēja Noras LinkedIn ierakstu, pēc tam uzrakstīja. Strādā ar agrīniem veselības tehnoloģiju jaunuzņēmumiem.</p>
+              <p>11. novembrī komentēja Džona LinkedIn ierakstu, pēc tam uzrakstīja. Strādā ar agrīniem veselības tehnoloģiju jaunuzņēmumiem.</p>
               <p class="label">Ko turpināt</p>
               <p>Iespējami savstarpēji ieteikumi.</p>
             </div>
-            <div class="pws-panel" data-tab="work"><p class="pws-empty">Projekta vēl nav. Tas sākas tikai tad, kad Nora apstiprina projekta kartīti.</p></div>
+            <div class="pws-panel" data-tab="work"><p class="pws-empty">Projekta vēl nav. Tas sākas tikai tad, kad Džons apstiprina projekta kartīti.</p></div>
             <div class="pws-panel" data-tab="meetings"><p class="pws-empty">Tikšanos vēl nav.</p></div>
           </article>
 
           <!-- Jonas -->
           <article class="pws" data-person="jonas" aria-label="Darba vieta: Jonas Berg">
-            <header class="pws-head"><span class="av lg">JB</span><div><span class="label">Noras privātā darba vieta</span><h3>Nora un Jonas Berg</h3><span class="pws-meta">Neliela finanšu tehnoloģiju uzņēmuma dibinātājs · bijušais klients · pēdējā saziņa 6. okt.</span></div></header>
-            <p class="pws-private"><b>Tikai Norai.</b> Jonas šo darba vietu nevar atvērt.</p>
+            <header class="pws-head"><span class="av lg">JB</span><div><span class="label">Džona privātā darba vieta</span><h3>Džons un Jonas Berg</h3><span class="pws-meta">Neliela finanšu tehnoloģiju uzņēmuma dibinātājs · bijušais klients · pēdējā saziņa 6. okt.</span></div></header>
+            <p class="pws-private"><b>Tikai Džonam.</b> Jonas šo darba vietu nevar atvērt.</p>
             <div class="pws-tabs" role="group" aria-label="Darba vietas sadaļas"><button type="button" data-tab="overview" aria-pressed="true">Pārskats</button><button type="button" data-tab="work" aria-pressed="false">Projekti un uzdevumi</button><button type="button" data-tab="meetings" aria-pressed="false">Tikšanās <span class="count">1</span></button></div>
             <div class="pws-panel" data-tab="overview">
               <p class="label">Vēsture</p>
-              <p>2026. gada pavasarī Nora viņam vadīja izpētes sprintu.</p>
+              <p>2026. gada pavasarī Džons viņam vadīja izpētes sprintu.</p>
               <p class="label">Ko turpināt</p>
               <p>Oktobrī viņš pieminēja jaunu produktu līniju. <span class="st warn">Saruna nokavēta</span></p>
             </div>
@@ -1207,12 +1216,12 @@ html:not(.js) .pws+.pws{margin-top:16px}
 
           <!-- Mei -->
           <article class="pws" data-person="mei" aria-label="Darba vieta: Mei Chen">
-            <header class="pws-head"><span class="av lg">MC</span><div><span class="label">Noras privātā darba vieta</span><h3>Nora un Mei Chen</h3><span class="pws-meta">Podkāsta Design Notes vadītāja · pēdējā saziņa 27. okt.</span></div></header>
-            <p class="pws-private"><b>Tikai Norai.</b> Mei šo darba vietu nevar atvērt.</p>
+            <header class="pws-head"><span class="av lg">MC</span><div><span class="label">Džona privātā darba vieta</span><h3>Džons un Mei Chen</h3><span class="pws-meta">Podkāsta Design Notes vadītāja · pēdējā saziņa 27. okt.</span></div></header>
+            <p class="pws-private"><b>Tikai Džonam.</b> Mei šo darba vietu nevar atvērt.</p>
             <div class="pws-tabs" role="group" aria-label="Darba vietas sadaļas"><button type="button" data-tab="overview" aria-pressed="true">Pārskats</button><button type="button" data-tab="work" aria-pressed="false">Projekti un uzdevumi</button><button type="button" data-tab="meetings" aria-pressed="false">Tikšanās <span class="count">1</span></button></div>
             <div class="pws-panel" data-tab="overview">
               <p class="label">Ko turpināt</p>
-              <p>Nora piedalās janvāra epizodē par intervijām ar reģistratūras darbiniekiem.</p>
+              <p>Džons piedalās janvāra epizodē par intervijām ar reģistratūras darbiniekiem.</p>
             </div>
             <div class="pws-panel" data-tab="work"><p class="pws-empty">Projekta nav. Piezīmju nosūtīšana epizodei kļūs par uzdevumu, kad pienāks laiks.</p></div>
             <div class="pws-panel" data-tab="meetings">
@@ -1228,7 +1237,7 @@ html:not(.js) .pws+.pws{margin-top:16px}
     <!-- 06 MARKETING -->
     <section class="panel" id="marketing" aria-labelledby="h-marketing">
       <div class="section-head"><p class="eyebrow">06 / Mārketings · GEO7 · Analītika</p><div class="section-actions"><button type="button" data-copy-scope="view">Kopēt šo skatu</button><a href="https://github.com/arete-aios/aios/blob/main/skills/geo7/SKILL.md" target="_blank" rel="noopener noreferrer">GitHub · geo7 ↗</a></div></div>
-      <h2 id="h-marketing" tabindex="-1">Vai Vale Studio atrod un kas to atrod?</h2>
+      <h2 id="h-marketing" tabindex="-1">Vai Doe Studio atrod un kas to atrod?</h2>
       <p class="lead">Divi skati vienai mārketinga mapei. GEO7 pārbauda, vai MI asistenti iesaka studiju. Analītika apvieno vietnes, meklēšanas un reklāmu skaitļus vienā nedēļas pārskatā.</p>
 
       <div class="subtabs" role="group" aria-label="Mārketinga skati">
@@ -1237,7 +1246,7 @@ html:not(.js) .pws+.pws{margin-top:16px}
       </div>
 
       <div class="subpanel" data-sub="geo7">
-      <p class="lead">Reizi mēnesī tos pašus piecus pircēju jautājumus uzdod tiem pašiem pieciem MI asistentiem. Trīs atbild automātiski caur API; divu atbildes Nora ievieto pati. Rezultāts rāda, kur Vale Studio iesaka un ko labot vispirms.</p>
+      <p class="lead">Reizi mēnesī tos pašus piecus pircēju jautājumus uzdod tiem pašiem pieciem MI asistentiem. Trīs atbild automātiski caur API; divu atbildes Džons ievieto pats. Rezultāts rāda, kur Doe Studio iesaka un ko labot vispirms.</p>
 
       <div class="stats">
         <div class="stat hero"><span class="label">Novembris · 1. nov.</span><b>17%</b><span>ieteikta 4 no 24 atbildēm</span></div>
@@ -1250,7 +1259,7 @@ html:not(.js) .pws+.pws{margin-top:16px}
         <p class="label">Pieci jautājumi × pieci asistenti · novembris</p>
         <div class="matrix-scroll" tabindex="0" aria-label="GEO7 rezultāti, mazā ekrānā ritināmi sānis">
           <table class="matrix">
-            <caption class="sr">Vai katrs MI asistents novembrī ieteica Vale Studio katrā jautājumā</caption>
+            <caption class="sr">Vai katrs MI asistents novembrī ieteica Doe Studio katrā jautājumā</caption>
             <thead>
               <tr>
                 <th scope="col">Pircēja jautājums</th>
@@ -1387,12 +1396,12 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
 @media (max-width:480px){.an .an-strip{margin-top:-12px}.an .an-x span{font-size:11.5px}}
 </style>
 <div class="an">
-  <p class="lead">Viens nedēļas pārskats par vietni, meklēšanu un reklāmām. Pirmdienās 07.30 rīta aplis savāc tikai lasāmus eksportus: Google Analytics 4, Search Console, Google Ads un Meta Ads nāk caur savienojumiem, kas neko nevar mainīt. ChatGPT Ads savienojuma nav, tāpēc Nora ievieto eksportu pati. Zemāk: pēdējās četras pilnās nedēļas, 19. okt. – 15. nov., salīdzinātas ar iepriekšējām četrām.</p>
+  <p class="lead">Viens nedēļas pārskats par vietni, meklēšanu un reklāmām. Pirmdienās 07.30 rīta aplis savāc tikai lasāmus eksportus: Google Analytics 4, Search Console, Google Ads un Meta Ads nāk caur savienojumiem, kas neko nevar mainīt. ChatGPT Ads savienojuma nav, tāpēc Džons ievieto eksportu pats. Zemāk: pēdējās četras pilnās nedēļas, 19. okt. – 15. nov., salīdzinātas ar iepriekšējām četrām.</p>
 
   <div class="strip an-strip">
     <span class="st ok">Savākts pirmdien, 16. nov., 07.30</span>
     <span class="st ok">4 avoti automātiski, tikai lasīšana</span>
-    <span class="st info">1 avotu ievieto Nora: ChatGPT Ads</span>
+    <span class="st info">1 avotu ievieto Džons: ChatGPT Ads</span>
   </div>
 
   <div class="stats">
@@ -1452,7 +1461,7 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
     </div>
 
     <div class="card an-findings">
-      <p class="label">Ko tas pasaka Norai</p>
+      <p class="label">Ko tas pasaka Džonam</p>
       <ol class="list">
         <li><span class="n">1</span><span class="t">MI asistenti sākuši sūtīt apmeklētājus. Saites MI atbildēs atnesa 47 apmeklējumus (iepriekš 12), pārsvarā uz Brightwater projekta aprakstu, ko GEO7 atrada citētu. Divi no četriem tiešajiem un ieteikumu pieteikumiem to pieminēja.<small>Nākamais solis — otrs projekta apraksts · vietnes darbs atsākas 1. dec.</small></span></li>
         <li><span class="n">2</span><span class="t">Meklēšana ir stabilākais kanāls: 478 klikšķi, +16%, un 5 no 15 pieteikumiem. GEO7 ieteiktā skaidrā pakalpojumu lapa palīdzētu arī meklēšanā.<small>Tā pati vietnes atsākšana · 1. dec.</small></span></li>
@@ -1495,7 +1504,7 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
             <td><span class="st ok">Darbojas limita ietvaros</span></td>
           </tr>
           <tr>
-            <th scope="row"><span class="an-src"><span class="logo lettermark">GPT</span><span><b>ChatGPT Ads</b><span class="an-how">manuāli · ievieto Nora</span></span></span></th>
+            <th scope="row"><span class="an-src"><span class="logo lettermark">GPT</span><span><b>ChatGPT Ads</b><span class="an-how">manuāli · ievieto Džons</span></span></span></th>
             <td>Reklāmas ChatGPT atbildēs: parādīšanās, klikšķi, limita daļa</td>
             <td>Kopš 26. okt. · 3 100 parādīšanās · 51 klikšķis · 17% limita</td>
             <td class="an-num" data-label="Site visits"><b>46</b><span class="an-was">jauns</span></td>
@@ -1532,8 +1541,8 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
     <p class="an-note">Kanālu rindas summā sakrīt ar Google Analytics rindu: 520 + 164 + 46 + 88 + 136 + 298 = 1 252 apmeklējumi un 5 + 3 + 1 + 0 + 2 + 4 = 15 pieteikumi. Search Console skaita tikai Google, tāpēc 478 klikšķi ir mazāk nekā 520 apmeklējumi no visām meklētājprogrammām. Reklāmu budžets ir tikai daļa no mēneša limita: 41% + 17% + 13% = 71%.</p>
   </div>
 
-  <p class="rule"><b>Vadības centrs rāda skaitļus; lēmumi nonāk uzdevumos.</b> Šeit nevar mainīt kampaņas. Kad skaitlis prasa rīcību, Nora izlemj, un lēmums kļūst par uzdevumu attiecīgajā projektā ar atbildīgo un datumu. Tā 9. novembrī apturēja Meta Ads.</p>
-  <p class="how"><b>No kurienes tas nāk.</b> <span class="mono">02-memory/marketing/analytics.md</span> glabā avotus un to savākšanas kārtību, nedēļas un kanālu tabulas un secinājumus. Rīta aplis pirmdienās to atjauno no tikai lasāmiem eksportiem un Noras ievietotā ChatGPT Ads faila. Nauda paliek reklāmu kontos un grāmatvedībā: tēriņi redzami tikai kā daļa no mēneša limita, rezultāti — kā klikšķi uz pieteikumu.</p>
+  <p class="rule"><b>Vadības centrs rāda skaitļus; lēmumi nonāk uzdevumos.</b> Šeit nevar mainīt kampaņas. Kad skaitlis prasa rīcību, Džons izlemj, un lēmums kļūst par uzdevumu attiecīgajā projektā ar atbildīgo un datumu. Tā 9. novembrī apturēja Meta Ads.</p>
+  <p class="how"><b>No kurienes tas nāk.</b> <span class="mono">02-memory/marketing/analytics.md</span> glabā avotus un to savākšanas kārtību, nedēļas un kanālu tabulas un secinājumus. Rīta aplis pirmdienās to atjauno no tikai lasāmiem eksportiem un Džona ievietotā ChatGPT Ads faila. Nauda paliek reklāmu kontos un grāmatvedībā: tēriņi redzami tikai kā daļa no mēneša limita, rezultāti — kā klikšķi uz pieteikumu.</p>
 </div>
       </div>
     <div class="protocols"><span>Turpini ar</span><a href="https://github.com/arete-aios/aios/blob/main/skills/ads7/SKILL.md" target="_blank" rel="noopener noreferrer">ads7</a><a href="https://github.com/arete-aios/aios/blob/main/skills/focus7/SKILL.md" target="_blank" rel="noopener noreferrer">focus7</a></div></section>
@@ -1541,18 +1550,32 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
 <section class="panel" id="finance" aria-labelledby="h-finance">
 <div class="section-head"><p class="eyebrow">07 / Finanses · piemērs</p><div class="section-actions"><button type="button" data-copy-scope="view">Kopēt šo skatu</button><a href="https://github.com/arete-aios/aios/blob/main/skills/cc7/references/finance.md" target="_blank" rel="noopener noreferrer">GitHub · cc7 ↗</a></div></div>
 <h2 id="h-finance" tabindex="-1">Kas saņemts, kas samaksāts, kas jāizlemj</h2>
-<p class="lead">Neliels Vale Studio finanšu pārskats. Naudas plūsma ir par pēdējo pilno mēnesi; neapmaksātajiem rēķiniem ir atsevišķs datums. Visas summas ir izdomātas.</p>
-<div class="strip"><span class="st info">2026. gada oktobris · pilns mēnesis</span><span class="st ok">Piemēra pārbaude · 16.11.2026.</span><span class="st warn">1 kavēts rēķins gaida Noru</span></div>
+<p class="lead">Neliels Doe Studio finanšu pārskats. Naudas plūsma ir par pēdējo pilno mēnesi; neapmaksātajiem rēķiniem ir atsevišķs datums. Visas summas ir izdomātas.</p>
+<div class="strip"><span class="st info">2026. gada oktobris · pilns mēnesis</span><span class="st ok">Piemēra pārbaude · 16.11.2026.</span><span class="st warn">1 kavēts rēķins gaida Džonu</span></div>
 <div class="fin-kpis"><div class="card fin-kpi"><p class="label">Saņemtā nauda</p><b>12 400 €</b><p>Oktobris · pilns mēnesis</p></div><div class="card fin-kpi"><p class="label">Samaksātā nauda</p><b>7 300 €</b><p>Tas pats periods · visas kategorijas</p></div><div class="card fin-kpi"><p class="label">Neto naudas plūsma</p><b>+5 100 €</b><p>Saņemts mīnus samaksāts · ne peļņa</p></div><div class="card fin-kpi"><p class="label">Neapmaksāti rēķini</p><b>3 800 €</b><p>3 rēķini · uz 17. novembri</p></div></div>
 <div class="grid g2" style="margin-top:16px"><article class="card"><p class="label">Naudas kustība · trīs pilni mēneši</p><h3>Saņemtais un samaksātais atsevišķi</h3><div class="fin-trend" aria-hidden="true"><div class="fin-month"><b>Augusts</b><div class="fin-bars"><div><span>Saņemts</span><i style="width:61.42857142857143%"></i><em>8 600 €</em></div><div><span>Samaksāts</span><i class="paid" style="width:43.57142857142857%"></i><em>6 100 €</em></div></div></div><div class="fin-month"><b>Septembris</b><div class="fin-bars"><div><span>Saņemts</span><i style="width:67.14285714285714%"></i><em>9 400 €</em></div><div><span>Samaksāts</span><i class="paid" style="width:48.57142857142857%"></i><em>6 800 €</em></div></div></div><div class="fin-month"><b>Oktobris</b><div class="fin-bars"><div><span>Saņemts</span><i style="width:88.57142857142857%"></i><em>12 400 €</em></div><div><span>Samaksāts</span><i class="paid" style="width:52.142857142857146%"></i><em>7 300 €</em></div></div></div></div><p class="fin-caption">Joslu mērogs: 14 000 €. Visi skaitļi ir tabulā.</p><details><summary>Rādīt naudas plūsmas tabulu</summary><div class="fin-table"><table><caption>Izdomāta naudas plūsma · EUR</caption><thead><tr><th>Mēnesis</th><th>Saņemts</th><th>Samaksāts</th><th>Neto</th></tr></thead><tbody><tr><th scope="row">Augusts</th><td>8 600 €</td><td>6 100 €</td><td>+2 500 €</td></tr><tr><th scope="row">Septembris</th><td>9 400 €</td><td>6 800 €</td><td>+2 600 €</td></tr><tr><th scope="row">Oktobris</th><td>12 400 €</td><td>7 300 €</td><td>+5 100 €</td></tr></tbody></table></div></details></article>
 <article class="card"><p class="label">Rēķinu vecums · uz 17.11.2026.</p><h3>Rēķins vēl nav saņemta nauda</h3><ul class="fin-aging"><li><span>Noteiktajā termiņā<small>2 rēķini</small></span><b>3 200 €</b></li><li><span>Kavēts 1–30 dienas<small>1 rēķins</small></span><b>600 €</b></li><li><span>Kavēts vairāk par 30 dienām<small>0 rēķinu</small></span><b>0 €</b></li></ul><p class="fin-total">Kopā neapmaksāts<b>3 800 €</b></p><p class="fin-caption">Kavējumu nosaka pēc saskaņotā apmaksas termiņa, ne rēķina izrakstīšanas dienas.</p></article></div>
-<div class="grid g2" style="margin-top:16px"><article class="card"><p class="label">Nākamais noderīgais lēmums</p><h3>Pārskatīt 600 € atgādinājumu</h3><p>Nora pārbauda rēķinu un sagatavoto atgādinājumu. Nosūtīšana joprojām ir viņas lēmums; uzdevums paliek HH-13 esošajā projektā.</p><a class="fin-link" href="/lv/my/cc-demo/work" data-view="work">Atvērt uzdevumu skatu →</a></article>
-<article class="card"><p class="label">Avots un robeža</p><h3>Apstiprināts kopsavilkums bez bankas pieslēguma</h3><p>Šajā piemērā Nora apstiprina mēneša grāmatvedības kopsavilkumu. Bankas pirmdati paliek grāmatvedībā. Īstai sistēmai jāievēro tās īpašnieka privātuma kārtība; tā drīkst rādīt arī tikai saiti.</p></article></div>
+<div class="grid g2" style="margin-top:16px"><article class="card"><p class="label">Nākamais noderīgais lēmums</p><h3>Pārskatīt 600 € atgādinājumu</h3><p>Džons pārbauda rēķinu un sagatavoto atgādinājumu. Nosūtīšana joprojām ir viņa lēmums; uzdevums paliek HH-13 esošajā projektā.</p><a class="fin-link" href="/lv/my/cc-demo/work" data-view="work">Atvērt uzdevumu skatu →</a></article>
+<article class="card"><p class="label">Avots un robeža</p><h3>Apstiprināts kopsavilkums bez bankas pieslēguma</h3><p>Šajā piemērā Džons apstiprina mēneša grāmatvedības kopsavilkumu. Bankas pirmdati paliek grāmatvedībā. Īstai sistēmai jāievēro tās īpašnieka privātuma kārtība; tā drīkst rādīt arī tikai saiti.</p></article></div>
 <p class="how"><b>Izkārtojuma avots.</b> ERPNext maksājumu pārskats atdala maksājumus un rēķinu vecumu. Šis skats pielāgo ideju izdomātajai studijai; grāmatvedības pakalpojums netiek uzstādīts. <a href="https://github.com/frappe/erpnext/blob/develop/erpnext/accounts/accounts_dashboard/payments/payments.json" target="_blank" rel="noopener noreferrer">ERPNext · GitHub ↗</a></p>
 <div class="protocols"><span>Turpini ar</span><a href="https://github.com/arete-aios/aios/blob/main/skills/context7/SKILL.md" target="_blank" rel="noopener noreferrer">context7</a><a href="https://github.com/arete-aios/aios/blob/main/skills/exit7/SKILL.md" target="_blank" rel="noopener noreferrer">exit7</a></div></section>
+<section class="panel" id="radar" aria-labelledby="h-radar">
+<div class="section-head"><p class="eyebrow">08 / RADAR · piemērs</p><div class="section-actions"><button type="button" data-copy-scope="view">Kopēt šo skatu</button><a href="https://github.com/arete-aios/aios/blob/main/skills/cc7/references/radar.md" target="_blank" rel="noopener noreferrer">GitHub · cc7 radar ↗</a></div></div>
+<h2 id="h-radar" tabindex="-1">Šonedēļ vērts apskatīt</h2>
+<p class="lead">Reizi nedēļā Džona MI pārskata viņa izvēlētos avotus un meklē četru veidu iespējas: apmaksātu darbu, partnerības, uzstāšanās iespējas un kopienas, kurām pievienoties. Katrai atrastajai iespējai ir atbilstības vērtējums, iemesls un viena lieta, kas jāpārbauda. Izlemj Džons; nekas netiek automātiski pieteikts, nosūtīts vai pievienots.</p>
+<div class="strip"><span class="st info">47. nedēļa · pārskatīts pirmdien, 16. nov.</span><span class="st ok">atrastas 31 · rādītas 7</span><span class="st warn">2 gaida Džona lēmumu</span></div>
+<div class="radar-counts"><div class="card radar-count"><p class="label">Darbi un projekti</p><b>2</b><p>1 ļoti atbilst</p></div><div class="card radar-count"><p class="label">Partnerības</p><b>1</b><p>1 ļoti atbilst</p></div><div class="card radar-count"><p class="label">Uzstāšanās</p><b>2</b><p>1 ļoti atbilst</p></div><div class="card radar-count"><p class="label">Kopienas un pasākumi</p><b>2</b><p>0 ļoti atbilst</p></div></div>
+<ol class="radar-list" aria-label="Iespējas pēc atbilstības"><li class="card radar-item" data-stream="speaking"><div class="radar-fit"><b>88%</b><span>atbilst</span><i aria-hidden="true"><i style="width:88%"></i></i></div><div class="radar-body"><p class="radar-meta"><span class="tag">Uzstāšanās</span><span>Konferences pieteikumu lapa · termiņš 5. dec. · pieteikts 16. nov.</span></p><h3>Runātāju pieteikšanās: reģionāla UX konference · 25 minūšu praktiķu runas</h3><p><b>Kāpēc der:</b> Viņa ieraksts “Trīs jautājumi, ko uzdodu katrā ievadintervijā” jau ir gatavs runas plāns.</p><p><b>Vispirms pārbaudīt:</b> Ceļa izdevumi netiek segti; jāizlemj, vai brauciens atmaksājas.</p></div><span class="st warn radar-st">Pieteikts, gaida</span></li><li class="card radar-item" data-stream="work"><div class="radar-fit"><b>86%</b><span>atbilst</span><i aria-hidden="true"><i style="width:86%"></i></i></div><div class="radar-body"><p class="radar-meta"><span class="tag">Darbi un projekti</span><span>Darba brīdinājuma e-pasts · publicēts 13. nov. · attālināti, ES darba laiks</span></p><h3>Daļslodzes pētījumu vadītājs veselības tehnoloģiju uzņēmumā · divas dienas nedēļā</h3><p><b>Kāpēc der:</b> Ievadintervijas un veselības nozares klienti ir tieši viņa pēdējā laika darbs.</p><p><b>Vispirms pārbaudīt:</b> Dienas likme nav norādīta. Pajautāt pirms pieteikšanās.</p></div><span class="st info radar-st">Vērts apskatīt</span></li><li class="card radar-item" data-stream="partners"><div class="radar-fit"><b>78%</b><span>atbilst</span><i aria-hidden="true"><i style="width:78%"></i></i></div><div class="radar-body"><p class="radar-meta"><span class="tag">Partnerības</span><span>Northline kopienas čats · 12. nov. · iepazīstināja Lena Ortiz</span></p><h3>Divu cilvēku tīmekļa studija meklē pētījumu partneri klientu izpētei</h3><p><b>Kāpēc der:</b> Viņi būvē, Džons pēta; ieteikumi var nākt abos virzienos.</p><p><b>Vispirms pārbaudīt:</b> Kam pieder attiecības ar klientu un kā tiek dalīta samaksa.</p></div><span class="st info radar-st">Vērts apskatīt</span></li><li class="card radar-item" data-stream="communities"><div class="radar-fit"><b>74%</b><span>atbilst</span><i aria-hidden="true"><i style="width:74%"></i></i></div><div class="radar-body"><p class="radar-meta"><span class="tag">Kopienas un pasākumi</span><span>Tikšanās lapa · nākamā 3. dec.</span></p><h3>Ikmēneša produktu pētījumu tikšanās · tiešsaistē · aicina 10 minūšu gadījumu stāstus</h3><p><b>Kāpēc der:</b> Pastāvīga kolēģu grupa vienu vakaru mēnesī.</p><p><b>Vispirms pārbaudīt:</b> Vai sesijas ieraksta; klientu piemēriem jāpaliek anonīmiem.</p></div><span class="st  radar-st">Jauns</span></li><li class="card radar-item" data-stream="work"><div class="radar-fit"><b>72%</b><span>atbilst</span><i aria-hidden="true"><i style="width:72%"></i></i></div><div class="radar-body"><p class="radar-meta"><span class="tag">Darbi un projekti</span><span>Saglabāta meklēšana ārštata platformā · publicēts 15. nov. · fiksēta cena</span></p><h3>Ārštata lietojamības pētījums pirkuma plūsmai · trīs nedēļas</h3><p><b>Kāpēc der:</b> Skaidrs apjoms; iederas decembrī pēc Harbor Health prezentācijas.</p><p><b>Vispirms pārbaudīt:</b> Kas atlasa testa dalībniekus, un klienta iepriekšējās atsauksmes.</p></div><span class="st  radar-st">Jauns</span></li><li class="card radar-item" data-stream="communities"><div class="radar-fit"><b>69%</b><span>atbilst</span><i aria-hidden="true"><i style="width:69%"></i></i></div><div class="radar-body"><p class="radar-meta"><span class="tag">Kopienas un pasākumi</span><span>Inkubatora jaunumu vēstule · pasākums 21.01.2027.</span></p><h3>Veselības tehnoloģiju demo diena · aicina brīvprātīgos mentorus</h3><p><b>Kāpēc der:</b> Iespēja satikt agrīnu veselības jaunuzņēmumu dibinātājus jomā, kurā strādā Tomás Ruiz.</p><p><b>Vispirms pārbaudīt:</b> Jāatvēl pusdiena; pārdošanas prezentācijas nav atļautas.</p></div><span class="st  radar-st">Jauns</span></li><li class="card radar-item" data-stream="speaking"><div class="radar-fit"><b>61%</b><span>atbilst</span><i aria-hidden="true"><i style="width:61%"></i></i></div><div class="radar-body"><p class="radar-meta"><span class="tag">Uzstāšanās</span><span>Vadītāja LinkedIn ieraksts · 10. nov.</span></p><h3>Podkāsta viesis: pētījumu darba organizācija mazās produktu komandās</h3><p><b>Kāpēc der:</b> Laba auditorija, maz laika.</p><p><b>Vispirms pārbaudīt:</b> Vai tēma nepārklājas ar janvāra Design Notes epizodi kopā ar Mei Chen.</p></div><span class="st  radar-st">Jauns</span></li></ol>
+<p class="radar-note">Zem 50 % paliek paslēpts, ja vien Džons nepalūdz. Paslēptas arī 3 iespējas ar atzīmi “Nav man”; tās precizē nākamās nedēļas kritērijus.</p>
+<div class="grid g2" style="margin-top:16px"><article class="card"><p class="label">Džona kritēriji</p><h3>Noteikumus nosaka viņš, MI tos piemēro</h3><ul class="radar-rules"><li><b>Darbs:</b> lietotāju pētījumi, ievadīšana un pakalpojumu dizains; līdz divām dienām nedēļā; no 650 € dienā; attālināti vai līdz divu stundu brauciena attālumā.</li><li><b>Partnerības:</b> papildinošas prasmes, konkrēts klienta gadījums un skaidrs sadalījums.</li><li><b>Uzstāšanās:</b> praktiķu runas, ne apmaksātas sponsoru vietas; ne vairāk kā viens brauciens mēnesī.</li><li><b>Kopienas:</b> aktīvas grupas ar reālu datumu nākamajās astoņās nedēļās.</li></ul><p class="radar-caption">Viņa izvēlētie avoti: divi darba brīdinājumu e-pasti, viena saglabāta ārštata meklēšana, konferenču runātāju pieteikumu saraksti, Northline kopienas čats un trīs jaunumu vēstules.</p></article>
+<article class="card"><p class="label">Pēdējās četras nedēļas</p><h3>Kura plūsma tiešām dod rezultātu</h3><div class="fin-table"><table class="radar-weeks"><caption>Izdomāti nedēļas pārskatu kopsavilkumi</caption><thead><tr><th>Plūsma</th><th>Atrasts</th><th>Vērts apskatīt</th><th>Pieteikts</th><th>Rezultāts</th></tr></thead><tbody><tr><th scope="row">Darbi un projekti</th><td>58</td><td>6</td><td>2</td><td>1 saruna norunāta</td></tr><tr><th scope="row">Partnerības</th><td>9</td><td>2</td><td>1</td><td>Gaida</td></tr><tr><th scope="row">Uzstāšanās</th><td>16</td><td>5</td><td>3</td><td>1 runa apstiprināta</td></tr><tr><th scope="row">Kopienas un pasākumi</th><td>12</td><td>4</td><td>2</td><td>Iestājies 1 grupā</td></tr></tbody></table></div><p class="radar-caption">Pagaidām visvairāk rezultātu dod uzstāšanās, bet darba brīdinājumi dod visvairāk trokšņa. Statusus atzīmē Džons: Jauns · Vērts apskatīt · Pieteikts, gaida · Atteikts · Izdevās · Nav man.</p></article></div>
+<div class="grid g2" style="margin-top:16px"><article class="card"><p class="label">Robeža</p><h3>MI atrod un paskaidro. Rīkojas Džons.</h3><p>MI lasa tikai norādītos avotus, kad Džons palūdz vai iknedēļas pārskatā, un katrai iespējai saglabā saiti un datumu. Tas nepiesakās, nesūta ziņas, nereģistrējas, nepievienojas grupām, neveido brīdinājumus un nemaina profilus. Jaunam avotam vajag viņa piekrišanu.</p></article>
+<article class="card"><p class="label">Pēc “jā”</p><h3>Laba iespēja nonāk esošajā sistēmā</h3><p>Pieņemta iespēja kļūst par projekta kartīti vai cilvēku sadaļā Cilvēki, ar nākamo darbību sadaļā Darbs. Pats RADAR saraksts paliek iknedēļas īsais saraksts, ne otrs uzdevumu saraksts.</p><a class="fin-link" href="/lv/my/cc-demo/people" data-view="people">Atvērt Cilvēkus →</a></article></div>
+<p class="how"><b>No kurienes tas nāk.</b> Kritēriji un avoti ir <span class="mono">02-memory/growth/radar/_radar-CONTEXT.md</span>; katras nedēļas saraksts ar saitēm, datumiem un Džona atzīmēm ir <span class="mono">02-memory/growth/radar/2026-w47.md</span>. Visas šeit redzamās iespējas ir izdomātas.</p>
+<div class="protocols"><span>Turpini ar</span><a href="https://github.com/arete-aios/aios/blob/main/skills/warm7/SKILL.md" target="_blank" rel="noopener noreferrer">warm7</a><a href="https://github.com/arete-aios/aios/blob/main/skills/focus7/SKILL.md" target="_blank" rel="noopener noreferrer">focus7</a></div></section>
     <!-- 07 SKILLS -->
     <section class="panel" id="skills" aria-labelledby="h-skills">
-      <div class="section-head"><p class="eyebrow">08 / Prasmes</p><div class="section-actions"><button type="button" data-copy-scope="view">Kopēt šo skatu</button><a href="https://github.com/arete-aios/aios/blob/main/skills/skills7/SKILL.md" target="_blank" rel="noopener noreferrer">GitHub · skills7 ↗</a></div></div>
+      <div class="section-head"><p class="eyebrow">09 / Prasmes</p><div class="section-actions"><button type="button" data-copy-scope="view">Kopēt šo skatu</button><a href="https://github.com/arete-aios/aios/blob/main/skills/skills7/SKILL.md" target="_blank" rel="noopener noreferrer">GitHub · skills7 ↗</a></div></div>
       <h2 id="h-skills" tabindex="-1">Metodes, ko MI ievēro un pieraksta vienreiz</h2>
       <p class="lead">Prasme ir Markdown fails: kad to lietot, kādi ir soļi un ko nozīmē “pabeigts”. Jebkurš MI, kas lasa mapi, var tai sekot, un atkārtots darbs notiek vienādi. Bibliotēkas prasmes glabājas GitHub, un tās var uzstādīt ikviens.</p>
 
@@ -1571,9 +1594,9 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
         <article class="skill"><span class="chip" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/><path d="M8.5 11h5M11 8.5v5"/></svg></span><div class="skill-body"><div class="skill-top"><span class="code">GEO7</span><span class="st ok">1. nov.</span></div><h3>Vai MI asistenti iesaka?</h3><p>Pieci pircēju jautājumi, pieci asistenti reizi mēnesī, ar skaidru uzlabojumu secību.</p><span class="runs">katra mēneša 1. datumā</span><div class="skill-links"><a href="/lv/my/cc-demo/skills/geo7" data-view="skills/geo7">Pilns apraksts</a><a href="/lv/my/cc-demo/marketing" data-view="marketing">Skats: Mārketings</a><a href="https://github.com/arete-aios/aios/tree/main/skills/geo7">GEO7 vietnē GitHub</a></div></div></article>
       </div>
 
-      <p class="subhead">Noras rakstītas</p>
+      <p class="subhead">Džona rakstītas</p>
       <div class="skills">
-        <article class="skill own"><span class="chip" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 11h4v6H4v-4c0-3 1-5 4-6M15 11h4v6h-5v-4c0-3 1-5 4-6"/></svg></span><div class="skill-body"><div class="skill-top"><span class="code">INTERVIEW</span><span class="st ok">vakar</span></div><h3>Interviju apkopojums</h3><p>Tēmas ar precīziem citātiem un skaitu. Septiņas pārbaudes pirms klients to redz.</p><span class="runs">Pēc pieprasījuma · Izpildītājs raksta, Pārbaudītājs pārskata</span><div class="skill-links"><span class="local">Tikai Noras mapē: <span class="mono">03-skills/interview-synthesis/SKILL.md</span></span></div></div></article>
+        <article class="skill own"><span class="chip" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 11h4v6H4v-4c0-3 1-5 4-6M15 11h4v6h-5v-4c0-3 1-5 4-6"/></svg></span><div class="skill-body"><div class="skill-top"><span class="code">INTERVIEW</span><span class="st ok">vakar</span></div><h3>Interviju apkopojums</h3><p>Tēmas ar precīziem citātiem un skaitu. Septiņas pārbaudes pirms klients to redz.</p><span class="runs">Pēc pieprasījuma · Izpildītājs raksta, Pārbaudītājs pārskata</span><div class="skill-links"><span class="local">Tikai Džona mapē: <span class="mono">03-skills/interview-synthesis/SKILL.md</span></span></div></div></article>
         <article class="skill next"><span class="chip" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h7M9 16h5"/></svg></span><div class="skill-body"><div class="skill-top"><span class="code">PROPOSAL</span><span class="st">vēl nav uzrakstīta</span></div><h3>Nākamā kandidāte</h3><p>Līdz šim divreiz darīts ar rokām. Pēc trešās reizes kļūs par prasmi.</p><span class="runs">No trūkstošo lietu sarakstiem</span></div></article>
         <article class="skill next"><span class="chip" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><div class="skill-body"><div class="skill-top"><span class="code">NEWSLETTER</span><span class="st">vēl nav uzrakstīta</span></div><h3>Pēc tam</h3><p>Numura uzmetums no piezīmēm, kas saglabātas kopš iepriekšējā numura.</p><span class="runs">No trūkstošo lietu sarakstiem</span></div></article>
       </div>
@@ -1668,17 +1691,17 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
 }
       </style>
       <div class="c7-top">
-        <div class="section-head"><p class="eyebrow">08 / Prasmes · COMMS7</p><div class="section-actions"><button type="button" data-copy-scope="view">Kopēt šo skatu</button><a href="https://github.com/arete-aios/aios/blob/main/skills/comms7/SKILL.md" target="_blank" rel="noopener noreferrer">GitHub · comms7 ↗</a></div></div>
+        <div class="section-head"><p class="eyebrow">09 / Prasmes · COMMS7</p><div class="section-actions"><button type="button" data-copy-scope="view">Kopēt šo skatu</button><a href="https://github.com/arete-aios/aios/blob/main/skills/comms7/SKILL.md" target="_blank" rel="noopener noreferrer">GitHub · comms7 ↗</a></div></div>
         <a class="c7-back" href="/lv/my/cc-demo/skills" data-view="skills">← Visas prasmes</a>
       </div>
       <h2 id="h-skill-comms7" tabindex="-1">Kam jāatbild un ko tu gaidi</h2>
-      <p class="lead">COMMS7 ir rakstiska metode. Katru rītu tā lasa Noras izvēlētos kanālus, sadala sarunas pēc nākamā atbildīgā, gatavo pieprasītās atbildes un pārbauda īsu uzraugāmo ierakstu sarakstu. MI lasa un gatavo melnrakstus; Nora izlemj un nosūta.</p>
+      <p class="lead">COMMS7 ir rakstiska metode. Katru rītu tā lasa Džona izvēlētos kanālus, sadala sarunas pēc nākamā atbildīgā, gatavo pieprasītās atbildes un pārbauda īsu uzraugāmo ierakstu sarakstu. MI lasa un gatavo melnrakstus; Džons izlemj un nosūta.</p>
       <p class="c7-gh"><a href="https://github.com/arete-aios/aios/tree/main/skills/comms7">Atvērt COMMS7 vietnē GitHub</a></p>
 
       <div class="c7-facts">
-        <div class="card"><p class="label">Kad darbojas</p><p class="c7-fact">Katru rītu, pilns pārskats pirmdienās</p><p>Izpildītāja 08.05 rīta aplī vai kad Nora ieraksta COMMS7.</p></div>
-        <div class="card"><p class="label">Kas dara</p><p class="c7-fact">Tu izlem · MI lasa un gatavo melnrakstus · kods savāc</p><p>Šajā piemērā “tu” ir Nora.</p></div>
-        <div class="card"><p class="label">Ko nekad nedara</p><p class="c7-fact">Nesūta, nepublicē un nedzēš</p><p>Melnraksts paliek melnraksts, līdz Nora to nosūta. Viņas vārdā neko nepieņem un neapsola.</p></div>
+        <div class="card"><p class="label">Kad darbojas</p><p class="c7-fact">Katru rītu, pilns pārskats pirmdienās</p><p>Izpildītāja 08.05 rīta aplī vai kad Džons ieraksta COMMS7.</p></div>
+        <div class="card"><p class="label">Kas dara</p><p class="c7-fact">Tu izlem · MI lasa un gatavo melnrakstus · kods savāc</p><p>Šajā piemērā “tu” ir Džons.</p></div>
+        <div class="card"><p class="label">Ko nekad nedara</p><p class="c7-fact">Nesūta, nepublicē un nedzēš</p><p>Melnraksts paliek melnraksts, līdz Džons to nosūta. Viņa vārdā neko nepieņem un neapsola.</p></div>
       </div>
 
       <div class="card c7-goal">
@@ -1687,13 +1710,13 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
       </div>
 
       <h3 class="c7-h">Kā notiek viens pārskats</h3>
-      <p class="c7-sub">Septiņi soļi no pieprasījuma līdz saglabātiem lēmumiem. Divi ir Noras, viens ir parasts kods, bet pa vidu MI lasa, kārto un gatavo melnrakstus.</p>
+      <p class="c7-sub">Septiņi soļi no pieprasījuma līdz saglabātiem lēmumiem. Divi ir Džona, viens ir parasts kods, bet pa vidu MI lasa, kārto un gatavo melnrakstus.</p>
       <div class="card">
         <ul class="c7-legend" aria-label="Apzīmējumi">
           <li><svg viewBox="0 0 28 16" aria-hidden="true" focusable="false"><rect class="c7-you" x="1" y="1" width="26" height="14" rx="7"/></svg>Tu: noapaļots, biezs ietvars</li>
           <li><svg viewBox="0 0 28 16" aria-hidden="true" focusable="false"><rect class="c7-ai" x="1" y="1" width="26" height="14" rx="3"/></svg>MI: tonēts laukums</li>
           <li><svg viewBox="0 0 28 16" aria-hidden="true" focusable="false"><rect class="c7-code" x="1" y="1" width="26" height="14" rx="1"/></svg>Kods: pārtraukts ietvars</li>
-          <li><svg viewBox="0 0 28 16" aria-hidden="true" focusable="false"><path class="c7-file" d="M1 1H21L27 7V15H1Z"/></svg>Fails Noras mapē</li>
+          <li><svg viewBox="0 0 28 16" aria-hidden="true" focusable="false"><path class="c7-file" d="M1 1H21L27 7V15H1Z"/></svg>Fails Džona mapē</li>
           <li><svg viewBox="0 0 28 16" aria-hidden="true" focusable="false"><path class="c7-loop" d="M1 8H21"/><path class="c7-loop-head" d="M20 3.5L27 8L20 12.5Z"/></svg>Pārtraukta bulta: atkārtojas</li>
           <li><svg viewBox="0 0 28 16" aria-hidden="true" focusable="false"><path class="c7-link" d="M1 8H27"/></svg>Punktēta līnija: lasa vai raksta</li>
         </ul>
@@ -1718,7 +1741,7 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
 
             <rect class="c7-info" x="304" y="36" width="428" height="104" rx="12"/>
             <text class="c7-boxlabel" x="318" y="62">DIVI DARBI VIENĀ APLĪ</text>
-            <text class="c7-txt" x="318" y="90"><tspan class="c7-strong">Sarunas</tspan> · kam jārīkojas: Norai, viņiem vai nevienam?</text>
+            <text class="c7-txt" x="318" y="90"><tspan class="c7-strong">Sarunas</tspan> · kam jārīkojas: Džonam, viņiem vai nevienam?</text>
             <text class="c7-txt" x="318" y="116"><tspan class="c7-strong">Uzraugāmie ieraksti</tspan> · vai ir jautājums, uz ko vērts atbildēt?</text>
 
             <rect class="c7-info" x="754" y="36" width="278" height="104" rx="12"/>
@@ -1847,9 +1870,9 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
           <li><span class="n">01</span><span class="t"><span class="c7-step-head"><b>Pieprasi COMMS7</b><span class="c7-who">Tu · čats vai 08.05 aplis</span></span><small>Ieraksti COMMS7 un pasaki tvērumu: visu, tikai atbildes vai vienu sarunu. Darba dienās pieprasījumu sāk Izpildītāja rīta aplis; pirmdienās notiek pilns pārskats.</small></span></li>
           <li><span class="n">02</span><span class="t"><span class="c7-step-head"><b>Nosaka tvērumu</b><span class="c7-who">MI · lasa iestatījumus</span></span><small>MI ņem avotus, lasāmo periodu un uzraugāmo ierakstu sarakstu no <span class="mono">_comms-CONTEXT.md</span>un atvērtās lietas no iepriekšējā pārskata. Jautā tikai to, kas mainītu šodienas pārskatu.</small></span></li>
           <li><span class="n">03</span><span class="t"><span class="c7-step-head"><b>Savāc ziņas</b><span class="c7-who">Kods · pieci kanāli</span></span><small>Savienojumi saņem pēdējo 14 dienu ziņas (kopienas čatā — 7) un jaunus komentārus uzraudzītajos ierakstos. Neliels skripts noņem dublikātus un atzīmē jauno kopš iepriekšējā pārskata; ziņas nozīmi tas nevērtē.</small></span></li>
-          <li><span class="n">04</span><span class="t"><span class="c7-step-head"><b>Lasa un sakārto</b><span class="c7-who">MI · veselas sarunas</span></span><small>MI lasa visu sarunu, arī Noras jau nosūtīto, un piešķir vienu statusu: jāatbild, gaida viņu atbildi, informācijai vai noslēgta. Uzraudzītajos ierakstos pārbauda jautājumus.</small></span></li>
-          <li><span class="n">05</span><span class="t"><span class="c7-step-head"><b>Parāda dažas svarīgākās lietas</b><span class="c7-who">MI · melnraksti, nav nosūtīti</span></span><small>Līdz piecām lietām: vispirms īsti termiņi, tad galvenais virziens un nedēļas projekti. Katrai ir pamatojums, nākamais solis un avots; Noras pieprasītās atbildes sagatavo un atstāj nenosūtītas.</small></span></li>
-          <li><span class="n">06</span><span class="t"><span class="c7-step-head"><b>Izlem un nosūta</b><span class="c7-who">Tu · pa vienai lietai</span></span><small>Katrai lietai Nora atbild, izdara, gaida, atliek vai izlaiž. Viņa nosūta un publicē pati; MI atjauno šo lietu un parāda nākamo.</small></span></li>
+          <li><span class="n">04</span><span class="t"><span class="c7-step-head"><b>Lasa un sakārto</b><span class="c7-who">MI · veselas sarunas</span></span><small>MI lasa visu sarunu, arī Džona jau nosūtīto, un piešķir vienu statusu: jāatbild, gaida viņu atbildi, informācijai vai noslēgta. Uzraudzītajos ierakstos pārbauda jautājumus.</small></span></li>
+          <li><span class="n">05</span><span class="t"><span class="c7-step-head"><b>Parāda dažas svarīgākās lietas</b><span class="c7-who">MI · melnraksti, nav nosūtīti</span></span><small>Līdz piecām lietām: vispirms īsti termiņi, tad galvenais virziens un nedēļas projekti. Katrai ir pamatojums, nākamais solis un avots; Džona pieprasītās atbildes sagatavo un atstāj nenosūtītas.</small></span></li>
+          <li><span class="n">06</span><span class="t"><span class="c7-step-head"><b>Izlem un nosūta</b><span class="c7-who">Tu · pa vienai lietai</span></span><small>Katrai lietai Džons atbild, izdara, gaida, atliek vai izlaiž. Viņš nosūta un publicē pats; MI atjauno šo lietu un parāda nākamo.</small></span></li>
           <li><span class="n">07</span><span class="t"><span class="c7-step-head"><b>Saglabā un noslēdz</b><span class="c7-who">MI · projektu faili</span></span><small>Katrs lēmums nonāk attiecīgā projekta failā, gaidāmajām lietām pievieno pārbaudes datumu. MI pārlasa failus un noslēdz ar EXIT7, lai rīt turpinātu no šīs vietas.</small></span></li>
         </ol>
       </div>
@@ -1860,21 +1883,21 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
         <div class="row"><dt>Kurš rīkojas nākamais</dt><dd>Katrai sarunai ir tieši viens statuss: jāatbild, gaida viņu atbildi, informācijai vai noslēgta.</dd></div>
         <div class="row"><dt>Vispirms termiņi</dt><dd>Vispirms īsti termiņi un sekas, tad galvenais virziens un nedēļas projekti. Nelasīto skaits un skaļas ziņas nenosaka secību; termiņus neizdomā.</dd></div>
         <div class="row"><dt>Atvērtie solījumi paliek atvērti</dt><dd>“Rīt atsūtīšu slaidus” joprojām ir atvērts pēc pateicības nosūtīšanas; klusums vai arhivēšana to nenoslēdz.</dd></div>
-        <div class="row"><dt>Melnraksts vēl nav atbilde</dt><dd>Nekas neskaitās atbildēts, kamēr Nora nav nosūtījusi. Ieteikts komentārs ir tikai melnraksts, līdz viņa to publicē vai izlaiž.</dd></div>
+        <div class="row"><dt>Melnraksts vēl nav atbilde</dt><dd>Nekas neskaitās atbildēts, kamēr Džons nav nosūtījis. Ieteikts komentārs ir tikai melnraksts, līdz viņš to publicē vai izlaiž.</dd></div>
         <div class="row"><dt>Pasaka, kas nav izlasīts</dt><dd>Ja kanālu nevar nolasīt, pārskats to pasaka, nevis min tā saturu.</dd></div>
       </dl>
 
-      <h3 class="c7-h">Noras mapē</h3>
-      <p class="c7-sub">Metode visiem ir vienāda. Noras izvēles ir divos īsos failos; šodienas aplis atstājis pierakstu, kas sakrīt ar Komunikācijas skatu.</p>
+      <h3 class="c7-h">Džona mapē</h3>
+      <p class="c7-sub">Metode visiem ir vienāda. Džona izvēles ir divos īsos failos; šodienas aplis atstājis pierakstu, kas sakrīt ar Komunikācijas skatu.</p>
       <div class="grid g2">
         <div class="card">
           <p class="label">Iestatījumi</p>
           <p class="path">02-memory/comms/_comms-CONTEXT.md</p>
           <dl class="c7-kv">
-            <dt>Avoti</dt><dd>Gmail, WhatsApp Business, Facebook lapa un kopienas čats; LinkedIn Noras atvērtā sesijā</dd>
+            <dt>Avoti</dt><dd>Gmail, WhatsApp Business, Facebook lapa un kopienas čats; LinkedIn Džona atvērtā sesijā</dd>
             <dt>Cik tālu atpakaļ</dt><dd>14 dienas, kopienas čats — 7; atvērtie solījumi neatkarīgi no vecuma</dd>
             <dt>Ritms</dt><dd>Katru rītu 08.05; pilns pārskats pirmdienās</dd>
-            <dt>Uzraugāmie ieraksti</dt><dd>Noras pēdējo 14 dienu ieraksti un sešu kontaktu ieraksti par izpēti, lietotāju ievadīšanu vai dizaina komandām</dd>
+            <dt>Uzraugāmie ieraksti</dt><dd>Džona pēdējo 14 dienu ieraksti un sešu kontaktu ieraksti par izpēti, lietotāju ievadīšanu vai dizaina komandām</dd>
           </dl>
         </div>
         <div class="card">
@@ -1885,7 +1908,7 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
             <li><span class="mini"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></span><span><b>WhatsApp Business</b> · lasa. Nevar nosūtīt.</span></li>
             <li><span class="mini"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></span><span><b>Facebook lapa</b> · lasa ziņas un komentārus. Nevar publicēt.</span></li>
             <li><span class="mini lettermark">#</span><span><b>Kopienas čats</b> · lasa #events un privātās ziņas.</span></li>
-            <li><span class="mini lettermark">in</span><span><b>LinkedIn</b> · lasa Noras atvērtā pārlūka sesijā. Neko nepublicē.</span></li>
+            <li><span class="mini lettermark">in</span><span><b>LinkedIn</b> · lasa Džona atvērtā pārlūka sesijā. Neko nepublicē.</span></li>
           </ul>
           <p class="c7-note">Secības izvēlei lasa arī <span class="mono">05-focus/north-star.md</span> un nedēļas fokusu, kā arī cilvēka failu mapē <span class="mono">02-memory/people/</span> tikai tad, ja sarunai tas nepieciešams.</p>
         </div>
@@ -1894,17 +1917,17 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
 <pre class="log"><b>08:05</b> lasīts: Gmail, WhatsApp, Facebook lapa, kopienas čats; fokuss un projektu faili
 <b>08:06</b> sakārtots: 3 jāatbild · 2 gaida viņu atbildi · 4 informācijai
 <b>08:06</b> 2 atbilžu melnraksti, nav nosūtīti: Priya (Harbor Health), Lena (Northline)
-<b>08:06</b> 1 ieteikta atbilde, Nora raksta pati: Tomás (LinkedIn, no pirmdienas pārskata)
+<b>08:06</b> 1 ieteikta atbilde, Džons raksta pats: Tomás (LinkedIn, no pirmdienas pārskata)
 <b>08:06</b> 4 uzraudzīti ieraksti: 1 jautājums LinkedIn, 1 Facebook lapā</pre>
           <p class="c7-note">Adas Kim atbilde par Brightwater apjomu paliek statusā “gaida viņu atbildi” līdz plānošanai 18. novembrī. 16. novembrī izlaists viens vispārīgs ieraksts, jo neatbilst galvenajam virzienam.</p>
         </div>
         <div class="card">
-          <p class="label">Ko Nora apstiprina</p>
+          <p class="label">Ko Džons apstiprina</p>
           <p><span class="st info">2 atbilžu melnraksti gaida apstiprinājumu</span></p>
           <ul class="c7-approve">
-            <li><b>Priya Shah</b> · apstiprina piektdienas prezentāciju 11.00, pēc tam pati pārvieto kalendāra ierakstu.</li>
+            <li><b>Priya Shah</b> · apstiprina piektdienas prezentāciju 11.00, pēc tam pats pārvieto kalendāra ierakstu.</li>
             <li><b>Lena Ortiz</b> · 40 krēsli, viens ekrāns, HDMI.</li>
-            <li><b>Tomás Ruiz</b> · šo Nora raksta pati un piedāvā divus laikus nākamnedēļ.</li>
+            <li><b>Tomás Ruiz</b> · šo Džons raksta pats un piedāvā divus laikus nākamnedēļ.</li>
             <li><b>Divas atbilžu sagataves</b> savos LinkedIn un Facebook ierakstos: publicēt, labot vai izlaist.</li>
             <li><b>Divi komentāri pēc izvēles</b> Priya un Tomás ierakstos: uzrakstīt vai izlaist.</li>
           </ul>
@@ -1920,7 +1943,7 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
         </div>
       </div>
 
-      <p class="how"><b>No kurienes tas nāk.</b> Metode ir publiskā COMMS7 prasme no bibliotēkas; <span class="mono">03-skills/_skills-CONTEXT.md</span> pieraksta tās avotu. Noras izvēles ir <span class="mono">02-memory/comms/_comms-CONTEXT.md</span> un savienojumi — <span class="mono">04-tools/_tools-CONTEXT.md</span>, tāpēc avota, lasāmā perioda vai uzraugāmo ierakstu maiņa nozīmē labot vienu no šiem failiem, nevis pašu prasmi.</p>
+      <p class="how"><b>No kurienes tas nāk.</b> Metode ir publiskā COMMS7 prasme no bibliotēkas; <span class="mono">03-skills/_skills-CONTEXT.md</span> pieraksta tās avotu. Džona izvēles ir <span class="mono">02-memory/comms/_comms-CONTEXT.md</span> un savienojumi — <span class="mono">04-tools/_tools-CONTEXT.md</span>, tāpēc avota, lasāmā perioda vai uzraugāmo ierakstu maiņa nozīmē labot vienu no šiem failiem, nevis pašu prasmi.</p>
     <div class="protocols"><span>Turpini ar</span><a href="https://github.com/arete-aios/aios/blob/main/skills/skills7/SKILL.md" target="_blank" rel="noopener noreferrer">skills7</a><a href="https://github.com/arete-aios/aios/blob/main/skills/meeting7/SKILL.md" target="_blank" rel="noopener noreferrer">meeting7</a></div></section>
 
 <section class="panel" id="skill-geo7" aria-labelledby="h-skill-geo7">
@@ -2023,17 +2046,17 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
   #skill-geo7 .card .g7-goal-t{font-size:17px}
 }
       </style>
-      <div class="section-head"><p class="eyebrow">08 / Prasmes · GEO7</p><div class="section-actions"><button type="button" data-copy-scope="view">Kopēt šo skatu</button><a href="https://github.com/arete-aios/aios/blob/main/skills/geo7/SKILL.md" target="_blank" rel="noopener noreferrer">GitHub · geo7 ↗</a></div></div>
+      <div class="section-head"><p class="eyebrow">09 / Prasmes · GEO7</p><div class="section-actions"><button type="button" data-copy-scope="view">Kopēt šo skatu</button><a href="https://github.com/arete-aios/aios/blob/main/skills/geo7/SKILL.md" target="_blank" rel="noopener noreferrer">GitHub · geo7 ↗</a></div></div>
       <p class="g7-back"><a href="/lv/my/cc-demo/skills" data-view="skills">← Visas prasmes</a></p>
-      <h2 id="h-skill-geo7" tabindex="-1">Kad pircēji jautā MI, vai tiek nosaukta Vale Studio?</h2>
-      <p class="lead">GEO7 ir publiska metode, kas palīdz īstajiem pircējiem atrast uzņēmumu meklēšanā un MI atbildēs. Nora to lieto vienam šauram jautājumam: vai MI asistenti iesaka Vale Studio pircēja jautājumā? Reizi mēnesī savāc un vienādi novērtē tās pašas atbildes, un trūkumi kļūst par īsu, sakārtotu vietnes labojumu sarakstu.</p>
+      <h2 id="h-skill-geo7" tabindex="-1">Kad pircēji jautā MI, vai tiek nosaukta Doe Studio?</h2>
+      <p class="lead">GEO7 ir publiska metode, kas palīdz īstajiem pircējiem atrast uzņēmumu meklēšanā un MI atbildēs. Džons to lieto vienam šauram jautājumam: vai MI asistenti iesaka Doe Studio pircēja jautājumā? Reizi mēnesī savāc un vienādi novērtē tās pašas atbildes, un trūkumi kļūst par īsu, sakārtotu vietnes labojumu sarakstu.</p>
       <p class="g7-gh"><a href="https://github.com/arete-aios/aios/tree/main/skills/geo7">Atvērt GEO7 vietnē GitHub</a> · publiskā metode un palīgskripti</p>
 
       <div class="g7-facts">
         <div class="card">
           <p class="label">Kad darbojas</p>
           <p class="g7-big">katra mēneša 1. datumā</p>
-          <p>Pēdējais aplis 1. nov. · nākamais 1. dec. Trīs atbildes nāk caur API, divas ievieto Nora.</p>
+          <p>Pēdējais aplis 1. nov. · nākamais 1. dec. Trīs atbildes nāk caur API, divas ievieto Džons.</p>
         </div>
         <div class="card">
           <p class="label">Kas dara</p>
@@ -2054,14 +2077,14 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
 
       <div class="card g7-goal">
         <p class="label">Mērķis</p>
-        <p class="g7-goal-t">Pircējs, kas uzdod MI asistentam vienu no pieciem jautājumiem, dzird Vale Studio vārdu, un šī atbilde aizved līdz sarunai ar Noru.</p>
+        <p class="g7-goal-t">Pircējs, kas uzdod MI asistentam vienu no pieciem jautājumiem, dzird Doe Studio vārdu, un šī atbilde aizved līdz sarunai ar Džonu.</p>
       </div>
 
       <h3 class="g7-h3">Kā notiek mēneša aplis</h3>
-      <p class="g7-intro">Seši publiskās metodes posmi Noras pieciem jautājumiem. Kods atkārto pārbaudes, MI atlasa un paskaidro, Nora izlemj. Saglabātie faili ir katra apļa rezultāts.</p>
+      <p class="g7-intro">Seši publiskās metodes posmi Džona pieciem jautājumiem. Kods atkārto pārbaudes, MI atlasa un paskaidro, Džons izlemj. Saglabātie faili ir katra apļa rezultāts.</p>
       <p class="g7-hint">Ritini sānis, lai redzētu visus sešus posmus.</p>
       <div class="g7-scroll" tabindex="0" role="region" aria-label="GEO7 plūsmas shēma, mazā ekrānā ritināma sānis">
-        <svg class="g7-flow" viewBox="0 0 1140 536" role="img" focusable="false" aria-label="Vale Studio GEO7 plūsma trīs joslās. Pierādījumi un vajadzība: 1. pārbauda vietni, 2. izvēlas jautājumus. Atšķirība un labojums: 3. kurus nosauc, 4. sagatavo labojuma uzdevumu. Ieviešana un mērīšana: 5. apstiprina un izveido, 6. jautā un novērtē. Mēneša rezultāts saglabājas sākuma datu failā un atgriežas pie jautājumiem nākamajam aplim.">
+        <svg class="g7-flow" viewBox="0 0 1140 536" role="img" focusable="false" aria-label="Doe Studio GEO7 plūsma trīs joslās. Pierādījumi un vajadzība: 1. pārbauda vietni, 2. izvēlas jautājumus. Atšķirība un labojums: 3. kurus nosauc, 4. sagatavo labojuma uzdevumu. Ieviešana un mērīšana: 5. apstiprina un izveido, 6. jautā un novērtē. Mēneša rezultāts saglabājas sākuma datu failā un atgriežas pie jautājumiem nākamajam aplim.">
           <defs>
             <marker id="g7-ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto"><path class="g7-ah" d="M0 0L10 5L0 10z"/></marker>
             <marker id="g7-ah-loop" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path class="g7-ah-loop" d="M0 0L10 5L0 10z"/></marker>
@@ -2070,7 +2093,7 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
           <!-- goal -->
           <rect class="g7-n-goal" x="12" y="12" width="1116" height="48" rx="12"/>
           <text class="g7-goal-l" x="30" y="41">MĒRĶIS</text>
-          <text class="g7-gt" x="86" y="41">Pircējs, kas uzdod MI asistentam vienu no pieciem jautājumiem, dzird Vale Studio vārdu, un šī atbilde aizved līdz sarunai ar Noru.</text>
+          <text class="g7-gt" x="86" y="41">Pircējs, kas uzdod MI asistentam vienu no pieciem jautājumiem, dzird Doe Studio vārdu, un šī atbilde aizved līdz sarunai ar Džonu.</text>
 
           <!-- bands -->
           <rect class="g7-band" x="12" y="74" width="364" height="450" rx="14"/>
@@ -2195,12 +2218,12 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
       </ul>
 
       <ol class="g7-steps" aria-label="Seši posmi tekstā">
-        <li><span class="g7-sn" aria-hidden="true">1</span><div class="g7-st"><p class="g7-st-h"><b>Pārbauda vietni</b><span class="g7-who g7-you">Tu + MI</span></p><p class="g7-st-m mono">Posms: audits</p><p class="g7-st-t">Nora nosauc vietni, tirgu, rezultātu mapi un mēneša budžetu. MI lasa publiskās lapas un pieraksta ar datumu, uz ko katra patiešām atbild.</p></div></li>
-        <li><span class="g7-sn" aria-hidden="true">2</span><div class="g7-st"><p class="g7-st-h"><b>Izvēlas jautājumus</b><span class="g7-who g7-you">Tu + MI</span></p><p class="g7-st-m mono">Posms: jautājumi</p><p class="g7-st-t">MI no īstiem pircēju e-pastiem un sarunu piezīmēm sagatavo jautājumu variantus; Nora atstāj piecus, katru sasaistot ar vienu lapu un nākamo soli. Tie paliek vienādi no mēneša uz mēnesi.</p></div></li>
+        <li><span class="g7-sn" aria-hidden="true">1</span><div class="g7-st"><p class="g7-st-h"><b>Pārbauda vietni</b><span class="g7-who g7-you">Tu + MI</span></p><p class="g7-st-m mono">Posms: audits</p><p class="g7-st-t">Džons nosauc vietni, tirgu, rezultātu mapi un mēneša budžetu. MI lasa publiskās lapas un pieraksta ar datumu, uz ko katra patiešām atbild.</p></div></li>
+        <li><span class="g7-sn" aria-hidden="true">2</span><div class="g7-st"><p class="g7-st-h"><b>Izvēlas jautājumus</b><span class="g7-who g7-you">Tu + MI</span></p><p class="g7-st-m mono">Posms: jautājumi</p><p class="g7-st-t">MI no īstiem pircēju e-pastiem un sarunu piezīmēm sagatavo jautājumu variantus; Džons atstāj piecus, katru sasaistot ar vienu lapu un nākamo soli. Tie paliek vienādi no mēneša uz mēnesi.</p></div></li>
         <li><span class="g7-sn" aria-hidden="true">3</span><div class="g7-st"><p class="g7-st-h"><b>Kurus nosauc</b><span class="g7-who g7-ai">MI</span></p><p class="g7-st-m mono">Posms: konkurenti</p><p class="g7-st-t">No saglabātajām atbildēm MI uzskaita citus ieteiktos uzņēmumus un citētās lapas. Vārds bez saglabātas atbildes aiz tā paliek minējums.</p></div></li>
-        <li><span class="g7-sn" aria-hidden="true">4</span><div class="g7-st"><p class="g7-st-h"><b>Sagatavo labojuma uzdevumu</b><span class="g7-who g7-ai">MI</span></p><p class="g7-st-m mono">Posms: saturs</p><p class="g7-st-t">Katrs trūkums kļūst par īsu lapas uzdevumu: skaidra atbilde, īsts piemērs, neliela biežāko jautājumu sadaļa un pabeigtības pārbaude. P1–P3 nosaka secību; teksts paliek melnraksts līdz Noras faktu pārbaudei.</p></div></li>
-        <li><span class="g7-sn" aria-hidden="true">5</span><div class="g7-st"><p class="g7-st-h"><b>Apstiprina un izveido</b><span class="g7-who g7-you">Tu</span></p><p class="g7-st-m mono">Posms: ieviešana</p><p class="g7-st-t">Nora apstiprina katru izmaiņu, vietnes projekts to ievieš pēc atsākšanas 1. decembrī. GEO7 pats neko nepublicē.</p></div></li>
-        <li><span class="g7-sn" aria-hidden="true">6</span><div class="g7-st"><p class="g7-st-h"><b>Jautā un novērtē</b><span class="g7-who g7-ai">MI + kods</span></p><p class="g7-st-m mono">Posms: mērīšana</p><p class="g7-st-t">Mēneša 1. datumā piecus jautājumus uzdod tiem pašiem pieciem asistentiem: trīs caur API, divu atbildes ievieto Nora. MI atzīmē, vai atbildē ir vieta sarakstā, pieminējums vai nav ieteikuma; <span class="mono">ai_visibility.py</span> atkārto skaitīšanu un izlaiž kļūdas.</p></div></li>
+        <li><span class="g7-sn" aria-hidden="true">4</span><div class="g7-st"><p class="g7-st-h"><b>Sagatavo labojuma uzdevumu</b><span class="g7-who g7-ai">MI</span></p><p class="g7-st-m mono">Posms: saturs</p><p class="g7-st-t">Katrs trūkums kļūst par īsu lapas uzdevumu: skaidra atbilde, īsts piemērs, neliela biežāko jautājumu sadaļa un pabeigtības pārbaude. P1–P3 nosaka secību; teksts paliek melnraksts līdz Džona faktu pārbaudei.</p></div></li>
+        <li><span class="g7-sn" aria-hidden="true">5</span><div class="g7-st"><p class="g7-st-h"><b>Apstiprina un izveido</b><span class="g7-who g7-you">Tu</span></p><p class="g7-st-m mono">Posms: ieviešana</p><p class="g7-st-t">Džons apstiprina katru izmaiņu, vietnes projekts to ievieš pēc atsākšanas 1. decembrī. GEO7 pats neko nepublicē.</p></div></li>
+        <li><span class="g7-sn" aria-hidden="true">6</span><div class="g7-st"><p class="g7-st-h"><b>Jautā un novērtē</b><span class="g7-who g7-ai">MI + kods</span></p><p class="g7-st-m mono">Posms: mērīšana</p><p class="g7-st-t">Mēneša 1. datumā piecus jautājumus uzdod tiem pašiem pieciem asistentiem: trīs caur API, divu atbildes ievieto Džons. MI atzīmē, vai atbildē ir vieta sarakstā, pieminējums vai nav ieteikuma; <span class="mono">ai_visibility.py</span> atkārto skaitīšanu un izlaiž kļūdas.</p></div></li>
       </ol>
 
       <h3 class="g7-h3">Principi</h3>
@@ -2214,14 +2237,14 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
       </dl>
       <p class="g7-note"><b>P1–P3 ir darbu secība.</b> To nosaka pircēja ceļš, pierādījumu stiprums un iespēja pārbaudīt labojumu. Tā nav izmērīta ietekme uz MI atbildēm; ja pierādījumu maz, pirmais uzdevums ir pārbaude.</p>
 
-      <h3 class="g7-h3">Noras mapē</h3>
+      <h3 class="g7-h3">Džona mapē</h3>
       <p class="g7-intro">Viens fails glabā iestatījumus un vēsturi. Jaunākais aplis redzams sadaļā <a href="/lv/my/cc-demo/marketing" data-view="marketing">Mārketings</a>.</p>
       <div class="card">
         <p class="label">Fails</p>
         <p class="g7-path mono">02-memory/marketing/geo7-baseline.md</p>
         <dl class="g7-parts">
           <div><dt>Jautājumi</dt><dd>Pieci pircēju jautājumi viņu pašu vārdos, katram viena lapa un nākamais solis. Izmaiņa sāk jaunu sēriju.</dd></div>
-          <div><dt>Savākšanas noteikumi</dt><dd>Katra mēneša 1. datumā. Gemini, Claude un Perplexity caur API saskaņotā budžetā; ChatGPT un DeepSeek atbildes ievieto Nora. Katra atbilde saglabāta ar datumu.</dd></div>
+          <div><dt>Savākšanas noteikumi</dt><dd>Katra mēneša 1. datumā. Gemini, Claude un Perplexity caur API saskaņotā budžetā; ChatGPT un DeepSeek atbildes ievieto Džons. Katra atbilde saglabāta ar datumu.</dd></div>
           <div><dt>Mēnešu rezultāti</dt><dd>Viena rinda mēnesī vienādiem pāriem: oktobrī 2 no 24, novembrī 4 no 24. Kļūdas uzskaita, bet neskaita rezultātā.</dd></div>
           <div><dt>Uzlabojumu secība</dt><dd>P1–P3, katram lapa, atbildīgais un pabeigtības pārbaude.</dd></div>
         </dl>
@@ -2250,23 +2273,23 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
           <p class="g7-small">Katram uzdevumam ir pārbaude no tā apraksta. Ārpus vietnes: P3, viesraksts kopienas vēstulei, nav sākts. 1. decembra pārbaude vēl mēra šodienas vietni; februāra mērķis ir 6 no 25.</p>
         </div>
         <div class="card">
-          <p class="label">Ko Nora apstiprina</p>
+          <p class="label">Ko Džons apstiprina</p>
           <ul class="g7-ul">
             <li>Pieci jautājumi un jebkura to maiņa</li>
             <li>API budžets trim automātiskajām atbildēm</li>
             <li>Katra lapas izmaiņa pirms publicēšanas</li>
             <li>Klienta vārds publiskā lapā: Brightwater apraksts gaida Adas rakstisku piekrišanu</li>
           </ul>
-          <p class="g7-small">Mēneša 1. datumā viņa ievieto arī abas manuālās atbildes no ChatGPT un DeepSeek.</p>
+          <p class="g7-small">Mēneša 1. datumā viņš ievieto arī abas manuālās atbildes no ChatGPT un DeepSeek.</p>
         </div>
       </div>
 
-      <p class="how"><b>No kurienes tas nāk.</b> Seši posmi, noteikumi un palīgskripti nāk no publiskās GEO7 prasmes, šeit sašaurināti vienam jautājumam, ko ārštata speciālists var uzdot ik mēnesi. Noras jautājumi, noteikumi un rezultāti glabājas <span class="mono">02-memory/marketing/geo7-baseline.md</span>; <span class="mono">03-skills/_skills-CONTEXT.md</span> uzskaita prasmi un tās izcelsmi. Studija, cilvēki un visi skaitļi ir izdomāti.</p>
+      <p class="how"><b>No kurienes tas nāk.</b> Seši posmi, noteikumi un palīgskripti nāk no publiskās GEO7 prasmes, šeit sašaurināti vienam jautājumam, ko ārštata speciālists var uzdot ik mēnesi. Džona jautājumi, noteikumi un rezultāti glabājas <span class="mono">02-memory/marketing/geo7-baseline.md</span>; <span class="mono">03-skills/_skills-CONTEXT.md</span> uzskaita prasmi un tās izcelsmi. Studija, cilvēki un visi skaitļi ir izdomāti.</p>
     <div class="protocols"><span>Turpini ar</span><a href="https://github.com/arete-aios/aios/blob/main/skills/skills7/SKILL.md" target="_blank" rel="noopener noreferrer">skills7</a><a href="https://github.com/arete-aios/aios/blob/main/skills/focus7/SKILL.md" target="_blank" rel="noopener noreferrer">focus7</a></div></section>
 
     <!-- 08 TOOLS -->
     <section class="panel" id="tools" aria-labelledby="h-tools">
-      <div class="section-head"><p class="eyebrow">09 / Rīki</p><div class="section-actions"><button type="button" data-copy-scope="view">Kopēt šo skatu</button><a href="https://github.com/arete-aios/aios/blob/main/skills/cc7/references/tools.md" target="_blank" rel="noopener noreferrer">GitHub · tools7 ↗</a></div></div>
+      <div class="section-head"><p class="eyebrow">10 / Rīki</p><div class="section-actions"><button type="button" data-copy-scope="view">Kopēt šo skatu</button><a href="https://github.com/arete-aios/aios/blob/main/skills/cc7/references/tools.md" target="_blank" rel="noopener noreferrer">GitHub · tools7 ↗</a></div></div>
       <h2 id="h-tools" tabindex="-1">Ko MI var sasniegt un cik tālu</h2>
       <p class="lead">Savienojumi un spraudņi ļauj MI redzēt darbu. Katram ir tikai nepieciešamā piekļuve. Sūtīšana, publicēšana, maksāšana un dzēšana vienmēr gaida piekrišanu.</p>
 
@@ -2318,21 +2341,21 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
         <div class="row" role="row">
           <span class="tname" role="cell"><span class="logo"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15.852 8.981h-4.588V0h4.588c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.491-4.49 4.491zM12.735 7.51h3.117c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-3.117V7.51zm0 1.471H8.148c-2.476 0-4.49-2.014-4.49-4.49S5.672 0 8.148 0h4.588v8.981zm-4.587-7.51c-1.665 0-3.019 1.355-3.019 3.019s1.354 3.02 3.019 3.02h3.117V1.471H8.148zm4.587 15.019H8.148c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h4.588v8.98zM8.148 8.981c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h3.117V8.981H8.148zM8.172 24c-2.489 0-4.515-2.014-4.515-4.49s2.014-4.49 4.49-4.49h4.588v4.441c0 2.503-2.047 4.539-4.563 4.539zm-.024-7.51a3.023 3.023 0 0 0-3.019 3.019c0 1.665 1.365 3.019 3.044 3.019 1.705 0 3.093-1.376 3.093-3.068v-2.97H8.148zm7.704 0h-.098c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h.098c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.49-4.49 4.49zm-.097-7.509c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h.098c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-.098z"/></svg></span><span><b>Figma</b><span class="sub">savienojums</span></span></span>
           <span class="txt" role="cell"><span class="cell-l">Kam</span>Dizaina faili projektu aprakstiem</span>
-          <span class="txt" role="cell"><span class="cell-l">Piekļuve</span>Lasa Noras kopīgotos failus.</span>
+          <span class="txt" role="cell"><span class="cell-l">Piekļuve</span>Lasa Džona kopīgotos failus.</span>
           <span class="txt usedby" role="cell"><span class="cell-l">Izmanto</span>Izpildītājs</span>
           <span class="state" role="cell"><span class="st ok">Savienots</span><small>Pārbaudīts ceturtdien, 12. nov.</small></span>
         </div>
         <div class="row" role="row">
           <span class="tname" role="cell"><span class="logo"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5.033 14.649H.743a.74.74 0 0 1-.686-.458.74.74 0 0 1 .16-.808L3.19 10.41H1.06A1.06 1.06 0 0 1 0 9.35h3.957c.301 0 .57.18.686.458a.74.74 0 0 1-.161.808L1.51 13.59h2.464c.585 0 1.06.475 1.06 1.06zM24 11.338c0-1.14-.927-2.066-2.066-2.066-.61 0-1.158.265-1.537.686a2.061 2.061 0 0 0-1.536-.686c-1.14 0-2.066.926-2.066 2.066v3.311a1.06 1.06 0 0 0 1.06-1.06v-2.251a1.004 1.004 0 0 1 2.013 0v2.251c0 .586.474 1.06 1.06 1.06v-3.311a1.004 1.004 0 0 1 2.012 0v2.251c0 .586.475 1.06 1.06 1.06zM16.265 12a2.728 2.728 0 1 1-5.457 0 2.728 2.728 0 0 1 5.457 0zm-1.06 0a1.669 1.669 0 1 0-3.338 0 1.669 1.669 0 0 0 3.338 0zm-4.82 0a2.728 2.728 0 1 1-5.458 0 2.728 2.728 0 0 1 5.457 0zm-1.06 0a1.669 1.669 0 1 0-3.338 0 1.669 1.669 0 0 0 3.338 0z"/></svg></span><span><b>Zoom</b><span class="sub">savienojums</span></span></span>
           <span class="txt" role="cell"><span class="cell-l">Kam</span>Sarunu ieraksti</span>
-          <span class="txt" role="cell"><span class="cell-l">Piekļuve</span>Tikai Noras izvēlētie ieraksti.</span>
+          <span class="txt" role="cell"><span class="cell-l">Piekļuve</span>Tikai Džona izvēlētie ieraksti.</span>
           <span class="txt usedby" role="cell"><span class="cell-l">Izmanto</span>MEETING7</span>
           <span class="state" role="cell"><span class="st ok">Savienots</span><small>Pārbaudīts piektdien, 13. nov.</small></span>
         </div>
         <div class="row" role="row">
           <span class="tname" role="cell"><span class="logo lettermark">in</span><span><b>LinkedIn</b><span class="sub">pārlūks</span></span></span>
           <span class="txt" role="cell"><span class="cell-l">Kam</span>Izvēlētu ierakstu komentāri</span>
-          <span class="txt" role="cell"><span class="cell-l">Piekļuve</span>Lasa Noras atvērtā sesijā. Neko nepublicē.</span>
+          <span class="txt" role="cell"><span class="cell-l">Piekļuve</span>Lasa Džona atvērtā sesijā. Neko nepublicē.</span>
           <span class="txt usedby" role="cell"><span class="cell-l">Izmanto</span>COMMS7 uzraugāmie ieraksti</span>
           <span class="state" role="cell"><span class="st info">Manuāli pēc izvēles</span><small>Savienojuma nav apzināti</small></span>
         </div>
@@ -2362,12 +2385,12 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
           <span class="txt" role="cell"><span class="cell-l">Kam</span>Facebook un Instagram reklāmu rezultāti</span>
           <span class="txt" role="cell"><span class="cell-l">Piekļuve</span>Tikai lasa pārskatus. Nevar mainīt kampaņu.</span>
           <span class="txt usedby" role="cell"><span class="cell-l">Izmanto</span>Analītikas skats</span>
-          <span class="state" role="cell"><span class="st ok">Savienots</span><small>Nora apturēja reklāmas 9. nov.</small></span>
+          <span class="state" role="cell"><span class="st ok">Savienots</span><small>Džons apturēja reklāmas 9. nov.</small></span>
         </div>
         <div class="row" role="row">
           <span class="tname" role="cell"><span class="logo lettermark">GPT</span><span><b>ChatGPT Ads</b><span class="sub">manuāls eksports</span></span></span>
           <span class="txt" role="cell"><span class="cell-l">Kam</span>Reklāmas ChatGPT atbildēs</span>
-          <span class="txt" role="cell"><span class="cell-l">Piekļuve</span>Nav savienojuma. Nora ievieto nedēļas eksportu.</span>
+          <span class="txt" role="cell"><span class="cell-l">Piekļuve</span>Nav savienojuma. Džons ievieto nedēļas eksportu.</span>
           <span class="txt usedby" role="cell"><span class="cell-l">Izmanto</span>Analītikas skats</span>
           <span class="state" role="cell"><span class="st info">Manuāli</span><small>Kopš 26. okt.</small></span>
         </div>
@@ -2394,7 +2417,7 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
           <span class="tname" role="cell"><span class="logo lettermark">GPT</span><span><b>ChatGPT</b><span class="sub">lietotne</span></span></span>
           <span class="txt" role="cell"><span class="cell-l">Kam</span>Otrs viedoklis</span>
           <span class="txt" role="cell"><span class="cell-l">Piekļuve</span>Lietotne; GEO7 atbildes ievieto mapē.</span>
-          <span class="txt usedby" role="cell"><span class="cell-l">Izmanto</span>GEO7 atbildes ievieto Nora</span>
+          <span class="txt usedby" role="cell"><span class="cell-l">Izmanto</span>GEO7 atbildes ievieto Džons</span>
           <span class="state" role="cell"><span class="st">Lietošanā</span></span>
         </div>
         <div class="row" role="row">
@@ -2415,7 +2438,7 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
           <span class="tname" role="cell"><span class="logo"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M23.748 4.651c-.254-.124-.364.113-.512.233-.051.04-.094.09-.137.137-.372.397-.806.657-1.373.626-.829-.046-1.537.214-2.163.848-.133-.782-.575-1.248-1.247-1.548-.352-.155-.708-.311-.955-.65-.172-.24-.219-.509-.305-.774-.055-.16-.11-.323-.293-.35-.2-.031-.278.136-.356.276-.313.572-.434 1.202-.422 1.84.027 1.436.633 2.58 1.838 3.393.137.094.172.187.129.323-.082.28-.18.553-.266.833-.055.179-.137.218-.328.14a5.5 5.5 0 0 1-1.737-1.179c-.857-.828-1.631-1.743-2.597-2.46a12 12 0 0 0-.689-.47c-.985-.957.13-1.743.387-1.836.27-.098.094-.433-.778-.428-.872.003-1.67.295-2.687.685a3 3 0 0 1-.465.136 9.6 9.6 0 0 0-2.883-.101c-1.885.21-3.39 1.1-4.497 2.622C.082 8.776-.231 10.854.152 13.02c.403 2.284 1.568 4.175 3.36 5.653 1.857 1.533 3.997 2.284 6.438 2.14 1.482-.085 3.132-.284 4.994-1.86.47.234.962.328 1.78.398.629.058 1.235-.031 1.705-.129.735-.155.684-.836.418-.961-2.155-1.004-1.682-.595-2.112-.926 1.095-1.295 2.768-3.598 3.284-6.733.05-.346.115-.834.108-1.114-.004-.171.035-.238.23-.257a4.2 4.2 0 0 0 1.545-.475c1.397-.763 1.96-2.016 2.093-3.517.02-.23-.004-.467-.247-.588M11.58 18.168c-2.088-1.642-3.101-2.183-3.52-2.16-.39.024-.32.472-.234.763.09.288.207.487.371.74.114.167.192.416-.113.603-.673.416-1.842-.14-1.897-.168-1.361-.801-2.5-1.86-3.301-3.306-.775-1.393-1.225-2.888-1.299-4.482-.02-.385.094-.522.477-.592a4.7 4.7 0 0 1 1.53-.038c2.131.311 3.946 1.264 5.467 2.774.868.86 1.525 1.887 2.202 2.89.72 1.066 1.494 2.082 2.48 2.915.348.291.626.513.892.677-.802.09-2.14.109-3.055-.615zm1.001-6.44a.306.306 0 0 1 .415-.287.3.3 0 0 1 .113.074.3.3 0 0 1 .086.214c0 .17-.136.307-.308.307a.303.303 0 0 1-.306-.307m3.11 1.596c-.2.081-.4.151-.591.16a1.25 1.25 0 0 1-.798-.254c-.274-.23-.47-.358-.551-.758a1.7 1.7 0 0 1 .015-.588c.07-.327-.007-.537-.238-.727-.188-.156-.426-.199-.689-.199a.6.6 0 0 1-.254-.078.253.253 0 0 1-.114-.358 1 1 0 0 1 .192-.21c.356-.202.767-.136 1.146.016.352.144.618.408 1.001.782.392.451.462.576.685.915.176.264.336.536.446.848.066.194-.02.353-.25.45"/></svg></span><span><b>DeepSeek</b><span class="sub">lietotne</span></span></span>
           <span class="txt" role="cell"><span class="cell-l">Kam</span>GEO7 atbildes</span>
           <span class="txt" role="cell"><span class="cell-l">Piekļuve</span>Lietotne; atbildes ievieto mapē.</span>
-          <span class="txt usedby" role="cell"><span class="cell-l">Izmanto</span>GEO7, ievieto Nora</span>
+          <span class="txt usedby" role="cell"><span class="cell-l">Izmanto</span>GEO7, ievieto Džons</span>
           <span class="state" role="cell"><span class="st">Lietošanā</span></span>
         </div>
       </div>
@@ -2426,7 +2449,7 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
 
     <!-- 09 FOLDER MAP -->
     <section class="panel" id="map" aria-labelledby="h-map">
-      <div class="section-head"><p class="eyebrow">10 / Mapju karte</p><div class="section-actions"><button type="button" data-copy-scope="view">Kopēt šo skatu</button><a href="https://github.com/arete-aios/aios/blob/main/skills/context7/SKILL.md" target="_blank" rel="noopener noreferrer">GitHub · context7 ↗</a></div></div>
+      <div class="section-head"><p class="eyebrow">11 / Mapju karte</p><div class="section-actions"><button type="button" data-copy-scope="view">Kopēt šo skatu</button><a href="https://github.com/arete-aios/aios/blob/main/skills/context7/SKILL.md" target="_blank" rel="noopener noreferrer">GitHub · context7 ↗</a></div></div>
       <h2 id="h-map" tabindex="-1">Visa zināšanu bāze vienā mapē</h2>
       <p class="lead">Šī ir visa piemēra mape ar tādu pašu izkārtojumu, kādu veido meistarklases sākuma komplekts. Katram mezglam ir CONTEXT7 statusa punkts, un redzamas arī vēl neizveidotās mapes. Mape ir zināšanu bāze; šī lapa to tikai parāda.</p>
 
@@ -2439,14 +2462,14 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
             <li><span class="dot n" aria-hidden="true"></span>Vēl nav izveidots vai nebūs nekad</li>
           </ul>
           <ul class="tree" aria-label="Mapju struktūra ar CONTEXT7 statusu">
-            <li><div class="node"><span class="name">vale-studio-brain/</span><span class="n2">47 faili</span><span class="d">Šodienas pārbaude: 11 zaļi, 1 dzeltens, 1 sarkans</span></div>
+            <li><div class="node"><span class="name">doe-studio-brain/</span><span class="n2">47 faili</span><span class="d">Šodienas pārbaude: 11 zaļi, 1 dzeltens, 1 sarkans</span></div>
               <ul>
-                <li><div class="node"><span class="dot g" role="img" aria-label="CONTEXT7: kārtībā"></span><span class="name">konstitūcija</span><span class="n2">7</span><span class="d">Saknes faili: kas ir Nora, noteikumi, abi aģenti</span></div>
+                <li><div class="node"><span class="dot g" role="img" aria-label="CONTEXT7: kārtībā"></span><span class="name">konstitūcija</span><span class="n2">7</span><span class="d">Saknes faili: kas ir Džons, noteikumi, abi aģenti</span></div>
                   <p class="group-files">CONSTITUTION.md · AGENTS.md · ONBOARDING.md · AIOS-INSTRUCTIONS.md · Agent-MAKER.md · Agent-CHECKER.md · README.md</p>
                 </li>
                 <li><div class="node"><span class="dot g" role="img" aria-label="CONTEXT7: kārtībā"></span><span class="name">02-memory/</span><span class="n2">24</span><span class="d">Ko uzņēmums zina</span></div>
                   <ul>
-                    <li><div class="node"><span class="dot g" role="img" aria-label="CONTEXT7: kārtībā"></span><span class="name">businesses/vale-studio/</span><span class="n2">1</span><span class="d">Uzņēmuma profils septiņos blokos</span></div></li>
+                    <li><div class="node"><span class="dot g" role="img" aria-label="CONTEXT7: kārtībā"></span><span class="name">businesses/doe-studio/</span><span class="n2">1</span><span class="d">Uzņēmuma profils septiņos blokos</span></div></li>
                     <li><div class="node"><span class="dot g" role="img" aria-label="CONTEXT7: kārtībā"></span><span class="name">clients/</span><span class="n2">2</span><span class="d">Harbor Health, Brightwater</span></div></li>
                     <li><div class="node"><span class="dot g" role="img" aria-label="CONTEXT7: kārtībā"></span><span class="name">people/</span><span class="n2">7</span><span class="d">Seši cilvēki: pārskats, projekti, tikšanās</span></div></li>
                     <li><div class="node"><span class="dot g" role="img" aria-label="CONTEXT7: kārtībā"></span><span class="name">meetings/</span><span class="n2">4</span><span class="d">MEETING7 piezīmes</span></div></li>
@@ -2479,9 +2502,9 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
 
     <!-- 10 AI TEAM -->
     <section class="panel" id="team" aria-labelledby="h-team">
-      <div class="section-head"><p class="eyebrow">11 / MI komanda</p><div class="section-actions"><button type="button" data-copy-scope="view">Kopēt šo skatu</button><a href="https://github.com/arete-aios/aios/blob/main/skills/eval7/SKILL.md" target="_blank" rel="noopener noreferrer">GitHub · eval7 ↗</a></div></div>
+      <div class="section-head"><p class="eyebrow">12 / MI komanda</p><div class="section-actions"><button type="button" data-copy-scope="view">Kopēt šo skatu</button><a href="https://github.com/arete-aios/aios/blob/main/skills/eval7/SKILL.md" target="_blank" rel="noopener noreferrer">GitHub · eval7 ↗</a></div></div>
       <h2 id="h-team" tabindex="-1">Divi aģenti, viena zināšanu bāze</h2>
-      <p class="lead">Izpildītājs veic darbu, Pārbaudītājs to pārskata pret tiem pašiem failiem. Abi seko vienai konstitūcijai. Nora izlemj, kas atstāj mapi.</p>
+      <p class="lead">Izpildītājs veic darbu, Pārbaudītājs to pārskata pret tiem pašiem failiem. Abi seko vienai konstitūcijai. Džons izlemj, kas atstāj mapi.</p>
 
       <div class="grid g2 team">
         <article class="card">
@@ -2497,7 +2520,7 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
 <pre class="log"><b>Pirmd. 10.40</b> Izpildītājs saglabājis apkopojuma melnrakstu v1, 3 tēmas
 <b>Pirmd. 11.15</b> Pārbaudītājs: LABOT, 2 punkti — viens citāts nav precīzs, vienā tēmā tikai 1 dalībnieks
 <b>Otrd. 08.06</b> Izpildītājs labo abus punktus versijai v2 (HH-10)
-<b>tālāk    </b> Pārbaudītājs pārskata v2 · Nora izlemj, ko iekļaut piektdienas prezentācijā</pre>
+<b>tālāk    </b> Pārbaudītājs pārskata v2 · Džons izlemj, ko iekļaut piektdienas prezentācijā</pre>
         </div>
       </div>
 
@@ -2506,9 +2529,9 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
 
     <!-- 11 HEALTH -->
     <section class="panel" id="health" aria-labelledby="h-health">
-      <div class="section-head"><p class="eyebrow">12 / Sistēmas audits</p><div class="section-actions"><button type="button" data-copy-scope="view">Kopēt šo skatu</button><a href="https://github.com/arete-aios/aios/blob/main/skills/cc7/SKILL.md" target="_blank" rel="noopener noreferrer">GitHub · cc7 ↗</a></div></div>
+      <div class="section-head"><p class="eyebrow">13 / Sistēmas audits</p><div class="section-actions"><button type="button" data-copy-scope="view">Kopēt šo skatu</button><a href="https://github.com/arete-aios/aios/blob/main/skills/cc7/SKILL.md" target="_blank" rel="noopener noreferrer">GitHub · cc7 ↗</a></div></div>
       <h2 id="h-health" tabindex="-1">Vai pati sistēma ir labā kārtībā?</h2>
-      <p class="lead">Zaļš nozīmē atbilstību pašas Noras definētam veselam stāvoklim. Neko vairāk.</p>
+      <p class="lead">Zaļš nozīmē atbilstību paša Džona definētam veselam stāvoklim. Neko vairāk.</p>
 
       <div class="rows" role="table" aria-label="Sistēmas pārbaudes">
         <div class="row chk head" role="row"><span role="columnheader">Pārbaude</span><span role="columnheader">Rezultāts</span><span role="columnheader">Statuss</span></div>
@@ -2535,8 +2558,8 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
   root.classList.add("js");
   const base = "/lv/my/cc-demo";
   const otherBase = "/my/cc-demo";
-  const known = new Set(["today", "work", "messages", "projects", "people", "marketing", "skills", "tools", "map", "team", "health", "skills/comms7", "skills/geo7", "messages/comments", "marketing/analytics", "work/nora", "work/agents", "work/waiting", "people/priya", "people/priya/work", "people/priya/meetings", "people/ada", "people/ada/work", "people/ada/meetings", "people/lena", "people/lena/work", "people/lena/meetings", "people/tomas", "people/tomas/work", "people/tomas/meetings", "people/jonas", "people/jonas/work", "people/jonas/meetings", "people/mei", "people/mei/work", "people/mei/meetings", "finance"]);
-  const aliases = {"ai": "team", "sales": "people", "mkt": "marketing", "proj": "projects", "fin": "finance", "mem": "map", "aios-constitution": "health", "aios-memory": "map", "aios-skills": "skills", "aios-tools": "tools", "aios-focus": "projects", "skill-comms7": "skills/comms7", "skill-geo7": "skills/geo7"};
+  const known = new Set(["today", "work", "messages", "projects", "people", "marketing", "skills", "tools", "map", "team", "health", "skills/comms7", "skills/geo7", "messages/comments", "marketing/analytics", "work/john", "work/agents", "work/waiting", "people/priya", "people/priya/work", "people/priya/meetings", "people/ada", "people/ada/work", "people/ada/meetings", "people/lena", "people/lena/work", "people/lena/meetings", "people/tomas", "people/tomas/work", "people/tomas/meetings", "people/jonas", "people/jonas/work", "people/jonas/meetings", "people/mei", "people/mei/work", "people/mei/meetings", "finance", "radar"]);
+  const aliases = {"ai": "team", "sales": "people", "mkt": "marketing", "proj": "projects", "fin": "finance", "mem": "map", "aios-constitution": "health", "aios-memory": "map", "aios-skills": "skills", "aios-tools": "tools", "aios-focus": "projects", "skill-comms7": "skills/comms7", "skill-geo7": "skills/geo7", "work/nora": "work/john"};
   const pathFor = (view, prefix = base) => prefix + (view === "today" ? "" : "/" + view);
   const panels = Array.from(document.querySelectorAll(".panel"));
   const nav = Array.from(document.querySelectorAll(".side a[data-view]"));
@@ -2731,7 +2754,7 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
 <dialog id="copy-dialog" aria-labelledby="copy-title"><div class="copy-dialog-head"><h2 id="copy-title">Tavs uzdevums MI</h2><button type="button" data-copy-close aria-label="Aizvērt">×</button></div><p>Starpliktuve nav pieejama. Atlasi un nokopē tekstu, pēc tam ielīmē to savā MI.</p><textarea id="copy-text" readonly aria-label="Kopējamais uzdevums"></textarea><button type="button" data-copy-select>Atlasīt visu tekstu</button></dialog><div id="copy-status" class="copy-status" role="status" aria-live="polite" hidden></div><script>
 /* Public copy controls: local clipboard only, never an AI or account request. */
 (() => {
-  const data = {"locale": "lv", "repository": "https://github.com/arete-aios/aios", "guide": "https://github.com/arete-aios/aios/blob/main/skills/cc7/references/command-center.md", "raw_guide": "https://raw.githubusercontent.com/arete-aios/aios/main/skills/cc7/references/command-center.md", "download": "/cc-demo/cc7-command-center.zip", "sections": {"today": {"protocol": "dashboard7", "method": "skills/dashboard7/SKILL.md", "related": ["focus7", "context7"], "en": "Build a useful home view: direction, focus projects and a Gantt with real or explicitly proposed dates, today's next actions and the last evidenced system check.", "lv": "Izveido noderīgu sākumlapu: virziens, fokusa projekti un Gants ar īstiem vai skaidri ierosinātiem datumiem, šodienas nākamie soļi un pēdējā pierādītā sistēmas pārbaude."}, "work": {"protocol": "gtd7", "method": "skills/mit7/SKILL.md", "related": ["focus7", "exit7"], "en": "Show tasks from their existing authoritative source, with owner, project, next action, waiting state and filters. Reuse the task writer; do not create another task database.", "lv": "Parādi uzdevumus no to esošā avota ar atbildīgo, projektu, nākamo darbību, gaidīšanas statusu un filtriem. Izmanto esošo uzdevumu rakstītāju, neveido otru datubāzi."}, "messages": {"protocol": "comms7", "method": "skills/comms7/SKILL.md", "related": ["meeting7", "exit7"], "en": "Build a communication view around who acts next: reply needed, waiting, information, closed. Link sources and keep drafts separate from sent messages. Include comments only from an agreed watch list.", "lv": "Izveido saziņas skatu pēc nākamā atbildīgā: jāatbild, gaida, informācijai, noslēgts. Piesaisti avotus, atšķir melnrakstu no nosūtītas ziņas. Komentārus iekļauj tikai no saskaņota uzraudzības saraksta."}, "projects": {"protocol": "gtd7", "method": "skills/mit7/SKILL.md", "related": ["focus7", "context7"], "en": "Build a project planning view from existing project records: outcome, current focus, owned next action, task progress, dates and waiting items. Label proposals and missing dates honestly.", "lv": "Izveido projektu plānošanas skatu no esošajiem ierakstiem: rezultāts, pašreizējais fokuss, nākamā darbība un atbildīgais, uzdevumu progress, datumi un gaidāmās lietas. Priekšlikumus un trūkstošus datumus skaidri marķē."}, "people": {"protocol": "crm7", "method": "skills/cc7/references/people.md", "related": ["meeting7", "comms7"], "en": "Build a CRM7 relationship workspace with overview, linked projects/tasks and dated meetings. Use existing person IDs and CRM authority; preserve evidence, actual commitments and privacy. Do not import the demo's people or invent relationship scores.", "lv": "Izveido CRM7 attiecību darba vietu ar pārskatu, saistītajiem projektiem/uzdevumiem un datētām tikšanās reizēm. Saglabā esošos personu ID un CRM autoritāti, avotus, īstos solījumus un privātumu. Neimportē demo cilvēkus un neizdomā attiecību vērtējumus.", "github_label": "GitHub · crm7"}, "marketing": {"protocol": "geo7", "method": "skills/geo7/SKILL.md", "related": ["ads7", "focus7"], "en": "Build a marketing view with comparable periods, source and check date for each metric, a separate AI visibility view, and one next improvement. Missing data is unknown, not zero. Do not connect accounts or alter campaigns while building the view.", "lv": "Izveido mārketinga skatu ar salīdzināmiem periodiem, katra rādītāja avotu un pārbaudes datumu, atsevišķu MI redzamības skatu un vienu nākamo uzlabojumu. Trūkstoši dati nav nulle. Skata būvē nepieslēdz kontus un nemaini kampaņas."}, "finance": {"protocol": "cc7", "method": "skills/cc7/references/finance.md", "related": ["context7", "exit7"], "en": "Build a private financial snapshot only within my existing privacy rules: cash collected and paid for the same full period, net cash flow (not profit), and unpaid-invoice ageing with its own as-of date. Reconcile approved aggregates to existing accounting sources. Keep raw bank records private; if finances are excluded, show a link until I approve otherwise.", "lv": "Izveido privātu finanšu kopsavilkumu tikai manas esošās privātuma kārtības ietvaros: saņemtā un samaksātā nauda vienā pilnā periodā, neto naudas plūsma (ne peļņa), neapmaksāto rēķinu vecums ar savu datumu. Salāgo atļautos kopsavilkumus ar esošo grāmatvedības avotu. Bankas pirmdatus turi privātus; ja finanses ir izslēgtas, rādi tikai saiti, līdz apstiprinu citādi.", "github_label": "GitHub · cc7"}, "skills": {"protocol": "skills7", "method": "skills/skills7/SKILL.md", "related": ["context7", "eval7"], "en": "Build a skill catalogue from methods actually present: purpose, trigger, readiness evidence, instructions, copy action and actual GitHub links. Keep planned methods distinct from installed and tested ones. Do not run a method just to show its guide.", "lv": "Izveido prasmju katalogu no faktiskajām metodēm: nolūks, izsaukums, gatavības pierādījumi, instrukcija, kopēšana un īstas GitHub saites. Atšķir plānoto, uzstādīto un pārbaudīto. Metodes skaidrojums pats to nepalaiž."}, "skill-comms7": {"protocol": "comms7", "method": "skills/comms7/SKILL.md", "related": ["skills7", "meeting7"], "en": "Explain COMMS7 as a usable guide with decisions, human/AI/code roles, workflow, allowed sources and an explicit draft/send boundary. Adapt its settings to my own permitted sources; do not execute a communication review merely to build the guide.", "lv": "Izskaidro COMMS7 lietojamā ceļvedī: lēmumi, cilvēka/MI/koda lomas, darba plūsma, atļautie avoti un melnraksta/nosūtīšanas robeža. Iestatījumus pieskaņo maniem avotiem; ceļveža būve pati nepalaiž saziņas pārskatu."}, "skill-geo7": {"protocol": "geo7", "method": "skills/geo7/SKILL.md", "related": ["skills7", "focus7"], "en": "Explain GEO7 with workflow, buyer questions, evidence, comparable question/assistant pairs and human approval of changes. Do not run paid queries or publish content while preparing the guide.", "lv": "Izskaidro GEO7 ar darba plūsmu, pircēju jautājumiem, pierādījumiem, salīdzināmiem jautājumu/asistentu pāriem un cilvēka apstiprinājumu izmaiņām. Ceļveža gatavošana nepalaiž maksas vaicājumus un nepublicē saturu."}, "tools": {"protocol": "tools7", "method": "skills/cc7/references/tools.md", "related": ["audit7", "context7"], "en": "Build a TOOLS7 inventory from the existing registry: purpose, permitted access, actual connection/operator, last check and evidence, cost limits and next step. Distinguish listed, configured, tested and unknown; put detailed logs one level deeper. Do not expose credentials or connect accounts.", "lv": "Izveido TOOLS7 inventāru no esošā reģistra: nolūks, atļautā piekļuve, faktiskais savienojums/izpildītājs, pēdējā pārbaude un pierādījumi, izmaksu robežas un nākamais solis. Atšķir uzskaitīto, konfigurēto, pārbaudīto un nezināmo; garos žurnālus liec vienu līmeni dziļāk. Neatklāj atslēgas un nepieslēdz kontus.", "github_label": "GitHub · tools7"}, "map": {"protocol": "context7", "method": "skills/context7/SKILL.md", "related": ["audit7", "exit7"], "en": "Build a folder map from the permitted actual inventory. Show which indexes cover their contents, broken links and missing maps, with date and scope. A folder alone is not evidence of a working capability.", "lv": "Izveido mapju karti no atļautā faktiskā inventāra. Parādi indeksu pārklājumu, bojātās saites un trūkstošās kartes ar pārbaudes datumu un tvērumu. Mapes esamība nepierāda strādājošu spēju."}, "team": {"protocol": "eval7", "method": "skills/eval7/SKILL.md", "related": ["skills7", "exit7"], "en": "Build a view of my actual AI roles and their handoffs: task, output, independent review, fixes and human acceptance. Mark proposed roles and untested loops as planned; do not create agents, buy model access or start background runs.", "lv": "Izveido manu faktisko MI lomu un nodošanas skatu: uzdevums, rezultāts, neatkarīga pārbaude, labojumi un cilvēka pieņemšana. Ierosinātās lomas un nepārbaudītus apļus marķē kā plānu; neveido aģentus, nepērc modeļu piekļuvi un nesāc fona izpildi."}, "health": {"protocol": "cc7", "method": "skills/cc7/SKILL.md", "related": ["audit7", "exit7"], "en": "Build a Health view showing actual audit dates, scope, evidence and unresolved decisions for the five layers and EXIT7. Read an existing register first; an absent audit stays not audited. Retain CC7 starter Health's explicit setup gate and do not run an audit just to populate a page.", "lv": "Izveido sistēmas pārskatu ar īstiem auditu datumiem, tvērumu, avotiem un neatrisinātajiem lēmumiem pieciem slāņiem un EXIT7. Vispirms lasi esošo reģistru; neesošs audits paliek nepārbaudīts. Saglabā CC7 Health atsevišķo uzstādīšanas izvēli un nepalaid auditu tikai lapas aizpildīšanai."}}, "github_guide": "https://github.com/arete-aios/aios/blob/main/skills/cc7/references/command-center.md"};
+  const data = {"locale": "lv", "repository": "https://github.com/arete-aios/aios", "guide": "https://github.com/arete-aios/aios/blob/main/skills/cc7/references/command-center.md", "raw_guide": "https://raw.githubusercontent.com/arete-aios/aios/main/skills/cc7/references/command-center.md", "download": "/cc-demo/cc7-command-center.zip", "sections": {"today": {"protocol": "dashboard7", "method": "skills/dashboard7/SKILL.md", "related": ["focus7", "context7"], "en": "Build a useful home view: direction, focus projects and a Gantt with real or explicitly proposed dates, today's next actions and the last evidenced system check.", "lv": "Izveido noderīgu sākumlapu: virziens, fokusa projekti un Gants ar īstiem vai skaidri ierosinātiem datumiem, šodienas nākamie soļi un pēdējā pierādītā sistēmas pārbaude."}, "work": {"protocol": "gtd7", "method": "skills/mit7/SKILL.md", "related": ["focus7", "exit7"], "en": "Show tasks from their existing authoritative source, with owner, project, next action, waiting state and filters. Reuse the task writer; do not create another task database.", "lv": "Parādi uzdevumus no to esošā avota ar atbildīgo, projektu, nākamo darbību, gaidīšanas statusu un filtriem. Izmanto esošo uzdevumu rakstītāju, neveido otru datubāzi."}, "messages": {"protocol": "comms7", "method": "skills/comms7/SKILL.md", "related": ["meeting7", "exit7"], "en": "Build a communication view around who acts next: reply needed, waiting, information, closed. Link sources and keep drafts separate from sent messages. Include comments only from an agreed watch list.", "lv": "Izveido saziņas skatu pēc nākamā atbildīgā: jāatbild, gaida, informācijai, noslēgts. Piesaisti avotus, atšķir melnrakstu no nosūtītas ziņas. Komentārus iekļauj tikai no saskaņota uzraudzības saraksta."}, "projects": {"protocol": "gtd7", "method": "skills/mit7/SKILL.md", "related": ["focus7", "context7"], "en": "Build a project planning view from existing project records: outcome, current focus, owned next action, task progress, dates and waiting items. Label proposals and missing dates honestly.", "lv": "Izveido projektu plānošanas skatu no esošajiem ierakstiem: rezultāts, pašreizējais fokuss, nākamā darbība un atbildīgais, uzdevumu progress, datumi un gaidāmās lietas. Priekšlikumus un trūkstošus datumus skaidri marķē."}, "people": {"protocol": "crm7", "method": "skills/cc7/references/people.md", "related": ["meeting7", "comms7"], "en": "Build a CRM7 relationship workspace with overview, linked projects/tasks and dated meetings. Use existing person IDs and CRM authority; preserve evidence, actual commitments and privacy. Do not import the demo's people or invent relationship scores.", "lv": "Izveido CRM7 attiecību darba vietu ar pārskatu, saistītajiem projektiem/uzdevumiem un datētām tikšanās reizēm. Saglabā esošos personu ID un CRM autoritāti, avotus, īstos solījumus un privātumu. Neimportē demo cilvēkus un neizdomā attiecību vērtējumus.", "github_label": "GitHub · crm7"}, "marketing": {"protocol": "geo7", "method": "skills/geo7/SKILL.md", "related": ["ads7", "focus7"], "en": "Build a marketing view with comparable periods, source and check date for each metric, a separate AI visibility view, and one next improvement. Missing data is unknown, not zero. Do not connect accounts or alter campaigns while building the view.", "lv": "Izveido mārketinga skatu ar salīdzināmiem periodiem, katra rādītāja avotu un pārbaudes datumu, atsevišķu MI redzamības skatu un vienu nākamo uzlabojumu. Trūkstoši dati nav nulle. Skata būvē nepieslēdz kontus un nemaini kampaņas."}, "finance": {"protocol": "cc7", "method": "skills/cc7/references/finance.md", "related": ["context7", "exit7"], "en": "Build a private financial snapshot only within my existing privacy rules: cash collected and paid for the same full period, net cash flow (not profit), and unpaid-invoice ageing with its own as-of date. Reconcile approved aggregates to existing accounting sources. Keep raw bank records private; if finances are excluded, show a link until I approve otherwise.", "lv": "Izveido privātu finanšu kopsavilkumu tikai manas esošās privātuma kārtības ietvaros: saņemtā un samaksātā nauda vienā pilnā periodā, neto naudas plūsma (ne peļņa), neapmaksāto rēķinu vecums ar savu datumu. Salāgo atļautos kopsavilkumus ar esošo grāmatvedības avotu. Bankas pirmdatus turi privātus; ja finanses ir izslēgtas, rādi tikai saiti, līdz apstiprinu citādi.", "github_label": "GitHub · cc7"}, "radar": {"protocol": "cc7", "method": "skills/cc7/references/radar.md", "related": ["warm7", "focus7"], "en": "Build a private RADAR view for opportunities I want to watch: paid work or projects (for example fractional or freelance), partnerships, speaking slots, and communities or events to join. Ask for my criteria and sources first, and use only sources I list or have already authorised (alerts, saved searches, newsletters, groups I belong to). Keep each find with its link, date found, fit % with a one-line reason and one thing to check. I set the statuses (new, worth a look, applied/waiting, declined, won, not for me); a short weekly review shows which stream brings results. Run it when I ask or as a weekly manual review. Never apply, send messages, register, join, create alerts or change profiles for me, and do not scrape sites that forbid it.", "lv": "Izveido privātu RADAR skatu iespējām, kurām gribu sekot: apmaksāts darbs vai projekti (piemēram, daļslodzes vai ārštata), partnerības, uzstāšanās iespējas un kopienas vai pasākumi, kuriem pievienoties. Vispirms pajautā manus kritērijus un avotus; izmanto tikai manis norādītos vai jau atļautos avotus (brīdinājumi, saglabātas meklēšanas, jaunumu vēstules, grupas, kurās esmu). Katrai iespējai saglabā saiti, atrašanas datumu, atbilstības % ar viena teikuma iemeslu un vienu pārbaudāmo lietu. Statusus (jauns, vērts apskatīt, pieteikts/gaida, atteikts, izdevās, nav man) nosaku es; īss nedēļas pārskats rāda, kura plūsma dod rezultātu. Palaid, kad palūdzu, vai kā iknedēļas manuālu pārskatu. Nekad manā vietā nepiesakies, nesūti ziņas, nereģistrējies, nepievienojies, neveido brīdinājumus un nemaini profilus; neskrāpē vietnes, kas to aizliedz.", "github_label": "GitHub · cc7 radar"}, "skills": {"protocol": "skills7", "method": "skills/skills7/SKILL.md", "related": ["context7", "eval7"], "en": "Build a skill catalogue from methods actually present: purpose, trigger, readiness evidence, instructions, copy action and actual GitHub links. Keep planned methods distinct from installed and tested ones. Do not run a method just to show its guide.", "lv": "Izveido prasmju katalogu no faktiskajām metodēm: nolūks, izsaukums, gatavības pierādījumi, instrukcija, kopēšana un īstas GitHub saites. Atšķir plānoto, uzstādīto un pārbaudīto. Metodes skaidrojums pats to nepalaiž."}, "skill-comms7": {"protocol": "comms7", "method": "skills/comms7/SKILL.md", "related": ["skills7", "meeting7"], "en": "Explain COMMS7 as a usable guide with decisions, human/AI/code roles, workflow, allowed sources and an explicit draft/send boundary. Adapt its settings to my own permitted sources; do not execute a communication review merely to build the guide.", "lv": "Izskaidro COMMS7 lietojamā ceļvedī: lēmumi, cilvēka/MI/koda lomas, darba plūsma, atļautie avoti un melnraksta/nosūtīšanas robeža. Iestatījumus pieskaņo maniem avotiem; ceļveža būve pati nepalaiž saziņas pārskatu."}, "skill-geo7": {"protocol": "geo7", "method": "skills/geo7/SKILL.md", "related": ["skills7", "focus7"], "en": "Explain GEO7 with workflow, buyer questions, evidence, comparable question/assistant pairs and human approval of changes. Do not run paid queries or publish content while preparing the guide.", "lv": "Izskaidro GEO7 ar darba plūsmu, pircēju jautājumiem, pierādījumiem, salīdzināmiem jautājumu/asistentu pāriem un cilvēka apstiprinājumu izmaiņām. Ceļveža gatavošana nepalaiž maksas vaicājumus un nepublicē saturu."}, "tools": {"protocol": "tools7", "method": "skills/cc7/references/tools.md", "related": ["audit7", "context7"], "en": "Build a TOOLS7 inventory from the existing registry: purpose, permitted access, actual connection/operator, last check and evidence, cost limits and next step. Distinguish listed, configured, tested and unknown; put detailed logs one level deeper. Do not expose credentials or connect accounts.", "lv": "Izveido TOOLS7 inventāru no esošā reģistra: nolūks, atļautā piekļuve, faktiskais savienojums/izpildītājs, pēdējā pārbaude un pierādījumi, izmaksu robežas un nākamais solis. Atšķir uzskaitīto, konfigurēto, pārbaudīto un nezināmo; garos žurnālus liec vienu līmeni dziļāk. Neatklāj atslēgas un nepieslēdz kontus.", "github_label": "GitHub · tools7"}, "map": {"protocol": "context7", "method": "skills/context7/SKILL.md", "related": ["audit7", "exit7"], "en": "Build a folder map from the permitted actual inventory. Show which indexes cover their contents, broken links and missing maps, with date and scope. A folder alone is not evidence of a working capability.", "lv": "Izveido mapju karti no atļautā faktiskā inventāra. Parādi indeksu pārklājumu, bojātās saites un trūkstošās kartes ar pārbaudes datumu un tvērumu. Mapes esamība nepierāda strādājošu spēju."}, "team": {"protocol": "eval7", "method": "skills/eval7/SKILL.md", "related": ["skills7", "exit7"], "en": "Build a view of my actual AI roles and their handoffs: task, output, independent review, fixes and human acceptance. Mark proposed roles and untested loops as planned; do not create agents, buy model access or start background runs.", "lv": "Izveido manu faktisko MI lomu un nodošanas skatu: uzdevums, rezultāts, neatkarīga pārbaude, labojumi un cilvēka pieņemšana. Ierosinātās lomas un nepārbaudītus apļus marķē kā plānu; neveido aģentus, nepērc modeļu piekļuvi un nesāc fona izpildi."}, "health": {"protocol": "cc7", "method": "skills/cc7/SKILL.md", "related": ["audit7", "exit7"], "en": "Build a Health view showing actual audit dates, scope, evidence and unresolved decisions for the five layers and EXIT7. Read an existing register first; an absent audit stays not audited. Retain CC7 starter Health's explicit setup gate and do not run an audit just to populate a page.", "lv": "Izveido sistēmas pārskatu ar īstiem auditu datumiem, tvērumu, avotiem un neatrisinātajiem lēmumiem pieciem slāņiem un EXIT7. Vispirms lasi esošo reģistru; neesošs audits paliek nepārbaudīts. Saglabā CC7 Health atsevišķo uzstādīšanas izvēli un nepalaid auditu tikai lapas aizpildīšanai."}}, "github_guide": "https://github.com/arete-aios/aios/blob/main/skills/cc7/references/command-center.md"};
   const lv = data.locale === "lv";
   const text = (en, la) => (lv ? la : en);
   const root = "https://areteaios.com" + (lv ? "/lv" : "") + "/my/cc-demo";
@@ -2787,8 +2810,8 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
         "Vispirms izlasi manas atļautās smadzeņu ieejas. Saglabā manu konstitūciju, esošo struktūru, ID un autoritatīvos uzdevumu/CRM rakstītājus. Ja mape ir tukša, uzdod ne vairāk par trim pamata jautājumiem un parādi plānotu uzbūvi; pirms apgalvo, ka sistēma darbojas, izmanto publisko AIOS sākuma metodi.",
       ),
       text(
-        "Use my facts only. Do not copy Nora Vale, her people, tasks, dates, financial amounts or healthy states into my records. Every real card needs its source and check date; missing stays unknown. A Gantt needs real or explicitly proposed dates. Follow my privacy rules before displaying financial or relationship data.",
-        "Izmanto tikai manus faktus. Nekopē Noru Vale, viņas cilvēkus, darbus, datumus, finanšu summas vai veselus statusus manos ierakstos. Katrai īstai kartītei vajag avotu un pārbaudes datumu; trūkstošais paliek nezināms. Gantam vajag īstus vai skaidri ierosinātus datumus. Pirms finanšu vai attiecību datu attēlošanas ievēro manu privātuma kārtību.",
+        "Use my facts only. Do not copy John Doe, his people, tasks, dates, financial amounts, opportunities or healthy states into my records. Every real card needs its source and check date; missing stays unknown. A Gantt needs real or explicitly proposed dates. Follow my privacy rules before displaying financial or relationship data.",
+        "Izmanto tikai manus faktus. Nekopē John Doe piemēra cilvēkus, darbus, datumus, finanšu summas, iespējas vai veselus statusus manos ierakstos. Katrai īstai kartītei vajag avotu un pārbaudes datumu; trūkstošais paliek nezināms. Gantam vajag īstus vai skaidri ierosinātus datumus. Pirms finanšu vai attiecību datu attēlošanas ievēro manu privātuma kārtību.",
       ),
       text(
         "Keep clean view/tab URLs, keyboard controls, light/dark and the requested language. Pair EN/LV views if both are needed. Do not connect accounts, spend, send messages, publish or schedule background work as part of building the view.",

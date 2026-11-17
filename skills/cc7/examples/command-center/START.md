@@ -1,6 +1,6 @@
 # CC7 · portable Command Center example
 
-By Egils Boitmanis / Arete AIOS · 2026-11-13 · fictional Nora Vale / Vale Studio.
+By Egils Boitmanis / Arete AIOS · 2026-11-13, updated 2026-11-17 · fictional John Doe / Doe Studio.
 [Public method](https://github.com/arete-aios/aios/blob/main/skills/cc7/references/command-center.md).
 
 ## Open the actual example
@@ -44,7 +44,7 @@ nav vajadzīgas. Apturi ar Ctrl+C.
 **Kopēt CC7** sagatavo uzdevumu visam vadības centram; **Kopēt šo skatu** —
 konkrētajai sadaļai. Ielīmē savā MI ar pievienotu smadzeņu mapi. Ja starpliktuve
 nav pieejama, lapa parāda atlasāmu tekstu. MI pielāgo izkārtojumu taviem avotiem,
-neimportē Noras izdomātos cilvēkus, darbus vai finanšu summas. Vispirms privāts
+neimportē John Doe izdomātos cilvēkus, darbus, finanšu summas vai iespējas. Vispirms privāts
 lokāls rezultāts; kontu pieslēgšana un publicēšana ir atsevišķa izvēle.
 
 ## Licence and provenance

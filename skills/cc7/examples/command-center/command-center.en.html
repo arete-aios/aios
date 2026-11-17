@@ -564,6 +564,14 @@ html:not(.js) .pws+.pws{margin-top:16px}
 .fin-aging{list-style:none;padding:0;margin:24px 0 0}.fin-aging li{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 0;border-bottom:1px solid var(--stroke);font-size:13px}.fin-aging small{display:block;color:var(--muted);font-size:12px}.fin-aging b{white-space:nowrap}.card .fin-total{display:flex;justify-content:space-between;margin-top:16px;color:var(--text);font-size:14px}.fin-link{display:inline-block;margin-top:14px;font-size:13px;font-weight:600}
 @media(max-width:1100px){.fin-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.adopt-card{flex-wrap:wrap}.section-head{align-items:flex-start}}
 @media(max-width:480px){.adopt-card{padding:12px 14px;gap:10px}.fin-kpis{gap:8px}.fin-kpi{padding:12px}.fin-kpi b{font-size:22px}.fin-kpi .label{font-size:10px}.section-actions{gap:6px}.section-actions a,.section-actions button{font-size:11px;padding:6px 9px}.section-head{gap:10px}.fin-bars>div{grid-template-columns:65px minmax(0,1fr) 59px;gap:6px}.library-links{padding:24px 16px}}
+.radar-counts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:0 0 16px}.radar-count b{display:block;font-size:30px;line-height:1.1;color:var(--text)}.radar-count p:last-child{margin:6px 0 0;font-size:12px;color:var(--muted)}
+.radar-list{list-style:none;padding:0;margin:0;display:grid;gap:10px}.radar-item{display:grid;grid-template-columns:76px minmax(0,1fr) auto;gap:16px;align-items:start}.radar-fit b{display:block;font-size:22px;line-height:1.1;color:var(--blue)}.radar-fit span{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}.radar-fit>i{display:block;height:5px;margin-top:8px;border-radius:3px;background:var(--raised);overflow:hidden}.radar-fit>i>i{display:block;height:100%;background:var(--blue)}
+.radar-meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;margin:0 0 6px;font-size:12px;color:var(--muted)}.radar-body h3{margin:0 0 8px;font-size:15.5px}.radar-body p:not(.radar-meta){margin:4px 0 0;font-size:13.5px;color:var(--body)}
+.radar-note{margin:12px 0 0;font-size:12.5px;color:var(--muted)}.card .radar-caption{margin-top:14px;font-size:12.5px;color:var(--muted)}.radar-rules{display:grid;gap:6px;margin:12px 0 0;padding-left:18px;font-size:13.5px;color:var(--body)}
+@media(max-width:1100px){.radar-counts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.radar-item{grid-template-columns:56px minmax(0,1fr);gap:12px}.radar-st{grid-column:2}.radar-fit b{font-size:18px}}
+@media(max-width:650px){.radar-weeks{font-size:11.5px}.radar-weeks th,.radar-weeks td{padding:7px 4px}}
+@media(max-width:480px){.radar-item{grid-template-columns:minmax(0,1fr);gap:8px}.radar-st{grid-column:auto}.radar-fit{display:flex;align-items:center;gap:8px}.radar-fit>i{flex:1;max-width:120px;margin-top:0}.radar-counts{gap:8px}.radar-count{padding:12px}.radar-count b{font-size:22px}.radar-count .label{font-size:10px}}
 
 
 .language{display:flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600}
@@ -595,7 +603,7 @@ html:not(.js) .pws+.pws{margin-top:16px}
 
 <div class="shell">
   <nav class="side" aria-label="Command Center sections">
-    <div class="who"><span class="avatar" aria-hidden="true">NV</span><div><b>Nora Vale</b><span>Vale Studio · invented</span></div></div>
+    <div class="who"><span class="avatar" aria-hidden="true">JD</span><div><b>John Doe</b><span>Doe Studio · invented</span></div></div>
     <div class="group"><p>Daily</p>
       <a href="/my/cc-demo" data-view="today" data-nav>Today</a>
       <a href="/my/cc-demo/work" data-view="work" data-nav>Work <small>FOCUS7</small></a>
@@ -604,6 +612,7 @@ html:not(.js) .pws+.pws{margin-top:16px}
       <a href="/my/cc-demo/people" data-view="people" data-nav>People <small>crm7</small></a>
       <a href="/my/cc-demo/marketing" data-view="marketing" data-nav>Marketing <small>GEO7</small></a>
       <a href="/my/cc-demo/finance" data-view="finance" data-nav>Finance <small>cc7</small></a>
+      <a href="/my/cc-demo/radar" data-view="radar" data-nav>RADAR <small>cc7</small></a>
     </div>
     <div class="group"><p>Resources</p>
       <a href="/my/cc-demo/skills" data-view="skills" data-nav>Skills<small>skills7</small></a>
@@ -617,9 +626,9 @@ html:not(.js) .pws+.pws{margin-top:16px}
   </nav>
 
   <main id="main"><div class="adopt-card"><div><b>Build your Command Center</b><p>Copy a ready request into your AI with your brain folder attached. <a href="https://areteaios.com/cc-demo/cc7-command-center.zip" download>Download example ZIP</a></p></div><div class="adopt-actions"><button type="button" class="copy-primary" data-copy-scope="cc7">Copy CC7</button><a href="https://github.com/arete-aios/aios/blob/main/skills/cc7/references/command-center.md" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div>
-    <details class="notice"><summary>Interactive example · fictional data · 17 Nov 2026</summary><p>This is a static snapshot of Nora’s workday. Explore the views and controls; no real accounts, messages or AI are connected.</p>
-      <p><b>This is a teaching example with invented data.</b> Nora Vale, Vale Studio and every client, message and number below are made up. The layout follows the Command Center Egils Boitmanis runs his own business from; none of his data is on this page.</p>
-      <p>Everything here is read from one example folder, the Vale Studio brain, built with the same starter as the masterclass. Build the dashboard last: it only shows what the folder already holds.</p>
+    <details class="notice"><summary>Interactive example · fictional data · 17 Nov 2026</summary><p>This is a static snapshot of John’s workday. Explore the views and controls; no real accounts, messages or AI are connected.</p>
+      <p><b>This is a teaching example with invented data.</b> John Doe, Doe Studio and every client, message and number below are made up. The layout follows the Command Center Egils Boitmanis runs his own business from; none of his data is on this page.</p>
+      <p>Everything here is read from one example folder, the Doe Studio brain, built with the same starter as the masterclass. Build the dashboard last: it only shows what the folder already holds.</p>
     </details>
 
     <!-- 01 TODAY -->
@@ -774,8 +783,8 @@ html:not(.js) .pws+.pws{margin-top:16px}
         <div class="card">
           <p class="label">Today's three</p>
           <ol class="list">
-            <li><span class="n">01</span><span class="t">Write the findings section of the Harbor Health report<small>Nora · HH-11</small></span><span class="st info">Doing</span></li>
-            <li><span class="n">02</span><span class="t">Approve two reply drafts in Messages<small>Nora · 10 minutes</small></span><span class="st warn">Waiting on Nora</span></li>
+            <li><span class="n">01</span><span class="t">Write the findings section of the Harbor Health report<small>John · HH-11</small></span><span class="st info">Doing</span></li>
+            <li><span class="n">02</span><span class="t">Approve two reply drafts in Messages<small>John · 10 minutes</small></span><span class="st warn">Waiting on John</span></li>
             <li><span class="n">03</span><span class="t">Send the invoice #014 reminder<small>Maker drafted it · HH-13 · due yesterday</small></span><span class="st bad">Overdue</span></li>
           </ol>
         </div>
@@ -783,7 +792,7 @@ html:not(.js) .pws+.pws{margin-top:16px}
         <div class="card" style="grid-column:1/-1">
           <p class="label">Morning run · Maker agent</p>
 <pre class="log"><b>08:05</b> read: focus, 5 project files, Gmail, WhatsApp, Facebook page, guild chat, calendar
-<b>08:05</b> today's three proposed (Nora can swap any of them)
+<b>08:05</b> today's three proposed (John can swap any of them)
 <b>08:06</b> 2 replies drafted, not sent: Priya (Harbor Health), Lena (Northline)
 <b>08:06</b> 4 watched posts: 1 question to answer on LinkedIn, 1 on the Facebook page
 <b>08:06</b> Checker review of synthesis v1: FIX, 2 items · Maker fixes them today (HH-10)
@@ -791,45 +800,45 @@ html:not(.js) .pws+.pws{margin-top:16px}
         </div>
       </div>
 
-      <p class="how"><b>Where this comes from.</b> The north star, the three outcomes and the roadmap are in <span class="mono">05-focus/north-star.md</span>, which Nora reviews once a month. The week comes from <span class="mono">05-focus/_focus-CONTEXT.md</span>, today's three from the task tables in <span class="mono">05-focus/projects/</span>, and the brief from the Maker's morning run. Nothing here is typed into the dashboard by hand.</p>
+      <p class="how"><b>Where this comes from.</b> The north star, the three outcomes and the roadmap are in <span class="mono">05-focus/north-star.md</span>, which John reviews once a month. The week comes from <span class="mono">05-focus/_focus-CONTEXT.md</span>, today's three from the task tables in <span class="mono">05-focus/projects/</span>, and the brief from the Maker's morning run. Nothing here is typed into the dashboard by hand.</p>
     <div class="protocols"><span>Continue with</span><a href="https://github.com/arete-aios/aios/blob/main/skills/focus7/SKILL.md" target="_blank" rel="noopener noreferrer">focus7</a><a href="https://github.com/arete-aios/aios/blob/main/skills/context7/SKILL.md" target="_blank" rel="noopener noreferrer">context7</a></div></section>
 
     <!-- 02 WORK -->
     <section class="panel" id="work" aria-labelledby="h-work">
       <div class="section-head"><p class="eyebrow">02 / Work · FOCUS7</p><div class="section-actions"><button type="button" data-copy-scope="view">Copy this view</button><a href="https://github.com/arete-aios/aios/blob/main/skills/mit7/SKILL.md" target="_blank" rel="noopener noreferrer">GitHub · gtd7 ↗</a></div></div>
       <h2 id="h-work" tabindex="-1">One list for everything that needs doing</h2>
-      <p class="lead">Every task has an ID, an owner, a project and a status. Nora and her two agents share the same tasks, so "what's next?" has one answer.</p>
+      <p class="lead">Every task has an ID, an owner, a project and a status. John and his two agents share the same tasks, so "what's next?" has one answer.</p>
 
       <div class="filters" role="group" aria-label="Filter tasks">
         <button type="button" data-filter="all" aria-pressed="true">All</button>
-        <button type="button" data-filter="nora" aria-pressed="false">Nora</button>
+        <button type="button" data-filter="john" aria-pressed="false">John</button>
         <button type="button" data-filter="ai" aria-pressed="false">Agents</button>
         <button type="button" data-filter="waiting" aria-pressed="false">Waiting</button>
       </div>
 
       <div class="board">
         <div class="col"><h3>Inbox <span class="count" data-col-count>3</span></h3>
-          <div class="task" data-who="nora"><b>Idea: turn the guild session into a three-part course</b><div class="meta"><span>voice note</span><span class="tag">Nora</span></div></div>
+          <div class="task" data-who="john"><b>Idea: turn the guild session into a three-part course</b><div class="meta"><span>voice note</span><span class="tag">John</span></div></div>
           <div class="task" data-who="ai"><b>File Brightwater's December release plan</b><div class="meta"><span>email attachment</span><span class="tag ai">Maker</span></div></div>
           <div class="task" data-who="ai"><b>Summarise an article on research ops</b><div class="meta"><span>saved link</span><span class="tag ai">Maker</span></div></div>
         </div>
         <div class="col"><h3>Open <span class="count" data-col-count>4</span></h3>
-          <div class="task" data-who="nora"><b>Send the Brightwater retainer proposal</b><div class="meta"><span class="mono">BW-05</span><span>Thu</span><span class="tag">Nora</span></div></div>
-          <div class="task" data-who="nora"><b>Guild session slides</b><div class="meta"><span class="mono">NG-03</span><span>Wed</span><span class="tag">Nora</span><span class="tag ai">Maker outline</span></div></div>
-          <div class="task" data-who="nora"><b>Send the invoice #014 reminder</b><div class="meta"><span class="mono">HH-13</span><span class="st bad">due yesterday</span><span class="tag">Nora</span></div></div>
+          <div class="task" data-who="john"><b>Send the Brightwater retainer proposal</b><div class="meta"><span class="mono">BW-05</span><span>Thu</span><span class="tag">John</span></div></div>
+          <div class="task" data-who="john"><b>Guild session slides</b><div class="meta"><span class="mono">NG-03</span><span>Wed</span><span class="tag">John</span><span class="tag ai">Maker outline</span></div></div>
+          <div class="task" data-who="john"><b>Send the invoice #014 reminder</b><div class="meta"><span class="mono">HH-13</span><span class="st bad">due yesterday</span><span class="tag">John</span></div></div>
           <div class="task" data-who="ai"><b>Outline newsletter issue 9</b><div class="meta"><span class="mono">CP-09</span><span>23 Nov</span><span class="tag ai">Maker</span></div></div>
         </div>
         <div class="col"><h3>Doing <span class="count" data-col-count>2</span></h3>
-          <div class="task" data-who="nora"><b>Harbor Health findings section</b><div class="meta"><span class="mono">HH-11</span><span>Fri</span><span class="tag">Nora</span></div></div>
+          <div class="task" data-who="john"><b>Harbor Health findings section</b><div class="meta"><span class="mono">HH-11</span><span>Fri</span><span class="tag">John</span></div></div>
           <div class="task" data-who="ai"><b>Fix the two Checker items, synthesis v2</b><div class="meta"><span class="mono">HH-10</span><span>today</span><span class="tag ai">Maker</span></div></div>
         </div>
         <div class="col"><h3>Waiting <span class="count" data-col-count>3</span></h3>
-          <div class="task" data-who="nora" data-waiting><b>Analytics export from the client</b><div class="meta"><span class="mono">HH-12</span><span>asked 12 Nov</span><span class="st warn">5 days</span></div></div>
-          <div class="task" data-who="nora" data-waiting><b>Venue confirmation for Thursday</b><div class="meta"><span class="mono">NG-04</span><span>asked Mon</span><span class="st info">1 day</span></div></div>
-          <div class="task" data-who="ai" data-waiting><b>Draft the Brightwater case study</b><div class="meta"><span class="mono">VS-02</span><span>project paused until 1 Dec</span><span class="tag ai">Maker</span></div></div>
+          <div class="task" data-who="john" data-waiting><b>Analytics export from the client</b><div class="meta"><span class="mono">HH-12</span><span>asked 12 Nov</span><span class="st warn">5 days</span></div></div>
+          <div class="task" data-who="john" data-waiting><b>Venue confirmation for Thursday</b><div class="meta"><span class="mono">NG-04</span><span>asked Mon</span><span class="st info">1 day</span></div></div>
+          <div class="task" data-who="ai" data-waiting><b>Draft the Brightwater case study</b><div class="meta"><span class="mono">DS-02</span><span>project paused until 1 Dec</span><span class="tag ai">Maker</span></div></div>
         </div>
         <div class="col"><h3>Done this week <span class="count" data-col-count>3</span></h3>
-          <div class="task" data-who="nora"><b>Invoice #013 sent</b><div class="meta"><span class="mono">BW-04</span><span class="st ok">Mon</span><span class="tag">Nora</span></div></div>
+          <div class="task" data-who="john"><b>Invoice #013 sent</b><div class="meta"><span class="mono">BW-04</span><span class="st ok">Mon</span><span class="tag">John</span></div></div>
           <div class="task" data-who="ai"><b>Synthesis of P05–P06, draft v1</b><div class="meta"><span class="mono">HH-08</span><span class="st ok">Mon</span><span class="tag ai">Maker</span></div></div>
           <div class="task" data-who="ai"><b>Review of synthesis v1: FIX, 2 items</b><div class="meta"><span class="mono">HH-09</span><span class="st ok">Mon</span><span class="tag ai">Checker</span></div></div>
         </div>
@@ -842,7 +851,7 @@ html:not(.js) .pws+.pws{margin-top:16px}
     <section class="panel" id="messages" aria-labelledby="h-messages">
       <div class="section-head"><p class="eyebrow">03 / Messages · COMMS7</p><div class="section-actions"><button type="button" data-copy-scope="view">Copy this view</button><a href="https://github.com/arete-aios/aios/blob/main/skills/comms7/SKILL.md" target="_blank" rel="noopener noreferrer">GitHub · comms7 ↗</a></div></div>
       <h2 id="h-messages" tabindex="-1">Every conversation, and the comments worth an answer</h2>
-      <p class="lead">COMMS7 does two jobs. It sorts every conversation by who has to act next, and it watches a short list of posts for comments that deserve a reply. The AI reads and drafts; Nora decides and sends.</p>
+      <p class="lead">COMMS7 does two jobs. It sorts every conversation by who has to act next, and it watches a short list of posts for comments that deserve a reply. The AI reads and drafts; John decides and sends.</p>
 
       <div class="channels" aria-label="Connected channels">
         <div class="channel-tile"><span class="logo"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg></span><div><b>Gmail</b><span>Read + drafts · 14 days</span></div><span class="st ok">On</span></div>
@@ -883,12 +892,12 @@ html:not(.js) .pws+.pws{margin-top:16px}
           <div class="row msg" role="row">
             <span class="channel" role="cell"><span class="mini lettermark">in</span>LinkedIn</span>
             <span role="cell"><span class="who2">Tomás Ruiz<span class="sub">independent</span></span><span class="txt"><q>Liked your post on onboarding interviews. Open to a chat?</q></span></span>
-            <span class="txt c-next" role="cell">Offer two times next week.<span class="draft">Suggested · Nora writes it</span></span>
+            <span class="txt c-next" role="cell">Offer two times next week.<span class="draft">Suggested · John writes it</span></span>
             <span role="cell"><span class="st warn">Reply needed</span></span>
           </div>
           <div class="row msg" role="row">
             <span class="channel" role="cell"><span class="mini"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg></span>Gmail</span>
-            <span role="cell"><span class="who2">Ada Kim<span class="sub">Brightwater</span></span><span class="txt">Questions on the retainer scope, sent by Nora on 12 Nov.</span></span>
+            <span role="cell"><span class="who2">Ada Kim<span class="sub">Brightwater</span></span><span class="txt">Questions on the retainer scope, sent by John on 12 Nov.</span></span>
             <span class="txt c-next" role="cell">Ada answers after their planning on 18 Nov. Nothing to do yet.</span>
             <span role="cell"><span class="st info">Waiting on them</span></span>
           </div>
@@ -902,16 +911,16 @@ html:not(.js) .pws+.pws{margin-top:16px}
       </div>
 
       <div class="subpanel" data-sub="watch">
-        <p class="watch-rule"><b>Watch list rule:</b> Nora's own posts from the last 14 days, plus posts by the six people in People when they are about research, onboarding or design teams. A suggested comment is a draft. Nora posts it herself, or skips it.</p>
+        <p class="watch-rule"><b>Watch list rule:</b> John's own posts from the last 14 days, plus posts by the six people in People when they are about research, onboarding or design teams. A suggested comment is a draft. John posts it himself, or skips it.</p>
         <div class="grid g2">
           <article class="card post">
-            <div class="post-head"><span class="logo lettermark">in</span><div><b>Three questions I ask in every onboarding interview</b><span>Nora's post · 11 Nov · watched until 25 Nov</span></div></div>
+            <div class="post-head"><span class="logo lettermark">in</span><div><b>Three questions I ask in every onboarding interview</b><span>John's post · 11 Nov · watched until 25 Nov</span></div></div>
             <div class="post-stats"><span class="mono">6 new comments</span><span class="st warn">1 question to answer</span></div>
             <p class="post-q"><q>Do you send the questions to people in advance?</q></p>
             <p class="post-s"><b>Draft reply:</b> "No, only the topic. The questions work best when people answer from memory, not from notes."</p>
           </article>
           <article class="card post">
-            <div class="post-head"><span class="logo"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></span><div><b>Thursday: AI for design teams</b><span>Vale Studio page · 14 Nov · watched until 21 Nov</span></div></div>
+            <div class="post-head"><span class="logo"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></span><div><b>Thursday: AI for design teams</b><span>Doe Studio page · 14 Nov · watched until 21 Nov</span></div></div>
             <div class="post-stats"><span class="mono">2 new comments</span><span class="st warn">1 question to answer</span></div>
             <p class="post-q"><q>Will the session be recorded?</q></p>
             <p class="post-s"><b>Draft reply:</b> "Not this time: some participants work on unreleased products. Everyone who joins gets the slides."</p>
@@ -924,27 +933,27 @@ html:not(.js) .pws+.pws{margin-top:16px}
           <article class="card post">
             <div class="post-head"><span class="logo lettermark">in</span><div><b>Research ops is a team sport</b><span>Tomás Ruiz · new lead · 16 Nov · watched until 24 Nov</span></div></div>
             <div class="post-stats"><span class="mono">9 comments</span><span class="st info">Optional</span></div>
-            <p class="post-s"><b>Suggested comment:</b> one practical point from Nora's own interview practice, or skip.</p>
+            <p class="post-s"><b>Suggested comment:</b> one practical point from John's own interview practice, or skip.</p>
           </article>
         </div>
         <p class="watch-skip"><span class="st">Skipped 16 Nov</span> a general post about AI replacing designers: not a fit with the north star.</p>
       </div>
 
-      <p class="rule"><b>The one rule:</b> the AI reads, sorts and drafts. Nothing is sent, posted, accepted or deleted without Nora's yes.</p>
-      <p class="how"><b>Where this comes from.</b> <span class="mono">02-memory/comms/_comms-CONTEXT.md</span> holds the sources, how far back each is read, the rhythm and the watch list. The connections and their limits are in <span class="mono">04-tools/_tools-CONTEXT.md</span>. When Nora closes or parks a conversation, the decision goes into the project file it belongs to, so the next review does not raise it again.</p>
+      <p class="rule"><b>The one rule:</b> the AI reads, sorts and drafts. Nothing is sent, posted, accepted or deleted without John's yes.</p>
+      <p class="how"><b>Where this comes from.</b> <span class="mono">02-memory/comms/_comms-CONTEXT.md</span> holds the sources, how far back each is read, the rhythm and the watch list. The connections and their limits are in <span class="mono">04-tools/_tools-CONTEXT.md</span>. When John closes or parks a conversation, the decision goes into the project file it belongs to, so the next review does not raise it again.</p>
     <div class="protocols"><span>Continue with</span><a href="https://github.com/arete-aios/aios/blob/main/skills/meeting7/SKILL.md" target="_blank" rel="noopener noreferrer">meeting7</a><a href="https://github.com/arete-aios/aios/blob/main/skills/exit7/SKILL.md" target="_blank" rel="noopener noreferrer">exit7</a></div></section>
 
     <!-- 04 PROJECTS -->
     <section class="panel" id="projects" aria-labelledby="h-projects">
       <div class="section-head"><p class="eyebrow">04 / Projects · FOCUS7</p><div class="section-actions"><button type="button" data-copy-scope="view">Copy this view</button><a href="https://github.com/arete-aios/aios/blob/main/skills/mit7/SKILL.md" target="_blank" rel="noopener noreferrer">GitHub · gtd7 ↗</a></div></div>
       <h2 id="h-projects" tabindex="-1">Where the focus is, and what each project needs next</h2>
-      <p class="lead">FOCUS7 works the GTD way: every project serves an outcome, has one next action and keeps its tasks with a status. On Monday Nora picks the week's focus from these files. Everything else stays visible but quiet.</p>
+      <p class="lead">FOCUS7 works the GTD way: every project serves an outcome, has one next action and keeps its tasks with a status. On Monday John picks the week's focus from these files. Everything else stays visible but quiet.</p>
 
       <div class="stats">
         <div class="stat hero"><span class="label">In focus this week</span><b>3 of 5</b><span>projects, one per outcome or close to it</span></div>
         <div class="stat"><span class="label">Tasks in project files</span><b>13</b><span>4 done · 2 doing · 4 open · 3 waiting</span></div>
         <div class="stat"><span class="label">Overdue</span><b>1</b><span>HH-13, invoice reminder drafted, not sent</span></div>
-        <div class="stat"><span class="label">Waiting for others</span><b>2</b><span>Priya and Lena; one more is Nora's own pause</span></div>
+        <div class="stat"><span class="label">Waiting for others</span><b>2</b><span>Priya and Lena; one more is John's own pause</span></div>
       </div>
 
       <div class="card fm">
@@ -975,7 +984,7 @@ html:not(.js) .pws+.pws{margin-top:16px}
           <div class="fm-out"><b><span class="fm-n">03</span>Visibility</b><small>Two case studies by 15 Jan · AI answers 6 of 25</small></div>
           <div class="fm-pills">
             <span class="pill"><span class="code">CP</span>Calm Product newsletter<em>active · issue 9 outline</em></span>
-            <span class="pill later"><span class="code">VS</span>Vale Studio website<em>paused until 1 Dec</em></span>
+            <span class="pill later"><span class="code">DS</span>Doe Studio website<em>paused until 1 Dec</em></span>
           </div>
         </div>
       </div>
@@ -985,21 +994,21 @@ html:not(.js) .pws+.pws{margin-top:16px}
         <div class="row" role="row">
           <span role="cell"><span class="pname"><span class="code">HH</span>Harbor Health discovery</span><span class="path">05-focus/projects/harbor-health-discovery.md</span></span>
           <span class="serves txt" role="cell"><span class="cell-l">Serves</span>Clients</span>
-          <span class="na" role="cell"><span class="cell-l">Next action</span><b>Write the findings section</b><small>Nora · Fri 20 Nov</small></span>
+          <span class="na" role="cell"><span class="cell-l">Next action</span><b>Write the findings section</b><small>John · Fri 20 Nov</small></span>
           <span role="cell"><span class="cell-l">Tasks</span><span class="tcount">7 tasks · 1 overdue</span><span class="tbar" role="img" aria-label="3 done, 2 doing, 1 open, 1 waiting"><span class="done" style="flex:3" title="3 done"></span><span class="doing" style="flex:2" title="2 doing"></span><span class="open" style="flex:1" title="1 open"></span><span class="wait" style="flex:1" title="1 waiting"></span></span></span>
           <span class="stt-col" role="cell"><span class="st ok">On track</span></span>
         </div>
         <div class="row" role="row">
           <span role="cell"><span class="pname"><span class="code">BW</span>Brightwater retainer</span><span class="path">05-focus/projects/brightwater-retainer.md</span></span>
           <span class="serves txt" role="cell"><span class="cell-l">Serves</span>Clients</span>
-          <span class="na" role="cell"><span class="cell-l">Next action</span><b>Send the retainer proposal</b><small>Nora · Thu 19 Nov</small></span>
+          <span class="na" role="cell"><span class="cell-l">Next action</span><b>Send the retainer proposal</b><small>John · Thu 19 Nov</small></span>
           <span role="cell"><span class="cell-l">Tasks</span><span class="tcount">2 tasks</span><span class="tbar" role="img" aria-label="1 done, 1 open"><span class="done" style="flex:1" title="1 done"></span><span class="open" style="flex:1" title="1 open"></span></span></span>
           <span class="stt-col" role="cell"><span class="st ok">On track</span></span>
         </div>
         <div class="row" role="row">
           <span role="cell"><span class="pname"><span class="code">NG</span>Northline guild session</span><span class="path">05-focus/projects/northline-guild-session.md</span></span>
           <span class="serves txt" role="cell"><span class="cell-l">Serves</span>Teaching</span>
-          <span class="na" role="cell"><span class="cell-l">Next action</span><b>Finish the session slides</b><small>Nora, the Maker drafts the outline · Wed 18 Nov</small></span>
+          <span class="na" role="cell"><span class="cell-l">Next action</span><b>Finish the session slides</b><small>John, the Maker drafts the outline · Wed 18 Nov</small></span>
           <span role="cell"><span class="cell-l">Tasks</span><span class="tcount">2 tasks</span><span class="tbar" role="img" aria-label="1 open, 1 waiting"><span class="open" style="flex:1" title="1 open"></span><span class="wait" style="flex:1" title="1 waiting"></span></span></span>
           <span class="stt-col" role="cell"><span class="st warn">Venue not confirmed</span></span>
         </div>
@@ -1011,11 +1020,11 @@ html:not(.js) .pws+.pws{margin-top:16px}
           <span class="stt-col" role="cell"><span class="st warn">Issue 8 was four days late</span></span>
         </div>
         <div class="row" role="row">
-          <span role="cell"><span class="pname"><span class="code">VS</span>Vale Studio website</span><span class="path">05-focus/projects/studio-website.md</span></span>
+          <span role="cell"><span class="pname"><span class="code">DS</span>Doe Studio website</span><span class="path">05-focus/projects/studio-website.md</span></span>
           <span class="serves txt" role="cell"><span class="cell-l">Serves</span>Visibility</span>
           <span class="na" role="cell"><span class="cell-l">Next action</span><b>Draft the Brightwater case study</b><small>Maker · from 1 Dec, needs Ada's OK</small></span>
           <span role="cell"><span class="cell-l">Tasks</span><span class="tcount">1 task</span><span class="tbar" role="img" aria-label="1 waiting"><span class="wait" style="flex:1" title="1 waiting"></span></span></span>
-          <span class="stt-col" role="cell"><span class="st info">Paused by Nora until 1 Dec</span></span>
+          <span class="stt-col" role="cell"><span class="st info">Paused by John until 1 Dec</span></span>
         </div>
       </div>
       <ul class="tlegend" aria-label="Task bar legend"><li><i class="done"></i>Done</li><li><i class="doing"></i>Doing</li><li><i class="open"></i>Open</li><li><i class="wait"></i>Waiting</li></ul>
@@ -1026,7 +1035,7 @@ html:not(.js) .pws+.pws{margin-top:16px}
           <ul class="list">
             <li><span class="n mono">HH-12</span><span class="t">Booking funnel export from Priya<small>Asked 12 Nov · the findings can go ahead without it</small></span></li>
             <li><span class="n mono">NG-04</span><span class="t">Venue confirmation from Lena<small>Asked 16 Nov · her question about chairs and screens has a reply drafted</small></span></li>
-            <li><span class="n mono">VS-02</span><span class="t">The website restart on 1 Dec<small>Nora's own pause, so the Harbor Health report comes first</small></span></li>
+            <li><span class="n mono">DS-02</span><span class="t">The website restart on 1 Dec<small>John's own pause, so the Harbor Health report comes first</small></span></li>
           </ul>
         </div>
         <div class="card">
@@ -1047,7 +1056,7 @@ html:not(.js) .pws+.pws{margin-top:16px}
     <section class="panel" id="people" aria-labelledby="h-people">
       <div class="section-head"><p class="eyebrow">05 / People</p><div class="section-actions"><button type="button" data-copy-scope="view">Copy this view</button><a href="https://github.com/arete-aios/aios/blob/main/skills/cc7/references/people.md" target="_blank" rel="noopener noreferrer">GitHub · crm7 ↗</a></div></div>
       <h2 id="h-people" tabindex="-1">One private workspace per relationship</h2>
-      <p class="lead">Pick a person to see what Nora knows about working with them, the projects and tasks they are part of, and every meeting with its outcome.</p>
+      <p class="lead">Pick a person to see what John knows about working with them, the projects and tasks they are part of, and every meeting with its outcome.</p>
 
       <div class="people">
         <div class="people-list" role="group" aria-label="People">
@@ -1062,8 +1071,8 @@ html:not(.js) .pws+.pws{margin-top:16px}
         <div class="pws-wrap">
           <!-- Priya -->
           <article class="pws" data-person="priya" aria-label="Workspace: Priya Shah">
-            <header class="pws-head"><span class="av lg">PS</span><div><span class="label">Nora's private workspace</span><h3>Nora &amp; Priya Shah</h3><span class="pws-meta">Product lead, Harbor Health · last contact 13 Nov · next: readout on Friday</span></div></header>
-            <p class="pws-private"><b>Only Nora.</b> Priya cannot open this workspace. Notes and analysis stay in Nora's folder.</p>
+            <header class="pws-head"><span class="av lg">PS</span><div><span class="label">John's private workspace</span><h3>John &amp; Priya Shah</h3><span class="pws-meta">Product lead, Harbor Health · last contact 13 Nov · next: readout on Friday</span></div></header>
+            <p class="pws-private"><b>Only John.</b> Priya cannot open this workspace. Notes and analysis stay in John's folder.</p>
             <div class="pws-tabs" role="group" aria-label="Workspace sections"><button type="button" data-tab="overview" aria-pressed="true">Overview</button><button type="button" data-tab="work" aria-pressed="false">Projects &amp; tasks</button><button type="button" data-tab="meetings" aria-pressed="false">Meetings <span class="count">4</span></button></div>
             <div class="pws-panel" data-tab="overview">
               <div class="pws-cols">
@@ -1090,9 +1099,9 @@ html:not(.js) .pws+.pws{margin-top:16px}
             <div class="pws-panel" data-tab="work">
               <div class="pws-project"><span class="code">HH</span><b>Harbor Health discovery</b><span class="st ok">On track</span></div>
               <ul class="pws-tasks">
-                <li><span class="mono">HH-11</span>Findings section of the report<span class="tag">Nora</span><span class="st info">Doing · Fri</span></li>
+                <li><span class="mono">HH-11</span>Findings section of the report<span class="tag">John</span><span class="st info">Doing · Fri</span></li>
                 <li><span class="mono">HH-12</span>Analytics export of the booking funnel<span class="tag">Priya</span><span class="st warn">Waiting since 12 Nov</span></li>
-                <li><span class="mono">HH-13</span>Invoice #014 reminder<span class="tag">Nora</span><span class="st bad">Overdue</span></li>
+                <li><span class="mono">HH-13</span>Invoice #014 reminder<span class="tag">John</span><span class="st bad">Overdue</span></li>
                 <li><span class="mono">HH-10</span>Synthesis v2 of P05–P06<span class="tag ai">Maker</span><span class="st info">Doing</span></li>
               </ul>
             </div>
@@ -1108,8 +1117,8 @@ html:not(.js) .pws+.pws{margin-top:16px}
 
           <!-- Ada -->
           <article class="pws" data-person="ada" aria-label="Workspace: Ada Kim">
-            <header class="pws-head"><span class="av lg">AK</span><div><span class="label">Nora's private workspace</span><h3>Nora &amp; Ada Kim</h3><span class="pws-meta">Head of product, Brightwater · last contact 12 Nov · next: retainer proposal by Thursday</span></div></header>
-            <p class="pws-private"><b>Only Nora.</b> Ada cannot open this workspace.</p>
+            <header class="pws-head"><span class="av lg">AK</span><div><span class="label">John's private workspace</span><h3>John &amp; Ada Kim</h3><span class="pws-meta">Head of product, Brightwater · last contact 12 Nov · next: retainer proposal by Thursday</span></div></header>
+            <p class="pws-private"><b>Only John.</b> Ada cannot open this workspace.</p>
             <div class="pws-tabs" role="group" aria-label="Workspace sections"><button type="button" data-tab="overview" aria-pressed="true">Overview</button><button type="button" data-tab="work" aria-pressed="false">Projects &amp; tasks</button><button type="button" data-tab="meetings" aria-pressed="false">Meetings <span class="count">2</span></button></div>
             <div class="pws-panel" data-tab="overview">
               <div class="pws-cols">
@@ -1135,8 +1144,8 @@ html:not(.js) .pws+.pws{margin-top:16px}
             <div class="pws-panel" data-tab="work">
               <div class="pws-project"><span class="code">BW</span><b>Brightwater retainer</b><span class="st ok">On track</span></div>
               <ul class="pws-tasks">
-                <li><span class="mono">BW-05</span>Send the retainer proposal<span class="tag">Nora</span><span class="st info">Open · Thu</span></li>
-                <li><span class="mono">BW-04</span>Invoice #013 for the onboarding redesign<span class="tag">Nora</span><span class="st ok">Done 16 Nov</span></li>
+                <li><span class="mono">BW-05</span>Send the retainer proposal<span class="tag">John</span><span class="st info">Open · Thu</span></li>
+                <li><span class="mono">BW-04</span>Invoice #013 for the onboarding redesign<span class="tag">John</span><span class="st ok">Done 16 Nov</span></li>
               </ul>
             </div>
             <div class="pws-panel" data-tab="meetings">
@@ -1149,8 +1158,8 @@ html:not(.js) .pws+.pws{margin-top:16px}
 
           <!-- Lena -->
           <article class="pws" data-person="lena" aria-label="Workspace: Lena Ortiz">
-            <header class="pws-head"><span class="av lg">LO</span><div><span class="label">Nora's private workspace</span><h3>Nora &amp; Lena Ortiz</h3><span class="pws-meta">Organiser, Northline design guild · last contact 16 Nov · next: venue for Thursday</span></div></header>
-            <p class="pws-private"><b>Only Nora.</b> Lena cannot open this workspace.</p>
+            <header class="pws-head"><span class="av lg">LO</span><div><span class="label">John's private workspace</span><h3>John &amp; Lena Ortiz</h3><span class="pws-meta">Organiser, Northline design guild · last contact 16 Nov · next: venue for Thursday</span></div></header>
+            <p class="pws-private"><b>Only John.</b> Lena cannot open this workspace.</p>
             <div class="pws-tabs" role="group" aria-label="Workspace sections"><button type="button" data-tab="overview" aria-pressed="true">Overview</button><button type="button" data-tab="work" aria-pressed="false">Projects &amp; tasks</button><button type="button" data-tab="meetings" aria-pressed="false">Meetings <span class="count">1</span></button></div>
             <div class="pws-panel" data-tab="overview">
               <p class="label">How we work together</p>
@@ -1162,7 +1171,7 @@ html:not(.js) .pws+.pws{margin-top:16px}
             <div class="pws-panel" data-tab="work">
               <div class="pws-project"><span class="code">NG</span><b>Northline guild session</b><span class="st warn">Venue not confirmed</span></div>
               <ul class="pws-tasks">
-                <li><span class="mono">NG-03</span>Session slides<span class="tag">Nora</span><span class="st info">Open · Wed</span></li>
+                <li><span class="mono">NG-03</span>Session slides<span class="tag">John</span><span class="st info">Open · Wed</span></li>
                 <li><span class="mono">NG-04</span>Venue confirmation<span class="tag">Lena</span><span class="st warn">Waiting since 16 Nov</span></li>
               </ul>
             </div>
@@ -1175,27 +1184,27 @@ html:not(.js) .pws+.pws{margin-top:16px}
 
           <!-- Tomás -->
           <article class="pws" data-person="tomas" aria-label="Workspace: Tomás Ruiz">
-            <header class="pws-head"><span class="av lg">TR</span><div><span class="label">Nora's private workspace</span><h3>Nora &amp; Tomás Ruiz</h3><span class="pws-meta">Independent product coach · first contact today · next: reply with two times</span></div></header>
-            <p class="pws-private"><b>Only Nora.</b> Tomás cannot open this workspace.</p>
+            <header class="pws-head"><span class="av lg">TR</span><div><span class="label">John's private workspace</span><h3>John &amp; Tomás Ruiz</h3><span class="pws-meta">Independent product coach · first contact today · next: reply with two times</span></div></header>
+            <p class="pws-private"><b>Only John.</b> Tomás cannot open this workspace.</p>
             <div class="pws-tabs" role="group" aria-label="Workspace sections"><button type="button" data-tab="overview" aria-pressed="true">Overview</button><button type="button" data-tab="work" aria-pressed="false">Projects &amp; tasks</button><button type="button" data-tab="meetings" aria-pressed="false">Meetings</button></div>
             <div class="pws-panel" data-tab="overview">
               <p class="label">How we met</p>
-              <p>He commented on Nora's LinkedIn post on 11 Nov and then wrote to her. Works with early-stage health startups.</p>
+              <p>He commented on John's LinkedIn post on 11 Nov and then wrote to him. Works with early-stage health startups.</p>
               <p class="label">Worth continuing</p>
               <p>Possible referrals in both directions.</p>
             </div>
-            <div class="pws-panel" data-tab="work"><p class="pws-empty">No project yet. A project starts only when Nora approves its card.</p></div>
+            <div class="pws-panel" data-tab="work"><p class="pws-empty">No project yet. A project starts only when John approves its card.</p></div>
             <div class="pws-panel" data-tab="meetings"><p class="pws-empty">No meetings yet.</p></div>
           </article>
 
           <!-- Jonas -->
           <article class="pws" data-person="jonas" aria-label="Workspace: Jonas Berg">
-            <header class="pws-head"><span class="av lg">JB</span><div><span class="label">Nora's private workspace</span><h3>Nora &amp; Jonas Berg</h3><span class="pws-meta">Founder, small fintech · former client · last contact 6 Oct</span></div></header>
-            <p class="pws-private"><b>Only Nora.</b> Jonas cannot open this workspace.</p>
+            <header class="pws-head"><span class="av lg">JB</span><div><span class="label">John's private workspace</span><h3>John &amp; Jonas Berg</h3><span class="pws-meta">Founder, small fintech · former client · last contact 6 Oct</span></div></header>
+            <p class="pws-private"><b>Only John.</b> Jonas cannot open this workspace.</p>
             <div class="pws-tabs" role="group" aria-label="Workspace sections"><button type="button" data-tab="overview" aria-pressed="true">Overview</button><button type="button" data-tab="work" aria-pressed="false">Projects &amp; tasks</button><button type="button" data-tab="meetings" aria-pressed="false">Meetings <span class="count">1</span></button></div>
             <div class="pws-panel" data-tab="overview">
               <p class="label">History</p>
-              <p>Nora ran a discovery sprint for him in spring 2026.</p>
+              <p>John ran a discovery sprint for him in spring 2026.</p>
               <p class="label">Worth continuing</p>
               <p>He mentioned a new product line in October. <span class="st warn">Check-in overdue</span></p>
             </div>
@@ -1207,12 +1216,12 @@ html:not(.js) .pws+.pws{margin-top:16px}
 
           <!-- Mei -->
           <article class="pws" data-person="mei" aria-label="Workspace: Mei Chen">
-            <header class="pws-head"><span class="av lg">MC</span><div><span class="label">Nora's private workspace</span><h3>Nora &amp; Mei Chen</h3><span class="pws-meta">Host, Design Notes podcast · last contact 27 Oct</span></div></header>
-            <p class="pws-private"><b>Only Nora.</b> Mei cannot open this workspace.</p>
+            <header class="pws-head"><span class="av lg">MC</span><div><span class="label">John's private workspace</span><h3>John &amp; Mei Chen</h3><span class="pws-meta">Host, Design Notes podcast · last contact 27 Oct</span></div></header>
+            <p class="pws-private"><b>Only John.</b> Mei cannot open this workspace.</p>
             <div class="pws-tabs" role="group" aria-label="Workspace sections"><button type="button" data-tab="overview" aria-pressed="true">Overview</button><button type="button" data-tab="work" aria-pressed="false">Projects &amp; tasks</button><button type="button" data-tab="meetings" aria-pressed="false">Meetings <span class="count">1</span></button></div>
             <div class="pws-panel" data-tab="overview">
               <p class="label">Worth continuing</p>
-              <p>Nora is a guest in the January episode, about interviews with front-desk staff.</p>
+              <p>John is a guest in the January episode, about interviews with front-desk staff.</p>
             </div>
             <div class="pws-panel" data-tab="work"><p class="pws-empty">No project. Sending notes for the episode becomes a task when it is due.</p></div>
             <div class="pws-panel" data-tab="meetings">
@@ -1228,7 +1237,7 @@ html:not(.js) .pws+.pws{margin-top:16px}
     <!-- 06 MARKETING -->
     <section class="panel" id="marketing" aria-labelledby="h-marketing">
       <div class="section-head"><p class="eyebrow">06 / Marketing · GEO7 · Analytics</p><div class="section-actions"><button type="button" data-copy-scope="view">Copy this view</button><a href="https://github.com/arete-aios/aios/blob/main/skills/geo7/SKILL.md" target="_blank" rel="noopener noreferrer">GitHub · geo7 ↗</a></div></div>
-      <h2 id="h-marketing" tabindex="-1">Is Vale Studio being found, and by whom?</h2>
+      <h2 id="h-marketing" tabindex="-1">Is Doe Studio being found, and by whom?</h2>
       <p class="lead">Two views of one marketing folder. GEO7 checks whether AI assistants recommend the studio. Analytics brings the site, search and ad numbers into one weekly view.</p>
 
       <div class="subtabs" role="group" aria-label="Marketing views">
@@ -1237,7 +1246,7 @@ html:not(.js) .pws+.pws{margin-top:16px}
       </div>
 
       <div class="subpanel" data-sub="geo7">
-      <p class="lead">Once a month, the same five buyer questions go to the same five AI assistants. Three answers arrive automatically through APIs; two are pasted by Nora. The result shows where Vale Studio is recommended, and what to fix first.</p>
+      <p class="lead">Once a month, the same five buyer questions go to the same five AI assistants. Three answers arrive automatically through APIs; two are pasted by John. The result shows where Doe Studio is recommended, and what to fix first.</p>
 
       <div class="stats">
         <div class="stat hero"><span class="label">November · 1 Nov</span><b>17%</b><span>recommended in 4 of 24 answers</span></div>
@@ -1250,7 +1259,7 @@ html:not(.js) .pws+.pws{margin-top:16px}
         <p class="label">Five questions × five assistants · November</p>
         <div class="matrix-scroll" tabindex="0" aria-label="GEO7 results, scrolls sideways on small screens">
           <table class="matrix">
-            <caption class="sr">Whether each AI assistant recommended Vale Studio for each question in November</caption>
+            <caption class="sr">Whether each AI assistant recommended Doe Studio for each question in November</caption>
             <thead>
               <tr>
                 <th scope="col">Buyer question</th>
@@ -1387,12 +1396,12 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
 @media (max-width:480px){.an .an-strip{margin-top:-12px}.an .an-x span{font-size:11.5px}}
 </style>
 <div class="an">
-  <p class="lead">One weekly view of the site, search and ads. Every Monday at 07:30 the morning run collects read-only exports: Google Analytics 4, Search Console, Google Ads and Meta Ads arrive through connectors that cannot change anything. ChatGPT Ads has no connector, so Nora pastes its export. Below: the last four full weeks, 19 Oct – 15 Nov, compared with the four weeks before.</p>
+  <p class="lead">One weekly view of the site, search and ads. Every Monday at 07:30 the morning run collects read-only exports: Google Analytics 4, Search Console, Google Ads and Meta Ads arrive through connectors that cannot change anything. ChatGPT Ads has no connector, so John pastes its export. Below: the last four full weeks, 19 Oct – 15 Nov, compared with the four weeks before.</p>
 
   <div class="strip an-strip">
     <span class="st ok">Collected Monday 16 Nov, 07:30</span>
     <span class="st ok">4 sources automatic, read-only</span>
-    <span class="st info">1 source pasted by Nora: ChatGPT Ads</span>
+    <span class="st info">1 source pasted by John: ChatGPT Ads</span>
   </div>
 
   <div class="stats">
@@ -1452,7 +1461,7 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
     </div>
 
     <div class="card an-findings">
-      <p class="label">What this tells Nora</p>
+      <p class="label">What this tells John</p>
       <ol class="list">
         <li><span class="n">1</span><span class="t">AI assistants have started sending people. Links in AI answers brought 47 visits, up from 12, mostly to the Brightwater case study that GEO7 found cited. Two of the four direct and referral enquiries named it.<small>A second case study is the next step · website project restarts 1 Dec</small></span></li>
         <li><span class="n">2</span><span class="t">Search is the steadiest channel: 478 clicks, up 16%, and 5 of the 15 enquiries. The plain-words services page that GEO7 asks for should help search as well.<small>Same website restart · 1 Dec</small></span></li>
@@ -1495,7 +1504,7 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
             <td><span class="st ok">Running, within the cap</span></td>
           </tr>
           <tr>
-            <th scope="row"><span class="an-src"><span class="logo lettermark">GPT</span><span><b>ChatGPT Ads</b><span class="an-how">manual · pasted by Nora</span></span></span></th>
+            <th scope="row"><span class="an-src"><span class="logo lettermark">GPT</span><span><b>ChatGPT Ads</b><span class="an-how">manual · pasted by John</span></span></span></th>
             <td>Ads in ChatGPT answers: impressions, clicks, share of the cap</td>
             <td>Since 26 Oct · 3,100 impressions · 51 clicks · 17% of the cap</td>
             <td class="an-num" data-label="Site visits"><b>46</b><span class="an-was">new</span></td>
@@ -1532,8 +1541,8 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
     <p class="an-note">The channel rows add up to the Google Analytics row: 520 + 164 + 46 + 88 + 136 + 298 = 1,252 visits and 5 + 3 + 1 + 0 + 2 + 4 = 15 enquiries. Search Console counts Google only, so its 478 clicks are fewer than the 520 visits from all search engines. Ad budget is shown only as a share of the monthly cap: 41% + 17% + 13% = 71%.</p>
   </div>
 
-  <p class="rule"><b>The dashboard shows the numbers; decisions go into tasks.</b> Nothing here can change a campaign. When a number calls for action, Nora decides, and the decision becomes a task with an owner and a date in the project it belongs to. That is how Meta Ads were paused on 9 Nov.</p>
-  <p class="how"><b>Where this comes from.</b> <span class="mono">02-memory/marketing/analytics.md</span> holds the sources and how each is collected, the weekly table, the channel table and these findings. The morning run updates it every Monday from the read-only exports and Nora's pasted ChatGPT Ads file. Money stays in the ad accounts and the books: spend appears only as a share of the monthly cap, and results as clicks per enquiry.</p>
+  <p class="rule"><b>The dashboard shows the numbers; decisions go into tasks.</b> Nothing here can change a campaign. When a number calls for action, John decides, and the decision becomes a task with an owner and a date in the project it belongs to. That is how Meta Ads were paused on 9 Nov.</p>
+  <p class="how"><b>Where this comes from.</b> <span class="mono">02-memory/marketing/analytics.md</span> holds the sources and how each is collected, the weekly table, the channel table and these findings. The morning run updates it every Monday from the read-only exports and John's pasted ChatGPT Ads file. Money stays in the ad accounts and the books: spend appears only as a share of the monthly cap, and results as clicks per enquiry.</p>
 </div>
       </div>
     <div class="protocols"><span>Continue with</span><a href="https://github.com/arete-aios/aios/blob/main/skills/ads7/SKILL.md" target="_blank" rel="noopener noreferrer">ads7</a><a href="https://github.com/arete-aios/aios/blob/main/skills/focus7/SKILL.md" target="_blank" rel="noopener noreferrer">focus7</a></div></section>
@@ -1541,18 +1550,32 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
 <section class="panel" id="finance" aria-labelledby="h-finance">
 <div class="section-head"><p class="eyebrow">07 / Finance · example</p><div class="section-actions"><button type="button" data-copy-scope="view">Copy this view</button><a href="https://github.com/arete-aios/aios/blob/main/skills/cc7/references/finance.md" target="_blank" rel="noopener noreferrer">GitHub · cc7 ↗</a></div></div>
 <h2 id="h-finance" tabindex="-1">What came in, what went out, what needs a decision</h2>
-<p class="lead">A small financial view for Vale Studio. Cash flow covers the last full month; unpaid invoices have their own as-of date. Every amount is invented.</p>
-<div class="strip"><span class="st info">October 2026 · full month</span><span class="st ok">Example review · 16 Nov 2026</span><span class="st warn">1 overdue invoice needs Nora</span></div>
+<p class="lead">A small financial view for Doe Studio. Cash flow covers the last full month; unpaid invoices have their own as-of date. Every amount is invented.</p>
+<div class="strip"><span class="st info">October 2026 · full month</span><span class="st ok">Example review · 16 Nov 2026</span><span class="st warn">1 overdue invoice needs John</span></div>
 <div class="fin-kpis"><div class="card fin-kpi"><p class="label">Cash collected</p><b>€12,400</b><p>October · full month</p></div><div class="card fin-kpi"><p class="label">Cash paid</p><b>€7,300</b><p>Same period · all categories</p></div><div class="card fin-kpi"><p class="label">Net cash flow</p><b>+€5,100</b><p>Collected minus paid · not profit</p></div><div class="card fin-kpi"><p class="label">Invoices unpaid</p><b>€3,800</b><p>3 invoices · as of 17 Nov</p></div></div>
 <div class="grid g2" style="margin-top:16px"><article class="card"><p class="label">Cash movement · three full months</p><h3>Collected and paid, kept separate</h3><div class="fin-trend" aria-hidden="true"><div class="fin-month"><b>Aug</b><div class="fin-bars"><div><span>Collected</span><i style="width:61.42857142857143%"></i><em>€8,600</em></div><div><span>Paid</span><i class="paid" style="width:43.57142857142857%"></i><em>€6,100</em></div></div></div><div class="fin-month"><b>Sep</b><div class="fin-bars"><div><span>Collected</span><i style="width:67.14285714285714%"></i><em>€9,400</em></div><div><span>Paid</span><i class="paid" style="width:48.57142857142857%"></i><em>€6,800</em></div></div></div><div class="fin-month"><b>Oct</b><div class="fin-bars"><div><span>Collected</span><i style="width:88.57142857142857%"></i><em>€12,400</em></div><div><span>Paid</span><i class="paid" style="width:52.142857142857146%"></i><em>€7,300</em></div></div></div></div><p class="fin-caption">Bar scale: €14,000. The table contains every value.</p><details><summary>Show the cash-flow table</summary><div class="fin-table"><table><caption>Invented cash flow · EUR</caption><thead><tr><th>Month</th><th>Collected</th><th>Paid</th><th>Net</th></tr></thead><tbody><tr><th scope="row">Aug</th><td>€8,600</td><td>€6,100</td><td>+€2,500</td></tr><tr><th scope="row">Sep</th><td>€9,400</td><td>€6,800</td><td>+€2,600</td></tr><tr><th scope="row">Oct</th><td>€12,400</td><td>€7,300</td><td>+€5,100</td></tr></tbody></table></div></details></article>
 <article class="card"><p class="label">Invoice ageing · as of 17 Nov 2026</p><h3>An invoice is not money received</h3><ul class="fin-aging"><li><span>Within agreed terms<small>2 invoices</small></span><b>€3,200</b></li><li><span>1–30 days overdue<small>1 invoice</small></span><b>€600</b></li><li><span>Over 30 days overdue<small>0 invoices</small></span><b>€0</b></li></ul><p class="fin-total">Total unpaid<b>€3,800</b></p><p class="fin-caption">Ageing uses agreed due dates, not the date the invoice was created.</p></article></div>
-<div class="grid g2" style="margin-top:16px"><article class="card"><p class="label">The next useful decision</p><h3>Review the €600 reminder</h3><p>Nora checks the invoice and the drafted reminder. Sending it is still her decision; the task stays HH-13 in the existing project.</p><a class="fin-link" href="/my/cc-demo/work" data-view="work">Open the task view →</a></article>
-<article class="card"><p class="label">Source and boundary</p><h3>An approved summary, no bank connection</h3><p>In this example, Nora approves a monthly accounting summary. Raw bank records stay in accounting. A real setup follows its owner’s privacy rules and may show only a link instead.</p></article></div>
+<div class="grid g2" style="margin-top:16px"><article class="card"><p class="label">The next useful decision</p><h3>Review the €600 reminder</h3><p>John checks the invoice and the drafted reminder. Sending it is still his decision; the task stays HH-13 in the existing project.</p><a class="fin-link" href="/my/cc-demo/work" data-view="work">Open the task view →</a></article>
+<article class="card"><p class="label">Source and boundary</p><h3>An approved summary, no bank connection</h3><p>In this example, John approves a monthly accounting summary. Raw bank records stay in accounting. A real setup follows its owner’s privacy rules and may show only a link instead.</p></article></div>
 <p class="how"><b>Design reference.</b> The ERPNext Payments dashboard separates payments and invoice ageing. This view adapts that idea to the fictional studio; no accounting service is installed. <a href="https://github.com/frappe/erpnext/blob/develop/erpnext/accounts/accounts_dashboard/payments/payments.json" target="_blank" rel="noopener noreferrer">ERPNext · GitHub ↗</a></p>
 <div class="protocols"><span>Continue with</span><a href="https://github.com/arete-aios/aios/blob/main/skills/context7/SKILL.md" target="_blank" rel="noopener noreferrer">context7</a><a href="https://github.com/arete-aios/aios/blob/main/skills/exit7/SKILL.md" target="_blank" rel="noopener noreferrer">exit7</a></div></section>
+<section class="panel" id="radar" aria-labelledby="h-radar">
+<div class="section-head"><p class="eyebrow">08 / RADAR · example</p><div class="section-actions"><button type="button" data-copy-scope="view">Copy this view</button><a href="https://github.com/arete-aios/aios/blob/main/skills/cc7/references/radar.md" target="_blank" rel="noopener noreferrer">GitHub · cc7 radar ↗</a></div></div>
+<h2 id="h-radar" tabindex="-1">Opportunities worth a look this week</h2>
+<p class="lead">Once a week John’s AI looks through the sources he chose for four kinds of opportunity: paid work, partnerships, speaking slots and communities to join. Each find gets a fit score, a reason and one thing to check. John decides; nothing is applied for, sent or joined automatically.</p>
+<div class="strip"><span class="st info">Week 47 · reviewed Mon 16 Nov</span><span class="st ok">31 found · 7 shown</span><span class="st warn">2 wait for John’s decision</span></div>
+<div class="radar-counts"><div class="card radar-count"><p class="label">Work &amp; projects</p><b>2</b><p>1 strong fit</p></div><div class="card radar-count"><p class="label">Partnerships</p><b>1</b><p>1 strong fit</p></div><div class="card radar-count"><p class="label">Speaking</p><b>2</b><p>1 strong fit</p></div><div class="card radar-count"><p class="label">Communities &amp; events</p><b>2</b><p>0 strong fits</p></div></div>
+<ol class="radar-list" aria-label="Opportunities by fit"><li class="card radar-item" data-stream="speaking"><div class="radar-fit"><b>88%</b><span>fit</span><i aria-hidden="true"><i style="width:88%"></i></i></div><div class="radar-body"><p class="radar-meta"><span class="tag">Speaking</span><span>Conference call-for-papers page · deadline 5 Dec · submitted 16 Nov</span></p><h3>Call for speakers: regional UX conference · 25-minute practitioner talks</h3><p><b>Why it fits:</b> His post “Three questions I ask in every onboarding interview” is already a talk outline.</p><p><b>Check first:</b> Travel is not covered; decide whether the trip is worth it.</p></div><span class="st warn radar-st">Applied, waiting</span></li><li class="card radar-item" data-stream="work"><div class="radar-fit"><b>86%</b><span>fit</span><i aria-hidden="true"><i style="width:86%"></i></i></div><div class="radar-body"><p class="radar-meta"><span class="tag">Work &amp; projects</span><span>Job alert e-mail · posted 13 Nov · remote, EU hours</span></p><h3>Fractional research lead for a health-tech scale-up · two days a week</h3><p><b>Why it fits:</b> Onboarding interviews and health clients are exactly his recent work.</p><p><b>Check first:</b> The day rate is not listed. Ask before applying.</p></div><span class="st info radar-st">Worth a look</span></li><li class="card radar-item" data-stream="partners"><div class="radar-fit"><b>78%</b><span>fit</span><i aria-hidden="true"><i style="width:78%"></i></i></div><div class="radar-body"><p class="radar-meta"><span class="tag">Partnerships</span><span>Northline guild chat · 12 Nov · introduced by Lena Ortiz</span></p><h3>A two-person web studio wants a research partner for client discovery</h3><p><b>Why it fits:</b> They build, John researches; referrals can go both ways.</p><p><b>Check first:</b> Who owns the client relationship, and how fees are split.</p></div><span class="st info radar-st">Worth a look</span></li><li class="card radar-item" data-stream="communities"><div class="radar-fit"><b>74%</b><span>fit</span><i aria-hidden="true"><i style="width:74%"></i></i></div><div class="radar-body"><p class="radar-meta"><span class="tag">Communities &amp; events</span><span>Meetup page · next session 3 Dec</span></p><h3>Monthly product research meetup · online · open call for 10-minute case talks</h3><p><b>Why it fits:</b> A steady peer group for one evening a month.</p><p><b>Check first:</b> Whether sessions are recorded; client examples must stay anonymous.</p></div><span class="st  radar-st">New</span></li><li class="card radar-item" data-stream="work"><div class="radar-fit"><b>72%</b><span>fit</span><i aria-hidden="true"><i style="width:72%"></i></i></div><div class="radar-body"><p class="radar-meta"><span class="tag">Work &amp; projects</span><span>Saved search on a freelance marketplace · posted 15 Nov · fixed price</span></p><h3>Freelance usability study for a checkout flow · three weeks</h3><p><b>Why it fits:</b> Clear scope; it fits in December, after the Harbor Health readout.</p><p><b>Check first:</b> Who recruits the test participants, and the client's past reviews.</p></div><span class="st  radar-st">New</span></li><li class="card radar-item" data-stream="communities"><div class="radar-fit"><b>69%</b><span>fit</span><i aria-hidden="true"><i style="width:69%"></i></i></div><div class="radar-body"><p class="radar-meta"><span class="tag">Communities &amp; events</span><span>Incubator newsletter · event on 21 Jan 2027</span></p><h3>Health-tech demo day · volunteer mentors wanted</h3><p><b>Why it fits:</b> He meets early-stage health founders, the field Tomás Ruiz works in.</p><p><b>Check first:</b> A half-day commitment; sales pitches are not allowed.</p></div><span class="st  radar-st">New</span></li><li class="card radar-item" data-stream="speaking"><div class="radar-fit"><b>61%</b><span>fit</span><i aria-hidden="true"><i style="width:61%"></i></i></div><div class="radar-body"><p class="radar-meta"><span class="tag">Speaking</span><span>Host's LinkedIn post · 10 Nov</span></p><h3>Podcast guest: research operations in small product teams</h3><p><b>Why it fits:</b> A good audience for a small time cost.</p><p><b>Check first:</b> Overlap with the January Design Notes episode with Mei Chen.</p></div><span class="st  radar-st">New</span></li></ol>
+<p class="radar-note">Below 50% stays hidden unless John asks. 3 finds he marked “Not for me” are hidden too, and they sharpen next week’s criteria.</p>
+<div class="grid g2" style="margin-top:16px"><article class="card"><p class="label">John’s criteria</p><h3>He sets the rules; the AI applies them</h3><ul class="radar-rules"><li><b>Work:</b> user research, onboarding and service design; up to two days a week; from €650 a day; remote or within two hours’ travel.</li><li><b>Partnerships:</b> complementary skills, a named client case and a clear split.</li><li><b>Speaking:</b> practitioner talks, not paid sponsor slots; at most one trip a month.</li><li><b>Communities:</b> active groups with a real date in the next eight weeks.</li></ul><p class="radar-caption">Sources he chose: two job alert e-mails, one saved freelance search, conference call-for-papers lists, the Northline guild chat and three newsletters.</p></article>
+<article class="card"><p class="label">Last four weeks</p><h3>Which stream actually works</h3><div class="fin-table"><table class="radar-weeks"><caption>Invented weekly review totals</caption><thead><tr><th>Stream</th><th>Found</th><th>Worth a look</th><th>Applied</th><th>Result</th></tr></thead><tbody><tr><th scope="row">Work &amp; projects</th><td>58</td><td>6</td><td>2</td><td>1 call booked</td></tr><tr><th scope="row">Partnerships</th><td>9</td><td>2</td><td>1</td><td>Waiting</td></tr><tr><th scope="row">Speaking</th><td>16</td><td>5</td><td>3</td><td>1 talk accepted</td></tr><tr><th scope="row">Communities &amp; events</th><td>12</td><td>4</td><td>2</td><td>Joined 1 group</td></tr></tbody></table></div><p class="radar-caption">So far speaking brings the most results and work alerts the most noise. Statuses are John’s marks: New · Worth a look · Applied, waiting · Declined · Won · Not for me.</p></article></div>
+<div class="grid g2" style="margin-top:16px"><article class="card"><p class="label">Boundary</p><h3>The AI finds and explains. John acts.</h3><p>It reads only the listed sources, when John asks or in his weekly review, and keeps each find with its link and date. It does not apply, send messages, register, join groups, create alerts or change profiles. A new source needs his OK.</p></article>
+<article class="card"><p class="label">After a yes</p><h3>A good find moves into the existing system</h3><p>An accepted opportunity becomes a project card or a person in People, with the next action in Work. The RADAR list itself stays a weekly shortlist, not a second task list.</p><a class="fin-link" href="/my/cc-demo/people" data-view="people">Open People →</a></article></div>
+<p class="how"><b>Where this comes from.</b> Criteria and sources are in <span class="mono">02-memory/growth/radar/_radar-CONTEXT.md</span>; each weekly list, with links, dates and John’s marks, is in <span class="mono">02-memory/growth/radar/2026-w47.md</span>. Every item here is invented.</p>
+<div class="protocols"><span>Continue with</span><a href="https://github.com/arete-aios/aios/blob/main/skills/warm7/SKILL.md" target="_blank" rel="noopener noreferrer">warm7</a><a href="https://github.com/arete-aios/aios/blob/main/skills/focus7/SKILL.md" target="_blank" rel="noopener noreferrer">focus7</a></div></section>
     <!-- 07 SKILLS -->
     <section class="panel" id="skills" aria-labelledby="h-skills">
-      <div class="section-head"><p class="eyebrow">08 / Skills</p><div class="section-actions"><button type="button" data-copy-scope="view">Copy this view</button><a href="https://github.com/arete-aios/aios/blob/main/skills/skills7/SKILL.md" target="_blank" rel="noopener noreferrer">GitHub · skills7 ↗</a></div></div>
+      <div class="section-head"><p class="eyebrow">09 / Skills</p><div class="section-actions"><button type="button" data-copy-scope="view">Copy this view</button><a href="https://github.com/arete-aios/aios/blob/main/skills/skills7/SKILL.md" target="_blank" rel="noopener noreferrer">GitHub · skills7 ↗</a></div></div>
       <h2 id="h-skills" tabindex="-1">Methods the AI follows, written once</h2>
       <p class="lead">A skill is a Markdown file: when to use it, the steps, and what "done" means. Any AI that can read the folder can follow it, and the same work runs the same way the second time. The library skills live on GitHub, so anyone can install the same one.</p>
 
@@ -1571,9 +1594,9 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
         <article class="skill"><span class="chip" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/><path d="M8.5 11h5M11 8.5v5"/></svg></span><div class="skill-body"><div class="skill-top"><span class="code">GEO7</span><span class="st ok">1 Nov</span></div><h3>Recommended by AI assistants?</h3><p>Five buyer questions, five assistants, once a month, with a clear order of improvements.</p><span class="runs">1st of each month</span><div class="skill-links"><a href="/my/cc-demo/skills/geo7" data-view="skills/geo7">Full description</a><a href="/my/cc-demo/marketing" data-view="marketing">Screen: Marketing</a><a href="https://github.com/arete-aios/aios/tree/main/skills/geo7">GEO7 on GitHub</a></div></div></article>
       </div>
 
-      <p class="subhead">Written by Nora</p>
+      <p class="subhead">Written by John</p>
       <div class="skills">
-        <article class="skill own"><span class="chip" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 11h4v6H4v-4c0-3 1-5 4-6M15 11h4v6h-5v-4c0-3 1-5 4-6"/></svg></span><div class="skill-body"><div class="skill-top"><span class="code">INTERVIEW</span><span class="st ok">yesterday</span></div><h3>Interview synthesis</h3><p>Themes with exact quotes and counts. Seven checks run before a client sees it.</p><span class="runs">On request · Maker writes, Checker reviews</span><div class="skill-links"><span class="local">Only in Nora's folder: <span class="mono">03-skills/interview-synthesis/SKILL.md</span></span></div></div></article>
+        <article class="skill own"><span class="chip" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 11h4v6H4v-4c0-3 1-5 4-6M15 11h4v6h-5v-4c0-3 1-5 4-6"/></svg></span><div class="skill-body"><div class="skill-top"><span class="code">INTERVIEW</span><span class="st ok">yesterday</span></div><h3>Interview synthesis</h3><p>Themes with exact quotes and counts. Seven checks run before a client sees it.</p><span class="runs">On request · Maker writes, Checker reviews</span><div class="skill-links"><span class="local">Only in John's folder: <span class="mono">03-skills/interview-synthesis/SKILL.md</span></span></div></div></article>
         <article class="skill next"><span class="chip" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h7M9 16h5"/></svg></span><div class="skill-body"><div class="skill-top"><span class="code">PROPOSAL</span><span class="st">not written yet</span></div><h3>Next candidate</h3><p>Done by hand twice so far. It becomes a skill after the third time.</p><span class="runs">From the "Missing" lists</span></div></article>
         <article class="skill next"><span class="chip" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><div class="skill-body"><div class="skill-top"><span class="code">NEWSLETTER</span><span class="st">not written yet</span></div><h3>After that</h3><p>An issue outline from the notes saved since the last issue.</p><span class="runs">From the "Missing" lists</span></div></article>
       </div>
@@ -1668,17 +1691,17 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
 }
       </style>
       <div class="c7-top">
-        <div class="section-head"><p class="eyebrow">08 / Skills · COMMS7</p><div class="section-actions"><button type="button" data-copy-scope="view">Copy this view</button><a href="https://github.com/arete-aios/aios/blob/main/skills/comms7/SKILL.md" target="_blank" rel="noopener noreferrer">GitHub · comms7 ↗</a></div></div>
+        <div class="section-head"><p class="eyebrow">09 / Skills · COMMS7</p><div class="section-actions"><button type="button" data-copy-scope="view">Copy this view</button><a href="https://github.com/arete-aios/aios/blob/main/skills/comms7/SKILL.md" target="_blank" rel="noopener noreferrer">GitHub · comms7 ↗</a></div></div>
         <a class="c7-back" href="/my/cc-demo/skills" data-view="skills">← All skills</a>
       </div>
       <h2 id="h-skill-comms7" tabindex="-1">Who needs a reply, and what you are waiting for</h2>
-      <p class="lead">COMMS7 is a written method, not an app. Every morning it reads Nora's chosen channels, sorts each conversation by who has to act next, drafts the replies she asks for and checks a short watch list of posts for comments worth answering. The AI reads and drafts; Nora decides and sends.</p>
+      <p class="lead">COMMS7 is a written method, not an app. Every morning it reads John's chosen channels, sorts each conversation by who has to act next, drafts the replies he asks for and checks a short watch list of posts for comments worth answering. The AI reads and drafts; John decides and sends.</p>
       <p class="c7-gh"><a href="https://github.com/arete-aios/aios/tree/main/skills/comms7">Open COMMS7 on GitHub</a></p>
 
       <div class="c7-facts">
-        <div class="card"><p class="label">When it runs</p><p class="c7-fact">Every morning, with a full review on Mondays</p><p>Inside the Maker's 08:05 morning run, or whenever Nora types COMMS7.</p></div>
-        <div class="card"><p class="label">Who acts</p><p class="c7-fact">You decide · AI reads and drafts · code collects</p><p>In this example, “you” is Nora.</p></div>
-        <div class="card"><p class="label">What it never does</p><p class="c7-fact">Send, post or delete</p><p>A draft stays a draft until Nora sends it. Nothing is accepted or promised in her name.</p></div>
+        <div class="card"><p class="label">When it runs</p><p class="c7-fact">Every morning, with a full review on Mondays</p><p>Inside the Maker's 08:05 morning run, or whenever John types COMMS7.</p></div>
+        <div class="card"><p class="label">Who acts</p><p class="c7-fact">You decide · AI reads and drafts · code collects</p><p>In this example, “you” is John.</p></div>
+        <div class="card"><p class="label">What it never does</p><p class="c7-fact">Send, post or delete</p><p>A draft stays a draft until John sends it. Nothing is accepted or promised in his name.</p></div>
       </div>
 
       <div class="card c7-goal">
@@ -1687,13 +1710,13 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
       </div>
 
       <h3 class="c7-h">How one review runs</h3>
-      <p class="c7-sub">Seven steps from the request to the saved decisions. Two of them are Nora's, one is plain code, and the AI does the reading, sorting and drafting in between.</p>
+      <p class="c7-sub">Seven steps from the request to the saved decisions. Two of them are John's, one is plain code, and the AI does the reading, sorting and drafting in between.</p>
       <div class="card">
         <ul class="c7-legend" aria-label="Legend">
           <li><svg viewBox="0 0 28 16" aria-hidden="true" focusable="false"><rect class="c7-you" x="1" y="1" width="26" height="14" rx="7"/></svg>You: round, heavy outline</li>
           <li><svg viewBox="0 0 28 16" aria-hidden="true" focusable="false"><rect class="c7-ai" x="1" y="1" width="26" height="14" rx="3"/></svg>AI: tinted box</li>
           <li><svg viewBox="0 0 28 16" aria-hidden="true" focusable="false"><rect class="c7-code" x="1" y="1" width="26" height="14" rx="1"/></svg>Code: dashed box</li>
-          <li><svg viewBox="0 0 28 16" aria-hidden="true" focusable="false"><path class="c7-file" d="M1 1H21L27 7V15H1Z"/></svg>File in Nora's folder</li>
+          <li><svg viewBox="0 0 28 16" aria-hidden="true" focusable="false"><path class="c7-file" d="M1 1H21L27 7V15H1Z"/></svg>File in John's folder</li>
           <li><svg viewBox="0 0 28 16" aria-hidden="true" focusable="false"><path class="c7-loop" d="M1 8H21"/><path class="c7-loop-head" d="M20 3.5L27 8L20 12.5Z"/></svg>Dashed arrow: repeats</li>
           <li><svg viewBox="0 0 28 16" aria-hidden="true" focusable="false"><path class="c7-link" d="M1 8H27"/></svg>Dotted line: reads or writes</li>
         </ul>
@@ -1718,7 +1741,7 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
 
             <rect class="c7-info" x="304" y="36" width="428" height="104" rx="12"/>
             <text class="c7-boxlabel" x="318" y="62">TWO JOBS IN ONE RUN</text>
-            <text class="c7-txt" x="318" y="90"><tspan class="c7-strong">Conversations</tspan> · who has to act next: Nora, them, or nobody?</text>
+            <text class="c7-txt" x="318" y="90"><tspan class="c7-strong">Conversations</tspan> · who has to act next: John, them, or nobody?</text>
             <text class="c7-txt" x="318" y="116"><tspan class="c7-strong">Watched posts</tspan> · is there a question worth an answer?</text>
 
             <rect class="c7-info" x="754" y="36" width="278" height="104" rx="12"/>
@@ -1844,12 +1867,12 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
       <div class="card c7-stepscard">
         <p class="label">The same seven steps in words</p>
         <ol class="list c7-steps">
-          <li><span class="n">01</span><span class="t"><span class="c7-step-head"><b>Ask for COMMS7</b><span class="c7-who">You · chat or the 08:05 run</span></span><small>Type COMMS7 and say what to look at: everything, only replies, or one conversation. On weekdays the Maker's morning run asks for her; on Mondays it is the full review.</small></span></li>
+          <li><span class="n">01</span><span class="t"><span class="c7-step-head"><b>Ask for COMMS7</b><span class="c7-who">You · chat or the 08:05 run</span></span><small>Type COMMS7 and say what to look at: everything, only replies, or one conversation. On weekdays the Maker's morning run starts it for him; on Mondays it is the full review.</small></span></li>
           <li><span class="n">02</span><span class="t"><span class="c7-step-head"><b>Set the scope</b><span class="c7-who">AI · reads the settings</span></span><small>The AI takes the sources, how far back to read and the watch list from <span class="mono">_comms-CONTEXT.md</span>, plus the open items from the last review. It asks only what would change today's review.</small></span></li>
           <li><span class="n">03</span><span class="t"><span class="c7-step-head"><b>Collect the messages</b><span class="c7-who">Code · five channels</span></span><small>The connections fetch the last 14 days (the guild chat 7) and new comments on watched posts. A small script removes duplicates and marks what is new since the last review; it does not judge what a message means.</small></span></li>
-          <li><span class="n">04</span><span class="t"><span class="c7-step-head"><b>Read and sort</b><span class="c7-who">AI · whole threads</span></span><small>The AI reads each whole thread, including what Nora already sent, and gives it one state: reply needed, waiting on them, for information, or closed. Watched posts are checked for questions.</small></span></li>
-          <li><span class="n">05</span><span class="t"><span class="c7-step-head"><b>Show the few that matter</b><span class="c7-who">AI · drafts, not sent</span></span><small>Up to five items, real deadlines first, then the north star and this week's projects. Each has a reason, one next step and its source; the replies Nora asked for are drafted and left unsent.</small></span></li>
-          <li><span class="n">06</span><span class="t"><span class="c7-step-head"><b>Decide and send</b><span class="c7-who">You · item by item</span></span><small>For each item Nora replies, does it, waits, moves it to later or skips it. She sends and posts herself; the AI updates that item and shows the next one.</small></span></li>
+          <li><span class="n">04</span><span class="t"><span class="c7-step-head"><b>Read and sort</b><span class="c7-who">AI · whole threads</span></span><small>The AI reads each whole thread, including what John already sent, and gives it one state: reply needed, waiting on them, for information, or closed. Watched posts are checked for questions.</small></span></li>
+          <li><span class="n">05</span><span class="t"><span class="c7-step-head"><b>Show the few that matter</b><span class="c7-who">AI · drafts, not sent</span></span><small>Up to five items, real deadlines first, then the north star and this week's projects. Each has a reason, one next step and its source; the replies John asked for are drafted and left unsent.</small></span></li>
+          <li><span class="n">06</span><span class="t"><span class="c7-step-head"><b>Decide and send</b><span class="c7-who">You · item by item</span></span><small>For each item John replies, does it, waits, moves it to later or skips it. He sends and posts himself; the AI updates that item and shows the next one.</small></span></li>
           <li><span class="n">07</span><span class="t"><span class="c7-step-head"><b>Save and close</b><span class="c7-who">AI · project files</span></span><small>Each decision goes into the project file the conversation belongs to, and anything waiting gets a date to check. The AI reads the files back and closes with EXIT7, so tomorrow starts from here.</small></span></li>
         </ol>
       </div>
@@ -1860,21 +1883,21 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
         <div class="row"><dt>Who acts next</dt><dd>Every conversation gets exactly one state: reply needed, waiting on them, for information, or closed.</dd></div>
         <div class="row"><dt>Deadlines first</dt><dd>Real deadlines and consequences come first, then the north star and this week's projects; unread counts and loud messages do not decide, and no due date is invented.</dd></div>
         <div class="row"><dt>Open promises stay open</dt><dd>“I'll send the slides tomorrow” is still open after the thank-you goes out; silence or archiving does not close it.</dd></div>
-        <div class="row"><dt>A draft is not a reply</dt><dd>Nothing counts as answered until Nora sends it, and a suggested comment is only a draft until she posts it or skips it.</dd></div>
+        <div class="row"><dt>A draft is not a reply</dt><dd>Nothing counts as answered until John sends it, and a suggested comment is only a draft until he posts it or skips it.</dd></div>
         <div class="row"><dt>Say what was not read</dt><dd>If a channel could not be read, the review says so instead of guessing what was in it.</dd></div>
       </dl>
 
-      <h3 class="c7-h">In Nora's folder</h3>
-      <p class="c7-sub">The method stays the same for everyone. Nora's choices live in two short files, and today's run left a trail that matches the Messages screen.</p>
+      <h3 class="c7-h">In John's folder</h3>
+      <p class="c7-sub">The method stays the same for everyone. John's choices live in two short files, and today's run left a trail that matches the Messages screen.</p>
       <div class="grid g2">
         <div class="card">
           <p class="label">Settings</p>
           <p class="path">02-memory/comms/_comms-CONTEXT.md</p>
           <dl class="c7-kv">
-            <dt>Sources</dt><dd>Gmail, WhatsApp Business, the Facebook page and the guild chat; LinkedIn in a session Nora opens</dd>
+            <dt>Sources</dt><dd>Gmail, WhatsApp Business, the Facebook page and the guild chat; LinkedIn in a session John opens</dd>
             <dt>How far back</dt><dd>14 days, the guild chat 7; open promises however old</dd>
             <dt>Rhythm</dt><dd>Every morning at 08:05; the full review on Mondays</dd>
-            <dt>Watch list</dt><dd>Nora's own posts from the last 14 days, plus posts by the six people in People about research, onboarding or design teams</dd>
+            <dt>Watch list</dt><dd>John's own posts from the last 14 days, plus posts by the six people in People about research, onboarding or design teams</dd>
           </dl>
         </div>
         <div class="card">
@@ -1885,7 +1908,7 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
             <li><span class="mini"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></span><span><b>WhatsApp Business</b> · read. Cannot send.</span></li>
             <li><span class="mini"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></span><span><b>Facebook page</b> · read messages and comments. Cannot post.</span></li>
             <li><span class="mini lettermark">#</span><span><b>Guild chat</b> · read #events and direct messages.</span></li>
-            <li><span class="mini lettermark">in</span><span><b>LinkedIn</b> · read in a browser session Nora opens. Nothing is posted.</span></li>
+            <li><span class="mini lettermark">in</span><span><b>LinkedIn</b> · read in a browser session John opens. Nothing is posted.</span></li>
           </ul>
           <p class="c7-note">To rank, it also reads <span class="mono">05-focus/north-star.md</span> and this week's focus, and a person's file in <span class="mono">02-memory/people/</span> only when a conversation needs it.</p>
         </div>
@@ -1894,18 +1917,18 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
 <pre class="log"><b>08:05</b> read: Gmail, WhatsApp, Facebook page, guild chat; focus and project files
 <b>08:06</b> sorted: 3 reply needed · 2 waiting on them · 4 for information
 <b>08:06</b> 2 replies drafted, not sent: Priya (Harbor Health), Lena (Northline)
-<b>08:06</b> 1 reply suggested, Nora writes it: Tomás (LinkedIn, from Monday's review)
+<b>08:06</b> 1 reply suggested, John writes it: Tomás (LinkedIn, from Monday's review)
 <b>08:06</b> 4 watched posts: 1 question to answer on LinkedIn, 1 on the Facebook page</pre>
           <p class="c7-note">Ada Kim's answer on the Brightwater scope stays “waiting on them” until their planning on 18 Nov. One general post was skipped on 16 Nov: not a fit with the north star.</p>
         </div>
         <div class="card">
-          <p class="label">What Nora approves</p>
+          <p class="label">What John approves</p>
           <p><span class="st info">2 reply drafts waiting for approval</span></p>
           <ul class="c7-approve">
-            <li><b>Priya Shah</b> · confirm 11:00 for Friday's readout, then move the calendar slot herself.</li>
+            <li><b>Priya Shah</b> · confirm 11:00 for Friday's readout, then move the calendar slot himself.</li>
             <li><b>Lena Ortiz</b> · 40 chairs, one screen, HDMI.</li>
-            <li><b>Tomás Ruiz</b> · Nora writes this one herself and offers two times next week.</li>
-            <li><b>Two draft answers</b> on her own posts, LinkedIn and Facebook: post as they are, edit, or skip.</li>
+            <li><b>Tomás Ruiz</b> · John writes this one himself and offers two times next week.</li>
+            <li><b>Two draft answers</b> on his own posts, LinkedIn and Facebook: post as they are, edit, or skip.</li>
             <li><b>Two optional comments</b> on Priya's and Tomás's posts: write one, or skip.</li>
           </ul>
         </div>
@@ -1920,7 +1943,7 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
         </div>
       </div>
 
-      <p class="how"><b>Where this comes from.</b> The method is the public COMMS7 skill from the library; <span class="mono">03-skills/_skills-CONTEXT.md</span> records its source. Nora's own choices are in <span class="mono">02-memory/comms/_comms-CONTEXT.md</span> and the connections in <span class="mono">04-tools/_tools-CONTEXT.md</span>, so changing a source, the days read back or the watch list means editing one of those files, never the skill.</p>
+      <p class="how"><b>Where this comes from.</b> The method is the public COMMS7 skill from the library; <span class="mono">03-skills/_skills-CONTEXT.md</span> records its source. John's own choices are in <span class="mono">02-memory/comms/_comms-CONTEXT.md</span> and the connections in <span class="mono">04-tools/_tools-CONTEXT.md</span>, so changing a source, the days read back or the watch list means editing one of those files, never the skill.</p>
     <div class="protocols"><span>Continue with</span><a href="https://github.com/arete-aios/aios/blob/main/skills/skills7/SKILL.md" target="_blank" rel="noopener noreferrer">skills7</a><a href="https://github.com/arete-aios/aios/blob/main/skills/meeting7/SKILL.md" target="_blank" rel="noopener noreferrer">meeting7</a></div></section>
 
 <section class="panel" id="skill-geo7" aria-labelledby="h-skill-geo7">
@@ -2023,17 +2046,17 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
   #skill-geo7 .card .g7-goal-t{font-size:17px}
 }
       </style>
-      <div class="section-head"><p class="eyebrow">08 / Skills · GEO7</p><div class="section-actions"><button type="button" data-copy-scope="view">Copy this view</button><a href="https://github.com/arete-aios/aios/blob/main/skills/geo7/SKILL.md" target="_blank" rel="noopener noreferrer">GitHub · geo7 ↗</a></div></div>
+      <div class="section-head"><p class="eyebrow">09 / Skills · GEO7</p><div class="section-actions"><button type="button" data-copy-scope="view">Copy this view</button><a href="https://github.com/arete-aios/aios/blob/main/skills/geo7/SKILL.md" target="_blank" rel="noopener noreferrer">GitHub · geo7 ↗</a></div></div>
       <p class="g7-back"><a href="/my/cc-demo/skills" data-view="skills">← All skills</a></p>
-      <h2 id="h-skill-geo7" tabindex="-1">When buyers ask an AI, is Vale Studio named?</h2>
-      <p class="lead">GEO7 is a public method for being found by the right buyers, in search and in AI answers. Nora uses it for one narrow question: do AI assistants recommend Vale Studio when a buyer asks? Once a month the same answers are collected and scored the same way, and the gaps become a short, ordered list of fixes for her website.</p>
+      <h2 id="h-skill-geo7" tabindex="-1">When buyers ask an AI, is Doe Studio named?</h2>
+      <p class="lead">GEO7 is a public method for being found by the right buyers, in search and in AI answers. John uses it for one narrow question: do AI assistants recommend Doe Studio when a buyer asks? Once a month the same answers are collected and scored the same way, and the gaps become a short, ordered list of fixes for his website.</p>
       <p class="g7-gh"><a href="https://github.com/arete-aios/aios/tree/main/skills/geo7">Open GEO7 on GitHub</a> · the public method and its helper scripts</p>
 
       <div class="g7-facts">
         <div class="card">
           <p class="label">When it runs</p>
           <p class="g7-big">1st of each month</p>
-          <p>Last run 1 Nov · next 1 Dec. Three answers arrive by API, two are pasted by Nora.</p>
+          <p>Last run 1 Nov · next 1 Dec. Three answers arrive by API, two are pasted by John.</p>
         </div>
         <div class="card">
           <p class="label">Who acts</p>
@@ -2054,14 +2077,14 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
 
       <div class="card g7-goal">
         <p class="label">Goal</p>
-        <p class="g7-goal-t">A buyer who asks an AI assistant one of the five questions hears Vale Studio named, and that answer leads to a call with Nora.</p>
+        <p class="g7-goal-t">A buyer who asks an AI assistant one of the five questions hears Doe Studio named, and that answer leads to a call with John.</p>
       </div>
 
       <h3 class="g7-h3">How one monthly round runs</h3>
-      <p class="g7-intro">Six stages from the public method, applied to Nora's five questions. Code repeats the checks, AI selects and explains, Nora decides. The saved files are what each round leaves behind.</p>
+      <p class="g7-intro">Six stages from the public method, applied to John's five questions. Code repeats the checks, AI selects and explains, John decides. The saved files are what each round leaves behind.</p>
       <p class="g7-hint">Scroll sideways to see all six stages.</p>
       <div class="g7-scroll" tabindex="0" role="region" aria-label="GEO7 flow diagram, scrolls sideways on small screens">
-        <svg class="g7-flow" viewBox="0 0 1140 536" role="img" focusable="false" aria-label="GEO7 flow for Vale Studio in three bands. Evidence and intent: 1 check the site, 2 pick questions. Difference and fix: 3 who is named, 4 brief the fix. Implementation and measurement: 5 approve and build, 6 ask and score. The monthly result is saved in the baseline file and loops back to the questions for the next round.">
+        <svg class="g7-flow" viewBox="0 0 1140 536" role="img" focusable="false" aria-label="GEO7 flow for Doe Studio in three bands. Evidence and intent: 1 check the site, 2 pick questions. Difference and fix: 3 who is named, 4 brief the fix. Implementation and measurement: 5 approve and build, 6 ask and score. The monthly result is saved in the baseline file and loops back to the questions for the next round.">
           <defs>
             <marker id="g7-ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto"><path class="g7-ah" d="M0 0L10 5L0 10z"/></marker>
             <marker id="g7-ah-loop" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path class="g7-ah-loop" d="M0 0L10 5L0 10z"/></marker>
@@ -2070,7 +2093,7 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
           <!-- goal -->
           <rect class="g7-n-goal" x="12" y="12" width="1116" height="48" rx="12"/>
           <text class="g7-goal-l" x="30" y="41">GOAL</text>
-          <text class="g7-gt" x="86" y="41">A buyer who asks an AI assistant one of the five questions hears Vale Studio named, and that answer leads to a call with Nora.</text>
+          <text class="g7-gt" x="86" y="41">A buyer who asks an AI assistant one of the five questions hears Doe Studio named, and that answer leads to a call with John.</text>
 
           <!-- bands -->
           <rect class="g7-band" x="12" y="74" width="364" height="450" rx="14"/>
@@ -2195,12 +2218,12 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
       </ul>
 
       <ol class="g7-steps" aria-label="The six stages as text">
-        <li><span class="g7-sn" aria-hidden="true">1</span><div class="g7-st"><p class="g7-st-h"><b>Check the site</b><span class="g7-who g7-you">You + AI</span></p><p class="g7-st-m mono">Stage: audit</p><p class="g7-st-t">Nora names the site, the market, the folder for results and the monthly budget. AI reads her public pages and notes, with the date, what each page actually answers.</p></div></li>
-        <li><span class="g7-sn" aria-hidden="true">2</span><div class="g7-st"><p class="g7-st-h"><b>Pick questions</b><span class="g7-who g7-you">You + AI</span></p><p class="g7-st-m mono">Stage: keywords</p><p class="g7-st-t">AI drafts candidate questions from real buyer emails and call notes; Nora keeps five, each tied to one page and one next step. The same five stay from month to month.</p></div></li>
+        <li><span class="g7-sn" aria-hidden="true">1</span><div class="g7-st"><p class="g7-st-h"><b>Check the site</b><span class="g7-who g7-you">You + AI</span></p><p class="g7-st-m mono">Stage: audit</p><p class="g7-st-t">John names the site, the market, the folder for results and the monthly budget. AI reads his public pages and notes, with the date, what each page actually answers.</p></div></li>
+        <li><span class="g7-sn" aria-hidden="true">2</span><div class="g7-st"><p class="g7-st-h"><b>Pick questions</b><span class="g7-who g7-you">You + AI</span></p><p class="g7-st-m mono">Stage: keywords</p><p class="g7-st-t">AI drafts candidate questions from real buyer emails and call notes; John keeps five, each tied to one page and one next step. The same five stay from month to month.</p></div></li>
         <li><span class="g7-sn" aria-hidden="true">3</span><div class="g7-st"><p class="g7-st-h"><b>Who is named</b><span class="g7-who g7-ai">AI</span></p><p class="g7-st-m mono">Stage: competitors</p><p class="g7-st-t">From the saved answers, AI lists whom the assistants recommend instead and which pages they cite. A name with no saved answer behind it stays a guess.</p></div></li>
-        <li><span class="g7-sn" aria-hidden="true">4</span><div class="g7-st"><p class="g7-st-h"><b>Brief the fix</b><span class="g7-who g7-ai">AI</span></p><p class="g7-st-m mono">Stage: content</p><p class="g7-st-t">Each gap becomes a short page brief: one plain answer, a real example, a small FAQ and a check that shows it is done. P1–P3 sets the order; the text stays a draft until Nora checks the facts.</p></div></li>
-        <li><span class="g7-sn" aria-hidden="true">5</span><div class="g7-st"><p class="g7-st-h"><b>Approve and build</b><span class="g7-who g7-you">You</span></p><p class="g7-st-m mono">Stage: implementation</p><p class="g7-st-t">Nora approves each change, and the website project builds it when it restarts on 1 Dec. GEO7 itself publishes nothing.</p></div></li>
-        <li><span class="g7-sn" aria-hidden="true">6</span><div class="g7-st"><p class="g7-st-h"><b>Ask and score</b><span class="g7-who g7-ai">AI + code</span></p><p class="g7-st-m mono">Stage: measurement</p><p class="g7-st-t">On the 1st, the same five questions go to the same five assistants: three by API, two pasted by Nora. AI marks each answer placed, named or not; <span class="mono">ai_visibility.py</span> repeats the count and leaves errors out.</p></div></li>
+        <li><span class="g7-sn" aria-hidden="true">4</span><div class="g7-st"><p class="g7-st-h"><b>Brief the fix</b><span class="g7-who g7-ai">AI</span></p><p class="g7-st-m mono">Stage: content</p><p class="g7-st-t">Each gap becomes a short page brief: one plain answer, a real example, a small FAQ and a check that shows it is done. P1–P3 sets the order; the text stays a draft until John checks the facts.</p></div></li>
+        <li><span class="g7-sn" aria-hidden="true">5</span><div class="g7-st"><p class="g7-st-h"><b>Approve and build</b><span class="g7-who g7-you">You</span></p><p class="g7-st-m mono">Stage: implementation</p><p class="g7-st-t">John approves each change, and the website project builds it when it restarts on 1 Dec. GEO7 itself publishes nothing.</p></div></li>
+        <li><span class="g7-sn" aria-hidden="true">6</span><div class="g7-st"><p class="g7-st-h"><b>Ask and score</b><span class="g7-who g7-ai">AI + code</span></p><p class="g7-st-m mono">Stage: measurement</p><p class="g7-st-t">On the 1st, the same five questions go to the same five assistants: three by API, two pasted by John. AI marks each answer placed, named or not; <span class="mono">ai_visibility.py</span> repeats the count and leaves errors out.</p></div></li>
       </ol>
 
       <h3 class="g7-h3">Principles</h3>
@@ -2214,14 +2237,14 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
       </dl>
       <p class="g7-note"><b>P1–P3 is an order of work.</b> It is judged from the buyer's path, the strength of the evidence and whether the fix can be checked. It is not a measured effect on AI answers; when the evidence is thin, the first task is a check.</p>
 
-      <h3 class="g7-h3">In Nora's folder</h3>
+      <h3 class="g7-h3">In John's folder</h3>
       <p class="g7-intro">One file holds the settings and the history. The latest run is shown in <a href="/my/cc-demo/marketing" data-view="marketing">Marketing</a>.</p>
       <div class="card">
         <p class="label">The file</p>
         <p class="g7-path mono">02-memory/marketing/geo7-baseline.md</p>
         <dl class="g7-parts">
           <div><dt>Questions</dt><dd>The five buyer questions, in the words buyers used, each tied to one page and one next step. A change starts a new series.</dd></div>
-          <div><dt>Collection rules</dt><dd>The 1st of each month. Gemini, Claude and Perplexity by API within the agreed budget; ChatGPT and DeepSeek pasted by Nora. Every answer saved with its date.</dd></div>
+          <div><dt>Collection rules</dt><dd>The 1st of each month. Gemini, Claude and Perplexity by API within the agreed budget; ChatGPT and DeepSeek pasted by John. Every answer saved with its date.</dd></div>
           <div><dt>Monthly results</dt><dd>One row per month on the same pairs: October 2 of 24, November 4 of 24. Errors are listed, not counted.</dd></div>
           <div><dt>Order of improvements</dt><dd>P1–P3, each with the page, who does it and the check that shows it is done.</dd></div>
         </dl>
@@ -2235,7 +2258,7 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
             <li><b>Perplexity</b> · #4 for question 1, #2 for question 2</li>
             <li><b>Gemini</b> · named for question 2, without a numbered list</li>
             <li><b>ChatGPT</b> · #3 for question 4</li>
-            <li><b>Question 3</b>, fintech onboarding · no assistant named her</li>
+            <li><b>Question 3</b>, fintech onboarding · no assistant named him</li>
             <li><b>DeepSeek</b>, question 5 · error, left out of the count</li>
           </ul>
           <p class="g7-small">Cited most: the <i>Calm Product</i> newsletter archive (3×), the Brightwater case study (2×), the Northline guild talk page (1×).</p>
@@ -2250,23 +2273,23 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
           <p class="g7-small">Each task carries the check from its brief. Outside the site: P3, a guest article for the guild newsletter, not started. The 1 Dec check still measures today's site; the February target is 6 of 25.</p>
         </div>
         <div class="card">
-          <p class="label">What Nora approves</p>
+          <p class="label">What John approves</p>
           <ul class="g7-ul">
             <li>The five questions, and any change to them</li>
             <li>The API budget for the three automatic answers</li>
             <li>Every page change, before it goes live</li>
             <li>A client's name on a public page: the Brightwater study waits for Ada's written OK</li>
           </ul>
-          <p class="g7-small">On the 1st she also pastes the two manual answers, from ChatGPT and DeepSeek.</p>
+          <p class="g7-small">On the 1st he also pastes the two manual answers, from ChatGPT and DeepSeek.</p>
         </div>
       </div>
 
-      <p class="how"><b>Where this comes from.</b> The six stages, the rules and the helper scripts come from the public GEO7 skill, narrowed here to one question a freelancer can ask every month. Nora's questions, rules and results live in <span class="mono">02-memory/marketing/geo7-baseline.md</span>; <span class="mono">03-skills/_skills-CONTEXT.md</span> lists the skill and where it came from. The studio, the people and every number are invented.</p>
+      <p class="how"><b>Where this comes from.</b> The six stages, the rules and the helper scripts come from the public GEO7 skill, narrowed here to one question a freelancer can ask every month. John's questions, rules and results live in <span class="mono">02-memory/marketing/geo7-baseline.md</span>; <span class="mono">03-skills/_skills-CONTEXT.md</span> lists the skill and where it came from. The studio, the people and every number are invented.</p>
     <div class="protocols"><span>Continue with</span><a href="https://github.com/arete-aios/aios/blob/main/skills/skills7/SKILL.md" target="_blank" rel="noopener noreferrer">skills7</a><a href="https://github.com/arete-aios/aios/blob/main/skills/focus7/SKILL.md" target="_blank" rel="noopener noreferrer">focus7</a></div></section>
 
     <!-- 08 TOOLS -->
     <section class="panel" id="tools" aria-labelledby="h-tools">
-      <div class="section-head"><p class="eyebrow">09 / Tools</p><div class="section-actions"><button type="button" data-copy-scope="view">Copy this view</button><a href="https://github.com/arete-aios/aios/blob/main/skills/cc7/references/tools.md" target="_blank" rel="noopener noreferrer">GitHub · tools7 ↗</a></div></div>
+      <div class="section-head"><p class="eyebrow">10 / Tools</p><div class="section-actions"><button type="button" data-copy-scope="view">Copy this view</button><a href="https://github.com/arete-aios/aios/blob/main/skills/cc7/references/tools.md" target="_blank" rel="noopener noreferrer">GitHub · tools7 ↗</a></div></div>
       <h2 id="h-tools" tabindex="-1">What the AI can reach, and how far</h2>
       <p class="lead">Connectors and plugins give the AI eyes on the work. Each gets the narrowest access that does the job. Sending, posting, paying and deleting always wait for a yes.</p>
 
@@ -2318,21 +2341,21 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
         <div class="row" role="row">
           <span class="tname" role="cell"><span class="logo"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15.852 8.981h-4.588V0h4.588c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.491-4.49 4.491zM12.735 7.51h3.117c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-3.117V7.51zm0 1.471H8.148c-2.476 0-4.49-2.014-4.49-4.49S5.672 0 8.148 0h4.588v8.981zm-4.587-7.51c-1.665 0-3.019 1.355-3.019 3.019s1.354 3.02 3.019 3.02h3.117V1.471H8.148zm4.587 15.019H8.148c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h4.588v8.98zM8.148 8.981c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h3.117V8.981H8.148zM8.172 24c-2.489 0-4.515-2.014-4.515-4.49s2.014-4.49 4.49-4.49h4.588v4.441c0 2.503-2.047 4.539-4.563 4.539zm-.024-7.51a3.023 3.023 0 0 0-3.019 3.019c0 1.665 1.365 3.019 3.044 3.019 1.705 0 3.093-1.376 3.093-3.068v-2.97H8.148zm7.704 0h-.098c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h.098c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.49-4.49 4.49zm-.097-7.509c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h.098c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-.098z"/></svg></span><span><b>Figma</b><span class="sub">connector</span></span></span>
           <span class="txt" role="cell"><span class="cell-l">For</span>Design files for case studies</span>
-          <span class="txt" role="cell"><span class="cell-l">Access</span>Read files Nora shares.</span>
+          <span class="txt" role="cell"><span class="cell-l">Access</span>Read files John shares.</span>
           <span class="txt usedby" role="cell"><span class="cell-l">Used by</span>Maker</span>
           <span class="state" role="cell"><span class="st ok">Connected</span><small>Checked Thu 12 Nov</small></span>
         </div>
         <div class="row" role="row">
           <span class="tname" role="cell"><span class="logo"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5.033 14.649H.743a.74.74 0 0 1-.686-.458.74.74 0 0 1 .16-.808L3.19 10.41H1.06A1.06 1.06 0 0 1 0 9.35h3.957c.301 0 .57.18.686.458a.74.74 0 0 1-.161.808L1.51 13.59h2.464c.585 0 1.06.475 1.06 1.06zM24 11.338c0-1.14-.927-2.066-2.066-2.066-.61 0-1.158.265-1.537.686a2.061 2.061 0 0 0-1.536-.686c-1.14 0-2.066.926-2.066 2.066v3.311a1.06 1.06 0 0 0 1.06-1.06v-2.251a1.004 1.004 0 0 1 2.013 0v2.251c0 .586.474 1.06 1.06 1.06v-3.311a1.004 1.004 0 0 1 2.012 0v2.251c0 .586.475 1.06 1.06 1.06zM16.265 12a2.728 2.728 0 1 1-5.457 0 2.728 2.728 0 0 1 5.457 0zm-1.06 0a1.669 1.669 0 1 0-3.338 0 1.669 1.669 0 0 0 3.338 0zm-4.82 0a2.728 2.728 0 1 1-5.458 0 2.728 2.728 0 0 1 5.457 0zm-1.06 0a1.669 1.669 0 1 0-3.338 0 1.669 1.669 0 0 0 3.338 0z"/></svg></span><span><b>Zoom</b><span class="sub">connector</span></span></span>
           <span class="txt" role="cell"><span class="cell-l">For</span>Call recordings</span>
-          <span class="txt" role="cell"><span class="cell-l">Access</span>Recordings Nora selects, nothing else.</span>
+          <span class="txt" role="cell"><span class="cell-l">Access</span>Recordings John selects, nothing else.</span>
           <span class="txt usedby" role="cell"><span class="cell-l">Used by</span>MEETING7</span>
           <span class="state" role="cell"><span class="st ok">Connected</span><small>Checked Fri 13 Nov</small></span>
         </div>
         <div class="row" role="row">
           <span class="tname" role="cell"><span class="logo lettermark">in</span><span><b>LinkedIn</b><span class="sub">browser</span></span></span>
           <span class="txt" role="cell"><span class="cell-l">For</span>Comments on chosen posts</span>
-          <span class="txt" role="cell"><span class="cell-l">Access</span>Read in a session Nora opens. Nothing is posted.</span>
+          <span class="txt" role="cell"><span class="cell-l">Access</span>Read in a session John opens. Nothing is posted.</span>
           <span class="txt usedby" role="cell"><span class="cell-l">Used by</span>COMMS7 watch list</span>
           <span class="state" role="cell"><span class="st info">Manual by choice</span><small>No connector on purpose</small></span>
         </div>
@@ -2362,12 +2385,12 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
           <span class="txt" role="cell"><span class="cell-l">For</span>Facebook and Instagram ads results</span>
           <span class="txt" role="cell"><span class="cell-l">Access</span>Read reports only. Cannot change a campaign.</span>
           <span class="txt usedby" role="cell"><span class="cell-l">Used by</span>Analytics view</span>
-          <span class="state" role="cell"><span class="st ok">Connected</span><small>Ads paused by Nora on 9 Nov</small></span>
+          <span class="state" role="cell"><span class="st ok">Connected</span><small>Ads paused by John on 9 Nov</small></span>
         </div>
         <div class="row" role="row">
           <span class="tname" role="cell"><span class="logo lettermark">GPT</span><span><b>ChatGPT Ads</b><span class="sub">manual export</span></span></span>
           <span class="txt" role="cell"><span class="cell-l">For</span>Ads in ChatGPT answers</span>
-          <span class="txt" role="cell"><span class="cell-l">Access</span>No connector. Nora pastes the weekly export.</span>
+          <span class="txt" role="cell"><span class="cell-l">Access</span>No connector. John pastes the weekly export.</span>
           <span class="txt usedby" role="cell"><span class="cell-l">Used by</span>Analytics view</span>
           <span class="state" role="cell"><span class="st info">Manual</span><small>Since 26 Oct</small></span>
         </div>
@@ -2394,7 +2417,7 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
           <span class="tname" role="cell"><span class="logo lettermark">GPT</span><span><b>ChatGPT</b><span class="sub">app</span></span></span>
           <span class="txt" role="cell"><span class="cell-l">For</span>Second opinion</span>
           <span class="txt" role="cell"><span class="cell-l">Access</span>App; GEO7 answers are pasted into the folder.</span>
-          <span class="txt usedby" role="cell"><span class="cell-l">Used by</span>GEO7 answers pasted by Nora</span>
+          <span class="txt usedby" role="cell"><span class="cell-l">Used by</span>GEO7 answers pasted by John</span>
           <span class="state" role="cell"><span class="st">In use</span></span>
         </div>
         <div class="row" role="row">
@@ -2415,7 +2438,7 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
           <span class="tname" role="cell"><span class="logo"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M23.748 4.651c-.254-.124-.364.113-.512.233-.051.04-.094.09-.137.137-.372.397-.806.657-1.373.626-.829-.046-1.537.214-2.163.848-.133-.782-.575-1.248-1.247-1.548-.352-.155-.708-.311-.955-.65-.172-.24-.219-.509-.305-.774-.055-.16-.11-.323-.293-.35-.2-.031-.278.136-.356.276-.313.572-.434 1.202-.422 1.84.027 1.436.633 2.58 1.838 3.393.137.094.172.187.129.323-.082.28-.18.553-.266.833-.055.179-.137.218-.328.14a5.5 5.5 0 0 1-1.737-1.179c-.857-.828-1.631-1.743-2.597-2.46a12 12 0 0 0-.689-.47c-.985-.957.13-1.743.387-1.836.27-.098.094-.433-.778-.428-.872.003-1.67.295-2.687.685a3 3 0 0 1-.465.136 9.6 9.6 0 0 0-2.883-.101c-1.885.21-3.39 1.1-4.497 2.622C.082 8.776-.231 10.854.152 13.02c.403 2.284 1.568 4.175 3.36 5.653 1.857 1.533 3.997 2.284 6.438 2.14 1.482-.085 3.132-.284 4.994-1.86.47.234.962.328 1.78.398.629.058 1.235-.031 1.705-.129.735-.155.684-.836.418-.961-2.155-1.004-1.682-.595-2.112-.926 1.095-1.295 2.768-3.598 3.284-6.733.05-.346.115-.834.108-1.114-.004-.171.035-.238.23-.257a4.2 4.2 0 0 0 1.545-.475c1.397-.763 1.96-2.016 2.093-3.517.02-.23-.004-.467-.247-.588M11.58 18.168c-2.088-1.642-3.101-2.183-3.52-2.16-.39.024-.32.472-.234.763.09.288.207.487.371.74.114.167.192.416-.113.603-.673.416-1.842-.14-1.897-.168-1.361-.801-2.5-1.86-3.301-3.306-.775-1.393-1.225-2.888-1.299-4.482-.02-.385.094-.522.477-.592a4.7 4.7 0 0 1 1.53-.038c2.131.311 3.946 1.264 5.467 2.774.868.86 1.525 1.887 2.202 2.89.72 1.066 1.494 2.082 2.48 2.915.348.291.626.513.892.677-.802.09-2.14.109-3.055-.615zm1.001-6.44a.306.306 0 0 1 .415-.287.3.3 0 0 1 .113.074.3.3 0 0 1 .086.214c0 .17-.136.307-.308.307a.303.303 0 0 1-.306-.307m3.11 1.596c-.2.081-.4.151-.591.16a1.25 1.25 0 0 1-.798-.254c-.274-.23-.47-.358-.551-.758a1.7 1.7 0 0 1 .015-.588c.07-.327-.007-.537-.238-.727-.188-.156-.426-.199-.689-.199a.6.6 0 0 1-.254-.078.253.253 0 0 1-.114-.358 1 1 0 0 1 .192-.21c.356-.202.767-.136 1.146.016.352.144.618.408 1.001.782.392.451.462.576.685.915.176.264.336.536.446.848.066.194-.02.353-.25.45"/></svg></span><span><b>DeepSeek</b><span class="sub">app</span></span></span>
           <span class="txt" role="cell"><span class="cell-l">For</span>GEO7 answers</span>
           <span class="txt" role="cell"><span class="cell-l">Access</span>App; answers pasted into the folder.</span>
-          <span class="txt usedby" role="cell"><span class="cell-l">Used by</span>GEO7, pasted by Nora</span>
+          <span class="txt usedby" role="cell"><span class="cell-l">Used by</span>GEO7, pasted by John</span>
           <span class="state" role="cell"><span class="st">In use</span></span>
         </div>
       </div>
@@ -2426,7 +2449,7 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
 
     <!-- 09 FOLDER MAP -->
     <section class="panel" id="map" aria-labelledby="h-map">
-      <div class="section-head"><p class="eyebrow">10 / Folder map</p><div class="section-actions"><button type="button" data-copy-scope="view">Copy this view</button><a href="https://github.com/arete-aios/aios/blob/main/skills/context7/SKILL.md" target="_blank" rel="noopener noreferrer">GitHub · context7 ↗</a></div></div>
+      <div class="section-head"><p class="eyebrow">11 / Folder map</p><div class="section-actions"><button type="button" data-copy-scope="view">Copy this view</button><a href="https://github.com/arete-aios/aios/blob/main/skills/context7/SKILL.md" target="_blank" rel="noopener noreferrer">GitHub · context7 ↗</a></div></div>
       <h2 id="h-map" tabindex="-1">The whole brain, in one folder</h2>
       <p class="lead">This is the complete example folder, with the same layout the masterclass starter creates. Each folder has a dot for its CONTEXT7 state, and the folders that are not there yet are shown too. The folder is the brain; this page only shows it.</p>
 
@@ -2439,14 +2462,14 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
             <li><span class="dot n" aria-hidden="true"></span>Not there yet, or never</li>
           </ul>
           <ul class="tree" aria-label="Folder structure with CONTEXT7 status">
-            <li><div class="node"><span class="name">vale-studio-brain/</span><span class="n2">47 files</span><span class="d">Today's check: 11 green, 1 yellow, 1 red</span></div>
+            <li><div class="node"><span class="name">doe-studio-brain/</span><span class="n2">47 files</span><span class="d">Today's check: 11 green, 1 yellow, 1 red</span></div>
               <ul>
-                <li><div class="node"><span class="dot g" role="img" aria-label="CONTEXT7: OK"></span><span class="name">constitution</span><span class="n2">7</span><span class="d">The root files: who Nora is, the rules, the two agents</span></div>
+                <li><div class="node"><span class="dot g" role="img" aria-label="CONTEXT7: OK"></span><span class="name">constitution</span><span class="n2">7</span><span class="d">The root files: who John is, the rules, the two agents</span></div>
                   <p class="group-files">CONSTITUTION.md · AGENTS.md · ONBOARDING.md · AIOS-INSTRUCTIONS.md · Agent-MAKER.md · Agent-CHECKER.md · README.md</p>
                 </li>
                 <li><div class="node"><span class="dot g" role="img" aria-label="CONTEXT7: OK"></span><span class="name">02-memory/</span><span class="n2">24</span><span class="d">What the business knows</span></div>
                   <ul>
-                    <li><div class="node"><span class="dot g" role="img" aria-label="CONTEXT7: OK"></span><span class="name">businesses/vale-studio/</span><span class="n2">1</span><span class="d">The business profile, seven blocks</span></div></li>
+                    <li><div class="node"><span class="dot g" role="img" aria-label="CONTEXT7: OK"></span><span class="name">businesses/doe-studio/</span><span class="n2">1</span><span class="d">The business profile, seven blocks</span></div></li>
                     <li><div class="node"><span class="dot g" role="img" aria-label="CONTEXT7: OK"></span><span class="name">clients/</span><span class="n2">2</span><span class="d">Harbor Health, Brightwater</span></div></li>
                     <li><div class="node"><span class="dot g" role="img" aria-label="CONTEXT7: OK"></span><span class="name">people/</span><span class="n2">7</span><span class="d">Six people: overview, projects, meetings</span></div></li>
                     <li><div class="node"><span class="dot g" role="img" aria-label="CONTEXT7: OK"></span><span class="name">meetings/</span><span class="n2">4</span><span class="d">MEETING7 notes</span></div></li>
@@ -2479,9 +2502,9 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
 
     <!-- 10 AI TEAM -->
     <section class="panel" id="team" aria-labelledby="h-team">
-      <div class="section-head"><p class="eyebrow">11 / AI team</p><div class="section-actions"><button type="button" data-copy-scope="view">Copy this view</button><a href="https://github.com/arete-aios/aios/blob/main/skills/eval7/SKILL.md" target="_blank" rel="noopener noreferrer">GitHub · eval7 ↗</a></div></div>
+      <div class="section-head"><p class="eyebrow">12 / AI team</p><div class="section-actions"><button type="button" data-copy-scope="view">Copy this view</button><a href="https://github.com/arete-aios/aios/blob/main/skills/eval7/SKILL.md" target="_blank" rel="noopener noreferrer">GitHub · eval7 ↗</a></div></div>
       <h2 id="h-team" tabindex="-1">Two agents, one brain</h2>
-      <p class="lead">The Maker does the work, the Checker reviews it against the same files. Both follow the same constitution. Nora decides what leaves the folder.</p>
+      <p class="lead">The Maker does the work, the Checker reviews it against the same files. Both follow the same constitution. John decides what leaves the folder.</p>
 
       <div class="grid g2 team">
         <article class="card">
@@ -2497,7 +2520,7 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
 <pre class="log"><b>Mon 10:40</b> Maker   synthesis draft v1 saved, 3 themes
 <b>Mon 11:15</b> Checker FIX, 2 items: one quote not word for word; one theme has only 1 participant
 <b>Tue 08:06</b> Maker   fixing both items for v2 (HH-10)
-<b>next    </b> Checker reviews v2 · Nora decides what goes into Friday's readout</pre>
+<b>next    </b> Checker reviews v2 · John decides what goes into Friday's readout</pre>
         </div>
       </div>
 
@@ -2506,9 +2529,9 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
 
     <!-- 11 HEALTH -->
     <section class="panel" id="health" aria-labelledby="h-health">
-      <div class="section-head"><p class="eyebrow">12 / Health</p><div class="section-actions"><button type="button" data-copy-scope="view">Copy this view</button><a href="https://github.com/arete-aios/aios/blob/main/skills/cc7/SKILL.md" target="_blank" rel="noopener noreferrer">GitHub · cc7 ↗</a></div></div>
+      <div class="section-head"><p class="eyebrow">13 / Health</p><div class="section-actions"><button type="button" data-copy-scope="view">Copy this view</button><a href="https://github.com/arete-aios/aios/blob/main/skills/cc7/SKILL.md" target="_blank" rel="noopener noreferrer">GitHub · cc7 ↗</a></div></div>
       <h2 id="h-health" tabindex="-1">Is the system itself in good shape?</h2>
-      <p class="lead">Green means Nora's own definition of healthy is met. Nothing more.</p>
+      <p class="lead">Green means John's own definition of healthy is met. Nothing more.</p>
 
       <div class="rows" role="table" aria-label="System checks">
         <div class="row chk head" role="row"><span role="columnheader">Check</span><span role="columnheader">Result</span><span role="columnheader">State</span></div>
@@ -2535,8 +2558,8 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
   root.classList.add("js");
   const base = "/my/cc-demo";
   const otherBase = "/lv/my/cc-demo";
-  const known = new Set(["today", "work", "messages", "projects", "people", "marketing", "skills", "tools", "map", "team", "health", "skills/comms7", "skills/geo7", "messages/comments", "marketing/analytics", "work/nora", "work/agents", "work/waiting", "people/priya", "people/priya/work", "people/priya/meetings", "people/ada", "people/ada/work", "people/ada/meetings", "people/lena", "people/lena/work", "people/lena/meetings", "people/tomas", "people/tomas/work", "people/tomas/meetings", "people/jonas", "people/jonas/work", "people/jonas/meetings", "people/mei", "people/mei/work", "people/mei/meetings", "finance"]);
-  const aliases = {"ai": "team", "sales": "people", "mkt": "marketing", "proj": "projects", "fin": "finance", "mem": "map", "aios-constitution": "health", "aios-memory": "map", "aios-skills": "skills", "aios-tools": "tools", "aios-focus": "projects", "skill-comms7": "skills/comms7", "skill-geo7": "skills/geo7"};
+  const known = new Set(["today", "work", "messages", "projects", "people", "marketing", "skills", "tools", "map", "team", "health", "skills/comms7", "skills/geo7", "messages/comments", "marketing/analytics", "work/john", "work/agents", "work/waiting", "people/priya", "people/priya/work", "people/priya/meetings", "people/ada", "people/ada/work", "people/ada/meetings", "people/lena", "people/lena/work", "people/lena/meetings", "people/tomas", "people/tomas/work", "people/tomas/meetings", "people/jonas", "people/jonas/work", "people/jonas/meetings", "people/mei", "people/mei/work", "people/mei/meetings", "finance", "radar"]);
+  const aliases = {"ai": "team", "sales": "people", "mkt": "marketing", "proj": "projects", "fin": "finance", "mem": "map", "aios-constitution": "health", "aios-memory": "map", "aios-skills": "skills", "aios-tools": "tools", "aios-focus": "projects", "skill-comms7": "skills/comms7", "skill-geo7": "skills/geo7", "work/nora": "work/john"};
   const pathFor = (view, prefix = base) => prefix + (view === "today" ? "" : "/" + view);
   const panels = Array.from(document.querySelectorAll(".panel"));
   const nav = Array.from(document.querySelectorAll(".side a[data-view]"));
@@ -2731,7 +2754,7 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
 <dialog id="copy-dialog" aria-labelledby="copy-title"><div class="copy-dialog-head"><h2 id="copy-title">Your request for AI</h2><button type="button" data-copy-close aria-label="Close">×</button></div><p>Clipboard access is unavailable. Select the text and copy it, then paste it into your AI.</p><textarea id="copy-text" readonly aria-label="Request to copy"></textarea><button type="button" data-copy-select>Select all text</button></dialog><div id="copy-status" class="copy-status" role="status" aria-live="polite" hidden></div><script>
 /* Public copy controls: local clipboard only, never an AI or account request. */
 (() => {
-  const data = {"locale": "en", "repository": "https://github.com/arete-aios/aios", "guide": "https://github.com/arete-aios/aios/blob/main/skills/cc7/references/command-center.md", "raw_guide": "https://raw.githubusercontent.com/arete-aios/aios/main/skills/cc7/references/command-center.md", "download": "/cc-demo/cc7-command-center.zip", "sections": {"today": {"protocol": "dashboard7", "method": "skills/dashboard7/SKILL.md", "related": ["focus7", "context7"], "en": "Build a useful home view: direction, focus projects and a Gantt with real or explicitly proposed dates, today's next actions and the last evidenced system check.", "lv": "Izveido noderīgu sākumlapu: virziens, fokusa projekti un Gants ar īstiem vai skaidri ierosinātiem datumiem, šodienas nākamie soļi un pēdējā pierādītā sistēmas pārbaude."}, "work": {"protocol": "gtd7", "method": "skills/mit7/SKILL.md", "related": ["focus7", "exit7"], "en": "Show tasks from their existing authoritative source, with owner, project, next action, waiting state and filters. Reuse the task writer; do not create another task database.", "lv": "Parādi uzdevumus no to esošā avota ar atbildīgo, projektu, nākamo darbību, gaidīšanas statusu un filtriem. Izmanto esošo uzdevumu rakstītāju, neveido otru datubāzi."}, "messages": {"protocol": "comms7", "method": "skills/comms7/SKILL.md", "related": ["meeting7", "exit7"], "en": "Build a communication view around who acts next: reply needed, waiting, information, closed. Link sources and keep drafts separate from sent messages. Include comments only from an agreed watch list.", "lv": "Izveido saziņas skatu pēc nākamā atbildīgā: jāatbild, gaida, informācijai, noslēgts. Piesaisti avotus, atšķir melnrakstu no nosūtītas ziņas. Komentārus iekļauj tikai no saskaņota uzraudzības saraksta."}, "projects": {"protocol": "gtd7", "method": "skills/mit7/SKILL.md", "related": ["focus7", "context7"], "en": "Build a project planning view from existing project records: outcome, current focus, owned next action, task progress, dates and waiting items. Label proposals and missing dates honestly.", "lv": "Izveido projektu plānošanas skatu no esošajiem ierakstiem: rezultāts, pašreizējais fokuss, nākamā darbība un atbildīgais, uzdevumu progress, datumi un gaidāmās lietas. Priekšlikumus un trūkstošus datumus skaidri marķē."}, "people": {"protocol": "crm7", "method": "skills/cc7/references/people.md", "related": ["meeting7", "comms7"], "en": "Build a CRM7 relationship workspace with overview, linked projects/tasks and dated meetings. Use existing person IDs and CRM authority; preserve evidence, actual commitments and privacy. Do not import the demo's people or invent relationship scores.", "lv": "Izveido CRM7 attiecību darba vietu ar pārskatu, saistītajiem projektiem/uzdevumiem un datētām tikšanās reizēm. Saglabā esošos personu ID un CRM autoritāti, avotus, īstos solījumus un privātumu. Neimportē demo cilvēkus un neizdomā attiecību vērtējumus.", "github_label": "GitHub · crm7"}, "marketing": {"protocol": "geo7", "method": "skills/geo7/SKILL.md", "related": ["ads7", "focus7"], "en": "Build a marketing view with comparable periods, source and check date for each metric, a separate AI visibility view, and one next improvement. Missing data is unknown, not zero. Do not connect accounts or alter campaigns while building the view.", "lv": "Izveido mārketinga skatu ar salīdzināmiem periodiem, katra rādītāja avotu un pārbaudes datumu, atsevišķu MI redzamības skatu un vienu nākamo uzlabojumu. Trūkstoši dati nav nulle. Skata būvē nepieslēdz kontus un nemaini kampaņas."}, "finance": {"protocol": "cc7", "method": "skills/cc7/references/finance.md", "related": ["context7", "exit7"], "en": "Build a private financial snapshot only within my existing privacy rules: cash collected and paid for the same full period, net cash flow (not profit), and unpaid-invoice ageing with its own as-of date. Reconcile approved aggregates to existing accounting sources. Keep raw bank records private; if finances are excluded, show a link until I approve otherwise.", "lv": "Izveido privātu finanšu kopsavilkumu tikai manas esošās privātuma kārtības ietvaros: saņemtā un samaksātā nauda vienā pilnā periodā, neto naudas plūsma (ne peļņa), neapmaksāto rēķinu vecums ar savu datumu. Salāgo atļautos kopsavilkumus ar esošo grāmatvedības avotu. Bankas pirmdatus turi privātus; ja finanses ir izslēgtas, rādi tikai saiti, līdz apstiprinu citādi.", "github_label": "GitHub · cc7"}, "skills": {"protocol": "skills7", "method": "skills/skills7/SKILL.md", "related": ["context7", "eval7"], "en": "Build a skill catalogue from methods actually present: purpose, trigger, readiness evidence, instructions, copy action and actual GitHub links. Keep planned methods distinct from installed and tested ones. Do not run a method just to show its guide.", "lv": "Izveido prasmju katalogu no faktiskajām metodēm: nolūks, izsaukums, gatavības pierādījumi, instrukcija, kopēšana un īstas GitHub saites. Atšķir plānoto, uzstādīto un pārbaudīto. Metodes skaidrojums pats to nepalaiž."}, "skill-comms7": {"protocol": "comms7", "method": "skills/comms7/SKILL.md", "related": ["skills7", "meeting7"], "en": "Explain COMMS7 as a usable guide with decisions, human/AI/code roles, workflow, allowed sources and an explicit draft/send boundary. Adapt its settings to my own permitted sources; do not execute a communication review merely to build the guide.", "lv": "Izskaidro COMMS7 lietojamā ceļvedī: lēmumi, cilvēka/MI/koda lomas, darba plūsma, atļautie avoti un melnraksta/nosūtīšanas robeža. Iestatījumus pieskaņo maniem avotiem; ceļveža būve pati nepalaiž saziņas pārskatu."}, "skill-geo7": {"protocol": "geo7", "method": "skills/geo7/SKILL.md", "related": ["skills7", "focus7"], "en": "Explain GEO7 with workflow, buyer questions, evidence, comparable question/assistant pairs and human approval of changes. Do not run paid queries or publish content while preparing the guide.", "lv": "Izskaidro GEO7 ar darba plūsmu, pircēju jautājumiem, pierādījumiem, salīdzināmiem jautājumu/asistentu pāriem un cilvēka apstiprinājumu izmaiņām. Ceļveža gatavošana nepalaiž maksas vaicājumus un nepublicē saturu."}, "tools": {"protocol": "tools7", "method": "skills/cc7/references/tools.md", "related": ["audit7", "context7"], "en": "Build a TOOLS7 inventory from the existing registry: purpose, permitted access, actual connection/operator, last check and evidence, cost limits and next step. Distinguish listed, configured, tested and unknown; put detailed logs one level deeper. Do not expose credentials or connect accounts.", "lv": "Izveido TOOLS7 inventāru no esošā reģistra: nolūks, atļautā piekļuve, faktiskais savienojums/izpildītājs, pēdējā pārbaude un pierādījumi, izmaksu robežas un nākamais solis. Atšķir uzskaitīto, konfigurēto, pārbaudīto un nezināmo; garos žurnālus liec vienu līmeni dziļāk. Neatklāj atslēgas un nepieslēdz kontus.", "github_label": "GitHub · tools7"}, "map": {"protocol": "context7", "method": "skills/context7/SKILL.md", "related": ["audit7", "exit7"], "en": "Build a folder map from the permitted actual inventory. Show which indexes cover their contents, broken links and missing maps, with date and scope. A folder alone is not evidence of a working capability.", "lv": "Izveido mapju karti no atļautā faktiskā inventāra. Parādi indeksu pārklājumu, bojātās saites un trūkstošās kartes ar pārbaudes datumu un tvērumu. Mapes esamība nepierāda strādājošu spēju."}, "team": {"protocol": "eval7", "method": "skills/eval7/SKILL.md", "related": ["skills7", "exit7"], "en": "Build a view of my actual AI roles and their handoffs: task, output, independent review, fixes and human acceptance. Mark proposed roles and untested loops as planned; do not create agents, buy model access or start background runs.", "lv": "Izveido manu faktisko MI lomu un nodošanas skatu: uzdevums, rezultāts, neatkarīga pārbaude, labojumi un cilvēka pieņemšana. Ierosinātās lomas un nepārbaudītus apļus marķē kā plānu; neveido aģentus, nepērc modeļu piekļuvi un nesāc fona izpildi."}, "health": {"protocol": "cc7", "method": "skills/cc7/SKILL.md", "related": ["audit7", "exit7"], "en": "Build a Health view showing actual audit dates, scope, evidence and unresolved decisions for the five layers and EXIT7. Read an existing register first; an absent audit stays not audited. Retain CC7 starter Health's explicit setup gate and do not run an audit just to populate a page.", "lv": "Izveido sistēmas pārskatu ar īstiem auditu datumiem, tvērumu, avotiem un neatrisinātajiem lēmumiem pieciem slāņiem un EXIT7. Vispirms lasi esošo reģistru; neesošs audits paliek nepārbaudīts. Saglabā CC7 Health atsevišķo uzstādīšanas izvēli un nepalaid auditu tikai lapas aizpildīšanai."}}, "github_guide": "https://github.com/arete-aios/aios/blob/main/skills/cc7/references/command-center.md"};
+  const data = {"locale": "en", "repository": "https://github.com/arete-aios/aios", "guide": "https://github.com/arete-aios/aios/blob/main/skills/cc7/references/command-center.md", "raw_guide": "https://raw.githubusercontent.com/arete-aios/aios/main/skills/cc7/references/command-center.md", "download": "/cc-demo/cc7-command-center.zip", "sections": {"today": {"protocol": "dashboard7", "method": "skills/dashboard7/SKILL.md", "related": ["focus7", "context7"], "en": "Build a useful home view: direction, focus projects and a Gantt with real or explicitly proposed dates, today's next actions and the last evidenced system check.", "lv": "Izveido noderīgu sākumlapu: virziens, fokusa projekti un Gants ar īstiem vai skaidri ierosinātiem datumiem, šodienas nākamie soļi un pēdējā pierādītā sistēmas pārbaude."}, "work": {"protocol": "gtd7", "method": "skills/mit7/SKILL.md", "related": ["focus7", "exit7"], "en": "Show tasks from their existing authoritative source, with owner, project, next action, waiting state and filters. Reuse the task writer; do not create another task database.", "lv": "Parādi uzdevumus no to esošā avota ar atbildīgo, projektu, nākamo darbību, gaidīšanas statusu un filtriem. Izmanto esošo uzdevumu rakstītāju, neveido otru datubāzi."}, "messages": {"protocol": "comms7", "method": "skills/comms7/SKILL.md", "related": ["meeting7", "exit7"], "en": "Build a communication view around who acts next: reply needed, waiting, information, closed. Link sources and keep drafts separate from sent messages. Include comments only from an agreed watch list.", "lv": "Izveido saziņas skatu pēc nākamā atbildīgā: jāatbild, gaida, informācijai, noslēgts. Piesaisti avotus, atšķir melnrakstu no nosūtītas ziņas. Komentārus iekļauj tikai no saskaņota uzraudzības saraksta."}, "projects": {"protocol": "gtd7", "method": "skills/mit7/SKILL.md", "related": ["focus7", "context7"], "en": "Build a project planning view from existing project records: outcome, current focus, owned next action, task progress, dates and waiting items. Label proposals and missing dates honestly.", "lv": "Izveido projektu plānošanas skatu no esošajiem ierakstiem: rezultāts, pašreizējais fokuss, nākamā darbība un atbildīgais, uzdevumu progress, datumi un gaidāmās lietas. Priekšlikumus un trūkstošus datumus skaidri marķē."}, "people": {"protocol": "crm7", "method": "skills/cc7/references/people.md", "related": ["meeting7", "comms7"], "en": "Build a CRM7 relationship workspace with overview, linked projects/tasks and dated meetings. Use existing person IDs and CRM authority; preserve evidence, actual commitments and privacy. Do not import the demo's people or invent relationship scores.", "lv": "Izveido CRM7 attiecību darba vietu ar pārskatu, saistītajiem projektiem/uzdevumiem un datētām tikšanās reizēm. Saglabā esošos personu ID un CRM autoritāti, avotus, īstos solījumus un privātumu. Neimportē demo cilvēkus un neizdomā attiecību vērtējumus.", "github_label": "GitHub · crm7"}, "marketing": {"protocol": "geo7", "method": "skills/geo7/SKILL.md", "related": ["ads7", "focus7"], "en": "Build a marketing view with comparable periods, source and check date for each metric, a separate AI visibility view, and one next improvement. Missing data is unknown, not zero. Do not connect accounts or alter campaigns while building the view.", "lv": "Izveido mārketinga skatu ar salīdzināmiem periodiem, katra rādītāja avotu un pārbaudes datumu, atsevišķu MI redzamības skatu un vienu nākamo uzlabojumu. Trūkstoši dati nav nulle. Skata būvē nepieslēdz kontus un nemaini kampaņas."}, "finance": {"protocol": "cc7", "method": "skills/cc7/references/finance.md", "related": ["context7", "exit7"], "en": "Build a private financial snapshot only within my existing privacy rules: cash collected and paid for the same full period, net cash flow (not profit), and unpaid-invoice ageing with its own as-of date. Reconcile approved aggregates to existing accounting sources. Keep raw bank records private; if finances are excluded, show a link until I approve otherwise.", "lv": "Izveido privātu finanšu kopsavilkumu tikai manas esošās privātuma kārtības ietvaros: saņemtā un samaksātā nauda vienā pilnā periodā, neto naudas plūsma (ne peļņa), neapmaksāto rēķinu vecums ar savu datumu. Salāgo atļautos kopsavilkumus ar esošo grāmatvedības avotu. Bankas pirmdatus turi privātus; ja finanses ir izslēgtas, rādi tikai saiti, līdz apstiprinu citādi.", "github_label": "GitHub · cc7"}, "radar": {"protocol": "cc7", "method": "skills/cc7/references/radar.md", "related": ["warm7", "focus7"], "en": "Build a private RADAR view for opportunities I want to watch: paid work or projects (for example fractional or freelance), partnerships, speaking slots, and communities or events to join. Ask for my criteria and sources first, and use only sources I list or have already authorised (alerts, saved searches, newsletters, groups I belong to). Keep each find with its link, date found, fit % with a one-line reason and one thing to check. I set the statuses (new, worth a look, applied/waiting, declined, won, not for me); a short weekly review shows which stream brings results. Run it when I ask or as a weekly manual review. Never apply, send messages, register, join, create alerts or change profiles for me, and do not scrape sites that forbid it.", "lv": "Izveido privātu RADAR skatu iespējām, kurām gribu sekot: apmaksāts darbs vai projekti (piemēram, daļslodzes vai ārštata), partnerības, uzstāšanās iespējas un kopienas vai pasākumi, kuriem pievienoties. Vispirms pajautā manus kritērijus un avotus; izmanto tikai manis norādītos vai jau atļautos avotus (brīdinājumi, saglabātas meklēšanas, jaunumu vēstules, grupas, kurās esmu). Katrai iespējai saglabā saiti, atrašanas datumu, atbilstības % ar viena teikuma iemeslu un vienu pārbaudāmo lietu. Statusus (jauns, vērts apskatīt, pieteikts/gaida, atteikts, izdevās, nav man) nosaku es; īss nedēļas pārskats rāda, kura plūsma dod rezultātu. Palaid, kad palūdzu, vai kā iknedēļas manuālu pārskatu. Nekad manā vietā nepiesakies, nesūti ziņas, nereģistrējies, nepievienojies, neveido brīdinājumus un nemaini profilus; neskrāpē vietnes, kas to aizliedz.", "github_label": "GitHub · cc7 radar"}, "skills": {"protocol": "skills7", "method": "skills/skills7/SKILL.md", "related": ["context7", "eval7"], "en": "Build a skill catalogue from methods actually present: purpose, trigger, readiness evidence, instructions, copy action and actual GitHub links. Keep planned methods distinct from installed and tested ones. Do not run a method just to show its guide.", "lv": "Izveido prasmju katalogu no faktiskajām metodēm: nolūks, izsaukums, gatavības pierādījumi, instrukcija, kopēšana un īstas GitHub saites. Atšķir plānoto, uzstādīto un pārbaudīto. Metodes skaidrojums pats to nepalaiž."}, "skill-comms7": {"protocol": "comms7", "method": "skills/comms7/SKILL.md", "related": ["skills7", "meeting7"], "en": "Explain COMMS7 as a usable guide with decisions, human/AI/code roles, workflow, allowed sources and an explicit draft/send boundary. Adapt its settings to my own permitted sources; do not execute a communication review merely to build the guide.", "lv": "Izskaidro COMMS7 lietojamā ceļvedī: lēmumi, cilvēka/MI/koda lomas, darba plūsma, atļautie avoti un melnraksta/nosūtīšanas robeža. Iestatījumus pieskaņo maniem avotiem; ceļveža būve pati nepalaiž saziņas pārskatu."}, "skill-geo7": {"protocol": "geo7", "method": "skills/geo7/SKILL.md", "related": ["skills7", "focus7"], "en": "Explain GEO7 with workflow, buyer questions, evidence, comparable question/assistant pairs and human approval of changes. Do not run paid queries or publish content while preparing the guide.", "lv": "Izskaidro GEO7 ar darba plūsmu, pircēju jautājumiem, pierādījumiem, salīdzināmiem jautājumu/asistentu pāriem un cilvēka apstiprinājumu izmaiņām. Ceļveža gatavošana nepalaiž maksas vaicājumus un nepublicē saturu."}, "tools": {"protocol": "tools7", "method": "skills/cc7/references/tools.md", "related": ["audit7", "context7"], "en": "Build a TOOLS7 inventory from the existing registry: purpose, permitted access, actual connection/operator, last check and evidence, cost limits and next step. Distinguish listed, configured, tested and unknown; put detailed logs one level deeper. Do not expose credentials or connect accounts.", "lv": "Izveido TOOLS7 inventāru no esošā reģistra: nolūks, atļautā piekļuve, faktiskais savienojums/izpildītājs, pēdējā pārbaude un pierādījumi, izmaksu robežas un nākamais solis. Atšķir uzskaitīto, konfigurēto, pārbaudīto un nezināmo; garos žurnālus liec vienu līmeni dziļāk. Neatklāj atslēgas un nepieslēdz kontus.", "github_label": "GitHub · tools7"}, "map": {"protocol": "context7", "method": "skills/context7/SKILL.md", "related": ["audit7", "exit7"], "en": "Build a folder map from the permitted actual inventory. Show which indexes cover their contents, broken links and missing maps, with date and scope. A folder alone is not evidence of a working capability.", "lv": "Izveido mapju karti no atļautā faktiskā inventāra. Parādi indeksu pārklājumu, bojātās saites un trūkstošās kartes ar pārbaudes datumu un tvērumu. Mapes esamība nepierāda strādājošu spēju."}, "team": {"protocol": "eval7", "method": "skills/eval7/SKILL.md", "related": ["skills7", "exit7"], "en": "Build a view of my actual AI roles and their handoffs: task, output, independent review, fixes and human acceptance. Mark proposed roles and untested loops as planned; do not create agents, buy model access or start background runs.", "lv": "Izveido manu faktisko MI lomu un nodošanas skatu: uzdevums, rezultāts, neatkarīga pārbaude, labojumi un cilvēka pieņemšana. Ierosinātās lomas un nepārbaudītus apļus marķē kā plānu; neveido aģentus, nepērc modeļu piekļuvi un nesāc fona izpildi."}, "health": {"protocol": "cc7", "method": "skills/cc7/SKILL.md", "related": ["audit7", "exit7"], "en": "Build a Health view showing actual audit dates, scope, evidence and unresolved decisions for the five layers and EXIT7. Read an existing register first; an absent audit stays not audited. Retain CC7 starter Health's explicit setup gate and do not run an audit just to populate a page.", "lv": "Izveido sistēmas pārskatu ar īstiem auditu datumiem, tvērumu, avotiem un neatrisinātajiem lēmumiem pieciem slāņiem un EXIT7. Vispirms lasi esošo reģistru; neesošs audits paliek nepārbaudīts. Saglabā CC7 Health atsevišķo uzstādīšanas izvēli un nepalaid auditu tikai lapas aizpildīšanai."}}, "github_guide": "https://github.com/arete-aios/aios/blob/main/skills/cc7/references/command-center.md"};
   const lv = data.locale === "lv";
   const text = (en, la) => (lv ? la : en);
   const root = "https://areteaios.com" + (lv ? "/lv" : "") + "/my/cc-demo";
@@ -2787,8 +2810,8 @@ html[data-theme=light] .an{--an-s1:#0B63B6;--an-s2:#eb6834;--an-s3:#6250d6;--an-
         "Vispirms izlasi manas atļautās smadzeņu ieejas. Saglabā manu konstitūciju, esošo struktūru, ID un autoritatīvos uzdevumu/CRM rakstītājus. Ja mape ir tukša, uzdod ne vairāk par trim pamata jautājumiem un parādi plānotu uzbūvi; pirms apgalvo, ka sistēma darbojas, izmanto publisko AIOS sākuma metodi.",
       ),
       text(
-        "Use my facts only. Do not copy Nora Vale, her people, tasks, dates, financial amounts or healthy states into my records. Every real card needs its source and check date; missing stays unknown. A Gantt needs real or explicitly proposed dates. Follow my privacy rules before displaying financial or relationship data.",
-        "Izmanto tikai manus faktus. Nekopē Noru Vale, viņas cilvēkus, darbus, datumus, finanšu summas vai veselus statusus manos ierakstos. Katrai īstai kartītei vajag avotu un pārbaudes datumu; trūkstošais paliek nezināms. Gantam vajag īstus vai skaidri ierosinātus datumus. Pirms finanšu vai attiecību datu attēlošanas ievēro manu privātuma kārtību.",
+        "Use my facts only. Do not copy John Doe, his people, tasks, dates, financial amounts, opportunities or healthy states into my records. Every real card needs its source and check date; missing stays unknown. A Gantt needs real or explicitly proposed dates. Follow my privacy rules before displaying financial or relationship data.",
+        "Izmanto tikai manus faktus. Nekopē John Doe piemēra cilvēkus, darbus, datumus, finanšu summas, iespējas vai veselus statusus manos ierakstos. Katrai īstai kartītei vajag avotu un pārbaudes datumu; trūkstošais paliek nezināms. Gantam vajag īstus vai skaidri ierosinātus datumus. Pirms finanšu vai attiecību datu attēlošanas ievēro manu privātuma kārtību.",
       ),
       text(
         "Keep clean view/tab URLs, keyboard controls, light/dark and the requested language. Pair EN/LV views if both are needed. Do not connect accounts, spend, send messages, publish or schedule background work as part of building the view.",
