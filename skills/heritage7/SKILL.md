@@ -7,6 +7,8 @@ description: Research family history from civil records, parish registers, newsp
 
 Work backwards from one known person and one question. Preserve what documents say, show how they support each family link and keep unanswered questions visible.
 
+Open the [public archive examples with images](examples/public-archive-gallery.md) or the web demo in [Latvian](https://areteaios.com/lv/my/heritage-demo) or [English](https://areteaios.com/my/heritage-demo).
+
 ## Choose the result
 
 - **Record or question.** Return a source citation, a faithful transcription, a separate translation if useful, what it establishes and the next record worth finding.
@@ -21,7 +23,7 @@ Work backwards from one known person and one question. Preserve what documents s
 
 ## Find and read records
 
-1. Pick sources by place, period and event using the [archive and database directory](references/source-directory.md). Start with jurisdiction and collection before looking for a name. Try original spellings, initials, gendered endings, and German or Cyrillic forms as appropriate. Keep dates as written. Normalize the calendar only when the source's dating practice is known.
+1. Pick sources by place, period and event using the [archive and database directory](references/source-directory.md). Start with jurisdiction and collection before looking for a name. Use [MyHeritage, FamilySearch and Geni](references/source-directory.md#cross-border-follow-up) to find records or leads. Try original spellings, initials, gendered endings, and German or Cyrillic forms as appropriate. Keep dates as written. Normalize the calendar only when the source's dating practice is known.
 2. For a login-gated source, let the user sign in to the official portal themselves. If the user authorizes browser control and the tool is available, inspect the specific open pages. Otherwise use an authorized crop, PDF excerpt or text, or identify how to request the file. Never ask for passwords or codes. Follow the archive's access and reproduction conditions.
 3. Identify the record type among catalog, index, record image, later certificate and transcription. Inspect headings and neighboring rows before assigning columns. For difficult handwriting, compare the full page and enlarged crops, then verify names, places and dates against the image. Preserve original spellings, abbreviations and uncertain characters as [?]. Keep transliteration, translation and normalized values distinct.
 4. Record the repository, collection or fond, series, file, image or page, entry, stable link, access date and reuse status. For an unsuccessful search, record the spelling variants, dates and holdings actually checked and the access limits.
@@ -44,7 +46,7 @@ Keep source IDs on the diagram and label tentative connections. State the limits
 
 Give the user the answer, evidence and single most useful next search. For a catalog lead, include the file reference and the official request route. In a book, make the link from a fact to its source understandable without opening an app. Include images only when private or public use matches the audience and the permission. A citation and a short permitted excerpt or summary can stand in for a restricted scan.
 
-For a shared or public version, review each image's rights and remove sensitive details about living people unless permission is documented. Ask before publishing, editing a shared tree, uploading restricted material or contacting an archive. Confirm which files were produced and what remains unresolved or unverified.
+For a public example, identify only historical people whose death long ago is established. Use non-identifying or clearly fictional examples for other cases. Keep names and identifiable details of living people and people of unverified status in the private research file, along with private certificates and restricted scans. Use images with verified reuse terms and credit their sources. Ask before publishing, editing a shared tree, uploading restricted material or contacting an archive. Confirm which files were produced and what remains unresolved or unverified.
 
 ## Starting instruction
 

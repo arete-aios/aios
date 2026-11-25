@@ -17,6 +17,12 @@ metadata:
 **Human:** paste this file into your AI and point it at the footage. It will inspect what it can reach before proposing a cut.
 **Assistant:** everything below is addressed to you. Adapt it to this owner's system. The goal and hard rules matter; the exact implementation is yours to choose.
 
+## Start with the public Studio demo
+
+Use the [practical VIDEO7 Studio guide](references/studio-practical.md) to choose one of seven video tasks or reproduce the before/after edit with your own footage. It includes local FFmpeg commands, editable subtitles, and copy-ready prompts in Latvian and English.
+
+[Latvian demo](https://areteaios.com/lv/my/video-demo) · [English demo](https://areteaios.com/my/video-demo) · [Guide on Arete AIOS](https://areteaios.com/video-demo/studio-practical.md)
+
 ## REQUIRES
 
 **This skill has two modes. Operating mode can complete the delivery; advisory mode can progress only as far as the supplied evidence allows.**

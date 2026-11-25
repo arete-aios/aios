@@ -4,7 +4,7 @@
 
 Trīs Puzes draudzē ierakstīti cilvēki ar līdzīgu vārdu. Viens Rīgas laulību ieraksts. Kurš no viņiem precējās ar Annetti Indriksoni?
 
-Paraugā izmantoti desmit vēsturisku avotu ieraksti no 19. un 20. gadsimta. Atsauces ved uz arhīvu un bibliotēku lasītavām.
+Šajā publiskajā paraugā ir desmit 19. un 20. gadsimta avoti. Personas nosauktas vēsturiskajos piemēros, kur tās jau sen mirušas. Atsauces ved uz arhīviem un bibliotēkām.
 
 > Grāmatas uzdevums ir vienā vietā saglabāt stāstu un norādi uz to, kā katru faktu var pārbaudīt. Pētniecībai turpinoties, avotu identifikatori paliek nemainīgi.
 
@@ -65,12 +65,12 @@ Ventspils 1901. gada laulību saraksts norāda uz pilno ierakstu Nr. 38 [S06]. S
 
 # Kara laika avoti un izpētes robi
 
-Pasu inventārs ir ceļvedis uz konkrētu arhīva lietu. Tajā redzams, kuru lietu pieprasīt. Dienesta gaitu un radniecību pārbauda pašos dokumentos.
+Militārs dokuments palīdz saprast notikuma laiku un vietu. Lai pārbaudītu konkrēta karavīra dienestu, meklē personu sarakstu, dienesta lietu vai citu dokumentu, kurā viņš nosaukts.
 
 | Avots | Iegūtais pavediens | Ko prasīt tālāk |
 | --- | --- | --- |
-| S07 · LVA 2416/1/2475 | Inventārā ir Artūrs Boitmanis no Rīgas. | Pieprasīt pases lietu. Pārbaudīt dzimšanas vietu un citus identifikatorus. |
-| S08 · LVA 2416/1/2477 | Inventārā Ričarda Anša Boitmaņa dzimšanas vieta ir Puzes pagasts. | Salīdzināt pases lietas datus ar Puzes ierakstiem. |
+| S07 · 1918. gada mobilizācijas rīkojums | Publicēta iesaukšanas kārtība, vieta un laiks. | Meklēt attiecīgās vienības personu sarakstu vai pavēles. |
+| S08 · Latviešu strēlnieku foto, 1917 | Vēsturiska fotogrāfija no Tīreļa purva. | Identitātei meklēt foto parakstu, sarakstu vai cita avota sakritību. |
 
 ### Ja parādās pavediens par pārvietošanos
 
@@ -78,7 +78,7 @@ Meklējuma virzienu nosaka notikums. Latvijas karavīru un trimdas lietām izman
 
 ### Arhīva pieprasījuma paraugs
 
-Lūdzu norādīt, kā lasītavā apskatīt vai pasūtīt lietas LVA 2416/1/2477 kopiju. Pētījumam jānoskaidro, kuras dzimšanas un ģimenes ziņas atrodamas pašā lietā.
+Lūdzu norādīt, kā apskatīt vai pasūtīt lietu [fonds, apraksts, lietas numurs]. Meklēju vienības personu sarakstu par [laika posms un vieta] un ziņas par to, kā saņemt kopiju.
 
 > Piemēra turpinājums. Reģistrā pieraksti iestādi, lietas numuru, ko tieši meklēji un rezultātu. Atsevišķi norādi, vai avotu izskatīji, atradi tikai kataloga ierakstu vai piekļuves dēļ vēl neizskatīji.
 
@@ -93,7 +93,7 @@ Vienai personai var būt vairāki vārda rakstības veidi. Katrai saiknei un not
 | 1867. gada Ievalta vecāki ir Andrejs un Līze. | S02 | Dokumentēts | Saites ar vēlākajiem ierakstiem. |
 | 1871. un 1874. gada ieraksti attiecas uz diviem atšķirīgiem cilvēkiem. | S03, S04 | Pamatojams | Vecāku vārdi, gadi un vietas atšķiras. |
 | 1867. gada Ievalts varētu būt 1899. gada Ewald. | S02, S05 | Kandidāts | Meklēt sakritību vecākos, māju vārdā vai citā pazīmē. |
-| Ričarda Anša dzimšanas vieta inventārā ir Puzes pagasts. | S08 | Kataloga ziņa | Pārbaudīt pases lietu. |
+| Rīkojumā ir noteikta iesaukšanas vieta un laiks Rīgā. | S07 | Dokumentēts | Personu meklēt dienesta dokumentos. |
 | Aleksandrs 1934. gadā strādāja Šlīterē. | S09, S10 | Dokumentēts presē | Iecelšanas un amata maiņas tekstos salīdzināt vietu, amatu un laiku. |
 
 ![1934. gada Meža Dzīves izgriezums ar iecelšanu sarakstu](meza-dzive-105-1934.jpg)
@@ -118,11 +118,11 @@ Atsaucēs norādīts arhīva fonds, apraksts, lieta un attēls vai ieraksts, kad
 | S04 | Puzes dzimšanas reģistrs, LVVA 235/6/817, 0170, Nr. 27. | [Raduraksti](https://raduraksti.arhivi.lv/objects/1:4:11:2055:2461:23004#&gid=1&pid=170) |
 | S05 | Rīgas Sv. Ģertrūdes draudzes laulību reģistrs, LVVA 1429/5/26, 0010, Nr. 14. | [Raduraksti](https://raduraksti.arhivi.lv/objects/1:4:11:2055:2470:23608#&gid=1&pid=10) |
 | S06 | Ventspils lauku draudzes laulību saraksts, LVVA 235/14/549, 0056, Nr. 30. Atsauce uz Nr. 38. | [Raduraksti](https://raduraksti.arhivi.lv/objects/1:4:11:2055:2536:27027#&gid=1&pid=56) |
-| S07 | Pasu lietu inventārs, LVA 2416/1/2475, PDF 55. lpp. | [LNA inventārs](https://www.archiv.org.lv/apraksti/F/LV_LVA_F2416_US1.pdf#page=55) |
-| S08 | Pasu lietu inventārs, LVA 2416/1/2477, PDF 55. lpp. | [LNA inventārs](https://www.archiv.org.lv/apraksti/F/LV_LVA_F2416_US1.pdf#page=55) |
+| S07 | Pagaidu Valdības Vēstnesis, 23.12.1918., mobilizācijas rīkojums, 1. lpp. | [LNB](https://dom.lndb.lv/data/obj/file/763023.pdf#page=1) |
+| S08 | Latviešu strēlnieki Tīreļa purvā, 1917., autors nezināms. | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Latvie%C5%A1u_str%C4%93lnieki_T%C4%ABre%C4%BCa_purv%C4%81.jpg) |
 | S09 | Meža Dzīve, Nr. 105, 01.05.1934., “Iecelti”. | [LNB Periodika](https://periodika.lndb.lv/periodika2-viewer/?lang=fr#panel:pa|issue:959005|article:DIVL185|query:Boitmans) |
 | S10 | Meža Dzīve, Nr. 111, 01.11.1934., “Pārskaitīti citā amatā”. | [LNB Periodika](https://periodika.lndb.lv/periodika2-viewer/?lang=fr#panel:pa|issue:923860|article:DIVL171) |
 
 Avotu attēli apskatāmi attiecīgajās lasītavās. Dažiem vajadzīgs personīgs konts. Šajā grāmatas paraugā publicēti lasījumu kopsavilkumi un atsauces.
 
-[Pētījuma piemērs Arete AIOS](https://areteaios.com/lv/my/heritage-demo) · [HERITAGE7 instrukcija](https://github.com/arete-aios/aios/blob/main/skills/heritage7/SKILL.md)
+[Pētījuma piemērs Arete AIOS](https://areteaios.com/lv/my/heritage-demo) · [HERITAGE7 instrukcija](https://github.com/arete-aios/aios/blob/main/skills/heritage7/SKILL.md) · [Dokumentu galerija](https://github.com/arete-aios/aios/blob/main/skills/heritage7/examples/public-archive-gallery.md)

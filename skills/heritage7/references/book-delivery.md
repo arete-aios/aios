@@ -47,7 +47,7 @@ A register directly names two parents for a child. Record the stated relationshi
 ## Before handing it over
 
 - Trace a few book claims and all important tree links back to a specific record, using the actual page or entry reference.
-- Check citations, attachment rights, identity conflicts and the handling of living people against the intended audience.
+- Check citations, attachment rights and identity conflicts. For a public example, identify only historical people whose death long ago is established. Use an anonymous or clearly fictional case if that status is uncertain. Keep private evidence in the working copy and credit every reproduced image.
 - Render the PDF and inspect all pages. Check names with accents, dates, image captions, tree legends, page numbers, clipping and link targets.
 - Open the editable master and tabular files. Check the IDs, searchable PDF text and that new evidence can be added without retyping the book.
 - Hand over a short revision note, with the most useful next search and the gaps still open.

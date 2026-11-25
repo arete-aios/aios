@@ -28,11 +28,25 @@ Explore the fictional John Doe / Doe Studio [English demo](https://areteaios.com
 
 The [CC7 Command Center recipe](skills/cc7/references/command-center.md) and [complete portable example](skills/cc7/examples/command-center/START.md) include EN/LV HTML, a local Python preview, fonts and licences. The [ZIP](skills/cc7/examples/command-center/cc7-command-center.zip) needs no account or API key to open. Demo people, tasks, dates and amounts are fictional; preserve your own constitution and data sources. Building the page does not connect accounts or enable autonomous work. CC7 Health retains its separate opt-in setup.
 
+## Try a workshop demo
+
+Pick one example and use the matching instruction with your own material. Registered participants can find the examples and copy buttons in [My → Resources](https://areteaios.com/lv/my/resources).
+
+| Start with | Open the example | Get the instructions |
+|---|---|---|
+| Build your AIOS | [My Build guide](https://areteaios.com/lv/my/build) | [Starter onboarding](onboarding/START.md) |
+| Command Center | [Command Center demo](https://areteaios.com/lv/my/cc-demo) | [CC7 recipe](skills/cc7/references/command-center.md) |
+| VIDEO7 | [Video Studio](https://areteaios.com/lv/my/video-demo) | [Studio guide](skills/video7/references/studio-practical.md) |
+| HERITAGE7 | [Family history demo](https://areteaios.com/lv/my/heritage-demo) | [HERITAGE7](skills/heritage7/SKILL.md) |
+| RADAR | [Opportunity watch](https://areteaios.com/lv/my/cc-demo/radar) | [RADAR first run](skills/cc7/references/radar.md#try-a-first-review) |
+| COMMS7 | [Messages demo](https://areteaios.com/lv/my/cc-demo/messages) | [COMMS7](skills/comms7/SKILL.md) |
+| GEO7 | [Marketing demo](https://areteaios.com/lv/my/cc-demo/marketing) | [GEO7 first run](skills/geo7/INSTALL.md) |
+
 ## Choose your path
 
 - **Build it yourself:** attach a folder to ChatGPT, Claude, Codex, or another file-capable AI and use the prompt below.
 - **Follow the free guided version:** use [My Circle](https://areteaios.com/my), where the same foundation is explained step by step.
-- **Build it with support:** join a [free masterclass](https://areteaios.com/masterclass) or the [eight-week cohort](https://areteaios.com/cohort).
+- **Build it with support:** join a [free masterclass](https://areteaios.com/masterclass) or the [four-week cohort with eight live sessions](https://areteaios.com/cohort).
 
 All three paths use the same public onboarding method and the same five-layer folder model. Moving from the free guide to training does not require rebuilding the brain from zero.
 
