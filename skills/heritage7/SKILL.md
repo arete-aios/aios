@@ -1,39 +1,51 @@
 ---
 name: heritage7
-description: Research family history from civil records, parish registers, newspapers, military inventories and family trees. Use to trace a relative, transcribe a historical record, reconcile conflicting dates or build an evidence-linked family tree.
+description: Research family history from civil records, parish registers, newspapers, censuses, military archives and family trees. Use to trace a relative, transcribe a historical record, reconcile conflicting identities, build an evidence-linked family tree or produce an editable family book and a cited PDF.
 ---
 
 # HERITAGE7
 
-Work backwards from one known person and one question. Map claims to a record and make unresolved links visible in the tree.
+Work backwards from one known person and one question. Preserve what documents say, show how they support each family link and keep unanswered questions visible.
+
+## Choose the result
+
+- **Record or question.** Return a source citation, a faithful transcription, a separate translation if useful, what it establishes and the next record worth finding.
+- **One branch.** Return a small tree or timeline with source IDs, an evidence table, conflicting candidates and the next search. Offer editable data if the user wants to continue the project.
+- **Family book.** Build a readable illustrated book with a tree, people and events, evidence notes and sources. Deliver an editable master, a PDF and an evidence register. Agree the branch, period, language and audience before designing the book. Use the [book specification and data fields](references/book-delivery.md) and see the [sample PDF](examples/family-book-sample.pdf) and its [editable example](examples/family-book-sample.md).
 
 ## Set the starting point
 
-1. Start with a birth certificate or another dependable record. Write the person's name as it appears, birth date and precise place, and what the document says about the parents. Note both parents' exact dates and places of birth where known. A home, village, parish and municipality are different fields.
-2. Pick one gap to investigate: a missing birth or marriage, a suspected parent, a change of surname or a period of military service. Mark family recollections, online trees and search indexes as leads. Keep private certificate scans and identifying details in the user's chosen private files.
-3. Ask only for details that materially change the next search. Invite the user to omit document numbers, national identifiers and other details unnecessary for the question.
+1. Begin with a birth certificate or another dependable record. Record the known person's name as written, birth date and precise place, and the parents named in the record. Where available, use both parents' exact dates and places of birth as search anchors. Record house, village, parish and municipality separately.
+2. Choose the missing fact that would change the tree, such as a birth, marriage, suspected parent, surname change or period of military service. List variant spellings, historic place names, religion and jurisdiction for that date. Mark family recollections, online trees and search indexes as leads.
+3. Ask only for details that change the next search. Keep private scans in the user's chosen private files and omit identifiers unnecessary for the research.
 
 ## Find and read records
 
-- Search by period, place, event and repository. Try original spellings, variants, gendered endings, and German or Cyrillic forms. Convert Julian/Gregorian dates only when the calendar in use is established. Preserve the date as written alongside any normalized date.
-- For Latvia, consult [Latvian National Archives guidance](https://www.arhivi.gov.lv/lv/ieteikumi-dzimtas-petniekiem), [Raduraksti](https://raduraksti.arhivi.lv/) for parish and population records, [LNB Periodika](https://periodika.lv/) for press, [LNA Diaspora](https://diaspora.arhivi.lv/?id=21) for military and displacement collections, and [FamilySearch](https://www.familysearch.org/search/catalog) for catalogs and images. A FamilySearch copy of a register may be a copy of the same source as Raduraksti. Use MyHeritage and Geni to locate leads and look for the cited originals.
-- For a login-gated source, direct the user to the official portal to sign in themselves. If the user authorizes browser control and it is available, read the specific Chrome tab or pages they have opened. Otherwise ask for a permitted cropped image, PDF excerpt or excerpted text. Keep passwords and one-time codes out of the chat. Honor the reading room's access and reuse terms.
-- Distinguish the catalog, index, record image, transcription and later certificate. Read the full page. Compare headings and adjoining rows to read abbreviated or unfamiliar handwriting. Transcribe the original spelling and mark uncertain characters as [?]. Write translation or normalized spelling in a separate field.
-- Capture the archive, collection/fund, series, file, image or page, entry number, official URL and access date. For an unsuccessful search, record the intervals actually reviewed and any access limits.
+1. Pick sources by place, period and event using the [archive and database directory](references/source-directory.md). Start with jurisdiction and collection before looking for a name. Try original spellings, initials, gendered endings, and German or Cyrillic forms as appropriate. Keep dates as written. Normalize the calendar only when the source's dating practice is known.
+2. For a login-gated source, let the user sign in to the official portal themselves. If the user authorizes browser control and the tool is available, inspect the specific open pages. Otherwise use an authorized crop, PDF excerpt or text, or identify how to request the file. Never ask for passwords or codes. Follow the archive's access and reproduction conditions.
+3. Identify the record type among catalog, index, record image, later certificate and transcription. Inspect headings and neighboring rows before assigning columns. For difficult handwriting, compare the full page and enlarged crops, then verify names, places and dates against the image. Preserve original spellings, abbreviations and uncertain characters as [?]. Keep transliteration, translation and normalized values distinct.
+4. Record the repository, collection or fond, series, file, image or page, entry, stable link, access date and reuse status. For an unsuccessful search, record the spelling variants, dates and holdings actually checked and the access limits.
+5. When comparing models, give each one the same marked entry and compare specific fields against a checked reading. Note the model, date, full-page or crop input, and whether cost came from an existing allowance, API billing or an archive fee. Review disputed fields on the scan.
+6. For war, captivity or displacement, capture dates, location, issuing authority, unit or camp and record type. Compare sources across jurisdictions and institutions where practical. A grave entry, award, capture card and unit roster answer different questions. Record institutional spellings alongside the person's own name when recoverable.
 
-## Decide what the evidence supports
+The [handwriting benchmark](references/handwriting-benchmark.md) lists the tested models, how much they read, and an example of errors on the same record. Use the [offline scoring script](scripts/score_transcription.py) with your own checked facts.
 
-Create a row for each claim.
+## Decide what the sources support
 
-| Claim | Exact source reference | What the source says | What it establishes | Alternatives or limits |
+| Claim | Source IDs and exact location | What the record says | Status | Conflict or next check |
 | --- | --- | --- | --- | --- |
+| Record one fact or relationship per row | Repository, citation and entry | Faithful excerpt or summary | Documented / likely / candidate | What would distinguish the possibilities |
 
-Use **documented** for a fact that appears in the cited record, **likely** for a supported inference, and **candidate** for a link still needing a distinguishing record. A documented birth may belong to a person whose link to the family remains a candidate. Distinguish a birth date from a baptism date and an announcement from a marriage record. When two dates or names disagree, preserve both and name the strongest test to resolve the conflict. Compare at least two distinguishing details where possible, such as parents, house, spouse, age and location. Two copies of one record count as one source.
+Use **documented** for a claim supported directly by the cited record, **likely** for a supported inference and **candidate** for a link still needing distinguishing evidence. A documented birth can belong to a person whose link to the family remains a candidate. Compare at least two distinguishing details where possible, such as parents, house, spouse, age, occupation and place. Preserve conflicts and identify the strongest available test. Count multiple copies or index entries for the same underlying record as one source.
 
-Draw a small tree with source IDs on proven links and label hypotheses. Keep living people out of public examples unless applicable permission is documented. Ask before changing an existing public or shared tree, uploading records or sending messages to archives. Use only redistributable source images in a public demo, with attribution. For a restricted image, show a permitted short quotation or a summary and link to the official viewer.
+Keep source IDs on the diagram and label tentative connections. State the limits of an unsuccessful search against the specific holdings reviewed. Preserve the evidence when proposing edits to an existing family tree.
 
-## Return a usable result
+## Deliver and check
 
-Give the evidence table, the small source-linked tree or chronology, the conflicts that matter, and the single most useful next record to find. A catalog-only result is a lead to the item, with a file number the user can request.
+Give the user the answer, evidence and single most useful next search. For a catalog lead, include the file reference and the official request route. In a book, make the link from a fact to its source understandable without opening an app. Include images only when private or public use matches the audience and the permission. A citation and a short permitted excerpt or summary can stand in for a restricted scan.
 
-Example starting instruction: “Use HERITAGE7. Help me trace one branch from my earliest verified birth record. Start by proposing a single focused search. Keep original readings, citations, conflicts and candidate links separate.”
+For a shared or public version, review each image's rights and remove sensitive details about living people unless permission is documented. Ask before publishing, editing a shared tree, uploading restricted material or contacting an archive. Confirm which files were produced and what remains unresolved or unverified.
+
+## Starting instruction
+
+> Use HERITAGE7 to investigate one branch from my earliest verified record. Start with the most useful search. Keep original readings, citations and competing candidates. Once we have enough evidence, prepare an editable family book and a cited PDF.
